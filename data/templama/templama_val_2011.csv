@@ -1,0 +1,432 @@
+id,original,date,input,output
+0,1,2011,Nikkita Oliver attended <extra_id_0>.,University of Washington School of Law;University of Washington College of Education
+1,10,2011,Aleqa Hammond is a member of the <extra_id_0>.,Siumut
+2,20,2011,Seiji Maehara holds the position of <extra_id_0>.,Minister for Foreign Affairs
+3,22,2011,Seiji Maehara is a member of the <extra_id_0>.,Democratic Party
+4,33,2011,Yves Pons attended <extra_id_0>.,INSEP
+5,48,2011,<extra_id_0> is the head of the government of Capital Region of Denmark.,Vibeke Storm Rasmussen
+6,59,2011,Reuven Rivlin holds the position of <extra_id_0>.,Speaker of the Knesset
+7,70,2011,Jabo Ibehre plays for <extra_id_0>.,Milton Keynes Dons F.C.
+8,81,2011,<extra_id_0> is the chair of Young Union.,Philipp Mißfelder
+9,92,2011,Saul Dubow works for <extra_id_0>.,University of Sussex
+10,103,2011,Rothschild is owned by <extra_id_0>.,Alexander Ivanov
+11,113,2011,<extra_id_0> is the chair of Polymetal International.,Bobby Godsell
+12,131,2011,Marta Lewicka works for <extra_id_0>.,University of Pittsburgh;University of Minnesota;Rutgers University
+13,141,2011,Cory Gardner holds the position of <extra_id_0>.,United States representative
+14,155,2011,<extra_id_0> is the head of the government of Istanbul.,Kadir Topbaş
+15,171,2011,<extra_id_0> is the head coach of FC Slavia-Mozyr.,Yuriy Maleyev
+16,182,2011,Álvaro Morata plays for <extra_id_0>.,Real Madrid Castilla;Spain national under-19 football team;Real Madrid CF
+17,200,2011,<extra_id_0> is the chair of Pirate Party Berlin.,Andreas Baum
+18,205,2011,Paavo Väyrynen holds the position of <extra_id_0>.,Minister for European Affairs and Foreign Trade
+19,212,2011,Paavo Väyrynen is a member of the <extra_id_0>.,Centre Party
+20,223,2011,László Tőkés holds the position of <extra_id_0>.,member of the European Parliament;Vice President of the European Parliament
+21,234,2011,Luciana Berger is a member of the <extra_id_0>.,Labour Party;Labour Co-operative
+22,245,2011,Christopher Hernandez works for <extra_id_0>.,Cornell University
+23,256,2011,Eurostar International Limited is owned by <extra_id_0>.,London and Continental Railways
+24,268,2011,Tobin Heath plays for <extra_id_0>.,Sky Blue FC;Atlanta Beat
+25,279,2011,Brielle Biermann attended <extra_id_0>.,Cambridge High School
+26,290,2011,<extra_id_0> is the chair of Drasi.,Stefanos Manos
+27,301,2011,Olivier Giroud plays for <extra_id_0>.,France national association football team;Montpellier Hérault Sport Club
+28,312,2011,Jennifer Bendery works for <extra_id_0>.,HuffPost;Roll Call
+29,323,2011,Roger Watson works for <extra_id_0>.,University of Sheffield
+30,334,2011,<extra_id_0> is the chair of Max Planck Society.,Peter Gruss
+31,345,2011,Robert Earnshaw plays for <extra_id_0>.,Wales national association football team;Cardiff City F.C.;Nottingham Forest F.C.
+32,351,2011,<extra_id_0> is the chair of Vetëvendosje!.,Albin Kurti
+33,367,2011,Peter Crouch plays for <extra_id_0>.,Stoke City F.C.;Tottenham Hotspur F.C.
+34,382,2011,Saumitra Khan is a member of the <extra_id_0>.,Indian National Congress
+35,393,2011,Erin Lavik works for <extra_id_0>.,Case Western Reserve University
+36,413,2011,Barbara J. Anderson works for <extra_id_0>.,University of York
+37,424,2011,Jessica Watkins attended <extra_id_0>.,"University of California, Los Angeles"
+38,430,2011,Jill R. Horwitz works for <extra_id_0>.,University of Victoria;University of Michigan
+39,447,2011,Graham F. Medley works for <extra_id_0>.,University of Warwick
+40,465,2011,<extra_id_0> is the head coach of Gap Connah's Quay F.C..,Mark McGregor
+41,476,2011,Harold Ford Jr. works for <extra_id_0>.,Merrill Lynch;Morgan Stanley
+42,487,2011,<extra_id_0> is the chair of Delta Air Lines.,Daniel Carp
+43,498,2011,Marcelo Díaz plays for <extra_id_0>.,Club Universidad de Chile;Chile national football team
+44,509,2011,S. Sreesanth plays for <extra_id_0>.,India national cricket team;Kerala cricket team;Kochi Tuskers Kerala
+45,513,2011,Edvald Boasson-Hagen plays for <extra_id_0>.,Ineos Grenadier
+46,523,2011,Gaku Shibasaki plays for <extra_id_0>.,Kashima Antlers
+47,534,2011,Qi Lu works for <extra_id_0>.,Microsoft Corporation
+48,545,2011,Ched Evans plays for <extra_id_0>.,Wales national association football team;Sheffield United F.C.
+49,555,2011,"<extra_id_0> is the chair of Embassy of Ukraine, Ottawa.",Ihor Ostash
+50,575,2011,Wells Fargo Center is owned by <extra_id_0>.,Beacon Capital Partners
+51,594,2011,John Mahama holds the position of <extra_id_0>.,Vice President of Ghana
+52,602,2011,<extra_id_0> is the chair of Federal Emergency Management Agency.,Craig Fugate
+53,613,2011,Andrew Mitchell holds the position of <extra_id_0>.,Secretary of State for International Development
+54,616,2011,Wong Kan Seng holds the position of <extra_id_0>.,Deputy Prime Minister of Singapore;Co-ordinating Minister for National Security
+55,618,2011,Olav Fykse Tveit holds the position of <extra_id_0>.,general secretary
+56,635,2011,Darren Fletcher plays for <extra_id_0>.,Manchester United F.C.
+57,646,2011,Maria A. Pallante works for <extra_id_0>.,United States Copyright Office
+58,657,2011,John Galliano works for <extra_id_0>.,Christian Dior S.A.
+59,666,2011,Carlos Eduardo Marques plays for <extra_id_0>.,Rubin Kazan
+60,677,2011,Josh Perkins attended <extra_id_0>.,Regis Jesuit High School
+61,687,2011,Sasha Roseneil works for <extra_id_0>.,"Birkbeck, University of London"
+62,701,2011,Arike Ogunbowale attended <extra_id_0>.,Divine Savior Holy Angels High School
+63,711,2011,Rocky Anderson is a member of the <extra_id_0>.,Justice Party;Democratic Party
+64,722,2011,Valentino Rossi plays for <extra_id_0>.,Ducati Motor Holding S.p.A.
+65,733,2011,Zlatan Pepemovic plays for <extra_id_0>.,Sweden national association football team;Associazione Calcio Milan
+66,744,2011,Danny Hollands plays for <extra_id_0>.,Charlton Athletic F.C.;AFC Bournemouth
+67,749,2011,Max Hollein works for <extra_id_0>.,Städel Museum;Liebieghaus;Schirn Kunsthalle Frankfurt
+68,759,2011,<extra_id_0> is the head of the government of Yerevan.,Taron Margaryan
+69,770,2011,<extra_id_0> is the head of the government of Pennsylvania.,Tom Corbett;Ed Rendell
+70,790,2011,<extra_id_0> is the chair of Sainsbury's.,Justin King
+71,809,2011,<extra_id_0> is the chair of National Rally.,Marine Le Pen;Jean-Marie Le Pen
+72,819,2011,Choupette is owned by <extra_id_0>.,Karl Lagerfeld;Baptiste Giabiconi
+73,829,2011,<extra_id_0> is the head coach of Swiss national football team.,Ottmar Hitzfeld
+74,840,2011,Mahathir Mohamad is a member of the <extra_id_0>.,United Malays National Organisation
+75,858,2011,Fernando Alonso plays for <extra_id_0>.,Scuderia Ferrari
+76,866,2011,Bill Shorten holds the position of <extra_id_0>.,Minister for Employment and Workplace Relations
+77,876,2011,Yuba Raj Khatiwada works for <extra_id_0>.,Nepal Rastra Bank
+78,882,2011,Netscape Communications Corporation is owned by <extra_id_0>.,AOL
+79,893,2011,<extra_id_0> is the head coach of AFC Ajax.,Frank de Boer
+80,904,2011,Robert Mugabe holds the position of <extra_id_0>.,President of Zimbabwe
+81,924,2011,Jerzy Buzek holds the position of <extra_id_0>.,member of the European Parliament;President of the European Parliament
+82,940,2011,Michelle Alexander works for <extra_id_0>.,Cornell University;Durham University
+83,951,2011,Simon Stoddart works for <extra_id_0>.,University of Cambridge
+84,966,2011,El Hadji Diouf plays for <extra_id_0>.,Blackburn Rovers F.C.;Rangers F.C.;Doncaster Rovers F.C.
+85,971,2011,Braeden Anderson attended <extra_id_0>.,"California State University, Fresno"
+86,980,2011,Chris Young plays for <extra_id_0>.,New York Mets
+87,991,2011,Erwin Hoffer plays for <extra_id_0>.,Eintracht Frankfurt;1. FC Kaiserslautern;S.S.C. Napoli;Austria national association football team
+88,1013,2011,Jérôme Boateng plays for <extra_id_0>.,Manchester City F.C.;FC Bayern Munich
+89,1024,2011,Gwendal Rouillard is a member of the <extra_id_0>.,Socialist Party
+90,1056,2011,Tony Baldry holds the position of <extra_id_0>.,Church Commissioners;Church Estates Commissioners
+91,1062,2011,John Neely Kennedy holds the position of <extra_id_0>.,state treasurer
+92,1082,2011,<extra_id_0> is the head of the government of Poland.,Donald Tusk
+93,1101,2011,Salomon Kalou plays for <extra_id_0>.,Chelsea F.C.
+94,1112,2011,<extra_id_0> is the head of the government of Livorno.,Alessandro Cosimi
+95,1122,2011,Heather Humphreys holds the position of <extra_id_0>.,Teachta Dála
+96,1133,2011,Călin Popescu-Tăriceanu is a member of the <extra_id_0>.,National Liberal Party
+97,1144,2011,Brigitte Boccone-Pagès is a member of the <extra_id_0>.,Horizon Monaco
+98,1155,2011,<extra_id_0> is the chair of International Shooting Sport Federation.,Olegario Vázquez Raña
+99,1166,2011,Recep Tayyip Erdoğan holds the position of <extra_id_0>.,Prime Minister of Turkey
+100,1180,2011,Giorgia Meloni is a member of the <extra_id_0>.,The People of Freedom
+101,1198,2011,Kimbrough Memorial Stadium is owned by <extra_id_0>.,West Texas A&M University
+102,1209,2011,Alma Zadić is a member of the <extra_id_0>.,NOW – Pilz List
+103,1219,2011,Alma Zadić works for <extra_id_0>.,Freshfields Bruckhaus Deringer
+104,1243,2011,Belinda Johnson works for <extra_id_0>.,Airbnb;Yahoo
+105,1254,2011,Bronwyn Harch works for <extra_id_0>.,Commonwealth Scientific and Industrial Research Organisation
+106,1270,2011,Rene Farrell plays for <extra_id_0>.,Australia national cricket team
+107,1286,2011,Brendan Eich holds the position of <extra_id_0>.,chief technology officer
+108,1302,2011,Amos Yong works for <extra_id_0>.,Regent University
+109,1313,2011,Fratelli Fabbri Editori is owned by <extra_id_0>.,RCS MediaGroup
+110,1324,2011,Dwight Tiendalli plays for <extra_id_0>.,FC Twente
+111,1330,2011,<extra_id_0> is the chair of Czech Social Democratic Party.,Bohuslav Sobotka
+112,1341,2011,T. L. Taylor works for <extra_id_0>.,IT University of Copenhagen
+113,1359,2011,<extra_id_0> is the chair of European Bank for Reconstruction and Development.,Thomas Mirow;Horst Köhler
+114,1370,2011,<extra_id_0> is the head coach of Atlético Madrid.,Quique Sánchez Flores;Gregorio Manzano;Diego Simeone
+115,1381,2011,Espen Barth Eide holds the position of <extra_id_0>.,Minister of Defence;State Secretary
+116,1384,2011,James Lankford holds the position of <extra_id_0>.,United States representative
+117,1395,2011,<extra_id_0> is the head of the government of Turin.,Sergio Chiamparino;Piero Fassino
+118,1406,2011,Christine Sinclair plays for <extra_id_0>.,Western New York Flash
+119,1426,2011,Wout Brama plays for <extra_id_0>.,FC Twente
+120,1437,2011,"Chesley ""Sully"" Sullenberger works for <extra_id_0>.",CBS News
+121,1448,2011,Stephen Powis works for <extra_id_0>.,Royal Free London NHS Foundation Trust
+122,1459,2011,Elisabeth Bik works for <extra_id_0>.,Stanford University School of Medicine
+123,1468,2011,Robyn Denholm works for <extra_id_0>.,Juniper Networks;Echelon Corporation
+124,1479,2011,David Beckham plays for <extra_id_0>.,Los Angeles Galaxy
+125,1483,2011,PanAmericano is owned by <extra_id_0>.,BTG Pactual;Silvio Santos
+126,1494,2011,<extra_id_0> is the head coach of Odds BK.,Dag-Eilev Fagermo
+127,1505,2011,John Mensah plays for <extra_id_0>.,Ghana national football team;Sunderland A.F.C.;Olympique Lyonnais
+128,1516,2011,Jole Santelli is a member of the <extra_id_0>.,The People of Freedom
+129,1530,2011,Masterpiece is owned by <extra_id_0>.,Agnes Gund
+130,1545,2011,Giuseppe Pisanu is a member of the <extra_id_0>.,The People of Freedom
+131,1556,2011,Euclid Tsakalotos works for <extra_id_0>.,National and Kapodistrian University of Athens
+132,1567,2011,Mariló Montero works for <extra_id_0>.,Televisión Española
+133,1576,2011,Pierre de Villiers holds the position of <extra_id_0>.,Major General of the Armed Forces
+134,1584,2011,Conor Murray plays for <extra_id_0>.,Munster Rugby;Ireland national rugby union team
+135,1595,2011,<extra_id_0> is the chair of National Electoral Council of Venezuela.,Tibisay Lucena
+136,1610,2011,Poul Michelsen is a member of the <extra_id_0>.,Progress
+137,1621,2011,Joel Byrom plays for <extra_id_0>.,Stevenage F.C.
+138,1632,2011,4chan is owned by <extra_id_0>.,Christopher Poole
+139,1643,2011,Peter Altmaier holds the position of <extra_id_0>.,Chief Whip
+140,1652,2011,Chris Lewington plays for <extra_id_0>.,Dagenham & Redbridge F.C.
+141,1663,2011,Tuomas Eerola works for <extra_id_0>.,University of Jyväskylä
+142,1679,2011,<extra_id_0> is the chair of Christian Social People's Party.,Michel Wolter
+143,1689,2011,<extra_id_0> is the head coach of Unione Sportiva Lecce.,Eusebio Di Francesco
+144,1695,2011,Keith Olbermann works for <extra_id_0>.,MSNBC;Current TV
+145,1705,2011,Juice Robinson works for <extra_id_0>.,WWE
+146,1716,2011,SourceForge is owned by <extra_id_0>.,Vera Augustin Research
+147,1723,2011,Ma Ying-jeou holds the position of <extra_id_0>.,President of the Republic of China;Chairperson of the Kuomintang
+148,1730,2011,Rabbit is owned by <extra_id_0>.,S. I. Newhouse
+149,1741,2011,When Will You Marry? is owned by <extra_id_0>.,Rudolf Staechelin
+150,1752,2011,Sharon R. Lewin works for <extra_id_0>.,Burnet Institute
+151,1771,2011,<extra_id_0> is the head coach of FC Argeș.,Emil Săndoi
+152,1782,2011,Melanie Keen works for <extra_id_0>.,Iniva
+153,1796,2011,<extra_id_0> is the head of the government of Saint Petersburg.,Georgy Poltavchenko;Valentina Matviyenko
+154,1820,2011,Chris Porter plays for <extra_id_0>.,Derby County F.C.;Sheffield United F.C.
+155,1831,2011,<extra_id_0> is the head of the government of Kyōto Prefecture.,Keiji Yamada
+156,1841,2011,Norbert Perrimon works for <extra_id_0>.,Harvard Medical School
+157,1859,2011,Joakim Noah plays for <extra_id_0>.,Chicago Bulls
+158,1870,2011,Tim Bresnan plays for <extra_id_0>.,England and Wales cricket team
+159,1880,2011,Julio Arca plays for <extra_id_0>.,Middlesbrough F.C.
+160,1890,2011,Alexander Stubb holds the position of <extra_id_0>.,Minister for Foreign Affairs of Finland;Minister for European Affairs and Foreign Trade
+161,1897,2011,Alex Morgan plays for <extra_id_0>.,United States women's national soccer team;Western New York Flash
+162,1908,2011,Pierre-Emerick Aubameyang plays for <extra_id_0>.,A.S. Saint-Étienne;AS Monaco FC;Associazione Calcio Milan
+163,1919,2011,Philip W. Kantoff works for <extra_id_0>.,Brigham and Women's Hospital
+164,1930,2011,Anerood Jugnauth holds the position of <extra_id_0>.,President of Mauritius
+165,1937,2011,Brenda L Bloodgood works for <extra_id_0>.,Harvard Medical School
+166,1948,2011,Joana Ortega i Alemany is a member of the <extra_id_0>.,Democratic Union of Catalonia
+167,1959,2011,<extra_id_0> is the head of the government of Batangas.,Vilma Santos
+168,1970,2011,Kevitsa mine is owned by <extra_id_0>.,First Quantum Minerals
+169,1981,2011,Zury Ríos is a member of the <extra_id_0>.,Institutional Republican Party
+170,1992,2011,Carles Puigdemont is a member of the <extra_id_0>.,Democratic Convergence of Catalonia
+171,2003,2011,Douglas Carswell is a member of the <extra_id_0>.,Conservative Party
+172,2011,2011,Karolin Luger works for <extra_id_0>.,Colorado State University
+173,2022,2011,Matt Prior plays for <extra_id_0>.,England and Wales cricket team;Victoria cricket team;Sussex County Cricket Club
+174,2028,2011,<extra_id_0> is the chair of TOP 09.,Karel Schwarzenberg
+175,2042,2011,Ruffin McNeill works for <extra_id_0>.,East Carolina Pirates football
+176,2053,2011,Mazie Hirono holds the position of <extra_id_0>.,United States representative
+177,2064,2011,Lamar Alexander holds the position of <extra_id_0>.,Republican Conference Chairman of the United States Senate;United States senator
+178,2075,2011,<extra_id_0> is the chair of German Mathematical Society.,Christian Bär
+179,2078,2011,James Rodríguez plays for <extra_id_0>.,Colombia national under-20 football team;Futebol Clube do Porto;Colombia national under-17 football team;Colombia national football team
+180,2089,2011,<extra_id_0> is the head coach of Telenet-Fidea.,Danny De Bie
+181,2108,2011,Yossi Benayoun plays for <extra_id_0>.,Arsenal F.C.;Chelsea F.C.
+182,2119,2011,<extra_id_0> is the chair of Verkhovna Rada.,Volodymyr Lytvyn
+183,2130,2011,<extra_id_0> is the head of the government of Basse-Terre.,Lucette Michaux-Chevry
+184,2141,2011,Dragoș Pîslaru is a member of the <extra_id_0>.,independent politician
+185,2152,2011,Jordan Nwora attended <extra_id_0>.,The Park School of Buffalo
+186,2163,2011,Tom Price holds the position of <extra_id_0>.,United States representative
+187,2171,2011,<extra_id_0> is the chair of Gibraltar Socialist Labour Party.,Joe Bossano;Fabian Picardo
+188,2183,2011,Gennady Gudkov is a member of the <extra_id_0>.,A Just Russia
+189,2194,2011,<extra_id_0> is the head of the government of São Paulo.,Gilberto Kassab
+190,2205,2011,<extra_id_0> is the head of the government of São Paulo.,Geraldo Alckmin;Alberto Goldman
+191,2216,2011,Won Hee-ryong is a member of the <extra_id_0>.,Liberty Korea Party
+192,2225,2011,Rathika Sitsabaiesan is a member of the <extra_id_0>.,New Democratic Party
+193,2250,2011,Stephen Dobbie plays for <extra_id_0>.,Swansea City A.F.C.
+194,2257,2011,Hart Blanton works for <extra_id_0>.,University of Connecticut
+195,2268,2011,Portrait of Professor Benjamin H. Rand is owned by <extra_id_0>.,Crystal Bridges Museum of American Art;Alice Walton
+196,2279,2011,Arturo Scotto is a member of the <extra_id_0>.,"Left, Ecology and Freedom"
+197,2296,2011,R.A. Dickey plays for <extra_id_0>.,New York Mets
+198,2307,2011,Nabil Dirar plays for <extra_id_0>.,Club Brugge K.V.
+199,2318,2011,Kongregate is owned by <extra_id_0>.,GameStop
+200,2329,2011,Gilbert Arenas plays for <extra_id_0>.,Orlando Magic
+201,2340,2011,Jason Reese works for <extra_id_0>.,University of Strathclyde
+202,2350,2011,Andrew D. Martin works for <extra_id_0>.,Washington University in St. Louis
+203,2361,2011,Kåre Schultz works for <extra_id_0>.,Novo Nordisk
+204,2369,2011,Eurosport is owned by <extra_id_0>.,TF1 Group
+205,2380,2011,Lisa Murkowski holds the position of <extra_id_0>.,United States senator
+206,2391,2011,Gianni Alemanno is a member of the <extra_id_0>.,The People of Freedom
+207,2402,2011,<extra_id_0> is the head of the government of Qatar.,Hamad bin Jassim bin Jaber Al Thani;Abdullah bin Nasser bin Khalifa Al Thani
+208,2412,2011,Nuno Brás da Silva Martins holds the position of <extra_id_0>.,auxiliary bishop;titular bishop;Catholic bishop
+209,2432,2011,Jim Murphy holds the position of <extra_id_0>.,Shadow Secretary of State for Defence
+210,2437,2011,Karyn A. Temple works for <extra_id_0>.,United States Copyright Office;United States Department of Justice
+211,2448,2011,Bruce Hyer is a member of the <extra_id_0>.,New Democratic Party
+212,2459,2011,Ionel-Sorin Moisă is a member of the <extra_id_0>.,Social Democratic Party
+213,2478,2011,Martin Hamilton-Smith is a member of the <extra_id_0>.,Liberal Party of Australia;Liberal Party of Australia (South Australian Division)
+214,2483,2011,<extra_id_0> is the head of the government of Rio Grande do Sul.,Yeda Crusius;Tarso Genro
+215,2491,2011,John Guidetti plays for <extra_id_0>.,Burnley F.C.;Feyenoord;Manchester City F.C.;Sweden national under-21 football team
+216,2502,2011,Christofer Clemente works for <extra_id_0>.,Harvard University
+217,2517,2011,Joan Josep Nuet is a member of the <extra_id_0>.,United and Alternative Left;Party of the Communists of Catalonia
+218,2531,2011,<extra_id_0> is the head of the government of Liaoning.,Chen Zhenggao
+219,2540,2011,LA Weekly is owned by <extra_id_0>.,Village Voice Media
+220,2548,2011,<extra_id_0> is the chair of Association for Symbolic Logic.,Alec Wilkie
+221,2563,2011,Lluís Corominas i Díaz is a member of the <extra_id_0>.,Democratic Convergence of Catalonia
+222,2574,2011,Stuart Broad plays for <extra_id_0>.,Kings XI Punjab;England and Wales cricket team
+223,2583,2011,Diego Ribas da Cunha plays for <extra_id_0>.,Atlético Madrid;VfL Wolfsburg
+224,2594,2011,Ahmad Zahid Hamidi holds the position of <extra_id_0>.,Minister of Defence
+225,2605,2011,Luciano Onder works for <extra_id_0>.,RAI
+226,2616,2011,Mary Coughlan holds the position of <extra_id_0>.,Teachta Dála;Minister for Education and Skills;Tánaiste;Minister for Health
+227,2618,2011,Enrico dal Covolo holds the position of <extra_id_0>.,titular bishop;Catholic bishop
+228,2629,2011,Shakib Al Hasan plays for <extra_id_0>.,Bangladesh national cricket team;Worcestershire County Cricket Club
+229,2638,2011,Vasile Blaga is a member of the <extra_id_0>.,Democratic Liberal Party
+230,2649,2011,Scott Frost works for <extra_id_0>.,Oregon Ducks
+231,2660,2011,Frans Van de Werf works for <extra_id_0>.,European Society of Cardiology
+232,2680,2011,<extra_id_0> is the chair of Bank of Lithuania.,Vitas Vasiliauskas;Reinoldijus Šarkinas
+233,2698,2011,Josep Rull i Andreu is a member of the <extra_id_0>.,Democratic Convergence of Catalonia
+234,2709,2011,Justin Welby holds the position of <extra_id_0>.,Bishop of Durham;dean of Liverpool;bishop
+235,2720,2011,<extra_id_0> is the head of the government of Changhua County.,Cho Po-yuan
+236,2730,2011,Mette Frederiksen holds the position of <extra_id_0>.,Danish Minister for Labour
+237,2738,2011,WOSX is owned by <extra_id_0>.,Denison University
+238,2749,2011,<extra_id_0> is the chair of Union rationaliste.,Hélène Langevin-Joliot
+239,2760,2011,Robbie Rogers plays for <extra_id_0>.,Columbus Crew SC;United States men's national soccer team
+240,2771,2011,Tom Finkelpearl works for <extra_id_0>.,Queens Museum
+241,2782,2011,Gabriel Salazar works for <extra_id_0>.,University of Chile
+242,2793,2011,<extra_id_0> is the head coach of LSU Tigers football.,Les Miles
+243,2804,2011,Peggy Piesche works for <extra_id_0>.,Hamilton College
+244,2819,2011,Ann Sarnoff works for <extra_id_0>.,BBC America
+245,2829,2011,Peter Kohlgraf works for <extra_id_0>.,University of Münster
+246,2837,2011,Seiya Ando attended <extra_id_0>.,Meiji University;Sendai University Meisei High School
+247,2858,2011,Eskil Brøndbo is a member of the <extra_id_0>.,Conservative Party of Norway;Norwegian Labour Party
+248,2869,2011,Andris Piebalgs holds the position of <extra_id_0>.,"European Commissioner for International Cooperation, Humanitarian Aid and Crisis Response"
+249,2880,2011,Didier Fassin works for <extra_id_0>.,Institute for Advanced Study
+250,2891,2011,Joaquim Forn is a member of the <extra_id_0>.,Democratic Convergence of Catalonia
+251,2904,2011,Maria Ohisalo attended <extra_id_0>.,University of Eastern Finland;University of Helsinki
+252,2923,2011,Ghulam Rasool Sahi is a member of the <extra_id_0>.,Pakistan Muslim League (Q)
+253,2934,2011,<extra_id_0> is the head coach of Legia Warsaw.,Maciej Skorża
+254,2945,2011,Ron Estes holds the position of <extra_id_0>.,Kansas State Treasurer
+255,2955,2011,Brian Mullan plays for <extra_id_0>.,Colorado Rapids
+256,2960,2011,Shelley Moore Capito holds the position of <extra_id_0>.,United States representative
+257,2971,2011,Emanuela Del Gado works for <extra_id_0>.,ETH Zurich
+258,2987,2011,Shay Given plays for <extra_id_0>.,Aston Villa F.C.;Manchester City F.C.;Republic of Ireland national association football team
+259,2995,2011,Chris Huhne holds the position of <extra_id_0>.,Secretary of State for Energy and Climate Change
+260,2998,2011,Jesse Robredo holds the position of <extra_id_0>.,Secretary of the Interior and Local Government
+261,3001,2011,James McClean plays for <extra_id_0>.,Derry City F.C.;Sunderland A.F.C.
+262,3012,2011,Romelu Lukaku plays for <extra_id_0>.,Belgium national under-18 football team;R.S.C. Anderlecht;Belgium national football team;Chelsea F.C.
+263,3023,2011,<extra_id_0> is the head coach of Angers SCO.,Stéphane Moulin;Jean-Louis Garcia
+264,3047,2011,<extra_id_0> is the chair of Progressive Party of Maldives.,Maumoon Abdul Gayoom
+265,3066,2011,Rahm Emanuel holds the position of <extra_id_0>.,Mayor of Chicago
+266,3082,2011,Kari Turunen holds the position of <extra_id_0>.,chairperson
+267,3102,2011,Nikólaos Chountís is a member of the <extra_id_0>.,SYRIZA
+268,3112,2011,Nordic Regional Airlines is owned by <extra_id_0>.,Flybe;Finnair
+269,3123,2011,Gareth Barry plays for <extra_id_0>.,Manchester City F.C.;England national association football team
+270,3134,2011,Lucas Richman works for <extra_id_0>.,Bangor Symphony Orchestra;Knoxville Symphony Orchestra
+271,3145,2011,Chris Bowen holds the position of <extra_id_0>.,Minister for Immigration and Border Protection of Australia
+272,3149,2011,Luis Almagro holds the position of <extra_id_0>.,foreign minister
+273,3160,2011,Luis Planas holds the position of <extra_id_0>.,permanent representative of Spain to the European Union
+274,3167,2011,Thorgan Hazard plays for <extra_id_0>.,Belgium national under-19 football team;R.C. Lens
+275,3187,2011,Māris Kučinskis is a member of the <extra_id_0>.,People's Party
+276,3196,2011,Julie Ertz plays for <extra_id_0>.,United States women's national under-20 soccer team;Santa Clara Broncos
+277,3213,2011,Antonino Raspanti holds the position of <extra_id_0>.,diocesan bishop;Catholic bishop
+278,3224,2011,Ian Jacobs works for <extra_id_0>.,University of Manchester;University College London
+279,3235,2011,Dominique Mamberti holds the position of <extra_id_0>.,Secretary for Relations with States
+280,3246,2011,Katherine Joy works for <extra_id_0>.,Lunar and Planetary Institute
+281,3271,2011,Meng Wanzhou holds the position of <extra_id_0>.,chief financial officer
+282,3288,2011,Shoaib Malik plays for <extra_id_0>.,Pakistan national cricket team
+283,3305,2011,Anam Vivekananda Reddy is a member of the <extra_id_0>.,Indian National Congress
+284,3314,2011,Philip A. Gale works for <extra_id_0>.,University of Southampton
+285,3325,2011,Bergen Line is owned by <extra_id_0>.,Norwegian National Rail Administration
+286,3336,2011,Amar Gupta works for <extra_id_0>.,University of Arizona
+287,3342,2011,Melania Cristescu works for <extra_id_0>.,University of Windsor
+288,3353,2011,<extra_id_0> is the head of the government of Texas.,Rick Perry
+289,3364,2011,John L. Hennessy holds the position of <extra_id_0>.,president
+290,3383,2011,Joseph Daul holds the position of <extra_id_0>.,member of the European Parliament
+291,3394,2011,Stephen Hawking works for <extra_id_0>.,University of Cambridge;Perimeter Institute for Theoretical Physics
+292,3412,2011,<extra_id_0> is the head of the government of Hawaii.,Neil Abercrombie
+293,3431,2011,Vera Papisova works for <extra_id_0>.,Massachusetts General Hospital
+294,3451,2011,Thomas Hutzschenreuter works for <extra_id_0>.,WHU-Otto Beisheim School of Management
+295,3462,2011,<extra_id_0> is the head coach of SV Waldhof Mannheim.,Reiner Hollich
+296,3473,2011,Dan Satterberg is a member of the <extra_id_0>.,Republican Party
+297,3484,2011,Didier Digard plays for <extra_id_0>.,OGC Nice
+298,3504,2011,<extra_id_0> is the head coach of FC Spartak Trnava.,Pavel Hoftych
+299,3508,2011,Armen Amiryan works for <extra_id_0>.,Armenian State Pedagogical University;Public Radio of Armenia
+300,3514,2011,Rob Gronkowski plays for <extra_id_0>.,New England Patriots
+301,3529,2011,Gustavo Petro is a member of the <extra_id_0>.,Movimiento Progresistas (izquierda)
+302,3540,2011,Roberto Cassinelli is a member of the <extra_id_0>.,The People of Freedom
+303,3556,2011,Bradley Wiggins plays for <extra_id_0>.,Ineos Grenadier
+304,3563,2011,Tyrese Maxey attended <extra_id_0>.,South Garland High School
+305,3579,2011,Chris Lu holds the position of <extra_id_0>.,White House Cabinet Secretary
+306,3587,2011,Rodrigo Palacio plays for <extra_id_0>.,Genoa C.F.C.;Argentina national football team
+307,3598,2011,Akram Hasson is a member of the <extra_id_0>.,Kadima
+308,3609,2011,Edward Garnier holds the position of <extra_id_0>.,Solicitor General for England and Wales
+309,3612,2011,Nicole Bricq is a member of the <extra_id_0>.,Socialist Party
+310,3626,2011,Corina Crețu is a member of the <extra_id_0>.,Social Democratic Party
+311,3637,2011,Ertharin Cousin holds the position of <extra_id_0>.,United States Ambassador to the United Nations Agencies for Food and Agriculture
+312,3648,2011,Richard G. Whitman works for <extra_id_0>.,University of Bath;University of Kent
+313,3659,2011,Robinho plays for <extra_id_0>.,Brazil national football team;Associazione Calcio Milan
+314,3670,2011,Mohammad Bagher Ghalibaf holds the position of <extra_id_0>.,Mayor of Tehran
+315,3679,2011,Masaaki Ōsawa is a member of the <extra_id_0>.,independent politician;Liberal Democratic Party
+316,3689,2011,Gitta Kutyniok works for <extra_id_0>.,Osnabrück University;Technical University of Berlin
+317,3700,2011,Claude Debru holds the position of <extra_id_0>.,director;president
+318,3701,2011,Annegret Kramp-Karrenbauer holds the position of <extra_id_0>.,chairperson
+319,3712,2011,Shafiqur Rahman Barq is a member of the <extra_id_0>.,Bahujan Samaj Party
+320,3723,2011,Luciano Becchio plays for <extra_id_0>.,Leeds United F.C.
+321,3734,2011,Paola Binetti is a member of the <extra_id_0>.,Union of the Centre
+322,3745,2011,Tana Umaga plays for <extra_id_0>.,Chiefs;RC Toulonnais
+323,3747,2011,Jang Geun-suk attended <extra_id_0>.,Hanyang University
+324,3758,2011,Ferran Bel Accensi is a member of the <extra_id_0>.,Democratic Convergence of Catalonia
+325,3769,2011,<extra_id_0> is the head coach of Tennis Borussia Berlin.,Cemal Yıldız;Markus Schatte
+326,3781,2011,<extra_id_0> is the head coach of Borussia Dortmund.,Jürgen Klopp
+327,3792,2011,Ben Carson is a member of the <extra_id_0>.,independent politician
+328,3817,2011,Jean-Paul Garraud is a member of the <extra_id_0>.,Union for a Popular Movement
+329,3828,2011,Jimmy Bullard plays for <extra_id_0>.,Ipswich Town F.C.;Hull City A.F.C.
+330,3830,2011,Misty Jenkins works for <extra_id_0>.,Peter MacCallum Cancer Centre
+331,3840,2011,<extra_id_0> is the head coach of Sint-Truidense V.V..,Franky Van der Elst
+332,3846,2011,Misbah-ul-Haq plays for <extra_id_0>.,Sui Northern Gas Pipelines Limited;Faisalabad cricket team;Pakistan national cricket team;Faisalabad Wolves
+333,3854,2011,Vladimir Ashurkov works for <extra_id_0>.,Alfa Group;X5 Retail Group
+334,3865,2011,Richie McCaw plays for <extra_id_0>.,Crusaders;New Zealand national rugby union team
+335,3871,2011,<extra_id_0> is the chair of Green League.,Anni Sinnemäki;Ville Niinistö
+336,3882,2011,Mustapha Madih works for <extra_id_0>.,FAR Rabat;Hassania Agadir
+337,3890,2011,<extra_id_0> is the head coach of Gençlerbirliği S.K..,Fuat Çapa
+338,3904,2011,Anneloes van Veen attended <extra_id_0>.,Erasmus University Rotterdam
+339,3908,2011,<extra_id_0> is the chair of Jammu and Kashmir People's Democratic Party.,Mufti Mohammad Sayeed
+340,3918,2011,Jessica Shepard attended <extra_id_0>.,Fremont Senior High School
+341,3928,2011,Hannah Dee works for <extra_id_0>.,Aberystwyth University
+342,3945,2011,Hickory Daily Record is owned by <extra_id_0>.,Berkshire Hathaway
+343,3956,2011,Beatrice Brignone is a member of the <extra_id_0>.,Democratic Party
+344,3967,2011,Matthew DeGennaro works for <extra_id_0>.,The Rockefeller University
+345,3985,2011,Irma Sluis attended <extra_id_0>.,HU University of Applied Sciences Utrecht;Heriot-Watt University
+346,3987,2011,Craig Gordon plays for <extra_id_0>.,Sunderland A.F.C.
+347,3997,2011,Amiruddin Hamzah is a member of the <extra_id_0>.,Malaysian Islamic Party
+348,4016,2011,<extra_id_0> is the chair of BayernSPD.,Florian Pronold
+349,4027,2011,<extra_id_0> is the head coach of University College Dublin A.F.C..,Martin Russell
+350,4033,2011,Gheorghe Falcă is a member of the <extra_id_0>.,Democratic Liberal Party
+351,4044,2011,Anna Júlia Donáth attended <extra_id_0>.,Eötvös Loránd University;University of Amsterdam
+352,4047,2011,Westfield Wheaton is owned by <extra_id_0>.,Westfield Group
+353,4058,2011,Sabine Schmidtke works for <extra_id_0>.,Freie Universität Berlin
+354,4069,2011,<extra_id_0> is the head of the government of Milan.,Letizia Moratti;Giuliano Pisapia
+355,4080,2011,Adrián González plays for <extra_id_0>.,Boston Red Sox
+356,4091,2011,Fraser Forster plays for <extra_id_0>.,Newcastle United F.C.;Celtic F.C.
+357,4102,2011,Heather Bresch holds the position of <extra_id_0>.,president
+358,4113,2011,511 Federal Building is owned by <extra_id_0>.,General Services Administration
+359,4124,2011,Dacian Cioloș holds the position of <extra_id_0>.,European Commissioner for Agriculture and Rural Development
+360,4140,2011,Yoh Iwasa works for <extra_id_0>.,Kyushu University
+361,4154,2011,Louis Moresi works for <extra_id_0>.,Monash University
+362,4169,2011,Dianne F. Harrison works for <extra_id_0>.,"California State University, Monterey Bay"
+363,4209,2011,Serdar Berdimuhamedow attended <extra_id_0>.,Geneva Centre for Security Policy;Diplomatic Academy of the Ministry of Foreign Affairs of the Russian Federation
+364,4213,2011,<extra_id_0> is the chair of Rio Tinto Group.,Jan du Plessis
+365,4224,2011,<extra_id_0> is the head of the government of Bourges.,Serge Lepeltier
+366,4238,2011,Jürgen Klopp works for <extra_id_0>.,Borussia Dortmund
+367,4249,2011,<extra_id_0> is the head coach of Pauwels Sauzen-Bingoal.,Mario De Clercq
+368,4255,2011,Tia Eron is a member of the <extra_id_0>.,Democrats
+369,4272,2011,Alberto Contador plays for <extra_id_0>.,Tinkoff
+370,4280,2011,Todd Rokita holds the position of <extra_id_0>.,United States representative
+371,4309,2011,Asia Durr attended <extra_id_0>.,St. Pius X Catholic High School
+372,4326,2011,Boxer TV Access is owned by <extra_id_0>.,Teracom
+373,4337,2011,Charlotte Hornets is owned by <extra_id_0>.,Michael Jordan
+374,4348,2011,Cesc Fàbregas plays for <extra_id_0>.,Arsenal F.C.;FC Barcelona
+375,4359,2011,Muttiah Muralitharan plays for <extra_id_0>.,Wellington cricket team;Gloucestershire County Cricket Club;Kochi Tuskers Kerala
+376,4364,2011,Marcelo plays for <extra_id_0>.,Brazil Olympic football team
+377,4369,2011,Aaron Judge plays for <extra_id_0>.,Fresno State Bulldogs baseball
+378,4378,2011,<extra_id_0> is the head of the government of Pescara.,Luigi Albore Mascia
+379,4389,2011,<extra_id_0> is the chair of Rhode Island School of Design.,John Maeda
+380,4400,2011,Pernille Vermund is a member of the <extra_id_0>.,Conservative People's Party
+381,4411,2011,P. J. Fleck works for <extra_id_0>.,Rutgers Scarlet Knights football
+382,4422,2011,Éamon Ó Cuív holds the position of <extra_id_0>.,"Minister for Defence;Minister for Housing, Planning and Local Government;Minister for Social Protection;Teachta Dála;Leader of Fianna Fáil"
+383,4433,2011,Henrikh Mkhitaryan plays for <extra_id_0>.,FC Shakhtar Donetsk
+384,4444,2011,Jonah Berger works for <extra_id_0>.,University of Pennsylvania
+385,4455,2011,Victor Oladipo plays for <extra_id_0>.,Indiana Hoosiers men's basketball
+386,4470,2011,Ronan O'Gara plays for <extra_id_0>.,Munster Rugby;Ireland national rugby union team
+387,4474,2011,<extra_id_0> is the head coach of Carolina Panthers.,Ron Rivera
+388,4484,2011,Syed Mustafa Kamal is a member of the <extra_id_0>.,Muttahida Qaumi Movement
+389,4494,2011,<extra_id_0> is the chair of People's Freedom Party.,Vladimir Ryzhkov;Valentina Melnikova
+390,4505,2011,Pranab Mukherjee holds the position of <extra_id_0>.,Minister of Finance;Leader of the House
+391,4513,2011,Wojciech Szczęsny plays for <extra_id_0>.,Arsenal F.C.;Poland national under-21 football team
+392,4524,2011,Chloe Bibby attended <extra_id_0>.,Rowville Secondary College
+393,4534,2011,Christiane Endler plays for <extra_id_0>.,Colo-Colo women's
+394,4545,2011,Chris Turney works for <extra_id_0>.,University of New South Wales
+395,4556,2011,Marissa Mayer works for <extra_id_0>.,Google
+396,4573,2011,Federico Macheda plays for <extra_id_0>.,Italy national under-21 football team;U.C. Sampdoria;Manchester United F.C.
+397,4584,2011,<extra_id_0> is the chair of Welsh Parliament.,Dafydd Elis-Thomas;Rosemary Butler
+398,4595,2011,Ryan Babel plays for <extra_id_0>.,TSG 1899 Hoffenheim;Netherlands national association football team;Liverpool F.C.
+399,4606,2011,Erin McLeod plays for <extra_id_0>.,Dalsjöfors GoIF
+400,4633,2011,<extra_id_0> is the head of the government of Boise.,David H. Bieter
+401,4644,2011,Wishnutama works for <extra_id_0>.,Trans TV;detik.com
+402,4655,2011,Ellen D. Williams works for <extra_id_0>.,bp
+403,4678,2011,<extra_id_0> is the chair of Caritas Italiana.,Giuseppe Merisi
+404,4689,2011,Santi Vila i Vicente is a member of the <extra_id_0>.,Democratic Convergence of Catalonia
+405,4698,2011,Aleksa Bečić is a member of the <extra_id_0>.,Socialist People's Party of Montenegro
+406,4709,2011,Ferrari is owned by <extra_id_0>.,Fiat S.p.A.
+407,4720,2011,Pepe plays for <extra_id_0>.,Real Madrid CF
+408,4739,2011,Catherine Guillouard works for <extra_id_0>.,Eutelsat
+409,4750,2011,Carlo Rovelli works for <extra_id_0>.,University of the Mediterranean - Aix Marseille II
+410,4761,2011,Monta Ellis plays for <extra_id_0>.,Golden State Warriors
+411,4772,2011,Justin Thomas attended <extra_id_0>.,St. Xavier High School;University of Alabama
+412,4776,2011,Chris Lattner works for <extra_id_0>.,Apple Inc.
+413,4787,2011,<extra_id_0> is the head of the government of Hamburg.,Olaf Scholz;Christoph Ahlhaus
+414,4810,2011,Thorbjørn Jagland holds the position of <extra_id_0>.,Secretary General of the Council of Europe;chairperson
+415,4820,2011,Johan Djourou plays for <extra_id_0>.,Arsenal F.C.
+416,4831,2011,Paul Butler holds the position of <extra_id_0>.,Bishop of Southwell and Nottingham
+417,4842,2011,Audun Lysbakken holds the position of <extra_id_0>.,Minister of Children and Family Affairs
+418,4853,2011,Vince Cable holds the position of <extra_id_0>.,"Secretary of State for Business, Energy and Industrial Strategy"
+419,4877,2011,Dina Bousselham is a member of the <extra_id_0>.,Authenticity and Modernity Party
+420,4888,2011,<extra_id_0> is the head of the government of Pau.,Martine Lignières-Cassou
+421,4899,2011,Yu Darvish plays for <extra_id_0>.,Hokkaido Nippon-Ham Fighters
+422,4910,2011,Peter Mathieson works for <extra_id_0>.,University of Bristol
+423,4921,2011,<extra_id_0> is the chair of PEN International.,John R. Saul
+424,4932,2011,Kevin-Prince Boateng plays for <extra_id_0>.,Ghana national football team;Associazione Calcio Milan
+425,4943,2011,Jon Stanhope holds the position of <extra_id_0>.,member of the Australian Capital Territory Legislative Assembly;Chief Minister of the Australian Capital Territory
+426,4945,2011,<extra_id_0> is the head of the government of Sahrawi Arab Democratic Republic.,Abdelkader Taleb Omar
+427,4971,2011,Clive Palmer is a member of the <extra_id_0>.,Liberal National Party of Queensland
+428,4982,2011,Stephanie Wehner works for <extra_id_0>.,Centre for Quantum Technologies;National University of Singapore
+429,5002,2011,<extra_id_0> is the head of the government of Auckland.,Len Brown
+430,5018,2011,Pier Paolo Pandolfi works for <extra_id_0>.,Beth Israel Deaconess Medical Center;Harvard Medical School

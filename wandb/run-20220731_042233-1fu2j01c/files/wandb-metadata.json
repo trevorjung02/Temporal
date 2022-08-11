@@ -1,0 +1,27 @@
+{
+    "os": "Linux-4.18.0-305.19.1.el8_4.x86_64-x86_64-with-glibc2.17",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-07-31T11:22:37.396007",
+    "startedAt": "2022-07-31T11:22:33.761886",
+    "docker": null,
+    "gpu": "NVIDIA A40",
+    "gpu_count": 1,
+    "cpu_count": 52,
+    "cuda": null,
+    "args": [
+        "--config",
+        "configs/small_setting/training/t5_kadapters.json"
+    ],
+    "state": "running",
+    "program": "run.py",
+    "codePath": "run.py",
+    "git": {
+        "remote": "https://github.com/joeljang/continual-knowledge-learning.git",
+        "commit": "f4f53f9f8e416809706f52b2a60abb14930f5356"
+    },
+    "email": null,
+    "root": "/mmfs1/gscratch/ark/tjung2/continual-knowledge-learning",
+    "host": "g3040",
+    "username": "tjung2",
+    "executable": "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/bin/python"
+}

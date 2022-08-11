@@ -1,0 +1,972 @@
+index,original,date,input,output
+0,3,2013,Valentino Rossi plays for <extra_id_0>.,<extra_id_0> Yamaha Motor Racing <extra_id_1>
+1,16,2013,LeBron James plays for <extra_id_0>.,<extra_id_0> Miami Heat <extra_id_1>
+2,27,2013,Bradley Wiggins plays for <extra_id_0>.,<extra_id_0> Ineos Grenadier <extra_id_1>
+3,34,2013,Eden Hazard plays for <extra_id_0>.,<extra_id_0> Chelsea F.C. <extra_id_1>
+4,45,2013,Steve Smith plays for <extra_id_0>.,<extra_id_0> Australia national cricket team <extra_id_1>
+5,56,2013,Luka Modrić plays for <extra_id_0>.,<extra_id_0> Real Madrid CF <extra_id_1>
+6,67,2013,Michael Owen plays for <extra_id_0>.,<extra_id_0> Stoke City F.C. <extra_id_1>
+7,74,2013,Erin McLeod plays for <extra_id_0>.,<extra_id_0> Dalsjöfors GoIF <extra_id_1>
+8,85,2013,Shakib Al Hasan plays for <extra_id_0>.,<extra_id_0> Bangladesh national cricket team <extra_id_1>
+9,93,2013,Dida plays for <extra_id_0>.,<extra_id_0> Grêmio Foot-Ball Porto Alegrense <extra_id_1>
+10,99,2013,Russell Westbrook plays for <extra_id_0>.,<extra_id_0> Oklahoma City Thunder <extra_id_1>
+11,110,2013,Vince Carter plays for <extra_id_0>.,<extra_id_0> Dallas Mavericks <extra_id_1>
+12,121,2013,Thiago Silva plays for <extra_id_0>.,<extra_id_0> Brazil national football team <extra_id_1>
+13,132,2013,Harry Kane plays for <extra_id_0>.,<extra_id_0> Leicester City F.C. <extra_id_1>
+14,143,2013,Robin van Persie plays for <extra_id_0>.,<extra_id_0> Netherlands national association football team <extra_id_1>
+15,153,2013,Yuvraj Singh plays for <extra_id_0>.,<extra_id_0> Pune Warriors India <extra_id_1>
+16,164,2013,Ashlyn Harris plays for <extra_id_0>.,<extra_id_0> Tyresö FF <extra_id_1>
+17,175,2013,Peter Sagan plays for <extra_id_0>.,<extra_id_0> Cannondale Pro Cycling Team <extra_id_1>
+18,186,2013,Markus Rosenberg plays for <extra_id_0>.,<extra_id_0> West Bromwich Albion F.C. <extra_id_1>
+19,197,2013,David Dunn plays for <extra_id_0>.,<extra_id_0> Blackburn Rovers F.C. <extra_id_1>
+20,204,2013,Fernando Torres plays for <extra_id_0>.,<extra_id_0> Chelsea F.C. <extra_id_1>
+21,214,2013,Paul Pogba plays for <extra_id_0>.,<extra_id_0> France national association football team <extra_id_1>
+22,228,2013,Damian Lillard plays for <extra_id_0>.,<extra_id_0> Portland Trail Blazers <extra_id_1>
+23,239,2013,James Rodríguez plays for <extra_id_0>.,<extra_id_0> AS Monaco FC <extra_id_1>
+24,250,2013,Mashrafe Mortaza plays for <extra_id_0>.,<extra_id_0> Dhaka Dynamites <extra_id_1>
+25,258,2013,Javier Hernández plays for <extra_id_0>.,<extra_id_0> Manchester United F.C. <extra_id_1>
+26,269,2013,Iker Casillas plays for <extra_id_0>.,<extra_id_0> Real Madrid CF <extra_id_1>
+27,287,2013,Jabo Ibehre plays for <extra_id_0>.,<extra_id_0> Colchester United F.C. <extra_id_1>
+28,301,2013,Xabi Alonso plays for <extra_id_0>.,<extra_id_0> Real Madrid CF <extra_id_1>
+29,309,2013,Jonny Wilkinson plays for <extra_id_0>.,<extra_id_0> RC Toulonnais <extra_id_1>
+30,320,2013,Jos Buttler plays for <extra_id_0>.,<extra_id_0> Melbourne Renegades <extra_id_1>
+31,331,2013,Maya Yoshida plays for <extra_id_0>.,<extra_id_0> Southampton F.C. <extra_id_1>
+32,342,2013,Chauncey Billups plays for <extra_id_0>.,<extra_id_0> Los Angeles Clippers <extra_id_1>
+33,347,2013,Paulo Centurión plays for <extra_id_0>.,<extra_id_0> Sol de América de Formosa <extra_id_1>
+34,358,2013,Jermaine O'Neal plays for <extra_id_0>.,<extra_id_0> Golden State Warriors <extra_id_1>
+35,363,2013,Carlos Vela plays for <extra_id_0>.,<extra_id_0> Real Sociedad <extra_id_1>
+36,373,2013,Nani plays for <extra_id_0>.,<extra_id_0> Manchester United F.C. <extra_id_1>
+37,384,2013,Edinson Cavani plays for <extra_id_0>.,<extra_id_0> Paris Saint-Germain <extra_id_1>
+38,395,2013,Steve Morison plays for <extra_id_0>.,<extra_id_0> Millwall F.C. <extra_id_1>
+39,406,2013,Sam Bradford plays for <extra_id_0>.,<extra_id_0> Los Angeles Rams <extra_id_1>
+40,417,2013,Eiji Kawashima plays for <extra_id_0>.,<extra_id_0> Standard Liège <extra_id_1>
+41,428,2013,Hatem Ben Arfa plays for <extra_id_0>.,<extra_id_0> Newcastle United F.C. <extra_id_1>
+42,439,2013,Lee Boylan plays for <extra_id_0>.,<extra_id_0> A.F.C. Sudbury <extra_id_1>
+43,444,2013,Jennison Myrie-Williams plays for <extra_id_0>.,<extra_id_0> Port Vale F.C. <extra_id_1>
+44,450,2013,Omar Abdulrahman plays for <extra_id_0>.,<extra_id_0> United Arab Emirates national football team <extra_id_1>
+45,461,2013,Jarryd Hayne plays for <extra_id_0>.,<extra_id_0> Australia national rugby league team <extra_id_1>
+46,466,2013,Tom Ince plays for <extra_id_0>.,<extra_id_0> Blackpool F.C. <extra_id_1>
+47,472,2013,Shahid Afridi plays for <extra_id_0>.,<extra_id_0> Melbourne Renegades <extra_id_1>
+48,483,2013,Kostas Manolas plays for <extra_id_0>.,<extra_id_0> Olympiacos F.C. <extra_id_1>
+49,494,2013,Diego Forlán plays for <extra_id_0>.,<extra_id_0> Uruguay national football team <extra_id_1>
+50,505,2013,Rafael van der Vaart plays for <extra_id_0>.,<extra_id_0> Hamburger SV <extra_id_1>
+51,518,2013,Jens Voigt plays for <extra_id_0>.,<extra_id_0> Trek-Segafredo <extra_id_1>
+52,523,2013,Sue Bird plays for <extra_id_0>.,<extra_id_0> UMMC Ekaterinburg <extra_id_1>
+53,528,2013,Vincenzo Nibali plays for <extra_id_0>.,<extra_id_0> Astana <extra_id_1>
+54,539,2013,Shane Duffy plays for <extra_id_0>.,<extra_id_0> Everton F.C. <extra_id_1>
+55,550,2013,Stephen Dobbie plays for <extra_id_0>.,<extra_id_0> Blackpool F.C. <extra_id_1>
+56,557,2013,Diego Biseswar plays for <extra_id_0>.,<extra_id_0> Kayserispor <extra_id_1>
+57,568,2013,Tillakaratne Dilshan plays for <extra_id_0>.,<extra_id_0> Royal Challengers Bangalore <extra_id_1>
+58,573,2013,Yohan Cabaye plays for <extra_id_0>.,<extra_id_0> France national association football team <extra_id_1>
+59,584,2013,Emmanuel Adebayor plays for <extra_id_0>.,<extra_id_0> Tottenham Hotspur F.C. <extra_id_1>
+60,595,2013,Patrick Bamford plays for <extra_id_0>.,<extra_id_0> England national under-21 football team <extra_id_1>
+61,606,2013,Steve Jones plays for <extra_id_0>.,<extra_id_0> Airbus UK Broughton F.C. <extra_id_1>
+62,617,2013,Mikel John Obi plays for <extra_id_0>.,<extra_id_0> Chelsea F.C. <extra_id_1>
+63,628,2013,Maria Jose Altamirano plays for <extra_id_0>.,<extra_id_0> Rabita Baku <extra_id_1>
+64,639,2013,Sölvi Ottesen plays for <extra_id_0>.,<extra_id_0> F.C. Copenhagen <extra_id_1>
+65,650,2013,Steve Smith Sr. plays for <extra_id_0>.,<extra_id_0> Carolina Panthers <extra_id_1>
+66,657,2013,Umar Akmal plays for <extra_id_0>.,<extra_id_0> Sui Northern Gas Pipelines Limited <extra_id_1>
+67,668,2013,Kirk Hinrich plays for <extra_id_0>.,<extra_id_0> Chicago Bulls <extra_id_1>
+68,682,2013,Jacoby Ellsbury plays for <extra_id_0>.,<extra_id_0> Boston Red Sox <extra_id_1>
+69,692,2013,Raúl Jiménez plays for <extra_id_0>.,<extra_id_0> Mexico national football team <extra_id_1>
+70,709,2013,Mathieu Valbuena plays for <extra_id_0>.,<extra_id_0> France national association football team <extra_id_1>
+71,720,2013,Armand Traoré plays for <extra_id_0>.,<extra_id_0> Senegal national football team <extra_id_1>
+72,734,2013,Jimmy Abdou plays for <extra_id_0>.,<extra_id_0> Comoros national football team <extra_id_1>
+73,745,2013,Ashley Cole plays for <extra_id_0>.,<extra_id_0> England national association football team <extra_id_1>
+74,755,2013,Jamie Carragher plays for <extra_id_0>.,<extra_id_0> Liverpool F.C. <extra_id_1>
+75,759,2013,Calais Campbell plays for <extra_id_0>.,<extra_id_0> Arizona Cardinals <extra_id_1>
+76,774,2013,Joe Cole plays for <extra_id_0>.,<extra_id_0> West Ham United F.C. <extra_id_1>
+77,783,2013,Gary Cahill plays for <extra_id_0>.,<extra_id_0> England national association football team <extra_id_1>
+78,794,2013,J. J. Redick plays for <extra_id_0>.,<extra_id_0> Los Angeles Clippers <extra_id_1>
+79,805,2013,James Taylor plays for <extra_id_0>.,<extra_id_0> Nottinghamshire County Cricket Club <extra_id_1>
+80,819,2013,Graeme Swann plays for <extra_id_0>.,<extra_id_0> Nottinghamshire County Cricket Club <extra_id_1>
+81,822,2013,Callum Ferguson plays for <extra_id_0>.,<extra_id_0> Adelaide Strikers <extra_id_1>
+82,833,2013,Daniel Xhafa plays for <extra_id_0>.,<extra_id_0> KF Teuta Durrës <extra_id_1>
+83,839,2013,Hamdi Salihi plays for <extra_id_0>.,<extra_id_0> D.C. United <extra_id_1>
+84,849,2013,Clayton Donaldson plays for <extra_id_0>.,<extra_id_0> Brentford F.C. <extra_id_1>
+85,860,2013,Rangana Herath plays for <extra_id_0>.,<extra_id_0> Tamil Union Cricket and Athletic Club <extra_id_1>
+86,871,2013,Sébastien Bassong plays for <extra_id_0>.,<extra_id_0> Norwich City F.C. <extra_id_1>
+87,877,2013,Kevin Trapp plays for <extra_id_0>.,<extra_id_0> Eintracht Frankfurt <extra_id_1>
+88,886,2013,Kristaps Porziņģis plays for <extra_id_0>.,<extra_id_0> Real Betis Baloncesto <extra_id_1>
+89,897,2013,Elis Bakaj plays for <extra_id_0>.,<extra_id_0> Albania national association football team <extra_id_1>
+90,908,2013,David James plays for <extra_id_0>.,<extra_id_0> Íþróttabandalag Vestmannaeyja <extra_id_1>
+91,913,2013,Blaise Matuidi plays for <extra_id_0>.,<extra_id_0> France national association football team <extra_id_1>
+92,924,2013,Filipe Morais plays for <extra_id_0>.,<extra_id_0> Stevenage F.C. <extra_id_1>
+93,935,2013,Ki Sung-yueng plays for <extra_id_0>.,<extra_id_0> Swansea City A.F.C. <extra_id_1>
+94,940,2013,Ronan O'Gara plays for <extra_id_0>.,<extra_id_0> Munster Rugby <extra_id_1>
+95,951,2013,André-Pierre Gignac plays for <extra_id_0>.,<extra_id_0> Olympique de Marseille <extra_id_1>
+96,957,2013,Marouane Chamakh plays for <extra_id_0>.,<extra_id_0> Arsenal F.C. <extra_id_1>
+97,963,2013,Zesh Rehman plays for <extra_id_0>.,<extra_id_0> Kitchee SC <extra_id_1>
+98,974,2013,Matt Prior plays for <extra_id_0>.,<extra_id_0> Sydney Thunder <extra_id_1>
+99,980,2013,Lasith Malinga plays for <extra_id_0>.,<extra_id_0> Guyana Amazon Warriors <extra_id_1>
+100,992,2013,Benji Marshall plays for <extra_id_0>.,<extra_id_0> Wests Tigers <extra_id_1>
+101,1003,2013,Erjon Bogdani plays for <extra_id_0>.,<extra_id_0> Albania national association football team <extra_id_1>
+102,1013,2013,Jeroen Zoet plays for <extra_id_0>.,<extra_id_0> Netherlands national under-21 football team <extra_id_1>
+103,1027,2013,Michael Clarke plays for <extra_id_0>.,<extra_id_0> Australia national cricket team <extra_id_1>
+104,1033,2013,Sol Bamba plays for <extra_id_0>.,<extra_id_0> Trabzonspor <extra_id_1>
+105,1039,2013,Anderson plays for <extra_id_0>.,<extra_id_0> Manchester United F.C. <extra_id_1>
+106,1050,2013,Jacques Kallis plays for <extra_id_0>.,<extra_id_0> South Africa national cricket team <extra_id_1>
+107,1056,2013,Isaiah Thomas plays for <extra_id_0>.,<extra_id_0> Sacramento Kings <extra_id_1>
+108,1067,2013,John Degenkolb plays for <extra_id_0>.,<extra_id_0> Team Sunweb <extra_id_1>
+109,1075,2013,Alex Hales plays for <extra_id_0>.,<extra_id_0> Melbourne Renegades <extra_id_1>
+110,1086,2013,Chris Beardsley plays for <extra_id_0>.,<extra_id_0> Preston North End F.C. <extra_id_1>
+111,1097,2013,Moussa Sissoko plays for <extra_id_0>.,<extra_id_0> Newcastle United F.C. <extra_id_1>
+112,1108,2013,Jonathan Sexton plays for <extra_id_0>.,<extra_id_0> British & Irish Lions <extra_id_1>
+113,1119,2013,Tim Paine plays for <extra_id_0>.,<extra_id_0> Australia national cricket team <extra_id_1>
+114,1130,2013,Patrick Kisnorbo plays for <extra_id_0>.,<extra_id_0> Leeds United F.C. <extra_id_1>
+115,1141,2013,Andrew Bogut plays for <extra_id_0>.,<extra_id_0> Golden State Warriors <extra_id_1>
+116,1152,2013,Tommy Elphick plays for <extra_id_0>.,<extra_id_0> AFC Bournemouth <extra_id_1>
+117,1163,2013,David Edgar plays for <extra_id_0>.,<extra_id_0> Burnley F.C. <extra_id_1>
+118,1173,2013,Paulo Dybala plays for <extra_id_0>.,<extra_id_0> Palermo FC <extra_id_1>
+119,1184,2013,Gary Roberts plays for <extra_id_0>.,<extra_id_0> Mansfield Town F.C. <extra_id_1>
+120,1190,2013,Wout Brama plays for <extra_id_0>.,<extra_id_0> FC Twente <extra_id_1>
+121,1201,2013,Victor Oladipo plays for <extra_id_0>.,<extra_id_0> Indiana Hoosiers men's basketball <extra_id_1>
+122,1212,2013,Víctor Ibarbo plays for <extra_id_0>.,<extra_id_0> Cagliari Calcio <extra_id_1>
+123,1226,2013,Anthony Martial plays for <extra_id_0>.,<extra_id_0> France national under-18 football team <extra_id_1>
+124,1237,2013,Gentjan Muça plays for <extra_id_0>.,<extra_id_0> KF Tirana <extra_id_1>
+125,1248,2013,Owen Farrell plays for <extra_id_0>.,<extra_id_0> British & Irish Lions <extra_id_1>
+126,1259,2013,Tyler Clippard plays for <extra_id_0>.,<extra_id_0> Washington Nationals <extra_id_1>
+127,1270,2013,Dejan Lovren plays for <extra_id_0>.,<extra_id_0> Southampton F.C. <extra_id_1>
+128,1284,2013,Salomon Kalou plays for <extra_id_0>.,<extra_id_0> Lille OSC <extra_id_1>
+129,1295,2013,Xherdan Shaqiri plays for <extra_id_0>.,<extra_id_0> Swiss national football team <extra_id_1>
+130,1306,2013,Tom Kennedy plays for <extra_id_0>.,<extra_id_0> Barnsley F.C. <extra_id_1>
+131,1317,2013,Raphaël Varane plays for <extra_id_0>.,<extra_id_0> France national under-21 football team <extra_id_1>
+132,1328,2013,Michael Hussey plays for <extra_id_0>.,<extra_id_0> Australia national cricket team <extra_id_1>
+133,1335,2013,Tony McMahon plays for <extra_id_0>.,<extra_id_0> Sheffield United F.C. <extra_id_1>
+134,1341,2013,Amr Zaki plays for <extra_id_0>.,<extra_id_0> Egypt national football team <extra_id_1>
+135,1347,2013,Mitchell Johnson plays for <extra_id_0>.,<extra_id_0> Australia national cricket team <extra_id_1>
+136,1360,2013,John Guidetti plays for <extra_id_0>.,<extra_id_0> Sweden national association football team <extra_id_1>
+137,1371,2013,Karim Matmour plays for <extra_id_0>.,<extra_id_0> 1. FC Kaiserslautern <extra_id_1>
+138,1382,2013,Greg Pearson plays for <extra_id_0>.,<extra_id_0> Hednesford Town F.C. <extra_id_1>
+139,1391,2013,Geoff Horsfield plays for <extra_id_0>.,<extra_id_0> Alvechurch F.C. <extra_id_1>
+140,1395,2013,Sanchez Watt plays for <extra_id_0>.,<extra_id_0> Arsenal F.C. <extra_id_1>
+141,1406,2013,Danny Hollands plays for <extra_id_0>.,<extra_id_0> Charlton Athletic F.C. <extra_id_1>
+142,1410,2013,Edgar Davids plays for <extra_id_0>.,<extra_id_0> Barnet F.C. <extra_id_1>
+143,1415,2013,Aleksandar Đurić plays for <extra_id_0>.,<extra_id_0> Tampines Rovers FC <extra_id_1>
+144,1420,2013,Adam Priestley plays for <extra_id_0>.,<extra_id_0> Farsley Celtic F.C. <extra_id_1>
+145,1431,2013,Glen Johnson plays for <extra_id_0>.,<extra_id_0> England national association football team <extra_id_1>
+146,1440,2013,Agon Mehmeti plays for <extra_id_0>.,<extra_id_0> Palermo FC <extra_id_1>
+147,1451,2013,Marta plays for <extra_id_0>.,<extra_id_0> Tyresö FF <extra_id_1>
+148,1462,2013,Hashim Mahomed Amla plays for <extra_id_0>.,<extra_id_0> Surrey County Cricket Club <extra_id_1>
+149,1473,2013,Andrea Bargnani plays for <extra_id_0>.,<extra_id_0> New York Knicks <extra_id_1>
+150,1483,2013,Teddy Bridgewater plays for <extra_id_0>.,<extra_id_0> Louisville Cardinals football <extra_id_1>
+151,1493,2013,Thibaut Curtua plays for <extra_id_0>.,<extra_id_0> Atlético Madrid <extra_id_1>
+152,1510,2013,Jérôme Boateng plays for <extra_id_0>.,<extra_id_0> FC Bayern Munich <extra_id_1>
+153,1521,2013,Zoltán Stieber plays for <extra_id_0>.,<extra_id_0> Hungary national association football team <extra_id_1>
+154,1532,2013,Ali Karimi plays for <extra_id_0>.,<extra_id_0> Persepolis F.C. <extra_id_1>
+155,1537,2013,Grétar Steinsson plays for <extra_id_0>.,<extra_id_0> Kayserispor <extra_id_1>
+156,1544,2013,Babar Azam plays for <extra_id_0>.,<extra_id_0> Islamabad Leopards <extra_id_1>
+157,1555,2013,Gareth Barry plays for <extra_id_0>.,<extra_id_0> Everton F.C. <extra_id_1>
+158,1566,2013,Jermaine Pennant plays for <extra_id_0>.,<extra_id_0> Wolverhampton Wanderers F.C. <extra_id_1>
+159,1577,2013,Chris Baird plays for <extra_id_0>.,<extra_id_0> Reading F.C. <extra_id_1>
+160,1588,2013,André Ayew plays for <extra_id_0>.,<extra_id_0> Olympique de Marseille <extra_id_1>
+161,1599,2013,Kevin Nolan plays for <extra_id_0>.,<extra_id_0> West Ham United F.C. <extra_id_1>
+162,1610,2013,Steven Naismith plays for <extra_id_0>.,<extra_id_0> Everton F.C. <extra_id_1>
+163,1621,2013,Shivnarine Chanderpaul plays for <extra_id_0>.,<extra_id_0> Derbyshire County Cricket Club <extra_id_1>
+164,1631,2013,Alex Oxlade-Chamberlain plays for <extra_id_0>.,<extra_id_0> Arsenal F.C. <extra_id_1>
+165,1642,2013,Nikola Mirotić plays for <extra_id_0>.,<extra_id_0> Real Madrid Baloncesto <extra_id_1>
+166,1653,2013,Katie Chapman plays for <extra_id_0>.,<extra_id_0> Arsenal W.F.C. <extra_id_1>
+167,1664,2013,Teddy Chevalier plays for <extra_id_0>.,<extra_id_0> K.V. Kortrijk <extra_id_1>
+168,1675,2013,Lewis Holtby plays for <extra_id_0>.,<extra_id_0> Tottenham Hotspur F.C. <extra_id_1>
+169,1688,2013,Adam Chicksen plays for <extra_id_0>.,<extra_id_0> Milton Keynes Dons F.C. <extra_id_1>
+170,1699,2013,Jamie Ashdown plays for <extra_id_0>.,<extra_id_0> Leeds United F.C. <extra_id_1>
+171,1705,2013,Óscar Cardozo plays for <extra_id_0>.,<extra_id_0> S.L. Benfica <extra_id_1>
+172,1713,2013,Renato Sanches plays for <extra_id_0>.,<extra_id_0> Portugal national under-16 football team <extra_id_1>
+173,1724,2013,Richard Cresswell plays for <extra_id_0>.,<extra_id_0> York City F.C. <extra_id_1>
+174,1729,2013,Emre Can plays for <extra_id_0>.,<extra_id_0> Bayer 04 Leverkusen <extra_id_1>
+175,1740,2013,Therese Sjögran plays for <extra_id_0>.,<extra_id_0> Sweden women's national association football team <extra_id_1>
+176,1746,2013,Caron Butler plays for <extra_id_0>.,<extra_id_0> Los Angeles Clippers <extra_id_1>
+177,1753,2013,Liam Palmer plays for <extra_id_0>.,<extra_id_0> Tranmere Rovers F.C. <extra_id_1>
+178,1757,2013,Robert Snodgrass plays for <extra_id_0>.,<extra_id_0> Scotland national football team <extra_id_1>
+179,1768,2013,Kieron Pollard plays for <extra_id_0>.,<extra_id_0> Mumbai Indians <extra_id_1>
+180,1779,2013,Kenneth Vermeer plays for <extra_id_0>.,<extra_id_0> Jong Ajax <extra_id_1>
+181,1790,2013,Matty Fryatt plays for <extra_id_0>.,<extra_id_0> Sheffield Wednesday F.C. <extra_id_1>
+182,1801,2013,Niall McGinn plays for <extra_id_0>.,<extra_id_0> Aberdeen F.C. <extra_id_1>
+183,1812,2013,Nathan Redmond plays for <extra_id_0>.,<extra_id_0> England national under-21 football team <extra_id_1>
+184,1823,2013,Sardar Azmoun plays for <extra_id_0>.,<extra_id_0> Rubin Kazan <extra_id_1>
+185,1837,2013,Robert Green plays for <extra_id_0>.,<extra_id_0> Queens Park Rangers F.C. <extra_id_1>
+186,1848,2013,Matt Godden plays for <extra_id_0>.,<extra_id_0> Dartford F.C. <extra_id_1>
+187,1859,2013,Robert Mugabe holds the position of <extra_id_0>.,<extra_id_0> President of Zimbabwe <extra_id_1>
+188,1869,2013,Recep Tayyip Erdoğan holds the position of <extra_id_0>.,<extra_id_0> Prime Minister of Turkey <extra_id_1>
+189,1880,2013,Boris Johnson holds the position of <extra_id_0>.,<extra_id_0> Mayor of London <extra_id_1>
+190,1891,2013,Vladimir Putin holds the position of <extra_id_0>.,<extra_id_0> Supreme Commander-in-Chief of the Armed Forces of the Russian Federation <extra_id_1>
+191,1902,2013,Mike Pence holds the position of <extra_id_0>.,<extra_id_0> Governor of Indiana <extra_id_1>
+192,1912,2013,Scott Pruitt holds the position of <extra_id_0>.,<extra_id_0> Attorney General of Oklahoma <extra_id_1>
+193,1923,2013,Rafael Correa Delgado holds the position of <extra_id_0>.,<extra_id_0> President of Ecuador <extra_id_1>
+194,1938,2013,Richard Blumenthal holds the position of <extra_id_0>.,<extra_id_0> United States senator <extra_id_1>
+195,1949,2013,Jeff Sessions holds the position of <extra_id_0>.,<extra_id_0> United States senator <extra_id_1>
+196,1968,2013,Traian Băsescu holds the position of <extra_id_0>.,<extra_id_0> President of Romania <extra_id_1>
+197,1975,2013,Dmitry Medvedev holds the position of <extra_id_0>.,<extra_id_0> Prime Minister of Russia <extra_id_1>
+198,1986,2013,Lee Jae-myung holds the position of <extra_id_0>.,<extra_id_0> mayor <extra_id_1>
+199,1997,2013,Frank Underwood holds the position of <extra_id_0>.,<extra_id_0> whip <extra_id_1>
+200,2008,2013,Ed Miliband holds the position of <extra_id_0>.,<extra_id_0> Leader of the Labour Party <extra_id_1>
+201,2014,2013,Mike Pompeo holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+202,2025,2013,John Baird holds the position of <extra_id_0>.,<extra_id_0> Minister of Foreign Affairs of Canada <extra_id_1>
+203,2031,2013,Enda Kenny holds the position of <extra_id_0>.,<extra_id_0> Teachta Dála <extra_id_1>
+204,2042,2013,Steve Cohen holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+205,2053,2013,Mitch McConnell holds the position of <extra_id_0>.,<extra_id_0> United States senator <extra_id_1>
+206,2064,2013,Eric Garcetti holds the position of <extra_id_0>.,<extra_id_0> Mayor of the City of Los Angeles <extra_id_1>
+207,2072,2013,Frank-Walter Steinmeier holds the position of <extra_id_0>.,<extra_id_0> Federal Minister for Foreign Affairs <extra_id_1>
+208,2083,2013,Jeff Flake holds the position of <extra_id_0>.,<extra_id_0> United States senator <extra_id_1>
+209,2092,2013,Andrew Scheer holds the position of <extra_id_0>.,<extra_id_0> Speaker of the House of Commons <extra_id_1>
+210,2101,2013,Aleksandar Vučić holds the position of <extra_id_0>.,<extra_id_0> Deputy Prime Minister of Serbia <extra_id_1>
+211,2124,2013,James R. Clapper holds the position of <extra_id_0>.,<extra_id_0> Director of National Intelligence <extra_id_1>
+212,2135,2013,Mike Honda holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+213,2143,2013,Pranab Mukherjee holds the position of <extra_id_0>.,<extra_id_0> President of India <extra_id_1>
+214,2148,2013,Peter Dutton holds the position of <extra_id_0>.,<extra_id_0> Minister for Health <extra_id_1>
+215,2160,2013,Kenneth Clarke holds the position of <extra_id_0>.,<extra_id_0> minister without portfolio <extra_id_1>
+216,2171,2013,Nicola Sturgeon holds the position of <extra_id_0>.,<extra_id_0> Deputy First Minister of Scotland <extra_id_1>
+217,2182,2013,Mahmoud Abbas holds the position of <extra_id_0>.,<extra_id_0> President of the State of Palestine <extra_id_1>
+218,2193,2013,Abdul Taib Mahmud holds the position of <extra_id_0>.,<extra_id_0> Chief Minister of Sarawak <extra_id_1>
+219,2204,2013,Joe Donnelly holds the position of <extra_id_0>.,<extra_id_0> United States senator <extra_id_1>
+220,2212,2013,Salman of Saudi Arabia holds the position of <extra_id_0>.,<extra_id_0> Crown Prince of Saudi Arabia <extra_id_1>
+221,2220,2013,Mark Meadows holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+222,2230,2013,Tim Scott holds the position of <extra_id_0>.,<extra_id_0> United States senator <extra_id_1>
+223,2240,2013,Oleksandr Turchynov holds the position of <extra_id_0>.,<extra_id_0> People's Deputy of Ukraine <extra_id_1>
+224,2256,2013,Viviane Reding holds the position of <extra_id_0>.,"<extra_id_0> European Commissioner for Justice, Fundamental Rights and Citizenship <extra_id_1>"
+225,2265,2013,Arseniy Yatsenyuk holds the position of <extra_id_0>.,<extra_id_0> People's Deputy of Ukraine <extra_id_1>
+226,2272,2013,Thomas Massie holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+227,2279,2013,Andrej Plenković holds the position of <extra_id_0>.,<extra_id_0> member of the European Parliament <extra_id_1>
+228,2290,2013,Judith Collins holds the position of <extra_id_0>.,<extra_id_0> Minister of Justice <extra_id_1>
+229,2301,2013,Roy Blunt holds the position of <extra_id_0>.,<extra_id_0> United States senator <extra_id_1>
+230,2312,2013,Li Keqiang holds the position of <extra_id_0>.,<extra_id_0> Premier of the State Council of the People's Republic of China <extra_id_1>
+231,2327,2013,Andy Burnham holds the position of <extra_id_0>.,<extra_id_0> Shadow Secretary of State for Health <extra_id_1>
+232,2338,2013,Serzh Sargsyan holds the position of <extra_id_0>.,<extra_id_0> President of Armenia <extra_id_1>
+233,2347,2013,Raúl Castro Ruz holds the position of <extra_id_0>.,<extra_id_0> Prime Minister of Cuba <extra_id_1>
+234,2373,2013,Selina Meyer holds the position of <extra_id_0>.,<extra_id_0> Vice President of the United States <extra_id_1>
+235,2379,2013,Kristi Noem holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+236,2390,2013,Ruairi Quinn holds the position of <extra_id_0>.,<extra_id_0> Teachta Dála <extra_id_1>
+237,2396,2013,Alistair Darling holds the position of <extra_id_0>.,<extra_id_0> chairperson <extra_id_1>
+238,2407,2013,Dominic Grieve holds the position of <extra_id_0>.,<extra_id_0> Advocate General for Northern Ireland <extra_id_1>
+239,2422,2013,Muhyiddin Yassin holds the position of <extra_id_0>.,<extra_id_0> Minister of Education <extra_id_1>
+240,2429,2013,Jim Sensenbrenner holds the position of <extra_id_0>.,<extra_id_0> delegate <extra_id_1>
+241,2445,2013,Bill Cassidy holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+242,2456,2013,Chris Van Hollen holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+243,2465,2013,Owen Smith holds the position of <extra_id_0>.,<extra_id_0> Shadow Secretary of State for Wales <extra_id_1>
+244,2474,2013,László Tőkés holds the position of <extra_id_0>.,<extra_id_0> member of the European Parliament <extra_id_1>
+245,2484,2013,Bridget McKenzie holds the position of <extra_id_0>.,<extra_id_0> Member of the Australian Senate <extra_id_1>
+246,2498,2013,Stefan Löfven holds the position of <extra_id_0>.,<extra_id_0> party leader <extra_id_1>
+247,2509,2013,Brian Schatz holds the position of <extra_id_0>.,<extra_id_0> United States senator <extra_id_1>
+248,2519,2013,Mario Monti holds the position of <extra_id_0>.,<extra_id_0> Prime Minister of Italy <extra_id_1>
+249,2530,2013,Malusi Gigaba holds the position of <extra_id_0>.,<extra_id_0> Minister of Public Enterprises <extra_id_1>
+250,2539,2013,Damian Green holds the position of <extra_id_0>.,<extra_id_0> Minister for Policing <extra_id_1>
+251,2547,2013,Almazbek Atambayev holds the position of <extra_id_0>.,<extra_id_0> President of Kyrgyzstan <extra_id_1>
+252,2558,2013,Trey Gowdy holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+253,2573,2013,Joe Higgins holds the position of <extra_id_0>.,<extra_id_0> Teachta Dála <extra_id_1>
+254,2580,2013,Lynne Featherstone holds the position of <extra_id_0>.,<extra_id_0> Department for International Development <extra_id_1>
+255,2593,2013,"David Julian Richards, Baron Richards of Herstmonceux holds the position of <extra_id_0>.",<extra_id_0> Chief of the Defence Staff <extra_id_1>
+256,2608,2013,Hubertus Leteng holds the position of <extra_id_0>.,<extra_id_0> diocesan bishop <extra_id_1>
+257,2619,2013,Xavier Becerra holds the position of <extra_id_0>.,<extra_id_0> Democratic Caucus Chairman of the United States House of Representatives <extra_id_1>
+258,2630,2013,Phil Hogan holds the position of <extra_id_0>.,<extra_id_0> Teachta Dála <extra_id_1>
+259,2641,2013,"Daniel M. Donovan, Jr. holds the position of <extra_id_0>.",<extra_id_0> New York County District Attorney <extra_id_1>
+260,2650,2013,Knut Arild Hareide holds the position of <extra_id_0>.,<extra_id_0> party leader <extra_id_1>
+261,2666,2013,Abdrabbuh Mansour Hadi holds the position of <extra_id_0>.,<extra_id_0> President of Yemenمهدي محمد المشاط <extra_id_1>
+262,2685,2013,Tony Baldry holds the position of <extra_id_0>.,<extra_id_0> Church Commissioners <extra_id_1>
+263,2691,2013,Gary Locke holds the position of <extra_id_0>.,<extra_id_0> United States Ambassador to China <extra_id_1>
+264,2703,2013,Jeff Colyer holds the position of <extra_id_0>.,<extra_id_0> Lieutenant Governor of Kansas <extra_id_1>
+265,2719,2013,Eric Chu holds the position of <extra_id_0>.,<extra_id_0> Mayor of New Taipei <extra_id_1>
+266,2728,2013,Wang Qishan holds the position of <extra_id_0>.,<extra_id_0> Secretary of the Central Commission for Discipline Inspection <extra_id_1>
+267,2736,2013,Michael Fallon holds the position of <extra_id_0>.,<extra_id_0> Minister of State at the Department of Energy and Climate Change <extra_id_1>
+268,2754,2013,Rodney L. Davis holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+269,2765,2013,Ivan Lewis holds the position of <extra_id_0>.,<extra_id_0> Shadow Secretary of State for Northern Ireland <extra_id_1>
+270,2770,2013,Benny Gantz holds the position of <extra_id_0>.,<extra_id_0> Chief of the General Staff (Israel) <extra_id_1>
+271,2776,2013,Margrethe Vestager holds the position of <extra_id_0>.,<extra_id_0> Deputy Prime Minister of Denmark <extra_id_1>
+272,2791,2013,Ruben Kihuen holds the position of <extra_id_0>.,<extra_id_0> whip <extra_id_1>
+273,2800,2013,Virginia Foxx holds the position of <extra_id_0>.,<extra_id_0> Republican Conference Secretary of the United States House of Representatives <extra_id_1>
+274,2810,2013,Mette Frederiksen holds the position of <extra_id_0>.,<extra_id_0> Danish Minister for Labour <extra_id_1>
+275,2818,2013,James Comer holds the position of <extra_id_0>.,<extra_id_0> commissioner <extra_id_1>
+276,2833,2013,Édouard Philippe holds the position of <extra_id_0>.,<extra_id_0> president <extra_id_1>
+277,2849,2013,Tassaduq Hussain Jillani holds the position of <extra_id_0>.,<extra_id_0> Chief Election Commissioner of Pakistan <extra_id_1>
+278,2858,2013,Lawrence Thomas Persico holds the position of <extra_id_0>.,<extra_id_0> diocesan bishop <extra_id_1>
+279,2871,2013,David Hurley holds the position of <extra_id_0>.,<extra_id_0> Chief of the Defence Force <extra_id_1>
+280,2882,2013,David McAllister holds the position of <extra_id_0>.,<extra_id_0> Minister-President of Lower Saxony <extra_id_1>
+281,2893,2013,Dacian Cioloș holds the position of <extra_id_0>.,<extra_id_0> European Commissioner for Agriculture and Rural Development <extra_id_1>
+282,2913,2013,Dominique Mamberti holds the position of <extra_id_0>.,<extra_id_0> Secretary for Relations with States <extra_id_1>
+283,2927,2013,Naledi Pandor holds the position of <extra_id_0>.,<extra_id_0> Minister of Home Affairs <extra_id_1>
+284,2938,2013,Desmond Swayne holds the position of <extra_id_0>.,<extra_id_0> Lord of the Treasury <extra_id_1>
+285,2940,2013,Chris Leslie holds the position of <extra_id_0>.,<extra_id_0> Shadow Chief Secretary to the Treasury <extra_id_1>
+286,2945,2013,Mikie Sherrill holds the position of <extra_id_0>.,<extra_id_0> United States Attorney for the District of New Jersey <extra_id_1>
+287,2951,2013,Philippe Couillard holds the position of <extra_id_0>.,<extra_id_0> Member of the National Assembly of Quebec <extra_id_1>
+288,2957,2013,Mark Drakeford holds the position of <extra_id_0>.,<extra_id_0> Minister for Health and Social Services <extra_id_1>
+289,2967,2013,Karel De Gucht holds the position of <extra_id_0>.,<extra_id_0> European Commissioner for Trade <extra_id_1>
+290,2981,2013,Olav Fykse Tveit holds the position of <extra_id_0>.,<extra_id_0> general secretary <extra_id_1>
+291,2992,2013,Volodymyr Lytvyn holds the position of <extra_id_0>.,<extra_id_0> People's Deputy of Ukraine <extra_id_1>
+292,3008,2013,"Thomas A. Shannon, Jr. holds the position of <extra_id_0>.",<extra_id_0> Counselor of the United States Department of State <extra_id_1>
+293,3017,2013,Dawn Primarolo holds the position of <extra_id_0>.,<extra_id_0> Chairman of Ways and Means <extra_id_1>
+294,3027,2013,Clare Daly holds the position of <extra_id_0>.,<extra_id_0> Teachta Dála <extra_id_1>
+295,3043,2013,Michael Spindelegger holds the position of <extra_id_0>.,<extra_id_0> Vice-Chancellor of Austria <extra_id_1>
+296,3054,2013,Miguel Díaz-Canel holds the position of <extra_id_0>.,<extra_id_0> Vice President of Cuba <extra_id_1>
+297,3065,2013,Seán Barrett holds the position of <extra_id_0>.,<extra_id_0> Teachta Dála <extra_id_1>
+298,3073,2013,"Jonathan Hill, Baron Hill of Oareford holds the position of <extra_id_0>.",<extra_id_0> Chancellor of the Duchy of Lancaster <extra_id_1>
+299,3081,2013,Jon Trickett holds the position of <extra_id_0>.,<extra_id_0> Minister for the Cabinet Office <extra_id_1>
+300,3087,2013,Maria Eagle holds the position of <extra_id_0>.,<extra_id_0> Shadow Secretary of State for Transport <extra_id_1>
+301,3093,2013,Susanna Ceccardi holds the position of <extra_id_0>.,<extra_id_0> councillor <extra_id_1>
+302,3101,2013,Xavier Bettel holds the position of <extra_id_0>.,<extra_id_0> Prime Minister of Luxembourg <extra_id_1>
+303,3112,2013,John L. Hennessy holds the position of <extra_id_0>.,<extra_id_0> president <extra_id_1>
+304,3122,2013,Dražen Kutleša holds the position of <extra_id_0>.,<extra_id_0> diocesan bishop <extra_id_1>
+305,3131,2013,Anders Brännström holds the position of <extra_id_0>.,<extra_id_0> Chief of Army <extra_id_1>
+306,3138,2013,Paul Butler holds the position of <extra_id_0>.,<extra_id_0> Bishop of Southwell and Nottingham <extra_id_1>
+307,3147,2013,Trent Kelly holds the position of <extra_id_0>.,<extra_id_0> district attorney <extra_id_1>
+308,3163,2013,Dalo Bucaram holds the position of <extra_id_0>.,<extra_id_0> Supreme director <extra_id_1>
+309,3171,2013,Nick Houghton holds the position of <extra_id_0>.,<extra_id_0> Chief of the Defence Staff <extra_id_1>
+310,3181,2013,Antonino Raspanti holds the position of <extra_id_0>.,<extra_id_0> diocesan bishop <extra_id_1>
+311,3192,2013,Craig Emerson holds the position of <extra_id_0>.,<extra_id_0> Minister for Trade <extra_id_1>
+312,3207,2013,Marisol Touraine holds the position of <extra_id_0>.,<extra_id_0> Minister of Labour <extra_id_1>
+313,3215,2013,Jutta Urpilainen holds the position of <extra_id_0>.,<extra_id_0> party leader <extra_id_1>
+314,3220,2013,Petr Nečas holds the position of <extra_id_0>.,<extra_id_0> party leader <extra_id_1>
+315,3222,2013,Taur Matan Ruak holds the position of <extra_id_0>.,<extra_id_0> President of East Timor <extra_id_1>
+316,3239,2013,Zsolt Borkai holds the position of <extra_id_0>.,<extra_id_0> president <extra_id_1>
+317,3246,2013,Soraya Sáenz de Santamaría holds the position of <extra_id_0>.,<extra_id_0> Deputy Prime Minister of Spain <extra_id_1>
+318,3257,2013,Raimonds Vējonis holds the position of <extra_id_0>.,<extra_id_0> Minister of Defence <extra_id_1>
+319,3265,2013,Tim Davie holds the position of <extra_id_0>.,<extra_id_0> Director-General of the BBC <extra_id_1>
+320,3275,2013,Stephen Donnelly holds the position of <extra_id_0>.,<extra_id_0> Teachta Dála <extra_id_1>
+321,3286,2013,Charles Shor holds the position of <extra_id_0>.,<extra_id_0> président-directeur général <extra_id_1>
+322,3290,2013,Sampathawaduge Maxwell Grenville Silva holds the position of <extra_id_0>.,<extra_id_0> auxiliary bishop <extra_id_1>
+323,3306,2013,Brendan Smith holds the position of <extra_id_0>.,<extra_id_0> Teachta Dála <extra_id_1>
+324,3317,2013,David Dabede Mabuza holds the position of <extra_id_0>.,<extra_id_0> Premier of Mpumalanga <extra_id_1>
+325,3332,2013,Donna Christian-Christensen holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+326,3337,2013,Mary Mitchell O'Connor holds the position of <extra_id_0>.,<extra_id_0> Teachta Dála <extra_id_1>
+327,3348,2013,Arayik Harutyunyan holds the position of <extra_id_0>.,<extra_id_0> Prime Minister of Artsakh <extra_id_1>
+328,3354,2013,Malala Yousafzai attended <extra_id_0>.,<extra_id_0> Edgbaston High School <extra_id_1>
+329,3365,2013,Nik Stauskas attended <extra_id_0>.,<extra_id_0> University of Michigan <extra_id_1>
+330,3370,2013,Katie Ledecky attended <extra_id_0>.,<extra_id_0> Stone Ridge School of the Sacred Heart <extra_id_1>
+331,3381,2013,Baker Mayfield attended <extra_id_0>.,<extra_id_0> Texas Tech University <extra_id_1>
+332,3395,2013,Nigel Williams-Goss attended <extra_id_0>.,<extra_id_0> University of Washington <extra_id_1>
+333,3403,2013,Marco Gonzales attended <extra_id_0>.,<extra_id_0> Gonzaga University <extra_id_1>
+334,3407,2013,Johnathan Williams attended <extra_id_0>.,<extra_id_0> University of Missouri <extra_id_1>
+335,3416,2013,Frank Kaminsky attended <extra_id_0>.,<extra_id_0> University of Wisconsin–Madison <extra_id_1>
+336,3427,2013,Jazmin Grace Grimaldi attended <extra_id_0>.,<extra_id_0> Fordham University <extra_id_1>
+337,3432,2013,Mike Gallagher attended <extra_id_0>.,<extra_id_0> Georgetown University <extra_id_1>
+338,3438,2013,Jevon Carter attended <extra_id_0>.,<extra_id_0> Proviso East High School <extra_id_1>
+339,3449,2013,Jeffrey Mark Deskovic attended <extra_id_0>.,<extra_id_0> John Jay College of Criminal Justice <extra_id_1>
+340,3463,2013,Thomas Walkup attended <extra_id_0>.,<extra_id_0> Stephen F. Austin State University <extra_id_1>
+341,3470,2013,Killian Tillie attended <extra_id_0>.,<extra_id_0> INSEP <extra_id_1>
+342,3486,2013,Luke Falk attended <extra_id_0>.,<extra_id_0> Washington State University <extra_id_1>
+343,3495,2013,Robert Upshaw attended <extra_id_0>.,"<extra_id_0> California State University, Fresno <extra_id_1>"
+344,3501,2013,Vianney attended <extra_id_0>.,<extra_id_0> Esmod <extra_id_1>
+345,3506,2013,Tiffany Trump attended <extra_id_0>.,<extra_id_0> University of Pennsylvania <extra_id_1>
+346,3514,2013,Leticia Romero attended <extra_id_0>.,<extra_id_0> Kansas State University <extra_id_1>
+347,3525,2013,Fletcher Magee attended <extra_id_0>.,<extra_id_0> The First Academy <extra_id_1>
+348,3536,2013,Grant Williams attended <extra_id_0>.,<extra_id_0> Providence Day School <extra_id_1>
+349,3547,2013,Derek Willis attended <extra_id_0>.,<extra_id_0> Bullitt East High School <extra_id_1>
+350,3555,2013,Andrew Donlin attended <extra_id_0>.,<extra_id_0> United States Air Force Academy <extra_id_1>
+351,3561,2013,Kylie Moore-Gilbert attended <extra_id_0>.,<extra_id_0> University of Cambridge <extra_id_1>
+352,3577,2013,Felix Finkbeiner attended <extra_id_0>.,"<extra_id_0> School of Oriental and African Studies, University of London <extra_id_1>"
+353,3593,2013,Clayton Custer attended <extra_id_0>.,<extra_id_0> Blue Valley Northwest High School <extra_id_1>
+354,3609,2013,S. Olvah Alhamid attended <extra_id_0>.,<extra_id_0> University of Groningen <extra_id_1>
+355,3613,2013,Katalin Cseh attended <extra_id_0>.,<extra_id_0> Semmelweis University <extra_id_1>
+356,3622,2013,Evelyn Akhator attended <extra_id_0>.,<extra_id_0> Chipola College <extra_id_1>
+357,3630,2013,Megan Walker attended <extra_id_0>.,<extra_id_0> Monacan High School <extra_id_1>
+358,3643,2013,Elina Netšajeva attended <extra_id_0>.,<extra_id_0> Estonian Academy of Music and Theatre <extra_id_1>
+359,3649,2013,Jessica Shepard attended <extra_id_0>.,<extra_id_0> Fremont Senior High School <extra_id_1>
+360,3665,2013,Alexandra Mitroshina attended <extra_id_0>.,<extra_id_0> MSU Faculty of Journalism <extra_id_1>
+361,3673,2013,Louise Coldefy attended <extra_id_0>.,<extra_id_0> Conservatoire national supérieur d'art dramatique <extra_id_1>
+362,3684,2013,Alexandre Benalla attended <extra_id_0>.,<extra_id_0> University of Clermont-Ferrand (1896-1976) <extra_id_1>
+363,3689,2013,Brielle Biermann attended <extra_id_0>.,<extra_id_0> Cambridge High School <extra_id_1>
+364,3700,2013,<extra_id_0> is the chair of bp.,<extra_id_0> Carl-Henric Svanberg <extra_id_1>
+365,3711,2013,<extra_id_0> is the chair of Republican Party.,<extra_id_0> Reince Priebus <extra_id_1>
+366,3719,2013,<extra_id_0> is the chair of Islamic State of Iraq and the Levant.,<extra_id_0> Abu Bakr al-Baghdadi <extra_id_1>
+367,3730,2013,<extra_id_0> is the chair of Democratic Party.,<extra_id_0> Rosy Bindi <extra_id_1>
+368,3741,2013,<extra_id_0> is the chair of Sainsbury's.,<extra_id_0> Justin King <extra_id_1>
+369,3748,2013,<extra_id_0> is the chair of National Rally.,<extra_id_0> Marine Le Pen <extra_id_1>
+370,3759,2013,<extra_id_0> is the chair of Swansea City A.F.C..,<extra_id_0> Huw Jenkins <extra_id_1>
+371,3770,2013,<extra_id_0> is the chair of Libertarian Party.,<extra_id_0> Geoff Neale <extra_id_1>
+372,3781,2013,<extra_id_0> is the chair of Anti-Defamation League.,<extra_id_0> Abraham Foxman <extra_id_1>
+373,3792,2013,<extra_id_0> is the chair of International Olympic Committee.,<extra_id_0> Thomas Bach <extra_id_1>
+374,3803,2013,<extra_id_0> is the chair of HSBC.,<extra_id_0> Douglas Flint <extra_id_1>
+375,3812,2013,<extra_id_0> is the chair of World Bank.,<extra_id_0> Jim Yong Kim <extra_id_1>
+376,3820,2013,<extra_id_0> is the chair of Alternative for Germany.,<extra_id_0> Bernd Lucke <extra_id_1>
+377,3831,2013,<extra_id_0> is the chair of Scottish Parliament.,<extra_id_0> Tricia Marwick <extra_id_1>
+378,3842,2013,<extra_id_0> is the chair of Aston Villa F.C..,<extra_id_0> Xia Jiantong <extra_id_1>
+379,3853,2013,<extra_id_0> is the chair of International Shooting Sport Federation.,<extra_id_0> Olegario Vázquez Raña <extra_id_1>
+380,3864,2013,<extra_id_0> is the chair of Finns Party.,<extra_id_0> Timo Soini <extra_id_1>
+381,3875,2013,<extra_id_0> is the chair of Unilever.,<extra_id_0> Michael Treschow <extra_id_1>
+382,3885,2013,<extra_id_0> is the chair of Organisation of Islamic Cooperation.,<extra_id_0> Ekmeleddin İhsanoğlu <extra_id_1>
+383,3896,2013,<extra_id_0> is the chair of NatWest Group.,<extra_id_0> Sir Philip Hampton <extra_id_1>
+384,3906,2013,<extra_id_0> is the chair of Conseil national du numérique.,<extra_id_0> Gilles Babinet <extra_id_1>
+385,3917,2013,<extra_id_0> is the chair of Lloyds Banking Group.,<extra_id_0> Winfried Bischoff <extra_id_1>
+386,3934,2013,<extra_id_0> is the chair of Democratic Progressive Party.,<extra_id_0> Su Tseng-chang <extra_id_1>
+387,3948,2013,<extra_id_0> is the chair of Stortinget.,<extra_id_0> Olemic Thommessen <extra_id_1>
+388,3958,2013,<extra_id_0> is the chair of Association for Computing Machinery.,<extra_id_0> Vint Cerf <extra_id_1>
+389,3969,2013,<extra_id_0> is the chair of French National Assembly.,<extra_id_0> Claude Bartolone <extra_id_1>
+390,3980,2013,<extra_id_0> is the chair of Knesset.,<extra_id_0> Reuven Rivlin <extra_id_1>
+391,3995,2013,<extra_id_0> is the chair of Estonian Centre Party.,<extra_id_0> Edgar Savisaar <extra_id_1>
+392,4006,2013,<extra_id_0> is the chair of Folketing.,<extra_id_0> Mogens Lykketoft <extra_id_1>
+393,4017,2013,<extra_id_0> is the chair of Danish People's Party.,<extra_id_0> Kristian Thulesen Dahl <extra_id_1>
+394,4026,2013,<extra_id_0> is the chair of Club of Rome.,<extra_id_0> Anders Wijkman <extra_id_1>
+395,4044,2013,<extra_id_0> is the chair of International Bank for Reconstruction and Development.,<extra_id_0> Jim Yong Kim <extra_id_1>
+396,4055,2013,<extra_id_0> is the chair of Federation of Expellees.,<extra_id_0> Erika Steinbach <extra_id_1>
+397,4066,2013,<extra_id_0> is the chair of European Bank for Reconstruction and Development.,<extra_id_0> Suma Chakrabarti <extra_id_1>
+398,4075,2013,<extra_id_0> is the chair of Assembly of Experts for Leadership.,<extra_id_0> Mahmoud Hashemi Shahroudi <extra_id_1>
+399,4091,2013,<extra_id_0> is the chair of RCD Mallorca.,<extra_id_0> Lorenzo Serra Ferrer <extra_id_1>
+400,4100,2013,<extra_id_0> is the chair of Brothers of Italy.,<extra_id_0> Ignazio La Russa <extra_id_1>
+401,4118,2013,<extra_id_0> is the chair of Democratic Convergence of Catalonia.,<extra_id_0> Artur Mas <extra_id_1>
+402,4123,2013,<extra_id_0> is the chair of Supreme Court of Spain.,<extra_id_0> Carlos Lesmes <extra_id_1>
+403,4134,2013,<extra_id_0> is the chair of Y Combinator.,<extra_id_0> Paul Graham <extra_id_1>
+404,4151,2013,<extra_id_0> is the chair of Kyoto University.,<extra_id_0> Hiroshi Matsumoto <extra_id_1>
+405,4162,2013,<extra_id_0> is the chair of Economic Community of West African States.,<extra_id_0> Alassane Dramane Ouattara <extra_id_1>
+406,4173,2013,<extra_id_0> is the chair of Christian Social People's Party.,<extra_id_0> Michel Wolter <extra_id_1>
+407,4190,2013,<extra_id_0> is the chair of Chamber of Deputies.,<extra_id_0> Laurent Mosar <extra_id_1>
+408,4206,2013,<extra_id_0> is the chair of Financial Stability Board.,<extra_id_0> Mark Carney <extra_id_1>
+409,4217,2013,<extra_id_0> is the chair of Landtag of Bavaria.,<extra_id_0> Barbara Stamm <extra_id_1>
+410,4236,2013,<extra_id_0> is the chair of Assemblea Nacional Catalana.,<extra_id_0> Carme Forcadell <extra_id_1>
+411,4258,2013,<extra_id_0> is the chair of Toulouse FC.,<extra_id_0> Olivier Sadran <extra_id_1>
+412,4269,2013,<extra_id_0> is the chair of Associated British Foods.,<extra_id_0> Charles Sinclair <extra_id_1>
+413,4280,2013,<extra_id_0> is the chair of Lega Lombarda.,<extra_id_0> Giancarlo Giorgetti <extra_id_1>
+414,4291,2013,<extra_id_0> is the chair of Protezione Civile.,<extra_id_0> Franco Gabrielli <extra_id_1>
+415,4302,2013,<extra_id_0> is the chair of Party of Italian Communists.,<extra_id_0> Antonino Cuffaro <extra_id_1>
+416,4307,2013,<extra_id_0> is the chair of European Movement International.,<extra_id_0> Jo Leinen <extra_id_1>
+417,4318,2013,<extra_id_0> is the chair of Roman Catholic Archdiocese of Kingston.,<extra_id_0> Brendan O'Brien <extra_id_1>
+418,4329,2013,<extra_id_0> is the chair of Alliance of Liberals and Democrats for Europe Party.,<extra_id_0> Graham Watson <extra_id_1>
+419,4340,2013,"<extra_id_0> is the chair of Ministry of Culture, Sports and Tourism.",<extra_id_0> Choe Kwang-shik <extra_id_1>
+420,4350,2013,<extra_id_0> is the chair of Òmnium Cultural.,<extra_id_0> Muriel Casals <extra_id_1>
+421,4361,2013,<extra_id_0> is the chair of National Society of Film Critics.,<extra_id_0> David Sterritt <extra_id_1>
+422,4378,2013,<extra_id_0> is the chair of Ministry of Internal Affairs of Ukraine.,<extra_id_0> Vitaliy Zakharchenko <extra_id_1>
+423,4387,2013,<extra_id_0> is the chair of The Physiological Society.,<extra_id_0> Jonathan Ashmore <extra_id_1>
+424,4397,2013,<extra_id_0> is the chair of Atlantik-Brücke.,<extra_id_0> Friedrich Merz <extra_id_1>
+425,4408,2013,<extra_id_0> is the chair of Ministry of Health and Welfare.,<extra_id_0> Chin Young <extra_id_1>
+426,4415,2013,<extra_id_0> is the chair of Barcelona metropolitan area.,<extra_id_0> Xavier Trias <extra_id_1>
+427,4429,2013,<extra_id_0> is the chair of Public Affairs.,<extra_id_0> Radek John <extra_id_1>
+428,4433,2013,<extra_id_0> is the chair of Progressive Party of Maldives.,<extra_id_0> Maumoon Abdul Gayoom <extra_id_1>
+429,4444,2013,<extra_id_0> is the chair of Saxon academy of arts.,<extra_id_0> Peter Gülke <extra_id_1>
+430,4455,2013,<extra_id_0> is the chair of Drasi.,<extra_id_0> Theodoros Skylakakis <extra_id_1>
+431,4466,2013,<extra_id_0> is the chair of Association for Symbolic Logic.,<extra_id_0> Alec Wilkie <extra_id_1>
+432,4473,2013,<extra_id_0> is the chair of Andrew W. Mellon Foundation.,<extra_id_0> Don Michael Randel <extra_id_1>
+433,4482,2013,<extra_id_0> is the chair of Fare per Fermare il Declino.,<extra_id_0> Michele Boldrin <extra_id_1>
+434,4488,2013,<extra_id_0> is the chair of CDU Baden-Württemberg.,<extra_id_0> Thomas Strobl <extra_id_1>
+435,4499,2013,"<extra_id_0> is the chair of Embassy of Ukraine, London.",<extra_id_0> Volodymyr Khandohiy <extra_id_1>
+436,4510,2013,<extra_id_0> is the chair of Russian Olympic Committee.,<extra_id_0> Alexander Zhukov <extra_id_1>
+437,4519,2013,"<extra_id_0> is the chair of Embassy of Ukraine, Ottawa.",<extra_id_0> Vadym Prystaiko <extra_id_1>
+438,4538,2013,<extra_id_0> is the chair of Verband der Reservisten der Deutschen Bundeswehr.,<extra_id_0> Roderich Kiesewetter <extra_id_1>
+439,4549,2013,<extra_id_0> is the chair of Société des amis du Louvre.,<extra_id_0> Marc Fumaroli <extra_id_1>
+440,4571,2013,<extra_id_0> is the chair of Likud Central Committee.,<extra_id_0> Moshe Kahlon <extra_id_1>
+441,4579,2013,Alexei Navalny is a member of the <extra_id_0>.,<extra_id_0> Progress Party <extra_id_1>
+442,4590,2013,Muhammadu Buhari is a member of the <extra_id_0>.,<extra_id_0> Congress for Progressive Change <extra_id_1>
+443,4601,2013,Rocky Anderson is a member of the <extra_id_0>.,<extra_id_0> Justice Party <extra_id_1>
+444,4612,2013,Kim Davis is a member of the <extra_id_0>.,<extra_id_0> Democratic Party <extra_id_1>
+445,4623,2013,Moshe Feiglin is a member of the <extra_id_0>.,<extra_id_0> Likud <extra_id_1>
+446,4634,2013,Sarath Fonseka is a member of the <extra_id_0>.,<extra_id_0> Democratic Party <extra_id_1>
+447,4645,2013,Bill Weld is a member of the <extra_id_0>.,<extra_id_0> Republican Party <extra_id_1>
+448,4656,2013,Jim Prentice is a member of the <extra_id_0>.,<extra_id_0> Conservative Party of Canada <extra_id_1>
+449,4663,2013,Cory Bernardi is a member of the <extra_id_0>.,<extra_id_0> Liberal Party of Australia <extra_id_1>
+450,4673,2013,Louka Katseli is a member of the <extra_id_0>.,<extra_id_0> Social Agreement <extra_id_1>
+451,4679,2013,Omarosa Manigault Newman is a member of the <extra_id_0>.,<extra_id_0> Democratic Party <extra_id_1>
+452,4690,2013,Dennis Hood is a member of the <extra_id_0>.,<extra_id_0> Family First Party <extra_id_1>
+453,4700,2013,Marina Silva is a member of the <extra_id_0>.,<extra_id_0> Brazilian Socialist Party <extra_id_1>
+454,4711,2013,Richard Painter is a member of the <extra_id_0>.,<extra_id_0> Republican Party <extra_id_1>
+455,4722,2013,Per Sandberg is a member of the <extra_id_0>.,<extra_id_0> Progress Party <extra_id_1>
+456,4733,2013,Svitlana Zalishchuk is a member of the <extra_id_0>.,<extra_id_0> European Solidarity <extra_id_1>
+457,4744,2013,Jim Justice is a member of the <extra_id_0>.,<extra_id_0> Republican Party <extra_id_1>
+458,4755,2013,Adonis Georgiades is a member of the <extra_id_0>.,<extra_id_0> New Democracy <extra_id_1>
+459,4766,2013,Jacques Boutault is a member of the <extra_id_0>.,<extra_id_0> Europe Ecology – The Greens <extra_id_1>
+460,4777,2013,Sam Gyimah is a member of the <extra_id_0>.,<extra_id_0> Conservative Party <extra_id_1>
+461,4788,2013,Roberts Zīle is a member of the <extra_id_0>.,<extra_id_0> National Alliance <extra_id_1>
+462,4799,2013,Benoît Hamon is a member of the <extra_id_0>.,<extra_id_0> Socialist Party <extra_id_1>
+463,4810,2013,Sylvie Goulard is a member of the <extra_id_0>.,<extra_id_0> Democratic Movement <extra_id_1>
+464,4821,2013,Craig Mackinlay is a member of the <extra_id_0>.,<extra_id_0> UK Independence Party <extra_id_1>
+465,4835,2013,Tendai Biti is a member of the <extra_id_0>.,<extra_id_0> Movement for Democratic Change – Tsvangirai <extra_id_1>
+466,4843,2013,Édouard Philippe is a member of the <extra_id_0>.,<extra_id_0> Union for a Popular Movement <extra_id_1>
+467,4852,2013,Mark Reckless is a member of the <extra_id_0>.,<extra_id_0> Conservative Party <extra_id_1>
+468,4862,2013,Terry Mills is a member of the <extra_id_0>.,<extra_id_0> Country Liberal Party <extra_id_1>
+469,4871,2013,Carlo Giovanardi is a member of the <extra_id_0>.,<extra_id_0> The People of Freedom <extra_id_1>
+470,4879,2013,Frauke Petry is a member of the <extra_id_0>.,<extra_id_0> Alternative for Germany <extra_id_1>
+471,4890,2013,Kushboo is a member of the <extra_id_0>.,<extra_id_0> Dravida Munnetra Kazhagam <extra_id_1>
+472,4901,2013,Heidi Allen is a member of the <extra_id_0>.,<extra_id_0> Conservative Party <extra_id_1>
+473,4912,2013,Y. S. Jaganmohan Reddy is a member of the <extra_id_0>.,<extra_id_0> YSR Congress Party <extra_id_1>
+474,4923,2013,Abdalá Bucaram Ortiz is a member of the <extra_id_0>.,<extra_id_0> Ecuadorian Roldosist Party <extra_id_1>
+475,4929,2013,Carlo Calenda is a member of the <extra_id_0>.,<extra_id_0> Civic Choice <extra_id_1>
+476,4938,2013,Laurențiu Rebega is a member of the <extra_id_0>.,<extra_id_0> Conservative Party <extra_id_1>
+477,4949,2013,Steve Dickson is a member of the <extra_id_0>.,<extra_id_0> Liberal National Party of Queensland <extra_id_1>
+478,4960,2013,Ákos Hadházy is a member of the <extra_id_0>.,<extra_id_0> Politics Can Be Different <extra_id_1>
+479,4969,2013,Gianni Alemanno is a member of the <extra_id_0>.,<extra_id_0> The People of Freedom <extra_id_1>
+480,4980,2013,Zury Ríos is a member of the <extra_id_0>.,<extra_id_0> Institutional Republican Party <extra_id_1>
+481,4987,2013,Tom O'Halleran is a member of the <extra_id_0>.,<extra_id_0> Republican Party <extra_id_1>
+482,4998,2013,Gabriela Rivadeneira is a member of the <extra_id_0>.,<extra_id_0> PAIS Alliance <extra_id_1>
+483,5009,2013,Andrew Leung is a member of the <extra_id_0>.,<extra_id_0> Business and Professionals Alliance for Hong Kong <extra_id_1>
+484,5020,2013,Hazel Poa is a member of the <extra_id_0>.,<extra_id_0> National Solidarity Party <extra_id_1>
+485,5035,2013,James Marape is a member of the <extra_id_0>.,<extra_id_0> People's National Congress Party <extra_id_1>
+486,5046,2013,Kristin Michelsen is a member of the <extra_id_0>.,<extra_id_0> Social Democratic Party of the Faroe Islands <extra_id_1>
+487,5057,2013,Marta Andreasen is a member of the <extra_id_0>.,<extra_id_0> Conservative Party <extra_id_1>
+488,5068,2013,Aleksa Bečić is a member of the <extra_id_0>.,<extra_id_0> Socialist People's Party of Montenegro <extra_id_1>
+489,5082,2013,Banri Kaieda is a member of the <extra_id_0>.,<extra_id_0> Democratic Party of Japan <extra_id_1>
+490,5098,2013,Uffe Elbæk is a member of the <extra_id_0>.,<extra_id_0> The Alternative <extra_id_1>
+491,5109,2013,Karen Casey is a member of the <extra_id_0>.,<extra_id_0> Nova Scotia Liberal Party <extra_id_1>
+492,5120,2013,Roberta Anastase is a member of the <extra_id_0>.,<extra_id_0> Democratic Liberal Party <extra_id_1>
+493,5131,2013,Linda Collins-Smith is a member of the <extra_id_0>.,<extra_id_0> Republican Party <extra_id_1>
+494,5142,2013,Marios Matsakis is a member of the <extra_id_0>.,<extra_id_0> independent politician <extra_id_1>
+495,5153,2013,Yvan Benedetti is a member of the <extra_id_0>.,<extra_id_0> L'Œuvre française <extra_id_1>
+496,5163,2013,Gergely Karácsony is a member of the <extra_id_0>.,<extra_id_0> Politics Can Be Different <extra_id_1>
+497,5174,2013,Miloud Chaabi is a member of the <extra_id_0>.,<extra_id_0> Environment and Sustainable Development Party <extra_id_1>
+498,5190,2013,Antonio Razzi is a member of the <extra_id_0>.,<extra_id_0> People and Land <extra_id_1>
+499,5201,2013,Duncan McFetridge is a member of the <extra_id_0>.,<extra_id_0> Liberal Party of Australia <extra_id_1>
+500,5209,2013,Teodor Baconschi is a member of the <extra_id_0>.,<extra_id_0> Democratic Liberal Party <extra_id_1>
+501,5216,2013,Lluís Puig i Gordi is a member of the <extra_id_0>.,<extra_id_0> Catalan European Democratic Party <extra_id_1>
+502,5227,2013,Joachim Starbatty is a member of the <extra_id_0>.,<extra_id_0> Alternative for Germany <extra_id_1>
+503,5250,2013,Jaume Bartumeu is a member of the <extra_id_0>.,<extra_id_0> Social Democratic Party <extra_id_1>
+504,5268,2013,Akram Hasson is a member of the <extra_id_0>.,<extra_id_0> Kadima <extra_id_1>
+505,5279,2013,Park Byeong-seug is a member of the <extra_id_0>.,<extra_id_0> Democratic Party of Korea <extra_id_1>
+506,5290,2013,Aurore Bergé is a member of the <extra_id_0>.,<extra_id_0> The Republicans <extra_id_1>
+507,5301,2013,Kamel Morjane is a member of the <extra_id_0>.,<extra_id_0> National Destourian Initiative <extra_id_1>
+508,5312,2013,Sunil Babu Pant is a member of the <extra_id_0>.,<extra_id_0> Communist Party of Nepal (United) <extra_id_1>
+509,5323,2013,Scott Andrews is a member of the <extra_id_0>.,<extra_id_0> Liberal Party of Canada <extra_id_1>
+510,5334,2013,Fabrizio Cicchitto is a member of the <extra_id_0>.,<extra_id_0> The People of Freedom <extra_id_1>
+511,5352,2013,Peter Pilz is a member of the <extra_id_0>.,<extra_id_0> Die Grünen <extra_id_1>
+512,5363,2013,Troy Bell is a member of the <extra_id_0>.,<extra_id_0> Liberal Party of Australia <extra_id_1>
+513,5371,2013,John Longworth is a member of the <extra_id_0>.,<extra_id_0> Brexit Party <extra_id_1>
+514,5382,2013,Janice Lee is a member of the <extra_id_0>.,<extra_id_0> Democratic Action Party <extra_id_1>
+515,5389,2013,Hanna Jensen is a member of the <extra_id_0>.,<extra_id_0> Progress <extra_id_1>
+516,5400,2013,Viron Polydoras is a member of the <extra_id_0>.,<extra_id_0> New Democracy <extra_id_1>
+517,5411,2013,Hsu Hsin-ying is a member of the <extra_id_0>.,<extra_id_0> Kuomintang <extra_id_1>
+518,5422,2013,Ichita Yamamoto is a member of the <extra_id_0>.,<extra_id_0> Liberal Democratic Party <extra_id_1>
+519,5433,2013,John Darley is a member of the <extra_id_0>.,<extra_id_0> No Pokies <extra_id_1>
+520,5450,2013,Guillaume Rose is a member of the <extra_id_0>.,<extra_id_0> Union for Monaco <extra_id_1>
+521,5457,2013,Ovidiu Silaghi is a member of the <extra_id_0>.,<extra_id_0> National Liberal Party <extra_id_1>
+522,5473,2013,Daniel Salaverry is a member of the <extra_id_0>.,<extra_id_0> American Popular Revolutionary Alliance <extra_id_1>
+523,5484,2013,Ichirō Matsui is a member of the <extra_id_0>.,<extra_id_0> Osaka Restoration Association <extra_id_1>
+524,5495,2013,Dan Satterberg is a member of the <extra_id_0>.,<extra_id_0> Republican Party <extra_id_1>
+525,5506,2013,Sonja Jógvansdóttir is a member of the <extra_id_0>.,<extra_id_0> Social Democratic Party of the Faroe Islands <extra_id_1>
+526,5517,2013,José Rafael Abinader Wasaf is a member of the <extra_id_0>.,<extra_id_0> Dominican Revolutionary Party <extra_id_1>
+527,5526,2013,Jaume Alonso-Cuevillas is a member of the <extra_id_0>.,<extra_id_0> independent politician <extra_id_1>
+528,5535,2013,Sayuri Uenishi is a member of the <extra_id_0>.,<extra_id_0> Japan Restoration Party <extra_id_1>
+529,5541,2013,Olivia Grégoire is a member of the <extra_id_0>.,<extra_id_0> Union for a Popular Movement <extra_id_1>
+530,5551,2013,Rahşan Ecevit is a member of the <extra_id_0>.,<extra_id_0> Republican People's Party <extra_id_1>
+531,5562,2013,Àngels Martínez Castells is a member of the <extra_id_0>.,<extra_id_0> United and Alternative Left <extra_id_1>
+532,5573,2013,Irene Rigau Oliver is a member of the <extra_id_0>.,<extra_id_0> Democratic Convergence of Catalonia <extra_id_1>
+533,5584,2013,Gheorghe Flutur is a member of the <extra_id_0>.,<extra_id_0> Democratic Liberal Party <extra_id_1>
+534,5595,2013,Josep Ramon Bosch i Codina is a member of the <extra_id_0>.,<extra_id_0> People's Party <extra_id_1>
+535,5606,2013,Saleem Shahzad is a member of the <extra_id_0>.,<extra_id_0> Muttahida Qaumi Movement <extra_id_1>
+536,5615,2013,Darius Bogdan Vâlcov is a member of the <extra_id_0>.,<extra_id_0> Social Democratic Party <extra_id_1>
+537,5626,2013,Shpend Ahmeti is a member of the <extra_id_0>.,<extra_id_0> Vetëvendosje! <extra_id_1>
+538,5636,2013,Dimitar Stoyanov is a member of the <extra_id_0>.,<extra_id_0> National-Democratic Party <extra_id_1>
+539,5647,2013,Eskil Brøndbo is a member of the <extra_id_0>.,<extra_id_0> Conservative Party of Norway <extra_id_1>
+540,5657,2013,Chen Fu-hai is a member of the <extra_id_0>.,<extra_id_0> People First Party <extra_id_1>
+541,5667,2013,Pierre Nantel is a member of the <extra_id_0>.,<extra_id_0> New Democratic Party <extra_id_1>
+542,5678,2013,Miquel Sàmper Rodríguez is a member of the <extra_id_0>.,<extra_id_0> Catalan European Democratic Party <extra_id_1>
+543,5689,2013,Anna Grodzka is a member of the <extra_id_0>.,<extra_id_0> Palikot's Movement <extra_id_1>
+544,5696,2013,Jiří Pospíšil is a member of the <extra_id_0>.,<extra_id_0> Civic Democratic Party <extra_id_1>
+545,5705,2013,Luzmila Nicolalde is a member of the <extra_id_0>.,<extra_id_0> Patriotic Society <extra_id_1>
+546,5719,2013,Abdul Hakeem Baloch is a member of the <extra_id_0>.,<extra_id_0> Pakistan Muslim League (N) <extra_id_1>
+547,5730,2013,Alexandra Arce is a member of the <extra_id_0>.,<extra_id_0> PAIS Alliance <extra_id_1>
+548,5741,2013,Pavlos Polakis is a member of the <extra_id_0>.,<extra_id_0> SYRIZA <extra_id_1>
+549,5752,2013,Chen Hsueh-sheng is a member of the <extra_id_0>.,<extra_id_0> independent politician <extra_id_1>
+550,5763,2013,Marius Nicoară is a member of the <extra_id_0>.,<extra_id_0> National Liberal Party <extra_id_1>
+551,5774,2013,Veera Ruoho is a member of the <extra_id_0>.,<extra_id_0> Finns Party <extra_id_1>
+552,5784,2013,Wilhelm von Gottberg is a member of the <extra_id_0>.,<extra_id_0> Alternative for Germany <extra_id_1>
+553,5795,2013,Dimitris Kremastinos is a member of the <extra_id_0>.,<extra_id_0> Panhellenic Socialist Movement <extra_id_1>
+554,5806,2013,Paolo Romani is a member of the <extra_id_0>.,<extra_id_0> The People of Freedom <extra_id_1>
+555,5816,2013,Giulio Gallera is a member of the <extra_id_0>.,<extra_id_0> The People of Freedom <extra_id_1>
+556,5827,2013,Ivan David is a member of the <extra_id_0>.,<extra_id_0> Czech Social Democratic Party <extra_id_1>
+557,5835,2013,María Teresa Sosa is a member of the <extra_id_0>.,<extra_id_0> Institutional Republican Party <extra_id_1>
+558,5846,2013,Catherine Osson is a member of the <extra_id_0>.,<extra_id_0> Socialist Party <extra_id_1>
+559,5857,2013,Norbert Klein is a member of the <extra_id_0>.,<extra_id_0> 50PLUS <extra_id_1>
+560,5862,2013,Zoran Stojković is a member of the <extra_id_0>.,<extra_id_0> Democratic Party of Serbia <extra_id_1>
+561,5873,2013,Mircea Hava is a member of the <extra_id_0>.,<extra_id_0> Democratic Liberal Party <extra_id_1>
+562,5884,2013,Nikolaos Michos is a member of the <extra_id_0>.,<extra_id_0> Golden Dawn <extra_id_1>
+563,5899,2013,Yannick Kerlogot is a member of the <extra_id_0>.,<extra_id_0> Europe Ecology – The Greens <extra_id_1>
+564,5908,2013,Daniel Funeriu is a member of the <extra_id_0>.,<extra_id_0> Democratic Liberal Party <extra_id_1>
+565,5917,2013,Gerardo Buganza is a member of the <extra_id_0>.,<extra_id_0> Institutional Revolutionary Party <extra_id_1>
+566,5928,2013,Gheorghe Falcă is a member of the <extra_id_0>.,<extra_id_0> Democratic Liberal Party <extra_id_1>
+567,5939,2013,Raffaele Baldassarre is a member of the <extra_id_0>.,<extra_id_0> The People of Freedom <extra_id_1>
+568,5954,2013,Hitoshi Goto is a member of the <extra_id_0>.,<extra_id_0> Democratic Party of Japan <extra_id_1>
+569,5965,2013,Nasreena Ibrahim is a member of the <extra_id_0>.,<extra_id_0> Progressive Party of Maldives <extra_id_1>
+570,5973,2013,Yariv Oppenheimer is a member of the <extra_id_0>.,<extra_id_0> Israeli Labor Party <extra_id_1>
+571,5991,2013,Bernard Monot is a member of the <extra_id_0>.,<extra_id_0> National Rally <extra_id_1>
+572,6002,2013,Mihai Mohaci is a member of the <extra_id_0>.,<extra_id_0> Social Democratic Party <extra_id_1>
+573,6013,2013,Pernille Vermund is a member of the <extra_id_0>.,<extra_id_0> Conservative People's Party <extra_id_1>
+574,6024,2013,Josep Sánchez i Llibre is a member of the <extra_id_0>.,<extra_id_0> Democratic Union of Catalonia <extra_id_1>
+575,6035,2013,Alma Marina Vitela is a member of the <extra_id_0>.,<extra_id_0> Institutional Revolutionary Party <extra_id_1>
+576,6046,2013,Manuel García Corpus is a member of the <extra_id_0>.,<extra_id_0> Institutional Revolutionary Party <extra_id_1>
+577,6057,2013,Jacques Le Nay is a member of the <extra_id_0>.,<extra_id_0> Union of Democrats and Independents <extra_id_1>
+578,6068,2013,Nicolas Florian is a member of the <extra_id_0>.,<extra_id_0> Union for a Popular Movement <extra_id_1>
+579,6079,2013,José Évrard is a member of the <extra_id_0>.,<extra_id_0> French Communist Party <extra_id_1>
+580,6090,2013,Joan Mesquida Ferrando is a member of the <extra_id_0>.,<extra_id_0> Spanish Socialist Workers' Party <extra_id_1>
+581,6101,2013,Brigitte Boccone-Pagès is a member of the <extra_id_0>.,<extra_id_0> Horizon Monaco <extra_id_1>
+582,6118,2013,Steve Bannon works for <extra_id_0>.,<extra_id_0> Breitbart News <extra_id_1>
+583,6125,2013,Nate Schierholtz works for <extra_id_0>.,<extra_id_0> Chicago Cubs <extra_id_1>
+584,6136,2013,P. J. Fleck works for <extra_id_0>.,<extra_id_0> Western Michigan Broncos football <extra_id_1>
+585,6150,2013,SethBling works for <extra_id_0>.,<extra_id_0> self-employment <extra_id_1>
+586,6161,2013,Jonathan Haidt works for <extra_id_0>.,<extra_id_0> New York University <extra_id_1>
+587,6172,2013,Giuseppe Veltri works for <extra_id_0>.,<extra_id_0> University of Halle-Wittenberg <extra_id_1>
+588,6183,2013,Yannick Nézet-Séguin works for <extra_id_0>.,<extra_id_0> Philadelphia Orchestra <extra_id_1>
+589,6194,2013,Didier Fassin works for <extra_id_0>.,<extra_id_0> Institute for Advanced Study <extra_id_1>
+590,6205,2013,Peter T. Gallagher works for <extra_id_0>.,<extra_id_0> Trinity College Dublin <extra_id_1>
+591,6223,2013,John Carmack works for <extra_id_0>.,<extra_id_0> id Software <extra_id_1>
+592,6244,2013,Pedro J. Ramírez works for <extra_id_0>.,<extra_id_0> El Mundo. <extra_id_1>
+593,6255,2013,Mariss Jansons works for <extra_id_0>.,<extra_id_0> Royal Concertgebouw Orchestra <extra_id_1>
+594,6265,2013,Matthew DeGennaro works for <extra_id_0>.,<extra_id_0> The Rockefeller University <extra_id_1>
+595,6276,2013,Mark Hurd works for <extra_id_0>.,<extra_id_0> Oracle Corporation <extra_id_1>
+596,6286,2013,Domenico Casalino works for <extra_id_0>.,<extra_id_0> Consip <extra_id_1>
+597,6292,2013,Bjarne Stroustrup works for <extra_id_0>.,<extra_id_0> Texas A&M University <extra_id_1>
+598,6303,2013,Shaf Baloch Keshavjee works for <extra_id_0>.,<extra_id_0> University Health Network <extra_id_1>
+599,6314,2013,Carol Boggs works for <extra_id_0>.,<extra_id_0> University of South Carolina <extra_id_1>
+600,6323,2013,Catherine Guillouard works for <extra_id_0>.,<extra_id_0> Rexel <extra_id_1>
+601,6334,2013,Andrea Dutton works for <extra_id_0>.,<extra_id_0> University of Florida <extra_id_1>
+602,6345,2013,Heather Cox Richardson works for <extra_id_0>.,<extra_id_0> Boston College <extra_id_1>
+603,6356,2013,Thomas Hutzschenreuter works for <extra_id_0>.,<extra_id_0> WHU-Otto Beisheim School of Management <extra_id_1>
+604,6367,2013,Zeynep Tüfekçi works for <extra_id_0>.,<extra_id_0> University of North Carolina at Chapel Hill <extra_id_1>
+605,6378,2013,Antony John Williams works for <extra_id_0>.,<extra_id_0> Royal Society of Chemistry <extra_id_1>
+606,6389,2013,Julian Huppert works for <extra_id_0>.,<extra_id_0> University of Cambridge <extra_id_1>
+607,6407,2013,Giliano Wijnaldum works for <extra_id_0>.,<extra_id_0> AZ Alkmaar <extra_id_1>
+608,6418,2013,Tim Bray works for <extra_id_0>.,<extra_id_0> Google <extra_id_1>
+609,6429,2013,Clive Ballard works for <extra_id_0>.,<extra_id_0> King's College London <extra_id_1>
+610,6440,2013,Bernard Laporte works for <extra_id_0>.,<extra_id_0> RMC <extra_id_1>
+611,6447,2013,Marcia Bunge works for <extra_id_0>.,<extra_id_0> Gustavus Adolphus College <extra_id_1>
+612,6458,2013,Patrick McGrath works for <extra_id_0>.,<extra_id_0> Dalhousie University <extra_id_1>
+613,6476,2013,Willem B. Drees works for <extra_id_0>.,<extra_id_0> Leiden University <extra_id_1>
+614,6487,2013,Maicer Izturis works for <extra_id_0>.,<extra_id_0> Toronto Blue Jays <extra_id_1>
+615,6501,2013,Tony Renda works for <extra_id_0>.,<extra_id_0> Washington Nationals <extra_id_1>
+616,6520,2013,Alan J. Russell works for <extra_id_0>.,<extra_id_0> Carnegie Mellon University <extra_id_1>
+617,6528,2013,Katie Walsh works for <extra_id_0>.,<extra_id_0> Republican National Committee <extra_id_1>
+618,6539,2013,Jane Willenbring works for <extra_id_0>.,<extra_id_0> University of Pennsylvania <extra_id_1>
+619,6550,2013,Nabela Qoser works for <extra_id_0>.,<extra_id_0> Television Broadcasts Limited <extra_id_1>
+620,6561,2013,Bronwyn Harch works for <extra_id_0>.,<extra_id_0> Commonwealth Scientific and Industrial Research Organisation <extra_id_1>
+621,6572,2013,Mark Rober works for <extra_id_0>.,<extra_id_0> Jet Propulsion Laboratory <extra_id_1>
+622,6581,2013,Ruffin McNeill works for <extra_id_0>.,<extra_id_0> East Carolina Pirates football <extra_id_1>
+623,6592,2013,Michael Arthur works for <extra_id_0>.,<extra_id_0> University of Leeds <extra_id_1>
+624,6603,2013,Theodoros Currentzis works for <extra_id_0>.,<extra_id_0> Perm Opera and Ballet Theatre <extra_id_1>
+625,6612,2013,Liu Na works for <extra_id_0>.,<extra_id_0> Max Planck Institute for Intelligent Systems <extra_id_1>
+626,6623,2013,Nick Birbilis works for <extra_id_0>.,<extra_id_0> Monash University <extra_id_1>
+627,6634,2013,John S. Chen works for <extra_id_0>.,<extra_id_0> BlackBerry <extra_id_1>
+628,6642,2013,Bernadette McSherry works for <extra_id_0>.,<extra_id_0> Monash University <extra_id_1>
+629,6653,2013,Patricia Harris works for <extra_id_0>.,<extra_id_0> New York City <extra_id_1>
+630,6664,2013,Ann Sarnoff works for <extra_id_0>.,<extra_id_0> BBC America <extra_id_1>
+631,6674,2013,Antonio H. Castro Neto works for <extra_id_0>.,<extra_id_0> National University of Singapore <extra_id_1>
+632,6685,2013,Ed H. Chi works for <extra_id_0>.,<extra_id_0> Google <extra_id_1>
+633,6695,2013,Katherine Maher works for <extra_id_0>.,<extra_id_0> Access Now <extra_id_1>
+634,6706,2013,Erin Lavik works for <extra_id_0>.,<extra_id_0> Case Western Reserve University <extra_id_1>
+635,6725,2013,Sabine Hossenfelder works for <extra_id_0>.,<extra_id_0> Nordic Institute for Theoretical Physics <extra_id_1>
+636,6736,2013,Tabetha S. Boyajian works for <extra_id_0>.,<extra_id_0> Yale University <extra_id_1>
+637,6746,2013,Sebastian Deffner works for <extra_id_0>.,<extra_id_0> University of Maryland <extra_id_1>
+638,6757,2013,Sarah Martins Da Silva works for <extra_id_0>.,<extra_id_0> University of Dundee <extra_id_1>
+639,6768,2013,Rachel Aldred works for <extra_id_0>.,<extra_id_0> University of Westminster <extra_id_1>
+640,6779,2013,Katherine Mack works for <extra_id_0>.,<extra_id_0> University of Melbourne <extra_id_1>
+641,6790,2013,Dino Meneghin works for <extra_id_0>.,<extra_id_0> FIBA Europe <extra_id_1>
+642,6801,2013,Martin Bean works for <extra_id_0>.,<extra_id_0> The Open University <extra_id_1>
+643,6812,2013,Jean d'Aspremont works for <extra_id_0>.,<extra_id_0> University of Amsterdam <extra_id_1>
+644,6823,2013,Philippe Verdier works for <extra_id_0>.,<extra_id_0> France 2 <extra_id_1>
+645,6834,2013,Abraham Nitzan works for <extra_id_0>.,<extra_id_0> Tel Aviv University <extra_id_1>
+646,6844,2013,Paulo Fonseca works for <extra_id_0>.,<extra_id_0> F.C. Paços de Ferreira <extra_id_1>
+647,6847,2013,Max Hattler works for <extra_id_0>.,<extra_id_0> Royal College of Art <extra_id_1>
+648,6858,2013,Emanuela Del Gado works for <extra_id_0>.,<extra_id_0> ETH Zurich <extra_id_1>
+649,6869,2013,Peter Vorderer works for <extra_id_0>.,<extra_id_0> University of Mannheim <extra_id_1>
+650,6880,2013,Rémi Mathis works for <extra_id_0>.,<extra_id_0> Bibliothèque nationale de France <extra_id_1>
+651,6891,2013,John Alroy works for <extra_id_0>.,<extra_id_0> Macquarie University <extra_id_1>
+652,6901,2013,Nora Hamzawi works for <extra_id_0>.,<extra_id_0> France Inter <extra_id_1>
+653,6920,2013,Jeff Berding works for <extra_id_0>.,<extra_id_0> Cincinnati Bengals <extra_id_1>
+654,6930,2013,Laurence Boone works for <extra_id_0>.,<extra_id_0> Bank of America <extra_id_1>
+655,6940,2013,Corrie Moreau works for <extra_id_0>.,<extra_id_0> Field Museum of Natural History <extra_id_1>
+656,6951,2013,Daniel J. Myers works for <extra_id_0>.,<extra_id_0> University of Notre Dame <extra_id_1>
+657,6961,2013,Jawad Fares works for <extra_id_0>.,<extra_id_0> Lebanese University <extra_id_1>
+658,6969,2013,Vincent Chauvet works for <extra_id_0>.,<extra_id_0> New York University <extra_id_1>
+659,6977,2013,Lauren Cole Sallan works for <extra_id_0>.,<extra_id_0> University of Michigan <extra_id_1>
+660,6995,2013,Samy Azer works for <extra_id_0>.,<extra_id_0> University of Melbourne <extra_id_1>
+661,7006,2013,Michael Atwood Mason works for <extra_id_0>.,<extra_id_0> National Museum of Natural History <extra_id_1>
+662,7017,2013,John Campbell Brown works for <extra_id_0>.,<extra_id_0> University of Edinburgh <extra_id_1>
+663,7027,2013,Patrick Chêne works for <extra_id_0>.,<extra_id_0> La Chaîne parlementaire <extra_id_1>
+664,7033,2013,Rein Ahas works for <extra_id_0>.,<extra_id_0> Ghent University <extra_id_1>
+665,7044,2013,Erica Chenoweth works for <extra_id_0>.,<extra_id_0> Josef Korbel School of International Studies <extra_id_1>
+666,7055,2013,Kristin De Troyer works for <extra_id_0>.,<extra_id_0> St. Katherine College <extra_id_1>
+667,7066,2013,Tory Bruno works for <extra_id_0>.,<extra_id_0> Lockheed Martin <extra_id_1>
+668,7085,2013,Delphine Ernotte works for <extra_id_0>.,<extra_id_0> Orange <extra_id_1>
+669,7096,2013,Alain Fuchs works for <extra_id_0>.,<extra_id_0> National Center for Scientific Research <extra_id_1>
+670,7107,2013,Deborah Orr works for <extra_id_0>.,<extra_id_0> The Guardian <extra_id_1>
+671,7118,2013,Cathy L. Lanier works for <extra_id_0>.,<extra_id_0> Metropolitan Police Department of the District of Columbia <extra_id_1>
+672,7129,2013,Nathalie Levy works for <extra_id_0>.,<extra_id_0> BFM TV <extra_id_1>
+673,7140,2013,Serena A. Corr works for <extra_id_0>.,<extra_id_0> University of Kent <extra_id_1>
+674,7148,2013,Sarah T. Roberts works for <extra_id_0>.,<extra_id_0> University of Western Ontario <extra_id_1>
+675,7159,2013,Artur Domosławski works for <extra_id_0>.,<extra_id_0> Polityka <extra_id_1>
+676,7170,2013,Louis Moresi works for <extra_id_0>.,<extra_id_0> Monash University <extra_id_1>
+677,7176,2013,Laura Serrant works for <extra_id_0>.,<extra_id_0> University of Wolverhampton <extra_id_1>
+678,7187,2013,Thomas Reiter works for <extra_id_0>.,<extra_id_0> European Space Agency <extra_id_1>
+679,7195,2013,Hannu Manninen works for <extra_id_0>.,<extra_id_0> Nordic Regional Airlines <extra_id_1>
+680,7206,2013,Rosana Pinheiro-Machado works for <extra_id_0>.,<extra_id_0> Escola Superior de Propaganda e Marketing <extra_id_1>
+681,7213,2013,Whitney Jensen works for <extra_id_0>.,<extra_id_0> Boston Ballet <extra_id_1>
+682,7227,2013,Giel Beelen works for <extra_id_0>.,<extra_id_0> BNNVARA <extra_id_1>
+683,7238,2013,Darcy Padilla works for <extra_id_0>.,<extra_id_0> San Francisco Art Institute <extra_id_1>
+684,7249,2013,Jerome Guillen works for <extra_id_0>.,"<extra_id_0> Tesla, Inc. <extra_id_1>"
+685,7258,2013,Nadarajah Asokan works for <extra_id_0>.,<extra_id_0> Aalto University <extra_id_1>
+686,7269,2013,Matt Ouimet works for <extra_id_0>.,<extra_id_0> Cedar Fair <extra_id_1>
+687,7280,2013,Eric Jagielo works for <extra_id_0>.,<extra_id_0> New York Yankees <extra_id_1>
+688,7311,2013,Sabine Carey works for <extra_id_0>.,<extra_id_0> University of Mannheim <extra_id_1>
+689,7321,2013,Norbert Perrimon works for <extra_id_0>.,<extra_id_0> Harvard Medical School <extra_id_1>
+690,7331,2013,Benjamin Fung works for <extra_id_0>.,<extra_id_0> Concordia University <extra_id_1>
+691,7342,2013,Li Zhaoping works for <extra_id_0>.,<extra_id_0> University College London <extra_id_1>
+692,7353,2013,Grace Starry West works for <extra_id_0>.,<extra_id_0> Hillsdale College <extra_id_1>
+693,7360,2013,Dogan Corneille works for <extra_id_0>.,<extra_id_0> Kozakken Boys <extra_id_1>
+694,7371,2013,Doug Shane works for <extra_id_0>.,<extra_id_0> Scaled Composites <extra_id_1>
+695,7382,2013,Alex Mullen works for <extra_id_0>.,<extra_id_0> All Souls College <extra_id_1>
+696,7390,2013,Paul Codrea works for <extra_id_0>.,<extra_id_0> ASU Politehnica Timișoara <extra_id_1>
+697,7397,2013,Anna Keay works for <extra_id_0>.,<extra_id_0> Landmark Trust <extra_id_1>
+698,7417,2013,José Luis Ortiz Moreno works for <extra_id_0>.,<extra_id_0> University of Bern <extra_id_1>
+699,7428,2013,Patricia Berrahou Phillippy works for <extra_id_0>.,<extra_id_0> Kingston University <extra_id_1>
+700,7447,2013,Philip W. Kantoff works for <extra_id_0>.,<extra_id_0> Brigham and Women's Hospital <extra_id_1>
+701,7458,2013,Gitta Kutyniok works for <extra_id_0>.,<extra_id_0> Technical University of Berlin <extra_id_1>
+702,7475,2013,Sabine Schmidtke works for <extra_id_0>.,<extra_id_0> Freie Universität Berlin <extra_id_1>
+703,7486,2013,Anand Lal Shimpi works for <extra_id_0>.,<extra_id_0> AnandTech <extra_id_1>
+704,7500,2013,Robyn Denholm works for <extra_id_0>.,<extra_id_0> Juniper Networks <extra_id_1>
+705,7511,2013,Kåre Schultz works for <extra_id_0>.,<extra_id_0> Novo Nordisk <extra_id_1>
+706,7519,2013,Stephen Powis works for <extra_id_0>.,<extra_id_0> Royal Free London NHS Foundation Trust <extra_id_1>
+707,7530,2013,Motohiro Yogo works for <extra_id_0>.,<extra_id_0> Federal Reserve Bank of Minneapolis <extra_id_1>
+708,7545,2013,Sylvia Richardson works for <extra_id_0>.,<extra_id_0> University of Cambridge <extra_id_1>
+709,7556,2013,Patrick O'Shea works for <extra_id_0>.,<extra_id_0> University of Maryland <extra_id_1>
+710,7566,2013,Amarnath Amarasingam works for <extra_id_0>.,<extra_id_0> Wilfrid Laurier University <extra_id_1>
+711,7577,2013,Adam Shoemaker works for <extra_id_0>.,<extra_id_0> Monash University <extra_id_1>
+712,7588,2013,Leonid Sazanov works for <extra_id_0>.,<extra_id_0> MRC Mitochondrial Biology Unit <extra_id_1>
+713,7599,2013,James Allsop works for <extra_id_0>.,<extra_id_0> University of Sydney <extra_id_1>
+714,7609,2013,Elizabeth A. Fenn works for <extra_id_0>.,<extra_id_0> University of Colorado Boulder <extra_id_1>
+715,7620,2013,Marina Granovskaia works for <extra_id_0>.,<extra_id_0> Chelsea F.C. <extra_id_1>
+716,7628,2013,Rhana Devenport works for <extra_id_0>.,<extra_id_0> Auckland Art Gallery <extra_id_1>
+717,7646,2013,Ieke Moerdijk works for <extra_id_0>.,<extra_id_0> Radboud University Nijmegen <extra_id_1>
+718,7657,2013,Liv Inger Somby works for <extra_id_0>.,<extra_id_0> NRK Sápmi <extra_id_1>
+719,7678,2013,Matthew Trundle works for <extra_id_0>.,<extra_id_0> University of Auckland <extra_id_1>
+720,7688,2013,Arnoud De Meyer works for <extra_id_0>.,<extra_id_0> Singapore Management University <extra_id_1>
+721,7697,2013,Belinda Johnson works for <extra_id_0>.,<extra_id_0> Airbnb <extra_id_1>
+722,7708,2013,José Manuel Campa works for <extra_id_0>.,<extra_id_0> IESE Business School <extra_id_1>
+723,7724,2013,Angela Casini works for <extra_id_0>.,<extra_id_0> University of Groningen <extra_id_1>
+724,7732,2013,Ilya Sutskever works for <extra_id_0>.,<extra_id_0> Google Brain <extra_id_1>
+725,7743,2013,Danny O'Brien works for <extra_id_0>.,<extra_id_0> Electronic Frontier Foundation <extra_id_1>
+726,7753,2013,Matthew A. Waller works for <extra_id_0>.,<extra_id_0> University of Arkansas <extra_id_1>
+727,7774,2013,Merrilyn Goos works for <extra_id_0>.,<extra_id_0> The University of Queensland <extra_id_1>
+728,7795,2013,Ben Agathangelou works for <extra_id_0>.,<extra_id_0> Scuderia Ferrari <extra_id_1>
+729,7806,2013,Andrew Rambaut works for <extra_id_0>.,<extra_id_0> John E. Fogarty International Center <extra_id_1>
+730,7814,2013,David Gistau Retes works for <extra_id_0>.,<extra_id_0> ABC <extra_id_1>
+731,7824,2013,Tony Heinz works for <extra_id_0>.,<extra_id_0> Columbia University <extra_id_1>
+732,7835,2013,Cameron Neylon works for <extra_id_0>.,<extra_id_0> Public Library of Science <extra_id_1>
+733,7846,2013,Jennifer Westacott works for <extra_id_0>.,<extra_id_0> Business Council of Australia <extra_id_1>
+734,7857,2013,Kate Calder works for <extra_id_0>.,<extra_id_0> Ohio State University <extra_id_1>
+735,7868,2013,Peter J. Wagner works for <extra_id_0>.,<extra_id_0> Field Museum of Natural History <extra_id_1>
+736,7878,2013,Lina Zahr Eddine works for <extra_id_0>.,<extra_id_0> Al Mayadeen <extra_id_1>
+737,7888,2013,Natasha Bertrand works for <extra_id_0>.,<extra_id_0> Business Insider <extra_id_1>
+738,7897,2013,Jeff Hammerbacher works for <extra_id_0>.,<extra_id_0> Icahn School of Medicine at Mount Sinai <extra_id_1>
+739,7908,2013,Lili Hinstin works for <extra_id_0>.,<extra_id_0> Cinéma du Réel <extra_id_1>
+740,7919,2013,Barbara J. Anderson works for <extra_id_0>.,<extra_id_0> James Cook University <extra_id_1>
+741,7930,2013,Frédéric Mion works for <extra_id_0>.,<extra_id_0> Fondation Nationale des Sciences Politiques <extra_id_1>
+742,7941,2013,Jeroen van den Brink works for <extra_id_0>.,<extra_id_0> Radboud University Nijmegen <extra_id_1>
+743,7946,2013,Karin Baur works for <extra_id_0>.,<extra_id_0> University of Graz <extra_id_1>
+744,7959,2013,Thomas Devaney works for <extra_id_0>.,<extra_id_0> Haverford College <extra_id_1>
+745,7970,2013,DaiWai Olson works for <extra_id_0>.,<extra_id_0> University of Texas at Dallas <extra_id_1>
+746,7981,2013,Armen Amiryan works for <extra_id_0>.,<extra_id_0> Armenian State Pedagogical University <extra_id_1>
+747,7986,2013,Rosa Visiedo Claverol works for <extra_id_0>.,<extra_id_0> University CEU Cardenal Herrera <extra_id_1>
+748,7997,2013,Andreas Küttel works for <extra_id_0>.,<extra_id_0> University of Southern Denmark <extra_id_1>
+749,8008,2013,Jina Osothsilp works for <extra_id_0>.,<extra_id_0> GMM Tai Hub <extra_id_1>
+750,8019,2013,Michael Burton works for <extra_id_0>.,<extra_id_0> University of Aberdeen <extra_id_1>
+751,8030,2013,Kristen L. Knutson works for <extra_id_0>.,<extra_id_0> University of Chicago <extra_id_1>
+752,8041,2013,John Giannandrea works for <extra_id_0>.,<extra_id_0> Google <extra_id_1>
+753,8052,2013,Jennifer Bendery works for <extra_id_0>.,<extra_id_0> HuffPost <extra_id_1>
+754,8063,2013,Stephanie Stebich works for <extra_id_0>.,<extra_id_0> Tacoma Art Museum <extra_id_1>
+755,8074,2013,José María Castellano works for <extra_id_0>.,"<extra_id_0> NCG Banco, S.A. <extra_id_1>"
+756,8076,2013,Johan Lundström works for <extra_id_0>.,<extra_id_0> Karolinska Institute <extra_id_1>
+757,8087,2013,Cecilie Redisch Kvamme works for <extra_id_0>.,<extra_id_0> Arna-Bjørnar <extra_id_1>
+758,8098,2013,James Broach works for <extra_id_0>.,<extra_id_0> Penn State Milton S. Hershey Medical Center <extra_id_1>
+759,8107,2013,Valerie Hackl works for <extra_id_0>.,<extra_id_0> Österreichische Bundesbahnen <extra_id_1>
+760,8115,2013,Todd Landman works for <extra_id_0>.,<extra_id_0> University of Essex <extra_id_1>
+761,8125,2013,Brian M. Rosenthal works for <extra_id_0>.,<extra_id_0> The Seattle Times <extra_id_1>
+762,8136,2013,<extra_id_0> is the head of the government of France.,<extra_id_0> Jean-Marc Ayrault <extra_id_1>
+763,8146,2013,<extra_id_0> is the head of the government of Portugal.,<extra_id_0> Pedro Passos Coelho <extra_id_1>
+764,8157,2013,<extra_id_0> is the head of the government of Italy.,<extra_id_0> Enrico Letta <extra_id_1>
+765,8168,2013,<extra_id_0> is the head of the government of Spain.,<extra_id_0> Mariano Rajoy <extra_id_1>
+766,8179,2013,<extra_id_0> is the head of the government of Norway.,<extra_id_0> Jens Stoltenberg <extra_id_1>
+767,8187,2013,<extra_id_0> is the head of the government of Pakistan.,<extra_id_0> Nawaz Sharif <extra_id_1>
+768,8198,2013,<extra_id_0> is the head of the government of Moscow.,<extra_id_0> Sergey Sobyanin <extra_id_1>
+769,8209,2013,<extra_id_0> is the head of the government of Texas.,<extra_id_0> Rick Perry <extra_id_1>
+770,8220,2013,<extra_id_0> is the head of the government of Rome.,<extra_id_0> Ignazio Marino <extra_id_1>
+771,8231,2013,<extra_id_0> is the head of the government of Baltimore.,<extra_id_0> Stephanie Rawlings-Blake <extra_id_1>
+772,8241,2013,<extra_id_0> is the head of the government of Catalonia.,<extra_id_0> Artur Mas <extra_id_1>
+773,8249,2013,<extra_id_0> is the head of the government of Taiwan.,<extra_id_0> Jiang Yi-huah <extra_id_1>
+774,8267,2013,<extra_id_0> is the head of the government of Erlangen.,<extra_id_0> Siegfried Balleis <extra_id_1>
+775,8278,2013,<extra_id_0> is the head of the government of Pittsburgh.,<extra_id_0> Luke Ravenstahl <extra_id_1>
+776,8286,2013,<extra_id_0> is the head of the government of Slovenia.,<extra_id_0> Alenka Bratušek <extra_id_1>
+777,8296,2013,<extra_id_0> is the head of the government of British Columbia.,<extra_id_0> Christy Clark <extra_id_1>
+778,8307,2013,<extra_id_0> is the head of the government of Budapest.,<extra_id_0> István Tarlós <extra_id_1>
+779,8317,2013,<extra_id_0> is the head of the government of Florida.,<extra_id_0> Rick Scott <extra_id_1>
+780,8333,2013,<extra_id_0> is the head of the government of Stuttgart.,<extra_id_0> Wolfgang Schuster <extra_id_1>
+781,8344,2013,<extra_id_0> is the head of the government of San Francisco.,<extra_id_0> Ed Lee <extra_id_1>
+782,8355,2013,<extra_id_0> is the head of the government of Istanbul.,<extra_id_0> Kadir Topbaş <extra_id_1>
+783,8366,2013,<extra_id_0> is the head of the government of Manila.,<extra_id_0> Joseph Estrada <extra_id_1>
+784,8377,2013,<extra_id_0> is the head of the government of Memphis.,<extra_id_0> A C Wharton <extra_id_1>
+785,8400,2013,<extra_id_0> is the head of the government of Austria.,<extra_id_0> Werner Faymann <extra_id_1>
+786,8411,2013,<extra_id_0> is the head of the government of St. Louis.,<extra_id_0> Francis G. Slay <extra_id_1>
+787,8422,2013,<extra_id_0> is the head of the government of Hawaii.,<extra_id_0> Neil Abercrombie <extra_id_1>
+788,8432,2013,<extra_id_0> is the head of the government of Connecticut.,<extra_id_0> Dannel Malloy <extra_id_1>
+789,8448,2013,<extra_id_0> is the head of the government of Milan.,<extra_id_0> Giuliano Pisapia <extra_id_1>
+790,8459,2013,<extra_id_0> is the head of the government of Athens.,<extra_id_0> Georgios Kaminis <extra_id_1>
+791,8477,2013,<extra_id_0> is the head of the government of Montreal.,<extra_id_0> Michael Applebaum <extra_id_1>
+792,8488,2013,<extra_id_0> is the head of the government of Sarawak.,<extra_id_0> Abdul Taib Mahmud <extra_id_1>
+793,8500,2013,<extra_id_0> is the head of the government of Newfoundland and Labrador.,<extra_id_0> Tom Marshall <extra_id_1>
+794,8506,2013,<extra_id_0> is the head of the government of Tunisia.,<extra_id_0> Hamadi Jebali <extra_id_1>
+795,8524,2013,<extra_id_0> is the head of the government of Dresden.,<extra_id_0> Helma Orosz <extra_id_1>
+796,8534,2013,<extra_id_0> is the head of the government of Andorra.,<extra_id_0> Antoni Martí <extra_id_1>
+797,8545,2013,<extra_id_0> is the head of the government of Czech Republic.,<extra_id_0> Petr Nečas <extra_id_1>
+798,8556,2013,<extra_id_0> is the head of the government of Lyon.,<extra_id_0> Gérard Collomb <extra_id_1>
+799,8567,2013,<extra_id_0> is the head of the government of Tainan.,<extra_id_0> Lai Ching-te <extra_id_1>
+800,8578,2013,<extra_id_0> is the head of the government of Hoboken.,<extra_id_0> Dawn Zimmer <extra_id_1>
+801,8593,2013,<extra_id_0> is the head of the government of Prince Edward Island.,<extra_id_0> Robert Ghiz <extra_id_1>
+802,8604,2013,<extra_id_0> is the head of the government of Marseille.,<extra_id_0> Jean-Claude Gaudin <extra_id_1>
+803,8615,2013,<extra_id_0> is the head of the government of Cameroon.,<extra_id_0> Philémon Yang <extra_id_1>
+804,8626,2013,<extra_id_0> is the head of the government of Bremen.,<extra_id_0> Jens Böhrnsen <extra_id_1>
+805,8637,2013,<extra_id_0> is the head of the government of Manitoba.,<extra_id_0> Greg Selinger <extra_id_1>
+806,8648,2013,<extra_id_0> is the head of the government of Ithaca.,<extra_id_0> Svante Myrick <extra_id_1>
+807,8662,2013,<extra_id_0> is the head of the government of Transnistria.,<extra_id_0> Tatiana Turanskaya <extra_id_1>
+808,8680,2013,<extra_id_0> is the head of the government of Portland.,<extra_id_0> Michael F. Brennan <extra_id_1>
+809,8691,2013,<extra_id_0> is the head of the government of Community of Valencia.,<extra_id_0> Alberto Fabra <extra_id_1>
+810,8702,2013,<extra_id_0> is the head of the government of The Hague.,<extra_id_0> Jozias van Aartsen <extra_id_1>
+811,8713,2013,<extra_id_0> is the head of the government of Batangas.,<extra_id_0> Vilma Santos <extra_id_1>
+812,8730,2013,<extra_id_0> is the head of the government of Campania.,<extra_id_0> Stefano Caldoro <extra_id_1>
+813,8746,2013,<extra_id_0> is the head of the government of Navarre.,<extra_id_0> Yolanda Barcina <extra_id_1>
+814,8763,2013,<extra_id_0> is the head of the government of Okinawa Prefecture.,<extra_id_0> Hirokazu Nakaima <extra_id_1>
+815,8774,2013,<extra_id_0> is the head of the government of Kinmen.,<extra_id_0> Li Wo-shi <extra_id_1>
+816,8785,2013,<extra_id_0> is the head of the government of Dordrecht.,<extra_id_0> Arno Brok <extra_id_1>
+817,8792,2013,<extra_id_0> is the head of the government of British Virgin Islands.,<extra_id_0> Orlando Smith <extra_id_1>
+818,8803,2013,<extra_id_0> is the head of the government of Guadeloupe.,<extra_id_0> Victorin Lurel <extra_id_1>
+819,8817,2013,<extra_id_0> is the head of the government of Chișinău.,<extra_id_0> Dorin Chirtoacă <extra_id_1>
+820,8828,2013,<extra_id_0> is the head of the government of Emilia-Romagna.,<extra_id_0> Vasco Errani <extra_id_1>
+821,8839,2013,<extra_id_0> is the head of the government of Western Cape.,<extra_id_0> Helen Zille <extra_id_1>
+822,8850,2013,<extra_id_0> is the head of the government of Molenbeek-Saint-Jean.,<extra_id_0> Françoise Schepmans <extra_id_1>
+823,8859,2013,<extra_id_0> is the head of the government of Saarbrücken.,<extra_id_0> Charlotte Britz <extra_id_1>
+824,8870,2013,<extra_id_0> is the head of the government of Baden-Württemberg.,<extra_id_0> Winfried Kretschmann <extra_id_1>
+825,8881,2013,<extra_id_0> is the head of the government of Niigata Prefecture.,<extra_id_0> Hirohiko Izumida <extra_id_1>
+826,8892,2013,<extra_id_0> is the head of the government of Saarland.,<extra_id_0> Annegret Kramp-Karrenbauer <extra_id_1>
+827,8903,2013,<extra_id_0> is the head of the government of Province of Buenos Aires.,<extra_id_0> Daniel Scioli <extra_id_1>
+828,8914,2013,<extra_id_0> is the head of the government of Brandenburg.,<extra_id_0> Matthias Platzeck <extra_id_1>
+829,8925,2013,<extra_id_0> is the head of the government of Varese.,<extra_id_0> Attilio Fontana <extra_id_1>
+830,8942,2013,<extra_id_0> is the head of the government of Pescara.,<extra_id_0> Luigi Albore Mascia <extra_id_1>
+831,8953,2013,<extra_id_0> is the head of the government of Saratov Oblast.,<extra_id_0> Valery Radayev <extra_id_1>
+832,8964,2013,<extra_id_0> is the head of the government of Maori Party.,<extra_id_0> Tariana Turia <extra_id_1>
+833,8974,2013,<extra_id_0> is the head of the government of Piedmont.,<extra_id_0> Roberto Cota <extra_id_1>
+834,8985,2013,<extra_id_0> is the head of the government of Kyōto Prefecture.,<extra_id_0> Keiji Yamada <extra_id_1>
+835,8996,2013,<extra_id_0> is the head of the government of Sahrawi Arab Democratic Republic.,<extra_id_0> Abdelkader Taleb Omar <extra_id_1>
+836,9007,2013,<extra_id_0> is the head of the government of Chaco Province.,<extra_id_0> Jorge Capitanich <extra_id_1>
+837,9018,2013,<extra_id_0> is the head of the government of Le Mans.,<extra_id_0> Jean-Claude Boulard <extra_id_1>
+838,9029,2013,<extra_id_0> is the head of the government of Plzeň Region.,<extra_id_0> Milan Chovanec <extra_id_1>
+839,9034,2013,<extra_id_0> is the head of the government of Changhua County.,<extra_id_0> Cho Po-yuan <extra_id_1>
+840,9045,2013,<extra_id_0> is the head of the government of Limpopo.,<extra_id_0> Stanley Mathabatha <extra_id_1>
+841,9056,2013,<extra_id_0> is the head of the government of Amsterdam.,<extra_id_0> Eberhard van der Laan <extra_id_1>
+842,9067,2013,<extra_id_0> is the head of the government of Ilocos Norte.,<extra_id_0> Imee Marcos <extra_id_1>
+843,9076,2013,<extra_id_0> is the head of the government of Skåne County.,<extra_id_0> Margareta Pålsson <extra_id_1>
+844,9087,2013,<extra_id_0> is the head of the government of Stord.,<extra_id_0> Liv Kari Eskeland <extra_id_1>
+845,9095,2013,<extra_id_0> is the head of the government of Hsinchu County.,<extra_id_0> Chiu Ching-chun <extra_id_1>
+846,9106,2013,<extra_id_0> is the head of the government of Vesthimmerland Municipality.,<extra_id_0> Knud Kristensen <extra_id_1>
+847,9117,2013,<extra_id_0> is the head of the government of Budapest District IV.,<extra_id_0> Zsolt Wintermantel <extra_id_1>
+848,9128,2013,<extra_id_0> is the head of the government of Municipality of Thessaloniki.,<extra_id_0> Yannis Boutaris <extra_id_1>
+849,9147,2013,<extra_id_0> is the head of the government of Budapest District I.,<extra_id_0> Gábor Tamás Nagy <extra_id_1>
+850,9168,2013,<extra_id_0> is the head of the government of Sector 5.,<extra_id_0> Marian Vanghelie <extra_id_1>
+851,9179,2013,<extra_id_0> is the head coach of Philadelphia Eagles.,<extra_id_0> Chip Kelly <extra_id_1>
+852,9195,2013,<extra_id_0> is the head coach of Los Angeles Rams.,<extra_id_0> Jeff Fisher <extra_id_1>
+853,9211,2013,<extra_id_0> is the head coach of Ineos Grenadier.,<extra_id_0> Servais Knaven <extra_id_1>
+854,9244,2013,<extra_id_0> is the head coach of FK Budućnost Podgorica.,<extra_id_0> Radislav Dragićević <extra_id_1>
+855,9268,2013,<extra_id_0> is the head coach of Palermo FC.,<extra_id_0> Gennaro Gattuso <extra_id_1>
+856,9274,2013,<extra_id_0> is the head coach of SC Oțelul Galați.,<extra_id_0> Petre Grigoraș <extra_id_1>
+857,9296,2013,<extra_id_0> is the head coach of New York Liberty.,<extra_id_0> Bill Laimbeer <extra_id_1>
+858,9306,2013,<extra_id_0> is the head coach of Paris Saint-Germain.,<extra_id_0> Laurent Blanc <extra_id_1>
+859,9317,2013,<extra_id_0> is the head coach of FC Petrolul Ploiești.,<extra_id_0> Cosmin Contra <extra_id_1>
+860,9326,2013,<extra_id_0> is the head coach of FC Steaua București.,<extra_id_0> Laurențiu Reghecampf <extra_id_1>
+861,9337,2013,<extra_id_0> is the head coach of Louisville Cardinals men's basketball.,<extra_id_0> Rick Pitino <extra_id_1>
+862,9350,2013,<extra_id_0> is the head coach of Philadelphia Union.,<extra_id_0> John Hackworth <extra_id_1>
+863,9367,2013,<extra_id_0> is the head coach of Molde FK.,<extra_id_0> Ole Gunnar Solskjær <extra_id_1>
+864,9378,2013,<extra_id_0> is the head coach of Galatasaray S.K..,<extra_id_0> Fatih Terim <extra_id_1>
+865,9395,2013,<extra_id_0> is the head coach of Motherwell F.C..,<extra_id_0> Stuart McCall <extra_id_1>
+866,9407,2013,<extra_id_0> is the head coach of AFC Bournemouth.,<extra_id_0> Eddie Howe <extra_id_1>
+867,9422,2013,<extra_id_0> is the head coach of Hammarby Fotboll.,<extra_id_0> Gregg Berhalter <extra_id_1>
+868,9440,2013,<extra_id_0> is the head coach of MŠK Žilina.,<extra_id_0> Adrián Guľa <extra_id_1>
+869,9464,2013,<extra_id_0> is the head coach of Greenock Morton F.C..,<extra_id_0> Allan Moore <extra_id_1>
+870,9468,2013,<extra_id_0> is the head coach of FK Vardar.,<extra_id_0> Blagoja Milevski <extra_id_1>
+871,9479,2013,<extra_id_0> is the head coach of FC Prishtina.,<extra_id_0> Afrim Tovërlani <extra_id_1>
+872,9490,2013,<extra_id_0> is the head coach of Penn FC.,<extra_id_0> Bill Becher <extra_id_1>
+873,9505,2013,<extra_id_0> is the head coach of HŠK Zrinjski Mostar.,<extra_id_0> Branko Karačić <extra_id_1>
+874,9509,2013,<extra_id_0> is the head coach of Helsingin Jalkapalloklubi.,<extra_id_0> Sixten Boström <extra_id_1>
+875,9524,2013,<extra_id_0> is the head coach of Gap Connah's Quay F.C..,<extra_id_0> Mark McGregor <extra_id_1>
+876,9546,2013,<extra_id_0> is the head coach of FC Academica Clinceni.,<extra_id_0> Valentin Bădoi <extra_id_1>
+877,9554,2013,<extra_id_0> is the head coach of Atalanta B.C..,<extra_id_0> Stefano Colantuono <extra_id_1>
+878,9565,2013,<extra_id_0> is the head coach of FCU Craiova 1948.,<extra_id_0> Nicolò Napoli <extra_id_1>
+879,9590,2013,<extra_id_0> is the head coach of PFC CSKA Moscow.,<extra_id_0> Leonid Slutsky <extra_id_1>
+880,9604,2013,<extra_id_0> is the head coach of NK Osijek.,<extra_id_0> Stanko Mršić <extra_id_1>
+881,9610,2013,<extra_id_0> is the head coach of B36 Tórshavn.,<extra_id_0> Mikkjal Thomassen <extra_id_1>
+882,9617,2013,<extra_id_0> is the head coach of KV Mechelen.,<extra_id_0> Harm van Veldhoven <extra_id_1>
+883,9638,2013,<extra_id_0> is the head coach of Śląsk Wrocław.,<extra_id_0> Stanislav Levý <extra_id_1>
+884,9652,2013,<extra_id_0> is the head coach of Brentford F.C..,<extra_id_0> Mark Warburton <extra_id_1>
+885,9662,2013,<extra_id_0> is the head coach of Cowdenbeath F.C..,<extra_id_0> Colin Cameron <extra_id_1>
+886,9668,2013,<extra_id_0> is the head coach of FC Rostov.,<extra_id_0> Miodrag Božović <extra_id_1>
+887,9675,2013,<extra_id_0> is the head coach of EF Pro Cycling.,<extra_id_0> Andreas Klier <extra_id_1>
+888,9683,2013,<extra_id_0> is the head coach of Pogoń Szczecin.,<extra_id_0> Dariusz Wdowczyk <extra_id_1>
+889,9694,2013,<extra_id_0> is the head coach of Deceuninck-Quick-Step.,<extra_id_0> Brian Holm <extra_id_1>
+890,9712,2013,<extra_id_0> is the head coach of Östersunds FK.,<extra_id_0> Graham Potter <extra_id_1>
+891,9734,2013,<extra_id_0> is the head coach of SV Waldhof Mannheim.,<extra_id_0> Reiner Hollich <extra_id_1>
+892,9745,2013,<extra_id_0> is the head coach of Belarus national football team.,<extra_id_0> Georgi Kondratiev <extra_id_1>
+893,9757,2013,<extra_id_0> is the head coach of CSM Politehnica Iași.,<extra_id_0> Sorin Cârțu <extra_id_1>
+894,9773,2013,<extra_id_0> is the head coach of Novo Nordisk.,<extra_id_0> Massimo Podenzana <extra_id_1>
+895,9782,2013,<extra_id_0> is the head coach of Alpecin-Fenix.,<extra_id_0> Adrie van der Poel <extra_id_1>
+896,9802,2013,<extra_id_0> is the head coach of FC Aarau.,<extra_id_0> René Weiler <extra_id_1>
+897,9819,2013,<extra_id_0> is the head coach of FC Urartu.,<extra_id_0> Volodymyr Pyatenko <extra_id_1>
+898,9828,2013,<extra_id_0> is the head coach of SK Sigma Olomouc.,<extra_id_0> Zdeněk Psotka <extra_id_1>
+899,9835,2013,<extra_id_0> is the head coach of FC Slutsk.,<extra_id_0> Yuriy Krot <extra_id_1>
+900,9850,2013,<extra_id_0> is the head coach of Gimnàstic de Tarragona.,<extra_id_0> Santi Castillejo <extra_id_1>
+901,9876,2013,<extra_id_0> is the head coach of Wolfsberger AC.,<extra_id_0> Nenad Bjelica <extra_id_1>
+902,9893,2013,<extra_id_0> is the head coach of SV Wacker Burghausen.,<extra_id_0> Uwe Wolf <extra_id_1>
+903,9904,2013,<extra_id_0> is the head coach of Florida Gators women's basketball.,<extra_id_0> Amanda Butler <extra_id_1>
+904,9920,2013,<extra_id_0> is the head coach of FC Viitorul Constanța.,<extra_id_0> Gheorghe Hagi <extra_id_1>
+905,9945,2013,<extra_id_0> is the head coach of FC Neman Grodno.,<extra_id_0> Sergey Solodovnikov <extra_id_1>
+906,9955,2013,<extra_id_0> is the head coach of CF Fuenlabrada.,<extra_id_0> José María Salmerón <extra_id_1>
+907,9964,2013,<extra_id_0> is the head coach of FC Mordovia Saransk.,<extra_id_0> Dorinel Munteanu <extra_id_1>
+908,9969,2013,<extra_id_0> is the head coach of FC Slavia-Mozyr.,<extra_id_0> Yuriy Maleyev <extra_id_1>
+909,9998,2013,<extra_id_0> is the head coach of Royal Excel Mouscron.,<extra_id_0> Arnaud Dos Santos <extra_id_1>
+910,10013,2013,<extra_id_0> is the head coach of Thespakusatsu Gunma.,<extra_id_0> Tadahiro Akiba <extra_id_1>
+911,10024,2013,<extra_id_0> is the head coach of Íþróttabandalag Vestmannaeyja.,<extra_id_0> Hermann Hreiðarsson <extra_id_1>
+912,10032,2013,<extra_id_0> is the head coach of WB Veranclassic Aqua Protect.,<extra_id_0> Michel Dernies <extra_id_1>
+913,10045,2013,<extra_id_0> is the head coach of FC Smolevichi.,<extra_id_0> Yuri Puntus <extra_id_1>
+914,10054,2013,<extra_id_0> is the head coach of FC Naftan Novopolotsk.,<extra_id_0> Pavel Kucherov <extra_id_1>
+915,10086,2013,Google is owned by <extra_id_0>.,<extra_id_0> Eric Schmidt <extra_id_1>
+916,10094,2013,Charlotte Hornets is owned by <extra_id_0>.,<extra_id_0> Michael Jordan <extra_id_1>
+917,10105,2013,Nordland Line is owned by <extra_id_0>.,<extra_id_0> Norwegian National Rail Administration <extra_id_1>
+918,10116,2013,Phase 10 is owned by <extra_id_0>.,<extra_id_0> Mattel <extra_id_1>
+919,10127,2013,Flåm Line is owned by <extra_id_0>.,<extra_id_0> Norwegian National Rail Administration <extra_id_1>
+920,10138,2013,Bergen Line is owned by <extra_id_0>.,<extra_id_0> Norwegian National Rail Administration <extra_id_1>
+921,10149,2013,VK is owned by <extra_id_0>.,<extra_id_0> Yitzchak Mirilashvili <extra_id_1>
+922,10154,2013,Rover is owned by <extra_id_0>.,<extra_id_0> Land Rover Ltd. <extra_id_1>
+923,10165,2013,Wind River Systems is owned by <extra_id_0>.,<extra_id_0> Intel <extra_id_1>
+924,10176,2013,Stratolaunch Systems is owned by <extra_id_0>.,<extra_id_0> Vulcan Inc. <extra_id_1>
+925,10187,2013,Rauma Line is owned by <extra_id_0>.,<extra_id_0> Norwegian National Rail Administration <extra_id_1>
+926,10198,2013,Yokohama DeNA BayStars is owned by <extra_id_0>.,<extra_id_0> DeNA <extra_id_1>
+927,10209,2013,Rosewood Hotel Group is owned by <extra_id_0>.,<extra_id_0> New World China Land <extra_id_1>
+928,10220,2013,Lanai is owned by <extra_id_0>.,<extra_id_0> Larry Ellison <extra_id_1>
+929,10231,2013,Eurosport is owned by <extra_id_0>.,<extra_id_0> Discovery Inc. <extra_id_1>
+930,10242,2013,Havas is owned by <extra_id_0>.,<extra_id_0> Bolloré <extra_id_1>
+931,10262,2013,Rizzoli Libri is owned by <extra_id_0>.,<extra_id_0> RCS MediaGroup <extra_id_1>
+932,10273,2013,SourceForge is owned by <extra_id_0>.,<extra_id_0> Dice.com <extra_id_1>
+933,10277,2013,Boston Dynamics is owned by <extra_id_0>.,<extra_id_0> X <extra_id_1>
+934,10288,2013,Tanimachi Line is owned by <extra_id_0>.,<extra_id_0> Osaka Municipal Transportation Bureau <extra_id_1>
+935,10299,2013,Ruptly is owned by <extra_id_0>.,<extra_id_0> RT <extra_id_1>
+936,10308,2013,Stade Pierre-Mauroy is owned by <extra_id_0>.,<extra_id_0> Eiffage <extra_id_1>
+937,10319,2013,The Free Lance–Star is owned by <extra_id_0>.,<extra_id_0> Berkshire Hathaway <extra_id_1>
+938,10330,2013,Place Ville Marie is owned by <extra_id_0>.,<extra_id_0> Ivanhoe Cambridge <extra_id_1>
+939,10342,2013,Duracell is owned by <extra_id_0>.,<extra_id_0> Procter & Gamble <extra_id_1>
+940,10353,2013,Westfield Wheaton is owned by <extra_id_0>.,<extra_id_0> Westfield Group <extra_id_1>
+941,10364,2013,Hero is owned by <extra_id_0>.,<extra_id_0> Creative Programs <extra_id_1>
+942,10375,2013,Thawte Consulting is owned by <extra_id_0>.,<extra_id_0> NortonLifeLock <extra_id_1>
+943,10386,2013,Viasat is owned by <extra_id_0>.,<extra_id_0> Modern Times Group <extra_id_1>
+944,10397,2013,Dovre Line is owned by <extra_id_0>.,<extra_id_0> Norwegian National Rail Administration <extra_id_1>
+945,10408,2013,Fox Entertainment Group is owned by <extra_id_0>.,<extra_id_0> 21st Century Fox <extra_id_1>
+946,10419,2013,RV Melville is owned by <extra_id_0>.,<extra_id_0> United States Navy <extra_id_1>
+947,10430,2013,Stadio Friuli is owned by <extra_id_0>.,<extra_id_0> Udine <extra_id_1>
+948,10440,2013,Nordic Regional Airlines is owned by <extra_id_0>.,<extra_id_0> Flybe <extra_id_1>
+949,10451,2013,TechCrunch is owned by <extra_id_0>.,<extra_id_0> AOL <extra_id_1>
+950,10462,2013,Boy and Dog in a Johnnypump is owned by <extra_id_0>.,<extra_id_0> Peter M. Brant <extra_id_1>
+951,10473,2013,Têtu is owned by <extra_id_0>.,<extra_id_0> Pierre Bergé <extra_id_1>
+952,10479,2013,Hilton Athens is owned by <extra_id_0>.,<extra_id_0> Alpha Bank <extra_id_1>
+953,10490,2013,BlaBlaBus is owned by <extra_id_0>.,<extra_id_0> SNCF <extra_id_1>
+954,10501,2013,Rauma shipyard is owned by <extra_id_0>.,<extra_id_0> STX Finland Oy <extra_id_1>
+955,10512,2013,PanAmericano is owned by <extra_id_0>.,<extra_id_0> BTG Pactual <extra_id_1>
+956,10523,2013,Hamburger Abendblatt is owned by <extra_id_0>.,<extra_id_0> Axel Springer SE <extra_id_1>
+957,10534,2013,Rabbit is owned by <extra_id_0>.,<extra_id_0> S. I. Newhouse <extra_id_1>
+958,10545,2013,Mountain Studios is owned by <extra_id_0>.,<extra_id_0> Mercury Phoenix Trust <extra_id_1>
+959,10556,2013,Wells Fargo Center is owned by <extra_id_0>.,<extra_id_0> Ivanhoe Cambridge <extra_id_1>
+960,10567,2013,Eastern Acoustic Works is owned by <extra_id_0>.,<extra_id_0> LOUD Technologies <extra_id_1>
+961,10586,2013,Match! Game is owned by <extra_id_0>.,<extra_id_0> All-Russia State Television and Radio Broadcasting Company <extra_id_1>
+962,10597,2013,Angaston Power Station is owned by <extra_id_0>.,<extra_id_0> Infratil <extra_id_1>
+963,10608,2013,Portrait of Professor Benjamin H. Rand is owned by <extra_id_0>.,<extra_id_0> Crystal Bridges Museum of American Art <extra_id_1>
+964,10619,2013,Linha do Sul is owned by <extra_id_0>.,<extra_id_0> REFER <extra_id_1>
+965,10630,2013,Linha do Oeste is owned by <extra_id_0>.,<extra_id_0> REFER <extra_id_1>
+966,10641,2013,Dothan Eagle is owned by <extra_id_0>.,<extra_id_0> Berkshire Hathaway <extra_id_1>
+967,10652,2013,Leixões railway line is owned by <extra_id_0>.,<extra_id_0> REFER <extra_id_1>
+968,10663,2013,Danville Register & Bee is owned by <extra_id_0>.,<extra_id_0> Berkshire Hathaway <extra_id_1>
+969,10674,2013,Ramal de Braga is owned by <extra_id_0>.,<extra_id_0> REFER <extra_id_1>
+970,10685,2013,Kevitsa mine is owned by <extra_id_0>.,<extra_id_0> First Quantum Minerals <extra_id_1>

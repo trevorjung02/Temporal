@@ -1,0 +1,25 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=cse
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=04:59:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+python run.py --config configs/templama/t5_kadapters.json
+--------------------
+Traceback (most recent call last):
+  File "run.py", line 31, in <module>
+    with open(arg_.config) as config_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'configs/templama/t5_kadapters.json'

@@ -1,0 +1,40 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=ark
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=04:59:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+python run.py --config configs/small_setting/evaluation/newLAMA_easy1/t5_initial.json
+python run.py --config configs/small_setting/evaluation/newLAMA_easy2/t5_initial.json
+--------------------
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+Not freezing any parameters!
+split is 1
+Length of dataset retrieving is.. 529
+Length of validation data:  529
+created folder :  log/newLAMA_Easy1
+Number of total validation data: 529
+Number of correct predictions: 22. Percentage : 0.04158790170132325
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+Not freezing any parameters!
+split is 2
+Length of dataset retrieving is.. 201
+Length of validation data:  201
+created folder :  log/newLAMA_Easy2
+Number of total validation data: 201
+Number of correct predictions: 15. Percentage : 0.07462686567164178

@@ -1,0 +1,438 @@
+id,original,date,input,output
+0,5,2015,Gianluigi Buffon plays for <extra_id_0>.,Juventus FC;Italy national association football team
+1,20,2015,Lewis Hamilton plays for <extra_id_0>.,Mercedes
+2,31,2015,Didier Drogba plays for <extra_id_0>.,Chelsea F.C.;Montreal Impact
+3,40,2015,Julius Peppers plays for <extra_id_0>.,Green Bay Packers
+4,51,2015,Stuart Broad plays for <extra_id_0>.,England and Wales cricket team
+5,60,2015,MS Dhoni plays for <extra_id_0>.,India national cricket team
+6,71,2015,Mario Balotelli plays for <extra_id_0>.,Associazione Calcio Milan;Liverpool F.C.
+7,82,2015,James Harden plays for <extra_id_0>.,Houston Rockets
+8,93,2015,Mohamed Salah plays for <extra_id_0>.,A.S. Roma;Egypt national football team;Chelsea F.C.;ACF Fiorentina
+9,108,2015,Rob Gronkowski plays for <extra_id_0>.,New England Patriots
+10,119,2015,Patrice Evra plays for <extra_id_0>.,France national association football team;Juventus FC
+11,128,2015,Megan Rapinoe plays for <extra_id_0>.,OL Reign
+12,139,2015,Robert Lewandowski plays for <extra_id_0>.,FC Bayern Munich
+13,155,2015,Urby Emanuelson plays for <extra_id_0>.,A.S. Roma;Atalanta B.C.
+14,169,2015,DeMarco Murray plays for <extra_id_0>.,Philadelphia Eagles
+15,177,2015,Joe Hart plays for <extra_id_0>.,Manchester City F.C.
+16,188,2015,Gonzalo Higuaín plays for <extra_id_0>.,S.S.C. Napoli;Argentina national football team
+17,199,2015,Nicklas Bendtner plays for <extra_id_0>.,VfL Wolfsburg
+18,210,2015,Jean Makoun plays for <extra_id_0>.,Stade Rennais F.C.;Antalyaspor
+19,221,2015,Jozy Altidore plays for <extra_id_0>.,Toronto FC;Sunderland A.F.C.
+20,230,2015,Breanna Stewart plays for <extra_id_0>.,UConn Huskies women's basketball
+21,241,2015,Gary Hooper plays for <extra_id_0>.,Sheffield Wednesday F.C.;Norwich City F.C.
+22,251,2015,Elena Delle Donne plays for <extra_id_0>.,Chicago Sky
+23,262,2015,Nicolas Anelka plays for <extra_id_0>.,Mumbai City FC
+24,277,2015,Son Heung-min plays for <extra_id_0>.,South Korea national football team;Tottenham Hotspur F.C.;Bayer 04 Leverkusen
+25,288,2015,Dimitar Berbatov plays for <extra_id_0>.,P.A.O.K. Thessaloniki F.C.;AS Monaco FC
+26,297,2015,Henrikh Mkhitaryan plays for <extra_id_0>.,Borussia Dortmund
+27,308,2015,Michael Beasley plays for <extra_id_0>.,Memphis Grizzlies
+28,319,2015,Chris Hackett plays for <extra_id_0>.,Northampton Town F.C.
+29,330,2015,Younus Khan plays for <extra_id_0>.,Pakistan national cricket team
+30,338,2015,Yaya Touré plays for <extra_id_0>.,Manchester City F.C.
+31,348,2015,Quincy Promes plays for <extra_id_0>.,Spartak Moscow;Netherlands national association football team
+32,359,2015,Mostapha El Kabir plays for <extra_id_0>.,Al Nassr Saudi FC;Gençlerbirliği S.K.
+33,370,2015,Davide Astori plays for <extra_id_0>.,A.S. Roma;Italy national association football team
+34,381,2015,Mohammad Amir plays for <extra_id_0>.,Rawalpindi Rams;Pakistan national cricket team
+35,392,2015,Jimmy Butler plays for <extra_id_0>.,Chicago Bulls
+36,403,2015,Luke Moore plays for <extra_id_0>.,Toronto FC
+37,414,2015,Milan Baroš plays for <extra_id_0>.,FK Mladá Boleslav;FC Baník Ostrava
+38,425,2015,Ben May plays for <extra_id_0>.,Bromley F.C.;Ebbsfleet United F.C.
+39,436,2015,Daniel McBreen plays for <extra_id_0>.,South China AA
+40,451,2015,Tyson Chandler plays for <extra_id_0>.,Dallas Mavericks
+41,462,2015,Kris Commons plays for <extra_id_0>.,Celtic F.C.
+42,473,2015,Andrei Arshavin plays for <extra_id_0>.,FC Zenit Saint Petersburg;FC Kuban Krasnodar
+43,482,2015,Lorik Cana plays for <extra_id_0>.,F.C. Nantes;S.S. Lazio
+44,489,2015,Christian Kabasele plays for <extra_id_0>.,K.R.C. Genk
+45,500,2015,Alexander Kačaniklić plays for <extra_id_0>.,Sweden national association football team
+46,511,2015,Moses Ashikodi plays for <extra_id_0>.,Walton Casuals F.C.;Cray Wanderers F.C.;Farnborough F.C.;Carshalton Athletic F.C.;Maldon & Tiptree football club;Antigua and Barbuda national football team;Walton & Hersham F.C.
+47,526,2015,Luke Foster plays for <extra_id_0>.,Southport F.C.
+48,537,2015,El Hadji Diouf plays for <extra_id_0>.,Sabah FA
+49,547,2015,Eniola Aluko plays for <extra_id_0>.,Chelsea L.F.C.
+50,558,2015,Gjergji Muzaka plays for <extra_id_0>.,KF Tirana
+51,569,2015,André Schembri plays for <extra_id_0>.,AC Omonia
+52,576,2015,Domantas Sabonis plays for <extra_id_0>.,Gonzaga Bulldogs men's basketball
+53,587,2015,Eduardo da Silva plays for <extra_id_0>.,FC Shakhtar Donetsk;Clube de Regatas do Flamengo
+54,598,2015,Steven Caulker plays for <extra_id_0>.,Southampton F.C.;Queens Park Rangers F.C.
+55,609,2015,Michael Bostwick plays for <extra_id_0>.,Peterborough United F.C.
+56,620,2015,Gustavo Bou plays for <extra_id_0>.,Racing Club
+57,634,2015,James Forrest plays for <extra_id_0>.,Scotland national football team;Celtic F.C.
+58,645,2015,Greg Tansey plays for <extra_id_0>.,Inverness Caledonian Thistle F.C.
+59,658,2015,Ross McCormack plays for <extra_id_0>.,Fulham F.C.
+60,669,2015,Rohit Sharma plays for <extra_id_0>.,Mumbai Indians
+61,680,2015,Neven Subotić plays for <extra_id_0>.,Borussia Dortmund
+62,691,2015,Leigh Griffiths plays for <extra_id_0>.,Scotland national football team;Celtic F.C.
+63,702,2015,Álvaro Morata plays for <extra_id_0>.,Juventus FC;Spain national association football team
+64,713,2015,Shane Long plays for <extra_id_0>.,Southampton F.C.
+65,722,2015,Leah Williamson plays for <extra_id_0>.,England women's national under-20 football team;Arsenal W.F.C.;England women's national under-19 football team;England women's national under-23 football team
+66,733,2015,Migen Memelli plays for <extra_id_0>.,KS Kastrioti
+67,744,2015,Jack Butland plays for <extra_id_0>.,England national under-21 football team;Stoke City F.C.;England national association football team
+68,755,2015,Roda Antar plays for <extra_id_0>.,Zhejiang Greentown F.C.;Lebanon national football team
+69,766,2015,Shaun Tait plays for <extra_id_0>.,Adelaide Strikers;Hobart Hurricanes
+70,774,2015,Craig Reid plays for <extra_id_0>.,Brentwood Town F.C.;Kidderminster Harriers F.C.
+71,785,2015,Dries Mertens plays for <extra_id_0>.,Belgium national football team;S.S.C. Napoli
+72,800,2015,DJ Campbell plays for <extra_id_0>.,Maidenhead United F.C.
+73,806,2015,Dinesh Chandimal plays for <extra_id_0>.,Sri Lanka national cricket team;Ruhuna Royals
+74,817,2015,Freddy Adu plays for <extra_id_0>.,Tampa Bay Rowdies;Soccer Club Kuopio Futis-98;Kuopion Palloseura
+75,828,2015,Yacine Brahimi plays for <extra_id_0>.,Algeria national football team;Futebol Clube do Porto
+76,839,2015,Vernon Davis plays for <extra_id_0>.,San Francisco 49ers;Denver Broncos
+77,850,2015,Adel Taarabt plays for <extra_id_0>.,S.L. Benfica;Queens Park Rangers F.C.;S.L. Benfica B
+78,861,2015,Jimmy Smith plays for <extra_id_0>.,Crawley Town F.C.
+79,872,2015,Michael Bradley plays for <extra_id_0>.,Club de Fútbol Monterrey
+80,883,2015,Kris Boyd plays for <extra_id_0>.,Kilmarnock F.C.;Rangers F.C.
+81,893,2015,Douglas Franco Teixeira plays for <extra_id_0>.,Trabzonspor;FC Dinamo Moscow
+82,904,2015,Jonathan Walters plays for <extra_id_0>.,Stoke City F.C.;Republic of Ireland national association football team
+83,914,2015,David Cameron holds the position of <extra_id_0>.,First Lord of the Treasury;Minister for the Civil Service;Leader of the Conservative Party;Prime Minister of the United Kingdom
+84,921,2015,Francis holds the position of <extra_id_0>.,pope
+85,927,2015,Justin Trudeau holds the position of <extra_id_0>.,Minister of Intergovernmental Affairs;Prime Minister of Canada
+86,937,2015,Mohammad bin Salman holds the position of <extra_id_0>.,deputy crown prince
+87,948,2015,Jason Kenney holds the position of <extra_id_0>.,"minister of Families, Children and Social Development;Minister of National Defence;Minister of Multiculturalism and Citizenship"
+88,952,2015,Andrej Babiš holds the position of <extra_id_0>.,Finance Minister of the Czech Republic
+89,964,2015,Andrew Cuomo holds the position of <extra_id_0>.,Governor of New York
+90,970,2015,Ryan Zinke holds the position of <extra_id_0>.,United States representative
+91,980,2015,Alan Shatter holds the position of <extra_id_0>.,Teachta Dála
+92,986,2015,Chris Grayling holds the position of <extra_id_0>.,Leader of the House of Commons;Secretary of State for Justice;Lord President of the Council;Lord Chancellor
+93,996,2015,Jens Stoltenberg holds the position of <extra_id_0>.,Secretary General of NATO
+94,1006,2015,Mick Mulvaney holds the position of <extra_id_0>.,United States representative
+95,1015,2015,Richard B. Spencer holds the position of <extra_id_0>.,executive director;chairperson
+96,1026,2015,Timothy M. Dolan holds the position of <extra_id_0>.,cardinal
+97,1037,2015,Chris Murphy holds the position of <extra_id_0>.,United States senator
+98,1048,2015,Scott Morrison holds the position of <extra_id_0>.,Minister for Social Services;Treasurer of Australia
+99,1059,2015,Kirill I of Moscow holds the position of <extra_id_0>.,metropolitan bishop
+100,1068,2015,John Ratcliffe holds the position of <extra_id_0>.,United States representative
+101,1084,2015,Tony Clement holds the position of <extra_id_0>.,President of the Treasury Board;Minister of Foreign Affairs of Canada
+102,1095,2015,Alexander Stubb holds the position of <extra_id_0>.,Minister of Finance;Prime Minister of Finland
+103,1102,2015,Micheál Martin holds the position of <extra_id_0>.,Teachta Dála;Leader of Fianna Fáil;Leader of the Opposition
+104,1113,2015,Jerry Moran holds the position of <extra_id_0>.,United States senator
+105,1124,2015,George Brandis holds the position of <extra_id_0>.,Vice-President of the Executive Council;Leader of the Government in the Senate;Attorney-General for Australia;Minister for the Arts;Member of the Australian Senate
+106,1133,2015,Anba Epiphanius holds the position of <extra_id_0>.,bishop
+107,1142,2015,Bill Keating holds the position of <extra_id_0>.,United States representative
+108,1152,2015,Michael Noonan holds the position of <extra_id_0>.,Teachta Dála;Minister for Finance
+109,1165,2015,Ko Wen-je holds the position of <extra_id_0>.,Mayor of Taipei
+110,1172,2015,Siniša Mali holds the position of <extra_id_0>.,Mayor of Belgrade
+111,1182,2015,David Laws holds the position of <extra_id_0>.,Cabinet Office
+112,1193,2015,Sauli Niinistö holds the position of <extra_id_0>.,President of Finland
+113,1200,2015,Nitin Gadkari holds the position of <extra_id_0>.,Minister of Road Transport and Highways;Minister of Shipping (India)
+114,1211,2015,Lenín Moreno holds the position of <extra_id_0>.,Special Envoy of the Secretary-General;vice president
+115,1220,2015,Mark Harper holds the position of <extra_id_0>.,Parliamentary Secretary to the Treasury
+116,1227,2015,Caroline Flint holds the position of <extra_id_0>.,Shadow Secretary of State for Energy and Climate Change
+117,1233,2015,Scott Peters holds the position of <extra_id_0>.,United States representative
+118,1248,2015,James Lankford holds the position of <extra_id_0>.,United States senator;United States representative
+119,1259,2015,Brendan Howlin holds the position of <extra_id_0>.,Teachta Dála;Minister for Public Expenditure and Reform
+120,1276,2015,Kathleen Rice holds the position of <extra_id_0>.,United States representative
+121,1286,2015,Katy Gallagher holds the position of <extra_id_0>.,Member of the Australian Senate
+122,1297,2015,Heather Bresch holds the position of <extra_id_0>.,chief executive officer
+123,1303,2015,Zoi Konstantopoulou holds the position of <extra_id_0>.,Speaker of the Hellenic Parliament
+124,1314,2015,Ahmad Zahid Hamidi holds the position of <extra_id_0>.,Minister of Home Affairs;Deputy Prime Minister of Malaysia
+125,1325,2015,Jean-Louis Tauran holds the position of <extra_id_0>.,camerlengo of the Holy Roman Church;cardinal
+126,1334,2015,Jyrki Katainen holds the position of <extra_id_0>.,European Commissioner for Industry and Entrepreneurship
+127,1347,2015,Éamon Ó Cuív holds the position of <extra_id_0>.,Teachta Dála
+128,1360,2015,Angelo De Donatis holds the position of <extra_id_0>.,auxiliary bishop;titular bishop;Catholic bishop;Auxiliary Bishop of Rome
+129,1375,2015,Willie O'Dea holds the position of <extra_id_0>.,Teachta Dála
+130,1390,2015,Chan Chun Sing holds the position of <extra_id_0>.,Ministry of Defence;Ministry of Social and Family Development
+131,1401,2015,Jimmy Deenihan holds the position of <extra_id_0>.,Teachta Dála
+132,1405,2015,Avril Haines holds the position of <extra_id_0>.,Deputy National Security Advisor;Deputy Director of the Central Intelligence Agency
+133,1409,2015,Beata Szydło holds the position of <extra_id_0>.,Prime Minister of Poland
+134,1416,2015,Raheel Sharif holds the position of <extra_id_0>.,Chief of Army Staff
+135,1427,2015,David Lidington holds the position of <extra_id_0>.,Minister of State for Europe
+136,1433,2015,Alexander De Croo holds the position of <extra_id_0>.,Minister of Development Cooperation
+137,1452,2015,Ueli Maurer holds the position of <extra_id_0>.,"Federal Department of Defence, Civil Protection and Sports"
+138,1455,2015,Per-Willy Amundsen holds the position of <extra_id_0>.,State Secretary
+139,1466,2015,Joe McHugh holds the position of <extra_id_0>.,Teachta Dála
+140,1481,2015,Muppavarapu Venkaiah Naidu holds the position of <extra_id_0>.,Minister of Urban Development (India);Member of Rajya Sabha;Minister of Housing and Urban Poverty Alleviation;Minister of Parliamentary Affairs
+141,1501,2015,Salvador Sánchez Cerén holds the position of <extra_id_0>.,President of El Salvador
+142,1511,2015,Mary Barra holds the position of <extra_id_0>.,chief executive officer
+143,1534,2015,Rich Nugent holds the position of <extra_id_0>.,United States representative
+144,1538,2015,Edward Bernard Scharfenberger holds the position of <extra_id_0>.,diocesan bishop;Catholic bishop
+145,1544,2015,Nia Griffith holds the position of <extra_id_0>.,Shadow Secretary of State for Wales
+146,1562,2015,Joseph Strickland holds the position of <extra_id_0>.,diocesan bishop;Catholic bishop
+147,1573,2015,David Sassoli holds the position of <extra_id_0>.,member of the European Parliament
+148,1581,2015,Warren Truss holds the position of <extra_id_0>.,Minister for Infrastructure and Transport;Deputy Prime Minister of Australia
+149,1594,2015,Alex Neil holds the position of <extra_id_0>.,"Cabinet Secretary for Communities, Social Security and Equalities"
+150,1596,2015,Dennis Villarojo holds the position of <extra_id_0>.,auxiliary bishop;titular bishop;Catholic bishop
+151,1605,2015,Tammam Salam holds the position of <extra_id_0>.,President of Lebanon;Prime Minister of Lebanon
+152,1611,2015,Heather Humphreys holds the position of <extra_id_0>.,"Teachta Dála;Minister for Arts, Heritage and the Gaeltacht"
+153,1622,2015,Dan Eliasson holds the position of <extra_id_0>.,National Police Commissioner
+154,1632,2015,Sam Darnold attended <extra_id_0>.,University of Southern California;San Clemente High School
+155,1643,2015,Muhammad Rizieq Shihab attended <extra_id_0>.,Universiti Sains Islam Malaysia
+156,1652,2015,Mo'ne Davis attended <extra_id_0>.,Springside Chestnut Hill Academy
+157,1662,2015,Kyle Wiltjer attended <extra_id_0>.,Gonzaga University
+158,1669,2015,Caitlin Rivers attended <extra_id_0>.,Virginia Tech
+159,1674,2015,Shawné Michaelain Holloway attended <extra_id_0>.,Parsons Paris
+160,1680,2015,AnnaSophia Robb attended <extra_id_0>.,New York University
+161,1689,2015,Bronny James attended <extra_id_0>.,Old Trail School
+162,1696,2015,Trevor Lawrence attended <extra_id_0>.,Cartersville High School
+163,1708,2015,Catarina Macario attended <extra_id_0>.,Torrey Pines High School
+164,1724,2015,Katherine Boyer attended <extra_id_0>.,University of Manitoba
+165,1733,2015,Jock Landale attended <extra_id_0>.,Saint Mary's College of California
+166,1742,2015,Elisa Granato attended <extra_id_0>.,University of Zurich
+167,1748,2015,McKenzie Milton attended <extra_id_0>.,Mililani High School
+168,1764,2015,Abdullah bin Khalid bin Sultan Al Saud attended <extra_id_0>.,MIT Sloan School of Management
+169,1770,2015,Katja Kassin attended <extra_id_0>.,"California State University, Northridge"
+170,1778,2015,Aliyah Boston attended <extra_id_0>.,Worcester Academy
+171,1789,2015,Daniel Swain attended <extra_id_0>.,Stanford University
+172,1796,2015,<extra_id_0> is the chair of Lega Nord.,Matteo Salvini
+173,1807,2015,<extra_id_0> is the chair of University of North Carolina at Chapel Hill.,Carol Folt
+174,1818,2015,<extra_id_0> is the chair of Republican People's Party.,Kemal Kılıçdaroğlu
+175,1829,2015,<extra_id_0> is the chair of United States Department of State.,John Kerry
+176,1840,2015,<extra_id_0> is the chair of European Court of Human Rights.,Dean Spielmann;Guido Raimondi
+177,1851,2015,<extra_id_0> is the chair of Associazione Calcio Milan.,Silvio Berlusconi
+178,1862,2015,<extra_id_0> is the chair of Humanists UK.,Jim Al-Khalili
+179,1873,2015,<extra_id_0> is the chair of Democratic Action Party.,Tan Kok Wai
+180,1883,2015,<extra_id_0> is the chair of KPMG.,John B. Veihmeyer
+181,1891,2015,<extra_id_0> is the chair of Social Democrats.,Helle Thorning-Schmidt;Mette Frederiksen
+182,1902,2015,<extra_id_0> is the chair of CRH.,Nicky Hartery
+183,1915,2015,<extra_id_0> is the chair of Max Planck Society.,Martin Stratmann
+184,1926,2015,<extra_id_0> is the chair of Socialist People's Party.,Pia Olsen Dyhr
+185,1935,2015,<extra_id_0> is the chair of Supreme Court of Justice.,Eckart Ratz
+186,1946,2015,<extra_id_0> is the chair of ACT New Zealand.,David Seymour
+187,1953,2015,<extra_id_0> is the chair of European Research Council.,Jean-Pierre Bourguignon
+188,1961,2015,<extra_id_0> is the chair of United States Department of the Interior.,Sally Jewell
+189,1971,2015,<extra_id_0> is the chair of International Mathematical Union.,Shigefumi Mori
+190,1982,2015,<extra_id_0> is the chair of Norwegian Association for Women's Rights.,Margunn Bjørnholt
+191,1993,2015,<extra_id_0> is the chair of Ruter.,Bernt Stilluf Karlsen
+192,2004,2015,<extra_id_0> is the chair of Radical Party of the Left.,Jean-Michel Baylet
+193,2014,2015,<extra_id_0> is the chair of Ministry of Defence of Germany.,Ursula von der Leyen
+194,2023,2015,<extra_id_0> is the chair of Open Source Initiative.,Allison Randal;Simon Phipps
+195,2031,2015,<extra_id_0> is the chair of Parliamentary Assembly of the Organization for Security and Co-operation in Europe.,Ilkka Kanerva
+196,2042,2015,<extra_id_0> is the chair of National Security and Defense Council of Ukraine.,Oleksandr Turchynov
+197,2053,2015,<extra_id_0> is the chair of Royal Spanish Football Federation.,Ángel María Villar
+198,2060,2015,<extra_id_0> is the chair of National Assembly.,Amadou Salifou
+199,2071,2015,<extra_id_0> is the chair of German Council of Economic Experts.,Christoph M. Schmidt
+200,2089,2015,<extra_id_0> is the chair of Economic and Financial Committee.,Thomas Wieser
+201,2100,2015,<extra_id_0> is the chair of Financial Information Authority.,Giorgio Corbellini
+202,2111,2015,<extra_id_0> is the chair of Football Association of Thailand.,Worawi Makudi
+203,2122,2015,<extra_id_0> is the chair of Liberal Movement.,Eligijus Masiulis
+204,2133,2015,<extra_id_0> is the chair of Federal Department of Justice and Police.,Simonetta Sommaruga
+205,2144,2015,"<extra_id_0> is the chair of Embassy of Ukraine, Minsk.",Mykhailo Yezhel
+206,2150,2015,<extra_id_0> is the chair of European Pirate Party.,Smári McCarthy;Amelia Andersdotter
+207,2161,2015,<extra_id_0> is the chair of The Greens–European Free Alliance.,Philippe Lamberts
+208,2172,2015,<extra_id_0> is the chair of Ministry of Justice.,Hwang Kyo-ahn
+209,2184,2015,Ricardo Patiño is a member of the <extra_id_0>.,PAIS Alliance
+210,2204,2015,Jeff Van Drew is a member of the <extra_id_0>.,Democratic Party
+211,2214,2015,Beji Caid Essebsi is a member of the <extra_id_0>.,Call for Tunisia
+212,2224,2015,Dean Del Mastro is a member of the <extra_id_0>.,Independent Conservative
+213,2240,2015,Marcelo Ebrard is a member of the <extra_id_0>.,Party of the Democratic Revolution
+214,2253,2015,Ciro Gomes is a member of the <extra_id_0>.,Democratic Labour Party;Republican Party of the Social Order
+215,2267,2015,Oleksandr Vilkul is a member of the <extra_id_0>.,Opposition Bloc
+216,2278,2015,Patrick Devedjian is a member of the <extra_id_0>.,Union for a Popular Movement;Rally for the Republic
+217,2284,2015,Yuriy Boyko is a member of the <extra_id_0>.,Opposition Bloc
+218,2295,2015,Volodymyr Groysman is a member of the <extra_id_0>.,European Solidarity
+219,2305,2015,Fawad Ahmed Chaudhry is a member of the <extra_id_0>.,Pakistan Muslim League (Q)
+220,2315,2015,Irene Lozano is a member of the <extra_id_0>.,"Union, Progress and Democracy;Spanish Socialist Workers' Party"
+221,2326,2015,Gérald Darmanin is a member of the <extra_id_0>.,The Republicans;Union for a Popular Movement
+222,2333,2015,Tarō Yamamoto is a member of the <extra_id_0>.,Liberal Party
+223,2344,2015,Mircea Geoană is a member of the <extra_id_0>.,independent politician;Social Democratic Party
+224,2355,2015,Daniel Constantin is a member of the <extra_id_0>.,Alliance of Liberals and Democrats Party (Romania);Conservative Party
+225,2366,2015,Simon Emil Ammitzbøll is a member of the <extra_id_0>.,Liberal Alliance
+226,2372,2015,Barbara Nowacka is a member of the <extra_id_0>.,Your Movement
+227,2383,2015,José Antonio Kast is a member of the <extra_id_0>.,Independent Democratic Union
+228,2394,2015,Gustav Kasselstrand is a member of the <extra_id_0>.,Sweden Democrats
+229,2404,2015,Charles M. Huber is a member of the <extra_id_0>.,Christian Democratic Union
+230,2415,2015,Lucy Harris is a member of the <extra_id_0>.,Brexit Party
+231,2425,2015,Hamed Karoui is a member of the <extra_id_0>.,Free Destourian Party
+232,2436,2015,Tom Horner is a member of the <extra_id_0>.,Independence Party of Minnesota
+233,2447,2015,Shlomo Molla is a member of the <extra_id_0>.,Hatnuah
+234,2463,2015,Amiruddin Hamzah is a member of the <extra_id_0>.,Malaysian Islamic Party
+235,2474,2015,Joana Ortega i Alemany is a member of the <extra_id_0>.,Democratic Union of Catalonia
+236,2485,2015,Anam Vivekananda Reddy is a member of the <extra_id_0>.,Telugu Desam Party;Indian National Congress
+237,2494,2015,Gabriele Albertini is a member of the <extra_id_0>.,New Centre-Right
+238,2504,2015,Naz Baloch is a member of the <extra_id_0>.,Pakistan Peoples Party
+239,2515,2015,Ivan Brajović is a member of the <extra_id_0>.,Social Democratic Party of Montenegro;Social Democrats of Montenegro
+240,2526,2015,Maria Badia i Cutchet is a member of the <extra_id_0>.,Leftwing Movement
+241,2537,2015,Leïla Chaibi is a member of the <extra_id_0>.,Left Party
+242,2548,2015,Arturo Scotto is a member of the <extra_id_0>.,"Left, Ecology and Freedom"
+243,2559,2015,Patrick Reslow is a member of the <extra_id_0>.,Moderate Party
+244,2570,2015,Neus Munte Fernandez is a member of the <extra_id_0>.,Democratic Convergence of Catalonia
+245,2581,2015,Verónica Zurita is a member of the <extra_id_0>.,PAIS Alliance
+246,2592,2015,Tunahan Kuzu is a member of the <extra_id_0>.,DENK
+247,2603,2015,Halyna Yanchenko is a member of the <extra_id_0>.,Democratic Alliance
+248,2611,2015,Fotis Kouvelis is a member of the <extra_id_0>.,Democratic Left
+249,2617,2015,Femke Merel van Kooten-Arissen is a member of the <extra_id_0>.,Party for the Animals
+250,2628,2015,Massimo Zedda is a member of the <extra_id_0>.,"Left, Ecology and Freedom"
+251,2639,2015,Christian Hansen is a member of the <extra_id_0>.,Fokus
+252,2645,2015,Shafiqur Rahman Barq is a member of the <extra_id_0>.,Samajwadi Party
+253,2659,2015,Nicola Giorgino is a member of the <extra_id_0>.,Forza Italia (2013)
+254,2670,2015,Ian Blayney is a member of the <extra_id_0>.,Liberal Party of Australia (Western Australian Division)
+255,2681,2015,Zaharije Trnavčević is a member of the <extra_id_0>.,Rich Serbia
+256,2692,2015,Jana Žitňanská is a member of the <extra_id_0>.,New Majority
+257,2703,2015,Niall Ferguson works for <extra_id_0>.,Harvard University
+258,2714,2015,Roger Scruton works for <extra_id_0>.,University of Buckingham;University of Oxford
+259,2725,2015,Glenn Greenwald works for <extra_id_0>.,The Intercept
+260,2736,2015,Jürgen Klopp works for <extra_id_0>.,Borussia Dortmund;Liverpool F.C.
+261,2745,2015,Chen Guangcheng works for <extra_id_0>.,Witherspoon Institute
+262,2756,2015,Karl Lagerfeld works for <extra_id_0>.,Fendi;Chanel
+263,2763,2015,Hunter Biden works for <extra_id_0>.,BHR Partners;Burisma Holdings
+264,2772,2015,John L. Smith works for <extra_id_0>.,Fort Lewis College
+265,2779,2015,Mindy Grossman works for <extra_id_0>.,Home Shopping Network
+266,2790,2015,Sergei Krikalev works for <extra_id_0>.,TsNIIMash
+267,2799,2015,Danny White works for <extra_id_0>.,University of Central Florida;University at Buffalo
+268,2809,2015,Matt Mason works for <extra_id_0>.,BitTorrent
+269,2817,2015,David Hernández de la Fuente works for <extra_id_0>.,National University of Distance Education
+270,2828,2015,Deborah L. Birx works for <extra_id_0>.,President's Emergency Plan for AIDS Relief
+271,2835,2015,Christodoulos I. Stefanadis works for <extra_id_0>.,Emory University School of Medicine;Yale University
+272,2846,2015,Peter Mathieson works for <extra_id_0>.,University of Hong Kong
+273,2857,2015,Norman Sharpless works for <extra_id_0>.,University of North Carolina at Chapel Hill
+274,2866,2015,Simonetta Di Pippo works for <extra_id_0>.,United Nations Office for Outer Space Affairs
+275,2877,2015,Joshua Greenberg works for <extra_id_0>.,Alfred P. Sloan Foundation
+276,2888,2015,Rane Willerslev works for <extra_id_0>.,Aarhus University
+277,2895,2015,James Milliken works for <extra_id_0>.,City University of New York
+278,2905,2015,Manu Carreño works for <extra_id_0>.,Mediaset España
+279,2916,2015,Matthew Pratt Guterl works for <extra_id_0>.,Brown University
+280,2932,2015,Janet Montgomery works for <extra_id_0>.,Durham University
+281,2943,2015,Carine Roitfeld works for <extra_id_0>.,Harper's Bazaar
+282,2954,2015,Henriette Reker works for <extra_id_0>.,Cologne
+283,2960,2015,James S. Famiglietti works for <extra_id_0>.,"University of California, Irvine"
+284,2973,2015,Óscar Ramírez works for <extra_id_0>.,Liga Deportiva Alajuelense;Costa Rica national football team
+285,2980,2015,Mustafa Akyol works for <extra_id_0>.,Fatih University
+286,2990,2015,Rachel Sheherazade works for <extra_id_0>.,SBT;Jovem Pan
+287,3001,2015,Ricky J Sethi works for <extra_id_0>.,Fitchburg State University
+288,3012,2015,Maura Hagan works for <extra_id_0>.,National Center for Atmospheric Research;Utah State University
+289,3025,2015,Elizabeth G. Loboa works for <extra_id_0>.,University of Missouri
+290,3033,2015,Nora H de Leeuw works for <extra_id_0>.,Cardiff University;Utrecht University
+291,3045,2015,Carlo Montemagno works for <extra_id_0>.,University of Alberta
+292,3056,2015,Marian Salzman works for <extra_id_0>.,Havas
+293,3067,2015,Chris Turney works for <extra_id_0>.,University of New South Wales
+294,3076,2015,Sarafina Nance works for <extra_id_0>.,Harvard–Smithsonian Center for Astrophysics;University of Texas at Austin
+295,3087,2015,Hartmut Mehdorn works for <extra_id_0>.,Flughafen Berlin Brandenburg GmbH
+296,3098,2015,Marian Croak works for <extra_id_0>.,Google
+297,3109,2015,Qi Lu works for <extra_id_0>.,Microsoft Corporation
+298,3118,2015,Julie Bentley works for <extra_id_0>.,Girlguiding
+299,3134,2015,Frances Spalding works for <extra_id_0>.,The Burlington Magazine;Newcastle University
+300,3145,2015,Wendy L. Queen works for <extra_id_0>.,École polytechnique fédérale de Lausanne
+301,3156,2015,Niels Provos works for <extra_id_0>.,Google
+302,3167,2015,Bernhard Schölkopf works for <extra_id_0>.,Max Planck Institute for Intelligent Systems
+303,3178,2015,Scott Manley works for <extra_id_0>.,Apple Inc.
+304,3189,2015,Emily VanDerWerff works for <extra_id_0>.,Vox
+305,3203,2015,Cathy Engelbert works for <extra_id_0>.,Deloitte
+306,3214,2015,Léa Salamé works for <extra_id_0>.,France Inter;France 2
+307,3224,2015,Dominique Leroy works for <extra_id_0>.,Proximus
+308,3230,2015,Anna Kraft works for <extra_id_0>.,ZDF
+309,3241,2015,Indira Alfonzo works for <extra_id_0>.,Supreme Tribunal of Justice of Venezuela;Universidad Militar Bolivariana de Venezuela
+310,3252,2015,Ari Kelman works for <extra_id_0>.,Pennsylvania State University
+311,3263,2015,Rebecca J Lingwood works for <extra_id_0>.,Queen Mary University of London
+312,3273,2015,Bettina V. Lotsch works for <extra_id_0>.,Max Planck Institute for Solid State Research
+313,3284,2015,Giselle Zarur works for <extra_id_0>.,Televisa
+314,3295,2015,Julia Y Chan works for <extra_id_0>.,University of Texas at Dallas
+315,3301,2015,Allison Littlejohn works for <extra_id_0>.,The Open University
+316,3312,2015,Stephanie Wehner works for <extra_id_0>.,Centre for Quantum Technologies
+317,3328,2015,Diana Coben works for <extra_id_0>.,University of Waikato
+318,3339,2015,Andrew V. Goldberg works for <extra_id_0>.,Amazon
+319,3350,2015,Maria-Magdalena Titirici works for <extra_id_0>.,Queen Mary University of London
+320,3361,2015,Pier Paolo Pandolfi works for <extra_id_0>.,Beth Israel Deaconess Medical Center;Harvard Medical School
+321,3372,2015,Mathieu Gallet works for <extra_id_0>.,Radio France
+322,3386,2015,Shari Steele works for <extra_id_0>.,"Electronic Frontier Foundation;The Tor Project, Inc"
+323,3392,2015,Artur Lompart works for <extra_id_0>.,Ministry of Foreign Affairs of Poland;University of Warsaw
+324,3403,2015,Peggy Piesche works for <extra_id_0>.,University of Bayreuth
+325,3412,2015,Dolly Jørgensen works for <extra_id_0>.,Umeå University;Luleå University of Technology
+326,3419,2015,Ernest Benach i Pascual works for <extra_id_0>.,Open University of Catalonia
+327,3430,2015,Alojzy Nowak works for <extra_id_0>.,National Development Council;University of Warsaw;Powszechny Zakład Ubezpieczeń
+328,3441,2015,Carola-Bibiane Schönlieb works for <extra_id_0>.,University of Cambridge
+329,3452,2015,Franck Ferrand works for <extra_id_0>.,Europe 1
+330,3458,2015,Patrice Ossona de Mendez works for <extra_id_0>.,Charles University
+331,3469,2015,John A. Todd works for <extra_id_0>.,University of Cambridge
+332,3478,2015,Reyahn King works for <extra_id_0>.,Heritage Fund;York Museums Trust
+333,3495,2015,Chris Montgomery works for <extra_id_0>.,Mozilla
+334,3506,2015,Melanie Keen works for <extra_id_0>.,Iniva
+335,3517,2015,Ginestra Bianconi works for <extra_id_0>.,Queen Mary University of London
+336,3528,2015,Ken Murphy works for <extra_id_0>.,Walgreens Boots Alliance
+337,3538,2015,Maxim Oreshkin works for <extra_id_0>.,Ministry of Finance
+338,3544,2015,Karin Hansson works for <extra_id_0>.,Stockholm University
+339,3554,2015,Shannon Walsh works for <extra_id_0>.,City University of Hong Kong
+340,3565,2015,Vladimir Ashurkov works for <extra_id_0>.,Anti-corruption Foundation
+341,3580,2015,Robert Bingham works for <extra_id_0>.,University of Edinburgh
+342,3591,2015,Chris Dercon works for <extra_id_0>.,Tate Modern;Volksbühne
+343,3602,2015,Josep Guerrero works for <extra_id_0>.,Aalborg University
+344,3609,2015,Mirjam Van Praag works for <extra_id_0>.,Copenhagen Business School
+345,3620,2015,Vidya Arankalle works for <extra_id_0>.,Agharkar Research Institute
+346,3631,2015,Mark H. Erickson works for <extra_id_0>.,Northampton Community College
+347,3646,2015,Mustapha Madih works for <extra_id_0>.,Morocco national under-17 football team;Chabab Rif Al Hoceima
+348,3651,2015,Daniel Akerib works for <extra_id_0>.,Stanford University;SLAC National Accelerator Laboratory
+349,3662,2015,<extra_id_0> is the head of the government of Iran.,Hassan Rouhani
+350,3669,2015,<extra_id_0> is the head of the government of Kazakhstan.,Karim Massimov
+351,3677,2015,<extra_id_0> is the head of the government of Venezuela.,Nicolás Maduro
+352,3688,2015,<extra_id_0> is the head of the government of Quebec.,Philippe Couillard
+353,3699,2015,<extra_id_0> is the head of the government of Denmark.,Helle Thorning-Schmidt;Lars Løkke Rasmussen
+354,3710,2015,<extra_id_0> is the head of the government of Richmond.,Dwight Clinton Jones
+355,3718,2015,<extra_id_0> is the head of the government of Portland.,Charlie Hales
+356,3729,2015,<extra_id_0> is the head of the government of Turin.,Piero Fassino
+357,3744,2015,<extra_id_0> is the head of the government of San Jose.,Sam Liccardo
+358,3755,2015,<extra_id_0> is the head of the government of Warsaw.,Hanna Gronkiewicz-Waltz
+359,3764,2015,<extra_id_0> is the head of the government of Geneva.,Esther Alder
+360,3775,2015,<extra_id_0> is the head of the government of Faroe Islands.,Kaj Leo Johannesen;Aksel V. Johannesen
+361,3786,2015,<extra_id_0> is the head of the government of Prague.,Adriana Krnáčová
+362,3797,2015,<extra_id_0> is the head of the government of Auckland.,Len Brown
+363,3807,2015,<extra_id_0> is the head of the government of Wisconsin.,Scott Walker
+364,3818,2015,<extra_id_0> is the head of the government of Tallinn.,Edgar Savisaar
+365,3828,2015,<extra_id_0> is the head of the government of Gibraltar.,Fabian Picardo
+366,3839,2015,<extra_id_0> is the head of the government of Community of Madrid.,Cristina Cifuentes;Ignacio González González
+367,3850,2015,<extra_id_0> is the head of the government of Mainz.,Michael Ebling
+368,3861,2015,<extra_id_0> is the head of the government of New South Wales.,Mike Baird
+369,3872,2015,<extra_id_0> is the head of the government of Wiesbaden.,Sven Gerich
+370,3883,2015,<extra_id_0> is the head of the government of Lower Saxony.,Stephan Weil
+371,3890,2015,<extra_id_0> is the head of the government of Mauritania.,Yahya Ould Hademine
+372,3897,2015,<extra_id_0> is the head of the government of Republika Srpska.,Željka Cvijanović
+373,3908,2015,<extra_id_0> is the head of the government of Asturias.,Javier Fernández Fernández
+374,3919,2015,<extra_id_0> is the head of the government of KwaZulu-Natal.,Senzo Mchunu
+375,3930,2015,<extra_id_0> is the head of the government of Jewish Autonomous Oblast.,Alexander Levintal;Alexander Vinnikov
+376,3940,2015,<extra_id_0> is the head of the government of Oldenburg.,Jürgen Krogmann
+377,3947,2015,<extra_id_0> is the head of the government of Liguria.,Giovanni Toti
+378,3953,2015,<extra_id_0> is the head of the government of Federal District.,Rodrigo Rollemberg
+379,3964,2015,<extra_id_0> is the head of the government of Kvinnherad.,Synnøve Solbakken
+380,3972,2015,<extra_id_0> is the head of the government of Republic of Khakassia.,Viktor Zimin
+381,3983,2015,<extra_id_0> is the head of the government of Södermanland County.,Liselott Hagberg
+382,3994,2015,<extra_id_0> is the head of the government of Gävleborg county.,Barbro Holmberg;Per Bill
+383,4011,2015,<extra_id_0> is the head coach of Green Bay Packers.,Mike McCarthy
+384,4020,2015,<extra_id_0> is the head coach of Kei Nishikori.,Michael Chang
+385,4028,2015,<extra_id_0> is the head coach of Richard Gasquet.,Sergi Bruguera
+386,4037,2015,<extra_id_0> is the head coach of Western Bulldogs.,Luke Beveridge
+387,4051,2015,<extra_id_0> is the head coach of Nea Salamis Famagusta FC.,Floros Nicolaou;Nikos Panayiotou;Jan de Jonge
+388,4062,2015,<extra_id_0> is the head coach of New York Red Bulls.,Jesse Marsch
+389,4081,2015,<extra_id_0> is the head coach of F.C. Copenhagen.,Ståle Solbakken
+390,4100,2015,<extra_id_0> is the head coach of 1. FC Union Berlin.,Norbert Düwel;Sascha Lewandowski
+391,4111,2015,<extra_id_0> is the head coach of FC Argeș.,Emil Săndoi
+392,4140,2015,<extra_id_0> is the head coach of Minnesota Golden Gophers football.,Tracy Claeys
+393,4147,2015,<extra_id_0> is the head coach of FC Astana.,Stanimir Stoilov
+394,4201,2015,<extra_id_0> is the head coach of FC Ingolstadt 04.,Ralph Hasenhüttl
+395,4216,2015,<extra_id_0> is the head coach of F.C. Paços de Ferreira.,Paulo Fonseca
+396,4223,2015,<extra_id_0> is the head coach of Club Deportivo Mirandés.,Carlos Terrazas
+397,4233,2015,<extra_id_0> is the head coach of CCC Team.,Yvon Ledanois;Allan Peiper;Valerio Piva;Fabio Baldato;Maximilian Sciandri;Jackson Stewart;Noël Dejonckheere
+398,4246,2015,<extra_id_0> is the head coach of Vitória S.C..,Sérgio Conceição
+399,4255,2015,<extra_id_0> is the head coach of SKN St. Pölten.,Karl Daxbacher
+400,4273,2015,<extra_id_0> is the head coach of FC St. Gallen.,Jeff Saibene
+401,4293,2015,<extra_id_0> is the head coach of Storhamar Hockey.,Alexander Smirnov
+402,4299,2015,<extra_id_0> is the head coach of FC Torpedo-MAZ Minsk.,Mikalay Branfilaw
+403,4304,2015,<extra_id_0> is the head coach of Karmiotissa Pano Polemidion.,Liasos Louka
+404,4314,2015,<extra_id_0> is the head coach of Belarus national under-21 football team.,Igor Kovalevich
+405,4325,2015,<extra_id_0> is the head coach of Pauwels Sauzen-Bingoal.,Mario De Clercq
+406,4329,2015,<extra_id_0> is the head coach of FC Smorgon.,Mikalay Ryndzyuk
+407,4340,2015,The Onion is owned by <extra_id_0>.,Fusion Media Group
+408,4351,2015,Salvator Mundi is owned by <extra_id_0>.,Dmitry Rybolovlev
+409,4362,2015,South China Morning Post is owned by <extra_id_0>.,Great Wall Pan Asia Holdings
+410,4373,2015,Boston Globe is owned by <extra_id_0>.,John W. Henry
+411,4383,2015,Blue Coat Systems is owned by <extra_id_0>.,Thoma Bravo;Bain Capital
+412,4394,2015,Numedal Line is owned by <extra_id_0>.,Norwegian National Rail Administration
+413,4405,2015,ADV Ocean Shield is owned by <extra_id_0>.,Australian Border Force
+414,4416,2015,Eudora is owned by <extra_id_0>.,Qualcomm Inc.
+415,4427,2015,Le Rêve is owned by <extra_id_0>.,Steven A. Cohen
+416,4438,2015,Toll Collect is owned by <extra_id_0>.,Daimler Financial Services;Vinci;Deutsche Telekom
+417,4447,2015,West Horsley Place is owned by <extra_id_0>.,Bamber Gascoigne
+418,4458,2015,Expobank CZ is owned by <extra_id_0>.,Igor Kim
+419,4469,2015,Rothschild is owned by <extra_id_0>.,Hermitage Museum
+420,4478,2015,Vésuve de Brekka is owned by <extra_id_0>.,Republican Guard
+421,4489,2015,Kirkus Reviews is owned by <extra_id_0>.,Herbert Simon
+422,4495,2015,Atlantic City Weekly is owned by <extra_id_0>.,Berkshire Hathaway
+423,4506,2015,dblp computer science bibliography is owned by <extra_id_0>.,Schloss Dagstuhl – Leibniz Center for Informatics;University of Trier
+424,4517,2015,Luna is owned by <extra_id_0>.,Farkhad Akhmedov
+425,4528,2015,The Gainesville Sun is owned by <extra_id_0>.,Halifax Media Group
+426,4539,2015,Douro railway line is owned by <extra_id_0>.,REFER;Infrastructures of Portugal
+427,4550,2015,Randsfjorden Line is owned by <extra_id_0>.,Norwegian National Rail Administration
+428,4561,2015,The Eagle is owned by <extra_id_0>.,Berkshire Hathaway
+429,4572,2015,Trunk Line is owned by <extra_id_0>.,Norwegian National Rail Administration
+430,4583,2015,Kimbrough Memorial Stadium is owned by <extra_id_0>.,West Texas A&M University
+431,4594,2015,Skillsoft is owned by <extra_id_0>.,Charterhouse Capital Partners
+432,4605,2015,Bauer Swansea & South West Wales is owned by <extra_id_0>.,Wireless Group
+433,4616,2015,Chocolat Poulain is owned by <extra_id_0>.,Mondelēz International
+434,4627,2015,511 Federal Building is owned by <extra_id_0>.,Portland Development Commission
+435,4638,2015,Hokushin Line is owned by <extra_id_0>.,Kobe Rapid Transit Railway
+436,4648,2015,Hello Sanctos is owned by <extra_id_0>.,"Philip Harris, Baron Harris of Peckham"

@@ -1,0 +1,411 @@
+id,original,date,input,output
+0,2,2012,Gianluigi Buffon plays for <extra_id_0>.,Juventus FC;Italy national association football team
+1,13,2012,Ricky Ponting plays for <extra_id_0>.,Australia national cricket team;Tasmania cricket team;Hobart Hurricanes
+2,17,2012,Lewis Hamilton plays for <extra_id_0>.,McLaren
+3,28,2012,Didier Drogba plays for <extra_id_0>.,Shanghai Shenhua F.C.;Ivory Coast national football team;Chelsea F.C.
+4,37,2012,Julius Peppers plays for <extra_id_0>.,Chicago Bears
+5,48,2012,Stuart Broad plays for <extra_id_0>.,Kings XI Punjab;England and Wales cricket team
+6,57,2012,MS Dhoni plays for <extra_id_0>.,India national cricket team
+7,68,2012,Mario Balotelli plays for <extra_id_0>.,Manchester City F.C.;Italy national association football team
+8,79,2012,James Harden plays for <extra_id_0>.,Houston Rockets;Oklahoma City Thunder
+9,90,2012,Mohamed Salah plays for <extra_id_0>.,Al Mokawloon Al Arab SC;Egypt national football team;Egypt national under-23 football team;FC Basel
+10,101,2012,Becky Sauerbrunn plays for <extra_id_0>.,D.C. United Women
+11,105,2012,Rob Gronkowski plays for <extra_id_0>.,New England Patriots
+12,116,2012,Patrice Evra plays for <extra_id_0>.,France national association football team;Manchester United F.C.
+13,125,2012,Megan Rapinoe plays for <extra_id_0>.,Seattle Sounders Women;Seattle Sounders FC
+14,136,2012,Robert Lewandowski plays for <extra_id_0>.,Borussia Dortmund
+15,147,2012,Clint Dempsey plays for <extra_id_0>.,Tottenham Hotspur F.C.;Fulham F.C.
+16,152,2012,Urby Emanuelson plays for <extra_id_0>.,Netherlands national association football team;Associazione Calcio Milan
+17,163,2012,V. V. S. Laxman plays for <extra_id_0>.,India national cricket team
+18,166,2012,DeMarco Murray plays for <extra_id_0>.,Dallas Cowboys
+19,174,2012,Joe Hart plays for <extra_id_0>.,Manchester City F.C.
+20,185,2012,Gonzalo Higuaín plays for <extra_id_0>.,Real Madrid CF;Argentina national football team
+21,196,2012,Nicklas Bendtner plays for <extra_id_0>.,Arsenal F.C.;Juventus FC;Sunderland A.F.C.
+22,207,2012,Jean Makoun plays for <extra_id_0>.,Stade Rennais F.C.;Aston Villa F.C.;Olympiacos F.C.;Cameroon national football team
+23,218,2012,Jozy Altidore plays for <extra_id_0>.,AZ Alkmaar
+24,227,2012,Breanna Stewart plays for <extra_id_0>.,UConn Huskies women's basketball
+25,238,2012,Gary Hooper plays for <extra_id_0>.,Celtic F.C.
+26,248,2012,Elena Delle Donne plays for <extra_id_0>.,Delaware Fightin' Blue Hens women's basketball
+27,259,2012,Nicolas Anelka plays for <extra_id_0>.,Shanghai Shenhua F.C.;Chelsea F.C.
+28,265,2012,Michael Ballack plays for <extra_id_0>.,Bayer 04 Leverkusen
+29,274,2012,Son Heung-min plays for <extra_id_0>.,Hamburger SV;South Korea national football team
+30,285,2012,Dimitar Berbatov plays for <extra_id_0>.,Fulham F.C.;Manchester United F.C.
+31,294,2012,Henrikh Mkhitaryan plays for <extra_id_0>.,FC Shakhtar Donetsk
+32,305,2012,Michael Beasley plays for <extra_id_0>.,Phoenix Suns;Minnesota Timberwolves
+33,316,2012,Chris Hackett plays for <extra_id_0>.,Northampton Town F.C.;Wycombe Wanderers F.C.;Millwall F.C.;Exeter City F.C.
+34,327,2012,Younus Khan plays for <extra_id_0>.,Pakistan national cricket team
+35,335,2012,Yaya Touré plays for <extra_id_0>.,Manchester City F.C.
+36,345,2012,Quincy Promes plays for <extra_id_0>.,Go Ahead Eagles;FC Twente
+37,356,2012,Mostapha El Kabir plays for <extra_id_0>.,Cagliari Calcio;Mjällby AIF
+38,367,2012,Davide Astori plays for <extra_id_0>.,Cagliari Calcio;Italy national association football team
+39,378,2012,Mohammad Amir plays for <extra_id_0>.,Rawalpindi Rams;Pakistan national cricket team
+40,389,2012,Jimmy Butler plays for <extra_id_0>.,Chicago Bulls
+41,400,2012,Luke Moore plays for <extra_id_0>.,Swansea City A.F.C.
+42,411,2012,Milan Baroš plays for <extra_id_0>.,Czech Republic national association football team;Galatasaray S.K.
+43,422,2012,Ben May plays for <extra_id_0>.,Barnet F.C.;Stevenage F.C.;Dover Athletic F.C.
+44,433,2012,Daniel McBreen plays for <extra_id_0>.,Central Coast Mariners FC
+45,443,2012,Marvin Emnes plays for <extra_id_0>.,Middlesbrough F.C.
+46,448,2012,Tyson Chandler plays for <extra_id_0>.,New York Knicks
+47,459,2012,Kris Commons plays for <extra_id_0>.,Scotland national football team;Celtic F.C.
+48,470,2012,Andrei Arshavin plays for <extra_id_0>.,Arsenal F.C.;Russia national association football team;FC Zenit Saint Petersburg
+49,479,2012,Lorik Cana plays for <extra_id_0>.,S.S. Lazio
+50,486,2012,Christian Kabasele plays for <extra_id_0>.,PFC Ludogorets Razgrad;K.A.S. Eupen
+51,497,2012,Alexander Kačaniklić plays for <extra_id_0>.,Watford F.C.;Sweden national association football team;Fulham F.C.
+52,508,2012,Moses Ashikodi plays for <extra_id_0>.,York City F.C.;Kettering Town F.C.;Antigua and Barbuda national football team;Ebbsfleet United F.C.
+53,519,2012,Marcus Camby plays for <extra_id_0>.,New York Knicks;Houston Rockets;Portland Trail Blazers
+54,523,2012,Luke Foster plays for <extra_id_0>.,Preston North End F.C.;Rotherham United F.C.;Matlock Town F.C.
+55,534,2012,El Hadji Diouf plays for <extra_id_0>.,Leeds United F.C.;Doncaster Rovers F.C.
+56,540,2012,Martyn Lancaster plays for <extra_id_0>.,Atlanta Silverbacks
+57,544,2012,Eniola Aluko plays for <extra_id_0>.,Birmingham City L.F.C.;Chelsea L.F.C.;Great Britain women's Olympic association football team
+58,555,2012,Gjergji Muzaka plays for <extra_id_0>.,Flamurtari Vlorë;Albania national association football team;KF Skënderbeu Korçë
+59,566,2012,André Schembri plays for <extra_id_0>.,AC Omonia;Panionios;Panionios F.C.
+60,584,2012,Eduardo da Silva plays for <extra_id_0>.,Croatia national association football team;FC Shakhtar Donetsk
+61,595,2012,Steven Caulker plays for <extra_id_0>.,Swansea City A.F.C.;Great Britain Olympic football team;England national under-21 football team;England national association football team;United Kingdom national football team;Tottenham Hotspur F.C.
+62,606,2012,Michael Bostwick plays for <extra_id_0>.,Peterborough United F.C.;Stevenage F.C.
+63,617,2012,Gustavo Bou plays for <extra_id_0>.,Club Atlético River Plate;Club Olimpo
+64,628,2012,Alan Kirby plays for <extra_id_0>.,Longford Town F.C.
+65,631,2012,James Forrest plays for <extra_id_0>.,Scotland national football team;Celtic F.C.
+66,642,2012,Greg Tansey plays for <extra_id_0>.,Inverness Caledonian Thistle F.C.;Stevenage F.C.
+67,655,2012,Ross McCormack plays for <extra_id_0>.,Leeds United F.C.
+68,666,2012,Rohit Sharma plays for <extra_id_0>.,Mumbai Indians
+69,677,2012,Neven Subotić plays for <extra_id_0>.,Serbia national football team;Borussia Dortmund
+70,688,2012,Leigh Griffiths plays for <extra_id_0>.,Scotland national under-21 football team;Scotland national football team;Wolverhampton Wanderers F.C.;Hibernian F.C.
+71,699,2012,Álvaro Morata plays for <extra_id_0>.,Real Madrid Castilla;Spain national under-19 football team;Real Madrid CF
+72,710,2012,Shane Long plays for <extra_id_0>.,West Bromwich Albion F.C.
+73,719,2012,Leah Williamson plays for <extra_id_0>.,England women's national under-17 football team
+74,730,2012,Migen Memelli plays for <extra_id_0>.,Flamurtari Vlorë;Al-Taawon FC
+75,741,2012,Jack Butland plays for <extra_id_0>.,Great Britain Olympic football team;Cheltenham Town F.C.;England national under-21 football team;Birmingham City F.C.;England national association football team;United Kingdom national football team;England national under-20 football team
+76,752,2012,Roda Antar plays for <extra_id_0>.,Lebanon national football team;Shandong Luneng Taishan F.C.
+77,763,2012,Shaun Tait plays for <extra_id_0>.,Adelaide Strikers;Rajasthan Royals;Wellington cricket team;Melbourne Renegades;Mid West Rhinos
+78,771,2012,Craig Reid plays for <extra_id_0>.,Aldershot Town F.C.;Stevenage F.C.
+79,782,2012,Dries Mertens plays for <extra_id_0>.,Belgium national football team;PSV Eindhoven
+80,797,2012,DJ Campbell plays for <extra_id_0>.,Ipswich Town F.C.;Queens Park Rangers F.C.
+81,803,2012,Dinesh Chandimal plays for <extra_id_0>.,Rajasthan Royals;Sri Lanka national cricket team;Ruhuna Royals
+82,814,2012,Freddy Adu plays for <extra_id_0>.,United States men's national under-23 soccer team;Philadelphia Union
+83,825,2012,Yacine Brahimi plays for <extra_id_0>.,France national under-21 football team;Stade Rennais F.C.;Granada CF
+84,836,2012,Vernon Davis plays for <extra_id_0>.,San Francisco 49ers
+85,847,2012,Adel Taarabt plays for <extra_id_0>.,Queens Park Rangers F.C.;Morocco national football team
+86,858,2012,Jimmy Smith plays for <extra_id_0>.,Leyton Orient F.C.
+87,869,2012,Michael Bradley plays for <extra_id_0>.,A.S. Roma;A.C. ChievoVerona
+88,880,2012,Kris Boyd plays for <extra_id_0>.,Portland Timbers
+89,890,2012,Douglas Franco Teixeira plays for <extra_id_0>.,FC Twente
+90,901,2012,Jonathan Walters plays for <extra_id_0>.,Stoke City F.C.;Republic of Ireland national association football team
+91,911,2012,David Cameron holds the position of <extra_id_0>.,First Lord of the Treasury;Minister for the Civil Service;Leader of the Conservative Party;Prime Minister of the United Kingdom
+92,918,2012,Francis holds the position of <extra_id_0>.,cardinal
+93,935,2012,Julia Gillard holds the position of <extra_id_0>.,Commonwealth Chairperson-in-Office;Prime Minister of Australia
+94,945,2012,Jason Kenney holds the position of <extra_id_0>.,"Minister of Immigration, Refugees and Citizenship"
+95,961,2012,Andrew Cuomo holds the position of <extra_id_0>.,Governor of New York
+96,977,2012,Alan Shatter holds the position of <extra_id_0>.,Teachta Dála;Minister for Defence;Minister for Justice and Equality
+97,983,2012,Chris Grayling holds the position of <extra_id_0>.,Secretary of State for Justice;Lord Chancellor
+98,993,2012,Jens Stoltenberg holds the position of <extra_id_0>.,party leader;Prime Minister of Norway
+99,1003,2012,Mick Mulvaney holds the position of <extra_id_0>.,United States representative
+100,1012,2012,Richard B. Spencer holds the position of <extra_id_0>.,executive director;chairperson
+101,1023,2012,Timothy M. Dolan holds the position of <extra_id_0>.,cardinal;president
+102,1034,2012,Chris Murphy holds the position of <extra_id_0>.,United States representative
+103,1045,2012,Sebastian Coe holds the position of <extra_id_0>.,London Organising Committee of the Olympic and Paralympic Games;President of the Olympic Organizing Committee
+104,1056,2012,Kirill I of Moscow holds the position of <extra_id_0>.,metropolitan bishop
+105,1067,2012,John Ratcliffe holds the position of <extra_id_0>.,mayor
+106,1081,2012,Tony Clement holds the position of <extra_id_0>.,President of the Treasury Board;Minister responsible for the Federal Economic Development Initiative for Northern Ontario
+107,1092,2012,Alexander Stubb holds the position of <extra_id_0>.,Minister for European Affairs and Foreign Trade
+108,1099,2012,Micheál Martin holds the position of <extra_id_0>.,Teachta Dála;Leader of Fianna Fáil;Leader of the Opposition
+109,1110,2012,Jerry Moran holds the position of <extra_id_0>.,United States senator
+110,1121,2012,George Brandis holds the position of <extra_id_0>.,Member of the Australian Senate
+111,1130,2012,Anba Epiphanius holds the position of <extra_id_0>.,pastor
+112,1139,2012,Bill Keating holds the position of <extra_id_0>.,United States representative
+113,1149,2012,Michael Noonan holds the position of <extra_id_0>.,Teachta Dála;Minister for Finance
+114,1179,2012,David Laws holds the position of <extra_id_0>.,Cabinet Office
+115,1185,2012,James F. Amos holds the position of <extra_id_0>.,Commandant of the Marine Corps
+116,1190,2012,Sauli Niinistö holds the position of <extra_id_0>.,President of Finland;chairperson
+117,1208,2012,Lenín Moreno holds the position of <extra_id_0>.,Vice President of Ecuador;vice president
+118,1217,2012,Mark Harper holds the position of <extra_id_0>.,Minister of State for Immigration
+119,1224,2012,Caroline Flint holds the position of <extra_id_0>.,Shadow Secretary of State for Energy and Climate Change
+120,1230,2012,Scott Peters holds the position of <extra_id_0>.,commissioner
+121,1245,2012,James Lankford holds the position of <extra_id_0>.,United States representative
+122,1256,2012,Brendan Howlin holds the position of <extra_id_0>.,Teachta Dála;Minister for Public Expenditure and Reform
+123,1267,2012,Simon Crean holds the position of <extra_id_0>.,Minister for Infrastructure and Transport;Minister for the Arts
+124,1273,2012,Kathleen Rice holds the position of <extra_id_0>.,district attorney
+125,1283,2012,Katy Gallagher holds the position of <extra_id_0>.,member of the Australian Capital Territory Legislative Assembly;Chief Minister of the Australian Capital Territory
+126,1294,2012,Heather Bresch holds the position of <extra_id_0>.,chief executive officer;president
+127,1311,2012,Ahmad Zahid Hamidi holds the position of <extra_id_0>.,Minister of Defence
+128,1322,2012,Jean-Louis Tauran holds the position of <extra_id_0>.,cardinal
+129,1331,2012,Jyrki Katainen holds the position of <extra_id_0>.,Prime Minister of Finland
+130,1344,2012,Éamon Ó Cuív holds the position of <extra_id_0>.,Teachta Dála;Leader of Fianna Fáil
+131,1372,2012,Willie O'Dea holds the position of <extra_id_0>.,Teachta Dála
+132,1383,2012,Jaak Aaviksoo holds the position of <extra_id_0>.,Minister of Education and Research
+133,1387,2012,Chan Chun Sing holds the position of <extra_id_0>.,"Ministry of Defence;Ministry of Community Development, Youth and Sports;Ministry of Communications and Information;Ministry of Social and Family Development"
+134,1398,2012,Jimmy Deenihan holds the position of <extra_id_0>.,"Teachta Dála;Minister for Arts, Heritage and the Gaeltacht"
+135,1424,2012,David Lidington holds the position of <extra_id_0>.,Minister of State for Europe
+136,1446,2012,David Wootton holds the position of <extra_id_0>.,Lord Mayor of London
+137,1449,2012,Ueli Maurer holds the position of <extra_id_0>.,"Federal Department of Defence, Civil Protection and Sports"
+138,1463,2012,Joe McHugh holds the position of <extra_id_0>.,Teachta Dála
+139,1478,2012,Muppavarapu Venkaiah Naidu holds the position of <extra_id_0>.,Member of Rajya Sabha
+140,1489,2012,Chuck Blazer holds the position of <extra_id_0>.,vice president
+141,1493,2012,Michel Barnier holds the position of <extra_id_0>.,European Commissioner for Internal Market and Services
+142,1498,2012,Salvador Sánchez Cerén holds the position of <extra_id_0>.,Vice President of El Salvador
+143,1508,2012,Mary Barra holds the position of <extra_id_0>.,vice president
+144,1531,2012,Rich Nugent holds the position of <extra_id_0>.,United States representative
+145,1555,2012,Barham Salih holds the position of <extra_id_0>.,Prime Minister of Iraqi Kurdistan
+146,1559,2012,Joseph Strickland holds the position of <extra_id_0>.,diocesan bishop;Catholic bishop
+147,1570,2012,David Sassoli holds the position of <extra_id_0>.,member of the European Parliament
+148,1589,2012,James Jones holds the position of <extra_id_0>.,Spokesperson bishops in the Church of England;Bishop of Liverpool
+149,1591,2012,Alex Neil holds the position of <extra_id_0>.,Cabinet Secretary for Health and Wellbeing
+150,1608,2012,Heather Humphreys holds the position of <extra_id_0>.,Teachta Dála
+151,1619,2012,Dan Eliasson holds the position of <extra_id_0>.,director general
+152,1629,2012,Sam Darnold attended <extra_id_0>.,San Clemente High School
+153,1640,2012,Muhammad Rizieq Shihab attended <extra_id_0>.,University of Malaya;Universiti Sains Islam Malaysia
+154,1649,2012,Mo'ne Davis attended <extra_id_0>.,Springside Chestnut Hill Academy
+155,1659,2012,Kyle Wiltjer attended <extra_id_0>.,University of Kentucky
+156,1666,2012,Caitlin Rivers attended <extra_id_0>.,Virginia Tech
+157,1672,2012,Shawné Michaelain Holloway attended <extra_id_0>.,School of the Art Institute of Chicago
+158,1678,2012,AnnaSophia Robb attended <extra_id_0>.,Arapahoe High School
+159,1686,2012,Bronny James attended <extra_id_0>.,Old Trail School
+160,1704,2012,Ewandro Stenzowski attended <extra_id_0>.,State University of Music and Performing Arts Stuttgart
+161,1716,2012,Luke Hancock attended <extra_id_0>.,University of Louisville
+162,1721,2012,Katherine Boyer attended <extra_id_0>.,University of Manitoba
+163,1730,2012,Jock Landale attended <extra_id_0>.,Geelong Grammar School
+164,1739,2012,Elisa Granato attended <extra_id_0>.,ETH Zurich
+165,1745,2012,McKenzie Milton attended <extra_id_0>.,Mililani High School
+166,1756,2012,Alyona Arshinova attended <extra_id_0>.,Diplomatic Academy of the Ministry of Foreign Affairs of the Russian Federation
+167,1761,2012,Abdullah bin Khalid bin Sultan Al Saud attended <extra_id_0>.,MIT Sloan School of Management
+168,1767,2012,Katja Kassin attended <extra_id_0>.,"California State University, Northridge;Los Angeles Pierce College"
+169,1775,2012,Aliyah Boston attended <extra_id_0>.,Worcester Academy
+170,1786,2012,Daniel Swain attended <extra_id_0>.,Stanford University
+171,1793,2012,<extra_id_0> is the chair of Lega Nord.,Umberto Bossi;Angelo Alessandri
+172,1804,2012,<extra_id_0> is the chair of University of North Carolina at Chapel Hill.,Holden Thorp
+173,1815,2012,<extra_id_0> is the chair of Republican People's Party.,Kemal Kılıçdaroğlu
+174,1826,2012,<extra_id_0> is the chair of United States Department of State.,Hillary Clinton
+175,1837,2012,<extra_id_0> is the chair of European Court of Human Rights.,Dean Spielmann;Nicolas Bratza
+176,1848,2012,<extra_id_0> is the chair of Associazione Calcio Milan.,Silvio Berlusconi
+177,1859,2012,<extra_id_0> is the chair of Humanists UK.,Polly Toynbee
+178,1870,2012,<extra_id_0> is the chair of Democratic Action Party.,Karpal Singh
+179,1880,2012,<extra_id_0> is the chair of KPMG.,Michael Andrew
+180,1888,2012,<extra_id_0> is the chair of Social Democrats.,Helle Thorning-Schmidt
+181,1899,2012,<extra_id_0> is the chair of CRH.,Nicky Hartery
+182,1912,2012,<extra_id_0> is the chair of Max Planck Society.,Peter Gruss
+183,1923,2012,<extra_id_0> is the chair of Socialist People's Party.,Annette Vilhelmsen
+184,1932,2012,<extra_id_0> is the chair of Supreme Court of Justice.,Eckart Ratz
+185,1943,2012,<extra_id_0> is the chair of ACT New Zealand.,John Banks
+186,1968,2012,<extra_id_0> is the chair of International Mathematical Union.,Ingrid Daubechies
+187,1979,2012,<extra_id_0> is the chair of Norwegian Association for Women's Rights.,Torild Skard
+188,1990,2012,<extra_id_0> is the chair of Ruter.,Ragnar Søegaard;Bernt Stilluf Karlsen
+189,2001,2012,<extra_id_0> is the chair of Radical Party of the Left.,Jean-Michel Baylet
+190,2020,2012,<extra_id_0> is the chair of Open Source Initiative.,Simon Phipps
+191,2028,2012,<extra_id_0> is the chair of Parliamentary Assembly of the Organization for Security and Co-operation in Europe.,Petros Efthymiou
+192,2039,2012,<extra_id_0> is the chair of National Security and Defense Council of Ukraine.,Raisa Bogatyrova;Andriy Klyuyev
+193,2050,2012,<extra_id_0> is the chair of Royal Spanish Football Federation.,Ángel María Villar
+194,2068,2012,<extra_id_0> is the chair of German Council of Economic Experts.,Wolfgang Franz
+195,2079,2012,<extra_id_0> is the chair of Verein für Socialpolitik.,Michael C. Burda
+196,2086,2012,<extra_id_0> is the chair of Economic and Financial Committee.,Thomas Wieser;Vittorio Grilli
+197,2097,2012,<extra_id_0> is the chair of Financial Information Authority.,Attilio Nicora
+198,2108,2012,<extra_id_0> is the chair of Football Association of Thailand.,Worawi Makudi
+199,2119,2012,<extra_id_0> is the chair of Liberal Movement.,Eligijus Masiulis
+200,2130,2012,<extra_id_0> is the chair of Federal Department of Justice and Police.,Simonetta Sommaruga
+201,2141,2012,"<extra_id_0> is the chair of Embassy of Ukraine, Minsk.",Víktor Tykhonov
+202,2158,2012,<extra_id_0> is the chair of The Greens–European Free Alliance.,Daniel Cohn-Bendit
+203,2181,2012,Ricardo Patiño is a member of the <extra_id_0>.,PAIS Alliance
+204,2192,2012,Roseanne Barr is a member of the <extra_id_0>.,Peace and Freedom Party;Green Party of the United States
+205,2201,2012,Jeff Van Drew is a member of the <extra_id_0>.,Democratic Party
+206,2211,2012,Beji Caid Essebsi is a member of the <extra_id_0>.,independent politician;Call for Tunisia
+207,2221,2012,Dean Del Mastro is a member of the <extra_id_0>.,Conservative Party of Canada
+208,2232,2012,Martin Hamilton-Smith is a member of the <extra_id_0>.,Liberal Party of Australia;Liberal Party of Australia (South Australian Division)
+209,2237,2012,Marcelo Ebrard is a member of the <extra_id_0>.,Party of the Democratic Revolution
+210,2245,2012,Alison Anderson is a member of the <extra_id_0>.,Country Liberal Party
+211,2250,2012,Ciro Gomes is a member of the <extra_id_0>.,Brazilian Socialist Party
+212,2261,2012,María Santos Gorrostieta Salazar is a member of the <extra_id_0>.,Party of the Democratic Revolution
+213,2264,2012,Oleksandr Vilkul is a member of the <extra_id_0>.,Party of Regions
+214,2275,2012,Patrick Devedjian is a member of the <extra_id_0>.,Union for a Popular Movement;Rally for the Republic
+215,2281,2012,Yuriy Boyko is a member of the <extra_id_0>.,Party of Regions
+216,2292,2012,Volodymyr Groysman is a member of the <extra_id_0>.,Conscience of Ukraine;Our Ukraine
+217,2302,2012,Fawad Ahmed Chaudhry is a member of the <extra_id_0>.,Pakistan Peoples Party;All-Pakistan Muslim League
+218,2312,2012,Irene Lozano is a member of the <extra_id_0>.,"Union, Progress and Democracy"
+219,2323,2012,Gérald Darmanin is a member of the <extra_id_0>.,Union for a Popular Movement
+220,2341,2012,Mircea Geoană is a member of the <extra_id_0>.,Social Democratic Party
+221,2352,2012,Daniel Constantin is a member of the <extra_id_0>.,Conservative Party
+222,2363,2012,Simon Emil Ammitzbøll is a member of the <extra_id_0>.,Liberal Alliance
+223,2380,2012,José Antonio Kast is a member of the <extra_id_0>.,Independent Democratic Union
+224,2391,2012,Gustav Kasselstrand is a member of the <extra_id_0>.,Sweden Democrats
+225,2401,2012,Charles M. Huber is a member of the <extra_id_0>.,Christian Social Union of Bavaria;Christian Democratic Union
+226,2412,2012,Lucy Harris is a member of the <extra_id_0>.,Brexit Party
+227,2433,2012,Tom Horner is a member of the <extra_id_0>.,Independence Party of Minnesota
+228,2444,2012,Shlomo Molla is a member of the <extra_id_0>.,Kadima;Hatnuah
+229,2454,2012,Antoni Comín i Oliveres is a member of the <extra_id_0>.,Socialists' Party of Catalonia
+230,2460,2012,Amiruddin Hamzah is a member of the <extra_id_0>.,Malaysian Islamic Party
+231,2471,2012,Joana Ortega i Alemany is a member of the <extra_id_0>.,Democratic Union of Catalonia
+232,2482,2012,Anam Vivekananda Reddy is a member of the <extra_id_0>.,Indian National Congress
+233,2491,2012,Gabriele Albertini is a member of the <extra_id_0>.,The People of Freedom
+234,2501,2012,Naz Baloch is a member of the <extra_id_0>.,Pakistan Peoples Party
+235,2512,2012,Ivan Brajović is a member of the <extra_id_0>.,Social Democratic Party of Montenegro
+236,2523,2012,Maria Badia i Cutchet is a member of the <extra_id_0>.,Socialists' Party of Catalonia
+237,2534,2012,Leïla Chaibi is a member of the <extra_id_0>.,Left Party
+238,2545,2012,Arturo Scotto is a member of the <extra_id_0>.,"Left, Ecology and Freedom"
+239,2556,2012,Patrick Reslow is a member of the <extra_id_0>.,Moderate Party
+240,2567,2012,Neus Munte Fernandez is a member of the <extra_id_0>.,Democratic Convergence of Catalonia
+241,2578,2012,Verónica Zurita is a member of the <extra_id_0>.,PAIS Alliance
+242,2589,2012,Tunahan Kuzu is a member of the <extra_id_0>.,Labour Party
+243,2600,2012,Halyna Yanchenko is a member of the <extra_id_0>.,Democratic Alliance
+244,2608,2012,Fotis Kouvelis is a member of the <extra_id_0>.,Democratic Left
+245,2614,2012,Femke Merel van Kooten-Arissen is a member of the <extra_id_0>.,Party for the Animals
+246,2625,2012,Massimo Zedda is a member of the <extra_id_0>.,"Left, Ecology and Freedom"
+247,2636,2012,Christian Hansen is a member of the <extra_id_0>.,Fokus
+248,2642,2012,Shafiqur Rahman Barq is a member of the <extra_id_0>.,Bahujan Samaj Party
+249,2656,2012,Nicola Giorgino is a member of the <extra_id_0>.,The People of Freedom
+250,2667,2012,Ian Blayney is a member of the <extra_id_0>.,Liberal Party of Australia (Western Australian Division)
+251,2678,2012,Zaharije Trnavčević is a member of the <extra_id_0>.,Rich Serbia;United Peasant Party
+252,2689,2012,Jana Žitňanská is a member of the <extra_id_0>.,New Majority;Christian Democratic Movement
+253,2700,2012,Niall Ferguson works for <extra_id_0>.,Harvard University
+254,2711,2012,Roger Scruton works for <extra_id_0>.,University of St Andrews;University of Oxford
+255,2722,2012,Glenn Greenwald works for <extra_id_0>.,Salon;The Guardian
+256,2733,2012,Jürgen Klopp works for <extra_id_0>.,Borussia Dortmund
+257,2742,2012,Chen Guangcheng works for <extra_id_0>.,New York University
+258,2753,2012,Karl Lagerfeld works for <extra_id_0>.,Fendi;Chanel
+259,2769,2012,John L. Smith works for <extra_id_0>.,University of Arkansas
+260,2776,2012,Mindy Grossman works for <extra_id_0>.,Home Shopping Network
+261,2787,2012,Sergei Krikalev works for <extra_id_0>.,Yuri Gagarin Cosmonaut Training Center
+262,2796,2012,Danny White works for <extra_id_0>.,University at Buffalo
+263,2806,2012,Matt Mason works for <extra_id_0>.,BitTorrent
+264,2814,2012,David Hernández de la Fuente works for <extra_id_0>.,National University of Distance Education
+265,2825,2012,Deborah L. Birx works for <extra_id_0>.,Centers for Disease Control and Prevention
+266,2843,2012,Peter Mathieson works for <extra_id_0>.,University of Bristol
+267,2854,2012,Norman Sharpless works for <extra_id_0>.,University of North Carolina at Chapel Hill
+268,2874,2012,Joshua Greenberg works for <extra_id_0>.,Alfred P. Sloan Foundation
+269,2885,2012,Rane Willerslev works for <extra_id_0>.,University of Oslo
+270,2902,2012,Manu Carreño works for <extra_id_0>.,Mediaset España
+271,2913,2012,Matthew Pratt Guterl works for <extra_id_0>.,Brown University;Indiana University Bloomington
+272,2922,2012,Conor Kostick works for <extra_id_0>.,University of Nottingham
+273,2929,2012,Janet Montgomery works for <extra_id_0>.,Durham University
+274,2940,2012,Carine Roitfeld works for <extra_id_0>.,Harper's Bazaar
+275,2951,2012,Henriette Reker works for <extra_id_0>.,Cologne
+276,2957,2012,James S. Famiglietti works for <extra_id_0>.,"University of California, Irvine"
+277,2970,2012,Óscar Ramírez works for <extra_id_0>.,Liga Deportiva Alajuelense
+278,2977,2012,Mustafa Akyol works for <extra_id_0>.,Fatih University
+279,2987,2012,Rachel Sheherazade works for <extra_id_0>.,SBT
+280,2998,2012,Ricky J Sethi works for <extra_id_0>.,Information Sciences Institute
+281,3009,2012,Maura Hagan works for <extra_id_0>.,National Center for Atmospheric Research
+282,3019,2012,Bradlee L Heckmann works for <extra_id_0>.,Los Alamos National Laboratory
+283,3042,2012,Carlo Montemagno works for <extra_id_0>.,University of Alberta
+284,3053,2012,Marian Salzman works for <extra_id_0>.,Havas
+285,3064,2012,Chris Turney works for <extra_id_0>.,University of New South Wales
+286,3073,2012,Sarafina Nance works for <extra_id_0>.,University of Texas at Austin
+287,3084,2012,Hartmut Mehdorn works for <extra_id_0>.,Air Berlin
+288,3095,2012,Marian Croak works for <extra_id_0>.,Bell Labs
+289,3106,2012,Qi Lu works for <extra_id_0>.,Microsoft Corporation
+290,3115,2012,Julie Bentley works for <extra_id_0>.,Girlguiding
+291,3131,2012,Frances Spalding works for <extra_id_0>.,Newcastle University
+292,3142,2012,Wendy L. Queen works for <extra_id_0>.,École polytechnique fédérale de Lausanne
+293,3153,2012,Niels Provos works for <extra_id_0>.,Google
+294,3164,2012,Bernhard Schölkopf works for <extra_id_0>.,Max Planck Institute for Intelligent Systems
+295,3175,2012,Scott Manley works for <extra_id_0>.,Topsy Labs
+296,3186,2012,Emily VanDerWerff works for <extra_id_0>.,The A.V. Club
+297,3197,2012,Veronica van Heyningen works for <extra_id_0>.,University of Edinburgh
+298,3200,2012,Cathy Engelbert works for <extra_id_0>.,Deloitte
+299,3211,2012,Léa Salamé works for <extra_id_0>.,CNews
+300,3221,2012,Dominique Leroy works for <extra_id_0>.,Proximus
+301,3238,2012,Indira Alfonzo works for <extra_id_0>.,Universidad Militar Bolivariana de Venezuela
+302,3249,2012,Ari Kelman works for <extra_id_0>.,"University of California, Davis"
+303,3260,2012,Rebecca J Lingwood works for <extra_id_0>.,Queen Mary University of London
+304,3270,2012,Bettina V. Lotsch works for <extra_id_0>.,Max Planck Institute for Solid State Research
+305,3281,2012,Giselle Zarur works for <extra_id_0>.,Televisa
+306,3292,2012,Julia Y Chan works for <extra_id_0>.,Louisiana State University
+307,3309,2012,Stephanie Wehner works for <extra_id_0>.,Centre for Quantum Technologies;National University of Singapore
+308,3316,2012,Ghida Fakhry works for <extra_id_0>.,Al Jazeera English
+309,3325,2012,Diana Coben works for <extra_id_0>.,University of Waikato
+310,3336,2012,Andrew V. Goldberg works for <extra_id_0>.,Microsoft Research
+311,3347,2012,Maria-Magdalena Titirici works for <extra_id_0>.,Max Planck Institute for Colloids and Interfaces
+312,3358,2012,Pier Paolo Pandolfi works for <extra_id_0>.,Beth Israel Deaconess Medical Center;Harvard Medical School
+313,3369,2012,Mathieu Gallet works for <extra_id_0>.,Institut National de l'Audiovisuel
+314,3383,2012,Shari Steele works for <extra_id_0>.,Electronic Frontier Foundation
+315,3400,2012,Peggy Piesche works for <extra_id_0>.,Hamilton College
+316,3409,2012,Dolly Jørgensen works for <extra_id_0>.,Umeå University
+317,3427,2012,Alojzy Nowak works for <extra_id_0>.,Faculty of Management of the University of Warsaw;University of Warsaw;Powszechny Zakład Ubezpieczeń
+318,3438,2012,Carola-Bibiane Schönlieb works for <extra_id_0>.,University of Cambridge
+319,3449,2012,Franck Ferrand works for <extra_id_0>.,Europe 1
+320,3466,2012,John A. Todd works for <extra_id_0>.,University of Cambridge
+321,3475,2012,Reyahn King works for <extra_id_0>.,Heritage Fund
+322,3486,2012,David W. Kissane works for <extra_id_0>.,Memorial Sloan Kettering Cancer Center
+323,3492,2012,Chris Montgomery works for <extra_id_0>.,Red Hat
+324,3503,2012,Melanie Keen works for <extra_id_0>.,Iniva
+325,3514,2012,Ginestra Bianconi works for <extra_id_0>.,Northeastern University
+326,3525,2012,Ken Murphy works for <extra_id_0>.,Boots
+327,3535,2012,Maxim Oreshkin works for <extra_id_0>.,VTB Capital
+328,3551,2012,Shannon Walsh works for <extra_id_0>.,University of Johannesburg
+329,3562,2012,Vladimir Ashurkov works for <extra_id_0>.,Anti-corruption Foundation;Alfa Group;X5 Retail Group
+330,3577,2012,Robert Bingham works for <extra_id_0>.,University of Aberdeen
+331,3588,2012,Chris Dercon works for <extra_id_0>.,Tate Modern
+332,3599,2012,Josep Guerrero works for <extra_id_0>.,Aalborg University
+333,3617,2012,Vidya Arankalle works for <extra_id_0>.,National Institute of Virology
+334,3628,2012,Mark H. Erickson works for <extra_id_0>.,Northampton Community College;Wittenberg University
+335,3643,2012,Mustapha Madih works for <extra_id_0>.,Hassania Agadir
+336,3659,2012,<extra_id_0> is the head of the government of Iran.,Mahmoud Ahmadinejad
+337,3685,2012,<extra_id_0> is the head of the government of Quebec.,Jean Charest;Pauline Marois
+338,3696,2012,<extra_id_0> is the head of the government of Denmark.,Helle Thorning-Schmidt
+339,3707,2012,<extra_id_0> is the head of the government of Richmond.,Dwight Clinton Jones
+340,3726,2012,<extra_id_0> is the head of the government of Turin.,Piero Fassino
+341,3741,2012,<extra_id_0> is the head of the government of San Jose.,Chuck Reed
+342,3752,2012,<extra_id_0> is the head of the government of Warsaw.,Hanna Gronkiewicz-Waltz
+343,3761,2012,<extra_id_0> is the head of the government of Geneva.,Rémy Pagani
+344,3772,2012,<extra_id_0> is the head of the government of Faroe Islands.,Kaj Leo Johannesen
+345,3783,2012,<extra_id_0> is the head of the government of Prague.,Bohuslav Svoboda
+346,3794,2012,<extra_id_0> is the head of the government of Auckland.,Len Brown
+347,3804,2012,<extra_id_0> is the head of the government of Wisconsin.,Scott Walker
+348,3815,2012,<extra_id_0> is the head of the government of Tallinn.,Edgar Savisaar
+349,3825,2012,<extra_id_0> is the head of the government of Gibraltar.,Fabian Picardo
+350,3836,2012,<extra_id_0> is the head of the government of Community of Madrid.,Esperanza Aguirre;Ignacio González González
+351,3847,2012,<extra_id_0> is the head of the government of Mainz.,Michael Ebling
+352,3858,2012,<extra_id_0> is the head of the government of New South Wales.,Barry O'Farrell
+353,3869,2012,<extra_id_0> is the head of the government of Wiesbaden.,Helmut Müller
+354,3880,2012,<extra_id_0> is the head of the government of Lower Saxony.,David McAllister
+355,3905,2012,<extra_id_0> is the head of the government of Asturias.,Javier Fernández Fernández;Francisco Álvarez-Cascos
+356,3916,2012,<extra_id_0> is the head of the government of KwaZulu-Natal.,Zweli Mkhize
+357,3927,2012,<extra_id_0> is the head of the government of Jewish Autonomous Oblast.,Alexander Vinnikov
+358,3937,2012,<extra_id_0> is the head of the government of Oldenburg.,Gerd Schwandner
+359,3961,2012,<extra_id_0> is the head of the government of Kvinnherad.,Synnøve Solbakken
+360,3969,2012,<extra_id_0> is the head of the government of Republic of Khakassia.,Viktor Zimin
+361,3980,2012,<extra_id_0> is the head of the government of Södermanland County.,Liselott Hagberg
+362,3991,2012,<extra_id_0> is the head of the government of Gävleborg county.,Barbro Holmberg
+363,4002,2012,<extra_id_0> is the head coach of Olympiacos F.C..,Ernesto Valverde
+364,4008,2012,<extra_id_0> is the head coach of Green Bay Packers.,Mike McCarthy
+365,4034,2012,<extra_id_0> is the head coach of Western Bulldogs.,Brendan McCartney
+366,4048,2012,<extra_id_0> is the head coach of Nea Salamis Famagusta FC.,Mirsad Jonuz;Stephen Constantine
+367,4073,2012,<extra_id_0> is the head coach of Netherlands national association football team.,Louis van Gaal
+368,4097,2012,<extra_id_0> is the head coach of 1. FC Union Berlin.,Uwe Neuhaus
+369,4108,2012,<extra_id_0> is the head coach of FC Argeș.,Emil Săndoi
+370,4155,2012,<extra_id_0> is the head coach of CS Gaz Metan Mediaș.,Gheorghe Mulțescu
+371,4171,2012,<extra_id_0> is the head coach of FC Slovan Liberec.,Jaroslav Šilhavý
+372,4194,2012,<extra_id_0> is the head coach of Maccabi Petah Tikva F.C..,Moshe Sinai
+373,4213,2012,<extra_id_0> is the head coach of F.C. Paços de Ferreira.,Paulo Fonseca
+374,4230,2012,<extra_id_0> is the head coach of CCC Team.,Fabio Baldato;Maximilian Sciandri;Noël Dejonckheere
+375,4242,2012,<extra_id_0> is the head coach of De Graafschap.,Pieter Huistra
+376,4253,2012,<extra_id_0> is the head coach of SKN St. Pölten.,Martin Scherb
+377,4270,2012,<extra_id_0> is the head coach of FC St. Gallen.,Jeff Saibene
+378,4279,2012,<extra_id_0> is the head coach of Telenet-Fidea.,Danny De Bie
+379,4311,2012,<extra_id_0> is the head coach of Belarus national under-21 football team.,Aleksey Vergeyenko;Yuri Shukanov
+380,4322,2012,<extra_id_0> is the head coach of Pauwels Sauzen-Bingoal.,Mario De Clercq
+381,4337,2012,The Onion is owned by <extra_id_0>.,Fusion Media Group
+382,4348,2012,Salvator Mundi is owned by <extra_id_0>.,Alexander Parish
+383,4359,2012,South China Morning Post is owned by <extra_id_0>.,Great Wall Pan Asia Holdings
+384,4370,2012,Boston Globe is owned by <extra_id_0>.,The New York Times Company
+385,4380,2012,Blue Coat Systems is owned by <extra_id_0>.,Thoma Bravo
+386,4391,2012,Numedal Line is owned by <extra_id_0>.,Norwegian National Rail Administration
+387,4402,2012,ADV Ocean Shield is owned by <extra_id_0>.,DOF ASA;Australian Border Force
+388,4413,2012,Eudora is owned by <extra_id_0>.,Qualcomm Inc.
+389,4424,2012,Le Rêve is owned by <extra_id_0>.,Steve Wynn
+390,4435,2012,Toll Collect is owned by <extra_id_0>.,Daimler Financial Services;Vinci;Deutsche Telekom
+391,4444,2012,West Horsley Place is owned by <extra_id_0>.,"Mary Innes-Ker, Duchess of Roxburghe"
+392,4455,2012,Expobank CZ is owned by <extra_id_0>.,Landesbank Baden-Württemberg
+393,4466,2012,Rothschild is owned by <extra_id_0>.,Alexander Ivanov
+394,4475,2012,Vésuve de Brekka is owned by <extra_id_0>.,Republican Guard
+395,4486,2012,Kirkus Reviews is owned by <extra_id_0>.,Herbert Simon
+396,4503,2012,dblp computer science bibliography is owned by <extra_id_0>.,Schloss Dagstuhl – Leibniz Center for Informatics;University of Trier
+397,4514,2012,Luna is owned by <extra_id_0>.,Roman Abramovich
+398,4525,2012,The Gainesville Sun is owned by <extra_id_0>.,Halifax Media Group;The New York Times Company
+399,4536,2012,Douro railway line is owned by <extra_id_0>.,REFER
+400,4547,2012,Randsfjorden Line is owned by <extra_id_0>.,Norwegian National Rail Administration
+401,4558,2012,The Eagle is owned by <extra_id_0>.,Berkshire Hathaway
+402,4569,2012,Trunk Line is owned by <extra_id_0>.,Norwegian National Rail Administration
+403,4580,2012,Kimbrough Memorial Stadium is owned by <extra_id_0>.,West Texas A&M University
+404,4591,2012,Skillsoft is owned by <extra_id_0>.,Advent International;Berkshire Partners;Bain Capital
+405,4602,2012,Bauer Swansea & South West Wales is owned by <extra_id_0>.,Wireless Group
+406,4613,2012,Chocolat Poulain is owned by <extra_id_0>.,Mondelēz International
+407,4624,2012,511 Federal Building is owned by <extra_id_0>.,General Services Administration
+408,4635,2012,Hokushin Line is owned by <extra_id_0>.,Kobe Rapid Transit Railway
+409,4645,2012,Hello Sanctos is owned by <extra_id_0>.,"Philip Harris, Baron Harris of Peckham"

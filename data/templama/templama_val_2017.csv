@@ -1,0 +1,482 @@
+id,original,date,input,output
+0,28,2017,Seiji Maehara is a member of the <extra_id_0>.,independent politician;Democratic Party
+1,39,2017,Yves Pons attended <extra_id_0>.,"INSEP;University of Tennessee, Knoxville"
+2,45,2017,David Shulkin holds the position of <extra_id_0>.,Under Secretary of Veterans Affairs for Health;United States Secretary of Veterans Affairs
+3,54,2017,<extra_id_0> is the head of the government of Capital Region of Denmark.,Sophie Hæstorp Andersen
+4,65,2017,Reuven Rivlin holds the position of <extra_id_0>.,President of Israel
+5,76,2017,Jabo Ibehre plays for <extra_id_0>.,Carlisle United F.C.
+6,87,2017,<extra_id_0> is the chair of Young Union.,Paul Ziemiak
+7,98,2017,Saul Dubow works for <extra_id_0>.,University of Cambridge
+8,109,2017,Rothschild is owned by <extra_id_0>.,Hermitage Museum
+9,119,2017,<extra_id_0> is the chair of Polymetal International.,Bobby Godsell
+10,126,2017,<extra_id_0> is the head coach of Rosenborg BK.,Kåre Ingebrigtsen
+11,137,2017,Marta Lewicka works for <extra_id_0>.,University of Pittsburgh
+12,147,2017,Cory Gardner holds the position of <extra_id_0>.,United States senator
+13,161,2017,<extra_id_0> is the head of the government of Istanbul.,Kadir Topbaş;Mevlüt Uysal
+14,166,2017,<extra_id_0> is the head coach of AEL Limassol FC.,Bruno Miguel Nunes Baltazar;Pambos Christodoulou
+15,177,2017,<extra_id_0> is the head coach of FC Slavia-Mozyr.,Yuri Puntus;Mihail Martsinovich
+16,188,2017,Álvaro Morata plays for <extra_id_0>.,Chelsea F.C.;Real Madrid CF;Spain national association football team
+17,195,2017,Ada Colau is a member of the <extra_id_0>.,Barcelona en Comú;Catalunya en Comú
+18,209,2017,Paavo Väyrynen holds the position of <extra_id_0>.,member of the European Parliament
+19,218,2017,Paavo Väyrynen is a member of the <extra_id_0>.,Citizens' Party;Centre Party
+20,229,2017,László Tőkés holds the position of <extra_id_0>.,member of the European Parliament
+21,240,2017,Luciana Berger is a member of the <extra_id_0>.,Labour Party;Labour Co-operative
+22,251,2017,Christopher Hernandez works for <extra_id_0>.,Cornell University
+23,262,2017,Eurostar International Limited is owned by <extra_id_0>.,Hermes Investment Management;Caisse de dépôt et placement du Québec
+24,274,2017,Tobin Heath plays for <extra_id_0>.,Portland Thorns FC
+25,285,2017,Brielle Biermann attended <extra_id_0>.,Georgia State University
+26,296,2017,<extra_id_0> is the chair of Drasi.,Theodoros Skylakakis
+27,307,2017,Olivier Giroud plays for <extra_id_0>.,France national association football team;Arsenal F.C.
+28,318,2017,Jennifer Bendery works for <extra_id_0>.,HuffPost
+29,329,2017,Roger Watson works for <extra_id_0>.,University of Hull
+30,340,2017,<extra_id_0> is the chair of Max Planck Society.,Martin Stratmann
+31,357,2017,<extra_id_0> is the chair of Vetëvendosje!.,Visar Ymeri
+32,373,2017,Peter Crouch plays for <extra_id_0>.,Stoke City F.C.
+33,380,2017,Michael Flynn holds the position of <extra_id_0>.,National Security Advisor
+34,388,2017,Saumitra Khan is a member of the <extra_id_0>.,All India Trinamool Congress
+35,399,2017,Erin Lavik works for <extra_id_0>.,"University of Maryland, Baltimore County"
+36,408,2017,Vitaliy Klitschko holds the position of <extra_id_0>.,Mayor of Kyiv
+37,419,2017,Barbara J. Anderson works for <extra_id_0>.,Manaaki Whenua – Landcare Research
+38,436,2017,Jill R. Horwitz works for <extra_id_0>.,University of Victoria
+39,443,2017,Patrick Sensburg holds the position of <extra_id_0>.,chairperson
+40,453,2017,Graham F. Medley works for <extra_id_0>.,London School of Hygiene & Tropical Medicine
+41,460,2017,<extra_id_0> is the head coach of Valur.,Ólafur Jóhannesson
+42,471,2017,<extra_id_0> is the head coach of Gap Connah's Quay F.C..,Andy Morrison
+43,482,2017,Harold Ford Jr. works for <extra_id_0>.,Morgan Stanley
+44,485,2017,Gloria Macapagal-Arroyo holds the position of <extra_id_0>.,Deputy Speaker of the House of Representatives of the Philippines
+45,493,2017,<extra_id_0> is the chair of Delta Air Lines.,Frank Blake
+46,504,2017,Marcelo Díaz plays for <extra_id_0>.,Club Universidad Nacional;Chile national football team;Celta Vigo
+47,519,2017,Edvald Boasson-Hagen plays for <extra_id_0>.,NTT Pro Cycling Team
+48,529,2017,Gaku Shibasaki plays for <extra_id_0>.,Getafe CF;C.D. Tenerife;Japan national football team
+49,540,2017,Qi Lu works for <extra_id_0>.,Baidu
+50,550,2017,Kashif Ahmad is a member of the <extra_id_0>.,National Party
+51,561,2017,"<extra_id_0> is the chair of Embassy of Ukraine, Ottawa.",Andriy Shevchenko
+52,570,2017,Nathan Rourke attended <extra_id_0>.,Fort Scott Community College;Ohio University
+53,581,2017,Wells Fargo Center is owned by <extra_id_0>.,Ivanhoe Cambridge
+54,589,2017,Clemens Fuest works for <extra_id_0>.,Ifo Institut für Wirtschaftsforschung;Ludwig Maximilian University of Munich
+55,600,2017,John Mahama holds the position of <extra_id_0>.,President of Ghana
+56,608,2017,<extra_id_0> is the chair of Federal Emergency Management Agency.,Craig Fugate;Brock Long
+57,624,2017,Olav Fykse Tveit holds the position of <extra_id_0>.,general secretary
+58,630,2017,Curtis Pitt holds the position of <extra_id_0>.,Treasurer of Queensland
+59,641,2017,Darren Fletcher plays for <extra_id_0>.,West Bromwich Albion F.C.
+60,652,2017,Maria A. Pallante works for <extra_id_0>.,Library of Congress
+61,661,2017,John Galliano works for <extra_id_0>.,Maison Martin Margiela
+62,672,2017,Carlos Eduardo Marques plays for <extra_id_0>.,Clube Atlético Mineiro
+63,683,2017,Josh Perkins attended <extra_id_0>.,Gonzaga University
+64,693,2017,Sasha Roseneil works for <extra_id_0>.,University of Essex
+65,697,2017,<extra_id_0> is the head coach of FK Austria Wien.,Thorsten Fink
+66,707,2017,Arike Ogunbowale attended <extra_id_0>.,University of Notre Dame
+67,717,2017,Rocky Anderson is a member of the <extra_id_0>.,Justice Party
+68,728,2017,Valentino Rossi plays for <extra_id_0>.,Yamaha Motor Racing
+69,739,2017,Zlatan Pepemovic plays for <extra_id_0>.,Manchester United F.C.
+70,755,2017,Max Hollein works for <extra_id_0>.,Fine Arts Museums of San Francisco
+71,765,2017,<extra_id_0> is the head of the government of Yerevan.,Taron Margaryan
+72,776,2017,<extra_id_0> is the head of the government of Pennsylvania.,Tom Wolf
+73,785,2017,Lawrence Thomas Persico holds the position of <extra_id_0>.,diocesan bishop;Catholic bishop
+74,796,2017,Chris Hipkins holds the position of <extra_id_0>.,Minister of Education
+75,804,2017,<extra_id_0> is the head coach of HC Kometa Brno.,Libor Zábranský
+76,815,2017,<extra_id_0> is the chair of National Rally.,Marine Le Pen
+77,825,2017,Choupette is owned by <extra_id_0>.,Karl Lagerfeld
+78,835,2017,<extra_id_0> is the head coach of Swiss national football team.,Vladimir Petković
+79,846,2017,Mahathir Mohamad is a member of the <extra_id_0>.,Malaysian United Indigenous Party
+80,853,2017,<extra_id_0> is the chair of Norwegian Women's Lobby.,Ragnhild Hennum;Gunhild Vehusheia
+81,864,2017,Fernando Alonso plays for <extra_id_0>.,McLaren
+82,872,2017,Bill Shorten holds the position of <extra_id_0>.,Leader of the Opposition of Australia
+83,888,2017,Netscape Communications Corporation is owned by <extra_id_0>.,Verizon
+84,899,2017,<extra_id_0> is the head coach of AFC Ajax.,Erik ten Hag;Peter Bosz
+85,910,2017,Robert Mugabe holds the position of <extra_id_0>.,President of Zimbabwe
+86,916,2017,Fred VanVleet plays for <extra_id_0>.,Toronto Raptors
+87,930,2017,Jerzy Buzek holds the position of <extra_id_0>.,member of the European Parliament
+88,935,2017,<extra_id_0> is the head coach of Venezia F.C..,Filippo Inzaghi
+89,946,2017,Michelle Alexander works for <extra_id_0>.,University of York
+90,957,2017,Simon Stoddart works for <extra_id_0>.,McDonald Institute for Archaeological Research
+91,961,2017,<extra_id_0> is the head coach of FC Zhetysu.,Dmitriy Ogai
+92,977,2017,Braeden Anderson attended <extra_id_0>.,Seton Hall University School of Law
+93,986,2017,Chris Young plays for <extra_id_0>.,Washington Nationals
+94,997,2017,Erwin Hoffer plays for <extra_id_0>.,Karlsruher SC
+95,1005,2017,Manuel José Macário do Nascimento Clemente holds the position of <extra_id_0>.,Patriarch of Lisbon;cardinal;patriarch
+96,1019,2017,Jérôme Boateng plays for <extra_id_0>.,FC Bayern Munich
+97,1030,2017,Gwendal Rouillard is a member of the <extra_id_0>.,La République En Marche;Socialist Party
+98,1038,2017,<extra_id_0> is the chair of Young Liberals.,Konstantin Kuhle
+99,1045,2017,<extra_id_0> is the head coach of FC Botoșani.,Leo Grozavu;Costel Enache
+100,1051,2017,<extra_id_0> is the head coach of Valencia CF.,Marcelino García Toral
+101,1068,2017,John Neely Kennedy holds the position of <extra_id_0>.,United States senator
+102,1077,2017,Marisol Touraine holds the position of <extra_id_0>.,Minister of Labour;Ministry of Social Affairs and Health
+103,1088,2017,<extra_id_0> is the head of the government of Poland.,Beata Szydło;Mateusz Morawiecki
+104,1096,2017,Scott Morrison holds the position of <extra_id_0>.,Treasurer of Australia
+105,1107,2017,Salomon Kalou plays for <extra_id_0>.,Hertha BSC
+106,1118,2017,<extra_id_0> is the head of the government of Livorno.,Filippo Nogarin
+107,1128,2017,Heather Humphreys holds the position of <extra_id_0>.,"Teachta Dála;Minister for Jobs, Enterprise and Innovation;Minister for Arts, Heritage and the Gaeltacht"
+108,1139,2017,Călin Popescu-Tăriceanu is a member of the <extra_id_0>.,Alliance of Liberals and Democrats Party (Romania)
+109,1150,2017,Brigitte Boccone-Pagès is a member of the <extra_id_0>.,Horizon Monaco
+110,1161,2017,<extra_id_0> is the chair of International Shooting Sport Federation.,Olegario Vázquez Raña
+111,1172,2017,Recep Tayyip Erdoğan holds the position of <extra_id_0>.,President of Turkey
+112,1186,2017,Giorgia Meloni is a member of the <extra_id_0>.,Brothers of Italy
+113,1193,2017,Carmen Lamela Díaz works for <extra_id_0>.,National Court of Spain
+114,1204,2017,Kimbrough Memorial Stadium is owned by <extra_id_0>.,West Texas A&M University;Canyon Independent School District
+115,1215,2017,Alma Zadić is a member of the <extra_id_0>.,NOW – Pilz List
+116,1225,2017,Alma Zadić works for <extra_id_0>.,Freshfields Bruckhaus Deringer
+117,1232,2017,Jordan Randall Smith works for <extra_id_0>.,Symphony Number One
+118,1238,2017,<extra_id_0> is the head coach of SEG Racing Academy.,Michiel Elijzen;Vasílis Anastópoulos
+119,1249,2017,Belinda Johnson works for <extra_id_0>.,Airbnb
+120,1260,2017,Bronwyn Harch works for <extra_id_0>.,Queensland University of Technology
+121,1265,2017,Nathan Law is a member of the <extra_id_0>.,Demosistō
+122,1278,2017,Tomi Lahren works for <extra_id_0>.,TheBlaze
+123,1282,2017,Franck de Lapersonne is a member of the <extra_id_0>.,The Patriots;Rassemblement Bleu Marine
+124,1292,2017,Brendan Eich holds the position of <extra_id_0>.,chief executive officer
+125,1297,2017,Julian Smith holds the position of <extra_id_0>.,Treasurer of the Household;Parliamentary Secretary to the Treasury;Vice-Chamberlain of the Household
+126,1308,2017,Amos Yong works for <extra_id_0>.,Fuller Theological Seminary
+127,1319,2017,Fratelli Fabbri Editori is owned by <extra_id_0>.,Arnoldo Mondadori Editore
+128,1336,2017,<extra_id_0> is the chair of Czech Social Democratic Party.,Bohuslav Sobotka;Milan Chovanec
+129,1347,2017,T. L. Taylor works for <extra_id_0>.,Massachusetts Institute of Technology
+130,1354,2017,Charles Michel holds the position of <extra_id_0>.,Prime Minister of Belgium
+131,1365,2017,<extra_id_0> is the chair of European Bank for Reconstruction and Development.,Suma Chakrabarti;Horst Köhler
+132,1376,2017,<extra_id_0> is the head coach of Atlético Madrid.,Diego Simeone
+133,1390,2017,James Lankford holds the position of <extra_id_0>.,United States senator
+134,1401,2017,<extra_id_0> is the head of the government of Turin.,Chiara Appendino
+135,1412,2017,Christine Sinclair plays for <extra_id_0>.,Portland Thorns FC
+136,1418,2017,Angelo De Donatis holds the position of <extra_id_0>.,auxiliary bishop;archpriest;Catholic bishop;Cardinal Vicar;titular bishop;Auxiliary Bishop of Rome
+137,1432,2017,Wout Brama plays for <extra_id_0>.,PEC Zwolle
+138,1443,2017,"Chesley ""Sully"" Sullenberger works for <extra_id_0>.",CBS News
+139,1454,2017,Stephen Powis works for <extra_id_0>.,Royal Free London NHS Foundation Trust
+140,1465,2017,Elisabeth Bik works for <extra_id_0>.,uBiome
+141,1474,2017,Robyn Denholm works for <extra_id_0>.,"ABB Group;Telstra;Tesla, Inc."
+142,1489,2017,PanAmericano is owned by <extra_id_0>.,BTG Pactual
+143,1500,2017,<extra_id_0> is the head coach of Odds BK.,Dag-Eilev Fagermo
+144,1511,2017,John Mensah plays for <extra_id_0>.,Accra Hearts of Oak SC;AFC Eskilstuna
+145,1522,2017,Jole Santelli is a member of the <extra_id_0>.,Forza Italia (2013)
+146,1536,2017,Masterpiece is owned by <extra_id_0>.,Agnes Gund;Steven A. Cohen
+147,1540,2017,<extra_id_0> is the head coach of Androni Giocattoli-Sidermec.,Leonardo Scarselli;Alessandro Spezialetti
+148,1551,2017,Giuseppe Pisanu is a member of the <extra_id_0>.,Civic Choice
+149,1562,2017,Euclid Tsakalotos works for <extra_id_0>.,National and Kapodistrian University of Athens
+150,1582,2017,Pierre de Villiers holds the position of <extra_id_0>.,Chief of the Defence Staff
+151,1590,2017,Conor Murray plays for <extra_id_0>.,Munster Rugby;Ireland national rugby union team
+152,1601,2017,<extra_id_0> is the chair of National Electoral Council of Venezuela.,Tibisay Lucena
+153,1605,2017,<extra_id_0> is the head coach of Racing Club.,Eduardo  Coudet
+154,1616,2017,Poul Michelsen is a member of the <extra_id_0>.,Progress
+155,1627,2017,Joel Byrom plays for <extra_id_0>.,Northampton Town F.C.
+156,1638,2017,4chan is owned by <extra_id_0>.,Hiroyuki Nishimura
+157,1649,2017,Peter Altmaier holds the position of <extra_id_0>.,Federal Minister for Special Affairs of Germany
+158,1658,2017,Chris Lewington plays for <extra_id_0>.,Margate F.C.
+159,1669,2017,Tuomas Eerola works for <extra_id_0>.,Durham University
+160,1676,2017,<extra_id_0> is the head of the government of Donetsk People's Republic.,Aleksandr Zakharchenko
+161,1685,2017,<extra_id_0> is the chair of Christian Social People's Party.,Marc Spautz
+162,1690,2017,<extra_id_0> is the head coach of Unione Sportiva Lecce.,Fabio Liverani
+163,1701,2017,Keith Olbermann works for <extra_id_0>.,ESPN
+164,1711,2017,Juice Robinson works for <extra_id_0>.,New Japan Pro-Wrestling
+165,1736,2017,Rabbit is owned by <extra_id_0>.,S. I. Newhouse
+166,1747,2017,When Will You Marry? is owned by <extra_id_0>.,Al-Mayassa bint Hamad bin Khalifa Al-Thani
+167,1758,2017,Sharon R. Lewin works for <extra_id_0>.,Monash University
+168,1766,2017,Frank-Walter Steinmeier holds the position of <extra_id_0>.,president of Germany;Federal Minister for Foreign Affairs
+169,1777,2017,<extra_id_0> is the head coach of FC Argeș.,Emil Săndoi
+170,1788,2017,Melanie Keen works for <extra_id_0>.,Iniva
+171,1802,2017,<extra_id_0> is the head of the government of Saint Petersburg.,Georgy Poltavchenko
+172,1815,2017,Tom Cotton holds the position of <extra_id_0>.,United States senator
+173,1826,2017,Chris Porter plays for <extra_id_0>.,Colchester United F.C.
+174,1837,2017,<extra_id_0> is the head of the government of Kyōto Prefecture.,Keiji Yamada
+175,1847,2017,Norbert Perrimon works for <extra_id_0>.,Harvard University;Harvard Medical School
+176,1854,2017,<extra_id_0> is the chair of European Research Council.,Jean-Pierre Bourguignon
+177,1865,2017,Joakim Noah plays for <extra_id_0>.,New York Knicks
+178,1875,2017,Tim Bresnan plays for <extra_id_0>.,Sylhet Sixers
+179,1885,2017,Julio Arca plays for <extra_id_0>.,South Shields F.C.
+180,1903,2017,Alex Morgan plays for <extra_id_0>.,United States women's national soccer team;Orlando Pride
+181,1914,2017,Pierre-Emerick Aubameyang plays for <extra_id_0>.,Borussia Dortmund
+182,1925,2017,Philip W. Kantoff works for <extra_id_0>.,Memorial Sloan Kettering Cancer Center
+183,1935,2017,Anerood Jugnauth holds the position of <extra_id_0>.,Prime Minister of Mauritius
+184,1943,2017,Brenda L Bloodgood works for <extra_id_0>.,"University of California, San Diego"
+185,1954,2017,Joana Ortega i Alemany is a member of the <extra_id_0>.,Catalan European Democratic Party;Democratic Union of Catalonia
+186,1965,2017,<extra_id_0> is the head of the government of Batangas.,Hermilando Mandanas
+187,1976,2017,Kevitsa mine is owned by <extra_id_0>.,Boliden AB
+188,1988,2017,Carles Puigdemont holds the position of <extra_id_0>.,President of the Generalitat of Catalonia
+189,1998,2017,Carles Puigdemont is a member of the <extra_id_0>.,Catalan European Democratic Party
+190,2009,2017,Douglas Carswell is a member of the <extra_id_0>.,UK Independence Party
+191,2017,2017,Karolin Luger works for <extra_id_0>.,University of Colorado Boulder
+192,2034,2017,<extra_id_0> is the chair of TOP 09.,Jiří Pospíšil;Miroslav Kalousek
+193,2048,2017,Ruffin McNeill works for <extra_id_0>.,Virginia Cavaliers football
+194,2059,2017,Mazie Hirono holds the position of <extra_id_0>.,United States senator
+195,2070,2017,Lamar Alexander holds the position of <extra_id_0>.,United States senator
+196,2084,2017,James Rodríguez plays for <extra_id_0>.,Real Madrid CF;FC Bayern Munich;Colombia national football team
+197,2094,2017,<extra_id_0> is the head coach of Telenet-Fidea.,Sven Vanthourenhout
+198,2103,2017,Reyahn King works for <extra_id_0>.,York Museums Trust
+199,2114,2017,Yossi Benayoun plays for <extra_id_0>.,Maccabi Haifa F.C.
+200,2125,2017,<extra_id_0> is the chair of Verkhovna Rada.,Andriy Parubiy
+201,2136,2017,<extra_id_0> is the head of the government of Basse-Terre.,Marie-Luce Penchard
+202,2147,2017,Dragoș Pîslaru is a member of the <extra_id_0>.,independent politician
+203,2158,2017,Jordan Nwora attended <extra_id_0>.,University of Louisville;Vermont Academy
+204,2169,2017,Tom Price holds the position of <extra_id_0>.,United States Secretary of Health and Human Services;United States representative
+205,2177,2017,<extra_id_0> is the chair of Gibraltar Socialist Labour Party.,Fabian Picardo
+206,2189,2017,Gennady Gudkov is a member of the <extra_id_0>.,Russian Opposition Coordination Council
+207,2200,2017,<extra_id_0> is the head of the government of São Paulo.,João Doria Júnior
+208,2211,2017,<extra_id_0> is the head of the government of São Paulo.,Geraldo Alckmin
+209,2222,2017,Won Hee-ryong is a member of the <extra_id_0>.,Bareun Party;Liberty Korea Party
+210,2231,2017,Rathika Sitsabaiesan is a member of the <extra_id_0>.,Ontario Liberal Party
+211,2240,2017,<extra_id_0> is the chair of European Parliament Committee on Foreign Affairs.,David McAllister;Elmar Brok
+212,2245,2017,<extra_id_0> is the head coach of Parma Calcio 1913.,Roberto D'Aversa
+213,2263,2017,Hart Blanton works for <extra_id_0>.,Texas A&M University;University of Connecticut
+214,2274,2017,Portrait of Professor Benjamin H. Rand is owned by <extra_id_0>.,Crystal Bridges Museum of American Art
+215,2285,2017,Arturo Scotto is a member of the <extra_id_0>.,"Left, Ecology and Freedom;Article 1 – Democratic and Progressive Movement"
+216,2291,2017,François Villeroy de Galhau holds the position of <extra_id_0>.,Governor of the Banque de France;president
+217,2302,2017,R.A. Dickey plays for <extra_id_0>.,Toronto Blue Jays
+218,2313,2017,Nabil Dirar plays for <extra_id_0>.,AS Monaco FC;Fenerbahçe FC
+219,2324,2017,Kongregate is owned by <extra_id_0>.,GameStop;Modern Times Group
+220,2335,2017,Gilbert Arenas plays for <extra_id_0>.,Shanghai Sharks
+221,2346,2017,Jason Reese works for <extra_id_0>.,University of Edinburgh
+222,2356,2017,Andrew D. Martin works for <extra_id_0>.,University of Michigan
+223,2367,2017,Kåre Schultz works for <extra_id_0>.,Lundbeck
+224,2375,2017,Eurosport is owned by <extra_id_0>.,Discovery Inc.
+225,2386,2017,Lisa Murkowski holds the position of <extra_id_0>.,United States senator
+226,2397,2017,Gianni Alemanno is a member of the <extra_id_0>.,National Action;National Movement for Sovereignty
+227,2408,2017,<extra_id_0> is the head of the government of Qatar.,Abdullah bin Nasser bin Khalifa Al Thani
+228,2418,2017,Nuno Brás da Silva Martins holds the position of <extra_id_0>.,auxiliary bishop;titular bishop;Catholic bishop
+229,2427,2017,Maroš Šefčovič holds the position of <extra_id_0>.,European Commissioner for Energy
+230,2443,2017,Karyn A. Temple works for <extra_id_0>.,United States Copyright Office
+231,2454,2017,Bruce Hyer is a member of the <extra_id_0>.,Green Party of Canada
+232,2465,2017,Ionel-Sorin Moisă is a member of the <extra_id_0>.,independent politician;Social Democratic Party
+233,2473,2017,Vivian Li works for <extra_id_0>.,Francis Crick Institute
+234,2497,2017,John Guidetti plays for <extra_id_0>.,Sweden national association football team;Celta Vigo
+235,2508,2017,Christofer Clemente works for <extra_id_0>.,University of the Sunshine Coast
+236,2513,2017,<extra_id_0> is the head coach of SFC Opava.,Roman Skuhravý
+237,2523,2017,Joan Josep Nuet is a member of the <extra_id_0>.,United and Alternative Left;Communists of Catalonia;Catalunya en Comú
+238,2535,2017,<extra_id_0> is the head of the government of Liaoning.,Tang Yijun
+239,2546,2017,LA Weekly is owned by <extra_id_0>.,Voice Media Group
+240,2554,2017,Jared Kushner holds the position of <extra_id_0>.,Office of American Innovation;Senior Advisor to the President of the United States
+241,2569,2017,Lluís Corominas i Díaz is a member of the <extra_id_0>.,Catalan European Democratic Party
+242,2580,2017,Stuart Broad plays for <extra_id_0>.,England and Wales cricket team;Hobart Hurricanes
+243,2589,2017,Diego Ribas da Cunha plays for <extra_id_0>.,Clube de Regatas do Flamengo;Fenerbahçe FC
+244,2600,2017,Ahmad Zahid Hamidi holds the position of <extra_id_0>.,Minister of Home Affairs;Deputy Prime Minister of Malaysia
+245,2611,2017,Luciano Onder works for <extra_id_0>.,Mediaset S.p.A.
+246,2624,2017,Enrico dal Covolo holds the position of <extra_id_0>.,titular bishop;Catholic bishop
+247,2635,2017,Shakib Al Hasan plays for <extra_id_0>.,Bangladesh national cricket team
+248,2644,2017,Vasile Blaga is a member of the <extra_id_0>.,National Liberal Party
+249,2655,2017,Scott Frost works for <extra_id_0>.,UCF Knights;Nebraska Cornhuskers
+250,2668,2017,Justin Trudeau holds the position of <extra_id_0>.,Minister of Intergovernmental Affairs;Prime Minister of Canada
+251,2675,2017,<extra_id_0> is the head coach of Skydive Dubai-Al Ahli.,Alberto Volpi
+252,2686,2017,<extra_id_0> is the chair of Bank of Lithuania.,Vitas Vasiliauskas
+253,2693,2017,<extra_id_0> is the head of the government of Flanders.,Geert Bourgeois
+254,2704,2017,Josep Rull i Andreu is a member of the <extra_id_0>.,Catalan European Democratic Party
+255,2715,2017,Justin Welby holds the position of <extra_id_0>.,Archbishop of Canterbury;bishop
+256,2726,2017,<extra_id_0> is the head of the government of Changhua County.,Wei Ming-ku
+257,2744,2017,WOSX is owned by <extra_id_0>.,Denison University
+258,2755,2017,<extra_id_0> is the chair of Union rationaliste.,Édouard Brézin;Yves Bréchet
+259,2766,2017,Robbie Rogers plays for <extra_id_0>.,Los Angeles Galaxy
+260,2777,2017,Tom Finkelpearl works for <extra_id_0>.,New York City Department of Cultural Affairs
+261,2788,2017,Gabriel Salazar works for <extra_id_0>.,Metropolitan University of Educational Sciences;University of Chile
+262,2799,2017,<extra_id_0> is the head coach of LSU Tigers football.,Ed Orgeron
+263,2814,2017,Catherine McKenna holds the position of <extra_id_0>.,Minister of the Environment
+264,2825,2017,Ann Sarnoff works for <extra_id_0>.,BBC America
+265,2835,2017,Peter Kohlgraf works for <extra_id_0>.,Catholic University of Applied Sciences Mainz
+266,2845,2017,<extra_id_0> is the head coach of K.A.A. Gent.,Hein Vanhaezebrouck;Yves Vanderhaeghe
+267,2853,2017,Helen McEntee holds the position of <extra_id_0>.,Teachta Dála
+268,2864,2017,Eskil Brøndbo is a member of the <extra_id_0>.,Conservative Party of Norway
+269,2875,2017,Andris Piebalgs holds the position of <extra_id_0>.,"European Commissioner for International Cooperation, Humanitarian Aid and Crisis Response"
+270,2886,2017,Didier Fassin works for <extra_id_0>.,Institute for Advanced Study
+271,2897,2017,Joaquim Forn is a member of the <extra_id_0>.,Catalan European Democratic Party
+272,2910,2017,Maria Ohisalo attended <extra_id_0>.,University of Eastern Finland
+273,2912,2017,<extra_id_0> is the head coach of Moreirense F.C..,Augusto Inácio
+274,2918,2017,Jeremy Corbyn holds the position of <extra_id_0>.,Leader of the Labour Party;Leader of the Opposition
+275,2929,2017,Ghulam Rasool Sahi is a member of the <extra_id_0>.,Pakistan Muslim League (N)
+276,2940,2017,<extra_id_0> is the head coach of Legia Warsaw.,Romeo Jozak;Jacek Magiera
+277,2951,2017,Ron Estes holds the position of <extra_id_0>.,United States representative;Kansas State Treasurer
+278,2966,2017,Shelley Moore Capito holds the position of <extra_id_0>.,United States senator
+279,2977,2017,Emanuela Del Gado works for <extra_id_0>.,Georgetown University
+280,2982,2017,<extra_id_0> is the chair of Ministry of Health and Welfare.,Park Neung-hoo
+281,2993,2017,Shay Given plays for <extra_id_0>.,Stoke City F.C.
+282,3007,2017,James McClean plays for <extra_id_0>.,Republic of Ireland national association football team;West Bromwich Albion F.C.
+283,3018,2017,Romelu Lukaku plays for <extra_id_0>.,Everton F.C.;Belgium national football team;Manchester United F.C.
+284,3029,2017,<extra_id_0> is the head coach of Angers SCO.,Stéphane Moulin
+285,3034,2017,Sabrina Ionescu plays for <extra_id_0>.,Oregon Ducks women's basketball
+286,3043,2017,Sabrina Ionescu attended <extra_id_0>.,University of Oregon
+287,3053,2017,<extra_id_0> is the chair of Progressive Party of Maldives.,Abdulla Yameen
+288,3057,2017,Naomi Osaka plays for <extra_id_0>.,Japan Fed Cup team
+289,3061,2017,<extra_id_0> is the head coach of Naomi Osaka.,Sascha Bajin
+290,3072,2017,Rahm Emanuel holds the position of <extra_id_0>.,Mayor of Chicago
+291,3077,2017,<extra_id_0> is the head coach of Spartak Moscow.,Massimo Carrera
+292,3088,2017,Kari Turunen holds the position of <extra_id_0>.,chairperson
+293,3094,2017,Jason Roy plays for <extra_id_0>.,Sydney Sixers;Lahore Qalandars;Gujarat Lions
+294,3108,2017,Nikólaos Chountís is a member of the <extra_id_0>.,Popular Unity (Greece)
+295,3118,2017,Nordic Regional Airlines is owned by <extra_id_0>.,Finnair
+296,3129,2017,Gareth Barry plays for <extra_id_0>.,Everton F.C.
+297,3140,2017,Lucas Richman works for <extra_id_0>.,Bangor Symphony Orchestra
+298,3155,2017,Luis Almagro holds the position of <extra_id_0>.,General Secretariat of the Organization of American States
+299,3164,2017,Luis Planas holds the position of <extra_id_0>.,general secretary
+300,3173,2017,Thorgan Hazard plays for <extra_id_0>.,Belgium national football team;Borussia Mönchengladbach
+301,3182,2017,Chen Guangcheng works for <extra_id_0>.,Witherspoon Institute
+302,3191,2017,Māris Kučinskis is a member of the <extra_id_0>.,Liepāja Party
+303,3202,2017,Julie Ertz plays for <extra_id_0>.,United States women's national soccer team;Chicago Red Stars
+304,3209,2017,Trey Lance attended <extra_id_0>.,Marshall High School
+305,3219,2017,Antonino Raspanti holds the position of <extra_id_0>.,diocesan bishop;Catholic bishop
+306,3230,2017,Ian Jacobs works for <extra_id_0>.,University of New South Wales
+307,3241,2017,Dominique Mamberti holds the position of <extra_id_0>.,cardinal
+308,3252,2017,Katherine Joy works for <extra_id_0>.,University of Manchester
+309,3262,2017,<extra_id_0> is the chair of National Assembly.,Ousseini Tinni
+310,3267,2017,<extra_id_0> is the chair of National Assembly.,Chung Sye-kyun
+311,3277,2017,Meng Wanzhou holds the position of <extra_id_0>.,chief financial officer
+312,3283,2017,Rachel Notley holds the position of <extra_id_0>.,Premier of Alberta
+313,3294,2017,Shoaib Malik plays for <extra_id_0>.,Barbados Tridents
+314,3302,2017,Philippe Couillard holds the position of <extra_id_0>.,Member of the National Assembly of Quebec;Premier of Quebec
+315,3311,2017,Anam Vivekananda Reddy is a member of the <extra_id_0>.,Telugu Desam Party
+316,3320,2017,Philip A. Gale works for <extra_id_0>.,University of Southampton;University of Sydney
+317,3331,2017,Bergen Line is owned by <extra_id_0>.,Bane NOR
+318,3348,2017,Melania Cristescu works for <extra_id_0>.,McGill University
+319,3359,2017,<extra_id_0> is the head of the government of Texas.,Greg Abbott
+320,3370,2017,John L. Hennessy holds the position of <extra_id_0>.,director
+321,3378,2017,<extra_id_0> is the chair of Ministry of Finance.,Siv Jensen
+322,3389,2017,Joseph Daul holds the position of <extra_id_0>.,chairperson
+323,3400,2017,Stephen Hawking works for <extra_id_0>.,University of Cambridge;Perimeter Institute for Theoretical Physics
+324,3407,2017,Trent Kelly holds the position of <extra_id_0>.,United States representative
+325,3418,2017,<extra_id_0> is the head of the government of Hawaii.,David Ige
+326,3426,2017,Alexei Navalny is a member of the <extra_id_0>.,Progress Party
+327,3437,2017,Vera Papisova works for <extra_id_0>.,Teen Vogue
+328,3443,2017,Liasos Louka works for <extra_id_0>.,Nea Salamis Famagusta FC;Karmiotissa Pano Polemidion
+329,3446,2017,<extra_id_0> is the head coach of Sheffield United F.C..,Chris Wilder
+330,3457,2017,Thomas Hutzschenreuter works for <extra_id_0>.,Technical University of Munich
+331,3468,2017,<extra_id_0> is the head coach of SV Waldhof Mannheim.,Gerd Dais
+332,3479,2017,Dan Satterberg is a member of the <extra_id_0>.,Republican Party
+333,3490,2017,Didier Digard plays for <extra_id_0>.,Real Betis Balompié
+334,3500,2017,<extra_id_0> is the chair of RCD Mallorca.,Andy Kohlberg
+335,3520,2017,Rob Gronkowski plays for <extra_id_0>.,New England Patriots
+336,3524,2017,<extra_id_0> is the head coach of San Jose Earthquakes.,Chris Leitch
+337,3535,2017,Gustavo Petro is a member of the <extra_id_0>.,Movimiento Progresistas (izquierda)
+338,3546,2017,Roberto Cassinelli is a member of the <extra_id_0>.,Forza Italia (2013)
+339,3551,2017,Hana Kimura works for <extra_id_0>.,Wrestle-1
+340,3569,2017,Tyrese Maxey attended <extra_id_0>.,South Garland High School
+341,3576,2017,<extra_id_0> is the head coach of FC Inter Turku.,Shefki Kuqi
+342,3585,2017,Chris Lu holds the position of <extra_id_0>.,United States Deputy Secretary of Labor
+343,3593,2017,Rodrigo Palacio plays for <extra_id_0>.,Inter Milan;Bologna FC 1909
+344,3604,2017,Akram Hasson is a member of the <extra_id_0>.,Kulanu
+345,3618,2017,Nicole Bricq is a member of the <extra_id_0>.,La République En Marche;Socialist Party
+346,3632,2017,Corina Crețu is a member of the <extra_id_0>.,Social Democratic Party
+347,3643,2017,Ertharin Cousin holds the position of <extra_id_0>.,executive director
+348,3654,2017,Richard G. Whitman works for <extra_id_0>.,University of Kent
+349,3665,2017,Robinho plays for <extra_id_0>.,Clube Atlético Mineiro
+350,3676,2017,Mohammad Bagher Ghalibaf holds the position of <extra_id_0>.,Mayor of Tehran
+351,3685,2017,Masaaki Ōsawa is a member of the <extra_id_0>.,independent politician
+352,3695,2017,Gitta Kutyniok works for <extra_id_0>.,Technical University of Berlin
+353,3707,2017,Annegret Kramp-Karrenbauer holds the position of <extra_id_0>.,chairperson;president
+354,3718,2017,Shafiqur Rahman Barq is a member of the <extra_id_0>.,Samajwadi Party
+355,3729,2017,Luciano Becchio plays for <extra_id_0>.,Rotherham United F.C.
+356,3740,2017,Paola Binetti is a member of the <extra_id_0>.,Union of the Centre
+357,3753,2017,Jang Geun-suk attended <extra_id_0>.,Hanyang University
+358,3764,2017,Ferran Bel Accensi is a member of the <extra_id_0>.,Catalan European Democratic Party
+359,3773,2017,<extra_id_0> is the head coach of Tennis Borussia Berlin.,Thomas Brdarić;Cemal Yıldız
+360,3777,2017,Sandrine Josso is a member of the <extra_id_0>.,La République En Marche;Centrist Alliance
+361,3787,2017,<extra_id_0> is the head coach of Borussia Dortmund.,Thomas Tuchel
+362,3798,2017,Ben Carson is a member of the <extra_id_0>.,Republican Party
+363,3806,2017,<extra_id_0> is the head coach of Metec-TKH-Mantel.,Robin Chaigneau;Adri van Houwelingen
+364,3823,2017,Jean-Paul Garraud is a member of the <extra_id_0>.,The Republicans
+365,3836,2017,Misty Jenkins works for <extra_id_0>.,WEHI
+366,3852,2017,Misbah-ul-Haq plays for <extra_id_0>.,Pakistan national cricket team
+367,3860,2017,Vladimir Ashurkov works for <extra_id_0>.,Anti-corruption Foundation
+368,3877,2017,<extra_id_0> is the chair of Green League.,Ville Niinistö;Touko Aalto
+369,3888,2017,Mustapha Madih works for <extra_id_0>.,Morocco national under-17 football team
+370,3899,2017,<extra_id_0> is the head coach of Helsingin Jalkapalloklubi.,Mika Lehkosuo
+371,3914,2017,<extra_id_0> is the chair of Jammu and Kashmir People's Democratic Party.,Mehbooba Mufti
+372,3924,2017,Jessica Shepard attended <extra_id_0>.,University of Nebraska–Lincoln;University of Notre Dame
+373,3934,2017,Hannah Dee works for <extra_id_0>.,Aberystwyth University
+374,3940,2017,Henry McMaster holds the position of <extra_id_0>.,Lieutenant Governor of South Carolina;Governor of South Carolina
+375,3951,2017,Hickory Daily Record is owned by <extra_id_0>.,Berkshire Hathaway
+376,3962,2017,Beatrice Brignone is a member of the <extra_id_0>.,Possible
+377,3973,2017,Matthew DeGennaro works for <extra_id_0>.,Florida International University
+378,3980,2017,<extra_id_0> is the head of the government of Gyeonggi Province.,Nam Kyung-pil
+379,3992,2017,Craig Gordon plays for <extra_id_0>.,Celtic F.C.
+380,4003,2017,Amiruddin Hamzah is a member of the <extra_id_0>.,Malaysian Islamic Party;Malaysian United Indigenous Party
+381,4011,2017,Apryl A. Alexander works for <extra_id_0>.,University of Denver
+382,4022,2017,<extra_id_0> is the chair of BayernSPD.,Natascha Kohnen;Florian Pronold
+383,4039,2017,Gheorghe Falcă is a member of the <extra_id_0>.,National Liberal Party
+384,4053,2017,Westfield Wheaton is owned by <extra_id_0>.,Westfield Corporation
+385,4064,2017,Sabine Schmidtke works for <extra_id_0>.,Institute for Advanced Study
+386,4075,2017,<extra_id_0> is the head of the government of Milan.,Giuseppe Sala
+387,4086,2017,Adrián González plays for <extra_id_0>.,Los Angeles Dodgers
+388,4097,2017,Fraser Forster plays for <extra_id_0>.,Southampton F.C.
+389,4108,2017,Heather Bresch holds the position of <extra_id_0>.,chief executive officer
+390,4119,2017,511 Federal Building is owned by <extra_id_0>.,Portland Development Commission
+391,4130,2017,Dacian Cioloș holds the position of <extra_id_0>.,Prime Minister of Romania
+392,4135,2017,Samara L Reck-Peterson works for <extra_id_0>.,"University of California, San Diego"
+393,4146,2017,Yoh Iwasa works for <extra_id_0>.,Kyushu University
+394,4164,2017,<extra_id_0> is the chair of Ministry of Foreign Affairs of the Republic of Korea.,Kang Kyung-hwa;Yun Byung-se
+395,4175,2017,Dianne F. Harrison works for <extra_id_0>.,"California State University, Northridge"
+396,4183,2017,Mark Norman holds the position of <extra_id_0>.,Vice Chief of the Defence Staff
+397,4188,2017,<extra_id_0> is the head coach of Villarreal Club de Fútbol.,Javier Calleja
+398,4197,2017,Nadarajah Asokan works for <extra_id_0>.,Aalto University;University of Helsinki
+399,4204,2017,Ashok Tanwar is a member of the <extra_id_0>.,Indian National Congress
+400,4219,2017,<extra_id_0> is the chair of Rio Tinto Group.,Jan du Plessis
+401,4230,2017,<extra_id_0> is the head of the government of Bourges.,Pascal Blanc
+402,4244,2017,Jürgen Klopp works for <extra_id_0>.,Liverpool F.C.
+403,4261,2017,Tia Eron is a member of the <extra_id_0>.,Republicanos
+404,4270,2017,James Dolan works for <extra_id_0>.,Classy (company);SecureDrop
+405,4278,2017,Alberto Contador plays for <extra_id_0>.,Trek-Segafredo
+406,4286,2017,Todd Rokita holds the position of <extra_id_0>.,United States representative
+407,4293,2017,Hunter Biden works for <extra_id_0>.,BHR Partners;Burisma Holdings
+408,4299,2017,Augustus John Rush works for <extra_id_0>.,Duke University;Texas Tech University
+409,4304,2017,Erin Boley attended <extra_id_0>.,University of Notre Dame;University of Oregon
+410,4315,2017,Asia Durr attended <extra_id_0>.,University of Louisville
+411,4321,2017,Elizabeth Truss holds the position of <extra_id_0>.,Lord Chancellor;Secretary of State for Justice;Chief Secretary to the Treasury
+412,4332,2017,Boxer TV Access is owned by <extra_id_0>.,Com Hem
+413,4343,2017,Charlotte Hornets is owned by <extra_id_0>.,Michael Jordan
+414,4354,2017,Cesc Fàbregas plays for <extra_id_0>.,Chelsea F.C.
+415,4373,2017,Aaron Judge plays for <extra_id_0>.,New York Yankees
+416,4384,2017,<extra_id_0> is the head of the government of Pescara.,Marco Alessandrini
+417,4395,2017,<extra_id_0> is the chair of Rhode Island School of Design.,Rosanne Somerson
+418,4406,2017,Pernille Vermund is a member of the <extra_id_0>.,The New Right
+419,4417,2017,P. J. Fleck works for <extra_id_0>.,Minnesota Golden Gophers football
+420,4428,2017,Éamon Ó Cuív holds the position of <extra_id_0>.,Teachta Dála
+421,4439,2017,Henrikh Mkhitaryan plays for <extra_id_0>.,Manchester United F.C.
+422,4450,2017,Jonah Berger works for <extra_id_0>.,The Wharton School
+423,4461,2017,Victor Oladipo plays for <extra_id_0>.,Indiana Pacers;Oklahoma City Thunder
+424,4465,2017,Junya Ogawa is a member of the <extra_id_0>.,Party of Hope
+425,4480,2017,<extra_id_0> is the head coach of Carolina Panthers.,Ron Rivera
+426,4489,2017,Syed Mustafa Kamal is a member of the <extra_id_0>.,Pak Sarzameen Party
+427,4500,2017,<extra_id_0> is the chair of People's Freedom Party.,Mikhail Kasyanov
+428,4511,2017,Pranab Mukherjee holds the position of <extra_id_0>.,President of India
+429,4519,2017,Wojciech Szczęsny plays for <extra_id_0>.,Arsenal F.C.;Juventus FC;A.S. Roma
+430,4530,2017,Chloe Bibby attended <extra_id_0>.,Mississippi State University;Rowville Secondary College
+431,4540,2017,Christiane Endler plays for <extra_id_0>.,Colo-Colo women's
+432,4551,2017,Chris Turney works for <extra_id_0>.,University of New South Wales
+433,4562,2017,Marissa Mayer works for <extra_id_0>.,Yahoo
+434,4568,2017,CY Leung holds the position of <extra_id_0>.,Vice-Chairperson of the National Committee of the Chinese People's Political Consultative Conference;Chief Executive of Hong Kong
+435,4579,2017,Federico Macheda plays for <extra_id_0>.,Nottingham Forest F.C.
+436,4590,2017,<extra_id_0> is the chair of Welsh Parliament.,Elin Jones
+437,4601,2017,Ryan Babel plays for <extra_id_0>.,Deportivo de La Coruña
+438,4612,2017,Erin McLeod plays for <extra_id_0>.,FC Rosengård
+439,4620,2017,<extra_id_0> is the head of the government of Pakistan.,Shahid Khaqan Abbasi;Nawaz Sharif
+440,4628,2017,<extra_id_0> is the head of the government of Taiwan.,Lai Ching-te;Lin Chuan
+441,4639,2017,<extra_id_0> is the head of the government of Boise.,David H. Bieter
+442,4650,2017,Wishnutama works for <extra_id_0>.,NET.
+443,4661,2017,Ellen D. Williams works for <extra_id_0>.,ARPA-E
+444,4667,2017,<extra_id_0> is the chair of Open Source Initiative.,Allison Randal
+445,4673,2017,Nicolás Maduro holds the position of <extra_id_0>.,President pro tempore of the Union of South American Nations;President of Venezuela
+446,4684,2017,<extra_id_0> is the chair of Caritas Italiana.,Francesco Montenegro
+447,4695,2017,Santi Vila i Vicente is a member of the <extra_id_0>.,Catalan European Democratic Party
+448,4704,2017,Aleksa Bečić is a member of the <extra_id_0>.,Democratic Montenegro
+449,4715,2017,Ferrari is owned by <extra_id_0>.,Piero Ferrari;public;Exor
+450,4726,2017,Pepe plays for <extra_id_0>.,Beşiktaş J.K.;Real Madrid CF
+451,4734,2017,Mangala pinsiri Samaraweera holds the position of <extra_id_0>.,Minister of Finance of Sri Lanka;Minister of Foreign Affairs of Sri Lanka
+452,4745,2017,Catherine Guillouard works for <extra_id_0>.,RATP;Rexel
+453,4756,2017,Carlo Rovelli works for <extra_id_0>.,Aix-Marseille University
+454,4767,2017,Monta Ellis plays for <extra_id_0>.,Dallas Mavericks
+455,4782,2017,Chris Lattner works for <extra_id_0>.,"Google;Tesla, Inc.;Apple Inc."
+456,4793,2017,<extra_id_0> is the head of the government of Hamburg.,Olaf Scholz
+457,4797,2017,<extra_id_0> is the head coach of VfL Bochum.,Jens Rasiejewski
+458,4805,2017,Ilya Sutskever works for <extra_id_0>.,OpenAI
+459,4816,2017,Thorbjørn Jagland holds the position of <extra_id_0>.,Secretary General of the Council of Europe
+460,4826,2017,Johan Djourou plays for <extra_id_0>.,Hamburger SV
+461,4837,2017,Paul Butler holds the position of <extra_id_0>.,Bishop of Durham
+462,4848,2017,Audun Lysbakken holds the position of <extra_id_0>.,party leader
+463,4858,2017,Vince Cable holds the position of <extra_id_0>.,Leader of the Liberal Democrats
+464,4863,2017,Lamar Jackson plays for <extra_id_0>.,Louisville Cardinals football
+465,4872,2017,Lamar Jackson attended <extra_id_0>.,University of Louisville
+466,4883,2017,Dina Bousselham is a member of the <extra_id_0>.,Podemos
+467,4894,2017,<extra_id_0> is the head of the government of Pau.,François Bayrou
+468,4905,2017,Yu Darvish plays for <extra_id_0>.,Texas Rangers;Los Angeles Dodgers
+469,4916,2017,Peter Mathieson works for <extra_id_0>.,University of Hong Kong
+470,4927,2017,<extra_id_0> is the chair of PEN International.,Jennifer Clement
+471,4938,2017,Kevin-Prince Boateng plays for <extra_id_0>.,Eintracht Frankfurt;Unión Deportiva Las Palmas
+472,4951,2017,<extra_id_0> is the head of the government of Sahrawi Arab Democratic Republic.,Abdelkader Taleb Omar
+473,4957,2017,Tarō Kōno holds the position of <extra_id_0>.,Minister for Foreign Affairs
+474,4966,2017,<extra_id_0> is the chair of Supreme Court of Justice.,Eckart Ratz
+475,4977,2017,Clive Palmer is a member of the <extra_id_0>.,Clive Palmer's United Australia Party
+476,4991,2017,<extra_id_0> is the head coach of Brighton & Hove Albion F.C..,Chris Hughton
+477,4997,2017,Søren Wichmann works for <extra_id_0>.,Kazan Federal University
+478,5008,2017,<extra_id_0> is the head of the government of Auckland.,Phil Goff
+479,5024,2017,Pier Paolo Pandolfi works for <extra_id_0>.,Beth Israel Deaconess Medical Center;Harvard Medical School
+480,5033,2017,Micael Bydén holds the position of <extra_id_0>.,Supreme Commander of the Swedish Armed Forces

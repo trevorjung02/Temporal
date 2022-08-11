@@ -1,0 +1,83 @@
+split is 0
+Length of dataset retrieving is.. 2866
+Epoch 0:   0% 1/573 [00:01<13:19,  1.40s/it, loss=nan, v_num=c1p3]
+Set SLURM handle signals.
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 762 M
+-----------------------------------------------------
+427 M     Trainable params
+334 M     Non-trainable params
+762 M     Total params
+3,051.358 Total estimated model params size (MB)
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/data_loading.py:354: UserWarning: One of given dataloaders is None and it will be skipped.
+
+Epoch 0:   3% 16/573 [00:03<01:58,  4.68it/s, loss=8.61, v_num=c1p3]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

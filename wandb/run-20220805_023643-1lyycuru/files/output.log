@@ -1,0 +1,15 @@
+split is 0
+Length of dataset retrieving is.. 49
+Training: 0it [00:00, ?it/s]
+Set SLURM handle signals.
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 81.7 M
+-----------------------------------------------------
+46.3 M    Trainable params
+35.3 M    Non-trainable params
+81.7 M    Total params
+326.730   Total estimated model params size (MB)
+Restored states from the checkpoint file at outputs/T5_small_templama(debug)_lr.001_adapters/epoch=15-step=47.ckpt
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/data_loading.py:354: UserWarning: One of given dataloaders is None and it will be skipped.
+  rank_zero_warn("One of given dataloaders is None and it will be skipped.")

@@ -1,0 +1,15 @@
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+Not freezing any parameters!
+split is 0
+Length of dataset retrieving is.. 17474
+Length of validation data:  17474
+log/invariantLAMA folder already exists.
+Traceback (most recent call last):
+  File "run.py", line 147, in <module>
+    evaluate(args, Model)
+  File "/mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/evaluation.py", line 52, in evaluate
+    outs = model.model.generate(
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'T5ForConditionalGeneration' object has no attribute 'model'

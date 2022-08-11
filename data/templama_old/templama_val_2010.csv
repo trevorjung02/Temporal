@@ -1,0 +1,377 @@
+id,original,date,input,output
+0,0,2010,Gianluigi Buffon plays for <extra_id_0>.,Juventus FC;Italy national association football team
+1,11,2010,Ricky Ponting plays for <extra_id_0>.,Australia national cricket team;Tasmania cricket team
+2,15,2010,Lewis Hamilton plays for <extra_id_0>.,McLaren
+3,26,2010,Didier Drogba plays for <extra_id_0>.,Ivory Coast national football team;Chelsea F.C.
+4,35,2010,Julius Peppers plays for <extra_id_0>.,Chicago Bears
+5,46,2010,Stuart Broad plays for <extra_id_0>.,England and Wales cricket team
+6,55,2010,MS Dhoni plays for <extra_id_0>.,India national cricket team
+7,66,2010,Mario Balotelli plays for <extra_id_0>.,Inter Milan;Italy national under-21 football team;Manchester City F.C.;Italy national association football team
+8,77,2010,James Harden plays for <extra_id_0>.,Oklahoma City Thunder
+9,88,2010,Mohamed Salah plays for <extra_id_0>.,Al Mokawloon Al Arab SC;Egypt national under-20 football team
+10,99,2010,Becky Sauerbrunn plays for <extra_id_0>.,Washington Freedom;magicJack
+11,103,2010,Rob Gronkowski plays for <extra_id_0>.,New England Patriots
+12,114,2010,Patrice Evra plays for <extra_id_0>.,France national association football team;Manchester United F.C.
+13,123,2010,Megan Rapinoe plays for <extra_id_0>.,Chicago Red Stars
+14,134,2010,Robert Lewandowski plays for <extra_id_0>.,Borussia Dortmund;Lech Poznań
+15,145,2010,Clint Dempsey plays for <extra_id_0>.,Fulham F.C.
+16,150,2010,Urby Emanuelson plays for <extra_id_0>.,AFC Ajax;Netherlands national association football team
+17,161,2010,V. V. S. Laxman plays for <extra_id_0>.,India national cricket team;Deccan Chargers
+18,164,2010,DeMarco Murray plays for <extra_id_0>.,Oklahoma Sooners football
+19,172,2010,Joe Hart plays for <extra_id_0>.,Manchester City F.C.;Birmingham City F.C.
+20,183,2010,Gonzalo Higuaín plays for <extra_id_0>.,Real Madrid CF;Argentina national football team
+21,194,2010,Nicklas Bendtner plays for <extra_id_0>.,Arsenal F.C.
+22,205,2010,Jean Makoun plays for <extra_id_0>.,Olympique Lyonnais;Cameroon national football team
+23,216,2010,Jozy Altidore plays for <extra_id_0>.,Hull City A.F.C.;Villarreal Club de Fútbol
+24,236,2010,Gary Hooper plays for <extra_id_0>.,Scunthorpe United F.C.;Celtic F.C.
+25,246,2010,Elena Delle Donne plays for <extra_id_0>.,Delaware Fightin' Blue Hens women's basketball
+26,257,2010,Nicolas Anelka plays for <extra_id_0>.,France national association football team;Chelsea F.C.
+27,263,2010,Michael Ballack plays for <extra_id_0>.,Germany national association football team;Chelsea F.C.;Bayer 04 Leverkusen
+28,266,2010,Sanath Jayasuriya plays for <extra_id_0>.,Worcestershire;Mumbai Indians
+29,268,2010,Jimmer Fredette plays for <extra_id_0>.,BYU Cougars men's basketball
+30,272,2010,Son Heung-min plays for <extra_id_0>.,Hamburger SV;South Korea national football team
+31,283,2010,Dimitar Berbatov plays for <extra_id_0>.,Manchester United F.C.;Bulgaria national football team
+32,292,2010,Henrikh Mkhitaryan plays for <extra_id_0>.,Armenia national under-21 football team;FC Shakhtar Donetsk;FC Metalurh Donetsk
+33,303,2010,Michael Beasley plays for <extra_id_0>.,Miami Heat;Minnesota Timberwolves
+34,314,2010,Chris Hackett plays for <extra_id_0>.,Millwall F.C.
+35,325,2010,Younus Khan plays for <extra_id_0>.,Surrey County Cricket Club;Pakistan national cricket team
+36,333,2010,Yaya Touré plays for <extra_id_0>.,FC Barcelona;Manchester City F.C.
+37,354,2010,Mostapha El Kabir plays for <extra_id_0>.,N.E.C.;Mjällby AIF
+38,365,2010,Davide Astori plays for <extra_id_0>.,Cagliari Calcio
+39,376,2010,Mohammad Amir plays for <extra_id_0>.,National Bank of Pakistan cricket team;Rawalpindi Rams;Pakistan national cricket team
+40,387,2010,Jimmy Butler plays for <extra_id_0>.,Marquette Golden Eagles men's basketball
+41,398,2010,Luke Moore plays for <extra_id_0>.,Derby County F.C.;West Bromwich Albion F.C.
+42,409,2010,Milan Baroš plays for <extra_id_0>.,Czech Republic national association football team;Galatasaray S.K.
+43,420,2010,Ben May plays for <extra_id_0>.,Stevenage F.C.;Scunthorpe United F.C.
+44,431,2010,Daniel McBreen plays for <extra_id_0>.,Perth Glory FC;Central Coast Mariners FC;Northern Fury FC
+45,441,2010,Marvin Emnes plays for <extra_id_0>.,Middlesbrough F.C.;Swansea City A.F.C.
+46,446,2010,Tyson Chandler plays for <extra_id_0>.,Dallas Mavericks
+47,457,2010,Kris Commons plays for <extra_id_0>.,Derby County F.C.;Scotland national football team
+48,468,2010,Andrei Arshavin plays for <extra_id_0>.,Arsenal F.C.;Russia national association football team
+49,477,2010,Lorik Cana plays for <extra_id_0>.,Galatasaray S.K.;Sunderland A.F.C.
+50,484,2010,Christian Kabasele plays for <extra_id_0>.,K.A.S. Eupen;Belgium national under-19 football team
+51,495,2010,Alexander Kačaniklić plays for <extra_id_0>.,Fulham F.C.
+52,506,2010,Moses Ashikodi plays for <extra_id_0>.,Kettering Town F.C.;Ebbsfleet United F.C.
+53,517,2010,Marcus Camby plays for <extra_id_0>.,Los Angeles Clippers;Portland Trail Blazers
+54,521,2010,Luke Foster plays for <extra_id_0>.,Oxford United F.C.;Mansfield Town F.C.;Stevenage F.C.
+55,532,2010,El Hadji Diouf plays for <extra_id_0>.,Blackburn Rovers F.C.
+56,538,2010,Martyn Lancaster plays for <extra_id_0>.,Fort Lauderdale Strikers
+57,542,2010,Eniola Aluko plays for <extra_id_0>.,Saint Louis Athletica;Atlanta Beat
+58,553,2010,Gjergji Muzaka plays for <extra_id_0>.,Albania national association football team;KS Dinamo Tirana;KF Tirana
+59,564,2010,André Schembri plays for <extra_id_0>.,Ferencvárosi TC;SK Austria Kärnten
+60,582,2010,Eduardo da Silva plays for <extra_id_0>.,Croatia national association football team;Arsenal F.C.;FC Shakhtar Donetsk
+61,593,2010,Steven Caulker plays for <extra_id_0>.,Bristol City F.C.;England national under-21 football team;England national under-19 football team;Yeovil Town F.C.;Tottenham Hotspur F.C.
+62,604,2010,Michael Bostwick plays for <extra_id_0>.,Stevenage F.C.
+63,615,2010,Gustavo Bou plays for <extra_id_0>.,Club Atlético River Plate
+64,626,2010,Alan Kirby plays for <extra_id_0>.,Sporting Fingal F.C.;League of Ireland XI
+65,629,2010,James Forrest plays for <extra_id_0>.,Scotland national under-19 football team;Scotland national under-21 football team;Celtic F.C.
+66,640,2010,Greg Tansey plays for <extra_id_0>.,Stockport County F.C.
+67,653,2010,Ross McCormack plays for <extra_id_0>.,Leeds United F.C.;Cardiff City F.C.
+68,664,2010,Rohit Sharma plays for <extra_id_0>.,Deccan Chargers
+69,675,2010,Neven Subotić plays for <extra_id_0>.,Serbia national football team;Borussia Dortmund
+70,686,2010,Leigh Griffiths plays for <extra_id_0>.,Scotland national under-21 football team;Dundee F.C.
+71,697,2010,Álvaro Morata plays for <extra_id_0>.,Real Madrid Castilla;Spain national under-18 football team;Real Madrid CF;Spain national under-19 football team
+72,708,2010,Shane Long plays for <extra_id_0>.,Reading F.C.
+73,728,2010,Migen Memelli plays for <extra_id_0>.,Flamurtari Vlorë;GAIS;Al-Faisaly FC
+74,739,2010,Jack Butland plays for <extra_id_0>.,England national under-17 football team;England national under-19 football team;Birmingham City F.C.
+75,750,2010,Roda Antar plays for <extra_id_0>.,Lebanon national football team;Shandong Luneng Taishan F.C.
+76,757,2010,Hameed Hassan plays for <extra_id_0>.,Pakistan Customs cricket team;Marylebone Cricket Club
+77,761,2010,Shaun Tait plays for <extra_id_0>.,Rajasthan Royals;Glamorgan County Cricket Club
+78,769,2010,Craig Reid plays for <extra_id_0>.,Newport County A.F.C.
+79,780,2010,Dries Mertens plays for <extra_id_0>.,FC Utrecht
+80,791,2010,Ajla Tomljanović plays for <extra_id_0>.,Croatia Fed Cup team
+81,795,2010,DJ Campbell plays for <extra_id_0>.,Leicester City F.C.;Blackpool F.C.;Derby County F.C.
+82,801,2010,Dinesh Chandimal plays for <extra_id_0>.,Ruhuna Royals
+83,812,2010,Freddy Adu plays for <extra_id_0>.,United States men's national soccer team;S.L. Benfica;Aris Thessaloniki F.C.;United States men's national under-23 soccer team
+84,823,2010,Yacine Brahimi plays for <extra_id_0>.,Clermont Foot;Stade Rennais F.C.;France national under-21 football team;France national under-20 football team
+85,834,2010,Vernon Davis plays for <extra_id_0>.,San Francisco 49ers
+86,845,2010,Adel Taarabt plays for <extra_id_0>.,Queens Park Rangers F.C.;Morocco national football team
+87,856,2010,Jimmy Smith plays for <extra_id_0>.,Leyton Orient F.C.
+88,867,2010,Michael Bradley plays for <extra_id_0>.,Borussia Mönchengladbach
+89,878,2010,Kris Boyd plays for <extra_id_0>.,Middlesbrough F.C.;Scotland national football team;Rangers F.C.
+90,888,2010,Douglas Franco Teixeira plays for <extra_id_0>.,FC Twente
+91,899,2010,Jonathan Walters plays for <extra_id_0>.,Stoke City F.C.;Republic of Ireland national association football team;Ipswich Town F.C.
+92,909,2010,David Cameron holds the position of <extra_id_0>.,Minister for the Civil Service;First Lord of the Treasury;Leader of the Conservative Party;Leader of the Opposition;Prime Minister of the United Kingdom
+93,916,2010,Francis holds the position of <extra_id_0>.,cardinal
+94,933,2010,Julia Gillard holds the position of <extra_id_0>.,Minister for Social Inclusion (Australia);Minister for Employment and Workplace Relations;Deputy Prime Minister of Australia;Minister for Education;Prime Minister of Australia
+95,943,2010,Jason Kenney holds the position of <extra_id_0>.,"Minister of Immigration, Refugees and Citizenship"
+96,958,2010,Gordon Brown holds the position of <extra_id_0>.,Leader of the Labour Party;First Lord of the Treasury;Prime Minister of the United Kingdom;Minister for the Civil Service
+97,959,2010,Andrew Cuomo holds the position of <extra_id_0>.,Attorney General of New York
+98,975,2010,Alan Shatter holds the position of <extra_id_0>.,Teachta Dála
+99,982,2010,Chris Grayling holds the position of <extra_id_0>.,Shadow Home Secretary
+100,991,2010,Jens Stoltenberg holds the position of <extra_id_0>.,party leader;Prime Minister of Norway
+101,1021,2010,Timothy M. Dolan holds the position of <extra_id_0>.,president
+102,1032,2010,Chris Murphy holds the position of <extra_id_0>.,United States representative
+103,1043,2010,Sebastian Coe holds the position of <extra_id_0>.,London Organising Committee of the Olympic and Paralympic Games;President of the Olympic Organizing Committee
+104,1054,2010,Kirill I of Moscow holds the position of <extra_id_0>.,metropolitan bishop
+105,1065,2010,John Ratcliffe holds the position of <extra_id_0>.,mayor
+106,1079,2010,Tony Clement holds the position of <extra_id_0>.,"Minister responsible for the Federal Economic Development Initiative for Northern Ontario;Minister of Innovation, Science and Industry"
+107,1090,2010,Alexander Stubb holds the position of <extra_id_0>.,Minister for Foreign Affairs of Finland
+108,1097,2010,Micheál Martin holds the position of <extra_id_0>.,Teachta Dála;Minister for Foreign Affairs and Trade
+109,1108,2010,Jerry Moran holds the position of <extra_id_0>.,United States representative
+110,1119,2010,George Brandis holds the position of <extra_id_0>.,Member of the Australian Senate
+111,1128,2010,Anba Epiphanius holds the position of <extra_id_0>.,pastor
+112,1137,2010,Bill Keating holds the position of <extra_id_0>.,district attorney
+113,1147,2010,Michael Noonan holds the position of <extra_id_0>.,Teachta Dála
+114,1178,2010,David Laws holds the position of <extra_id_0>.,Chief Secretary to the Treasury
+115,1183,2010,James F. Amos holds the position of <extra_id_0>.,Commandant of the Marine Corps;Assistant Commandant of the Marine Corps
+116,1188,2010,Sauli Niinistö holds the position of <extra_id_0>.,Speaker of the Parliament of Finland;chairperson
+117,1206,2010,Lenín Moreno holds the position of <extra_id_0>.,Vice President of Ecuador;vice president
+118,1222,2010,Caroline Flint holds the position of <extra_id_0>.,"Secretary of State for Housing, Communities and Local Government;Shadow Secretary of State for Communities and Local Government"
+119,1228,2010,Scott Peters holds the position of <extra_id_0>.,commissioner
+120,1254,2010,Brendan Howlin holds the position of <extra_id_0>.,Teachta Dála
+121,1265,2010,Simon Crean holds the position of <extra_id_0>.,Minister for Trade;Minister for Employment and Workplace Relations;Minister for Infrastructure and Transport;Minister for Social Inclusion (Australia);Minister for Education;Minister for the Arts
+122,1269,2010,Mary Hanafin holds the position of <extra_id_0>.,"Teachta Dála;Minister for Arts, Heritage and the Gaeltacht;Minister for Social Protection"
+123,1271,2010,Kathleen Rice holds the position of <extra_id_0>.,district attorney
+124,1281,2010,Katy Gallagher holds the position of <extra_id_0>.,member of the Australian Capital Territory Legislative Assembly
+125,1292,2010,Heather Bresch holds the position of <extra_id_0>.,president
+126,1309,2010,Ahmad Zahid Hamidi holds the position of <extra_id_0>.,Minister of Defence
+127,1320,2010,Jean-Louis Tauran holds the position of <extra_id_0>.,cardinal
+128,1329,2010,Jyrki Katainen holds the position of <extra_id_0>.,Deputy Prime Minister of Finland;Minister of Finance
+129,1340,2010,Seiji Maehara holds the position of <extra_id_0>.,"Minister for Foreign Affairs;Minister of Land, Infrastructure, Transport and Tourism"
+130,1342,2010,Éamon Ó Cuív holds the position of <extra_id_0>.,Teachta Dála;Minister for Social Protection
+131,1353,2010,John Healey holds the position of <extra_id_0>.,Minister of State for Communities and Local Government;Shadow Secretary of State for Health
+132,1370,2010,Willie O'Dea holds the position of <extra_id_0>.,Teachta Dála;Minister for Defence
+133,1381,2010,Jaak Aaviksoo holds the position of <extra_id_0>.,Minister of Defence
+134,1396,2010,Jimmy Deenihan holds the position of <extra_id_0>.,Teachta Dála
+135,1422,2010,David Lidington holds the position of <extra_id_0>.,Minister of State for Europe
+136,1439,2010,Íñigo Méndez de Vigo holds the position of <extra_id_0>.,member of the European Parliament
+137,1444,2010,David Wootton holds the position of <extra_id_0>.,Sheriff of the City of London
+138,1447,2010,Ueli Maurer holds the position of <extra_id_0>.,"Federal Department of Defence, Civil Protection and Sports"
+139,1459,2010,Batt O'Keeffe holds the position of <extra_id_0>.,"Teachta Dála;Minister for Education and Skills;Minister for Jobs, Enterprise and Innovation"
+140,1461,2010,Joe McHugh holds the position of <extra_id_0>.,Teachta Dála
+141,1476,2010,Muppavarapu Venkaiah Naidu holds the position of <extra_id_0>.,Member of Rajya Sabha
+142,1487,2010,Chuck Blazer holds the position of <extra_id_0>.,general secretary;vice president
+143,1491,2010,Michel Barnier holds the position of <extra_id_0>.,European Commissioner for Internal Market and Services;member of the European Parliament
+144,1496,2010,Salvador Sánchez Cerén holds the position of <extra_id_0>.,Vice President of El Salvador
+145,1506,2010,Mary Barra holds the position of <extra_id_0>.,vice president
+146,1529,2010,Rich Nugent holds the position of <extra_id_0>.,sheriff
+147,1553,2010,Barham Salih holds the position of <extra_id_0>.,Prime Minister of Iraqi Kurdistan
+148,1568,2010,David Sassoli holds the position of <extra_id_0>.,member of the European Parliament
+149,1587,2010,James Jones holds the position of <extra_id_0>.,Spokesperson bishops in the Church of England;Bishop of Liverpool
+150,1617,2010,Dan Eliasson holds the position of <extra_id_0>.,director general
+151,1638,2010,Muhammad Rizieq Shihab attended <extra_id_0>.,University of Malaya
+152,1647,2010,Mo'ne Davis attended <extra_id_0>.,Springside Chestnut Hill Academy
+153,1664,2010,Caitlin Rivers attended <extra_id_0>.,Virginia Tech;University of New Hampshire
+154,1670,2010,Shawné Michaelain Holloway attended <extra_id_0>.,Shimer College;School of the Art Institute of Chicago
+155,1676,2010,AnnaSophia Robb attended <extra_id_0>.,Arapahoe High School
+156,1684,2010,Bronny James attended <extra_id_0>.,Old Trail School
+157,1702,2010,Ewandro Stenzowski attended <extra_id_0>.,Federal University of Rio de Janeiro
+158,1714,2010,Luke Hancock attended <extra_id_0>.,George Mason University
+159,1719,2010,Katherine Boyer attended <extra_id_0>.,University of Manitoba;University of Regina
+160,1728,2010,Jock Landale attended <extra_id_0>.,Geelong Grammar School
+161,1737,2010,Elisa Granato attended <extra_id_0>.,Ludwig Maximilian University of Munich
+162,1754,2010,Alyona Arshinova attended <extra_id_0>.,Diplomatic Academy of the Ministry of Foreign Affairs of the Russian Federation;Moscow State University
+163,1759,2010,Abdullah bin Khalid bin Sultan Al Saud attended <extra_id_0>.,Columbia University;MIT Sloan School of Management
+164,1765,2010,Katja Kassin attended <extra_id_0>.,Los Angeles Pierce College
+165,1773,2010,Aliyah Boston attended <extra_id_0>.,Worcester Academy
+166,1784,2010,Daniel Swain attended <extra_id_0>.,"Stanford University;University of California, Davis"
+167,1791,2010,<extra_id_0> is the chair of Lega Nord.,Umberto Bossi;Angelo Alessandri
+168,1802,2010,<extra_id_0> is the chair of University of North Carolina at Chapel Hill.,Holden Thorp
+169,1813,2010,<extra_id_0> is the chair of Republican People's Party.,Deniz Baykal;Kemal Kılıçdaroğlu
+170,1824,2010,<extra_id_0> is the chair of United States Department of State.,Hillary Clinton
+171,1835,2010,<extra_id_0> is the chair of European Court of Human Rights.,Jean-Paul Costa
+172,1846,2010,<extra_id_0> is the chair of Associazione Calcio Milan.,Silvio Berlusconi
+173,1857,2010,<extra_id_0> is the chair of Humanists UK.,Polly Toynbee
+174,1868,2010,<extra_id_0> is the chair of Democratic Action Party.,Karpal Singh
+175,1886,2010,<extra_id_0> is the chair of Social Democrats.,Helle Thorning-Schmidt
+176,1897,2010,<extra_id_0> is the chair of CRH.,Nicky Hartery
+177,1910,2010,<extra_id_0> is the chair of Max Planck Society.,Peter Gruss
+178,1921,2010,<extra_id_0> is the chair of Socialist People's Party.,Annette Vilhelmsen
+179,1941,2010,<extra_id_0> is the chair of ACT New Zealand.,Rodney Hide
+180,1966,2010,<extra_id_0> is the chair of International Mathematical Union.,László Lovász
+181,1977,2010,<extra_id_0> is the chair of Norwegian Association for Women's Rights.,Torild Skard
+182,1988,2010,<extra_id_0> is the chair of Ruter.,Ragnar Søegaard
+183,1999,2010,<extra_id_0> is the chair of Radical Party of the Left.,Jean-Michel Baylet
+184,2026,2010,<extra_id_0> is the chair of Parliamentary Assembly of the Organization for Security and Co-operation in Europe.,Petros Efthymiou;João Soares
+185,2037,2010,<extra_id_0> is the chair of National Security and Defense Council of Ukraine.,Raisa Bogatyrova
+186,2048,2010,<extra_id_0> is the chair of Royal Spanish Football Federation.,Ángel María Villar
+187,2066,2010,<extra_id_0> is the chair of German Council of Economic Experts.,Wolfgang Franz
+188,2077,2010,<extra_id_0> is the chair of Verein für Socialpolitik.,Lars-Hendrik Röller
+189,2084,2010,<extra_id_0> is the chair of Economic and Financial Committee.,Thomas Wieser
+190,2095,2010,<extra_id_0> is the chair of Financial Information Authority.,Attilio Nicora
+191,2106,2010,<extra_id_0> is the chair of Football Association of Thailand.,Worawi Makudi
+192,2117,2010,<extra_id_0> is the chair of Liberal Movement.,Eligijus Masiulis
+193,2128,2010,<extra_id_0> is the chair of Federal Department of Justice and Police.,Simonetta Sommaruga
+194,2139,2010,"<extra_id_0> is the chair of Embassy of Ukraine, Minsk.",Roman Bezsmertnyi
+195,2156,2010,<extra_id_0> is the chair of The Greens–European Free Alliance.,Daniel Cohn-Bendit
+196,2179,2010,Ricardo Patiño is a member of the <extra_id_0>.,PAIS Alliance
+197,2190,2010,Roseanne Barr is a member of the <extra_id_0>.,Green Party of the United States
+198,2199,2010,Jeff Van Drew is a member of the <extra_id_0>.,Democratic Party
+199,2219,2010,Dean Del Mastro is a member of the <extra_id_0>.,Conservative Party of Canada
+200,2230,2010,Martin Hamilton-Smith is a member of the <extra_id_0>.,Liberal Party of Australia;Liberal Party of Australia (South Australian Division)
+201,2235,2010,Marcelo Ebrard is a member of the <extra_id_0>.,Party of the Democratic Revolution
+202,2248,2010,Ciro Gomes is a member of the <extra_id_0>.,Brazilian Socialist Party
+203,2259,2010,María Santos Gorrostieta Salazar is a member of the <extra_id_0>.,Institutional Revolutionary Party;Party of the Democratic Revolution
+204,2262,2010,Oleksandr Vilkul is a member of the <extra_id_0>.,Party of Regions
+205,2273,2010,Patrick Devedjian is a member of the <extra_id_0>.,Union for a Popular Movement;Rally for the Republic
+206,2279,2010,Yuriy Boyko is a member of the <extra_id_0>.,Party of Regions
+207,2290,2010,Volodymyr Groysman is a member of the <extra_id_0>.,Conscience of Ukraine;Our Ukraine
+208,2300,2010,Fawad Ahmed Chaudhry is a member of the <extra_id_0>.,All-Pakistan Muslim League
+209,2321,2010,Gérald Darmanin is a member of the <extra_id_0>.,Union for a Popular Movement
+210,2339,2010,Mircea Geoană is a member of the <extra_id_0>.,Social Democratic Party
+211,2350,2010,Daniel Constantin is a member of the <extra_id_0>.,Conservative Party
+212,2361,2010,Simon Emil Ammitzbøll is a member of the <extra_id_0>.,Liberal Alliance
+213,2378,2010,José Antonio Kast is a member of the <extra_id_0>.,Independent Democratic Union
+214,2389,2010,Gustav Kasselstrand is a member of the <extra_id_0>.,Sweden Democrats
+215,2399,2010,Charles M. Huber is a member of the <extra_id_0>.,Christian Social Union of Bavaria
+216,2410,2010,Lucy Harris is a member of the <extra_id_0>.,Brexit Party
+217,2421,2010,Hamed Karoui is a member of the <extra_id_0>.,Constitutional Democratic Rally
+218,2431,2010,Tom Horner is a member of the <extra_id_0>.,Independence Party of Minnesota;Republican Party
+219,2442,2010,Shlomo Molla is a member of the <extra_id_0>.,Kadima
+220,2458,2010,Amiruddin Hamzah is a member of the <extra_id_0>.,Malaysian Islamic Party
+221,2469,2010,Joana Ortega i Alemany is a member of the <extra_id_0>.,Democratic Union of Catalonia
+222,2480,2010,Anam Vivekananda Reddy is a member of the <extra_id_0>.,Indian National Congress
+223,2489,2010,Gabriele Albertini is a member of the <extra_id_0>.,The People of Freedom
+224,2510,2010,Ivan Brajović is a member of the <extra_id_0>.,Social Democratic Party of Montenegro
+225,2521,2010,Maria Badia i Cutchet is a member of the <extra_id_0>.,Socialists' Party of Catalonia
+226,2532,2010,Leïla Chaibi is a member of the <extra_id_0>.,New Anticapitalist Party
+227,2543,2010,Arturo Scotto is a member of the <extra_id_0>.,"Left, Ecology and Freedom"
+228,2554,2010,Patrick Reslow is a member of the <extra_id_0>.,Moderate Party
+229,2565,2010,Neus Munte Fernandez is a member of the <extra_id_0>.,Democratic Convergence of Catalonia
+230,2576,2010,Verónica Zurita is a member of the <extra_id_0>.,PAIS Alliance
+231,2587,2010,Tunahan Kuzu is a member of the <extra_id_0>.,Labour Party
+232,2598,2010,Halyna Yanchenko is a member of the <extra_id_0>.,Democratic Alliance
+233,2606,2010,Fotis Kouvelis is a member of the <extra_id_0>.,Synaspismós;Democratic Left
+234,2612,2010,Femke Merel van Kooten-Arissen is a member of the <extra_id_0>.,Party for the Animals
+235,2623,2010,Massimo Zedda is a member of the <extra_id_0>.,"Left, Ecology and Freedom"
+236,2634,2010,Christian Hansen is a member of the <extra_id_0>.,Fokus;Danish People's Party
+237,2640,2010,Shafiqur Rahman Barq is a member of the <extra_id_0>.,Bahujan Samaj Party
+238,2654,2010,Nicola Giorgino is a member of the <extra_id_0>.,The People of Freedom
+239,2665,2010,Ian Blayney is a member of the <extra_id_0>.,Liberal Party of Australia (Western Australian Division)
+240,2676,2010,Zaharije Trnavčević is a member of the <extra_id_0>.,Democratic Party
+241,2687,2010,Jana Žitňanská is a member of the <extra_id_0>.,Christian Democratic Movement
+242,2698,2010,Niall Ferguson works for <extra_id_0>.,Harvard University
+243,2709,2010,Roger Scruton works for <extra_id_0>.,University of Oxford
+244,2720,2010,Glenn Greenwald works for <extra_id_0>.,Salon
+245,2731,2010,Jürgen Klopp works for <extra_id_0>.,Borussia Dortmund
+246,2751,2010,Karl Lagerfeld works for <extra_id_0>.,Fendi;Chanel
+247,2774,2010,Mindy Grossman works for <extra_id_0>.,Home Shopping Network
+248,2785,2010,Sergei Krikalev works for <extra_id_0>.,Yuri Gagarin Cosmonaut Training Center
+249,2812,2010,David Hernández de la Fuente works for <extra_id_0>.,University of Potsdam
+250,2823,2010,Deborah L. Birx works for <extra_id_0>.,Centers for Disease Control and Prevention
+251,2841,2010,Peter Mathieson works for <extra_id_0>.,University of Bristol
+252,2852,2010,Norman Sharpless works for <extra_id_0>.,University of North Carolina at Chapel Hill
+253,2863,2010,Simonetta Di Pippo works for <extra_id_0>.,European Space Agency
+254,2872,2010,Joshua Greenberg works for <extra_id_0>.,Alfred P. Sloan Foundation;New York Public Library
+255,2883,2010,Rane Willerslev works for <extra_id_0>.,Moesgaard Museum
+256,2911,2010,Matthew Pratt Guterl works for <extra_id_0>.,Indiana University Bloomington
+257,2927,2010,Janet Montgomery works for <extra_id_0>.,University of Bradford
+258,2938,2010,Carine Roitfeld works for <extra_id_0>.,Vogue Paris
+259,2949,2010,Henriette Reker works for <extra_id_0>.,Gelsenkirchen;Cologne
+260,2955,2010,James S. Famiglietti works for <extra_id_0>.,"University of California, Irvine"
+261,2968,2010,Óscar Ramírez works for <extra_id_0>.,Liga Deportiva Alajuelense
+262,2996,2010,Ricky J Sethi works for <extra_id_0>.,Information Sciences Institute
+263,3007,2010,Maura Hagan works for <extra_id_0>.,National Center for Atmospheric Research
+264,3051,2010,Marian Salzman works for <extra_id_0>.,Havas
+265,3062,2010,Chris Turney works for <extra_id_0>.,University of Exeter
+266,3082,2010,Hartmut Mehdorn works for <extra_id_0>.,Air Berlin
+267,3093,2010,Marian Croak works for <extra_id_0>.,Bell Labs
+268,3104,2010,Qi Lu works for <extra_id_0>.,Microsoft Corporation
+269,3129,2010,Frances Spalding works for <extra_id_0>.,Newcastle University
+270,3140,2010,Wendy L. Queen works for <extra_id_0>.,National Institute of Standards and Technology
+271,3151,2010,Niels Provos works for <extra_id_0>.,Google
+272,3162,2010,Bernhard Schölkopf works for <extra_id_0>.,Max Planck Institute for Biological Cybernetics
+273,3173,2010,Scott Manley works for <extra_id_0>.,Topsy Labs
+274,3184,2010,Emily VanDerWerff works for <extra_id_0>.,The A.V. Club
+275,3195,2010,Veronica van Heyningen works for <extra_id_0>.,Medical Research Council
+276,3198,2010,Cathy Engelbert works for <extra_id_0>.,Deloitte
+277,3209,2010,Léa Salamé works for <extra_id_0>.,France 24
+278,3236,2010,Indira Alfonzo works for <extra_id_0>.,Universidad Militar Bolivariana de Venezuela
+279,3247,2010,Ari Kelman works for <extra_id_0>.,"University of California, Davis"
+280,3258,2010,Rebecca J Lingwood works for <extra_id_0>.,Queen Mary University of London
+281,3279,2010,Giselle Zarur works for <extra_id_0>.,Televisa
+282,3290,2010,Julia Y Chan works for <extra_id_0>.,Louisiana State University
+283,3307,2010,Stephanie Wehner works for <extra_id_0>.,Centre for Quantum Technologies;National University of Singapore;California Institute of Technology
+284,3314,2010,Ghida Fakhry works for <extra_id_0>.,Al Jazeera English
+285,3323,2010,Diana Coben works for <extra_id_0>.,King's College London
+286,3334,2010,Andrew V. Goldberg works for <extra_id_0>.,Microsoft Research
+287,3345,2010,Maria-Magdalena Titirici works for <extra_id_0>.,Max Planck Institute for Colloids and Interfaces
+288,3356,2010,Pier Paolo Pandolfi works for <extra_id_0>.,Beth Israel Deaconess Medical Center;Harvard Medical School
+289,3367,2010,Mathieu Gallet works for <extra_id_0>.,Institut National de l'Audiovisuel
+290,3381,2010,Shari Steele works for <extra_id_0>.,Electronic Frontier Foundation
+291,3398,2010,Peggy Piesche works for <extra_id_0>.,Hamilton College;Vassar College
+292,3407,2010,Dolly Jørgensen works for <extra_id_0>.,Umeå University
+293,3425,2010,Alojzy Nowak works for <extra_id_0>.,Faculty of Management of the University of Warsaw
+294,3436,2010,Carola-Bibiane Schönlieb works for <extra_id_0>.,University of Cambridge;University of Göttingen
+295,3447,2010,Franck Ferrand works for <extra_id_0>.,Europe 1
+296,3464,2010,John A. Todd works for <extra_id_0>.,University of Cambridge
+297,3484,2010,David W. Kissane works for <extra_id_0>.,Memorial Sloan Kettering Cancer Center
+298,3490,2010,Chris Montgomery works for <extra_id_0>.,Red Hat
+299,3501,2010,Melanie Keen works for <extra_id_0>.,Iniva
+300,3512,2010,Ginestra Bianconi works for <extra_id_0>.,Northeastern University
+301,3523,2010,Ken Murphy works for <extra_id_0>.,Boots
+302,3534,2010,Maxim Oreshkin works for <extra_id_0>.,Rosbank
+303,3560,2010,Vladimir Ashurkov works for <extra_id_0>.,Alfa Group;X5 Retail Group
+304,3575,2010,Robert Bingham works for <extra_id_0>.,University of Aberdeen
+305,3586,2010,Chris Dercon works for <extra_id_0>.,Haus der Kunst
+306,3597,2010,Josep Guerrero works for <extra_id_0>.,Polytechnic University of Catalonia
+307,3615,2010,Vidya Arankalle works for <extra_id_0>.,National Institute of Virology
+308,3626,2010,Mark H. Erickson works for <extra_id_0>.,Wittenberg University
+309,3641,2010,Mustapha Madih works for <extra_id_0>.,Al-Wakrah Sports Club;FAR Rabat
+310,3657,2010,<extra_id_0> is the head of the government of Iran.,Mahmoud Ahmadinejad
+311,3683,2010,<extra_id_0> is the head of the government of Quebec.,Jean Charest
+312,3694,2010,<extra_id_0> is the head of the government of Denmark.,Lars Løkke Rasmussen
+313,3705,2010,<extra_id_0> is the head of the government of Richmond.,Dwight Clinton Jones
+314,3724,2010,<extra_id_0> is the head of the government of Turin.,Sergio Chiamparino
+315,3739,2010,<extra_id_0> is the head of the government of San Jose.,Chuck Reed
+316,3750,2010,<extra_id_0> is the head of the government of Warsaw.,Hanna Gronkiewicz-Waltz
+317,3770,2010,<extra_id_0> is the head of the government of Faroe Islands.,Kaj Leo Johannesen
+318,3781,2010,<extra_id_0> is the head of the government of Prague.,Bohuslav Svoboda;Pavel Bém
+319,3792,2010,<extra_id_0> is the head of the government of Auckland.,Len Brown
+320,3813,2010,<extra_id_0> is the head of the government of Tallinn.,Edgar Savisaar
+321,3823,2010,<extra_id_0> is the head of the government of Gibraltar.,Peter Caruana
+322,3834,2010,<extra_id_0> is the head of the government of Community of Madrid.,Esperanza Aguirre
+323,3845,2010,<extra_id_0> is the head of the government of Mainz.,Jens Beutel
+324,3856,2010,<extra_id_0> is the head of the government of New South Wales.,Barry O'Farrell
+325,3867,2010,<extra_id_0> is the head of the government of Wiesbaden.,Helmut Müller
+326,3878,2010,<extra_id_0> is the head of the government of Lower Saxony.,David McAllister;Christian Wulff
+327,3903,2010,<extra_id_0> is the head of the government of Asturias.,Vicente Álvarez Areces
+328,3914,2010,<extra_id_0> is the head of the government of KwaZulu-Natal.,Zweli Mkhize
+329,3925,2010,<extra_id_0> is the head of the government of Jewish Autonomous Oblast.,Nikolay Mikhailovich Volkov;Alexander Vinnikov
+330,3935,2010,<extra_id_0> is the head of the government of Oldenburg.,Gerd Schwandner
+331,3946,2010,<extra_id_0> is the head of the government of Liguria.,Claudio Burlando
+332,3959,2010,<extra_id_0> is the head of the government of Kvinnherad.,Synnøve Solbakken
+333,3967,2010,<extra_id_0> is the head of the government of Republic of Khakassia.,Viktor Zimin
+334,3978,2010,<extra_id_0> is the head of the government of Södermanland County.,Liselott Hagberg
+335,3989,2010,<extra_id_0> is the head of the government of Gävleborg county.,Barbro Holmberg
+336,4000,2010,<extra_id_0> is the head coach of Olympiacos F.C..,Ernesto Valverde
+337,4006,2010,<extra_id_0> is the head coach of Green Bay Packers.,Mike McCarthy
+338,4017,2010,<extra_id_0> is the head coach of Kei Nishikori.,Brad Gilbert
+339,4026,2010,<extra_id_0> is the head coach of Richard Gasquet.,Gabriel Markus
+340,4046,2010,<extra_id_0> is the head coach of Nea Salamis Famagusta FC.,Nir Klinger;Stephen Constantine;Nedim Tutić
+341,4095,2010,<extra_id_0> is the head coach of 1. FC Union Berlin.,Uwe Neuhaus
+342,4106,2010,<extra_id_0> is the head coach of FC Argeș.,Emil Săndoi
+343,4153,2010,<extra_id_0> is the head coach of CS Gaz Metan Mediaș.,Gheorghe Mulțescu
+344,4228,2010,<extra_id_0> is the head coach of CCC Team.,Fabio Baldato;Noël Dejonckheere
+345,4251,2010,<extra_id_0> is the head coach of SKN St. Pölten.,Martin Scherb
+346,4277,2010,<extra_id_0> is the head coach of Telenet-Fidea.,Danny De Bie
+347,4309,2010,<extra_id_0> is the head coach of Belarus national under-21 football team.,Georgi Kondratiev
+348,4320,2010,<extra_id_0> is the head coach of Pauwels Sauzen-Bingoal.,Mario De Clercq;Hans De Clercq
+349,4327,2010,<extra_id_0> is the head coach of FC Smorgon.,Aleksandr Brazevich;Henadz Mardas
+350,4335,2010,The Onion is owned by <extra_id_0>.,Fusion Media Group
+351,4346,2010,Salvator Mundi is owned by <extra_id_0>.,Alexander Parish
+352,4357,2010,South China Morning Post is owned by <extra_id_0>.,Great Wall Pan Asia Holdings
+353,4368,2010,Boston Globe is owned by <extra_id_0>.,The New York Times Company
+354,4389,2010,Numedal Line is owned by <extra_id_0>.,Norwegian National Rail Administration
+355,4400,2010,ADV Ocean Shield is owned by <extra_id_0>.,DOF ASA
+356,4411,2010,Eudora is owned by <extra_id_0>.,Qualcomm Inc.
+357,4422,2010,Le Rêve is owned by <extra_id_0>.,Steve Wynn
+358,4433,2010,Toll Collect is owned by <extra_id_0>.,Daimler Financial Services;Vinci;Deutsche Telekom
+359,4442,2010,West Horsley Place is owned by <extra_id_0>.,"Mary Innes-Ker, Duchess of Roxburghe"
+360,4453,2010,Expobank CZ is owned by <extra_id_0>.,Landesbank Baden-Württemberg
+361,4464,2010,Rothschild is owned by <extra_id_0>.,Alexander Ivanov
+362,4484,2010,Kirkus Reviews is owned by <extra_id_0>.,Herbert Simon;Verenigde Nederlandse Uitgeverijen
+363,4501,2010,dblp computer science bibliography is owned by <extra_id_0>.,Schloss Dagstuhl – Leibniz Center for Informatics;University of Trier
+364,4512,2010,Luna is owned by <extra_id_0>.,Roman Abramovich
+365,4523,2010,The Gainesville Sun is owned by <extra_id_0>.,The New York Times Company
+366,4534,2010,Douro railway line is owned by <extra_id_0>.,REFER
+367,4545,2010,Randsfjorden Line is owned by <extra_id_0>.,Norwegian National Rail Administration
+368,4556,2010,The Eagle is owned by <extra_id_0>.,Berkshire Hathaway
+369,4567,2010,Trunk Line is owned by <extra_id_0>.,Norwegian National Rail Administration
+370,4578,2010,Kimbrough Memorial Stadium is owned by <extra_id_0>.,West Texas A&M University
+371,4589,2010,Skillsoft is owned by <extra_id_0>.,Advent International;Berkshire Partners;Bain Capital
+372,4600,2010,Bauer Swansea & South West Wales is owned by <extra_id_0>.,Wireless Group
+373,4611,2010,Chocolat Poulain is owned by <extra_id_0>.,Mondelēz International
+374,4622,2010,511 Federal Building is owned by <extra_id_0>.,General Services Administration
+375,4633,2010,Hokushin Line is owned by <extra_id_0>.,Kobe Rapid Transit Railway

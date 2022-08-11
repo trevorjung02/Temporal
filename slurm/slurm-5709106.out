@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/run.py", line 6, in <module>
+    from evaluation import evaluate
+  File "/mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/evaluation.py", line 2, in <module>
+    from transformers import T5Tokenizer
+ModuleNotFoundError: No module named 'transformers'

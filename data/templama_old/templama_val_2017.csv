@@ -1,0 +1,440 @@
+id,original,date,input,output
+0,7,2017,Gianluigi Buffon plays for <extra_id_0>.,Juventus FC;Italy national association football team
+1,22,2017,Lewis Hamilton plays for <extra_id_0>.,Mercedes
+2,33,2017,Didier Drogba plays for <extra_id_0>.,Phoenix Rising FC
+3,42,2017,Julius Peppers plays for <extra_id_0>.,Green Bay Packers
+4,53,2017,Stuart Broad plays for <extra_id_0>.,England and Wales cricket team;Hobart Hurricanes
+5,62,2017,MS Dhoni plays for <extra_id_0>.,India national cricket team;Rising Pune Supergiant
+6,73,2017,Mario Balotelli plays for <extra_id_0>.,OGC Nice
+7,84,2017,James Harden plays for <extra_id_0>.,Houston Rockets
+8,95,2017,Mohamed Salah plays for <extra_id_0>.,Egypt national football team;A.S. Roma;Liverpool F.C.
+9,110,2017,Rob Gronkowski plays for <extra_id_0>.,New England Patriots
+10,121,2017,Patrice Evra plays for <extra_id_0>.,Olympique de Marseille;Juventus FC
+11,130,2017,Megan Rapinoe plays for <extra_id_0>.,OL Reign
+12,141,2017,Robert Lewandowski plays for <extra_id_0>.,FC Bayern Munich
+13,157,2017,Urby Emanuelson plays for <extra_id_0>.,Hellas Verona F.C.
+14,171,2017,DeMarco Murray plays for <extra_id_0>.,Tennessee Titans
+15,179,2017,Joe Hart plays for <extra_id_0>.,Torino F.C.;West Ham United F.C.;Manchester City F.C.
+16,190,2017,Gonzalo Higuaín plays for <extra_id_0>.,Juventus FC;Argentina national football team
+17,201,2017,Nicklas Bendtner plays for <extra_id_0>.,Rosenborg BK
+18,212,2017,Jean Makoun plays for <extra_id_0>.,Antalyaspor
+19,223,2017,Jozy Altidore plays for <extra_id_0>.,Toronto FC
+20,232,2017,Breanna Stewart plays for <extra_id_0>.,Seattle Storm;Shanghai Swordfish
+21,243,2017,Gary Hooper plays for <extra_id_0>.,Sheffield Wednesday F.C.
+22,253,2017,Elena Delle Donne plays for <extra_id_0>.,Washington Mystics
+23,279,2017,Son Heung-min plays for <extra_id_0>.,South Korea national football team;Tottenham Hotspur F.C.
+24,290,2017,Dimitar Berbatov plays for <extra_id_0>.,Kerala Blasters FC
+25,299,2017,Henrikh Mkhitaryan plays for <extra_id_0>.,Manchester United F.C.
+26,310,2017,Michael Beasley plays for <extra_id_0>.,Memphis Grizzlies
+27,321,2017,Chris Hackett plays for <extra_id_0>.,Northampton Town F.C.;Barnet F.C.
+28,332,2017,Younus Khan plays for <extra_id_0>.,Pakistan national cricket team
+29,340,2017,Yaya Touré plays for <extra_id_0>.,Manchester City F.C.
+30,350,2017,Quincy Promes plays for <extra_id_0>.,Spartak Moscow;Netherlands national association football team
+31,361,2017,Mostapha El Kabir plays for <extra_id_0>.,Gençlerbirliği S.K.
+32,372,2017,Davide Astori plays for <extra_id_0>.,Italy national association football team
+33,383,2017,Mohammad Amir plays for <extra_id_0>.,Karachi Kings;Dhaka Dynamites;Pakistan national cricket team;Essex County Cricket Club
+34,394,2017,Jimmy Butler plays for <extra_id_0>.,Chicago Bulls;Minnesota Timberwolves
+35,405,2017,Luke Moore plays for <extra_id_0>.,Toronto FC
+36,416,2017,Milan Baroš plays for <extra_id_0>.,FC Baník Ostrava;FC Slovan Liberec
+37,427,2017,Ben May plays for <extra_id_0>.,Bromley F.C.
+38,438,2017,Daniel McBreen plays for <extra_id_0>.,Edgeworth FC
+39,453,2017,Tyson Chandler plays for <extra_id_0>.,Dallas Mavericks
+40,464,2017,Kris Commons plays for <extra_id_0>.,Celtic F.C.
+41,475,2017,Andrei Arshavin plays for <extra_id_0>.,FC Kairat
+42,491,2017,Christian Kabasele plays for <extra_id_0>.,K.R.C. Genk;Belgium national football team
+43,502,2017,Alexander Kačaniklić plays for <extra_id_0>.,Sweden national association football team
+44,513,2017,Moses Ashikodi plays for <extra_id_0>.,Farnborough F.C.;Antigua and Barbuda national football team
+45,528,2017,Luke Foster plays for <extra_id_0>.,Harrogate Town A.F.C.
+46,549,2017,Eniola Aluko plays for <extra_id_0>.,Chelsea L.F.C.
+47,560,2017,Gjergji Muzaka plays for <extra_id_0>.,KF Tirana
+48,571,2017,André Schembri plays for <extra_id_0>.,AC Omonia
+49,578,2017,Domantas Sabonis plays for <extra_id_0>.,Oklahoma City Thunder
+50,589,2017,Eduardo da Silva plays for <extra_id_0>.,FC Shakhtar Donetsk
+51,600,2017,Steven Caulker plays for <extra_id_0>.,Queens Park Rangers F.C.;Liverpool F.C.
+52,611,2017,Michael Bostwick plays for <extra_id_0>.,Peterborough United F.C.;Lincoln City F.C.
+53,622,2017,Gustavo Bou plays for <extra_id_0>.,Club Tijuana;Racing Club
+54,636,2017,James Forrest plays for <extra_id_0>.,Scotland national football team;Celtic F.C.
+55,647,2017,Greg Tansey plays for <extra_id_0>.,Inverness Caledonian Thistle F.C.
+56,660,2017,Ross McCormack plays for <extra_id_0>.,Fulham F.C.
+57,671,2017,Rohit Sharma plays for <extra_id_0>.,Mumbai Indians
+58,682,2017,Neven Subotić plays for <extra_id_0>.,Borussia Dortmund;1. FC Köln
+59,693,2017,Leigh Griffiths plays for <extra_id_0>.,Scotland national football team;Celtic F.C.
+60,704,2017,Álvaro Morata plays for <extra_id_0>.,Chelsea F.C.;Real Madrid CF;Spain national association football team
+61,715,2017,Shane Long plays for <extra_id_0>.,Southampton F.C.
+62,724,2017,Leah Williamson plays for <extra_id_0>.,England women's national under-20 football team;Arsenal W.F.C.;England women's national under-19 football team;England women's national under-23 football team
+63,735,2017,Migen Memelli plays for <extra_id_0>.,KS Kastrioti
+64,746,2017,Jack Butland plays for <extra_id_0>.,Stoke City F.C.;England national association football team
+65,760,2017,Hameed Hassan plays for <extra_id_0>.,Kabul Green cricket team
+66,768,2017,Shaun Tait plays for <extra_id_0>.,Hobart Hurricanes
+67,776,2017,Craig Reid plays for <extra_id_0>.,Brentwood Town F.C.
+68,787,2017,Dries Mertens plays for <extra_id_0>.,Belgium national football team;S.S.C. Napoli
+69,808,2017,Dinesh Chandimal plays for <extra_id_0>.,Sri Lanka national cricket team;Ruhuna Royals
+70,819,2017,Freddy Adu plays for <extra_id_0>.,Tampa Bay Rowdies
+71,830,2017,Yacine Brahimi plays for <extra_id_0>.,Algeria national football team;Futebol Clube do Porto
+72,841,2017,Vernon Davis plays for <extra_id_0>.,Denver Broncos
+73,852,2017,Adel Taarabt plays for <extra_id_0>.,S.L. Benfica;Genoa C.F.C.;S.L. Benfica B
+74,863,2017,Jimmy Smith plays for <extra_id_0>.,Crawley Town F.C.
+75,874,2017,Michael Bradley plays for <extra_id_0>.,Club de Fútbol Monterrey
+76,885,2017,Kris Boyd plays for <extra_id_0>.,Kilmarnock F.C.
+77,895,2017,Douglas Franco Teixeira plays for <extra_id_0>.,Trabzonspor
+78,906,2017,Jonathan Walters plays for <extra_id_0>.,Burnley F.C.;Stoke City F.C.;Republic of Ireland national association football team
+79,923,2017,Francis holds the position of <extra_id_0>.,pope
+80,929,2017,Justin Trudeau holds the position of <extra_id_0>.,Minister of Intergovernmental Affairs;Prime Minister of Canada
+81,939,2017,Mohammad bin Salman holds the position of <extra_id_0>.,deputy crown prince;Crown Prince of Saudi Arabia
+82,954,2017,Andrej Babiš holds the position of <extra_id_0>.,Finance Minister of the Czech Republic;Prime Minister of the Czech Republic
+83,966,2017,Andrew Cuomo holds the position of <extra_id_0>.,Governor of New York
+84,972,2017,Ryan Zinke holds the position of <extra_id_0>.,United States representative;United States Secretary of the Interior
+85,988,2017,Chris Grayling holds the position of <extra_id_0>.,Secretary of State for Transport
+86,998,2017,Jens Stoltenberg holds the position of <extra_id_0>.,Secretary General of NATO
+87,1008,2017,Mick Mulvaney holds the position of <extra_id_0>.,United States representative
+88,1017,2017,Richard B. Spencer holds the position of <extra_id_0>.,executive director;chairperson
+89,1028,2017,Timothy M. Dolan holds the position of <extra_id_0>.,cardinal
+90,1039,2017,Chris Murphy holds the position of <extra_id_0>.,United States senator
+91,1050,2017,Scott Morrison holds the position of <extra_id_0>.,Treasurer of Australia
+92,1061,2017,Kirill I of Moscow holds the position of <extra_id_0>.,metropolitan bishop
+93,1070,2017,John Ratcliffe holds the position of <extra_id_0>.,United States representative
+94,1075,2017,Navjot Singh Sidhu holds the position of <extra_id_0>.,Member of a Legislative Assembly of India
+95,1086,2017,Tony Clement holds the position of <extra_id_0>.,Minister of Public Safety and Emergency Preparedness
+96,1104,2017,Micheál Martin holds the position of <extra_id_0>.,Teachta Dála;Leader of Fianna Fáil;Leader of the Opposition
+97,1115,2017,Jerry Moran holds the position of <extra_id_0>.,United States senator
+98,1126,2017,George Brandis holds the position of <extra_id_0>.,Vice-President of the Executive Council;Leader of the Government in the Senate;Attorney-General for Australia;Member of the Australian Senate
+99,1135,2017,Anba Epiphanius holds the position of <extra_id_0>.,bishop
+100,1144,2017,Bill Keating holds the position of <extra_id_0>.,United States representative
+101,1154,2017,Michael Noonan holds the position of <extra_id_0>.,Teachta Dála;Minister for Finance
+102,1158,2017,Jacky Rosen holds the position of <extra_id_0>.,United States representative
+103,1167,2017,Ko Wen-je holds the position of <extra_id_0>.,Mayor of Taipei
+104,1174,2017,Siniša Mali holds the position of <extra_id_0>.,Mayor of Belgrade
+105,1195,2017,Sauli Niinistö holds the position of <extra_id_0>.,President of Finland
+106,1202,2017,Nitin Gadkari holds the position of <extra_id_0>.,Minister of Road Transport and Highways;Minister of Shipping (India)
+107,1213,2017,Lenín Moreno holds the position of <extra_id_0>.,President of Ecuador;vice president
+108,1235,2017,Scott Peters holds the position of <extra_id_0>.,United States representative
+109,1240,2017,Katherine Zappone holds the position of <extra_id_0>.,Teachta Dála;Minister for Children and Youth Affairs
+110,1250,2017,James Lankford holds the position of <extra_id_0>.,United States senator
+111,1261,2017,Brendan Howlin holds the position of <extra_id_0>.,Teachta Dála;Leader of the Labour Party
+112,1278,2017,Kathleen Rice holds the position of <extra_id_0>.,United States representative
+113,1288,2017,Katy Gallagher holds the position of <extra_id_0>.,Member of the Australian Senate
+114,1299,2017,Heather Bresch holds the position of <extra_id_0>.,chief executive officer
+115,1305,2017,Zoi Konstantopoulou holds the position of <extra_id_0>.,chairperson
+116,1316,2017,Ahmad Zahid Hamidi holds the position of <extra_id_0>.,Minister of Home Affairs;Deputy Prime Minister of Malaysia
+117,1327,2017,Jean-Louis Tauran holds the position of <extra_id_0>.,camerlengo of the Holy Roman Church;cardinal
+118,1336,2017,Jyrki Katainen holds the position of <extra_id_0>.,European Commissioner for Industry and Entrepreneurship
+119,1349,2017,Éamon Ó Cuív holds the position of <extra_id_0>.,Teachta Dála
+120,1356,2017,John Healey holds the position of <extra_id_0>.,Shadow Secretary of State for Housing
+121,1362,2017,Angelo De Donatis holds the position of <extra_id_0>.,auxiliary bishop;archpriest;Catholic bishop;Cardinal Vicar;titular bishop;Auxiliary Bishop of Rome
+122,1366,2017,Heather Nauert holds the position of <extra_id_0>.,Spokesperson for the United States Department of State
+123,1377,2017,Willie O'Dea holds the position of <extra_id_0>.,Teachta Dála
+124,1392,2017,Chan Chun Sing holds the position of <extra_id_0>.,Ministry of Defence;Ministry of Social and Family Development
+125,1407,2017,Avril Haines holds the position of <extra_id_0>.,Deputy National Security Advisor
+126,1411,2017,Beata Szydło holds the position of <extra_id_0>.,Prime Minister of Poland
+127,1418,2017,Raheel Sharif holds the position of <extra_id_0>.,Islamic Military Counter Terrorism Coalition
+128,1429,2017,David Lidington holds the position of <extra_id_0>.,Leader of the House of Commons;Secretary of State for Justice
+129,1435,2017,Alexander De Croo holds the position of <extra_id_0>.,Minister of Development Cooperation
+130,1442,2017,Íñigo Méndez de Vigo holds the position of <extra_id_0>.,Spokesperson of the Government of Spain
+131,1457,2017,Per-Willy Amundsen holds the position of <extra_id_0>.,Minister of Justice and Public Security
+132,1468,2017,Joe McHugh holds the position of <extra_id_0>.,Teachta Dála
+133,1473,2017,David Gauke holds the position of <extra_id_0>.,Secretary of State for Work and Pensions;Chief Secretary to the Treasury
+134,1483,2017,Muppavarapu Venkaiah Naidu holds the position of <extra_id_0>.,Minister of Housing and Urban Poverty Alleviation;Minister of Information and Broadcasting;Vice President of India;Minister of Urban Development (India);Member of Rajya Sabha
+135,1503,2017,Salvador Sánchez Cerén holds the position of <extra_id_0>.,President of El Salvador
+136,1513,2017,Mary Barra holds the position of <extra_id_0>.,chief executive officer
+137,1517,2017,Chris Hipkins holds the position of <extra_id_0>.,Minister of Education
+138,1521,2017,John J. Sullivan holds the position of <extra_id_0>.,United States Deputy Secretary of State
+139,1525,2017,Kelly Craft holds the position of <extra_id_0>.,United States Ambassador to Canada
+140,1536,2017,Rich Nugent holds the position of <extra_id_0>.,United States representative
+141,1540,2017,Edward Bernard Scharfenberger holds the position of <extra_id_0>.,diocesan bishop;Catholic bishop
+142,1546,2017,Nia Griffith holds the position of <extra_id_0>.,Shadow Secretary of State for Defence
+143,1564,2017,Joseph Strickland holds the position of <extra_id_0>.,diocesan bishop;Catholic bishop
+144,1575,2017,David Sassoli holds the position of <extra_id_0>.,member of the European Parliament
+145,1583,2017,Warren Truss holds the position of <extra_id_0>.,Minister for Infrastructure and Transport
+146,1598,2017,Dennis Villarojo holds the position of <extra_id_0>.,auxiliary bishop;titular bishop;Catholic bishop
+147,1613,2017,Heather Humphreys holds the position of <extra_id_0>.,"Teachta Dála;Minister for Jobs, Enterprise and Innovation;Minister for Arts, Heritage and the Gaeltacht"
+148,1624,2017,Dan Eliasson holds the position of <extra_id_0>.,National Police Commissioner
+149,1634,2017,Sam Darnold attended <extra_id_0>.,University of Southern California
+150,1645,2017,Muhammad Rizieq Shihab attended <extra_id_0>.,Universiti Sains Islam Malaysia
+151,1654,2017,Mo'ne Davis attended <extra_id_0>.,Springside Chestnut Hill Academy
+152,1682,2017,AnnaSophia Robb attended <extra_id_0>.,New York University
+153,1691,2017,Bronny James attended <extra_id_0>.,Old Trail School
+154,1698,2017,Trevor Lawrence attended <extra_id_0>.,Cartersville High School
+155,1710,2017,Catarina Macario attended <extra_id_0>.,Stanford University;Torrey Pines High School
+156,1726,2017,Katherine Boyer attended <extra_id_0>.,University of Manitoba
+157,1735,2017,Jock Landale attended <extra_id_0>.,Saint Mary's College of California
+158,1744,2017,Elisa Granato attended <extra_id_0>.,University of Zurich
+159,1750,2017,McKenzie Milton attended <extra_id_0>.,University of Central Florida
+160,1772,2017,Katja Kassin attended <extra_id_0>.,"California State University, Northridge"
+161,1780,2017,Aliyah Boston attended <extra_id_0>.,Worcester Academy
+162,1798,2017,<extra_id_0> is the chair of Lega Nord.,Matteo Salvini
+163,1809,2017,<extra_id_0> is the chair of University of North Carolina at Chapel Hill.,Carol Folt
+164,1820,2017,<extra_id_0> is the chair of Republican People's Party.,Kemal Kılıçdaroğlu
+165,1831,2017,<extra_id_0> is the chair of United States Department of State.,John Kerry;Rex Tillerson
+166,1842,2017,<extra_id_0> is the chair of European Court of Human Rights.,Guido Raimondi
+167,1853,2017,<extra_id_0> is the chair of Associazione Calcio Milan.,Silvio Berlusconi;Li Yonghong
+168,1864,2017,<extra_id_0> is the chair of Humanists UK.,Shappi Khorsandi
+169,1875,2017,<extra_id_0> is the chair of Democratic Action Party.,Tan Kok Wai
+170,1885,2017,<extra_id_0> is the chair of KPMG.,John B. Veihmeyer
+171,1893,2017,<extra_id_0> is the chair of Social Democrats.,Mette Frederiksen
+172,1904,2017,<extra_id_0> is the chair of CRH.,Nicky Hartery
+173,1917,2017,<extra_id_0> is the chair of Max Planck Society.,Martin Stratmann
+174,1928,2017,<extra_id_0> is the chair of Socialist People's Party.,Pia Olsen Dyhr
+175,1937,2017,<extra_id_0> is the chair of Supreme Court of Justice.,Eckart Ratz
+176,1948,2017,<extra_id_0> is the chair of ACT New Zealand.,David Seymour
+177,1955,2017,<extra_id_0> is the chair of European Research Council.,Jean-Pierre Bourguignon
+178,1963,2017,<extra_id_0> is the chair of United States Department of the Interior.,Ryan Zinke;Sally Jewell
+179,1973,2017,<extra_id_0> is the chair of International Mathematical Union.,Shigefumi Mori
+180,1984,2017,<extra_id_0> is the chair of Norwegian Association for Women's Rights.,Marit Nybakk
+181,1995,2017,<extra_id_0> is the chair of Ruter.,Kjetil Lund;Bernt Stilluf Karlsen
+182,2006,2017,<extra_id_0> is the chair of Radical Party of the Left.,Sylvia Pinel
+183,2008,2017,<extra_id_0> is the chair of Chamber of Deputies.,Nicolae-Liviu Dragnea
+184,2016,2017,<extra_id_0> is the chair of Ministry of Defence of Germany.,Ursula von der Leyen
+185,2025,2017,<extra_id_0> is the chair of Open Source Initiative.,Allison Randal
+186,2033,2017,<extra_id_0> is the chair of Parliamentary Assembly of the Organization for Security and Co-operation in Europe.,Gigi Tsereteli
+187,2044,2017,<extra_id_0> is the chair of National Security and Defense Council of Ukraine.,Oleksandr Turchynov
+188,2055,2017,<extra_id_0> is the chair of Royal Spanish Football Federation.,Ángel María Villar
+189,2062,2017,<extra_id_0> is the chair of National Assembly.,Ousseini Tinni
+190,2073,2017,<extra_id_0> is the chair of German Council of Economic Experts.,Christoph M. Schmidt
+191,2091,2017,<extra_id_0> is the chair of Economic and Financial Committee.,Thomas Wieser
+192,2102,2017,<extra_id_0> is the chair of Financial Information Authority.,Giorgio Corbellini
+193,2113,2017,<extra_id_0> is the chair of Football Association of Thailand.,Somyot Poompanmoung
+194,2124,2017,<extra_id_0> is the chair of Liberal Movement.,Remigijus Šimašius;Eugenijus Gentvilas
+195,2135,2017,<extra_id_0> is the chair of Federal Department of Justice and Police.,Simonetta Sommaruga
+196,2145,2017,"<extra_id_0> is the chair of Embassy of Ukraine, Minsk.",Ihor Kyzym
+197,2152,2017,<extra_id_0> is the chair of European Pirate Party.,Smári McCarthy
+198,2163,2017,<extra_id_0> is the chair of The Greens–European Free Alliance.,Philippe Lamberts
+199,2173,2017,<extra_id_0> is the chair of Ministry of Justice.,Park Sang-ki
+200,2186,2017,Ricardo Patiño is a member of the <extra_id_0>.,PAIS Alliance
+201,2195,2017,Joshua Wong is a member of the <extra_id_0>.,Demosistō
+202,2206,2017,Jeff Van Drew is a member of the <extra_id_0>.,Democratic Party
+203,2216,2017,Beji Caid Essebsi is a member of the <extra_id_0>.,Call for Tunisia
+204,2226,2017,Dean Del Mastro is a member of the <extra_id_0>.,Independent Conservative
+205,2255,2017,Ciro Gomes is a member of the <extra_id_0>.,Democratic Labour Party
+206,2269,2017,Oleksandr Vilkul is a member of the <extra_id_0>.,Opposition Bloc
+207,2286,2017,Yuriy Boyko is a member of the <extra_id_0>.,Opposition Bloc
+208,2297,2017,Volodymyr Groysman is a member of the <extra_id_0>.,European Solidarity
+209,2307,2017,Fawad Ahmed Chaudhry is a member of the <extra_id_0>.,Pakistan Tehreek-e-Insaf
+210,2317,2017,Irene Lozano is a member of the <extra_id_0>.,Spanish Socialist Workers' Party
+211,2328,2017,Gérald Darmanin is a member of the <extra_id_0>.,The Republicans
+212,2335,2017,Tarō Yamamoto is a member of the <extra_id_0>.,Liberal Party
+213,2346,2017,Mircea Geoană is a member of the <extra_id_0>.,independent politician
+214,2357,2017,Daniel Constantin is a member of the <extra_id_0>.,Alliance of Liberals and Democrats Party (Romania);PRO Romania Social Liberal
+215,2368,2017,Simon Emil Ammitzbøll is a member of the <extra_id_0>.,Liberal Alliance
+216,2374,2017,Barbara Nowacka is a member of the <extra_id_0>.,Inicjatywa Polska;Your Movement
+217,2385,2017,José Antonio Kast is a member of the <extra_id_0>.,independent politician
+218,2395,2017,Gustav Kasselstrand is a member of the <extra_id_0>.,Alternative for Sweden
+219,2406,2017,Charles M. Huber is a member of the <extra_id_0>.,Christian Democratic Union
+220,2417,2017,Lucy Harris is a member of the <extra_id_0>.,Brexit Party
+221,2427,2017,Hamed Karoui is a member of the <extra_id_0>.,Free Destourian Party
+222,2438,2017,Tom Horner is a member of the <extra_id_0>.,Independence Party of Minnesota
+223,2449,2017,Shlomo Molla is a member of the <extra_id_0>.,Hatnuah
+224,2465,2017,Amiruddin Hamzah is a member of the <extra_id_0>.,Malaysian Islamic Party;Malaysian United Indigenous Party
+225,2476,2017,Joana Ortega i Alemany is a member of the <extra_id_0>.,Catalan European Democratic Party;Democratic Union of Catalonia
+226,2487,2017,Anam Vivekananda Reddy is a member of the <extra_id_0>.,Telugu Desam Party
+227,2496,2017,Gabriele Albertini is a member of the <extra_id_0>.,New Centre-Right
+228,2506,2017,Naz Baloch is a member of the <extra_id_0>.,Pakistan Peoples Party;Pakistan Tehreek-e-Insaf
+229,2517,2017,Ivan Brajović is a member of the <extra_id_0>.,Social Democrats of Montenegro
+230,2528,2017,Maria Badia i Cutchet is a member of the <extra_id_0>.,Leftwing Movement
+231,2539,2017,Leïla Chaibi is a member of the <extra_id_0>.,Unsubmissive France;Left Party
+232,2550,2017,Arturo Scotto is a member of the <extra_id_0>.,"Left, Ecology and Freedom;Article 1 – Democratic and Progressive Movement"
+233,2561,2017,Patrick Reslow is a member of the <extra_id_0>.,Moderate Party;Sweden Democrats
+234,2572,2017,Neus Munte Fernandez is a member of the <extra_id_0>.,Catalan European Democratic Party
+235,2583,2017,Verónica Zurita is a member of the <extra_id_0>.,PAIS Alliance
+236,2594,2017,Tunahan Kuzu is a member of the <extra_id_0>.,DENK
+237,2619,2017,Femke Merel van Kooten-Arissen is a member of the <extra_id_0>.,Party for the Animals
+238,2630,2017,Massimo Zedda is a member of the <extra_id_0>.,Progressive Area
+239,2647,2017,Shafiqur Rahman Barq is a member of the <extra_id_0>.,Samajwadi Party
+240,2651,2017,Franck de Lapersonne is a member of the <extra_id_0>.,The Patriots;Rassemblement Bleu Marine
+241,2661,2017,Nicola Giorgino is a member of the <extra_id_0>.,Forza Italia (2013)
+242,2672,2017,Ian Blayney is a member of the <extra_id_0>.,Liberal Party of Australia (Western Australian Division)
+243,2683,2017,Zaharije Trnavčević is a member of the <extra_id_0>.,Rich Serbia
+244,2694,2017,Jana Žitňanská is a member of the <extra_id_0>.,New Majority
+245,2705,2017,Niall Ferguson works for <extra_id_0>.,Hoover Institution
+246,2716,2017,Roger Scruton works for <extra_id_0>.,University of Buckingham;University of Oxford
+247,2727,2017,Glenn Greenwald works for <extra_id_0>.,The Intercept
+248,2738,2017,Jürgen Klopp works for <extra_id_0>.,Liverpool F.C.
+249,2747,2017,Chen Guangcheng works for <extra_id_0>.,Witherspoon Institute
+250,2758,2017,Karl Lagerfeld works for <extra_id_0>.,Fendi;Chanel
+251,2765,2017,Hunter Biden works for <extra_id_0>.,BHR Partners;Burisma Holdings
+252,2781,2017,Mindy Grossman works for <extra_id_0>.,Home Shopping Network;WW International
+253,2792,2017,Sergei Krikalev works for <extra_id_0>.,TsNIIMash
+254,2801,2017,Danny White works for <extra_id_0>.,University of Central Florida
+255,2819,2017,David Hernández de la Fuente works for <extra_id_0>.,Complutense University of Madrid;National University of Distance Education
+256,2830,2017,Deborah L. Birx works for <extra_id_0>.,President's Emergency Plan for AIDS Relief
+257,2837,2017,Christodoulos I. Stefanadis works for <extra_id_0>.,Emory University School of Medicine;Yale University
+258,2848,2017,Peter Mathieson works for <extra_id_0>.,University of Hong Kong
+259,2859,2017,Norman Sharpless works for <extra_id_0>.,National Cancer Institute;University of North Carolina at Chapel Hill
+260,2868,2017,Simonetta Di Pippo works for <extra_id_0>.,United Nations Office for Outer Space Affairs
+261,2879,2017,Joshua Greenberg works for <extra_id_0>.,Alfred P. Sloan Foundation
+262,2890,2017,Rane Willerslev works for <extra_id_0>.,Aarhus University;National Museum of Denmark
+263,2897,2017,James Milliken works for <extra_id_0>.,City University of New York
+264,2907,2017,Manu Carreño works for <extra_id_0>.,Mediaset España
+265,2918,2017,Matthew Pratt Guterl works for <extra_id_0>.,Brown University
+266,2934,2017,Janet Montgomery works for <extra_id_0>.,Durham University
+267,2945,2017,Carine Roitfeld works for <extra_id_0>.,Harper's Bazaar
+268,2975,2017,Óscar Ramírez works for <extra_id_0>.,Costa Rica national football team
+269,2982,2017,Mustafa Akyol works for <extra_id_0>.,Wellesley College
+270,2992,2017,Rachel Sheherazade works for <extra_id_0>.,SBT
+271,3003,2017,Ricky J Sethi works for <extra_id_0>.,Fitchburg State University
+272,3014,2017,Maura Hagan works for <extra_id_0>.,Utah State University
+273,3021,2017,Bradlee L Heckmann works for <extra_id_0>.,St. Jude Children's Research Hospital
+274,3027,2017,Elizabeth G. Loboa works for <extra_id_0>.,University of Missouri
+275,3035,2017,Nora H de Leeuw works for <extra_id_0>.,Cardiff University;Utrecht University
+276,3047,2017,Carlo Montemagno works for <extra_id_0>.,University of Alberta;Southern Illinois University Carbondale
+277,3058,2017,Marian Salzman works for <extra_id_0>.,Havas
+278,3069,2017,Chris Turney works for <extra_id_0>.,University of New South Wales
+279,3078,2017,Sarafina Nance works for <extra_id_0>.,"University of California, Berkeley"
+280,3089,2017,Hartmut Mehdorn works for <extra_id_0>.,Flughafen Berlin Brandenburg GmbH
+281,3100,2017,Marian Croak works for <extra_id_0>.,Google
+282,3111,2017,Qi Lu works for <extra_id_0>.,Baidu
+283,3120,2017,Julie Bentley works for <extra_id_0>.,Girlguiding
+284,3125,2017,Georgina V. Long works for <extra_id_0>.,Royal North Shore Hospital;Melanoma Institute Australia
+285,3136,2017,Frances Spalding works for <extra_id_0>.,The Burlington Magazine
+286,3147,2017,Wendy L. Queen works for <extra_id_0>.,École polytechnique fédérale de Lausanne
+287,3158,2017,Niels Provos works for <extra_id_0>.,Google
+288,3169,2017,Bernhard Schölkopf works for <extra_id_0>.,Max Planck Institute for Intelligent Systems
+289,3180,2017,Scott Manley works for <extra_id_0>.,Apple Inc.
+290,3191,2017,Emily VanDerWerff works for <extra_id_0>.,Vox
+291,3205,2017,Cathy Engelbert works for <extra_id_0>.,Deloitte
+292,3216,2017,Léa Salamé works for <extra_id_0>.,France Inter;France 2
+293,3226,2017,Dominique Leroy works for <extra_id_0>.,Proximus
+294,3232,2017,Anna Kraft works for <extra_id_0>.,ZDF
+295,3243,2017,Indira Alfonzo works for <extra_id_0>.,Supreme Tribunal of Justice of Venezuela;Universidad Militar Bolivariana de Venezuela
+296,3254,2017,Ari Kelman works for <extra_id_0>.,Pennsylvania State University
+297,3265,2017,Rebecca J Lingwood works for <extra_id_0>.,Queen Mary University of London
+298,3275,2017,Bettina V. Lotsch works for <extra_id_0>.,Ludwig Maximilian University of Munich;Max Planck Institute for Solid State Research
+299,3286,2017,Giselle Zarur works for <extra_id_0>.,Televisa
+300,3297,2017,Julia Y Chan works for <extra_id_0>.,University of Texas at Dallas
+301,3303,2017,Allison Littlejohn works for <extra_id_0>.,The Open University
+302,3319,2017,Ghida Fakhry works for <extra_id_0>.,HuffPost;TRT World
+303,3330,2017,Diana Coben works for <extra_id_0>.,University of Waikato
+304,3341,2017,Andrew V. Goldberg works for <extra_id_0>.,Amazon
+305,3352,2017,Maria-Magdalena Titirici works for <extra_id_0>.,Queen Mary University of London
+306,3363,2017,Pier Paolo Pandolfi works for <extra_id_0>.,Beth Israel Deaconess Medical Center;Harvard Medical School
+307,3374,2017,Mathieu Gallet works for <extra_id_0>.,Radio France
+308,3377,2017,Nike Sun works for <extra_id_0>.,"University of California, Berkeley"
+309,3388,2017,Shari Steele works for <extra_id_0>.,"The Tor Project, Inc"
+310,3394,2017,Artur Lompart works for <extra_id_0>.,Ministry of Foreign Affairs of Poland
+311,3414,2017,Dolly Jørgensen works for <extra_id_0>.,Luleå University of Technology;University of Stavanger
+312,3421,2017,Ernest Benach i Pascual works for <extra_id_0>.,University of Lleida;Open University of Catalonia
+313,3432,2017,Alojzy Nowak works for <extra_id_0>.,Academic Sports Association;Faculty of Management of the University of Warsaw;National Development Council;Powszechny Zakład Ubezpieczeń
+314,3443,2017,Carola-Bibiane Schönlieb works for <extra_id_0>.,University of Cambridge
+315,3454,2017,Franck Ferrand works for <extra_id_0>.,Europe 1
+316,3460,2017,Patrice Ossona de Mendez works for <extra_id_0>.,Charles University;CRC Press
+317,3471,2017,John A. Todd works for <extra_id_0>.,University of Oxford
+318,3480,2017,Reyahn King works for <extra_id_0>.,York Museums Trust
+319,3497,2017,Chris Montgomery works for <extra_id_0>.,Mozilla
+320,3508,2017,Melanie Keen works for <extra_id_0>.,Iniva
+321,3519,2017,Ginestra Bianconi works for <extra_id_0>.,Queen Mary University of London
+322,3530,2017,Ken Murphy works for <extra_id_0>.,Walgreens Boots Alliance
+323,3540,2017,Maxim Oreshkin works for <extra_id_0>.,Government of Russia
+324,3546,2017,Karin Hansson works for <extra_id_0>.,Stockholm University;Royal Institute of Art
+325,3556,2017,Shannon Walsh works for <extra_id_0>.,University of British Columbia
+326,3567,2017,Vladimir Ashurkov works for <extra_id_0>.,Anti-corruption Foundation
+327,3571,2017,Margaret M. Hyland works for <extra_id_0>.,University of Waikato
+328,3582,2017,Robert Bingham works for <extra_id_0>.,University of Edinburgh
+329,3593,2017,Chris Dercon works for <extra_id_0>.,Tate Modern;Volksbühne
+330,3604,2017,Josep Guerrero works for <extra_id_0>.,Aalborg University
+331,3611,2017,Mirjam Van Praag works for <extra_id_0>.,Copenhagen Business School
+332,3622,2017,Vidya Arankalle works for <extra_id_0>.,Agharkar Research Institute
+333,3633,2017,Mark H. Erickson works for <extra_id_0>.,Northampton Community College
+334,3637,2017,Yves Brun works for <extra_id_0>.,Indiana University Bloomington
+335,3648,2017,Mustapha Madih works for <extra_id_0>.,Morocco national under-17 football team
+336,3653,2017,Daniel Akerib works for <extra_id_0>.,Stanford University;SLAC National Accelerator Laboratory
+337,3664,2017,<extra_id_0> is the head of the government of Iran.,Hassan Rouhani
+338,3671,2017,<extra_id_0> is the head of the government of Kazakhstan.,Bakhytzhan Sagintayev
+339,3679,2017,<extra_id_0> is the head of the government of Venezuela.,Nicolás Maduro
+340,3690,2017,<extra_id_0> is the head of the government of Quebec.,Philippe Couillard
+341,3701,2017,<extra_id_0> is the head of the government of Denmark.,Lars Løkke Rasmussen
+342,3712,2017,<extra_id_0> is the head of the government of Richmond.,Levar Stoney
+343,3720,2017,<extra_id_0> is the head of the government of Portland.,Ted Wheeler;Charlie Hales
+344,3731,2017,<extra_id_0> is the head of the government of Turin.,Chiara Appendino
+345,3735,2017,<extra_id_0> is the head of the government of Sudan.,Bakri Hassan Saleh
+346,3746,2017,<extra_id_0> is the head of the government of San Jose.,Sam Liccardo
+347,3757,2017,<extra_id_0> is the head of the government of Warsaw.,Hanna Gronkiewicz-Waltz
+348,3766,2017,<extra_id_0> is the head of the government of Geneva.,Guillaume Barazzone;Rémy Pagani
+349,3777,2017,<extra_id_0> is the head of the government of Faroe Islands.,Aksel V. Johannesen
+350,3788,2017,<extra_id_0> is the head of the government of Prague.,Adriana Krnáčová
+351,3799,2017,<extra_id_0> is the head of the government of Auckland.,Phil Goff
+352,3809,2017,<extra_id_0> is the head of the government of Wisconsin.,Scott Walker
+353,3819,2017,<extra_id_0> is the head of the government of Tallinn.,Taavi Aas
+354,3830,2017,<extra_id_0> is the head of the government of Gibraltar.,Fabian Picardo
+355,3841,2017,<extra_id_0> is the head of the government of Community of Madrid.,Cristina Cifuentes
+356,3852,2017,<extra_id_0> is the head of the government of Mainz.,Michael Ebling
+357,3863,2017,<extra_id_0> is the head of the government of New South Wales.,Gladys Berejiklian;Mike Baird
+358,3874,2017,<extra_id_0> is the head of the government of Wiesbaden.,Sven Gerich
+359,3885,2017,<extra_id_0> is the head of the government of Lower Saxony.,Stephan Weil
+360,3892,2017,<extra_id_0> is the head of the government of Mauritania.,Yahya Ould Hademine
+361,3899,2017,<extra_id_0> is the head of the government of Republika Srpska.,Željka Cvijanović
+362,3910,2017,<extra_id_0> is the head of the government of Asturias.,Javier Fernández Fernández
+363,3921,2017,<extra_id_0> is the head of the government of KwaZulu-Natal.,Willies Mchunu
+364,3932,2017,<extra_id_0> is the head of the government of Jewish Autonomous Oblast.,Alexander Levintal
+365,3942,2017,<extra_id_0> is the head of the government of Oldenburg.,Jürgen Krogmann
+366,3949,2017,<extra_id_0> is the head of the government of Liguria.,Giovanni Toti
+367,3955,2017,<extra_id_0> is the head of the government of Federal District.,Rodrigo Rollemberg
+368,3974,2017,<extra_id_0> is the head of the government of Republic of Khakassia.,Viktor Zimin
+369,3985,2017,<extra_id_0> is the head of the government of Södermanland County.,Liselott Hagberg
+370,3996,2017,<extra_id_0> is the head of the government of Gävleborg county.,Per Bill
+371,4013,2017,<extra_id_0> is the head coach of Green Bay Packers.,Mike McCarthy
+372,4022,2017,<extra_id_0> is the head coach of Kei Nishikori.,Michael Chang
+373,4030,2017,<extra_id_0> is the head coach of Richard Gasquet.,Sergi Bruguera
+374,4039,2017,<extra_id_0> is the head coach of Western Bulldogs.,Luke Beveridge
+375,4053,2017,<extra_id_0> is the head coach of Nea Salamis Famagusta FC.,Savvas Poursaitidis;António Conceição da Silva Oliveira;Staikos Vergetis;Liasos Louka
+376,4058,2017,<extra_id_0> is the head coach of Wolverhampton Wanderers F.C..,Nuno Espírito Santo
+377,4064,2017,<extra_id_0> is the head coach of New York Red Bulls.,Jesse Marsch
+378,4069,2017,<extra_id_0> is the head coach of Parma Calcio 1913.,Roberto D'Aversa
+379,4083,2017,<extra_id_0> is the head coach of F.C. Copenhagen.,Ståle Solbakken
+380,4087,2017,<extra_id_0> is the head coach of FC St. Pauli.,Markus Kauczinski
+381,4091,2017,<extra_id_0> is the head coach of Arminia Bielefeld.,Jeff Saibene
+382,4102,2017,<extra_id_0> is the head coach of 1. FC Union Berlin.,Jens Keller
+383,4113,2017,<extra_id_0> is the head coach of FC Argeș.,Emil Săndoi
+384,4118,2017,<extra_id_0> is the head coach of FC Nordsjælland.,Kasper Hjulmand
+385,4126,2017,<extra_id_0> is the head coach of PFC Slavia Sofia.,Zlatomir Zagorčić;Vladimir Ivanov
+386,4130,2017,<extra_id_0> is the head coach of VfL Wolfsburg.,Martin Schmidt
+387,4134,2017,<extra_id_0> is the head coach of FK Inter Bratislava.,Jozef Barmoš
+388,4142,2017,<extra_id_0> is the head coach of Minnesota Golden Gophers football.,P. J. Fleck
+389,4149,2017,<extra_id_0> is the head coach of FC Astana.,Stanimir Stoilov
+390,4157,2017,<extra_id_0> is the head coach of CS Gaz Metan Mediaș.,Cristian Pustai
+391,4161,2017,<extra_id_0> is the head coach of Boavista F.C..,Jorge Simão
+392,4166,2017,<extra_id_0> is the head coach of Hagens Berman Axeon.,Jeff Louder;Koos Moerenhout
+393,4185,2017,<extra_id_0> is the head coach of SV Darmstadt 98.,Torsten Frings;Dirk Schuster
+394,4190,2017,<extra_id_0> is the head coach of F91 Dudelange.,Dino Toppmöller
+395,4203,2017,<extra_id_0> is the head coach of FC Ingolstadt 04.,Stefan Leitl
+396,4211,2017,<extra_id_0> is the head coach of Denizlispor.,Ali Tandoğan
+397,4217,2017,<extra_id_0> is the head coach of F.C. Paços de Ferreira.,Petit
+398,4235,2017,<extra_id_0> is the head coach of CCC Team.,Yvon Ledanois;Allan Peiper;Valerio Piva;Fabio Baldato;Maximilian Sciandri;Jackson Stewart
+399,4261,2017,<extra_id_0> is the head coach of MTK Budapest FC.,Tamás Feczkó
+400,4265,2017,<extra_id_0> is the head coach of ACS Foresta Suceava.,Florentin Petre
+401,4283,2017,<extra_id_0> is the head coach of Telenet-Fidea.,Sven Vanthourenhout
+402,4288,2017,<extra_id_0> is the head coach of Moreirense F.C..,Augusto Inácio
+403,4295,2017,<extra_id_0> is the head coach of Storhamar Hockey.,Sjur Robert Nilsen
+404,4301,2017,<extra_id_0> is the head coach of FC Torpedo-MAZ Minsk.,Andrey Pyshnik
+405,4306,2017,<extra_id_0> is the head coach of Karmiotissa Pano Polemidion.,Liasos Louka
+406,4316,2017,<extra_id_0> is the head coach of Belarus national under-21 football team.,Liudas Rumbutis
+407,4326,2017,<extra_id_0> is the head coach of FC Neman Stolbtsy.,Mihail Makowski;Leanid Lahun
+408,4331,2017,<extra_id_0> is the head coach of FC Smorgon.,Mikalay Ryndzyuk;Alyaksey Dvaretski
+409,4342,2017,The Onion is owned by <extra_id_0>.,Fusion Media Group
+410,4353,2017,Salvator Mundi is owned by <extra_id_0>.,Dmitry Rybolovlev;Abu Dhabi Tourism & Culture Authority
+411,4364,2017,South China Morning Post is owned by <extra_id_0>.,Alibaba Group
+412,4375,2017,Boston Globe is owned by <extra_id_0>.,John W. Henry
+413,4385,2017,Blue Coat Systems is owned by <extra_id_0>.,NortonLifeLock
+414,4396,2017,Numedal Line is owned by <extra_id_0>.,Bane NOR
+415,4407,2017,ADV Ocean Shield is owned by <extra_id_0>.,Australian Border Force
+416,4418,2017,Eudora is owned by <extra_id_0>.,Qualcomm Inc.
+417,4429,2017,Le Rêve is owned by <extra_id_0>.,Steven A. Cohen
+418,4440,2017,Toll Collect is owned by <extra_id_0>.,Daimler Financial Services;Vinci;Deutsche Telekom
+419,4449,2017,West Horsley Place is owned by <extra_id_0>.,Bamber Gascoigne
+420,4460,2017,Expobank CZ is owned by <extra_id_0>.,Igor Kim
+421,4471,2017,Rothschild is owned by <extra_id_0>.,Hermitage Museum
+422,4480,2017,Vésuve de Brekka is owned by <extra_id_0>.,Republican Guard
+423,4491,2017,Kirkus Reviews is owned by <extra_id_0>.,Herbert Simon
+424,4497,2017,Atlantic City Weekly is owned by <extra_id_0>.,Berkshire Hathaway
+425,4508,2017,dblp computer science bibliography is owned by <extra_id_0>.,Schloss Dagstuhl – Leibniz Center for Informatics;University of Trier
+426,4519,2017,Luna is owned by <extra_id_0>.,Farkhad Akhmedov
+427,4530,2017,The Gainesville Sun is owned by <extra_id_0>.,Halifax Media Group
+428,4541,2017,Douro railway line is owned by <extra_id_0>.,Infrastructures of Portugal
+429,4552,2017,Randsfjorden Line is owned by <extra_id_0>.,Bane NOR
+430,4563,2017,The Eagle is owned by <extra_id_0>.,Berkshire Hathaway
+431,4574,2017,Trunk Line is owned by <extra_id_0>.,Bane NOR
+432,4585,2017,Kimbrough Memorial Stadium is owned by <extra_id_0>.,West Texas A&M University;Canyon Independent School District
+433,4596,2017,Skillsoft is owned by <extra_id_0>.,Charterhouse Capital Partners
+434,4607,2017,Bauer Swansea & South West Wales is owned by <extra_id_0>.,Wireless Group
+435,4618,2017,Chocolat Poulain is owned by <extra_id_0>.,Eurazeo;Mondelēz International
+436,4629,2017,511 Federal Building is owned by <extra_id_0>.,Portland Development Commission
+437,4640,2017,Hokushin Line is owned by <extra_id_0>.,Kobe Rapid Transit Railway
+438,4650,2017,Hello Sanctos is owned by <extra_id_0>.,"Philip Harris, Baron Harris of Peckham"

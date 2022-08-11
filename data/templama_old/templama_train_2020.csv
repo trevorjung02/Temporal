@@ -1,0 +1,982 @@
+index,original,date,input,output
+0,10,2020,Valentino Rossi plays for <extra_id_0>.,<extra_id_0> Yamaha Motor Racing <extra_id_1>
+1,23,2020,LeBron James plays for <extra_id_0>.,<extra_id_0> Los Angeles Lakers <extra_id_1>
+2,41,2020,Eden Hazard plays for <extra_id_0>.,<extra_id_0> Real Madrid CF <extra_id_1>
+3,52,2020,Steve Smith plays for <extra_id_0>.,<extra_id_0> Sydney Sixers <extra_id_1>
+4,63,2020,Luka Modrić plays for <extra_id_0>.,<extra_id_0> Real Madrid CF <extra_id_1>
+5,81,2020,Erin McLeod plays for <extra_id_0>.,<extra_id_0> FC Rosengård <extra_id_1>
+6,106,2020,Russell Westbrook plays for <extra_id_0>.,<extra_id_0> Houston Rockets <extra_id_1>
+7,117,2020,Vince Carter plays for <extra_id_0>.,<extra_id_0> Atlanta Hawks <extra_id_1>
+8,128,2020,Thiago Silva plays for <extra_id_0>.,<extra_id_0> Chelsea F.C. <extra_id_1>
+9,139,2020,Harry Kane plays for <extra_id_0>.,<extra_id_0> England national association football team <extra_id_1>
+10,160,2020,Yuvraj Singh plays for <extra_id_0>.,<extra_id_0> Kings XI Punjab <extra_id_1>
+11,171,2020,Ashlyn Harris plays for <extra_id_0>.,<extra_id_0> Orlando Pride <extra_id_1>
+12,182,2020,Peter Sagan plays for <extra_id_0>.,<extra_id_0> Bora-Hansgrohe <extra_id_1>
+13,193,2020,Markus Rosenberg plays for <extra_id_0>.,<extra_id_0> Malmö FF <extra_id_1>
+14,221,2020,Paul Pogba plays for <extra_id_0>.,<extra_id_0> France national association football team <extra_id_1>
+15,235,2020,Damian Lillard plays for <extra_id_0>.,<extra_id_0> Portland Trail Blazers <extra_id_1>
+16,246,2020,James Rodríguez plays for <extra_id_0>.,<extra_id_0> Everton F.C. <extra_id_1>
+17,254,2020,Mashrafe Mortaza plays for <extra_id_0>.,<extra_id_0> Rangpur Riders <extra_id_1>
+18,265,2020,Javier Hernández plays for <extra_id_0>.,<extra_id_0> Los Angeles Galaxy <extra_id_1>
+19,276,2020,Iker Casillas plays for <extra_id_0>.,<extra_id_0> Futebol Clube do Porto <extra_id_1>
+20,283,2020,Karmichael Hunt plays for <extra_id_0>.,<extra_id_0> Queensland Reds <extra_id_1>
+21,294,2020,Jabo Ibehre plays for <extra_id_0>.,<extra_id_0> Carlisle United F.C. <extra_id_1>
+22,316,2020,Kyrie Irving plays for <extra_id_0>.,<extra_id_0> Brooklyn Nets <extra_id_1>
+23,327,2020,Jos Buttler plays for <extra_id_0>.,<extra_id_0> Lancashire County Cricket Club <extra_id_1>
+24,338,2020,Maya Yoshida plays for <extra_id_0>.,<extra_id_0> Southampton F.C. <extra_id_1>
+25,354,2020,Paulo Centurión plays for <extra_id_0>.,<extra_id_0> Sol de América de Formosa <extra_id_1>
+26,369,2020,Carlos Vela plays for <extra_id_0>.,<extra_id_0> C.D. Guadalajara <extra_id_1>
+27,380,2020,Nani plays for <extra_id_0>.,<extra_id_0> Orlando City SC <extra_id_1>
+28,391,2020,Edinson Cavani plays for <extra_id_0>.,<extra_id_0> Paris Saint-Germain <extra_id_1>
+29,402,2020,Steve Morison plays for <extra_id_0>.,<extra_id_0> Millwall F.C. <extra_id_1>
+30,413,2020,Sam Bradford plays for <extra_id_0>.,<extra_id_0> Philadelphia Eagles <extra_id_1>
+31,424,2020,Eiji Kawashima plays for <extra_id_0>.,<extra_id_0> FC Metz <extra_id_1>
+32,435,2020,Hatem Ben Arfa plays for <extra_id_0>.,<extra_id_0> OGC Nice <extra_id_1>
+33,457,2020,Omar Abdulrahman plays for <extra_id_0>.,<extra_id_0> United Arab Emirates national football team <extra_id_1>
+34,479,2020,Shahid Afridi plays for <extra_id_0>.,<extra_id_0> Melbourne Renegades <extra_id_1>
+35,490,2020,Kostas Manolas plays for <extra_id_0>.,<extra_id_0> A.S. Roma <extra_id_1>
+36,501,2020,Diego Forlán plays for <extra_id_0>.,<extra_id_0> Club Atlético Cottolengo Don Orione <extra_id_1>
+37,512,2020,Rafael van der Vaart plays for <extra_id_0>.,<extra_id_0> Real Betis Balompié <extra_id_1>
+38,535,2020,Vincenzo Nibali plays for <extra_id_0>.,<extra_id_0> Trek-Segafredo <extra_id_1>
+39,546,2020,Shane Duffy plays for <extra_id_0>.,<extra_id_0> Republic of Ireland national association football team <extra_id_1>
+40,564,2020,Diego Biseswar plays for <extra_id_0>.,<extra_id_0> Kayserispor <extra_id_1>
+41,580,2020,Yohan Cabaye plays for <extra_id_0>.,<extra_id_0> A.S. Saint-Étienne <extra_id_1>
+42,591,2020,Emmanuel Adebayor plays for <extra_id_0>.,<extra_id_0> Club Olimpia <extra_id_1>
+43,602,2020,Patrick Bamford plays for <extra_id_0>.,<extra_id_0> Norwich City F.C. <extra_id_1>
+44,613,2020,Steve Jones plays for <extra_id_0>.,<extra_id_0> Nantwich Town F.C. <extra_id_1>
+45,624,2020,Mikel John Obi plays for <extra_id_0>.,<extra_id_0> Trabzonspor <extra_id_1>
+46,635,2020,Maria Jose Altamirano plays for <extra_id_0>.,<extra_id_0> Lokomotiv Baku <extra_id_1>
+47,646,2020,Sölvi Ottesen plays for <extra_id_0>.,<extra_id_0> Wuhan Zall F.C. <extra_id_1>
+48,664,2020,Umar Akmal plays for <extra_id_0>.,<extra_id_0> Lahore Qalandars <extra_id_1>
+49,678,2020,Deshaun Watson plays for <extra_id_0>.,<extra_id_0> Houston Texans <extra_id_1>
+50,689,2020,Jacoby Ellsbury plays for <extra_id_0>.,<extra_id_0> New York Yankees <extra_id_1>
+51,699,2020,Raúl Jiménez plays for <extra_id_0>.,<extra_id_0> Mexico national football team <extra_id_1>
+52,716,2020,Mathieu Valbuena plays for <extra_id_0>.,<extra_id_0> France national association football team <extra_id_1>
+53,730,2020,Kylian Mbappé plays for <extra_id_0>.,<extra_id_0> France national association football team <extra_id_1>
+54,741,2020,Jimmy Abdou plays for <extra_id_0>.,<extra_id_0> Comoros national football team <extra_id_1>
+55,766,2020,Calais Campbell plays for <extra_id_0>.,<extra_id_0> Jacksonville Jaguars <extra_id_1>
+56,770,2020,Jamal Crawford plays for <extra_id_0>.,<extra_id_0> Phoenix Suns <extra_id_1>
+57,790,2020,Gary Cahill plays for <extra_id_0>.,<extra_id_0> Crystal Palace F.C. <extra_id_1>
+58,801,2020,J. J. Redick plays for <extra_id_0>.,<extra_id_0> Philadelphia 76ers <extra_id_1>
+59,812,2020,James Taylor plays for <extra_id_0>.,<extra_id_0> Nottinghamshire County Cricket Club <extra_id_1>
+60,829,2020,Callum Ferguson plays for <extra_id_0>.,<extra_id_0> Australia national cricket team <extra_id_1>
+61,845,2020,Hamdi Salihi plays for <extra_id_0>.,<extra_id_0> SC Wiener Neustadt <extra_id_1>
+62,856,2020,Clayton Donaldson plays for <extra_id_0>.,<extra_id_0> Bradford City A.F.C. <extra_id_1>
+63,867,2020,Rangana Herath plays for <extra_id_0>.,<extra_id_0> Tamil Union Cricket and Athletic Club <extra_id_1>
+64,884,2020,Kevin Trapp plays for <extra_id_0>.,<extra_id_0> Germany national association football team <extra_id_1>
+65,893,2020,Kristaps Porziņģis plays for <extra_id_0>.,<extra_id_0> Dallas Mavericks <extra_id_1>
+66,904,2020,Elis Bakaj plays for <extra_id_0>.,<extra_id_0> FC Dynamo Brest <extra_id_1>
+67,920,2020,Blaise Matuidi plays for <extra_id_0>.,<extra_id_0> France national association football team <extra_id_1>
+68,931,2020,Filipe Morais plays for <extra_id_0>.,<extra_id_0> Bradford City A.F.C. <extra_id_1>
+69,947,2020,Patrick Mahomes plays for <extra_id_0>.,<extra_id_0> Kansas City Chiefs <extra_id_1>
+70,970,2020,Zesh Rehman plays for <extra_id_0>.,<extra_id_0> Kitchee SC <extra_id_1>
+71,999,2020,Benji Marshall plays for <extra_id_0>.,<extra_id_0> St. George Illawarra Dragons <extra_id_1>
+72,1009,2020,Auston Matthews plays for <extra_id_0>.,<extra_id_0> Toronto Maple Leafs <extra_id_1>
+73,1020,2020,Jeroen Zoet plays for <extra_id_0>.,<extra_id_0> Netherlands national association football team <extra_id_1>
+74,1023,2020,Zion Williamson plays for <extra_id_0>.,<extra_id_0> New Orleans Pelicans <extra_id_1>
+75,1046,2020,Anderson plays for <extra_id_0>.,<extra_id_0> S.C. Internacional <extra_id_1>
+76,1063,2020,Isaiah Thomas plays for <extra_id_0>.,<extra_id_0> Washington Wizards <extra_id_1>
+77,1074,2020,John Degenkolb plays for <extra_id_0>.,<extra_id_0> Lotto-Soudal <extra_id_1>
+78,1082,2020,Alex Hales plays for <extra_id_0>.,<extra_id_0> Sunrisers Hyderabad <extra_id_1>
+79,1093,2020,Chris Beardsley plays for <extra_id_0>.,<extra_id_0> Mansfield Town F.C. <extra_id_1>
+80,1104,2020,Moussa Sissoko plays for <extra_id_0>.,<extra_id_0> Tottenham Hotspur F.C. <extra_id_1>
+81,1115,2020,Jonathan Sexton plays for <extra_id_0>.,<extra_id_0> British & Irish Lions <extra_id_1>
+82,1126,2020,Tim Paine plays for <extra_id_0>.,<extra_id_0> Hobart Hurricanes <extra_id_1>
+83,1137,2020,Patrick Kisnorbo plays for <extra_id_0>.,<extra_id_0> Melbourne City Football Club <extra_id_1>
+84,1159,2020,Tommy Elphick plays for <extra_id_0>.,<extra_id_0> AFC Bournemouth <extra_id_1>
+85,1170,2020,David Edgar plays for <extra_id_0>.,<extra_id_0> Canada men's national soccer team <extra_id_1>
+86,1180,2020,Paulo Dybala plays for <extra_id_0>.,<extra_id_0> Juventus FC <extra_id_1>
+87,1197,2020,Wout Brama plays for <extra_id_0>.,<extra_id_0> PEC Zwolle <extra_id_1>
+88,1208,2020,Victor Oladipo plays for <extra_id_0>.,<extra_id_0> Indiana Pacers <extra_id_1>
+89,1219,2020,Víctor Ibarbo plays for <extra_id_0>.,<extra_id_0> Colombia national football team <extra_id_1>
+90,1233,2020,Anthony Martial plays for <extra_id_0>.,<extra_id_0> France national association football team <extra_id_1>
+91,1244,2020,Gentjan Muça plays for <extra_id_0>.,<extra_id_0> KF Tirana <extra_id_1>
+92,1255,2020,Owen Farrell plays for <extra_id_0>.,<extra_id_0> England national rugby union team <extra_id_1>
+93,1266,2020,Tyler Clippard plays for <extra_id_0>.,<extra_id_0> New York Mets <extra_id_1>
+94,1277,2020,Dejan Lovren plays for <extra_id_0>.,<extra_id_0> FC Zenit Saint Petersburg <extra_id_1>
+95,1291,2020,Salomon Kalou plays for <extra_id_0>.,<extra_id_0> Hertha BSC <extra_id_1>
+96,1302,2020,Xherdan Shaqiri plays for <extra_id_0>.,<extra_id_0> Swiss national football team <extra_id_1>
+97,1313,2020,Tom Kennedy plays for <extra_id_0>.,<extra_id_0> Rochdale A.F.C. <extra_id_1>
+98,1324,2020,Raphaël Varane plays for <extra_id_0>.,<extra_id_0> France national association football team <extra_id_1>
+99,1353,2020,Mitchell Johnson plays for <extra_id_0>.,<extra_id_0> Kolkata Knight Riders <extra_id_1>
+100,1356,2020,Danny Green plays for <extra_id_0>.,<extra_id_0> Los Angeles Lakers <extra_id_1>
+101,1367,2020,John Guidetti plays for <extra_id_0>.,<extra_id_0> Sweden national association football team <extra_id_1>
+102,1378,2020,Karim Matmour plays for <extra_id_0>.,<extra_id_0> Huddersfield Town A.F.C. <extra_id_1>
+103,1389,2020,Greg Pearson plays for <extra_id_0>.,<extra_id_0> Hinckley A.F.C. <extra_id_1>
+104,1402,2020,Sanchez Watt plays for <extra_id_0>.,<extra_id_0> Kerala Blasters FC <extra_id_1>
+105,1427,2020,Adam Priestley plays for <extra_id_0>.,<extra_id_0> Shaw Lane Aquaforce F.C. <extra_id_1>
+106,1447,2020,Agon Mehmeti plays for <extra_id_0>.,<extra_id_0> Stabæk Fotball <extra_id_1>
+107,1458,2020,Marta plays for <extra_id_0>.,<extra_id_0> FC Rosengård <extra_id_1>
+108,1469,2020,Hashim Mahomed Amla plays for <extra_id_0>.,<extra_id_0> Cape Cobras <extra_id_1>
+109,1480,2020,Andrea Bargnani plays for <extra_id_0>.,<extra_id_0> Saski Baskonia <extra_id_1>
+110,1489,2020,Teddy Bridgewater plays for <extra_id_0>.,<extra_id_0> New Orleans Saints <extra_id_1>
+111,1500,2020,Thibaut Curtua plays for <extra_id_0>.,<extra_id_0> Belgium national football team <extra_id_1>
+112,1506,2020,Marcelo plays for <extra_id_0>.,<extra_id_0> Juventus FC <extra_id_1>
+113,1517,2020,Jérôme Boateng plays for <extra_id_0>.,<extra_id_0> FC Bayern Munich <extra_id_1>
+114,1528,2020,Zoltán Stieber plays for <extra_id_0>.,<extra_id_0> Hungary national association football team <extra_id_1>
+115,1551,2020,Babar Azam plays for <extra_id_0>.,<extra_id_0> Zarai Taraqiati Bank Ltd cricket team <extra_id_1>
+116,1562,2020,Gareth Barry plays for <extra_id_0>.,<extra_id_0> Everton F.C. <extra_id_1>
+117,1573,2020,Jermaine Pennant plays for <extra_id_0>.,<extra_id_0> Tampines Rovers FC <extra_id_1>
+118,1584,2020,Chris Baird plays for <extra_id_0>.,<extra_id_0> Derby County F.C. <extra_id_1>
+119,1595,2020,André Ayew plays for <extra_id_0>.,<extra_id_0> Swansea City A.F.C. <extra_id_1>
+120,1606,2020,Kevin Nolan plays for <extra_id_0>.,<extra_id_0> Leyton Orient F.C. <extra_id_1>
+121,1617,2020,Steven Naismith plays for <extra_id_0>.,<extra_id_0> Norwich City F.C. <extra_id_1>
+122,1627,2020,Deandre Ayton plays for <extra_id_0>.,<extra_id_0> Phoenix Suns <extra_id_1>
+123,1638,2020,Alex Oxlade-Chamberlain plays for <extra_id_0>.,<extra_id_0> England national association football team <extra_id_1>
+124,1649,2020,Nikola Mirotić plays for <extra_id_0>.,<extra_id_0> FC Barcelona Bàsquet <extra_id_1>
+125,1660,2020,Katie Chapman plays for <extra_id_0>.,<extra_id_0> Chelsea L.F.C. <extra_id_1>
+126,1671,2020,Teddy Chevalier plays for <extra_id_0>.,<extra_id_0> Çaykur Rizespor <extra_id_1>
+127,1682,2020,Lewis Holtby plays for <extra_id_0>.,<extra_id_0> Hamburger SV <extra_id_1>
+128,1695,2020,Adam Chicksen plays for <extra_id_0>.,<extra_id_0> Brighton & Hove Albion F.C. <extra_id_1>
+129,1712,2020,Óscar Cardozo plays for <extra_id_0>.,<extra_id_0> Club Libertad <extra_id_1>
+130,1720,2020,Renato Sanches plays for <extra_id_0>.,<extra_id_0> Portugal national association football team <extra_id_1>
+131,1736,2020,Emre Can plays for <extra_id_0>.,<extra_id_0> Germany national association football team <extra_id_1>
+132,1764,2020,Robert Snodgrass plays for <extra_id_0>.,<extra_id_0> Scotland national football team <extra_id_1>
+133,1775,2020,Kieron Pollard plays for <extra_id_0>.,<extra_id_0> Mumbai Indians <extra_id_1>
+134,1786,2020,Kenneth Vermeer plays for <extra_id_0>.,<extra_id_0> Los Angeles FC <extra_id_1>
+135,1797,2020,Matty Fryatt plays for <extra_id_0>.,<extra_id_0> Nottingham Forest F.C. <extra_id_1>
+136,1808,2020,Niall McGinn plays for <extra_id_0>.,<extra_id_0> Aberdeen F.C. <extra_id_1>
+137,1819,2020,Nathan Redmond plays for <extra_id_0>.,<extra_id_0> England national under-21 football team <extra_id_1>
+138,1830,2020,Sardar Azmoun plays for <extra_id_0>.,<extra_id_0> Iran national football team <extra_id_1>
+139,1844,2020,Robert Green plays for <extra_id_0>.,<extra_id_0> Queens Park Rangers F.C. <extra_id_1>
+140,1855,2020,Matt Godden plays for <extra_id_0>.,<extra_id_0> Ebbsfleet United F.C. <extra_id_1>
+141,1876,2020,Recep Tayyip Erdoğan holds the position of <extra_id_0>.,<extra_id_0> President of Turkey <extra_id_1>
+142,1887,2020,Boris Johnson holds the position of <extra_id_0>.,<extra_id_0> Minister for the Civil Service <extra_id_1>
+143,1898,2020,Vladimir Putin holds the position of <extra_id_0>.,<extra_id_0> Supreme Commander-in-Chief of the Armed Forces of the Russian Federation <extra_id_1>
+144,1909,2020,Mike Pence holds the position of <extra_id_0>.,<extra_id_0> Vice President of the United States <extra_id_1>
+145,1919,2020,Scott Pruitt holds the position of <extra_id_0>.,<extra_id_0> Administrator of the Environmental Protection Agency <extra_id_1>
+146,1934,2020,Ralph Northam holds the position of <extra_id_0>.,<extra_id_0> Governor of Virginia <extra_id_1>
+147,1945,2020,Richard Blumenthal holds the position of <extra_id_0>.,<extra_id_0> United States senator <extra_id_1>
+148,1964,2020,Emmerson Mnangagwa holds the position of <extra_id_0>.,<extra_id_0> President of Zimbabwe <extra_id_1>
+149,1971,2020,Traian Băsescu holds the position of <extra_id_0>.,<extra_id_0> member of the European Parliament <extra_id_1>
+150,1982,2020,Dmitry Medvedev holds the position of <extra_id_0>.,<extra_id_0> Prime Minister of Russia <extra_id_1>
+151,1993,2020,Lee Jae-myung holds the position of <extra_id_0>.,<extra_id_0> Governor of Gyeonggi Province <extra_id_1>
+152,2011,2020,Ed Miliband holds the position of <extra_id_0>.,"<extra_id_0> Shadow Secretary of State for Business, Innovation and Skills <extra_id_1>"
+153,2021,2020,Mike Pompeo holds the position of <extra_id_0>.,<extra_id_0> United States Secretary of State <extra_id_1>
+154,2038,2020,Enda Kenny holds the position of <extra_id_0>.,<extra_id_0> Teachta Dála <extra_id_1>
+155,2049,2020,Steve Cohen holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+156,2060,2020,Mitch McConnell holds the position of <extra_id_0>.,<extra_id_0> Majority Leader of the United States Senate <extra_id_1>
+157,2071,2020,Eric Garcetti holds the position of <extra_id_0>.,<extra_id_0> Mayor of the City of Los Angeles <extra_id_1>
+158,2079,2020,Frank-Walter Steinmeier holds the position of <extra_id_0>.,<extra_id_0> president of Germany <extra_id_1>
+159,2099,2020,Andrew Scheer holds the position of <extra_id_0>.,<extra_id_0> Leader of the Official Opposition <extra_id_1>
+160,2108,2020,Aleksandar Vučić holds the position of <extra_id_0>.,<extra_id_0> President of Serbia <extra_id_1>
+161,2131,2020,James R. Clapper holds the position of <extra_id_0>.,<extra_id_0> Director of National Intelligence <extra_id_1>
+162,2156,2020,Dominic Raab holds the position of <extra_id_0>.,<extra_id_0> First Secretary of State <extra_id_1>
+163,2178,2020,Nicola Sturgeon holds the position of <extra_id_0>.,<extra_id_0> First Minister of Scotland <extra_id_1>
+164,2189,2020,Mahmoud Abbas holds the position of <extra_id_0>.,<extra_id_0> President of the State of Palestine <extra_id_1>
+165,2200,2020,Abdul Taib Mahmud holds the position of <extra_id_0>.,<extra_id_0> Yang di-Pertua Negeri of Sarawak <extra_id_1>
+166,2219,2020,Salman of Saudi Arabia holds the position of <extra_id_0>.,<extra_id_0> King of Saudi Arabia <extra_id_1>
+167,2227,2020,Mark Meadows holds the position of <extra_id_0>.,<extra_id_0> White House Chief of Staff <extra_id_1>
+168,2237,2020,Tim Scott holds the position of <extra_id_0>.,<extra_id_0> United States senator <extra_id_1>
+169,2247,2020,Oleksandr Turchynov holds the position of <extra_id_0>.,<extra_id_0> Chairman of the Verkhovna Rada <extra_id_1>
+170,2252,2020,Keir Starmer holds the position of <extra_id_0>.,<extra_id_0> Leader of the Labour Party <extra_id_1>
+171,2286,2020,Andrej Plenković holds the position of <extra_id_0>.,<extra_id_0> Prime Minister of Croatia <extra_id_1>
+172,2294,2020,Judith Collins holds the position of <extra_id_0>.,<extra_id_0> Leader of the Opposition <extra_id_1>
+173,2308,2020,Roy Blunt holds the position of <extra_id_0>.,<extra_id_0> United States senator <extra_id_1>
+174,2319,2020,Li Keqiang holds the position of <extra_id_0>.,<extra_id_0> Premier of the State Council of the People's Republic of China <extra_id_1>
+175,2334,2020,Andy Burnham holds the position of <extra_id_0>.,<extra_id_0> Mayor of Greater Manchester <extra_id_1>
+176,2354,2020,Raúl Castro Ruz holds the position of <extra_id_0>.,<extra_id_0> First Secretary of the Communist Party of Cuba <extra_id_1>
+177,2359,2020,Kristina Keneally holds the position of <extra_id_0>.,<extra_id_0> Member of the Australian Senate <extra_id_1>
+178,2365,2020,Tarō Kōno holds the position of <extra_id_0>.,<extra_id_0> Minister of Defense of Japan <extra_id_1>
+179,2369,2020,Carles Puigdemont holds the position of <extra_id_0>.,<extra_id_0> member of the European Parliament <extra_id_1>
+180,2386,2020,Kristi Noem holds the position of <extra_id_0>.,<extra_id_0> Governor of South Dakota <extra_id_1>
+181,2403,2020,Pete Hoekstra holds the position of <extra_id_0>.,<extra_id_0> United States Ambassador to the Netherlands <extra_id_1>
+182,2414,2020,Dominic Grieve holds the position of <extra_id_0>.,<extra_id_0> Advocate General for Northern Ireland <extra_id_1>
+183,2425,2020,Muhyiddin Yassin holds the position of <extra_id_0>.,<extra_id_0> Prime Minister of Malaysia <extra_id_1>
+184,2441,2020,Chrystia Freeland holds the position of <extra_id_0>.,<extra_id_0> Deputy Prime Minister of Canada <extra_id_1>
+185,2452,2020,Bill Cassidy holds the position of <extra_id_0>.,<extra_id_0> United States senator <extra_id_1>
+186,2463,2020,Chris Van Hollen holds the position of <extra_id_0>.,<extra_id_0> United States senator <extra_id_1>
+187,2481,2020,László Tőkés holds the position of <extra_id_0>.,<extra_id_0> member of the European Parliament <extra_id_1>
+188,2491,2020,Bridget McKenzie holds the position of <extra_id_0>.,<extra_id_0> Member of the Australian Senate <extra_id_1>
+189,2505,2020,Stefan Löfven holds the position of <extra_id_0>.,<extra_id_0> party leader <extra_id_1>
+190,2516,2020,Brian Schatz holds the position of <extra_id_0>.,<extra_id_0> United States senator <extra_id_1>
+191,2526,2020,Mario Monti holds the position of <extra_id_0>.,<extra_id_0> senatore a vita <extra_id_1>
+192,2543,2020,David Lammy holds the position of <extra_id_0>.,<extra_id_0> Shadow Secretary of State for Justice <extra_id_1>
+193,2554,2020,Matt Hancock holds the position of <extra_id_0>.,<extra_id_0> Secretary of State for Health and Social Care <extra_id_1>
+194,2569,2020,Rebecca Long-Bailey holds the position of <extra_id_0>.,"<extra_id_0> Shadow Secretary of State for Business, Innovation and Skills <extra_id_1>"
+195,2602,2020,Robert C. O'Brien holds the position of <extra_id_0>.,<extra_id_0> National Security Advisor <extra_id_1>
+196,2604,2020,Robert Buckland holds the position of <extra_id_0>.,<extra_id_0> Secretary of State for Justice <extra_id_1>
+197,2615,2020,Hubertus Leteng holds the position of <extra_id_0>.,<extra_id_0> Catholic bishop <extra_id_1>
+198,2626,2020,Xavier Becerra holds the position of <extra_id_0>.,<extra_id_0> Attorney General of California <extra_id_1>
+199,2637,2020,Phil Hogan holds the position of <extra_id_0>.,<extra_id_0> European Commissioner for Agriculture and Rural Development <extra_id_1>
+200,2657,2020,Knut Arild Hareide holds the position of <extra_id_0>.,<extra_id_0> Minister of Transport and Communications <extra_id_1>
+201,2662,2020,Richard Burgon holds the position of <extra_id_0>.,<extra_id_0> Shadow Secretary of State for Justice <extra_id_1>
+202,2673,2020,Abdrabbuh Mansour Hadi holds the position of <extra_id_0>.,<extra_id_0> President of Yemenمهدي محمد المشاط <extra_id_1>
+203,2679,2020,Steven Ciobo holds the position of <extra_id_0>.,<extra_id_0> Minister for Trade <extra_id_1>
+204,2700,2020,Tabaré Vázquez holds the position of <extra_id_0>.,<extra_id_0> President of Uruguay <extra_id_1>
+205,2715,2020,Robert Barron holds the position of <extra_id_0>.,<extra_id_0> auxiliary bishop <extra_id_1>
+206,2735,2020,Wang Qishan holds the position of <extra_id_0>.,<extra_id_0> Vice President of the People's Republic of China <extra_id_1>
+207,2743,2020,Kelly Loeffler holds the position of <extra_id_0>.,<extra_id_0> United States senator <extra_id_1>
+208,2750,2020,Gilad Erdan holds the position of <extra_id_0>.,<extra_id_0> Information Minister of Israel <extra_id_1>
+209,2761,2020,Rodney L. Davis holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+210,2773,2020,Benny Gantz holds the position of <extra_id_0>.,<extra_id_0> Speaker of the Knesset <extra_id_1>
+211,2783,2020,Margrethe Vestager holds the position of <extra_id_0>.,<extra_id_0> European Commissioner for Competition <extra_id_1>
+212,2790,2020,"Michael Bates, Baron Bates holds the position of <extra_id_0>.",<extra_id_0> Department for International Development <extra_id_1>
+213,2807,2020,Virginia Foxx holds the position of <extra_id_0>.,<extra_id_0> Republican Conference Secretary of the United States House of Representatives <extra_id_1>
+214,2814,2020,Mette Frederiksen holds the position of <extra_id_0>.,<extra_id_0> Prime Minister of Denmark <extra_id_1>
+215,2816,2020,Chen Chi-mai holds the position of <extra_id_0>.,<extra_id_0> Vice Premier of the Republic of China <extra_id_1>
+216,2840,2020,Édouard Philippe holds the position of <extra_id_0>.,<extra_id_0> Prime Minister of France <extra_id_1>
+217,2856,2020,Timothy M. Keller holds the position of <extra_id_0>.,<extra_id_0> Mayor of Albuquerque <extra_id_1>
+218,2865,2020,Lawrence Thomas Persico holds the position of <extra_id_0>.,<extra_id_0> diocesan bishop <extra_id_1>
+219,2868,2020,Brandon Lewis holds the position of <extra_id_0>.,<extra_id_0> Secretary of State for Northern Ireland <extra_id_1>
+220,2878,2020,David Hurley holds the position of <extra_id_0>.,<extra_id_0> Governor-General of Australia <extra_id_1>
+221,2889,2020,David McAllister holds the position of <extra_id_0>.,<extra_id_0> member of the European Parliament <extra_id_1>
+222,2899,2020,Dacian Cioloș holds the position of <extra_id_0>.,<extra_id_0> member of the European Parliament <extra_id_1>
+223,2909,2020,"Joseph F. Dunford, Jr. holds the position of <extra_id_0>.",<extra_id_0> Chairman of the Joint Chiefs of Staff <extra_id_1>
+224,2920,2020,Dominique Mamberti holds the position of <extra_id_0>.,<extra_id_0> cardinal <extra_id_1>
+225,2923,2020,Rod Phillips holds the position of <extra_id_0>.,<extra_id_0> finance minister <extra_id_1>
+226,2934,2020,Naledi Pandor holds the position of <extra_id_0>.,<extra_id_0> Minister of Higher Education and Training <extra_id_1>
+227,2950,2020,Mikie Sherrill holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+228,2963,2020,Mark Drakeford holds the position of <extra_id_0>.,<extra_id_0> First Minister of Wales <extra_id_1>
+229,2977,2020,Maroš Šefčovič holds the position of <extra_id_0>.,<extra_id_0> European Commissioner for Energy <extra_id_1>
+230,2988,2020,Olav Fykse Tveit holds the position of <extra_id_0>.,<extra_id_0> Preses <extra_id_1>
+231,3007,2020,Caroline Spelman holds the position of <extra_id_0>.,<extra_id_0> Church Estates Commissioners <extra_id_1>
+232,3024,2020,Hwang Kyo-ahn holds the position of <extra_id_0>.,<extra_id_0> party leader <extra_id_1>
+233,3034,2020,Clare Daly holds the position of <extra_id_0>.,<extra_id_0> member of the European Parliament <extra_id_1>
+234,3039,2020,Clotilde Armand holds the position of <extra_id_0>.,<extra_id_0> member of the European Parliament <extra_id_1>
+235,3050,2020,Maimunah Mohd Sharif holds the position of <extra_id_0>.,<extra_id_0> executive director <extra_id_1>
+236,3061,2020,Miguel Díaz-Canel holds the position of <extra_id_0>.,<extra_id_0> President of Cuba <extra_id_1>
+237,3072,2020,Seán Barrett holds the position of <extra_id_0>.,<extra_id_0> Teachta Dála <extra_id_1>
+238,3077,2020,Vickie Chapman holds the position of <extra_id_0>.,<extra_id_0> Attorney-General of South Australia <extra_id_1>
+239,3098,2020,Susanna Ceccardi holds the position of <extra_id_0>.,<extra_id_0> member of the European Parliament <extra_id_1>
+240,3108,2020,Xavier Bettel holds the position of <extra_id_0>.,<extra_id_0> Prime Minister of Luxembourg <extra_id_1>
+241,3119,2020,John L. Hennessy holds the position of <extra_id_0>.,<extra_id_0> director <extra_id_1>
+242,3129,2020,Dražen Kutleša holds the position of <extra_id_0>.,<extra_id_0> diocesan bishop <extra_id_1>
+243,3145,2020,Paul Butler holds the position of <extra_id_0>.,<extra_id_0> Bishop of Durham <extra_id_1>
+244,3154,2020,Trent Kelly holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+245,3159,2020,Mercedes Aráoz holds the position of <extra_id_0>.,<extra_id_0> Vice President of Peru <extra_id_1>
+246,3170,2020,Dalo Bucaram holds the position of <extra_id_0>.,<extra_id_0> president <extra_id_1>
+247,3178,2020,Nick Houghton holds the position of <extra_id_0>.,<extra_id_0> Constable of the Tower <extra_id_1>
+248,3188,2020,Antonino Raspanti holds the position of <extra_id_0>.,<extra_id_0> diocesan bishop <extra_id_1>
+249,3205,2020,"Leonor, Princess of Asturias holds the position of <extra_id_0>.",<extra_id_0> Prince of Girona <extra_id_1>
+250,3229,2020,Taur Matan Ruak holds the position of <extra_id_0>.,<extra_id_0> Prime Minister of East Timor <extra_id_1>
+251,3235,2020,Mauricio Vila Dosal holds the position of <extra_id_0>.,<extra_id_0> Governor of Yucatán <extra_id_1>
+252,3272,2020,Tim Davie holds the position of <extra_id_0>.,<extra_id_0> Director-General of the BBC <extra_id_1>
+253,3282,2020,Stephen Donnelly holds the position of <extra_id_0>.,<extra_id_0> Teachta Dála <extra_id_1>
+254,3297,2020,Sampathawaduge Maxwell Grenville Silva holds the position of <extra_id_0>.,<extra_id_0> auxiliary bishop <extra_id_1>
+255,3302,2020,Michel Spiro holds the position of <extra_id_0>.,<extra_id_0> president <extra_id_1>
+256,3313,2020,Brendan Smith holds the position of <extra_id_0>.,<extra_id_0> Teachta Dála <extra_id_1>
+257,3324,2020,David Dabede Mabuza holds the position of <extra_id_0>.,<extra_id_0> vice president <extra_id_1>
+258,3328,2020,Chung Sye-kyun holds the position of <extra_id_0>.,<extra_id_0> Prime Minister of South Korea <extra_id_1>
+259,3344,2020,Mary Mitchell O'Connor holds the position of <extra_id_0>.,<extra_id_0> Teachta Dála <extra_id_1>
+260,3353,2020,Arayik Harutyunyan holds the position of <extra_id_0>.,<extra_id_0> President of Artsakh <extra_id_1>
+261,3361,2020,Malala Yousafzai attended <extra_id_0>.,<extra_id_0> Lady Margaret Hall <extra_id_1>
+262,3377,2020,Katie Ledecky attended <extra_id_0>.,<extra_id_0> Stanford University <extra_id_1>
+263,3388,2020,Baker Mayfield attended <extra_id_0>.,<extra_id_0> University of Oklahoma <extra_id_1>
+264,3423,2020,Paige Bueckers attended <extra_id_0>.,<extra_id_0> University of Connecticut <extra_id_1>
+265,3445,2020,Jevon Carter attended <extra_id_0>.,<extra_id_0> West Virginia University <extra_id_1>
+266,3477,2020,Killian Tillie attended <extra_id_0>.,<extra_id_0> Gonzaga University <extra_id_1>
+267,3482,2020,Tai Wynyard attended <extra_id_0>.,<extra_id_0> Santa Clara University <extra_id_1>
+268,3493,2020,Luke Falk attended <extra_id_0>.,<extra_id_0> Washington State University <extra_id_1>
+269,3513,2020,Tiffany Trump attended <extra_id_0>.,<extra_id_0> Georgetown University <extra_id_1>
+270,3521,2020,Leticia Romero attended <extra_id_0>.,<extra_id_0> Florida State University <extra_id_1>
+271,3532,2020,Fletcher Magee attended <extra_id_0>.,<extra_id_0> Wofford College <extra_id_1>
+272,3543,2020,Grant Williams attended <extra_id_0>.,"<extra_id_0> University of Tennessee, Knoxville <extra_id_1>"
+273,3573,2020,Ayman Rashdan Wong attended <extra_id_0>.,<extra_id_0> University of Malaya <extra_id_1>
+274,3584,2020,Felix Finkbeiner attended <extra_id_0>.,<extra_id_0> ETH Zurich <extra_id_1>
+275,3600,2020,Clayton Custer attended <extra_id_0>.,<extra_id_0> Loyola University Chicago <extra_id_1>
+276,3605,2020,Kiya Johnson attended <extra_id_0>.,<extra_id_0> Louisiana State University <extra_id_1>
+277,3618,2020,Katalin Cseh attended <extra_id_0>.,<extra_id_0> Eötvös Loránd University <extra_id_1>
+278,3637,2020,Megan Walker attended <extra_id_0>.,<extra_id_0> University of Connecticut <extra_id_1>
+279,3662,2020,Lee Hyun-joo attended <extra_id_0>.,<extra_id_0> Sungshin Women's University <extra_id_1>
+280,3680,2020,Louise Coldefy attended <extra_id_0>.,<extra_id_0> Conservatoire national supérieur d'art dramatique <extra_id_1>
+281,3696,2020,Brielle Biermann attended <extra_id_0>.,<extra_id_0> Georgia State University <extra_id_1>
+282,3707,2020,<extra_id_0> is the chair of bp.,<extra_id_0> Helge Lund <extra_id_1>
+283,3718,2020,<extra_id_0> is the chair of Republican Party.,<extra_id_0> Ronna Romney McDaniel <extra_id_1>
+284,3726,2020,<extra_id_0> is the chair of Islamic State of Iraq and the Levant.,<extra_id_0> Abu Ibrahim al-Hashimi al-Qurashi <extra_id_1>
+285,3737,2020,<extra_id_0> is the chair of Democratic Party.,<extra_id_0> Paolo Gentiloni <extra_id_1>
+286,3744,2020,<extra_id_0> is the chair of Sainsbury's.,<extra_id_0> Martin Scicluna <extra_id_1>
+287,3755,2020,<extra_id_0> is the chair of National Rally.,<extra_id_0> Marine Le Pen <extra_id_1>
+288,3766,2020,<extra_id_0> is the chair of Swansea City A.F.C..,<extra_id_0> Trevor Birch <extra_id_1>
+289,3777,2020,<extra_id_0> is the chair of Libertarian Party.,<extra_id_0> Nicholas Sarwark <extra_id_1>
+290,3788,2020,<extra_id_0> is the chair of Anti-Defamation League.,<extra_id_0> Jonathan Greenblatt <extra_id_1>
+291,3799,2020,<extra_id_0> is the chair of International Olympic Committee.,<extra_id_0> Thomas Bach <extra_id_1>
+292,3810,2020,<extra_id_0> is the chair of HSBC.,<extra_id_0> Mark Tucker <extra_id_1>
+293,3819,2020,<extra_id_0> is the chair of World Bank.,<extra_id_0> David Malpass <extra_id_1>
+294,3827,2020,<extra_id_0> is the chair of Alternative for Germany.,<extra_id_0> Jörg Meuthen <extra_id_1>
+295,3838,2020,<extra_id_0> is the chair of Scottish Parliament.,<extra_id_0> Ken Macintosh <extra_id_1>
+296,3849,2020,<extra_id_0> is the chair of Aston Villa F.C..,<extra_id_0> Nassef Sawiris <extra_id_1>
+297,3860,2020,<extra_id_0> is the chair of International Shooting Sport Federation.,<extra_id_0> Vladimir Lisin <extra_id_1>
+298,3871,2020,<extra_id_0> is the chair of Finns Party.,<extra_id_0> Jussi Halla-aho <extra_id_1>
+299,3892,2020,<extra_id_0> is the chair of Organisation of Islamic Cooperation.,<extra_id_0> Yousef Al-Othaimeen <extra_id_1>
+300,3903,2020,<extra_id_0> is the chair of NatWest Group.,<extra_id_0> Sir Howard Davies <extra_id_1>
+301,3913,2020,<extra_id_0> is the chair of Conseil national du numérique.,<extra_id_0> Gilles Babinet <extra_id_1>
+302,3924,2020,<extra_id_0> is the chair of Lloyds Banking Group.,<extra_id_0> Lord Blackwell <extra_id_1>
+303,3930,2020,<extra_id_0> is the chair of Women's Equality Party.,<extra_id_0> Catherine Mayer <extra_id_1>
+304,3941,2020,<extra_id_0> is the chair of Democratic Progressive Party.,<extra_id_0> Cho Jung-tai <extra_id_1>
+305,3947,2020,<extra_id_0> is the chair of Belgian Senate.,<extra_id_0> Sabine Laruelle <extra_id_1>
+306,3955,2020,<extra_id_0> is the chair of Stortinget.,<extra_id_0> Tone Wilhelmsen Trøen <extra_id_1>
+307,3965,2020,<extra_id_0> is the chair of Association for Computing Machinery.,<extra_id_0> Gabriele Kotsis <extra_id_1>
+308,3976,2020,<extra_id_0> is the chair of French National Assembly.,<extra_id_0> Richard Ferrand <extra_id_1>
+309,3987,2020,<extra_id_0> is the chair of Knesset.,<extra_id_0> Yariv Levin <extra_id_1>
+310,3991,2020,<extra_id_0> is the chair of United States Department of Energy.,<extra_id_0> Dan R. Brouillette <extra_id_1>
+311,4002,2020,<extra_id_0> is the chair of Estonian Centre Party.,<extra_id_0> Jüri Ratas <extra_id_1>
+312,4013,2020,<extra_id_0> is the chair of Folketing.,<extra_id_0> Henrik Dam Kristensen <extra_id_1>
+313,4024,2020,<extra_id_0> is the chair of Danish People's Party.,<extra_id_0> Kristian Thulesen Dahl <extra_id_1>
+314,4033,2020,<extra_id_0> is the chair of Club of Rome.,<extra_id_0> Mamphela Ramphele <extra_id_1>
+315,4042,2020,<extra_id_0> is the chair of Green Party.,<extra_id_0> Gustav Fridolin <extra_id_1>
+316,4051,2020,<extra_id_0> is the chair of International Bank for Reconstruction and Development.,<extra_id_0> David Malpass <extra_id_1>
+317,4062,2020,<extra_id_0> is the chair of Federation of Expellees.,<extra_id_0> Bernd Fabritius <extra_id_1>
+318,4073,2020,<extra_id_0> is the chair of European Bank for Reconstruction and Development.,<extra_id_0> Suma Chakrabarti <extra_id_1>
+319,4082,2020,<extra_id_0> is the chair of Assembly of Experts for Leadership.,<extra_id_0> Ahmad Jannati <extra_id_1>
+320,4088,2020,<extra_id_0> is the chair of Save Romania Union.,<extra_id_0> Ilie-Dan Barna <extra_id_1>
+321,4098,2020,<extra_id_0> is the chair of RCD Mallorca.,<extra_id_0> Andy Kohlberg <extra_id_1>
+322,4107,2020,<extra_id_0> is the chair of Brothers of Italy.,<extra_id_0> Giorgia Meloni <extra_id_1>
+323,4114,2020,<extra_id_0> is the chair of Financial Reporting Council.,<extra_id_0> Simon Dingemans <extra_id_1>
+324,4130,2020,<extra_id_0> is the chair of Supreme Court of Spain.,<extra_id_0> Carlos Lesmes <extra_id_1>
+325,4141,2020,<extra_id_0> is the chair of Y Combinator.,<extra_id_0> Geoff Ralston <extra_id_1>
+326,4147,2020,<extra_id_0> is the chair of Group Centrist Union.,<extra_id_0> Hervé Marseille <extra_id_1>
+327,4158,2020,<extra_id_0> is the chair of Kyoto University.,<extra_id_0> Juichi Yamagiwa <extra_id_1>
+328,4169,2020,<extra_id_0> is the chair of Economic Community of West African States.,<extra_id_0> Mahamadou Issoufou <extra_id_1>
+329,4180,2020,<extra_id_0> is the chair of Christian Social People's Party.,<extra_id_0> Frank Engel <extra_id_1>
+330,4186,2020,<extra_id_0> is the chair of Feminist Initiative.,<extra_id_0> Farida al-Abani <extra_id_1>
+331,4197,2020,<extra_id_0> is the chair of Chamber of Deputies.,<extra_id_0> Fernand Etgen <extra_id_1>
+332,4202,2020,<extra_id_0> is the chair of Democratic National Committee.,<extra_id_0> Thomas Perez <extra_id_1>
+333,4213,2020,<extra_id_0> is the chair of Financial Stability Board.,<extra_id_0> Mark Carney <extra_id_1>
+334,4224,2020,<extra_id_0> is the chair of Landtag of Bavaria.,<extra_id_0> Ilse Aigner <extra_id_1>
+335,4230,2020,<extra_id_0> is the chair of DENK.,<extra_id_0> Tunahan Kuzu <extra_id_1>
+336,4243,2020,<extra_id_0> is the chair of Assemblea Nacional Catalana.,<extra_id_0> Elisenda Paluzie <extra_id_1>
+337,4245,2020,<extra_id_0> is the chair of Yamina.,<extra_id_0> Naftali Bennett <extra_id_1>
+338,4254,2020,<extra_id_0> is the chair of Ministry of Economy and Finance.,<extra_id_0> Kim Dong-yeon <extra_id_1>
+339,4265,2020,<extra_id_0> is the chair of Toulouse FC.,<extra_id_0> Damien Comolli <extra_id_1>
+340,4276,2020,<extra_id_0> is the chair of Associated British Foods.,<extra_id_0> Michael McLintock <extra_id_1>
+341,4287,2020,<extra_id_0> is the chair of Lega Lombarda.,<extra_id_0> Giancarlo Giorgetti <extra_id_1>
+342,4297,2020,<extra_id_0> is the chair of Protezione Civile.,<extra_id_0> Angelo Borrelli <extra_id_1>
+343,4298,2020,<extra_id_0> is the chair of Global Travel Taskforce.,<extra_id_0> Grant Shapps <extra_id_1>
+344,4314,2020,<extra_id_0> is the chair of European Movement International.,<extra_id_0> Jo Leinen <extra_id_1>
+345,4325,2020,<extra_id_0> is the chair of Roman Catholic Archdiocese of Kingston.,<extra_id_0> Michael Mulhall <extra_id_1>
+346,4336,2020,<extra_id_0> is the chair of Alliance of Liberals and Democrats for Europe Party.,<extra_id_0> Hans van Baalen <extra_id_1>
+347,4346,2020,"<extra_id_0> is the chair of Ministry of Culture, Sports and Tourism.",<extra_id_0> Do Jong-hwan <extra_id_1>
+348,4357,2020,<extra_id_0> is the chair of Òmnium Cultural.,<extra_id_0> Jordi Cuixart i Navarro <extra_id_1>
+349,4368,2020,<extra_id_0> is the chair of National Society of Film Critics.,<extra_id_0> Justin Chang <extra_id_1>
+350,4374,2020,<extra_id_0> is the chair of Committee for the Defence of Democracy.,<extra_id_0> Krzysztof Łoziński <extra_id_1>
+351,4385,2020,<extra_id_0> is the chair of Ministry of Internal Affairs of Ukraine.,<extra_id_0> Arsen Avakov <extra_id_1>
+352,4393,2020,<extra_id_0> is the chair of The Physiological Society.,<extra_id_0> David A. Eisner <extra_id_1>
+353,4404,2020,<extra_id_0> is the chair of Atlantik-Brücke.,<extra_id_0> Sigmar Gabriel <extra_id_1>
+354,4407,2020,<extra_id_0> is the chair of Democratic Party for the People.,<extra_id_0> Yūichirō Tamaki <extra_id_1>
+355,4412,2020,<extra_id_0> is the chair of Ministry of Health and Welfare.,<extra_id_0> Park Neung-hoo <extra_id_1>
+356,4422,2020,<extra_id_0> is the chair of Barcelona metropolitan area.,<extra_id_0> Ada Colau <extra_id_1>
+357,4425,2020,<extra_id_0> is the chair of Ministry of Ecology and Environment.,<extra_id_0> Huang Runqiu <extra_id_1>
+358,4440,2020,<extra_id_0> is the chair of Progressive Party of Maldives.,<extra_id_0> Abdulla Yameen <extra_id_1>
+359,4451,2020,<extra_id_0> is the chair of Saxon academy of arts.,<extra_id_0> Wilfried Krätzschmar <extra_id_1>
+360,4462,2020,<extra_id_0> is the chair of Drasi.,<extra_id_0> Theodoros Skylakakis <extra_id_1>
+361,4480,2020,<extra_id_0> is the chair of Andrew W. Mellon Foundation.,<extra_id_0> Elizabeth Alexander <extra_id_1>
+362,4495,2020,<extra_id_0> is the chair of CDU Baden-Württemberg.,<extra_id_0> Thomas Strobl <extra_id_1>
+363,4506,2020,"<extra_id_0> is the chair of Embassy of Ukraine, London.",<extra_id_0> Natalia Galibarenko <extra_id_1>
+364,4526,2020,"<extra_id_0> is the chair of Embassy of Ukraine, Ottawa.",<extra_id_0> Andriy Shevchenko <extra_id_1>
+365,4532,2020,<extra_id_0> is the chair of Network of the Presidents of the Supreme Judicial Courts of the European Union.,<extra_id_0> Priit Pikamäe <extra_id_1>
+366,4535,2020,<extra_id_0> is the chair of Ministry of Culture and Tourism of the People's Republic of China.,<extra_id_0> Luo Shugang <extra_id_1>
+367,4545,2020,<extra_id_0> is the chair of Verband der Reservisten der Deutschen Bundeswehr.,<extra_id_0> Patrick Sensburg <extra_id_1>
+368,4556,2020,<extra_id_0> is the chair of Société des amis du Louvre.,<extra_id_0> Louis-Antoine Prat <extra_id_1>
+369,4559,2020,<extra_id_0> is the chair of Libertés and Territories Group.,<extra_id_0> Philippe Vigier <extra_id_1>
+370,4567,2020,<extra_id_0> is the chair of Bordeaux Montaigne University.,<extra_id_0> Hélène Velasco-Graciet <extra_id_1>
+371,4578,2020,<extra_id_0> is the chair of Likud Central Committee.,<extra_id_0> Haim Katz <extra_id_1>
+372,4586,2020,Alexei Navalny is a member of the <extra_id_0>.,<extra_id_0> Russia of the Future <extra_id_1>
+373,4597,2020,Muhammadu Buhari is a member of the <extra_id_0>.,<extra_id_0> All Progressives Congress <extra_id_1>
+374,4608,2020,Rocky Anderson is a member of the <extra_id_0>.,<extra_id_0> Justice Party <extra_id_1>
+375,4619,2020,Kim Davis is a member of the <extra_id_0>.,<extra_id_0> Republican Party <extra_id_1>
+376,4630,2020,Moshe Feiglin is a member of the <extra_id_0>.,<extra_id_0> Zehut <extra_id_1>
+377,4641,2020,Sarath Fonseka is a member of the <extra_id_0>.,<extra_id_0> United National Front for Good Governance <extra_id_1>
+378,4652,2020,Bill Weld is a member of the <extra_id_0>.,<extra_id_0> Republican Party <extra_id_1>
+379,4686,2020,Omarosa Manigault Newman is a member of the <extra_id_0>.,<extra_id_0> Republican Party <extra_id_1>
+380,4697,2020,Dennis Hood is a member of the <extra_id_0>.,<extra_id_0> Liberal Party of Australia <extra_id_1>
+381,4707,2020,Marina Silva is a member of the <extra_id_0>.,<extra_id_0> Sustainability Network <extra_id_1>
+382,4718,2020,Richard Painter is a member of the <extra_id_0>.,<extra_id_0> Democratic Party <extra_id_1>
+383,4729,2020,Per Sandberg is a member of the <extra_id_0>.,<extra_id_0> Progress Party <extra_id_1>
+384,4740,2020,Svitlana Zalishchuk is a member of the <extra_id_0>.,<extra_id_0> Democratic Alliance <extra_id_1>
+385,4751,2020,Jim Justice is a member of the <extra_id_0>.,<extra_id_0> Republican Party <extra_id_1>
+386,4762,2020,Adonis Georgiades is a member of the <extra_id_0>.,<extra_id_0> New Democracy <extra_id_1>
+387,4773,2020,Jacques Boutault is a member of the <extra_id_0>.,<extra_id_0> Europe Ecology – The Greens <extra_id_1>
+388,4784,2020,Sam Gyimah is a member of the <extra_id_0>.,<extra_id_0> Liberal Democrats <extra_id_1>
+389,4795,2020,Roberts Zīle is a member of the <extra_id_0>.,<extra_id_0> National Alliance <extra_id_1>
+390,4806,2020,Benoît Hamon is a member of the <extra_id_0>.,<extra_id_0> Génération.s <extra_id_1>
+391,4817,2020,Sylvie Goulard is a member of the <extra_id_0>.,<extra_id_0> La République En Marche <extra_id_1>
+392,4828,2020,Craig Mackinlay is a member of the <extra_id_0>.,<extra_id_0> Conservative Party <extra_id_1>
+393,4858,2020,Mark Reckless is a member of the <extra_id_0>.,<extra_id_0> Abolish the Welsh Assembly Party <extra_id_1>
+394,4867,2020,Terry Mills is a member of the <extra_id_0>.,<extra_id_0> Territory Alliance <extra_id_1>
+395,4878,2020,Carlo Giovanardi is a member of the <extra_id_0>.,<extra_id_0> Identity and Action <extra_id_1>
+396,4886,2020,Frauke Petry is a member of the <extra_id_0>.,<extra_id_0> The Blue Party <extra_id_1>
+397,4897,2020,Kushboo is a member of the <extra_id_0>.,<extra_id_0> Bharatiya Janata Party <extra_id_1>
+398,4908,2020,Heidi Allen is a member of the <extra_id_0>.,<extra_id_0> Liberal Democrats <extra_id_1>
+399,4919,2020,Y. S. Jaganmohan Reddy is a member of the <extra_id_0>.,<extra_id_0> YSR Congress Party <extra_id_1>
+400,4928,2020,Abdalá Bucaram Ortiz is a member of the <extra_id_0>.,<extra_id_0> Fuerza Ecuador <extra_id_1>
+401,4934,2020,Carlo Calenda is a member of the <extra_id_0>.,<extra_id_0> Democratic Party <extra_id_1>
+402,4945,2020,Laurențiu Rebega is a member of the <extra_id_0>.,<extra_id_0> PRO Romania Social Liberal <extra_id_1>
+403,4956,2020,Steve Dickson is a member of the <extra_id_0>.,<extra_id_0> One Nation <extra_id_1>
+404,4976,2020,Gianni Alemanno is a member of the <extra_id_0>.,<extra_id_0> National Movement for Sovereignty <extra_id_1>
+405,4983,2020,Zury Ríos is a member of the <extra_id_0>.,<extra_id_0> Valor (political party) <extra_id_1>
+406,4994,2020,Tom O'Halleran is a member of the <extra_id_0>.,<extra_id_0> Democratic Party <extra_id_1>
+407,5005,2020,Gabriela Rivadeneira is a member of the <extra_id_0>.,<extra_id_0> Citizen Revolution <extra_id_1>
+408,5016,2020,Andrew Leung is a member of the <extra_id_0>.,<extra_id_0> Business and Professionals Alliance for Hong Kong <extra_id_1>
+409,5024,2020,Hazel Poa is a member of the <extra_id_0>.,<extra_id_0> Progress Singapore Party <extra_id_1>
+410,5042,2020,James Marape is a member of the <extra_id_0>.,<extra_id_0> Pangu Party <extra_id_1>
+411,5053,2020,Kristin Michelsen is a member of the <extra_id_0>.,<extra_id_0> New Self-Government <extra_id_1>
+412,5064,2020,Marta Andreasen is a member of the <extra_id_0>.,<extra_id_0> Conservative Party <extra_id_1>
+413,5075,2020,Aleksa Bečić is a member of the <extra_id_0>.,<extra_id_0> Democratic Montenegro <extra_id_1>
+414,5089,2020,Banri Kaieda is a member of the <extra_id_0>.,<extra_id_0> Constitutional Democratic Party of Japan <extra_id_1>
+415,5094,2020,Maszlee Malik is a member of the <extra_id_0>.,<extra_id_0> independent politician <extra_id_1>
+416,5105,2020,Uffe Elbæk is a member of the <extra_id_0>.,<extra_id_0> The Alternative <extra_id_1>
+417,5116,2020,Karen Casey is a member of the <extra_id_0>.,<extra_id_0> Nova Scotia Liberal Party <extra_id_1>
+418,5127,2020,Roberta Anastase is a member of the <extra_id_0>.,<extra_id_0> National Liberal Party <extra_id_1>
+419,5138,2020,Linda Collins-Smith is a member of the <extra_id_0>.,<extra_id_0> Republican Party <extra_id_1>
+420,5149,2020,Marios Matsakis is a member of the <extra_id_0>.,<extra_id_0> Democratic Party <extra_id_1>
+421,5159,2020,Yvan Benedetti is a member of the <extra_id_0>.,<extra_id_0> French nationalist party <extra_id_1>
+422,5170,2020,Gergely Karácsony is a member of the <extra_id_0>.,<extra_id_0> Dialogue for Hungary <extra_id_1>
+423,5181,2020,Miloud Chaabi is a member of the <extra_id_0>.,<extra_id_0> Environment and Sustainable Development Party <extra_id_1>
+424,5186,2020,Václav Klaus Jr. is a member of the <extra_id_0>.,<extra_id_0> Tricolour Citizens' Movement <extra_id_1>
+425,5197,2020,Antonio Razzi is a member of the <extra_id_0>.,<extra_id_0> Forza Italia (2013) <extra_id_1>
+426,5223,2020,Lluís Puig i Gordi is a member of the <extra_id_0>.,<extra_id_0> Catalan European Democratic Party <extra_id_1>
+427,5234,2020,Joachim Starbatty is a member of the <extra_id_0>.,<extra_id_0> Liberal Conservative Reformers <extra_id_1>
+428,5246,2020,John Finnie is a member of the <extra_id_0>.,<extra_id_0> Scottish Green Party <extra_id_1>
+429,5257,2020,Jaume Bartumeu is a member of the <extra_id_0>.,<extra_id_0> Social Democracy and Progress <extra_id_1>
+430,5264,2020,Kim Han-gil is a member of the <extra_id_0>.,<extra_id_0> People's Party <extra_id_1>
+431,5275,2020,Akram Hasson is a member of the <extra_id_0>.,<extra_id_0> Kulanu <extra_id_1>
+432,5286,2020,Park Byeong-seug is a member of the <extra_id_0>.,<extra_id_0> independent politician <extra_id_1>
+433,5297,2020,Aurore Bergé is a member of the <extra_id_0>.,<extra_id_0> La République En Marche <extra_id_1>
+434,5308,2020,Kamel Morjane is a member of the <extra_id_0>.,<extra_id_0> Tahya Tounes <extra_id_1>
+435,5319,2020,Sunil Babu Pant is a member of the <extra_id_0>.,<extra_id_0> Communist Party of Nepal (Unified Marxist–Leninist) <extra_id_1>
+436,5330,2020,Scott Andrews is a member of the <extra_id_0>.,<extra_id_0> independent politician <extra_id_1>
+437,5341,2020,Fabrizio Cicchitto is a member of the <extra_id_0>.,<extra_id_0> Popular Alternative <extra_id_1>
+438,5348,2020,Omar Balafrej is a member of the <extra_id_0>.,<extra_id_0> Unified Socialist Party <extra_id_1>
+439,5359,2020,Peter Pilz is a member of the <extra_id_0>.,<extra_id_0> NOW – Pilz List <extra_id_1>
+440,5378,2020,John Longworth is a member of the <extra_id_0>.,<extra_id_0> Conservative Party <extra_id_1>
+441,5385,2020,Janice Lee is a member of the <extra_id_0>.,<extra_id_0> Parti Rakyat Malaysia <extra_id_1>
+442,5396,2020,Hanna Jensen is a member of the <extra_id_0>.,<extra_id_0> Progress <extra_id_1>
+443,5407,2020,Viron Polydoras is a member of the <extra_id_0>.,<extra_id_0> Union for the Homeland and the People <extra_id_1>
+444,5418,2020,Hsu Hsin-ying is a member of the <extra_id_0>.,<extra_id_0> independent politician <extra_id_1>
+445,5429,2020,Ichita Yamamoto is a member of the <extra_id_0>.,<extra_id_0> independent politician <extra_id_1>
+446,5440,2020,John Darley is a member of the <extra_id_0>.,<extra_id_0> Advance SA <extra_id_1>
+447,5446,2020,Kawlo Iyun Pacidal is a member of the <extra_id_0>.,<extra_id_0> Taiwan Renewal Party <extra_id_1>
+448,5453,2020,Guillaume Rose is a member of the <extra_id_0>.,<extra_id_0> Horizon Monaco <extra_id_1>
+449,5464,2020,Ovidiu Silaghi is a member of the <extra_id_0>.,<extra_id_0> Alliance of Liberals and Democrats Party (Romania) <extra_id_1>
+450,5480,2020,Daniel Salaverry is a member of the <extra_id_0>.,<extra_id_0> Popular Force <extra_id_1>
+451,5491,2020,Ichirō Matsui is a member of the <extra_id_0>.,<extra_id_0> Osaka Restoration Association <extra_id_1>
+452,5502,2020,Dan Satterberg is a member of the <extra_id_0>.,<extra_id_0> Democratic Party <extra_id_1>
+453,5513,2020,Sonja Jógvansdóttir is a member of the <extra_id_0>.,<extra_id_0> Republic <extra_id_1>
+454,5533,2020,Jaume Alonso-Cuevillas is a member of the <extra_id_0>.,<extra_id_0> independent politician <extra_id_1>
+455,5547,2020,Olivia Grégoire is a member of the <extra_id_0>.,<extra_id_0> La République En Marche <extra_id_1>
+456,5558,2020,Rahşan Ecevit is a member of the <extra_id_0>.,<extra_id_0> Republican People's Party <extra_id_1>
+457,5569,2020,Àngels Martínez Castells is a member of the <extra_id_0>.,<extra_id_0> Som Alternativa <extra_id_1>
+458,5580,2020,Irene Rigau Oliver is a member of the <extra_id_0>.,<extra_id_0> Catalan European Democratic Party <extra_id_1>
+459,5591,2020,Gheorghe Flutur is a member of the <extra_id_0>.,<extra_id_0> National Liberal Party <extra_id_1>
+460,5602,2020,Josep Ramon Bosch i Codina is a member of the <extra_id_0>.,<extra_id_0> Democratic League <extra_id_1>
+461,5622,2020,Darius Bogdan Vâlcov is a member of the <extra_id_0>.,<extra_id_0> Social Democratic Party <extra_id_1>
+462,5643,2020,Dimitar Stoyanov is a member of the <extra_id_0>.,<extra_id_0> National-Democratic Party <extra_id_1>
+463,5654,2020,Eskil Brøndbo is a member of the <extra_id_0>.,<extra_id_0> Conservative Party of Norway <extra_id_1>
+464,5664,2020,Chen Fu-hai is a member of the <extra_id_0>.,<extra_id_0> independent politician <extra_id_1>
+465,5674,2020,Pierre Nantel is a member of the <extra_id_0>.,<extra_id_0> Green Party of Canada <extra_id_1>
+466,5685,2020,Miquel Sàmper Rodríguez is a member of the <extra_id_0>.,<extra_id_0> Catalan European Democratic Party <extra_id_1>
+467,5701,2020,Jiří Pospíšil is a member of the <extra_id_0>.,<extra_id_0> TOP 09 <extra_id_1>
+468,5712,2020,Luzmila Nicolalde is a member of the <extra_id_0>.,<extra_id_0> Social Christian Party <extra_id_1>
+469,5715,2020,Huang Jie is a member of the <extra_id_0>.,<extra_id_0> independent politician <extra_id_1>
+470,5726,2020,Abdul Hakeem Baloch is a member of the <extra_id_0>.,<extra_id_0> Pakistan Peoples Party <extra_id_1>
+471,5737,2020,Alexandra Arce is a member of the <extra_id_0>.,<extra_id_0> Citizen Revolution <extra_id_1>
+472,5748,2020,Pavlos Polakis is a member of the <extra_id_0>.,<extra_id_0> SYRIZA <extra_id_1>
+473,5759,2020,Chen Hsueh-sheng is a member of the <extra_id_0>.,<extra_id_0> Kuomintang <extra_id_1>
+474,5770,2020,Marius Nicoară is a member of the <extra_id_0>.,<extra_id_0> Alliance of Liberals and Democrats Party (Romania) <extra_id_1>
+475,5781,2020,Veera Ruoho is a member of the <extra_id_0>.,<extra_id_0> National Coalition Party <extra_id_1>
+476,5791,2020,Wilhelm von Gottberg is a member of the <extra_id_0>.,<extra_id_0> Alternative for Germany <extra_id_1>
+477,5802,2020,Dimitris Kremastinos is a member of the <extra_id_0>.,<extra_id_0> Democratic Alignment <extra_id_1>
+478,5823,2020,Giulio Gallera is a member of the <extra_id_0>.,<extra_id_0> Forza Italia (2013) <extra_id_1>
+479,5831,2020,Ivan David is a member of the <extra_id_0>.,<extra_id_0> Freedom and Direct Democracy <extra_id_1>
+480,5842,2020,María Teresa Sosa is a member of the <extra_id_0>.,<extra_id_0> Valor (political party) <extra_id_1>
+481,5853,2020,Catherine Osson is a member of the <extra_id_0>.,<extra_id_0> La République En Marche <extra_id_1>
+482,5869,2020,Zoran Stojković is a member of the <extra_id_0>.,<extra_id_0> independent politician <extra_id_1>
+483,5880,2020,Mircea Hava is a member of the <extra_id_0>.,<extra_id_0> National Liberal Party <extra_id_1>
+484,5891,2020,Nikolaos Michos is a member of the <extra_id_0>.,<extra_id_0> Popular Orthodox Rally <extra_id_1>
+485,5895,2020,Massimiliano Smeriglio is a member of the <extra_id_0>.,<extra_id_0> Democratic Party <extra_id_1>
+486,5904,2020,Yannick Kerlogot is a member of the <extra_id_0>.,<extra_id_0> La République En Marche <extra_id_1>
+487,5913,2020,Junya Ogawa is a member of the <extra_id_0>.,<extra_id_0> Constitutional Democratic Party of Japan <extra_id_1>
+488,5924,2020,Gerardo Buganza is a member of the <extra_id_0>.,<extra_id_0> Ecologist Green Party of Mexico <extra_id_1>
+489,5935,2020,Gheorghe Falcă is a member of the <extra_id_0>.,<extra_id_0> National Liberal Party <extra_id_1>
+490,5946,2020,Raffaele Baldassarre is a member of the <extra_id_0>.,<extra_id_0> Forza Italia (2013) <extra_id_1>
+491,5950,2020,Aurore Lalucq is a member of the <extra_id_0>.,<extra_id_0> Place publique <extra_id_1>
+492,5961,2020,Hitoshi Goto is a member of the <extra_id_0>.,<extra_id_0> independent politician <extra_id_1>
+493,5980,2020,Yariv Oppenheimer is a member of the <extra_id_0>.,<extra_id_0> Meretz <extra_id_1>
+494,5987,2020,Salima Yenbou is a member of the <extra_id_0>.,<extra_id_0> Independent Ecological Alliance <extra_id_1>
+495,5998,2020,Bernard Monot is a member of the <extra_id_0>.,<extra_id_0> France Arise <extra_id_1>
+496,6009,2020,Mihai Mohaci is a member of the <extra_id_0>.,<extra_id_0> PRO Romania Social Liberal <extra_id_1>
+497,6020,2020,Pernille Vermund is a member of the <extra_id_0>.,<extra_id_0> The New Right <extra_id_1>
+498,6031,2020,Josep Sánchez i Llibre is a member of the <extra_id_0>.,<extra_id_0> United to Advance <extra_id_1>
+499,6042,2020,Alma Marina Vitela is a member of the <extra_id_0>.,<extra_id_0> National Regeneration Movement <extra_id_1>
+500,6053,2020,Manuel García Corpus is a member of the <extra_id_0>.,<extra_id_0> National Regeneration Movement <extra_id_1>
+501,6064,2020,Jacques Le Nay is a member of the <extra_id_0>.,<extra_id_0> Union of Democrats and Independents <extra_id_1>
+502,6075,2020,Nicolas Florian is a member of the <extra_id_0>.,<extra_id_0> The Republicans <extra_id_1>
+503,6086,2020,José Évrard is a member of the <extra_id_0>.,<extra_id_0> The Patriots <extra_id_1>
+504,6097,2020,Joan Mesquida Ferrando is a member of the <extra_id_0>.,<extra_id_0> Ciudadanos <extra_id_1>
+505,6108,2020,Brigitte Boccone-Pagès is a member of the <extra_id_0>.,<extra_id_0> Priorité Monaco <extra_id_1>
+506,6114,2020,Elon Musk works for <extra_id_0>.,<extra_id_0> The Boring Company <extra_id_1>
+507,6132,2020,Nate Schierholtz works for <extra_id_0>.,<extra_id_0> Detroit Tigers <extra_id_1>
+508,6143,2020,P. J. Fleck works for <extra_id_0>.,<extra_id_0> Minnesota Golden Gophers football <extra_id_1>
+509,6157,2020,SethBling works for <extra_id_0>.,<extra_id_0> self-employment <extra_id_1>
+510,6168,2020,Jonathan Haidt works for <extra_id_0>.,<extra_id_0> New York University <extra_id_1>
+511,6179,2020,Giuseppe Veltri works for <extra_id_0>.,<extra_id_0> University of Hamburg <extra_id_1>
+512,6190,2020,Yannick Nézet-Séguin works for <extra_id_0>.,<extra_id_0> Philadelphia Orchestra <extra_id_1>
+513,6201,2020,Didier Fassin works for <extra_id_0>.,<extra_id_0> Collège de France <extra_id_1>
+514,6212,2020,Peter T. Gallagher works for <extra_id_0>.,<extra_id_0> Dublin Institute for Advanced Studies <extra_id_1>
+515,6219,2020,Roberto Cazzolla Gatti works for <extra_id_0>.,<extra_id_0> Purdue University <extra_id_1>
+516,6230,2020,John Carmack works for <extra_id_0>.,"<extra_id_0> Oculus VR, LLC <extra_id_1>"
+517,6240,2020,Regina E. Dugan works for <extra_id_0>.,"<extra_id_0> Facebook, Inc. <extra_id_1>"
+518,6251,2020,Pedro J. Ramírez works for <extra_id_0>.,<extra_id_0> El Español <extra_id_1>
+519,6272,2020,Matthew DeGennaro works for <extra_id_0>.,<extra_id_0> Florida International University <extra_id_1>
+520,6299,2020,Bjarne Stroustrup works for <extra_id_0>.,<extra_id_0> Morgan Stanley <extra_id_1>
+521,6310,2020,Shaf Baloch Keshavjee works for <extra_id_0>.,<extra_id_0> University Health Network <extra_id_1>
+522,6330,2020,Catherine Guillouard works for <extra_id_0>.,<extra_id_0> RATP <extra_id_1>
+523,6341,2020,Andrea Dutton works for <extra_id_0>.,<extra_id_0> University of Florida <extra_id_1>
+524,6352,2020,Heather Cox Richardson works for <extra_id_0>.,<extra_id_0> Boston College <extra_id_1>
+525,6363,2020,Thomas Hutzschenreuter works for <extra_id_0>.,<extra_id_0> Technical University of Munich <extra_id_1>
+526,6374,2020,Zeynep Tüfekçi works for <extra_id_0>.,<extra_id_0> University of North Carolina at Chapel Hill <extra_id_1>
+527,6385,2020,Antony John Williams works for <extra_id_0>.,<extra_id_0> United States Environmental Protection Agency <extra_id_1>
+528,6396,2020,Julian Huppert works for <extra_id_0>.,<extra_id_0> Jesus College <extra_id_1>
+529,6403,2020,Harald G. L. Schwefel works for <extra_id_0>.,<extra_id_0> Max Planck Institute for the Science of Light <extra_id_1>
+530,6414,2020,Giliano Wijnaldum works for <extra_id_0>.,<extra_id_0> FC Groningen <extra_id_1>
+531,6425,2020,Tim Bray works for <extra_id_0>.,<extra_id_0> Amazon <extra_id_1>
+532,6436,2020,Clive Ballard works for <extra_id_0>.,<extra_id_0> University of Exeter <extra_id_1>
+533,6454,2020,Marcia Bunge works for <extra_id_0>.,<extra_id_0> Gustavus Adolphus College <extra_id_1>
+534,6465,2020,Patrick McGrath works for <extra_id_0>.,<extra_id_0> Dalhousie University <extra_id_1>
+535,6472,2020,Calvin Sun works for <extra_id_0>.,<extra_id_0> NYC Health + Hospitals <extra_id_1>
+536,6483,2020,Willem B. Drees works for <extra_id_0>.,<extra_id_0> Tilburg University <extra_id_1>
+537,6497,2020,Linda Bauld works for <extra_id_0>.,<extra_id_0> University of Edinburgh <extra_id_1>
+538,6508,2020,Tony Renda works for <extra_id_0>.,<extra_id_0> Cincinnati Reds <extra_id_1>
+539,6516,2020,Clara Ponsatí i Obiols works for <extra_id_0>.,<extra_id_0> University of St Andrews <extra_id_1>
+540,6527,2020,Alan J. Russell works for <extra_id_0>.,<extra_id_0> Carnegie Mellon University <extra_id_1>
+541,6535,2020,Katie Walsh works for <extra_id_0>.,<extra_id_0> America First Policies <extra_id_1>
+542,6546,2020,Jane Willenbring works for <extra_id_0>.,<extra_id_0> Scripps Institution of Oceanography <extra_id_1>
+543,6557,2020,Nabela Qoser works for <extra_id_0>.,<extra_id_0> Radio Television Hong Kong <extra_id_1>
+544,6568,2020,Bronwyn Harch works for <extra_id_0>.,<extra_id_0> The University of Queensland <extra_id_1>
+545,6588,2020,Ruffin McNeill works for <extra_id_0>.,<extra_id_0> Virginia Cavaliers football <extra_id_1>
+546,6599,2020,Michael Arthur works for <extra_id_0>.,<extra_id_0> University College London <extra_id_1>
+547,6619,2020,Liu Na works for <extra_id_0>.,<extra_id_0> Max Planck Institute for Intelligent Systems <extra_id_1>
+548,6630,2020,Nick Birbilis works for <extra_id_0>.,<extra_id_0> Australian National University <extra_id_1>
+549,6641,2020,John S. Chen works for <extra_id_0>.,<extra_id_0> BlackBerry <extra_id_1>
+550,6649,2020,Bernadette McSherry works for <extra_id_0>.,<extra_id_0> Monash University <extra_id_1>
+551,6660,2020,Patricia Harris works for <extra_id_0>.,<extra_id_0> Bloomberg Philanthropies <extra_id_1>
+552,6681,2020,Antonio H. Castro Neto works for <extra_id_0>.,<extra_id_0> National University of Singapore <extra_id_1>
+553,6692,2020,Ed H. Chi works for <extra_id_0>.,<extra_id_0> Google <extra_id_1>
+554,6702,2020,Katherine Maher works for <extra_id_0>.,<extra_id_0> Wikimedia Foundation <extra_id_1>
+555,6713,2020,Erin Lavik works for <extra_id_0>.,"<extra_id_0> University of Maryland, Baltimore County <extra_id_1>"
+556,6721,2020,Elaine Saunders works for <extra_id_0>.,<extra_id_0> Australian National Fabrication Facility <extra_id_1>
+557,6732,2020,Sabine Hossenfelder works for <extra_id_0>.,<extra_id_0> Frankfurt Institute for Advanced Studies <extra_id_1>
+558,6743,2020,Tabetha S. Boyajian works for <extra_id_0>.,<extra_id_0> Yale University <extra_id_1>
+559,6753,2020,Sebastian Deffner works for <extra_id_0>.,"<extra_id_0> University of Maryland, Baltimore County <extra_id_1>"
+560,6764,2020,Sarah Martins Da Silva works for <extra_id_0>.,<extra_id_0> NHS Tayside <extra_id_1>
+561,6775,2020,Rachel Aldred works for <extra_id_0>.,<extra_id_0> University of Westminster <extra_id_1>
+562,6786,2020,Katherine Mack works for <extra_id_0>.,<extra_id_0> North Carolina State University <extra_id_1>
+563,6797,2020,Dino Meneghin works for <extra_id_0>.,<extra_id_0> FIBA Europe <extra_id_1>
+564,6808,2020,Martin Bean works for <extra_id_0>.,<extra_id_0> RMIT University <extra_id_1>
+565,6819,2020,Jean d'Aspremont works for <extra_id_0>.,<extra_id_0> Sciences Po <extra_id_1>
+566,6830,2020,Philippe Verdier works for <extra_id_0>.,<extra_id_0> RT France <extra_id_1>
+567,6840,2020,Abraham Nitzan works for <extra_id_0>.,<extra_id_0> University of Pennsylvania <extra_id_1>
+568,6854,2020,Max Hattler works for <extra_id_0>.,<extra_id_0> City University of Hong Kong <extra_id_1>
+569,6865,2020,Emanuela Del Gado works for <extra_id_0>.,<extra_id_0> Georgetown University <extra_id_1>
+570,6876,2020,Peter Vorderer works for <extra_id_0>.,<extra_id_0> University of Mannheim <extra_id_1>
+571,6887,2020,Rémi Mathis works for <extra_id_0>.,<extra_id_0> Bibliothèque nationale de France <extra_id_1>
+572,6898,2020,John Alroy works for <extra_id_0>.,<extra_id_0> Macquarie University <extra_id_1>
+573,6911,2020,Ron Jans works for <extra_id_0>.,<extra_id_0> FC Cincinnati <extra_id_1>
+574,6927,2020,Jeff Berding works for <extra_id_0>.,<extra_id_0> FC Cincinnati <extra_id_1>
+575,6936,2020,Laurence Boone works for <extra_id_0>.,<extra_id_0> Organisation for Economic Cooperation and Development <extra_id_1>
+576,6947,2020,Corrie Moreau works for <extra_id_0>.,<extra_id_0> Cornell University <extra_id_1>
+577,6958,2020,Daniel J. Myers works for <extra_id_0>.,<extra_id_0> American University <extra_id_1>
+578,6968,2020,Jawad Fares works for <extra_id_0>.,<extra_id_0> Lebanese University <extra_id_1>
+579,6975,2020,Vincent Chauvet works for <extra_id_0>.,<extra_id_0> Autun <extra_id_1>
+580,6984,2020,Lauren Cole Sallan works for <extra_id_0>.,<extra_id_0> University of Pennsylvania <extra_id_1>
+581,6991,2020,Nerida G. Wilson works for <extra_id_0>.,<extra_id_0> Western Australian Museum <extra_id_1>
+582,7002,2020,Samy Azer works for <extra_id_0>.,<extra_id_0> King Saud University <extra_id_1>
+583,7013,2020,Michael Atwood Mason works for <extra_id_0>.,<extra_id_0> Smithsonian Center for Folklife and Cultural Heritage <extra_id_1>
+584,7040,2020,Rein Ahas works for <extra_id_0>.,<extra_id_0> Ghent University <extra_id_1>
+585,7051,2020,Erica Chenoweth works for <extra_id_0>.,<extra_id_0> Harvard University <extra_id_1>
+586,7062,2020,Kristin De Troyer works for <extra_id_0>.,<extra_id_0> St. Katherine College <extra_id_1>
+587,7073,2020,Tory Bruno works for <extra_id_0>.,<extra_id_0> United Launch Alliance <extra_id_1>
+588,7080,2020,Carmen Lamela Díaz works for <extra_id_0>.,<extra_id_0> Supreme Court of Spain <extra_id_1>
+589,7092,2020,Delphine Ernotte works for <extra_id_0>.,<extra_id_0> France Télévisions <extra_id_1>
+590,7103,2020,Alain Fuchs works for <extra_id_0>.,<extra_id_0> PSL Research University <extra_id_1>
+591,7114,2020,Deborah Orr works for <extra_id_0>.,<extra_id_0> i <extra_id_1>
+592,7125,2020,Cathy L. Lanier works for <extra_id_0>.,<extra_id_0> National Football League <extra_id_1>
+593,7136,2020,Nathalie Levy works for <extra_id_0>.,<extra_id_0> Europe 1 <extra_id_1>
+594,7147,2020,Serena A. Corr works for <extra_id_0>.,<extra_id_0> University of Glasgow <extra_id_1>
+595,7155,2020,Sarah T. Roberts works for <extra_id_0>.,<extra_id_0> UCLA Graduate School of Education and Information Studies <extra_id_1>
+596,7166,2020,Artur Domosławski works for <extra_id_0>.,<extra_id_0> Polityka <extra_id_1>
+597,7183,2020,Laura Serrant works for <extra_id_0>.,<extra_id_0> Manchester Metropolitan University <extra_id_1>
+598,7194,2020,Thomas Reiter works for <extra_id_0>.,<extra_id_0> European Space Agency <extra_id_1>
+599,7202,2020,Hannu Manninen works for <extra_id_0>.,<extra_id_0> Finnair <extra_id_1>
+600,7220,2020,Whitney Jensen works for <extra_id_0>.,<extra_id_0> Norwegian National Opera and Ballet <extra_id_1>
+601,7234,2020,Giel Beelen works for <extra_id_0>.,<extra_id_0> Radio Veronica <extra_id_1>
+602,7245,2020,Darcy Padilla works for <extra_id_0>.,<extra_id_0> Agence Vu <extra_id_1>
+603,7256,2020,Jerome Guillen works for <extra_id_0>.,"<extra_id_0> Tesla, Inc. <extra_id_1>"
+604,7265,2020,Nadarajah Asokan works for <extra_id_0>.,<extra_id_0> Aalto University <extra_id_1>
+605,7276,2020,Matt Ouimet works for <extra_id_0>.,<extra_id_0> Cedar Fair <extra_id_1>
+606,7287,2020,Eric Jagielo works for <extra_id_0>.,<extra_id_0> Cincinnati Reds <extra_id_1>
+607,7294,2020,Phiwa Nkambule works for <extra_id_0>.,<extra_id_0> Riovic <extra_id_1>
+608,7300,2020,Tania Bubela works for <extra_id_0>.,<extra_id_0> Simon Fraser University <extra_id_1>
+609,7307,2020,Jane Elliott works for <extra_id_0>.,<extra_id_0> University of Exeter <extra_id_1>
+610,7318,2020,Sabine Carey works for <extra_id_0>.,<extra_id_0> University of Mannheim <extra_id_1>
+611,7328,2020,Norbert Perrimon works for <extra_id_0>.,<extra_id_0> Harvard University <extra_id_1>
+612,7338,2020,Benjamin Fung works for <extra_id_0>.,<extra_id_0> McGill University <extra_id_1>
+613,7349,2020,Li Zhaoping works for <extra_id_0>.,<extra_id_0> Max Planck Institute for Biological Cybernetics <extra_id_1>
+614,7367,2020,Dogan Corneille works for <extra_id_0>.,<extra_id_0> VV Noordwijk <extra_id_1>
+615,7378,2020,Doug Shane works for <extra_id_0>.,<extra_id_0> The Spaceship Company <extra_id_1>
+616,7389,2020,Alex Mullen works for <extra_id_0>.,<extra_id_0> All Souls College <extra_id_1>
+617,7404,2020,Anna Keay works for <extra_id_0>.,<extra_id_0> Landmark Trust <extra_id_1>
+618,7413,2020,Lisa Cunningham works for <extra_id_0>.,<extra_id_0> National Institute on Deafness and Other Communication Disorders <extra_id_1>
+619,7424,2020,José Luis Ortiz Moreno works for <extra_id_0>.,<extra_id_0> Champalimaud Foundation <extra_id_1>
+620,7435,2020,Patricia Berrahou Phillippy works for <extra_id_0>.,<extra_id_0> Kingston University <extra_id_1>
+621,7443,2020,Kathryn Mann works for <extra_id_0>.,<extra_id_0> Cornell University <extra_id_1>
+622,7454,2020,Philip W. Kantoff works for <extra_id_0>.,<extra_id_0> Memorial Sloan Kettering Cancer Center <extra_id_1>
+623,7465,2020,Gitta Kutyniok works for <extra_id_0>.,<extra_id_0> Technical University of Berlin <extra_id_1>
+624,7471,2020,Julia Ebner works for <extra_id_0>.,<extra_id_0> Institute for Strategic Dialogue <extra_id_1>
+625,7482,2020,Sabine Schmidtke works for <extra_id_0>.,<extra_id_0> Institute for Advanced Study <extra_id_1>
+626,7493,2020,Anand Lal Shimpi works for <extra_id_0>.,<extra_id_0> Apple Inc. <extra_id_1>
+627,7496,2020,Louise Gullifer works for <extra_id_0>.,<extra_id_0> University of Cambridge <extra_id_1>
+628,7507,2020,Robyn Denholm works for <extra_id_0>.,<extra_id_0> Telstra <extra_id_1>
+629,7526,2020,Stephen Powis works for <extra_id_0>.,<extra_id_0> National Health Service (England) <extra_id_1>
+630,7537,2020,Motohiro Yogo works for <extra_id_0>.,<extra_id_0> Princeton University <extra_id_1>
+631,7541,2020,Katie Miller works for <extra_id_0>.,<extra_id_0> Office of the Vice President of the United States <extra_id_1>
+632,7552,2020,Sylvia Richardson works for <extra_id_0>.,<extra_id_0> University of Cambridge <extra_id_1>
+633,7563,2020,Patrick O'Shea works for <extra_id_0>.,<extra_id_0> University College Cork <extra_id_1>
+634,7573,2020,Amarnath Amarasingam works for <extra_id_0>.,<extra_id_0> Wilfrid Laurier University <extra_id_1>
+635,7584,2020,Adam Shoemaker works for <extra_id_0>.,<extra_id_0> Southern Cross University <extra_id_1>
+636,7595,2020,Leonid Sazanov works for <extra_id_0>.,<extra_id_0> Institute of Science and Technology <extra_id_1>
+637,7605,2020,James Allsop works for <extra_id_0>.,<extra_id_0> The University of Queensland <extra_id_1>
+638,7616,2020,Elizabeth A. Fenn works for <extra_id_0>.,<extra_id_0> University of Colorado Boulder <extra_id_1>
+639,7627,2020,Marina Granovskaia works for <extra_id_0>.,<extra_id_0> Chelsea F.C. <extra_id_1>
+640,7635,2020,Rhana Devenport works for <extra_id_0>.,<extra_id_0> Art Gallery of South Australia <extra_id_1>
+641,7642,2020,Peggy Johnson works for <extra_id_0>.,<extra_id_0> Microsoft Corporation <extra_id_1>
+642,7653,2020,Ieke Moerdijk works for <extra_id_0>.,<extra_id_0> Radboud University Nijmegen <extra_id_1>
+643,7664,2020,Liv Inger Somby works for <extra_id_0>.,<extra_id_0> Sámi University of Applied Sciences <extra_id_1>
+644,7674,2020,Michael Fleischhacker works for <extra_id_0>.,<extra_id_0> Servus TV <extra_id_1>
+645,7704,2020,Belinda Johnson works for <extra_id_0>.,<extra_id_0> Airbnb <extra_id_1>
+646,7720,2020,Gilles Pélisson works for <extra_id_0>.,<extra_id_0> TF1 Group <extra_id_1>
+647,7731,2020,Angela Casini works for <extra_id_0>.,<extra_id_0> Cardiff University <extra_id_1>
+648,7739,2020,Ilya Sutskever works for <extra_id_0>.,<extra_id_0> OpenAI <extra_id_1>
+649,7750,2020,Danny O'Brien works for <extra_id_0>.,<extra_id_0> Electronic Frontier Foundation <extra_id_1>
+650,7760,2020,Matthew A. Waller works for <extra_id_0>.,<extra_id_0> Sam M. Walton College of Business <extra_id_1>
+651,7762,2020,Jari Jones works for <extra_id_0>.,<extra_id_0> Calvin Klein Inc <extra_id_1>
+652,7770,2020,Hanna Pickard works for <extra_id_0>.,<extra_id_0> University of Birmingham <extra_id_1>
+653,7781,2020,Merrilyn Goos works for <extra_id_0>.,<extra_id_0> University of Limerick <extra_id_1>
+654,7791,2020,Allison Randal works for <extra_id_0>.,<extra_id_0> SUSE <extra_id_1>
+655,7802,2020,Ben Agathangelou works for <extra_id_0>.,<extra_id_0> Haas F1 Team <extra_id_1>
+656,7813,2020,Andrew Rambaut works for <extra_id_0>.,<extra_id_0> University of Edinburgh <extra_id_1>
+657,7831,2020,Tony Heinz works for <extra_id_0>.,<extra_id_0> Stanford University <extra_id_1>
+658,7842,2020,Cameron Neylon works for <extra_id_0>.,<extra_id_0> Curtin University <extra_id_1>
+659,7853,2020,Jennifer Westacott works for <extra_id_0>.,<extra_id_0> Business Council of Australia <extra_id_1>
+660,7864,2020,Kate Calder works for <extra_id_0>.,<extra_id_0> University of Texas at Austin <extra_id_1>
+661,7875,2020,Peter J. Wagner works for <extra_id_0>.,<extra_id_0> University of Nebraska–Lincoln <extra_id_1>
+662,7895,2020,Natasha Bertrand works for <extra_id_0>.,<extra_id_0> The Atlantic <extra_id_1>
+663,7904,2020,Jeff Hammerbacher works for <extra_id_0>.,<extra_id_0> Medical University of South Carolina <extra_id_1>
+664,7915,2020,Lili Hinstin works for <extra_id_0>.,<extra_id_0> Locarno Film Festival <extra_id_1>
+665,7926,2020,Barbara J. Anderson works for <extra_id_0>.,<extra_id_0> Manaaki Whenua – Landcare Research <extra_id_1>
+666,7937,2020,Frédéric Mion works for <extra_id_0>.,<extra_id_0> Fondation Nationale des Sciences Politiques <extra_id_1>
+667,7953,2020,Karin Baur works for <extra_id_0>.,<extra_id_0> University of Graz <extra_id_1>
+668,7966,2020,Thomas Devaney works for <extra_id_0>.,<extra_id_0> Haverford College <extra_id_1>
+669,7977,2020,DaiWai Olson works for <extra_id_0>.,<extra_id_0> University of Texas at Dallas <extra_id_1>
+670,7993,2020,Rosa Visiedo Claverol works for <extra_id_0>.,<extra_id_0> CEU San Pablo University <extra_id_1>
+671,8004,2020,Andreas Küttel works for <extra_id_0>.,<extra_id_0> University of Southern Denmark <extra_id_1>
+672,8015,2020,Jina Osothsilp works for <extra_id_0>.,<extra_id_0> GDH 559 <extra_id_1>
+673,8026,2020,Michael Burton works for <extra_id_0>.,<extra_id_0> University of York <extra_id_1>
+674,8037,2020,Kristen L. Knutson works for <extra_id_0>.,<extra_id_0> Northwestern University <extra_id_1>
+675,8048,2020,John Giannandrea works for <extra_id_0>.,<extra_id_0> Apple Inc. <extra_id_1>
+676,8059,2020,Jennifer Bendery works for <extra_id_0>.,<extra_id_0> HuffPost <extra_id_1>
+677,8070,2020,Stephanie Stebich works for <extra_id_0>.,<extra_id_0> Smithsonian American Art Museum <extra_id_1>
+678,8083,2020,Johan Lundström works for <extra_id_0>.,<extra_id_0> Stockholm University <extra_id_1>
+679,8094,2020,Cecilie Redisch Kvamme works for <extra_id_0>.,<extra_id_0> IL Sandviken <extra_id_1>
+680,8105,2020,James Broach works for <extra_id_0>.,<extra_id_0> Penn State Milton S. Hershey Medical Center <extra_id_1>
+681,8114,2020,Valerie Hackl works for <extra_id_0>.,<extra_id_0> Austro Control <extra_id_1>
+682,8122,2020,Todd Landman works for <extra_id_0>.,<extra_id_0> University of Nottingham <extra_id_1>
+683,8132,2020,Brian M. Rosenthal works for <extra_id_0>.,<extra_id_0> The New York Times <extra_id_1>
+684,8143,2020,<extra_id_0> is the head of the government of France.,<extra_id_0> Édouard Philippe <extra_id_1>
+685,8153,2020,<extra_id_0> is the head of the government of Portugal.,<extra_id_0> António Costa <extra_id_1>
+686,8164,2020,<extra_id_0> is the head of the government of Italy.,<extra_id_0> Giuseppe Conte <extra_id_1>
+687,8175,2020,<extra_id_0> is the head of the government of Spain.,<extra_id_0> Pedro Sánchez <extra_id_1>
+688,8186,2020,<extra_id_0> is the head of the government of Norway.,<extra_id_0> Erna Solberg <extra_id_1>
+689,8194,2020,<extra_id_0> is the head of the government of Pakistan.,<extra_id_0> Imran Khan <extra_id_1>
+690,8205,2020,<extra_id_0> is the head of the government of Moscow.,<extra_id_0> Sergey Sobyanin <extra_id_1>
+691,8216,2020,<extra_id_0> is the head of the government of Texas.,<extra_id_0> Greg Abbott <extra_id_1>
+692,8227,2020,<extra_id_0> is the head of the government of Rome.,<extra_id_0> Virginia Raggi <extra_id_1>
+693,8248,2020,<extra_id_0> is the head of the government of Catalonia.,<extra_id_0> Quim Torra <extra_id_1>
+694,8256,2020,<extra_id_0> is the head of the government of Taiwan.,<extra_id_0> Su Tseng-chang <extra_id_1>
+695,8263,2020,<extra_id_0> is the head of the government of Thailand.,<extra_id_0> Prayut Chan-ocha <extra_id_1>
+696,8274,2020,<extra_id_0> is the head of the government of Erlangen.,<extra_id_0> Florian Janik <extra_id_1>
+697,8285,2020,<extra_id_0> is the head of the government of Pittsburgh.,<extra_id_0> Bill Peduto <extra_id_1>
+698,8293,2020,<extra_id_0> is the head of the government of Slovenia.,<extra_id_0> Marjan Šarec <extra_id_1>
+699,8303,2020,<extra_id_0> is the head of the government of British Columbia.,<extra_id_0> John Horgan <extra_id_1>
+700,8314,2020,<extra_id_0> is the head of the government of Budapest.,<extra_id_0> Gergely Karácsony <extra_id_1>
+701,8324,2020,<extra_id_0> is the head of the government of Florida.,<extra_id_0> Ron DeSantis <extra_id_1>
+702,8329,2020,<extra_id_0> is the head of the government of Phoenix.,<extra_id_0> Kate Gallego <extra_id_1>
+703,8340,2020,<extra_id_0> is the head of the government of Stuttgart.,<extra_id_0> Fritz Kuhn <extra_id_1>
+704,8351,2020,<extra_id_0> is the head of the government of San Francisco.,<extra_id_0> London Breed <extra_id_1>
+705,8362,2020,<extra_id_0> is the head of the government of Istanbul.,<extra_id_0> Ekrem İmamoğlu <extra_id_1>
+706,8373,2020,<extra_id_0> is the head of the government of Manila.,<extra_id_0> Isko Moreno <extra_id_1>
+707,8384,2020,<extra_id_0> is the head of the government of Memphis.,<extra_id_0> Jim Strickland <extra_id_1>
+708,8391,2020,<extra_id_0> is the head of the government of Gujarat.,<extra_id_0> Vijay Rupani <extra_id_1>
+709,8396,2020,<extra_id_0> is the head of the government of Lebanon.,<extra_id_0> Saad Hariri <extra_id_1>
+710,8407,2020,<extra_id_0> is the head of the government of Austria.,<extra_id_0> Sebastian Kurz <extra_id_1>
+711,8418,2020,<extra_id_0> is the head of the government of St. Louis.,<extra_id_0> Lyda Krewson <extra_id_1>
+712,8429,2020,<extra_id_0> is the head of the government of Hawaii.,<extra_id_0> David Ige <extra_id_1>
+713,8439,2020,<extra_id_0> is the head of the government of Connecticut.,<extra_id_0> Ned Lamont <extra_id_1>
+714,8455,2020,<extra_id_0> is the head of the government of Milan.,<extra_id_0> Giuseppe Sala <extra_id_1>
+715,8466,2020,<extra_id_0> is the head of the government of Athens.,<extra_id_0> Kostas Bakoyannis <extra_id_1>
+716,8473,2020,<extra_id_0> is the head of the government of Mumbai.,<extra_id_0> Kishori Pednekar <extra_id_1>
+717,8484,2020,<extra_id_0> is the head of the government of Montreal.,<extra_id_0> Valérie Plante <extra_id_1>
+718,8495,2020,<extra_id_0> is the head of the government of Sarawak.,<extra_id_0> Abang Abdul Rahman Johari Abang Openg <extra_id_1>
+719,8499,2020,<extra_id_0> is the head of the government of Jakarta.,<extra_id_0> Anies Baswedan <extra_id_1>
+720,8503,2020,<extra_id_0> is the head of the government of Newfoundland and Labrador.,<extra_id_0> Andrew Furey <extra_id_1>
+721,8513,2020,<extra_id_0> is the head of the government of Tunisia.,<extra_id_0> Elyes Fakhfakh <extra_id_1>
+722,8520,2020,<extra_id_0> is the head of the government of Flanders.,<extra_id_0> Geert Bourgeois <extra_id_1>
+723,8531,2020,<extra_id_0> is the head of the government of Dresden.,<extra_id_0> Dirk Hilbert <extra_id_1>
+724,8541,2020,<extra_id_0> is the head of the government of Andorra.,<extra_id_0> Xavier Espot Zamora <extra_id_1>
+725,8552,2020,<extra_id_0> is the head of the government of Czech Republic.,<extra_id_0> Andrej Babiš <extra_id_1>
+726,8563,2020,<extra_id_0> is the head of the government of Lyon.,<extra_id_0> Gérard Collomb <extra_id_1>
+727,8574,2020,<extra_id_0> is the head of the government of Tainan.,<extra_id_0> Huang Wei-cher <extra_id_1>
+728,8585,2020,<extra_id_0> is the head of the government of Hoboken.,<extra_id_0> Ravinder Bhalla <extra_id_1>
+729,8589,2020,<extra_id_0> is the head of the government of Ivory Coast.,<extra_id_0> Amadou Gon Coulibaly <extra_id_1>
+730,8600,2020,<extra_id_0> is the head of the government of Prince Edward Island.,<extra_id_0> Wade MacLauchlan <extra_id_1>
+731,8611,2020,<extra_id_0> is the head of the government of Marseille.,<extra_id_0> Jean-Claude Gaudin <extra_id_1>
+732,8622,2020,<extra_id_0> is the head of the government of Cameroon.,<extra_id_0> Joseph Ngute <extra_id_1>
+733,8633,2020,<extra_id_0> is the head of the government of Bremen.,<extra_id_0> Andreas Bovenschulte <extra_id_1>
+734,8644,2020,<extra_id_0> is the head of the government of Manitoba.,<extra_id_0> Brian Pallister <extra_id_1>
+735,8655,2020,<extra_id_0> is the head of the government of Ithaca.,<extra_id_0> Svante Myrick <extra_id_1>
+736,8660,2020,<extra_id_0> is the head of the government of Alexandria.,<extra_id_0> Justin Wilson <extra_id_1>
+737,8669,2020,<extra_id_0> is the head of the government of Transnistria.,<extra_id_0> Alexander Wladimirowitsch Martynow <extra_id_1>
+738,8673,2020,<extra_id_0> is the head of the government of Tehran.,<extra_id_0> Mohammad Ali Afshani <extra_id_1>
+739,8677,2020,<extra_id_0> is the head of the government of Nagaland.,<extra_id_0> T. R. Zeliang <extra_id_1>
+740,8687,2020,<extra_id_0> is the head of the government of Portland.,<extra_id_0> Kate Snyder <extra_id_1>
+741,8698,2020,<extra_id_0> is the head of the government of Community of Valencia.,<extra_id_0> Ximo Puig <extra_id_1>
+742,8709,2020,<extra_id_0> is the head of the government of The Hague.,<extra_id_0> Johan Remkes <extra_id_1>
+743,8720,2020,<extra_id_0> is the head of the government of Batangas.,<extra_id_0> Hermilando Mandanas <extra_id_1>
+744,8726,2020,<extra_id_0> is the head of the government of United States Virgin Islands.,<extra_id_0> Albert Bryan Jr. <extra_id_1>
+745,8737,2020,<extra_id_0> is the head of the government of Campania.,<extra_id_0> Vincenzo De Luca <extra_id_1>
+746,8742,2020,<extra_id_0> is the head of the government of Charlottesville.,<extra_id_0> Nikuyah Walker <extra_id_1>
+747,8753,2020,<extra_id_0> is the head of the government of Navarre.,<extra_id_0> María Chivite <extra_id_1>
+748,8759,2020,<extra_id_0> is the head of the government of Togo.,<extra_id_0> Victoire Dogbé Tomegah <extra_id_1>
+749,8770,2020,<extra_id_0> is the head of the government of Okinawa Prefecture.,<extra_id_0> Denny Tamaki <extra_id_1>
+750,8781,2020,<extra_id_0> is the head of the government of Kinmen.,<extra_id_0> Yang Cheng-wu <extra_id_1>
+751,8799,2020,<extra_id_0> is the head of the government of British Virgin Islands.,<extra_id_0> Andrew Fahie <extra_id_1>
+752,8810,2020,<extra_id_0> is the head of the government of Guadeloupe.,<extra_id_0> Ary Chalus <extra_id_1>
+753,8813,2020,<extra_id_0> is the head of the government of Guinea-Bissau.,<extra_id_0> Aristides Gomes <extra_id_1>
+754,8824,2020,<extra_id_0> is the head of the government of Chișinău.,<extra_id_0> Ion Ceban <extra_id_1>
+755,8835,2020,<extra_id_0> is the head of the government of Emilia-Romagna.,<extra_id_0> Stefano Bonaccini <extra_id_1>
+756,8846,2020,<extra_id_0> is the head of the government of Western Cape.,<extra_id_0> Alan Winde <extra_id_1>
+757,8866,2020,<extra_id_0> is the head of the government of Saarbrücken.,<extra_id_0> Uwe Conradt <extra_id_1>
+758,8877,2020,<extra_id_0> is the head of the government of Baden-Württemberg.,<extra_id_0> Winfried Kretschmann <extra_id_1>
+759,8888,2020,<extra_id_0> is the head of the government of Niigata Prefecture.,<extra_id_0> Hideyo Hanazumi <extra_id_1>
+760,8899,2020,<extra_id_0> is the head of the government of Saarland.,<extra_id_0> Tobias Hans <extra_id_1>
+761,8910,2020,<extra_id_0> is the head of the government of Province of Buenos Aires.,<extra_id_0> Axel Kicillof <extra_id_1>
+762,8921,2020,<extra_id_0> is the head of the government of Brandenburg.,<extra_id_0> Dietmar Woidke <extra_id_1>
+763,8932,2020,<extra_id_0> is the head of the government of Varese.,<extra_id_0> Davide Galimberti <extra_id_1>
+764,8938,2020,<extra_id_0> is the head of the government of Federated States of Micronesia.,<extra_id_0> David W. Panuelo <extra_id_1>
+765,8949,2020,<extra_id_0> is the head of the government of Pescara.,<extra_id_0> Marco Alessandrini <extra_id_1>
+766,8960,2020,<extra_id_0> is the head of the government of Saratov Oblast.,<extra_id_0> Valery Radayev <extra_id_1>
+767,8970,2020,<extra_id_0> is the head of the government of Maori Party.,<extra_id_0> Debbie Ngarewa-Packer <extra_id_1>
+768,8981,2020,<extra_id_0> is the head of the government of Piedmont.,<extra_id_0> Sergio Chiamparino <extra_id_1>
+769,8992,2020,<extra_id_0> is the head of the government of Kyōto Prefecture.,<extra_id_0> Takatoshi Nishiwaki <extra_id_1>
+770,9003,2020,<extra_id_0> is the head of the government of Sahrawi Arab Democratic Republic.,<extra_id_0> Mohamed Wali Akeik <extra_id_1>
+771,9014,2020,<extra_id_0> is the head of the government of Chaco Province.,<extra_id_0> Jorge Capitanich <extra_id_1>
+772,9025,2020,<extra_id_0> is the head of the government of Le Mans.,<extra_id_0> Stéphane Le Foll <extra_id_1>
+773,9041,2020,<extra_id_0> is the head of the government of Changhua County.,<extra_id_0> Wang Huei-mei <extra_id_1>
+774,9052,2020,<extra_id_0> is the head of the government of Limpopo.,<extra_id_0> Stanley Mathabatha <extra_id_1>
+775,9063,2020,<extra_id_0> is the head of the government of Amsterdam.,<extra_id_0> Femke Halsema <extra_id_1>
+776,9074,2020,<extra_id_0> is the head of the government of Ilocos Norte.,<extra_id_0> Matthew Manotoc <extra_id_1>
+777,9083,2020,<extra_id_0> is the head of the government of Skåne County.,<extra_id_0> Anneli Hulthén <extra_id_1>
+778,9102,2020,<extra_id_0> is the head of the government of Hsinchu County.,<extra_id_0> Yang Wen-ke <extra_id_1>
+779,9113,2020,<extra_id_0> is the head of the government of Vesthimmerland Municipality.,<extra_id_0> Per Bach Laursen <extra_id_1>
+780,9124,2020,<extra_id_0> is the head of the government of Budapest District IV.,<extra_id_0> Tibor Déri <extra_id_1>
+781,9135,2020,<extra_id_0> is the head of the government of Municipality of Thessaloniki.,<extra_id_0> Yannis Boutaris <extra_id_1>
+782,9143,2020,<extra_id_0> is the head of the government of Montpellier Méditerranée Métropole.,<extra_id_0> Philippe Saurel <extra_id_1>
+783,9154,2020,<extra_id_0> is the head of the government of Budapest District I.,<extra_id_0> Márta V. Naszályi <extra_id_1>
+784,9164,2020,<extra_id_0> is the head of the government of Urban Community of Nantes Métropole.,<extra_id_0> Johanna Rolland <extra_id_1>
+785,9175,2020,<extra_id_0> is the head of the government of Sector 5.,<extra_id_0> Daniel Florea <extra_id_1>
+786,9186,2020,<extra_id_0> is the head coach of Philadelphia Eagles.,<extra_id_0> Doug Pederson <extra_id_1>
+787,9193,2020,<extra_id_0> is the head coach of Washington Football Team.,<extra_id_0> Ron Rivera <extra_id_1>
+788,9202,2020,<extra_id_0> is the head coach of Los Angeles Rams.,<extra_id_0> Sean McVay <extra_id_1>
+789,9207,2020,<extra_id_0> is the head coach of Lechia Gdańsk.,<extra_id_0> Piotr Stokowiec <extra_id_1>
+790,9218,2020,<extra_id_0> is the head coach of Ineos Grenadier.,<extra_id_0> Servais Knaven <extra_id_1>
+791,9228,2020,<extra_id_0> is the head coach of FC Barcelona.,<extra_id_0> Quique Setién <extra_id_1>
+792,9233,2020,<extra_id_0> is the head coach of Blackpool F.C..,<extra_id_0> Neil Critchley <extra_id_1>
+793,9237,2020,<extra_id_0> is the head coach of San Jose Earthquakes.,<extra_id_0> Matías Almeyda <extra_id_1>
+794,9242,2020,<extra_id_0> is the head coach of Bolton Wanderers F.C..,<extra_id_0> Keith Hill <extra_id_1>
+795,9247,2020,<extra_id_0> is the head coach of FK Budućnost Podgorica.,<extra_id_0> Mladen Milinković <extra_id_1>
+796,9251,2020,<extra_id_0> is the head coach of FC Schalke 04.,<extra_id_0> Manuel Baum <extra_id_1>
+797,9254,2020,<extra_id_0> is the head coach of Stoke City F.C..,<extra_id_0> Michael O'Neill <extra_id_1>
+798,9261,2020,<extra_id_0> is the head coach of Aston Villa F.C..,<extra_id_0> Dean Smith <extra_id_1>
+799,9266,2020,<extra_id_0> is the head coach of KF Tirana.,<extra_id_0> Ardian Mema <extra_id_1>
+800,9270,2020,<extra_id_0> is the head coach of Palermo FC.,<extra_id_0> Roberto Boscaglia <extra_id_1>
+801,9281,2020,<extra_id_0> is the head coach of SC Oțelul Galați.,<extra_id_0> Petre Grigoraș <extra_id_1>
+802,9286,2020,<extra_id_0> is the head coach of Malmö FF.,<extra_id_0> Jon Dahl Tomasson <extra_id_1>
+803,9292,2020,<extra_id_0> is the head coach of Spartak Moscow.,<extra_id_0> Domenico Tedesco <extra_id_1>
+804,9313,2020,<extra_id_0> is the head coach of Paris Saint-Germain.,<extra_id_0> Thomas Tuchel <extra_id_1>
+805,9324,2020,<extra_id_0> is the head coach of FC Petrolul Ploiești.,<extra_id_0> Costel Enache <extra_id_1>
+806,9333,2020,<extra_id_0> is the head coach of FC Steaua București.,<extra_id_0> Bogdan Vintilă <extra_id_1>
+807,9344,2020,<extra_id_0> is the head coach of Louisville Cardinals men's basketball.,<extra_id_0> Chris Mack <extra_id_1>
+808,9346,2020,<extra_id_0> is the head coach of NAC Breda.,<extra_id_0> Peter Hyballa <extra_id_1>
+809,9357,2020,<extra_id_0> is the head coach of Philadelphia Union.,<extra_id_0> Jim Curtin <extra_id_1>
+810,9364,2020,<extra_id_0> is the head coach of Örebro SK.,<extra_id_0> Axel Kjäll <extra_id_1>
+811,9374,2020,<extra_id_0> is the head coach of Molde FK.,<extra_id_0> Erling Moe <extra_id_1>
+812,9385,2020,<extra_id_0> is the head coach of Galatasaray S.K..,<extra_id_0> Fatih Terim <extra_id_1>
+813,9391,2020,<extra_id_0> is the head coach of Huddersfield Town A.F.C..,<extra_id_0> Danny Cowley <extra_id_1>
+814,9400,2020,<extra_id_0> is the head coach of Motherwell F.C..,<extra_id_0> Steve Robinson <extra_id_1>
+815,9405,2020,<extra_id_0> is the head coach of Flamurtari Vlorë.,<extra_id_0> Ilir Daja <extra_id_1>
+816,9414,2020,<extra_id_0> is the head coach of AFC Bournemouth.,<extra_id_0> Jason Tindall <extra_id_1>
+817,9418,2020,<extra_id_0> is the head coach of KF Skënderbeu Korçë.,<extra_id_0> Ilir Daja <extra_id_1>
+818,9429,2020,<extra_id_0> is the head coach of Hammarby Fotboll.,<extra_id_0> Stefan Billborn <extra_id_1>
+819,9432,2020,<extra_id_0> is the head coach of Apollon Smyrna F.C..,<extra_id_0> Giorgos Paraschos <extra_id_1>
+820,9439,2020,<extra_id_0> is the head coach of Morocco national football team.,<extra_id_0> Vahid Halilhodžić <extra_id_1>
+821,9447,2020,<extra_id_0> is the head coach of MŠK Žilina.,<extra_id_0> Pavol Staňo <extra_id_1>
+822,9451,2020,<extra_id_0> is the head coach of Frosinone Calcio.,<extra_id_0> Alessandro Nesta <extra_id_1>
+823,9455,2020,<extra_id_0> is the head coach of NK Olimpija Ljubljana.,<extra_id_0> Dino Skender <extra_id_1>
+824,9460,2020,<extra_id_0> is the head coach of Unione Sportiva Lecce.,<extra_id_0> Eugenio Corini <extra_id_1>
+825,9467,2020,<extra_id_0> is the head coach of Greenock Morton F.C..,<extra_id_0> Jonatan Johansson <extra_id_1>
+826,9472,2020,<extra_id_0> is the head coach of FK Vardar.,<extra_id_0> Aleksandar Vasoski <extra_id_1>
+827,9477,2020,<extra_id_0> is the head coach of AC Omonia.,<extra_id_0> Henning Berg <extra_id_1>
+828,9481,2020,<extra_id_0> is the head coach of FC Prishtina.,<extra_id_0> Zekirija Ramadan <extra_id_1>
+829,9486,2020,<extra_id_0> is the head coach of SC Bastia.,<extra_id_0> Mathieu Chabert <extra_id_1>
+830,9497,2020,<extra_id_0> is the head coach of Penn FC.,<extra_id_0> Raoul Voss <extra_id_1>
+831,9502,2020,<extra_id_0> is the head coach of KS Vllaznia Shkodër.,<extra_id_0> Hasan Lika <extra_id_1>
+832,9508,2020,<extra_id_0> is the head coach of HŠK Zrinjski Mostar.,<extra_id_0> Mladen Žižović <extra_id_1>
+833,9516,2020,<extra_id_0> is the head coach of Helsingin Jalkapalloklubi.,<extra_id_0> Toni Koskela <extra_id_1>
+834,9520,2020,<extra_id_0> is the head coach of VfL Bochum.,<extra_id_0> Robin Dutt <extra_id_1>
+835,9531,2020,<extra_id_0> is the head coach of Gap Connah's Quay F.C..,<extra_id_0> Andy Morrison <extra_id_1>
+836,9533,2020,<extra_id_0> is the head coach of Chamois Niortais F.C..,<extra_id_0> Franck Passi <extra_id_1>
+837,9540,2020,<extra_id_0> is the head coach of K.R.C. Genk.,<extra_id_0> Hannes Wolf <extra_id_1>
+838,9544,2020,<extra_id_0> is the head coach of FC Kairat.,<extra_id_0> Aleksey Shpilevsky <extra_id_1>
+839,9550,2020,<extra_id_0> is the head coach of FC Academica Clinceni.,<extra_id_0> Ilie Poenaru <extra_id_1>
+840,9561,2020,<extra_id_0> is the head coach of Atalanta B.C..,<extra_id_0> Gian Piero Gasperini <extra_id_1>
+841,9572,2020,<extra_id_0> is the head coach of FCU Craiova 1948.,<extra_id_0> Nicolò Napoli <extra_id_1>
+842,9578,2020,<extra_id_0> is the head coach of RCD Espanyol de Barcelona.,<extra_id_0> Vicente Moreno <extra_id_1>
+843,9581,2020,<extra_id_0> is the head coach of Grasshopper Club Zürich.,<extra_id_0> Uli Forte <extra_id_1>
+844,9586,2020,<extra_id_0> is the head coach of A.C. ChievoVerona.,<extra_id_0> Michele Marcolini <extra_id_1>
+845,9597,2020,<extra_id_0> is the head coach of PFC CSKA Moscow.,<extra_id_0> Viktor Goncharenko <extra_id_1>
+846,9602,2020,<extra_id_0> is the head coach of FK Kukësi.,<extra_id_0> Shpëtim Duro <extra_id_1>
+847,9606,2020,<extra_id_0> is the head coach of NK Osijek.,<extra_id_0> Nenad Bjelica <extra_id_1>
+848,9615,2020,<extra_id_0> is the head coach of B36 Tórshavn.,<extra_id_0> Jákup á Borg <extra_id_1>
+849,9622,2020,<extra_id_0> is the head coach of KV Mechelen.,<extra_id_0> Wouter Vrancken <extra_id_1>
+850,9625,2020,<extra_id_0> is the head coach of OFC Etar Veliko Tarnovo.,<extra_id_0> Petko Petkov <extra_id_1>
+851,9632,2020,<extra_id_0> is the head coach of Società Polisportiva Ars et Labor.,<extra_id_0> Leonardo Semplici <extra_id_1>
+852,9636,2020,<extra_id_0> is the head coach of Kalmar FF.,<extra_id_0> Nanne Bergstrand <extra_id_1>
+853,9642,2020,<extra_id_0> is the head coach of Śląsk Wrocław.,<extra_id_0> Vítězslav Lavička <extra_id_1>
+854,9644,2020,<extra_id_0> is the head coach of VVV-Venlo.,<extra_id_0> Hans de Koning <extra_id_1>
+855,9647,2020,<extra_id_0> is the head coach of A.S. Nancy-Lorraine.,<extra_id_0> Jean-Louis Garcia <extra_id_1>
+856,9651,2020,<extra_id_0> is the head coach of Real Oviedo.,<extra_id_0> José Ángel Ziganda <extra_id_1>
+857,9659,2020,<extra_id_0> is the head coach of Brentford F.C..,<extra_id_0> Thomas Frank <extra_id_1>
+858,9666,2020,<extra_id_0> is the head coach of Cowdenbeath F.C..,<extra_id_0> Gary Bollan <extra_id_1>
+859,9673,2020,<extra_id_0> is the head coach of FC Rostov.,<extra_id_0> Valeri Karpin <extra_id_1>
+860,9682,2020,<extra_id_0> is the head coach of EF Pro Cycling.,<extra_id_0> Andreas Klier <extra_id_1>
+861,9688,2020,<extra_id_0> is the head coach of Pogoń Szczecin.,<extra_id_0> Kosta Runjaić <extra_id_1>
+862,9691,2020,<extra_id_0> is the head coach of Arka Gdynia.,<extra_id_0> Ireneusz Mamrot <extra_id_1>
+863,9701,2020,<extra_id_0> is the head coach of Deceuninck-Quick-Step.,<extra_id_0> Brian Holm <extra_id_1>
+864,9709,2020,<extra_id_0> is the head coach of L.A.S.K. Linz.,<extra_id_0> Valérien Ismaël <extra_id_1>
+865,9719,2020,<extra_id_0> is the head coach of Östersunds FK.,<extra_id_0> Amir Azrafshan <extra_id_1>
+866,9722,2020,<extra_id_0> is the head coach of Aerostar Bacău.,<extra_id_0> Daniel Munteanu <extra_id_1>
+867,9725,2020,<extra_id_0> is the head coach of Neftchi Baku PFC.,<extra_id_0> Roberto Bordin <extra_id_1>
+868,9730,2020,<extra_id_0> is the head coach of F.C. Nantes.,<extra_id_0> Christian Gourcuff <extra_id_1>
+869,9741,2020,<extra_id_0> is the head coach of SV Waldhof Mannheim.,<extra_id_0> Bernhard Trares <extra_id_1>
+870,9752,2020,<extra_id_0> is the head coach of Belarus national football team.,<extra_id_0> Mikhail Markhel <extra_id_1>
+871,9756,2020,<extra_id_0> is the head coach of Lyngby Boldklub.,<extra_id_0> Christian Nielsen <extra_id_1>
+872,9764,2020,<extra_id_0> is the head coach of CSM Politehnica Iași.,<extra_id_0> Mircea Rednic <extra_id_1>
+873,9770,2020,<extra_id_0> is the head coach of Silkeborg IF.,<extra_id_0> Kent Nielsen <extra_id_1>
+874,9780,2020,<extra_id_0> is the head coach of Novo Nordisk.,<extra_id_0> Massimo Podenzana <extra_id_1>
+875,9790,2020,<extra_id_0> is the head coach of A.C. Pisa 1909.,<extra_id_0> Luca D'Angelo <extra_id_1>
+876,9793,2020,<extra_id_0> is the head coach of Rio Ave F.C..,<extra_id_0> Carlos Carvalhal <extra_id_1>
+877,9809,2020,<extra_id_0> is the head coach of FC Aarau.,<extra_id_0> Sven Christ <extra_id_1>
+878,9812,2020,<extra_id_0> is the head coach of IK Start.,<extra_id_0> Jóhannes Harðarson <extra_id_1>
+879,9818,2020,<extra_id_0> is the head coach of NTT Pro Cycling Team.,<extra_id_0> Roger Hammond <extra_id_1>
+880,9824,2020,<extra_id_0> is the head coach of FC Urartu.,<extra_id_0> Aleksandr Grigoryan <extra_id_1>
+881,9827,2020,<extra_id_0> is the head coach of Szombathelyi Haladás.,<extra_id_0> János Mátyus <extra_id_1>
+882,9831,2020,<extra_id_0> is the head coach of SK Sigma Olomouc.,<extra_id_0> Radoslav Látal <extra_id_1>
+883,9842,2020,<extra_id_0> is the head coach of FC Slutsk.,<extra_id_0> Aleksandr Brazevich <extra_id_1>
+884,9846,2020,<extra_id_0> is the head coach of SC Dnipro-1.,<extra_id_0> Dmytro Mykhaylenko <extra_id_1>
+885,9857,2020,<extra_id_0> is the head coach of Gimnàstic de Tarragona.,<extra_id_0> Jose Antonio Seligrat Bernal <extra_id_1>
+886,9860,2020,<extra_id_0> is the head coach of FC Torpedo Kutaisi.,<extra_id_0> Mikheil Ashvetia <extra_id_1>
+887,9866,2020,<extra_id_0> is the head coach of Aalesunds FK.,<extra_id_0> Lars Bohinen <extra_id_1>
+888,9869,2020,<extra_id_0> is the head coach of FK Dečić.,<extra_id_0> Edis Mulalić <extra_id_1>
+889,9872,2020,<extra_id_0> is the head coach of 1. FK Příbram.,<extra_id_0> Pavel Horváth <extra_id_1>
+890,9882,2020,<extra_id_0> is the head coach of Wolfsberger AC.,<extra_id_0> Ferdinand Feldhofer <extra_id_1>
+891,9886,2020,<extra_id_0> is the head coach of SFC Opava.,<extra_id_0> Radoslav Kováč <extra_id_1>
+892,9890,2020,<extra_id_0> is the head coach of Clube Desportivo das Aves.,<extra_id_0> Nuno Manta Santos <extra_id_1>
+893,9900,2020,<extra_id_0> is the head coach of SV Wacker Burghausen.,<extra_id_0> Uwe Wolf <extra_id_1>
+894,9911,2020,<extra_id_0> is the head coach of Florida Gators women's basketball.,<extra_id_0> Cameron Newbauer <extra_id_1>
+895,9914,2020,<extra_id_0> is the head coach of HNK Gorica.,<extra_id_0> Valdas Dambrauskas <extra_id_1>
+896,9916,2020,<extra_id_0> is the head coach of FC Rukh Lviv.,<extra_id_0> Ivan Fedyk <extra_id_1>
+897,9927,2020,<extra_id_0> is the head coach of FC Viitorul Constanța.,<extra_id_0> Gheorghe Hagi <extra_id_1>
+898,9932,2020,<extra_id_0> is the head coach of FC Minsk.,<extra_id_0> Andrey Razin <extra_id_1>
+899,9935,2020,<extra_id_0> is the head coach of Turris-Oltul Turnu Măgurele.,<extra_id_0> Erik Lincar <extra_id_1>
+900,9938,2020,<extra_id_0> is the head coach of FC ViOn Zlaté Moravce.,<extra_id_0> Karol Praženica <extra_id_1>
+901,9942,2020,<extra_id_0> is the head coach of MFK Karviná.,<extra_id_0> Juraj Jarábek <extra_id_1>
+902,9952,2020,<extra_id_0> is the head coach of FC Neman Grodno.,<extra_id_0> Igor Kovalevich <extra_id_1>
+903,9962,2020,<extra_id_0> is the head coach of CF Fuenlabrada.,<extra_id_0> Baldomero Hermoso Herrera <extra_id_1>
+904,9965,2020,<extra_id_0> is the head coach of FC Mordovia Saransk.,<extra_id_0> Oleg Vasilenko <extra_id_1>
+905,9976,2020,<extra_id_0> is the head coach of FC Slavia-Mozyr.,<extra_id_0> Mihail Martsinovich <extra_id_1>
+906,9979,2020,<extra_id_0> is the head coach of Kisvárda FC.,<extra_id_0> Attila Supka <extra_id_1>
+907,9985,2020,<extra_id_0> is the head coach of FC Voluntari.,<extra_id_0> Cristiano Bergodi <extra_id_1>
+908,9988,2020,<extra_id_0> is the head coach of Vital Concept.,<extra_id_0> Didier Rous <extra_id_1>
+909,9991,2020,<extra_id_0> is the head coach of FK Spartaks Jūrmala.,<extra_id_0> Aleksey Yeryomenko <extra_id_1>
+910,9996,2020,<extra_id_0> is the head coach of FC Orsha.,<extra_id_0> Mikalay Branfilaw <extra_id_1>
+911,10001,2020,<extra_id_0> is the head coach of Royal Excel Mouscron.,<extra_id_0> Bernd Hollerbach <extra_id_1>
+912,10006,2020,<extra_id_0> is the head coach of NK Domžale.,<extra_id_0> Dejan Djuranovič <extra_id_1>
+913,10012,2020,<extra_id_0> is the head coach of SEG Racing Academy.,<extra_id_0> Michiel Elijzen <extra_id_1>
+914,10020,2020,<extra_id_0> is the head coach of Thespakusatsu Gunma.,<extra_id_0> Keiichiro Nuno <extra_id_1>
+915,10023,2020,<extra_id_0> is the head coach of FK Radnik Surdulica.,<extra_id_0> Simo Krunić <extra_id_1>
+916,10025,2020,<extra_id_0> is the head coach of Íþróttabandalag Vestmannaeyja.,<extra_id_0> Helgi Sigurðsson <extra_id_1>
+917,10039,2020,<extra_id_0> is the head coach of WB Veranclassic Aqua Protect.,<extra_id_0> Olivier Kaisen <extra_id_1>
+918,10042,2020,<extra_id_0> is the head coach of PFC Kuban Krasnodar.,<extra_id_0> Andrei Gordeyev <extra_id_1>
+919,10050,2020,<extra_id_0> is the head coach of FC Smolevichi.,<extra_id_0> Aleksandr Brazevich <extra_id_1>
+920,10060,2020,<extra_id_0> is the head coach of FC Naftan Novopolotsk.,<extra_id_0> Taras Chopik <extra_id_1>
+921,10064,2020,<extra_id_0> is the head coach of Bahrain-McLaren.,<extra_id_0> Vladimir Miholjević <extra_id_1>
+922,10070,2020,<extra_id_0> is the head coach of ERA-Circus.,<extra_id_0> Marc Janssens <extra_id_1>
+923,10079,2020,<extra_id_0> is the head coach of FK RFS.,<extra_id_0> Viktors Morozs <extra_id_1>
+924,10082,2020,<extra_id_0> is the head coach of FC Rapid 1923.,<extra_id_0> Adrian Iencsi <extra_id_1>
+925,10101,2020,Charlotte Hornets is owned by <extra_id_0>.,<extra_id_0> Michael Jordan <extra_id_1>
+926,10112,2020,Nordland Line is owned by <extra_id_0>.,<extra_id_0> Bane NOR <extra_id_1>
+927,10123,2020,Phase 10 is owned by <extra_id_0>.,<extra_id_0> Mattel <extra_id_1>
+928,10134,2020,Flåm Line is owned by <extra_id_0>.,<extra_id_0> Bane NOR <extra_id_1>
+929,10145,2020,Bergen Line is owned by <extra_id_0>.,<extra_id_0> Bane NOR <extra_id_1>
+930,10161,2020,Rover is owned by <extra_id_0>.,<extra_id_0> Jaguar Land Rover <extra_id_1>
+931,10172,2020,Wind River Systems is owned by <extra_id_0>.,<extra_id_0> TPG Capital <extra_id_1>
+932,10183,2020,Stratolaunch Systems is owned by <extra_id_0>.,<extra_id_0> Cerberus Capital Management <extra_id_1>
+933,10194,2020,Rauma Line is owned by <extra_id_0>.,<extra_id_0> Bane NOR <extra_id_1>
+934,10205,2020,Yokohama DeNA BayStars is owned by <extra_id_0>.,<extra_id_0> DeNA <extra_id_1>
+935,10216,2020,Rosewood Hotel Group is owned by <extra_id_0>.,<extra_id_0> Chow Tai Fook <extra_id_1>
+936,10227,2020,Lanai is owned by <extra_id_0>.,<extra_id_0> Larry Ellison <extra_id_1>
+937,10238,2020,Eurosport is owned by <extra_id_0>.,<extra_id_0> Discovery Inc. <extra_id_1>
+938,10249,2020,Havas is owned by <extra_id_0>.,<extra_id_0> Vivendi <extra_id_1>
+939,10253,2020,Dimension Films is owned by <extra_id_0>.,<extra_id_0> Lantern Entertainment <extra_id_1>
+940,10258,2020,i is owned by <extra_id_0>.,<extra_id_0> Daily Mail and General Trust <extra_id_1>
+941,10269,2020,Rizzoli Libri is owned by <extra_id_0>.,<extra_id_0> Arnoldo Mondadori Editore <extra_id_1>
+942,10284,2020,Boston Dynamics is owned by <extra_id_0>.,<extra_id_0> SoftBank <extra_id_1>
+943,10295,2020,Tanimachi Line is owned by <extra_id_0>.,<extra_id_0> Osaka Metro <extra_id_1>
+944,10306,2020,Ruptly is owned by <extra_id_0>.,<extra_id_0> Rossiya Segodnya <extra_id_1>
+945,10315,2020,Stade Pierre-Mauroy is owned by <extra_id_0>.,<extra_id_0> Eiffage <extra_id_1>
+946,10326,2020,The Free Lance–Star is owned by <extra_id_0>.,<extra_id_0> Berkshire Hathaway <extra_id_1>
+947,10337,2020,Place Ville Marie is owned by <extra_id_0>.,<extra_id_0> Ivanhoe Cambridge <extra_id_1>
+948,10338,2020,Lausanne HC is owned by <extra_id_0>.,<extra_id_0> Zdeněk Bakala <extra_id_1>
+949,10349,2020,Duracell is owned by <extra_id_0>.,<extra_id_0> Berkshire Hathaway <extra_id_1>
+950,10360,2020,Westfield Wheaton is owned by <extra_id_0>.,<extra_id_0> Unibail Rodamco Westfield <extra_id_1>
+951,10371,2020,Hero is owned by <extra_id_0>.,<extra_id_0> ABS-CBN Digital Media <extra_id_1>
+952,10382,2020,Thawte Consulting is owned by <extra_id_0>.,<extra_id_0> NortonLifeLock <extra_id_1>
+953,10393,2020,Viasat is owned by <extra_id_0>.,<extra_id_0> Nordic Entertainment Group <extra_id_1>
+954,10404,2020,Dovre Line is owned by <extra_id_0>.,<extra_id_0> Bane NOR <extra_id_1>
+955,10415,2020,Fox Entertainment Group is owned by <extra_id_0>.,<extra_id_0> 21st Century Fox <extra_id_1>
+956,10426,2020,RV Melville is owned by <extra_id_0>.,<extra_id_0> Philippine Navy <extra_id_1>
+957,10437,2020,Stadio Friuli is owned by <extra_id_0>.,<extra_id_0> Udinese Calcio <extra_id_1>
+958,10447,2020,Nordic Regional Airlines is owned by <extra_id_0>.,<extra_id_0> Finnair <extra_id_1>
+959,10458,2020,TechCrunch is owned by <extra_id_0>.,<extra_id_0> Verizon Media <extra_id_1>
+960,10469,2020,Boy and Dog in a Johnnypump is owned by <extra_id_0>.,<extra_id_0> Kenneth C. Griffin <extra_id_1>
+961,10486,2020,Hilton Athens is owned by <extra_id_0>.,<extra_id_0> Doğuş Holding <extra_id_1>
+962,10497,2020,BlaBlaBus is owned by <extra_id_0>.,<extra_id_0> BlaBlaCar <extra_id_1>
+963,10508,2020,Rauma shipyard is owned by <extra_id_0>.,<extra_id_0> Rauma <extra_id_1>
+964,10519,2020,PanAmericano is owned by <extra_id_0>.,<extra_id_0> BTG Pactual <extra_id_1>
+965,10530,2020,Hamburger Abendblatt is owned by <extra_id_0>.,<extra_id_0> Funke Mediengruppe <extra_id_1>
+966,10541,2020,Rabbit is owned by <extra_id_0>.,<extra_id_0> Steven A. Cohen <extra_id_1>
+967,10552,2020,Mountain Studios is owned by <extra_id_0>.,<extra_id_0> Mercury Phoenix Trust <extra_id_1>
+968,10563,2020,Wells Fargo Center is owned by <extra_id_0>.,<extra_id_0> Ivanhoe Cambridge <extra_id_1>
+969,10574,2020,Eastern Acoustic Works is owned by <extra_id_0>.,<extra_id_0> RCF <extra_id_1>
+970,10583,2020,Fox Mobile Entertainment is owned by <extra_id_0>.,<extra_id_0> Freenet AG <extra_id_1>
+971,10593,2020,Match! Game is owned by <extra_id_0>.,<extra_id_0> Gazprom-Media <extra_id_1>
+972,10604,2020,Angaston Power Station is owned by <extra_id_0>.,<extra_id_0> Snowy Hydro <extra_id_1>
+973,10615,2020,Portrait of Professor Benjamin H. Rand is owned by <extra_id_0>.,<extra_id_0> Crystal Bridges Museum of American Art <extra_id_1>
+974,10626,2020,Linha do Sul is owned by <extra_id_0>.,<extra_id_0> Infrastructures of Portugal <extra_id_1>
+975,10637,2020,Linha do Oeste is owned by <extra_id_0>.,<extra_id_0> Infrastructures of Portugal <extra_id_1>
+976,10648,2020,Dothan Eagle is owned by <extra_id_0>.,<extra_id_0> Berkshire Hathaway <extra_id_1>
+977,10659,2020,Leixões railway line is owned by <extra_id_0>.,<extra_id_0> Infrastructures of Portugal <extra_id_1>
+978,10670,2020,Danville Register & Bee is owned by <extra_id_0>.,<extra_id_0> Berkshire Hathaway <extra_id_1>
+979,10681,2020,Ramal de Braga is owned by <extra_id_0>.,<extra_id_0> Infrastructures of Portugal <extra_id_1>
+980,10692,2020,Kevitsa mine is owned by <extra_id_0>.,<extra_id_0> Boliden AB <extra_id_1>

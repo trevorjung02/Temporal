@@ -1,0 +1,876 @@
+index,original,date,input,output
+0,0,2010,Valentino Rossi plays for <extra_id_0>.,<extra_id_0> Yamaha Motor Racing <extra_id_1>
+1,11,2010,Shaquille O'Neal plays for <extra_id_0>.,<extra_id_0> Boston Celtics <extra_id_1>
+2,13,2010,LeBron James plays for <extra_id_0>.,<extra_id_0> Cleveland Cavaliers <extra_id_1>
+3,24,2010,Bradley Wiggins plays for <extra_id_0>.,<extra_id_0> Ineos Grenadier <extra_id_1>
+4,31,2010,Eden Hazard plays for <extra_id_0>.,<extra_id_0> Lille OSC <extra_id_1>
+5,42,2010,Steve Smith plays for <extra_id_0>.,<extra_id_0> Australia national cricket team <extra_id_1>
+6,53,2010,Luka Modrić plays for <extra_id_0>.,<extra_id_0> Tottenham Hotspur F.C. <extra_id_1>
+7,64,2010,Michael Owen plays for <extra_id_0>.,<extra_id_0> England national association football team <extra_id_1>
+8,71,2010,Erin McLeod plays for <extra_id_0>.,<extra_id_0> Washington Freedom <extra_id_1>
+9,82,2010,Shakib Al Hasan plays for <extra_id_0>.,<extra_id_0> Bangladesh national cricket team <extra_id_1>
+10,91,2010,Dida plays for <extra_id_0>.,<extra_id_0> Associazione Calcio Milan <extra_id_1>
+11,96,2010,Russell Westbrook plays for <extra_id_0>.,<extra_id_0> Oklahoma City Thunder <extra_id_1>
+12,107,2010,Vince Carter plays for <extra_id_0>.,<extra_id_0> Phoenix Suns <extra_id_1>
+13,118,2010,Thiago Silva plays for <extra_id_0>.,<extra_id_0> Brazil national football team <extra_id_1>
+14,129,2010,Harry Kane plays for <extra_id_0>.,<extra_id_0> England national under-17 football team <extra_id_1>
+15,140,2010,Robin van Persie plays for <extra_id_0>.,<extra_id_0> Arsenal F.C. <extra_id_1>
+16,150,2010,Yuvraj Singh plays for <extra_id_0>.,<extra_id_0> India national cricket team <extra_id_1>
+17,161,2010,Ashlyn Harris plays for <extra_id_0>.,<extra_id_0> Washington Freedom <extra_id_1>
+18,172,2010,Peter Sagan plays for <extra_id_0>.,<extra_id_0> Cannondale Pro Cycling Team <extra_id_1>
+19,183,2010,Markus Rosenberg plays for <extra_id_0>.,<extra_id_0> Sweden national association football team <extra_id_1>
+20,194,2010,David Dunn plays for <extra_id_0>.,<extra_id_0> Blackburn Rovers F.C. <extra_id_1>
+21,201,2010,Fernando Torres plays for <extra_id_0>.,<extra_id_0> Spain national association football team <extra_id_1>
+22,211,2010,Paul Pogba plays for <extra_id_0>.,<extra_id_0> France national under-17 football team <extra_id_1>
+23,225,2010,Damian Lillard plays for <extra_id_0>.,<extra_id_0> Weber State Wildcats men's basketball <extra_id_1>
+24,236,2010,James Rodríguez plays for <extra_id_0>.,<extra_id_0> Futebol Clube do Porto <extra_id_1>
+25,247,2010,Darren Lockyer plays for <extra_id_0>.,<extra_id_0> Australia national rugby league team <extra_id_1>
+26,255,2010,Javier Hernández plays for <extra_id_0>.,<extra_id_0> C.D. Guadalajara <extra_id_1>
+27,266,2010,Iker Casillas plays for <extra_id_0>.,<extra_id_0> Real Madrid CF <extra_id_1>
+28,277,2010,Karmichael Hunt plays for <extra_id_0>.,<extra_id_0> Biarritz Olympique <extra_id_1>
+29,284,2010,Jabo Ibehre plays for <extra_id_0>.,<extra_id_0> Milton Keynes Dons F.C. <extra_id_1>
+30,295,2010,Sourav Ganguly plays for <extra_id_0>.,<extra_id_0> Bengal cricket team <extra_id_1>
+31,298,2010,Xabi Alonso plays for <extra_id_0>.,<extra_id_0> Real Madrid CF <extra_id_1>
+32,306,2010,Jonny Wilkinson plays for <extra_id_0>.,<extra_id_0> England national rugby union team <extra_id_1>
+33,311,2010,Kyrie Irving plays for <extra_id_0>.,<extra_id_0> Duke Blue Devils men's basketball <extra_id_1>
+34,317,2010,Jos Buttler plays for <extra_id_0>.,<extra_id_0> Somerset County Cricket Club <extra_id_1>
+35,328,2010,Maya Yoshida plays for <extra_id_0>.,<extra_id_0> Japan national football team <extra_id_1>
+36,339,2010,Chauncey Billups plays for <extra_id_0>.,<extra_id_0> Denver Nuggets <extra_id_1>
+37,344,2010,Paulo Centurión plays for <extra_id_0>.,<extra_id_0> Club Guaraní <extra_id_1>
+38,355,2010,Jermaine O'Neal plays for <extra_id_0>.,<extra_id_0> Boston Celtics <extra_id_1>
+39,360,2010,Carlos Vela plays for <extra_id_0>.,<extra_id_0> Arsenal F.C. <extra_id_1>
+40,370,2010,Nani plays for <extra_id_0>.,<extra_id_0> Manchester United F.C. <extra_id_1>
+41,381,2010,Edinson Cavani plays for <extra_id_0>.,<extra_id_0> S.S.C. Napoli <extra_id_1>
+42,392,2010,Steve Morison plays for <extra_id_0>.,<extra_id_0> Wales national association football team <extra_id_1>
+43,403,2010,Sam Bradford plays for <extra_id_0>.,<extra_id_0> Los Angeles Rams <extra_id_1>
+44,414,2010,Eiji Kawashima plays for <extra_id_0>.,<extra_id_0> Kawasaki Frontale <extra_id_1>
+45,425,2010,Hatem Ben Arfa plays for <extra_id_0>.,<extra_id_0> Newcastle United F.C. <extra_id_1>
+46,436,2010,Lee Boylan plays for <extra_id_0>.,<extra_id_0> Stevenage F.C. <extra_id_1>
+47,441,2010,Jennison Myrie-Williams plays for <extra_id_0>.,<extra_id_0> Dundee United F.C. <extra_id_1>
+48,447,2010,Omar Abdulrahman plays for <extra_id_0>.,<extra_id_0> United Arab Emirates national under-23 football team <extra_id_1>
+49,458,2010,Jarryd Hayne plays for <extra_id_0>.,<extra_id_0> Australia national rugby league team <extra_id_1>
+50,463,2010,Tom Ince plays for <extra_id_0>.,<extra_id_0> Notts County F.C. <extra_id_1>
+51,469,2010,Shahid Afridi plays for <extra_id_0>.,<extra_id_0> South Australia cricket team <extra_id_1>
+52,480,2010,Kostas Manolas plays for <extra_id_0>.,<extra_id_0> A.E.K. Athens F.C. <extra_id_1>
+53,491,2010,Diego Forlán plays for <extra_id_0>.,<extra_id_0> Atlético Madrid <extra_id_1>
+54,502,2010,Rafael van der Vaart plays for <extra_id_0>.,<extra_id_0> Tottenham Hotspur F.C. <extra_id_1>
+55,515,2010,Jens Voigt plays for <extra_id_0>.,<extra_id_0> Tinkoff <extra_id_1>
+56,520,2010,Sue Bird plays for <extra_id_0>.,<extra_id_0> WBC Spartak Moscow Region <extra_id_1>
+57,525,2010,Vincenzo Nibali plays for <extra_id_0>.,<extra_id_0> Cannondale Pro Cycling Team <extra_id_1>
+58,536,2010,Shane Duffy plays for <extra_id_0>.,<extra_id_0> Everton F.C. <extra_id_1>
+59,547,2010,Stephen Dobbie plays for <extra_id_0>.,<extra_id_0> Blackpool F.C. <extra_id_1>
+60,554,2010,Diego Biseswar plays for <extra_id_0>.,<extra_id_0> Netherlands national under-21 football team <extra_id_1>
+61,565,2010,Tillakaratne Dilshan plays for <extra_id_0>.,<extra_id_0> Sri Lanka national cricket team <extra_id_1>
+62,570,2010,Yohan Cabaye plays for <extra_id_0>.,<extra_id_0> France national association football team <extra_id_1>
+63,581,2010,Emmanuel Adebayor plays for <extra_id_0>.,<extra_id_0> Manchester City F.C. <extra_id_1>
+64,592,2010,Patrick Bamford plays for <extra_id_0>.,<extra_id_0> England national under-18 football team <extra_id_1>
+65,603,2010,Steve Jones plays for <extra_id_0>.,<extra_id_0> Walsall F.C. <extra_id_1>
+66,614,2010,Mikel John Obi plays for <extra_id_0>.,<extra_id_0> Chelsea F.C. <extra_id_1>
+67,625,2010,Maria Jose Altamirano plays for <extra_id_0>.,<extra_id_0> Mirador Volleyball <extra_id_1>
+68,636,2010,Sölvi Ottesen plays for <extra_id_0>.,<extra_id_0> F.C. Copenhagen <extra_id_1>
+69,647,2010,Steve Smith Sr. plays for <extra_id_0>.,<extra_id_0> Carolina Panthers <extra_id_1>
+70,654,2010,Umar Akmal plays for <extra_id_0>.,<extra_id_0> Sui Northern Gas Pipelines Limited <extra_id_1>
+71,665,2010,Kirk Hinrich plays for <extra_id_0>.,<extra_id_0> Washington Wizards <extra_id_1>
+72,679,2010,Jacoby Ellsbury plays for <extra_id_0>.,<extra_id_0> Boston Red Sox <extra_id_1>
+73,706,2010,Mathieu Valbuena plays for <extra_id_0>.,<extra_id_0> France national association football team <extra_id_1>
+74,717,2010,Armand Traoré plays for <extra_id_0>.,<extra_id_0> Arsenal F.C. <extra_id_1>
+75,731,2010,Jimmy Abdou plays for <extra_id_0>.,<extra_id_0> Comoros national football team <extra_id_1>
+76,742,2010,Ashley Cole plays for <extra_id_0>.,<extra_id_0> England national association football team <extra_id_1>
+77,752,2010,Jamie Carragher plays for <extra_id_0>.,<extra_id_0> England national association football team <extra_id_1>
+78,756,2010,Calais Campbell plays for <extra_id_0>.,<extra_id_0> Arizona Cardinals <extra_id_1>
+79,771,2010,Joe Cole plays for <extra_id_0>.,<extra_id_0> England national association football team <extra_id_1>
+80,780,2010,Gary Cahill plays for <extra_id_0>.,<extra_id_0> England national association football team <extra_id_1>
+81,791,2010,J. J. Redick plays for <extra_id_0>.,<extra_id_0> Orlando Magic <extra_id_1>
+82,802,2010,James Taylor plays for <extra_id_0>.,<extra_id_0> Leicestershire County Cricket Club <extra_id_1>
+83,813,2010,Edwin van der Sar plays for <extra_id_0>.,<extra_id_0> Manchester United F.C. <extra_id_1>
+84,816,2010,Graeme Swann plays for <extra_id_0>.,<extra_id_0> Nottinghamshire County Cricket Club <extra_id_1>
+85,830,2010,Daniel Xhafa plays for <extra_id_0>.,<extra_id_0> Flamurtari Vlorë <extra_id_1>
+86,836,2010,Hamdi Salihi plays for <extra_id_0>.,<extra_id_0> SK Rapid Wien <extra_id_1>
+87,846,2010,Clayton Donaldson plays for <extra_id_0>.,<extra_id_0> Crewe Alexandra F.C. <extra_id_1>
+88,857,2010,Rangana Herath plays for <extra_id_0>.,<extra_id_0> Wayamba cricket team <extra_id_1>
+89,868,2010,Sébastien Bassong plays for <extra_id_0>.,<extra_id_0> Tottenham Hotspur F.C. <extra_id_1>
+90,874,2010,Kevin Trapp plays for <extra_id_0>.,<extra_id_0> Germany national under-21 football team <extra_id_1>
+91,894,2010,Elis Bakaj plays for <extra_id_0>.,<extra_id_0> Albania national association football team <extra_id_1>
+92,905,2010,David James plays for <extra_id_0>.,<extra_id_0> Portsmouth F.C. <extra_id_1>
+93,910,2010,Blaise Matuidi plays for <extra_id_0>.,<extra_id_0> France national association football team <extra_id_1>
+94,921,2010,Filipe Morais plays for <extra_id_0>.,<extra_id_0> Oldham Athletic A.F.C. <extra_id_1>
+95,932,2010,Ki Sung-yueng plays for <extra_id_0>.,<extra_id_0> South Korea national under-23 football team <extra_id_1>
+96,937,2010,Ronan O'Gara plays for <extra_id_0>.,<extra_id_0> Munster Rugby <extra_id_1>
+97,948,2010,André-Pierre Gignac plays for <extra_id_0>.,<extra_id_0> Olympique de Marseille <extra_id_1>
+98,954,2010,Marouane Chamakh plays for <extra_id_0>.,<extra_id_0> Arsenal F.C. <extra_id_1>
+99,971,2010,Matt Prior plays for <extra_id_0>.,<extra_id_0> England and Wales cricket team <extra_id_1>
+100,977,2010,Lasith Malinga plays for <extra_id_0>.,<extra_id_0> Mumbai Indians <extra_id_1>
+101,987,2010,Jens Lehmann plays for <extra_id_0>.,<extra_id_0> VfB Stuttgart <extra_id_1>
+102,989,2010,Benji Marshall plays for <extra_id_0>.,<extra_id_0> Wests Tigers <extra_id_1>
+103,1000,2010,Erjon Bogdani plays for <extra_id_0>.,<extra_id_0> Albania national association football team <extra_id_1>
+104,1010,2010,Jeroen Zoet plays for <extra_id_0>.,<extra_id_0> Netherlands national under-19 football team <extra_id_1>
+105,1024,2010,Michael Clarke plays for <extra_id_0>.,<extra_id_0> Australia national cricket team <extra_id_1>
+106,1030,2010,Sol Bamba plays for <extra_id_0>.,<extra_id_0> Hibernian F.C. <extra_id_1>
+107,1036,2010,Anderson plays for <extra_id_0>.,<extra_id_0> Manchester United F.C. <extra_id_1>
+108,1047,2010,Jacques Kallis plays for <extra_id_0>.,<extra_id_0> Royal Challengers Bangalore <extra_id_1>
+109,1053,2010,Isaiah Thomas plays for <extra_id_0>.,<extra_id_0> Washington Huskies men's basketball <extra_id_1>
+110,1064,2010,John Degenkolb plays for <extra_id_0>.,<extra_id_0> Thüringer Energie <extra_id_1>
+111,1083,2010,Chris Beardsley plays for <extra_id_0>.,<extra_id_0> Stevenage F.C. <extra_id_1>
+112,1094,2010,Moussa Sissoko plays for <extra_id_0>.,<extra_id_0> France national under-21 football team <extra_id_1>
+113,1105,2010,Jonathan Sexton plays for <extra_id_0>.,<extra_id_0> Leinster Rugby <extra_id_1>
+114,1116,2010,Tim Paine plays for <extra_id_0>.,<extra_id_0> Australia national cricket team <extra_id_1>
+115,1127,2010,Patrick Kisnorbo plays for <extra_id_0>.,<extra_id_0> Leeds United F.C. <extra_id_1>
+116,1138,2010,Andrew Bogut plays for <extra_id_0>.,<extra_id_0> Milwaukee Bucks <extra_id_1>
+117,1146,2010,Marco Materazzi plays for <extra_id_0>.,<extra_id_0> Inter Milan <extra_id_1>
+118,1149,2010,Tommy Elphick plays for <extra_id_0>.,<extra_id_0> Brighton & Hove Albion F.C. <extra_id_1>
+119,1160,2010,David Edgar plays for <extra_id_0>.,<extra_id_0> Burnley F.C. <extra_id_1>
+120,1181,2010,Gary Roberts plays for <extra_id_0>.,<extra_id_0> Rotherham United F.C. <extra_id_1>
+121,1187,2010,Wout Brama plays for <extra_id_0>.,<extra_id_0> Netherlands national association football team <extra_id_1>
+122,1198,2010,Victor Oladipo plays for <extra_id_0>.,<extra_id_0> Indiana Hoosiers men's basketball <extra_id_1>
+123,1209,2010,Víctor Ibarbo plays for <extra_id_0>.,<extra_id_0> Atlético Nacional <extra_id_1>
+124,1220,2010,Owen Hargreaves plays for <extra_id_0>.,<extra_id_0> Manchester United F.C. <extra_id_1>
+125,1223,2010,Anthony Martial plays for <extra_id_0>.,<extra_id_0> France national under-16 football team <extra_id_1>
+126,1234,2010,Gentjan Muça plays for <extra_id_0>.,<extra_id_0> KS Dinamo Tirana <extra_id_1>
+127,1245,2010,Owen Farrell plays for <extra_id_0>.,<extra_id_0> Bedford Blues <extra_id_1>
+128,1256,2010,Tyler Clippard plays for <extra_id_0>.,<extra_id_0> Washington Nationals <extra_id_1>
+129,1267,2010,Dejan Lovren plays for <extra_id_0>.,<extra_id_0> Olympique Lyonnais <extra_id_1>
+130,1278,2010,Dean Windass plays for <extra_id_0>.,<extra_id_0> Scarborough Athletic F.C. <extra_id_1>
+131,1281,2010,Salomon Kalou plays for <extra_id_0>.,<extra_id_0> Chelsea F.C. <extra_id_1>
+132,1292,2010,Xherdan Shaqiri plays for <extra_id_0>.,<extra_id_0> Switzerland national under-21 football team <extra_id_1>
+133,1303,2010,Tom Kennedy plays for <extra_id_0>.,<extra_id_0> Rochdale A.F.C. <extra_id_1>
+134,1314,2010,Raphaël Varane plays for <extra_id_0>.,<extra_id_0> France national under-18 football team <extra_id_1>
+135,1325,2010,Michael Hussey plays for <extra_id_0>.,<extra_id_0> Australia national cricket team <extra_id_1>
+136,1332,2010,Tony McMahon plays for <extra_id_0>.,<extra_id_0> Middlesbrough F.C. <extra_id_1>
+137,1338,2010,Amr Zaki plays for <extra_id_0>.,<extra_id_0> Hull City A.F.C. <extra_id_1>
+138,1344,2010,Mitchell Johnson plays for <extra_id_0>.,<extra_id_0> Australia national cricket team <extra_id_1>
+139,1357,2010,John Guidetti plays for <extra_id_0>.,<extra_id_0> Burnley F.C. <extra_id_1>
+140,1368,2010,Karim Matmour plays for <extra_id_0>.,<extra_id_0> Algeria national football team <extra_id_1>
+141,1379,2010,Greg Pearson plays for <extra_id_0>.,<extra_id_0> Burton Albion F.C. <extra_id_1>
+142,1390,2010,Geoff Horsfield plays for <extra_id_0>.,<extra_id_0> Port Vale F.C. <extra_id_1>
+143,1392,2010,Sanchez Watt plays for <extra_id_0>.,<extra_id_0> Arsenal F.C. <extra_id_1>
+144,1403,2010,Danny Hollands plays for <extra_id_0>.,<extra_id_0> AFC Bournemouth <extra_id_1>
+145,1408,2010,Edgar Davids plays for <extra_id_0>.,<extra_id_0> Suriname national football team <extra_id_1>
+146,1412,2010,Aleksandar Đurić plays for <extra_id_0>.,<extra_id_0> Tampines Rovers FC <extra_id_1>
+147,1417,2010,Adam Priestley plays for <extra_id_0>.,<extra_id_0> Garforth Town A.F.C. <extra_id_1>
+148,1428,2010,Glen Johnson plays for <extra_id_0>.,<extra_id_0> England national association football team <extra_id_1>
+149,1437,2010,Agon Mehmeti plays for <extra_id_0>.,<extra_id_0> Sweden national under-21 football team <extra_id_1>
+150,1448,2010,Marta plays for <extra_id_0>.,<extra_id_0> Santos FC <extra_id_1>
+151,1459,2010,Hashim Mahomed Amla plays for <extra_id_0>.,<extra_id_0> Dolphins cricket team <extra_id_1>
+152,1470,2010,Andrea Bargnani plays for <extra_id_0>.,<extra_id_0> Toronto Raptors <extra_id_1>
+153,1490,2010,Thibaut Curtua plays for <extra_id_0>.,<extra_id_0> Belgium national under-18 football team <extra_id_1>
+154,1501,2010,Marcelo plays for <extra_id_0>.,<extra_id_0> Brazil Olympic football team <extra_id_1>
+155,1507,2010,Jérôme Boateng plays for <extra_id_0>.,<extra_id_0> Hamburger SV <extra_id_1>
+156,1518,2010,Zoltán Stieber plays for <extra_id_0>.,<extra_id_0> TuS Koblenz <extra_id_1>
+157,1529,2010,Ali Karimi plays for <extra_id_0>.,<extra_id_0> Iran national football team <extra_id_1>
+158,1534,2010,Grétar Steinsson plays for <extra_id_0>.,<extra_id_0> Iceland national association football team <extra_id_1>
+159,1538,2010,Jimmy Bullard plays for <extra_id_0>.,<extra_id_0> Hull City A.F.C. <extra_id_1>
+160,1541,2010,Babar Azam plays for <extra_id_0>.,<extra_id_0> Zarai Taraqiati Bank Ltd cricket team <extra_id_1>
+161,1552,2010,Gareth Barry plays for <extra_id_0>.,<extra_id_0> Manchester City F.C. <extra_id_1>
+162,1563,2010,Jermaine Pennant plays for <extra_id_0>.,<extra_id_0> Stoke City F.C. <extra_id_1>
+163,1574,2010,Chris Baird plays for <extra_id_0>.,<extra_id_0> Fulham F.C. <extra_id_1>
+164,1585,2010,André Ayew plays for <extra_id_0>.,<extra_id_0> Olympique de Marseille <extra_id_1>
+165,1596,2010,Kevin Nolan plays for <extra_id_0>.,<extra_id_0> Newcastle United F.C. <extra_id_1>
+166,1607,2010,Steven Naismith plays for <extra_id_0>.,<extra_id_0> Rangers F.C. <extra_id_1>
+167,1618,2010,Shivnarine Chanderpaul plays for <extra_id_0>.,<extra_id_0> West Indies cricket team <extra_id_1>
+168,1628,2010,Alex Oxlade-Chamberlain plays for <extra_id_0>.,<extra_id_0> Southampton F.C. <extra_id_1>
+169,1639,2010,Nikola Mirotić plays for <extra_id_0>.,<extra_id_0> Palencia Baloncesto <extra_id_1>
+170,1650,2010,Katie Chapman plays for <extra_id_0>.,<extra_id_0> Arsenal W.F.C. <extra_id_1>
+171,1661,2010,Teddy Chevalier plays for <extra_id_0>.,<extra_id_0> S.V. Zulte Waregem <extra_id_1>
+172,1672,2010,Lewis Holtby plays for <extra_id_0>.,<extra_id_0> VfL Bochum <extra_id_1>
+173,1683,2010,Paul Dickov plays for <extra_id_0>.,<extra_id_0> Leicester City F.C. <extra_id_1>
+174,1685,2010,Adam Chicksen plays for <extra_id_0>.,<extra_id_0> Milton Keynes Dons F.C. <extra_id_1>
+175,1696,2010,Jamie Ashdown plays for <extra_id_0>.,<extra_id_0> Portsmouth F.C. <extra_id_1>
+176,1702,2010,Óscar Cardozo plays for <extra_id_0>.,<extra_id_0> S.L. Benfica <extra_id_1>
+177,1721,2010,Richard Cresswell plays for <extra_id_0>.,<extra_id_0> Stoke City F.C. <extra_id_1>
+178,1737,2010,Therese Sjögran plays for <extra_id_0>.,<extra_id_0> Sweden women's national association football team <extra_id_1>
+179,1743,2010,Caron Butler plays for <extra_id_0>.,<extra_id_0> Washington Wizards <extra_id_1>
+180,1750,2010,Liam Palmer plays for <extra_id_0>.,<extra_id_0> Scotland national under-19 football team <extra_id_1>
+181,1754,2010,Robert Snodgrass plays for <extra_id_0>.,<extra_id_0> Leeds United F.C. <extra_id_1>
+182,1765,2010,Kieron Pollard plays for <extra_id_0>.,<extra_id_0> Mumbai Indians <extra_id_1>
+183,1776,2010,Kenneth Vermeer plays for <extra_id_0>.,<extra_id_0> AFC Ajax <extra_id_1>
+184,1787,2010,Matty Fryatt plays for <extra_id_0>.,<extra_id_0> Leicester City F.C. <extra_id_1>
+185,1798,2010,Niall McGinn plays for <extra_id_0>.,<extra_id_0> Celtic F.C. <extra_id_1>
+186,1809,2010,Nathan Redmond plays for <extra_id_0>.,<extra_id_0> England national under-17 football team <extra_id_1>
+187,1820,2010,Sardar Azmoun plays for <extra_id_0>.,<extra_id_0> Iran national under-17 football team <extra_id_1>
+188,1831,2010,Kakha Kaladze plays for <extra_id_0>.,<extra_id_0> Georgia national football team <extra_id_1>
+189,1834,2010,Robert Green plays for <extra_id_0>.,<extra_id_0> West Ham United F.C. <extra_id_1>
+190,1845,2010,Matt Godden plays for <extra_id_0>.,<extra_id_0> Ilkeston Town F.C. <extra_id_1>
+191,1856,2010,Robert Mugabe holds the position of <extra_id_0>.,<extra_id_0> President of Zimbabwe <extra_id_1>
+192,1864,2010,Muammar Gaddafi holds the position of <extra_id_0>.,<extra_id_0> Chairperson of the African Union <extra_id_1>
+193,1866,2010,Recep Tayyip Erdoğan holds the position of <extra_id_0>.,<extra_id_0> Prime Minister of Turkey <extra_id_1>
+194,1877,2010,Boris Johnson holds the position of <extra_id_0>.,<extra_id_0> Mayor of London <extra_id_1>
+195,1888,2010,Vladimir Putin holds the position of <extra_id_0>.,<extra_id_0> Prime Minister of Russia <extra_id_1>
+196,1899,2010,Mike Pence holds the position of <extra_id_0>.,<extra_id_0> Republican Conference Chairman of the United States House of Representatives <extra_id_1>
+197,1920,2010,Rafael Correa Delgado holds the position of <extra_id_0>.,<extra_id_0> President pro tempore of the Union of South American Nations <extra_id_1>
+198,1935,2010,Richard Blumenthal holds the position of <extra_id_0>.,<extra_id_0> Connecticut Attorney General <extra_id_1>
+199,1946,2010,Jeff Sessions holds the position of <extra_id_0>.,<extra_id_0> United States senator <extra_id_1>
+200,1956,2010,José Luis Rodríguez Zapatero holds the position of <extra_id_0>.,<extra_id_0> President of the European Council <extra_id_1>
+201,1965,2010,Traian Băsescu holds the position of <extra_id_0>.,<extra_id_0> President of Romania <extra_id_1>
+202,1972,2010,Dmitry Medvedev holds the position of <extra_id_0>.,<extra_id_0> President of Russia <extra_id_1>
+203,1983,2010,Lee Jae-myung holds the position of <extra_id_0>.,<extra_id_0> mayor <extra_id_1>
+204,1994,2010,Frank Underwood holds the position of <extra_id_0>.,<extra_id_0> whip <extra_id_1>
+205,1999,2010,Liam Fox holds the position of <extra_id_0>.,<extra_id_0> Secretary of State for Defence <extra_id_1>
+206,2005,2010,Ed Miliband holds the position of <extra_id_0>.,<extra_id_0> Leader of the Labour Party <extra_id_1>
+207,2022,2010,John Baird holds the position of <extra_id_0>.,<extra_id_0> Minister of the Environment <extra_id_1>
+208,2028,2010,Enda Kenny holds the position of <extra_id_0>.,<extra_id_0> Teachta Dála <extra_id_1>
+209,2039,2010,Steve Cohen holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+210,2050,2010,Mitch McConnell holds the position of <extra_id_0>.,<extra_id_0> United States senator <extra_id_1>
+211,2061,2010,Eric Garcetti holds the position of <extra_id_0>.,<extra_id_0> President of the Los Angeles City Council <extra_id_1>
+212,2080,2010,Jeff Flake holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+213,2109,2010,Anerood Jugnauth holds the position of <extra_id_0>.,<extra_id_0> President of Mauritius <extra_id_1>
+214,2121,2010,James R. Clapper holds the position of <extra_id_0>.,<extra_id_0> Under Secretary of Defense for Intelligence <extra_id_1>
+215,2132,2010,Mike Honda holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+216,2140,2010,Pranab Mukherjee holds the position of <extra_id_0>.,<extra_id_0> Minister of Finance <extra_id_1>
+217,2157,2010,Kenneth Clarke holds the position of <extra_id_0>.,<extra_id_0> Lord Chancellor <extra_id_1>
+218,2165,2010,Daniel Inouye holds the position of <extra_id_0>.,<extra_id_0> United States senator <extra_id_1>
+219,2168,2010,Nicola Sturgeon holds the position of <extra_id_0>.,<extra_id_0> Cabinet Secretary for Health and Wellbeing <extra_id_1>
+220,2179,2010,Mahmoud Abbas holds the position of <extra_id_0>.,<extra_id_0> President of the Palestinian National Authority <extra_id_1>
+221,2190,2010,Abdul Taib Mahmud holds the position of <extra_id_0>.,<extra_id_0> Chief Minister of Sarawak <extra_id_1>
+222,2201,2010,Joe Donnelly holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+223,2238,2010,Oleksandr Turchynov holds the position of <extra_id_0>.,<extra_id_0> Prime Minister of Ukraine <extra_id_1>
+224,2253,2010,Viviane Reding holds the position of <extra_id_0>.,"<extra_id_0> European Commissioner for Justice, Fundamental Rights and Citizenship <extra_id_1>"
+225,2262,2010,Arseniy Yatsenyuk holds the position of <extra_id_0>.,<extra_id_0> People's Deputy of Ukraine <extra_id_1>
+226,2269,2010,Thomas Massie holds the position of <extra_id_0>.,<extra_id_0> County Judge/Executive <extra_id_1>
+227,2287,2010,Judith Collins holds the position of <extra_id_0>.,<extra_id_0> Minister of Corrections <extra_id_1>
+228,2298,2010,Roy Blunt holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+229,2309,2010,Li Keqiang holds the position of <extra_id_0>.,<extra_id_0> Vice Premier of the State Council of the People's Republic of China <extra_id_1>
+230,2320,2010,Karen Handel holds the position of <extra_id_0>.,<extra_id_0> Secretary of State of Georgia <extra_id_1>
+231,2324,2010,Andy Burnham holds the position of <extra_id_0>.,<extra_id_0> Secretary of State for Health and Social Care <extra_id_1>
+232,2335,2010,Serzh Sargsyan holds the position of <extra_id_0>.,<extra_id_0> President of Armenia <extra_id_1>
+233,2344,2010,Raúl Castro Ruz holds the position of <extra_id_0>.,<extra_id_0> Prime Minister of Cuba <extra_id_1>
+234,2355,2010,Kristina Keneally holds the position of <extra_id_0>.,<extra_id_0> Premier of New South Wales <extra_id_1>
+235,2370,2010,Selina Meyer holds the position of <extra_id_0>.,<extra_id_0> United States senator <extra_id_1>
+236,2387,2010,Ruairi Quinn holds the position of <extra_id_0>.,<extra_id_0> Teachta Dála <extra_id_1>
+237,2394,2010,Alistair Darling holds the position of <extra_id_0>.,<extra_id_0> Chancellor of the Exchequer <extra_id_1>
+238,2398,2010,Pete Hoekstra holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+239,2404,2010,Dominic Grieve holds the position of <extra_id_0>.,<extra_id_0> Advocate General for Northern Ireland <extra_id_1>
+240,2419,2010,Muhyiddin Yassin holds the position of <extra_id_0>.,<extra_id_0> Minister of Education <extra_id_1>
+241,2426,2010,Jim Sensenbrenner holds the position of <extra_id_0>.,<extra_id_0> delegate <extra_id_1>
+242,2442,2010,Bill Cassidy holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+243,2453,2010,Chris Van Hollen holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+244,2471,2010,László Tőkés holds the position of <extra_id_0>.,<extra_id_0> member of the European Parliament <extra_id_1>
+245,2495,2010,Stefan Löfven holds the position of <extra_id_0>.,<extra_id_0> chairperson <extra_id_1>
+246,2506,2010,Brian Schatz holds the position of <extra_id_0>.,<extra_id_0> Lieutenant Governor of Hawaii <extra_id_1>
+247,2527,2010,Malusi Gigaba holds the position of <extra_id_0>.,<extra_id_0> Minister of Public Enterprises <extra_id_1>
+248,2536,2010,Damian Green holds the position of <extra_id_0>.,<extra_id_0> Minister of State for Immigration <extra_id_1>
+249,2544,2010,Almazbek Atambayev holds the position of <extra_id_0>.,<extra_id_0> Prime Minister of Kyrgyzstan <extra_id_1>
+250,2555,2010,Trey Gowdy holds the position of <extra_id_0>.,<extra_id_0> solicitor <extra_id_1>
+251,2570,2010,Joe Higgins holds the position of <extra_id_0>.,<extra_id_0> member of the European Parliament <extra_id_1>
+252,2577,2010,Lynne Featherstone holds the position of <extra_id_0>.,<extra_id_0> Minister for Women and Equalities <extra_id_1>
+253,2588,2010,Mary Harney holds the position of <extra_id_0>.,<extra_id_0> Teachta Dála <extra_id_1>
+254,2590,2010,"David Julian Richards, Baron Richards of Herstmonceux holds the position of <extra_id_0>.",<extra_id_0> Chief of the General Staff (United Kingdom) <extra_id_1>
+255,2605,2010,Hubertus Leteng holds the position of <extra_id_0>.,<extra_id_0> diocesan bishop <extra_id_1>
+256,2616,2010,Xavier Becerra holds the position of <extra_id_0>.,<extra_id_0> Democratic Caucus Vice Chairman of the United States House of Representatives <extra_id_1>
+257,2627,2010,Phil Hogan holds the position of <extra_id_0>.,<extra_id_0> Teachta Dála <extra_id_1>
+258,2638,2010,"Daniel M. Donovan, Jr. holds the position of <extra_id_0>.",<extra_id_0> New York County District Attorney <extra_id_1>
+259,2663,2010,Abdrabbuh Mansour Hadi holds the position of <extra_id_0>.,<extra_id_0> Vice President of Yemen <extra_id_1>
+260,2680,2010,Dermot Ahern holds the position of <extra_id_0>.,<extra_id_0> Teachta Dála <extra_id_1>
+261,2682,2010,Tony Baldry holds the position of <extra_id_0>.,<extra_id_0> Church Commissioners <extra_id_1>
+262,2688,2010,Gary Locke holds the position of <extra_id_0>.,<extra_id_0> United States Secretary of Commerce <extra_id_1>
+263,2693,2010,Tabaré Vázquez holds the position of <extra_id_0>.,<extra_id_0> President of Uruguay <extra_id_1>
+264,2716,2010,Eric Chu holds the position of <extra_id_0>.,<extra_id_0> Vice Premier of the Republic of China <extra_id_1>
+265,2725,2010,Wang Qishan holds the position of <extra_id_0>.,<extra_id_0> Vice Premier of the State Council of the People's Republic of China <extra_id_1>
+266,2751,2010,Rodney L. Davis holds the position of <extra_id_0>.,<extra_id_0> congressional staff <extra_id_1>
+267,2762,2010,Ivan Lewis holds the position of <extra_id_0>.,<extra_id_0> Minister of State for Foreign Affairs <extra_id_1>
+268,2797,2010,Virginia Foxx holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+269,2830,2010,Édouard Philippe holds the position of <extra_id_0>.,<extra_id_0> president <extra_id_1>
+270,2845,2010,Martin Cullen holds the position of <extra_id_0>.,<extra_id_0> Teachta Dála <extra_id_1>
+271,2846,2010,Pál Schmitt holds the position of <extra_id_0>.,<extra_id_0> member of the European Parliament <extra_id_1>
+272,2879,2010,David McAllister holds the position of <extra_id_0>.,<extra_id_0> Minister-President of Lower Saxony <extra_id_1>
+273,2890,2010,Dacian Cioloș holds the position of <extra_id_0>.,<extra_id_0> European Commissioner for Agriculture and Rural Development <extra_id_1>
+274,2900,2010,"Joseph F. Dunford, Jr. holds the position of <extra_id_0>.",<extra_id_0> Assistant Commandant of the Marine Corps <extra_id_1>
+275,2910,2010,Dominique Mamberti holds the position of <extra_id_0>.,<extra_id_0> Secretary for Relations with States <extra_id_1>
+276,2924,2010,Naledi Pandor holds the position of <extra_id_0>.,<extra_id_0> Minister of Science and Technology <extra_id_1>
+277,2935,2010,Desmond Swayne holds the position of <extra_id_0>.,<extra_id_0> Parliamentary Private Secretary to the Prime Minister <extra_id_1>
+278,2943,2010,Nick Brown holds the position of <extra_id_0>.,<extra_id_0> Labour Chief Whip <extra_id_1>
+279,2964,2010,Karel De Gucht holds the position of <extra_id_0>.,<extra_id_0> European Commissioner for Trade <extra_id_1>
+280,2969,2010,Maroš Šefčovič holds the position of <extra_id_0>.,"<extra_id_0> European Commissioner for Education, Culture, Multilingualism and Youth <extra_id_1>"
+281,2978,2010,Olav Fykse Tveit holds the position of <extra_id_0>.,<extra_id_0> general secretary <extra_id_1>
+282,2989,2010,Volodymyr Lytvyn holds the position of <extra_id_0>.,<extra_id_0> People's Deputy of Ukraine <extra_id_1>
+283,2999,2010,Caroline Spelman holds the position of <extra_id_0>.,"<extra_id_0> Secretary of State for Housing, Communities and Local Government <extra_id_1>"
+284,3014,2010,Dawn Primarolo holds the position of <extra_id_0>.,<extra_id_0> Chairman of Ways and Means <extra_id_1>
+285,3040,2010,Michael Spindelegger holds the position of <extra_id_0>.,<extra_id_0> Foreign Minister of Austria <extra_id_1>
+286,3062,2010,Seán Barrett holds the position of <extra_id_0>.,<extra_id_0> Teachta Dála <extra_id_1>
+287,3078,2010,Jon Trickett holds the position of <extra_id_0>.,<extra_id_0> Parliamentary Private Secretary to the Prime Minister <extra_id_1>
+288,3084,2010,Maria Eagle holds the position of <extra_id_0>.,<extra_id_0> Shadow Secretary of State for Transport <extra_id_1>
+289,3099,2010,Xavier Bettel holds the position of <extra_id_0>.,<extra_id_0> Échevin <extra_id_1>
+290,3109,2010,John L. Hennessy holds the position of <extra_id_0>.,<extra_id_0> president <extra_id_1>
+291,3135,2010,Paul Butler holds the position of <extra_id_0>.,<extra_id_0> Bishop of Southampton <extra_id_1>
+292,3160,2010,Dalo Bucaram holds the position of <extra_id_0>.,<extra_id_0> Supreme director <extra_id_1>
+293,3189,2010,Craig Emerson holds the position of <extra_id_0>.,<extra_id_0> Minister for Trade <extra_id_1>
+294,3212,2010,Jutta Urpilainen holds the position of <extra_id_0>.,<extra_id_0> party leader <extra_id_1>
+295,3217,2010,Petr Nečas holds the position of <extra_id_0>.,<extra_id_0> party leader <extra_id_1>
+296,3236,2010,Zsolt Borkai holds the position of <extra_id_0>.,<extra_id_0> vice president <extra_id_1>
+297,3283,2010,Charles Shor holds the position of <extra_id_0>.,<extra_id_0> président-directeur général <extra_id_1>
+298,3298,2010,Michel Spiro holds the position of <extra_id_0>.,<extra_id_0> director <extra_id_1>
+299,3303,2010,Brendan Smith holds the position of <extra_id_0>.,<extra_id_0> Teachta Dála <extra_id_1>
+300,3314,2010,David Dabede Mabuza holds the position of <extra_id_0>.,<extra_id_0> Premier of Mpumalanga <extra_id_1>
+301,3329,2010,Donna Christian-Christensen holds the position of <extra_id_0>.,<extra_id_0> United States representative <extra_id_1>
+302,3345,2010,Arayik Harutyunyan holds the position of <extra_id_0>.,<extra_id_0> Prime Minister of Artsakh <extra_id_1>
+303,3362,2010,Nik Stauskas attended <extra_id_0>.,<extra_id_0> South Kent School <extra_id_1>
+304,3367,2010,Katie Ledecky attended <extra_id_0>.,<extra_id_0> Stone Ridge School of the Sacred Heart <extra_id_1>
+305,3378,2010,Baker Mayfield attended <extra_id_0>.,<extra_id_0> Lake Travis High School <extra_id_1>
+306,3389,2010,Jiankui He attended <extra_id_0>.,<extra_id_0> Rice University <extra_id_1>
+307,3392,2010,Jae Crowder attended <extra_id_0>.,<extra_id_0> Howard College <extra_id_1>
+308,3400,2010,Marco Gonzales attended <extra_id_0>.,<extra_id_0> Rocky Mountain High School <extra_id_1>
+309,3404,2010,Johnathan Williams attended <extra_id_0>.,<extra_id_0> Southwind High School <extra_id_1>
+310,3413,2010,Frank Kaminsky attended <extra_id_0>.,<extra_id_0> Benet Academy <extra_id_1>
+311,3424,2010,Jazmin Grace Grimaldi attended <extra_id_0>.,<extra_id_0> Fordham University <extra_id_1>
+312,3429,2010,Mike Gallagher attended <extra_id_0>.,<extra_id_0> National Intelligence University <extra_id_1>
+313,3435,2010,Jevon Carter attended <extra_id_0>.,<extra_id_0> Proviso East High School <extra_id_1>
+314,3446,2010,Jeffrey Mark Deskovic attended <extra_id_0>.,<extra_id_0> John Jay College of Criminal Justice <extra_id_1>
+315,3460,2010,Thomas Walkup attended <extra_id_0>.,<extra_id_0> Deer Park High School <extra_id_1>
+316,3467,2010,Killian Tillie attended <extra_id_0>.,<extra_id_0> INSEP <extra_id_1>
+317,3483,2010,Luke Falk attended <extra_id_0>.,<extra_id_0> Oaks Christian School <extra_id_1>
+318,3498,2010,Vianney attended <extra_id_0>.,<extra_id_0> PSB Paris School of Business <extra_id_1>
+319,3503,2010,Tiffany Trump attended <extra_id_0>.,<extra_id_0> University of Pennsylvania <extra_id_1>
+320,3522,2010,Fletcher Magee attended <extra_id_0>.,<extra_id_0> The First Academy <extra_id_1>
+321,3533,2010,Grant Williams attended <extra_id_0>.,<extra_id_0> Providence Day School <extra_id_1>
+322,3544,2010,Derek Willis attended <extra_id_0>.,<extra_id_0> Bullitt East High School <extra_id_1>
+323,3552,2010,Andrew Donlin attended <extra_id_0>.,<extra_id_0> Wayzata High School <extra_id_1>
+324,3558,2010,Kylie Moore-Gilbert attended <extra_id_0>.,<extra_id_0> University of Cambridge <extra_id_1>
+325,3566,2010,Ayman Rashdan Wong attended <extra_id_0>.,<extra_id_0> National University of Malaysia <extra_id_1>
+326,3574,2010,Felix Finkbeiner attended <extra_id_0>.,"<extra_id_0> School of Oriental and African Studies, University of London <extra_id_1>"
+327,3585,2010,Mireia Vehí i Cantenys attended <extra_id_0>.,<extra_id_0> Pompeu Fabra University <extra_id_1>
+328,3587,2010,Anna Júlia Donáth attended <extra_id_0>.,<extra_id_0> Eötvös Loránd University <extra_id_1>
+329,3590,2010,Clayton Custer attended <extra_id_0>.,<extra_id_0> Blue Valley Northwest High School <extra_id_1>
+330,3606,2010,S. Olvah Alhamid attended <extra_id_0>.,<extra_id_0> University of Groningen <extra_id_1>
+331,3610,2010,Katalin Cseh attended <extra_id_0>.,<extra_id_0> Semmelweis University <extra_id_1>
+332,3619,2010,Scotty Walden attended <extra_id_0>.,<extra_id_0> Hardin–Simmons University <extra_id_1>
+333,3627,2010,Megan Walker attended <extra_id_0>.,<extra_id_0> Monacan High School <extra_id_1>
+334,3638,2010,Jayson Musson attended <extra_id_0>.,<extra_id_0> University of Pennsylvania <extra_id_1>
+335,3640,2010,Elina Netšajeva attended <extra_id_0>.,<extra_id_0> Estonian Academy of Music and Theatre <extra_id_1>
+336,3670,2010,Louise Coldefy attended <extra_id_0>.,<extra_id_0> Cours Florent <extra_id_1>
+337,3681,2010,Alexandre Benalla attended <extra_id_0>.,<extra_id_0> University of Rouen <extra_id_1>
+338,3686,2010,Brielle Biermann attended <extra_id_0>.,<extra_id_0> Cambridge High School <extra_id_1>
+339,3697,2010,<extra_id_0> is the chair of bp.,<extra_id_0> Carl-Henric Svanberg <extra_id_1>
+340,3708,2010,<extra_id_0> is the chair of Republican Party.,<extra_id_0> Michael Steele <extra_id_1>
+341,3727,2010,<extra_id_0> is the chair of Democratic Party.,<extra_id_0> Rosy Bindi <extra_id_1>
+342,3738,2010,<extra_id_0> is the chair of Sainsbury's.,<extra_id_0> Justin King <extra_id_1>
+343,3745,2010,<extra_id_0> is the chair of National Rally.,<extra_id_0> Jean-Marie Le Pen <extra_id_1>
+344,3756,2010,<extra_id_0> is the chair of Swansea City A.F.C..,<extra_id_0> Huw Jenkins <extra_id_1>
+345,3767,2010,<extra_id_0> is the chair of Libertarian Party.,<extra_id_0> Bill Redpath <extra_id_1>
+346,3778,2010,<extra_id_0> is the chair of Anti-Defamation League.,<extra_id_0> Abraham Foxman <extra_id_1>
+347,3789,2010,<extra_id_0> is the chair of International Olympic Committee.,<extra_id_0> Jacques Rogge <extra_id_1>
+348,3800,2010,<extra_id_0> is the chair of HSBC.,<extra_id_0> Douglas Flint <extra_id_1>
+349,3828,2010,<extra_id_0> is the chair of Scottish Parliament.,<extra_id_0> Alex Fergusson <extra_id_1>
+350,3839,2010,<extra_id_0> is the chair of Aston Villa F.C..,<extra_id_0> Xia Jiantong <extra_id_1>
+351,3850,2010,<extra_id_0> is the chair of International Shooting Sport Federation.,<extra_id_0> Olegario Vázquez Raña <extra_id_1>
+352,3861,2010,<extra_id_0> is the chair of Finns Party.,<extra_id_0> Timo Soini <extra_id_1>
+353,3872,2010,<extra_id_0> is the chair of Unilever.,<extra_id_0> Michael Treschow <extra_id_1>
+354,3882,2010,<extra_id_0> is the chair of Organisation of Islamic Cooperation.,<extra_id_0> Ekmeleddin İhsanoğlu <extra_id_1>
+355,3893,2010,<extra_id_0> is the chair of NatWest Group.,<extra_id_0> Sir Philip Hampton <extra_id_1>
+356,3914,2010,<extra_id_0> is the chair of Lloyds Banking Group.,<extra_id_0> Winfried Bischoff <extra_id_1>
+357,3931,2010,<extra_id_0> is the chair of Democratic Progressive Party.,<extra_id_0> Tsai Ing-wen <extra_id_1>
+358,3956,2010,<extra_id_0> is the chair of Association for Computing Machinery.,<extra_id_0> Wendy Hall <extra_id_1>
+359,3966,2010,<extra_id_0> is the chair of French National Assembly.,<extra_id_0> Bernard Accoyer <extra_id_1>
+360,3977,2010,<extra_id_0> is the chair of Knesset.,<extra_id_0> Reuven Rivlin <extra_id_1>
+361,3992,2010,<extra_id_0> is the chair of Estonian Centre Party.,<extra_id_0> Edgar Savisaar <extra_id_1>
+362,4003,2010,<extra_id_0> is the chair of Folketing.,<extra_id_0> Thor Pedersen <extra_id_1>
+363,4014,2010,<extra_id_0> is the chair of Danish People's Party.,<extra_id_0> Pia Kjærsgaard <extra_id_1>
+364,4034,2010,<extra_id_0> is the chair of Green Party.,<extra_id_0> Maria Wetterstrand <extra_id_1>
+365,4052,2010,<extra_id_0> is the chair of Federation of Expellees.,<extra_id_0> Erika Steinbach <extra_id_1>
+366,4063,2010,<extra_id_0> is the chair of European Bank for Reconstruction and Development.,<extra_id_0> Thomas Mirow <extra_id_1>
+367,4089,2010,<extra_id_0> is the chair of RCD Mallorca.,<extra_id_0> Josep Maria Pons Irazazábal <extra_id_1>
+368,4115,2010,<extra_id_0> is the chair of Democratic Convergence of Catalonia.,<extra_id_0> Jordi Pujol <extra_id_1>
+369,4131,2010,<extra_id_0> is the chair of Y Combinator.,<extra_id_0> Paul Graham <extra_id_1>
+370,4142,2010,<extra_id_0> is the chair of Group Centrist Union.,<extra_id_0> Nicolas About <extra_id_1>
+371,4148,2010,<extra_id_0> is the chair of Kyoto University.,<extra_id_0> Hiroshi Matsumoto <extra_id_1>
+372,4159,2010,<extra_id_0> is the chair of Economic Community of West African States.,<extra_id_0> Umaru Musa Yar'Adua <extra_id_1>
+373,4170,2010,<extra_id_0> is the chair of Christian Social People's Party.,<extra_id_0> Michel Wolter <extra_id_1>
+374,4187,2010,<extra_id_0> is the chair of Chamber of Deputies.,<extra_id_0> Laurent Mosar <extra_id_1>
+375,4203,2010,<extra_id_0> is the chair of Financial Stability Board.,<extra_id_0> Mario Draghi <extra_id_1>
+376,4214,2010,<extra_id_0> is the chair of Landtag of Bavaria.,<extra_id_0> Barbara Stamm <extra_id_1>
+377,4246,2010,<extra_id_0> is the chair of Ministry of Economy and Finance.,<extra_id_0> Yoon Jeung-hyun <extra_id_1>
+378,4255,2010,<extra_id_0> is the chair of Toulouse FC.,<extra_id_0> Olivier Sadran <extra_id_1>
+379,4266,2010,<extra_id_0> is the chair of Associated British Foods.,<extra_id_0> Charles Sinclair <extra_id_1>
+380,4277,2010,<extra_id_0> is the chair of Lega Lombarda.,<extra_id_0> Roberto Castelli <extra_id_1>
+381,4288,2010,<extra_id_0> is the chair of Protezione Civile.,<extra_id_0> Guido Bertolaso <extra_id_1>
+382,4299,2010,<extra_id_0> is the chair of Party of Italian Communists.,<extra_id_0> Antonino Cuffaro <extra_id_1>
+383,4304,2010,<extra_id_0> is the chair of European Movement International.,<extra_id_0> Pat Cox <extra_id_1>
+384,4315,2010,<extra_id_0> is the chair of Roman Catholic Archdiocese of Kingston.,<extra_id_0> Brendan O'Brien <extra_id_1>
+385,4326,2010,<extra_id_0> is the chair of Alliance of Liberals and Democrats for Europe Party.,<extra_id_0> Annemie Neyts-Uyttebroeck <extra_id_1>
+386,4337,2010,"<extra_id_0> is the chair of Ministry of Culture, Sports and Tourism.",<extra_id_0> Yu In-chon <extra_id_1>
+387,4347,2010,<extra_id_0> is the chair of Òmnium Cultural.,<extra_id_0> Muriel Casals <extra_id_1>
+388,4358,2010,<extra_id_0> is the chair of National Society of Film Critics.,<extra_id_0> David Sterritt <extra_id_1>
+389,4375,2010,<extra_id_0> is the chair of Ministry of Internal Affairs of Ukraine.,<extra_id_0> Yuriy Lutsenko <extra_id_1>
+390,4394,2010,<extra_id_0> is the chair of Atlantik-Brücke.,<extra_id_0> Friedrich Merz <extra_id_1>
+391,4426,2010,<extra_id_0> is the chair of Public Affairs.,<extra_id_0> Radek John <extra_id_1>
+392,4441,2010,<extra_id_0> is the chair of Saxon academy of arts.,<extra_id_0> Udo Zimmermann <extra_id_1>
+393,4452,2010,<extra_id_0> is the chair of Drasi.,<extra_id_0> Stefanos Manos <extra_id_1>
+394,4463,2010,<extra_id_0> is the chair of Association for Symbolic Logic.,<extra_id_0> Penelope Maddy <extra_id_1>
+395,4470,2010,<extra_id_0> is the chair of Andrew W. Mellon Foundation.,<extra_id_0> Don Michael Randel <extra_id_1>
+396,4485,2010,<extra_id_0> is the chair of CDU Baden-Württemberg.,<extra_id_0> Stefan Mappus <extra_id_1>
+397,4496,2010,"<extra_id_0> is the chair of Embassy of Ukraine, London.",<extra_id_0> Ihor Kharchenko <extra_id_1>
+398,4507,2010,<extra_id_0> is the chair of Russian Olympic Committee.,<extra_id_0> Leonid Tyagachev <extra_id_1>
+399,4516,2010,"<extra_id_0> is the chair of Embassy of Ukraine, Ottawa.",<extra_id_0> Ihor Ostash <extra_id_1>
+400,4546,2010,<extra_id_0> is the chair of Société des amis du Louvre.,<extra_id_0> Marc Fumaroli <extra_id_1>
+401,4560,2010,<extra_id_0> is the chair of Bordeaux Montaigne University.,<extra_id_0> Patrice Brun <extra_id_1>
+402,4568,2010,<extra_id_0> is the chair of Likud Central Committee.,<extra_id_0> Moshe Kahlon <extra_id_1>
+403,4587,2010,Muhammadu Buhari is a member of the <extra_id_0>.,<extra_id_0> Congress for Progressive Change <extra_id_1>
+404,4598,2010,Rocky Anderson is a member of the <extra_id_0>.,<extra_id_0> Democratic Party <extra_id_1>
+405,4609,2010,Kim Davis is a member of the <extra_id_0>.,<extra_id_0> Democratic Party <extra_id_1>
+406,4620,2010,Moshe Feiglin is a member of the <extra_id_0>.,<extra_id_0> Likud <extra_id_1>
+407,4631,2010,Sarath Fonseka is a member of the <extra_id_0>.,<extra_id_0> New Democratic Front <extra_id_1>
+408,4642,2010,Bill Weld is a member of the <extra_id_0>.,<extra_id_0> Republican Party <extra_id_1>
+409,4653,2010,Jim Prentice is a member of the <extra_id_0>.,<extra_id_0> Conservative Party of Canada <extra_id_1>
+410,4660,2010,Cory Bernardi is a member of the <extra_id_0>.,<extra_id_0> Liberal Party of Australia <extra_id_1>
+411,4670,2010,Louka Katseli is a member of the <extra_id_0>.,<extra_id_0> Panhellenic Socialist Movement <extra_id_1>
+412,4676,2010,Omarosa Manigault Newman is a member of the <extra_id_0>.,<extra_id_0> Democratic Party <extra_id_1>
+413,4687,2010,Dennis Hood is a member of the <extra_id_0>.,<extra_id_0> Family First Party <extra_id_1>
+414,4698,2010,Marina Silva is a member of the <extra_id_0>.,<extra_id_0> Green Party <extra_id_1>
+415,4708,2010,Richard Painter is a member of the <extra_id_0>.,<extra_id_0> Republican Party <extra_id_1>
+416,4719,2010,Per Sandberg is a member of the <extra_id_0>.,<extra_id_0> Progress Party <extra_id_1>
+417,4730,2010,Svitlana Zalishchuk is a member of the <extra_id_0>.,<extra_id_0> European Solidarity <extra_id_1>
+418,4741,2010,Jim Justice is a member of the <extra_id_0>.,<extra_id_0> Republican Party <extra_id_1>
+419,4752,2010,Adonis Georgiades is a member of the <extra_id_0>.,<extra_id_0> Popular Orthodox Rally <extra_id_1>
+420,4763,2010,Jacques Boutault is a member of the <extra_id_0>.,<extra_id_0> Europe Ecology – The Greens <extra_id_1>
+421,4774,2010,Sam Gyimah is a member of the <extra_id_0>.,<extra_id_0> Conservative Party <extra_id_1>
+422,4785,2010,Roberts Zīle is a member of the <extra_id_0>.,<extra_id_0> For Fatherland and Freedom/LNNK <extra_id_1>
+423,4796,2010,Benoît Hamon is a member of the <extra_id_0>.,<extra_id_0> Socialist Party <extra_id_1>
+424,4807,2010,Sylvie Goulard is a member of the <extra_id_0>.,<extra_id_0> Democratic Movement <extra_id_1>
+425,4818,2010,Craig Mackinlay is a member of the <extra_id_0>.,<extra_id_0> UK Independence Party <extra_id_1>
+426,4829,2010,Alexandre del Valle is a member of the <extra_id_0>.,<extra_id_0> Union for a Popular Movement <extra_id_1>
+427,4832,2010,Tendai Biti is a member of the <extra_id_0>.,<extra_id_0> Movement for Democratic Change – Tsvangirai <extra_id_1>
+428,4840,2010,Édouard Philippe is a member of the <extra_id_0>.,<extra_id_0> Union for a Popular Movement <extra_id_1>
+429,4849,2010,Mark Reckless is a member of the <extra_id_0>.,<extra_id_0> Conservative Party <extra_id_1>
+430,4859,2010,Terry Mills is a member of the <extra_id_0>.,<extra_id_0> Country Liberal Party <extra_id_1>
+431,4868,2010,Carlo Giovanardi is a member of the <extra_id_0>.,<extra_id_0> The People of Freedom <extra_id_1>
+432,4887,2010,Kushboo is a member of the <extra_id_0>.,<extra_id_0> Dravida Munnetra Kazhagam <extra_id_1>
+433,4898,2010,Heidi Allen is a member of the <extra_id_0>.,<extra_id_0> Conservative Party <extra_id_1>
+434,4909,2010,Y. S. Jaganmohan Reddy is a member of the <extra_id_0>.,<extra_id_0> Indian National Congress <extra_id_1>
+435,4920,2010,Abdalá Bucaram Ortiz is a member of the <extra_id_0>.,<extra_id_0> Ecuadorian Roldosist Party <extra_id_1>
+436,4935,2010,Laurențiu Rebega is a member of the <extra_id_0>.,<extra_id_0> Conservative Party <extra_id_1>
+437,4946,2010,Steve Dickson is a member of the <extra_id_0>.,<extra_id_0> Liberal National Party of Queensland <extra_id_1>
+438,4957,2010,Ákos Hadházy is a member of the <extra_id_0>.,<extra_id_0> Fidesz <extra_id_1>
+439,4966,2010,Gianni Alemanno is a member of the <extra_id_0>.,<extra_id_0> The People of Freedom <extra_id_1>
+440,4977,2010,Zury Ríos is a member of the <extra_id_0>.,<extra_id_0> Institutional Republican Party <extra_id_1>
+441,4984,2010,Tom O'Halleran is a member of the <extra_id_0>.,<extra_id_0> Republican Party <extra_id_1>
+442,4995,2010,Gabriela Rivadeneira is a member of the <extra_id_0>.,<extra_id_0> PAIS Alliance <extra_id_1>
+443,5006,2010,Andrew Leung is a member of the <extra_id_0>.,<extra_id_0> Economic Synergy <extra_id_1>
+444,5017,2010,Hazel Poa is a member of the <extra_id_0>.,<extra_id_0> Reform Party <extra_id_1>
+445,5025,2010,Teodor Meleșcanu is a member of the <extra_id_0>.,<extra_id_0> National Liberal Party <extra_id_1>
+446,5032,2010,James Marape is a member of the <extra_id_0>.,<extra_id_0> National Alliance Party <extra_id_1>
+447,5043,2010,Kristin Michelsen is a member of the <extra_id_0>.,<extra_id_0> Social Democratic Party of the Faroe Islands <extra_id_1>
+448,5054,2010,Marta Andreasen is a member of the <extra_id_0>.,<extra_id_0> UK Independence Party <extra_id_1>
+449,5065,2010,Aleksa Bečić is a member of the <extra_id_0>.,<extra_id_0> Socialist People's Party of Montenegro <extra_id_1>
+450,5076,2010,Rebekha Sharkie is a member of the <extra_id_0>.,<extra_id_0> Liberal Party of Australia <extra_id_1>
+451,5079,2010,Banri Kaieda is a member of the <extra_id_0>.,<extra_id_0> Democratic Party of Japan <extra_id_1>
+452,5095,2010,Uffe Elbæk is a member of the <extra_id_0>.,<extra_id_0> Radical Left <extra_id_1>
+453,5106,2010,Karen Casey is a member of the <extra_id_0>.,<extra_id_0> Progressive Conservative Association of Nova Scotia <extra_id_1>
+454,5117,2010,Roberta Anastase is a member of the <extra_id_0>.,<extra_id_0> Democratic Liberal Party <extra_id_1>
+455,5128,2010,Linda Collins-Smith is a member of the <extra_id_0>.,<extra_id_0> Democratic Party <extra_id_1>
+456,5139,2010,Marios Matsakis is a member of the <extra_id_0>.,<extra_id_0> independent politician <extra_id_1>
+457,5150,2010,Yvan Benedetti is a member of the <extra_id_0>.,<extra_id_0> National Rally <extra_id_1>
+458,5160,2010,Gergely Karácsony is a member of the <extra_id_0>.,<extra_id_0> Politics Can Be Different <extra_id_1>
+459,5171,2010,Miloud Chaabi is a member of the <extra_id_0>.,<extra_id_0> Party of Progress and Socialism <extra_id_1>
+460,5187,2010,Antonio Razzi is a member of the <extra_id_0>.,<extra_id_0> Italy of Values <extra_id_1>
+461,5198,2010,Duncan McFetridge is a member of the <extra_id_0>.,<extra_id_0> Liberal Party of Australia <extra_id_1>
+462,5206,2010,Teodor Baconschi is a member of the <extra_id_0>.,<extra_id_0> Democratic Liberal Party <extra_id_1>
+463,5213,2010,Lluís Puig i Gordi is a member of the <extra_id_0>.,<extra_id_0> Catalan European Democratic Party <extra_id_1>
+464,5224,2010,Joachim Starbatty is a member of the <extra_id_0>.,<extra_id_0> Alternative for Germany <extra_id_1>
+465,5235,2010,Vladimir Milov is a member of the <extra_id_0>.,"<extra_id_0> People's Freedom Party ""For Russia without Lawlessness and Corruption"" <extra_id_1>"
+466,5237,2010,John Finnie is a member of the <extra_id_0>.,<extra_id_0> Scottish National Party <extra_id_1>
+467,5247,2010,Jaume Bartumeu is a member of the <extra_id_0>.,<extra_id_0> Social Democratic Party <extra_id_1>
+468,5265,2010,Akram Hasson is a member of the <extra_id_0>.,<extra_id_0> Kadima <extra_id_1>
+469,5276,2010,Park Byeong-seug is a member of the <extra_id_0>.,<extra_id_0> Democratic Party of Korea <extra_id_1>
+470,5287,2010,Aurore Bergé is a member of the <extra_id_0>.,<extra_id_0> The Republicans <extra_id_1>
+471,5298,2010,Kamel Morjane is a member of the <extra_id_0>.,<extra_id_0> Constitutional Democratic Rally <extra_id_1>
+472,5309,2010,Sunil Babu Pant is a member of the <extra_id_0>.,<extra_id_0> Communist Party of Nepal (United) <extra_id_1>
+473,5320,2010,Scott Andrews is a member of the <extra_id_0>.,<extra_id_0> Liberal Party of Canada <extra_id_1>
+474,5331,2010,Fabrizio Cicchitto is a member of the <extra_id_0>.,<extra_id_0> The People of Freedom <extra_id_1>
+475,5342,2010,Omar Balafrej is a member of the <extra_id_0>.,<extra_id_0> Socialist Union of Popular Forces <extra_id_1>
+476,5349,2010,Peter Pilz is a member of the <extra_id_0>.,<extra_id_0> Die Grünen <extra_id_1>
+477,5360,2010,Troy Bell is a member of the <extra_id_0>.,<extra_id_0> Liberal Party of Australia <extra_id_1>
+478,5368,2010,John Longworth is a member of the <extra_id_0>.,<extra_id_0> Brexit Party <extra_id_1>
+479,5379,2010,Janice Lee is a member of the <extra_id_0>.,<extra_id_0> Democratic Action Party <extra_id_1>
+480,5386,2010,Hanna Jensen is a member of the <extra_id_0>.,<extra_id_0> People's Party <extra_id_1>
+481,5397,2010,Viron Polydoras is a member of the <extra_id_0>.,<extra_id_0> New Democracy <extra_id_1>
+482,5408,2010,Hsu Hsin-ying is a member of the <extra_id_0>.,<extra_id_0> Kuomintang <extra_id_1>
+483,5419,2010,Ichita Yamamoto is a member of the <extra_id_0>.,<extra_id_0> Liberal Democratic Party <extra_id_1>
+484,5430,2010,John Darley is a member of the <extra_id_0>.,<extra_id_0> No Pokies <extra_id_1>
+485,5447,2010,Guillaume Rose is a member of the <extra_id_0>.,<extra_id_0> Union for Monaco <extra_id_1>
+486,5454,2010,Ovidiu Silaghi is a member of the <extra_id_0>.,<extra_id_0> National Liberal Party <extra_id_1>
+487,5465,2010,Níkos Nikolópoulos is a member of the <extra_id_0>.,<extra_id_0> New Democracy <extra_id_1>
+488,5470,2010,Daniel Salaverry is a member of the <extra_id_0>.,<extra_id_0> American Popular Revolutionary Alliance <extra_id_1>
+489,5481,2010,Ichirō Matsui is a member of the <extra_id_0>.,<extra_id_0> Osaka Restoration Association <extra_id_1>
+490,5492,2010,Dan Satterberg is a member of the <extra_id_0>.,<extra_id_0> Republican Party <extra_id_1>
+491,5503,2010,Sonja Jógvansdóttir is a member of the <extra_id_0>.,<extra_id_0> Social Democratic Party of the Faroe Islands <extra_id_1>
+492,5514,2010,José Rafael Abinader Wasaf is a member of the <extra_id_0>.,<extra_id_0> Dominican Revolutionary Party <extra_id_1>
+493,5523,2010,Jaume Alonso-Cuevillas is a member of the <extra_id_0>.,<extra_id_0> independent politician <extra_id_1>
+494,5538,2010,Olivia Grégoire is a member of the <extra_id_0>.,<extra_id_0> Union for a Popular Movement <extra_id_1>
+495,5548,2010,Rahşan Ecevit is a member of the <extra_id_0>.,<extra_id_0> Democratic Left People's Party <extra_id_1>
+496,5559,2010,Àngels Martínez Castells is a member of the <extra_id_0>.,<extra_id_0> United and Alternative Left <extra_id_1>
+497,5570,2010,Irene Rigau Oliver is a member of the <extra_id_0>.,<extra_id_0> Democratic Convergence of Catalonia <extra_id_1>
+498,5581,2010,Gheorghe Flutur is a member of the <extra_id_0>.,<extra_id_0> Democratic Liberal Party <extra_id_1>
+499,5592,2010,Josep Ramon Bosch i Codina is a member of the <extra_id_0>.,<extra_id_0> People's Party <extra_id_1>
+500,5603,2010,Saleem Shahzad is a member of the <extra_id_0>.,<extra_id_0> Muttahida Qaumi Movement <extra_id_1>
+501,5612,2010,Darius Bogdan Vâlcov is a member of the <extra_id_0>.,<extra_id_0> Democratic Liberal Party <extra_id_1>
+502,5623,2010,Shpend Ahmeti is a member of the <extra_id_0>.,<extra_id_0> New Spirit Party <extra_id_1>
+503,5633,2010,Dimitar Stoyanov is a member of the <extra_id_0>.,<extra_id_0> National Union Attack <extra_id_1>
+504,5644,2010,Eskil Brøndbo is a member of the <extra_id_0>.,<extra_id_0> Norwegian Labour Party <extra_id_1>
+505,5675,2010,Miquel Sàmper Rodríguez is a member of the <extra_id_0>.,<extra_id_0> Catalan European Democratic Party <extra_id_1>
+506,5686,2010,Anna Grodzka is a member of the <extra_id_0>.,<extra_id_0> Democratic Left Alliance <extra_id_1>
+507,5693,2010,Jiří Pospíšil is a member of the <extra_id_0>.,<extra_id_0> Civic Democratic Party <extra_id_1>
+508,5702,2010,Luzmila Nicolalde is a member of the <extra_id_0>.,<extra_id_0> Patriotic Society <extra_id_1>
+509,5716,2010,Abdul Hakeem Baloch is a member of the <extra_id_0>.,<extra_id_0> Pakistan Muslim League (N) <extra_id_1>
+510,5727,2010,Alexandra Arce is a member of the <extra_id_0>.,<extra_id_0> PAIS Alliance <extra_id_1>
+511,5738,2010,Pavlos Polakis is a member of the <extra_id_0>.,<extra_id_0> New Left Current <extra_id_1>
+512,5749,2010,Chen Hsueh-sheng is a member of the <extra_id_0>.,<extra_id_0> Kuomintang <extra_id_1>
+513,5760,2010,Marius Nicoară is a member of the <extra_id_0>.,<extra_id_0> National Liberal Party <extra_id_1>
+514,5771,2010,Veera Ruoho is a member of the <extra_id_0>.,<extra_id_0> Finns Party <extra_id_1>
+515,5782,2010,Wilhelm von Gottberg is a member of the <extra_id_0>.,<extra_id_0> Christian Democratic Union <extra_id_1>
+516,5792,2010,Dimitris Kremastinos is a member of the <extra_id_0>.,<extra_id_0> Panhellenic Socialist Movement <extra_id_1>
+517,5803,2010,Paolo Romani is a member of the <extra_id_0>.,<extra_id_0> The People of Freedom <extra_id_1>
+518,5813,2010,Giulio Gallera is a member of the <extra_id_0>.,<extra_id_0> The People of Freedom <extra_id_1>
+519,5824,2010,Ivan David is a member of the <extra_id_0>.,<extra_id_0> Czech Social Democratic Party <extra_id_1>
+520,5832,2010,María Teresa Sosa is a member of the <extra_id_0>.,<extra_id_0> Institutional Republican Party <extra_id_1>
+521,5843,2010,Catherine Osson is a member of the <extra_id_0>.,<extra_id_0> Socialist Party <extra_id_1>
+522,5854,2010,Norbert Klein is a member of the <extra_id_0>.,<extra_id_0> People's Party for Freedom and Democracy <extra_id_1>
+523,5859,2010,Zoran Stojković is a member of the <extra_id_0>.,<extra_id_0> Democratic Party of Serbia <extra_id_1>
+524,5870,2010,Mircea Hava is a member of the <extra_id_0>.,<extra_id_0> Democratic Liberal Party <extra_id_1>
+525,5881,2010,Nikolaos Michos is a member of the <extra_id_0>.,<extra_id_0> Golden Dawn <extra_id_1>
+526,5896,2010,Yannick Kerlogot is a member of the <extra_id_0>.,<extra_id_0> Europe Ecology – The Greens <extra_id_1>
+527,5905,2010,Daniel Funeriu is a member of the <extra_id_0>.,<extra_id_0> Democratic Liberal Party <extra_id_1>
+528,5914,2010,Gerardo Buganza is a member of the <extra_id_0>.,<extra_id_0> Institutional Revolutionary Party <extra_id_1>
+529,5925,2010,Gheorghe Falcă is a member of the <extra_id_0>.,<extra_id_0> Democratic Liberal Party <extra_id_1>
+530,5936,2010,Raffaele Baldassarre is a member of the <extra_id_0>.,<extra_id_0> The People of Freedom <extra_id_1>
+531,5951,2010,Hitoshi Goto is a member of the <extra_id_0>.,<extra_id_0> Democratic Party of Japan <extra_id_1>
+532,5962,2010,Nasreena Ibrahim is a member of the <extra_id_0>.,<extra_id_0> Dhivehi Rayyithunge Party <extra_id_1>
+533,5970,2010,Yariv Oppenheimer is a member of the <extra_id_0>.,<extra_id_0> Israeli Labor Party <extra_id_1>
+534,5988,2010,Bernard Monot is a member of the <extra_id_0>.,<extra_id_0> National Rally <extra_id_1>
+535,5999,2010,Mihai Mohaci is a member of the <extra_id_0>.,<extra_id_0> Social Democratic Party <extra_id_1>
+536,6010,2010,Pernille Vermund is a member of the <extra_id_0>.,<extra_id_0> Conservative People's Party <extra_id_1>
+537,6021,2010,Josep Sánchez i Llibre is a member of the <extra_id_0>.,<extra_id_0> Democratic Union of Catalonia <extra_id_1>
+538,6032,2010,Alma Marina Vitela is a member of the <extra_id_0>.,<extra_id_0> Institutional Revolutionary Party <extra_id_1>
+539,6043,2010,Manuel García Corpus is a member of the <extra_id_0>.,<extra_id_0> Institutional Revolutionary Party <extra_id_1>
+540,6054,2010,Jacques Le Nay is a member of the <extra_id_0>.,<extra_id_0> Union for a Popular Movement <extra_id_1>
+541,6065,2010,Nicolas Florian is a member of the <extra_id_0>.,<extra_id_0> Union for a Popular Movement <extra_id_1>
+542,6076,2010,José Évrard is a member of the <extra_id_0>.,<extra_id_0> French Communist Party <extra_id_1>
+543,6087,2010,Joan Mesquida Ferrando is a member of the <extra_id_0>.,<extra_id_0> Spanish Socialist Workers' Party <extra_id_1>
+544,6098,2010,Brigitte Boccone-Pagès is a member of the <extra_id_0>.,<extra_id_0> Horizon Monaco <extra_id_1>
+545,6115,2010,Steve Bannon works for <extra_id_0>.,<extra_id_0> Breitbart News <extra_id_1>
+546,6122,2010,Nate Schierholtz works for <extra_id_0>.,<extra_id_0> San Francisco Giants <extra_id_1>
+547,6133,2010,P. J. Fleck works for <extra_id_0>.,<extra_id_0> Rutgers Scarlet Knights football <extra_id_1>
+548,6144,2010,Elinor Ostrom works for <extra_id_0>.,<extra_id_0> Indiana University <extra_id_1>
+549,6147,2010,SethBling works for <extra_id_0>.,<extra_id_0> Microsoft Corporation <extra_id_1>
+550,6158,2010,Jonathan Haidt works for <extra_id_0>.,<extra_id_0> University of Virginia <extra_id_1>
+551,6169,2010,Giuseppe Veltri works for <extra_id_0>.,<extra_id_0> University of Halle-Wittenberg <extra_id_1>
+552,6180,2010,Yannick Nézet-Séguin works for <extra_id_0>.,<extra_id_0> Rotterdam Philharmonic Orchestra <extra_id_1>
+553,6191,2010,Didier Fassin works for <extra_id_0>.,<extra_id_0> Institute for Advanced Study <extra_id_1>
+554,6202,2010,Peter T. Gallagher works for <extra_id_0>.,<extra_id_0> Trinity College Dublin <extra_id_1>
+555,6220,2010,John Carmack works for <extra_id_0>.,<extra_id_0> id Software <extra_id_1>
+556,6231,2010,Regina E. Dugan works for <extra_id_0>.,<extra_id_0> DARPA <extra_id_1>
+557,6241,2010,Pedro J. Ramírez works for <extra_id_0>.,<extra_id_0> El Mundo. <extra_id_1>
+558,6252,2010,Mariss Jansons works for <extra_id_0>.,<extra_id_0> Royal Concertgebouw Orchestra <extra_id_1>
+559,6262,2010,Matthew DeGennaro works for <extra_id_0>.,<extra_id_0> The Rockefeller University <extra_id_1>
+560,6273,2010,Mark Hurd works for <extra_id_0>.,<extra_id_0> Hewlett-Packard <extra_id_1>
+561,6283,2010,Domenico Casalino works for <extra_id_0>.,<extra_id_0> ENAV <extra_id_1>
+562,6289,2010,Bjarne Stroustrup works for <extra_id_0>.,<extra_id_0> Texas A&M University <extra_id_1>
+563,6300,2010,Shaf Baloch Keshavjee works for <extra_id_0>.,<extra_id_0> University Health Network <extra_id_1>
+564,6311,2010,Carol Boggs works for <extra_id_0>.,<extra_id_0> Stanford University <extra_id_1>
+565,6320,2010,Catherine Guillouard works for <extra_id_0>.,<extra_id_0> Eutelsat <extra_id_1>
+566,6331,2010,Andrea Dutton works for <extra_id_0>.,<extra_id_0> Australian National University <extra_id_1>
+567,6342,2010,Heather Cox Richardson works for <extra_id_0>.,<extra_id_0> University of Massachusetts Amherst <extra_id_1>
+568,6353,2010,Thomas Hutzschenreuter works for <extra_id_0>.,<extra_id_0> WHU-Otto Beisheim School of Management <extra_id_1>
+569,6364,2010,Zeynep Tüfekçi works for <extra_id_0>.,"<extra_id_0> University of Maryland, Baltimore <extra_id_1>"
+570,6375,2010,Antony John Williams works for <extra_id_0>.,<extra_id_0> Royal Society of Chemistry <extra_id_1>
+571,6386,2010,Julian Huppert works for <extra_id_0>.,<extra_id_0> University of Cambridge <extra_id_1>
+572,6404,2010,Giliano Wijnaldum works for <extra_id_0>.,<extra_id_0> AZ Alkmaar <extra_id_1>
+573,6415,2010,Tim Bray works for <extra_id_0>.,<extra_id_0> Sun Microsystems <extra_id_1>
+574,6426,2010,Clive Ballard works for <extra_id_0>.,<extra_id_0> King's College London <extra_id_1>
+575,6437,2010,Bernard Laporte works for <extra_id_0>.,<extra_id_0> RMC <extra_id_1>
+576,6444,2010,Marcia Bunge works for <extra_id_0>.,<extra_id_0> Valparaiso University <extra_id_1>
+577,6455,2010,Patrick McGrath works for <extra_id_0>.,<extra_id_0> IWK Health Centre <extra_id_1>
+578,6473,2010,Willem B. Drees works for <extra_id_0>.,<extra_id_0> Leiden University <extra_id_1>
+579,6484,2010,Maicer Izturis works for <extra_id_0>.,<extra_id_0> Los Angeles Angels <extra_id_1>
+580,6498,2010,Tony Renda works for <extra_id_0>.,<extra_id_0> Washington Nationals <extra_id_1>
+581,6509,2010,Clara Ponsatí i Obiols works for <extra_id_0>.,<extra_id_0> Spanish National Research Council <extra_id_1>
+582,6517,2010,Alan J. Russell works for <extra_id_0>.,<extra_id_0> University of Pittsburgh <extra_id_1>
+583,6536,2010,Jane Willenbring works for <extra_id_0>.,<extra_id_0> University of Pennsylvania <extra_id_1>
+584,6547,2010,Nabela Qoser works for <extra_id_0>.,<extra_id_0> Now TV <extra_id_1>
+585,6558,2010,Bronwyn Harch works for <extra_id_0>.,<extra_id_0> Commonwealth Scientific and Industrial Research Organisation <extra_id_1>
+586,6569,2010,Mark Rober works for <extra_id_0>.,<extra_id_0> Jet Propulsion Laboratory <extra_id_1>
+587,6578,2010,Ruffin McNeill works for <extra_id_0>.,<extra_id_0> East Carolina Pirates football <extra_id_1>
+588,6589,2010,Michael Arthur works for <extra_id_0>.,<extra_id_0> University of Leeds <extra_id_1>
+589,6600,2010,Theodoros Currentzis works for <extra_id_0>.,<extra_id_0> Bolshoi Theatre <extra_id_1>
+590,6620,2010,Nick Birbilis works for <extra_id_0>.,<extra_id_0> Monash University <extra_id_1>
+591,6631,2010,John S. Chen works for <extra_id_0>.,<extra_id_0> Sybase <extra_id_1>
+592,6650,2010,Patricia Harris works for <extra_id_0>.,<extra_id_0> New York City <extra_id_1>
+593,6661,2010,Ann Sarnoff works for <extra_id_0>.,<extra_id_0> Dow Jones & Company <extra_id_1>
+594,6671,2010,Antonio H. Castro Neto works for <extra_id_0>.,<extra_id_0> National University of Singapore <extra_id_1>
+595,6682,2010,Ed H. Chi works for <extra_id_0>.,<extra_id_0> PARC <extra_id_1>
+596,6693,2010,Katherine Maher works for <extra_id_0>.,<extra_id_0> UNICEF <extra_id_1>
+597,6703,2010,Erin Lavik works for <extra_id_0>.,<extra_id_0> Case Western Reserve University <extra_id_1>
+598,6714,2010,Elaine Saunders works for <extra_id_0>.,<extra_id_0> RMIT University <extra_id_1>
+599,6722,2010,Sabine Hossenfelder works for <extra_id_0>.,<extra_id_0> Nordic Institute for Theoretical Physics <extra_id_1>
+600,6733,2010,Tabetha S. Boyajian works for <extra_id_0>.,<extra_id_0> Georgia State University <extra_id_1>
+601,6754,2010,Sarah Martins Da Silva works for <extra_id_0>.,<extra_id_0> NHS Lothian <extra_id_1>
+602,6765,2010,Rachel Aldred works for <extra_id_0>.,<extra_id_0> University of East London <extra_id_1>
+603,6776,2010,Katherine Mack works for <extra_id_0>.,<extra_id_0> University of Cambridge <extra_id_1>
+604,6787,2010,Dino Meneghin works for <extra_id_0>.,<extra_id_0> Federazione Italiana Pallacanestro <extra_id_1>
+605,6798,2010,Martin Bean works for <extra_id_0>.,<extra_id_0> The Open University <extra_id_1>
+606,6809,2010,Jean d'Aspremont works for <extra_id_0>.,<extra_id_0> University of Amsterdam <extra_id_1>
+607,6820,2010,Philippe Verdier works for <extra_id_0>.,<extra_id_0> BFM TV <extra_id_1>
+608,6831,2010,Abraham Nitzan works for <extra_id_0>.,<extra_id_0> Tel Aviv University <extra_id_1>
+609,6841,2010,Paulo Fonseca works for <extra_id_0>.,<extra_id_0> C.D. Pinhalnovense <extra_id_1>
+610,6855,2010,Emanuela Del Gado works for <extra_id_0>.,<extra_id_0> ETH Zurich <extra_id_1>
+611,6866,2010,Peter Vorderer works for <extra_id_0>.,<extra_id_0> University of Mannheim <extra_id_1>
+612,6877,2010,Rémi Mathis works for <extra_id_0>.,<extra_id_0> Paris Descartes University - Sorbonne Paris Cité <extra_id_1>
+613,6888,2010,John Alroy works for <extra_id_0>.,<extra_id_0> National Center for Ecological Analysis and Synthesis <extra_id_1>
+614,6899,2010,Nora Hamzawi works for <extra_id_0>.,<extra_id_0> M6 <extra_id_1>
+615,6917,2010,Jeff Berding works for <extra_id_0>.,<extra_id_0> Cincinnati Bengals <extra_id_1>
+616,6937,2010,Corrie Moreau works for <extra_id_0>.,<extra_id_0> Field Museum of Natural History <extra_id_1>
+617,6948,2010,Daniel J. Myers works for <extra_id_0>.,<extra_id_0> University of Notre Dame <extra_id_1>
+618,6992,2010,Samy Azer works for <extra_id_0>.,<extra_id_0> University of Melbourne <extra_id_1>
+619,7003,2010,Michael Atwood Mason works for <extra_id_0>.,<extra_id_0> National Museum of Natural History <extra_id_1>
+620,7014,2010,John Campbell Brown works for <extra_id_0>.,<extra_id_0> University of Edinburgh <extra_id_1>
+621,7024,2010,Patrick Chêne works for <extra_id_0>.,<extra_id_0> La Chaîne parlementaire <extra_id_1>
+622,7041,2010,Erica Chenoweth works for <extra_id_0>.,<extra_id_0> Wesleyan University <extra_id_1>
+623,7052,2010,Kristin De Troyer works for <extra_id_0>.,<extra_id_0> St. Katherine College <extra_id_1>
+624,7063,2010,Tory Bruno works for <extra_id_0>.,<extra_id_0> Lockheed Martin <extra_id_1>
+625,7081,2010,John Anderson works for <extra_id_0>.,<extra_id_0> Capital and Coast District Health Board <extra_id_1>
+626,7082,2010,Delphine Ernotte works for <extra_id_0>.,<extra_id_0> Orange <extra_id_1>
+627,7093,2010,Alain Fuchs works for <extra_id_0>.,<extra_id_0> National Center for Scientific Research <extra_id_1>
+628,7104,2010,Deborah Orr works for <extra_id_0>.,<extra_id_0> The Guardian <extra_id_1>
+629,7115,2010,Cathy L. Lanier works for <extra_id_0>.,<extra_id_0> Metropolitan Police Department of the District of Columbia <extra_id_1>
+630,7126,2010,Nathalie Levy works for <extra_id_0>.,<extra_id_0> France 5 <extra_id_1>
+631,7137,2010,Serena A. Corr works for <extra_id_0>.,<extra_id_0> University of Kent <extra_id_1>
+632,7156,2010,Artur Domosławski works for <extra_id_0>.,<extra_id_0> Gazeta Wyborcza <extra_id_1>
+633,7167,2010,Louis Moresi works for <extra_id_0>.,<extra_id_0> Monash University <extra_id_1>
+634,7184,2010,Thomas Reiter works for <extra_id_0>.,<extra_id_0> German Aerospace Center <extra_id_1>
+635,7203,2010,Rosana Pinheiro-Machado works for <extra_id_0>.,<extra_id_0> Escola Superior de Propaganda e Marketing <extra_id_1>
+636,7210,2010,Whitney Jensen works for <extra_id_0>.,<extra_id_0> Boston Ballet <extra_id_1>
+637,7221,2010,Julio Guzmán Cáceres works for <extra_id_0>.,<extra_id_0> Inter-American Development Bank <extra_id_1>
+638,7224,2010,Giel Beelen works for <extra_id_0>.,<extra_id_0> BNNVARA <extra_id_1>
+639,7235,2010,Darcy Padilla works for <extra_id_0>.,<extra_id_0> San Francisco Art Institute <extra_id_1>
+640,7246,2010,Jerome Guillen works for <extra_id_0>.,<extra_id_0> Daimler AG <extra_id_1>
+641,7266,2010,Matt Ouimet works for <extra_id_0>.,<extra_id_0> Corinthian Colleges <extra_id_1>
+642,7277,2010,Eric Jagielo works for <extra_id_0>.,<extra_id_0> New York Yankees <extra_id_1>
+643,7308,2010,Sabine Carey works for <extra_id_0>.,<extra_id_0> University of Mannheim <extra_id_1>
+644,7339,2010,Li Zhaoping works for <extra_id_0>.,<extra_id_0> University College London <extra_id_1>
+645,7350,2010,Grace Starry West works for <extra_id_0>.,<extra_id_0> University of Dallas <extra_id_1>
+646,7357,2010,Dogan Corneille works for <extra_id_0>.,<extra_id_0> RVVH <extra_id_1>
+647,7368,2010,Doug Shane works for <extra_id_0>.,<extra_id_0> Scaled Composites <extra_id_1>
+648,7379,2010,Alex Mullen works for <extra_id_0>.,<extra_id_0> Magdalene College <extra_id_1>
+649,7394,2010,Anna Keay works for <extra_id_0>.,<extra_id_0> English Heritage <extra_id_1>
+650,7405,2010,Lisa Cunningham works for <extra_id_0>.,<extra_id_0> Medical University of South Carolina <extra_id_1>
+651,7414,2010,José Luis Ortiz Moreno works for <extra_id_0>.,<extra_id_0> National Center for Oncological Research <extra_id_1>
+652,7425,2010,Patricia Berrahou Phillippy works for <extra_id_0>.,<extra_id_0> Texas A&M University <extra_id_1>
+653,7444,2010,Philip W. Kantoff works for <extra_id_0>.,<extra_id_0> Brigham and Women's Hospital <extra_id_1>
+654,7455,2010,Gitta Kutyniok works for <extra_id_0>.,<extra_id_0> Osnabrück University <extra_id_1>
+655,7472,2010,Sabine Schmidtke works for <extra_id_0>.,<extra_id_0> Freie Universität Berlin <extra_id_1>
+656,7483,2010,Anand Lal Shimpi works for <extra_id_0>.,<extra_id_0> AnandTech <extra_id_1>
+657,7497,2010,Robyn Denholm works for <extra_id_0>.,<extra_id_0> Juniper Networks <extra_id_1>
+658,7508,2010,Kåre Schultz works for <extra_id_0>.,<extra_id_0> Novo Nordisk <extra_id_1>
+659,7516,2010,Stephen Powis works for <extra_id_0>.,<extra_id_0> Royal Free London NHS Foundation Trust <extra_id_1>
+660,7527,2010,Motohiro Yogo works for <extra_id_0>.,<extra_id_0> The Wharton School <extra_id_1>
+661,7542,2010,Sylvia Richardson works for <extra_id_0>.,<extra_id_0> Imperial College London <extra_id_1>
+662,7553,2010,Patrick O'Shea works for <extra_id_0>.,<extra_id_0> University of Maryland <extra_id_1>
+663,7574,2010,Adam Shoemaker works for <extra_id_0>.,<extra_id_0> Monash University <extra_id_1>
+664,7585,2010,Leonid Sazanov works for <extra_id_0>.,<extra_id_0> MRC Mitochondrial Biology Unit <extra_id_1>
+665,7596,2010,James Allsop works for <extra_id_0>.,<extra_id_0> University of Sydney <extra_id_1>
+666,7606,2010,Elizabeth A. Fenn works for <extra_id_0>.,<extra_id_0> Duke University <extra_id_1>
+667,7617,2010,Marina Granovskaia works for <extra_id_0>.,<extra_id_0> Gazprom Neft <extra_id_1>
+668,7643,2010,Ieke Moerdijk works for <extra_id_0>.,<extra_id_0> Utrecht University <extra_id_1>
+669,7654,2010,Liv Inger Somby works for <extra_id_0>.,<extra_id_0> NRK Sápmi <extra_id_1>
+670,7665,2010,Michael Fleischhacker works for <extra_id_0>.,<extra_id_0> Die Presse <extra_id_1>
+671,7675,2010,Matthew Trundle works for <extra_id_0>.,<extra_id_0> Victoria University of Wellington <extra_id_1>
+672,7685,2010,Arnoud De Meyer works for <extra_id_0>.,<extra_id_0> Singapore Management University <extra_id_1>
+673,7694,2010,Belinda Johnson works for <extra_id_0>.,<extra_id_0> Yahoo <extra_id_1>
+674,7705,2010,José Manuel Campa works for <extra_id_0>.,<extra_id_0> IESE Business School <extra_id_1>
+675,7715,2010,Gilles Pélisson works for <extra_id_0>.,<extra_id_0> Accor <extra_id_1>
+676,7721,2010,Angela Casini works for <extra_id_0>.,<extra_id_0> École polytechnique fédérale de Lausanne <extra_id_1>
+677,7740,2010,Danny O'Brien works for <extra_id_0>.,<extra_id_0> Committee to Protect Journalists <extra_id_1>
+678,7763,2010,Mike Harrington works for <extra_id_0>.,<extra_id_0> Google <extra_id_1>
+679,7771,2010,Merrilyn Goos works for <extra_id_0>.,<extra_id_0> The University of Queensland <extra_id_1>
+680,7782,2010,Allison Randal works for <extra_id_0>.,<extra_id_0> Canonical Group Limited <extra_id_1>
+681,7792,2010,Ben Agathangelou works for <extra_id_0>.,<extra_id_0> HRT Formula One Team <extra_id_1>
+682,7803,2010,Andrew Rambaut works for <extra_id_0>.,<extra_id_0> University of Edinburgh <extra_id_1>
+683,7821,2010,Tony Heinz works for <extra_id_0>.,<extra_id_0> Columbia University <extra_id_1>
+684,7832,2010,Cameron Neylon works for <extra_id_0>.,<extra_id_0> Science and Technology Facilities Council <extra_id_1>
+685,7843,2010,Jennifer Westacott works for <extra_id_0>.,<extra_id_0> KPMG <extra_id_1>
+686,7854,2010,Kate Calder works for <extra_id_0>.,<extra_id_0> Ohio State University <extra_id_1>
+687,7865,2010,Peter J. Wagner works for <extra_id_0>.,<extra_id_0> Field Museum of Natural History <extra_id_1>
+688,7876,2010,Lina Zahr Eddine works for <extra_id_0>.,<extra_id_0> Al Jazeera <extra_id_1>
+689,7885,2010,Natasha Bertrand works for <extra_id_0>.,<extra_id_0> Business Insider <extra_id_1>
+690,7905,2010,Lili Hinstin works for <extra_id_0>.,<extra_id_0> Entrevues Belfort Film Festival <extra_id_1>
+691,7916,2010,Barbara J. Anderson works for <extra_id_0>.,<extra_id_0> University of York <extra_id_1>
+692,7927,2010,Frédéric Mion works for <extra_id_0>.,<extra_id_0> Canal+ <extra_id_1>
+693,7938,2010,Jeroen van den Brink works for <extra_id_0>.,<extra_id_0> Radboud University Nijmegen <extra_id_1>
+694,7943,2010,Karin Baur works for <extra_id_0>.,<extra_id_0> ETH Zurich <extra_id_1>
+695,7954,2010,Merete Riisager works for <extra_id_0>.,<extra_id_0> The Lego Group <extra_id_1>
+696,7956,2010,Thomas Devaney works for <extra_id_0>.,<extra_id_0> University of Pennsylvania <extra_id_1>
+697,7967,2010,DaiWai Olson works for <extra_id_0>.,<extra_id_0> Duke University <extra_id_1>
+698,7978,2010,Armen Amiryan works for <extra_id_0>.,<extra_id_0> Armenian State Pedagogical University <extra_id_1>
+699,7994,2010,Andreas Küttel works for <extra_id_0>.,<extra_id_0> University of Southern Denmark <extra_id_1>
+700,8005,2010,Jina Osothsilp works for <extra_id_0>.,<extra_id_0> GMM Tai Hub <extra_id_1>
+701,8016,2010,Michael Burton works for <extra_id_0>.,<extra_id_0> University of Glasgow <extra_id_1>
+702,8027,2010,Kristen L. Knutson works for <extra_id_0>.,<extra_id_0> University of Chicago <extra_id_1>
+703,8038,2010,John Giannandrea works for <extra_id_0>.,<extra_id_0> Google <extra_id_1>
+704,8049,2010,Jennifer Bendery works for <extra_id_0>.,<extra_id_0> Roll Call <extra_id_1>
+705,8060,2010,Stephanie Stebich works for <extra_id_0>.,<extra_id_0> Tacoma Art Museum <extra_id_1>
+706,8071,2010,José María Castellano works for <extra_id_0>.,<extra_id_0> ONO <extra_id_1>
+707,8084,2010,Cecilie Redisch Kvamme works for <extra_id_0>.,<extra_id_0> Tertnes IL <extra_id_1>
+708,8095,2010,James Broach works for <extra_id_0>.,<extra_id_0> Princeton University <extra_id_1>
+709,8133,2010,<extra_id_0> is the head of the government of France.,<extra_id_0> François Fillon <extra_id_1>
+710,8154,2010,<extra_id_0> is the head of the government of Italy.,<extra_id_0> Silvio Berlusconi <extra_id_1>
+711,8165,2010,<extra_id_0> is the head of the government of Spain.,<extra_id_0> José Luis Rodríguez Zapatero <extra_id_1>
+712,8176,2010,<extra_id_0> is the head of the government of Norway.,<extra_id_0> Jens Stoltenberg <extra_id_1>
+713,8195,2010,<extra_id_0> is the head of the government of Moscow.,<extra_id_0> Sergey Sobyanin <extra_id_1>
+714,8206,2010,<extra_id_0> is the head of the government of Texas.,<extra_id_0> Rick Perry <extra_id_1>
+715,8217,2010,<extra_id_0> is the head of the government of Rome.,<extra_id_0> Gianni Alemanno <extra_id_1>
+716,8228,2010,<extra_id_0> is the head of the government of Baltimore.,<extra_id_0> Sheila Dixon <extra_id_1>
+717,8238,2010,<extra_id_0> is the head of the government of Catalonia.,<extra_id_0> José Montilla <extra_id_1>
+718,8264,2010,<extra_id_0> is the head of the government of Erlangen.,<extra_id_0> Siegfried Balleis <extra_id_1>
+719,8275,2010,<extra_id_0> is the head of the government of Pittsburgh.,<extra_id_0> Luke Ravenstahl <extra_id_1>
+720,8304,2010,<extra_id_0> is the head of the government of Budapest.,<extra_id_0> István Tarlós <extra_id_1>
+721,8325,2010,<extra_id_0> is the head of the government of Phoenix.,<extra_id_0> Phil Gordon <extra_id_1>
+722,8330,2010,<extra_id_0> is the head of the government of Stuttgart.,<extra_id_0> Wolfgang Schuster <extra_id_1>
+723,8341,2010,<extra_id_0> is the head of the government of San Francisco.,<extra_id_0> Gavin Newsom <extra_id_1>
+724,8352,2010,<extra_id_0> is the head of the government of Istanbul.,<extra_id_0> Kadir Topbaş <extra_id_1>
+725,8363,2010,<extra_id_0> is the head of the government of Manila.,<extra_id_0> Alfredo Lim <extra_id_1>
+726,8374,2010,<extra_id_0> is the head of the government of Memphis.,<extra_id_0> A C Wharton <extra_id_1>
+727,8397,2010,<extra_id_0> is the head of the government of Austria.,<extra_id_0> Werner Faymann <extra_id_1>
+728,8408,2010,<extra_id_0> is the head of the government of St. Louis.,<extra_id_0> Francis G. Slay <extra_id_1>
+729,8419,2010,<extra_id_0> is the head of the government of Hawaii.,<extra_id_0> Linda Lingle <extra_id_1>
+730,8445,2010,<extra_id_0> is the head of the government of Milan.,<extra_id_0> Letizia Moratti <extra_id_1>
+731,8456,2010,<extra_id_0> is the head of the government of Athens.,<extra_id_0> Georgios Kaminis <extra_id_1>
+732,8474,2010,<extra_id_0> is the head of the government of Montreal.,<extra_id_0> Gérald Tremblay <extra_id_1>
+733,8485,2010,<extra_id_0> is the head of the government of Sarawak.,<extra_id_0> Abdul Taib Mahmud <extra_id_1>
+734,8521,2010,<extra_id_0> is the head of the government of Dresden.,<extra_id_0> Helma Orosz <extra_id_1>
+735,8542,2010,<extra_id_0> is the head of the government of Czech Republic.,<extra_id_0> Petr Nečas <extra_id_1>
+736,8553,2010,<extra_id_0> is the head of the government of Lyon.,<extra_id_0> Gérard Collomb <extra_id_1>
+737,8564,2010,<extra_id_0> is the head of the government of Tainan.,<extra_id_0> Lai Ching-te <extra_id_1>
+738,8575,2010,<extra_id_0> is the head of the government of Hoboken.,<extra_id_0> Dawn Zimmer <extra_id_1>
+739,8590,2010,<extra_id_0> is the head of the government of Prince Edward Island.,<extra_id_0> Robert Ghiz <extra_id_1>
+740,8601,2010,<extra_id_0> is the head of the government of Marseille.,<extra_id_0> Jean-Claude Gaudin <extra_id_1>
+741,8612,2010,<extra_id_0> is the head of the government of Cameroon.,<extra_id_0> Philémon Yang <extra_id_1>
+742,8623,2010,<extra_id_0> is the head of the government of Bremen.,<extra_id_0> Jens Böhrnsen <extra_id_1>
+743,8634,2010,<extra_id_0> is the head of the government of Manitoba.,<extra_id_0> Greg Selinger <extra_id_1>
+744,8645,2010,<extra_id_0> is the head of the government of Ithaca.,<extra_id_0> Carolyn K. Peterson <extra_id_1>
+745,8688,2010,<extra_id_0> is the head of the government of Community of Valencia.,<extra_id_0> Francisco Camps <extra_id_1>
+746,8699,2010,<extra_id_0> is the head of the government of The Hague.,<extra_id_0> Jozias van Aartsen <extra_id_1>
+747,8710,2010,<extra_id_0> is the head of the government of Batangas.,<extra_id_0> Vilma Santos <extra_id_1>
+748,8727,2010,<extra_id_0> is the head of the government of Campania.,<extra_id_0> Stefano Caldoro <extra_id_1>
+749,8743,2010,<extra_id_0> is the head of the government of Navarre.,<extra_id_0> Miguel Sanz <extra_id_1>
+750,8760,2010,<extra_id_0> is the head of the government of Okinawa Prefecture.,<extra_id_0> Hirokazu Nakaima <extra_id_1>
+751,8771,2010,<extra_id_0> is the head of the government of Kinmen.,<extra_id_0> Li Wo-shi <extra_id_1>
+752,8782,2010,<extra_id_0> is the head of the government of Dordrecht.,<extra_id_0> Arno Brok <extra_id_1>
+753,8800,2010,<extra_id_0> is the head of the government of Guadeloupe.,<extra_id_0> Victorin Lurel <extra_id_1>
+754,8814,2010,<extra_id_0> is the head of the government of Chișinău.,<extra_id_0> Dorin Chirtoacă <extra_id_1>
+755,8825,2010,<extra_id_0> is the head of the government of Emilia-Romagna.,<extra_id_0> Vasco Errani <extra_id_1>
+756,8836,2010,<extra_id_0> is the head of the government of Western Cape.,<extra_id_0> Helen Zille <extra_id_1>
+757,8847,2010,<extra_id_0> is the head of the government of Molenbeek-Saint-Jean.,<extra_id_0> Philippe Moureaux <extra_id_1>
+758,8856,2010,<extra_id_0> is the head of the government of Saarbrücken.,<extra_id_0> Charlotte Britz <extra_id_1>
+759,8867,2010,<extra_id_0> is the head of the government of Baden-Württemberg.,<extra_id_0> Stefan Mappus <extra_id_1>
+760,8878,2010,<extra_id_0> is the head of the government of Niigata Prefecture.,<extra_id_0> Hirohiko Izumida <extra_id_1>
+761,8889,2010,<extra_id_0> is the head of the government of Saarland.,<extra_id_0> Peter Müller <extra_id_1>
+762,8900,2010,<extra_id_0> is the head of the government of Province of Buenos Aires.,<extra_id_0> Daniel Scioli <extra_id_1>
+763,8911,2010,<extra_id_0> is the head of the government of Brandenburg.,<extra_id_0> Matthias Platzeck <extra_id_1>
+764,8922,2010,<extra_id_0> is the head of the government of Varese.,<extra_id_0> Attilio Fontana <extra_id_1>
+765,8939,2010,<extra_id_0> is the head of the government of Pescara.,<extra_id_0> Luigi Albore Mascia <extra_id_1>
+766,8950,2010,<extra_id_0> is the head of the government of Saratov Oblast.,<extra_id_0> Pavel Ipatov <extra_id_1>
+767,8961,2010,<extra_id_0> is the head of the government of Maori Party.,<extra_id_0> Tariana Turia <extra_id_1>
+768,8971,2010,<extra_id_0> is the head of the government of Piedmont.,<extra_id_0> Roberto Cota <extra_id_1>
+769,8982,2010,<extra_id_0> is the head of the government of Kyōto Prefecture.,<extra_id_0> Keiji Yamada <extra_id_1>
+770,8993,2010,<extra_id_0> is the head of the government of Sahrawi Arab Democratic Republic.,<extra_id_0> Abdelkader Taleb Omar <extra_id_1>
+771,9004,2010,<extra_id_0> is the head of the government of Chaco Province.,<extra_id_0> Jorge Capitanich <extra_id_1>
+772,9015,2010,<extra_id_0> is the head of the government of Le Mans.,<extra_id_0> Jean-Claude Boulard <extra_id_1>
+773,9026,2010,<extra_id_0> is the head of the government of Plzeň Region.,<extra_id_0> Milada Emmerová <extra_id_1>
+774,9031,2010,<extra_id_0> is the head of the government of Changhua County.,<extra_id_0> Cho Po-yuan <extra_id_1>
+775,9042,2010,<extra_id_0> is the head of the government of Limpopo.,<extra_id_0> Cassel Mathale <extra_id_1>
+776,9053,2010,<extra_id_0> is the head of the government of Amsterdam.,<extra_id_0> Lodewijk Asscher <extra_id_1>
+777,9064,2010,<extra_id_0> is the head of the government of Ilocos Norte.,<extra_id_0> Imee Marcos <extra_id_1>
+778,9084,2010,<extra_id_0> is the head of the government of Stord.,<extra_id_0> Liv Kari Eskeland <extra_id_1>
+779,9092,2010,<extra_id_0> is the head of the government of Hsinchu County.,<extra_id_0> Chiu Ching-chun <extra_id_1>
+780,9103,2010,<extra_id_0> is the head of the government of Vesthimmerland Municipality.,<extra_id_0> Jens Lauritzen <extra_id_1>
+781,9114,2010,<extra_id_0> is the head of the government of Budapest District IV.,<extra_id_0> Zsolt Wintermantel <extra_id_1>
+782,9125,2010,<extra_id_0> is the head of the government of Municipality of Thessaloniki.,<extra_id_0> Vasilis Papageorgopoulos <extra_id_1>
+783,9136,2010,<extra_id_0> is the head of the government of Montpellier Méditerranée Métropole.,<extra_id_0> Georges Frêche <extra_id_1>
+784,9144,2010,<extra_id_0> is the head of the government of Budapest District I.,<extra_id_0> Gábor Tamás Nagy <extra_id_1>
+785,9155,2010,<extra_id_0> is the head of the government of Urban Community of Nantes Métropole.,<extra_id_0> Jean-Marc Ayrault <extra_id_1>
+786,9165,2010,<extra_id_0> is the head of the government of Sector 5.,<extra_id_0> Marian Vanghelie <extra_id_1>
+787,9176,2010,<extra_id_0> is the head coach of Philadelphia Eagles.,<extra_id_0> Andy Reid <extra_id_1>
+788,9208,2010,<extra_id_0> is the head coach of Ineos Grenadier.,<extra_id_0> Sean Yates <extra_id_1>
+789,9219,2010,<extra_id_0> is the head coach of FC Barcelona.,<extra_id_0> Pep Guardiola <extra_id_1>
+790,9271,2010,<extra_id_0> is the head coach of SC Oțelul Galați.,<extra_id_0> Stelian Bordeianu <extra_id_1>
+791,9293,2010,<extra_id_0> is the head coach of New York Liberty.,<extra_id_0> Anne Donovan <extra_id_1>
+792,9303,2010,<extra_id_0> is the head coach of Paris Saint-Germain.,<extra_id_0> Antoine Kombouaré <extra_id_1>
+793,9314,2010,<extra_id_0> is the head coach of FC Petrolul Ploiești.,<extra_id_0> Cosmin Contra <extra_id_1>
+794,9334,2010,<extra_id_0> is the head coach of Louisville Cardinals men's basketball.,<extra_id_0> Rick Pitino <extra_id_1>
+795,9347,2010,<extra_id_0> is the head coach of Philadelphia Union.,<extra_id_0> Piotr Nowak <extra_id_1>
+796,9375,2010,<extra_id_0> is the head coach of Galatasaray S.K..,<extra_id_0> Gheorghe Hagi <extra_id_1>
+797,9392,2010,<extra_id_0> is the head coach of Motherwell F.C..,<extra_id_0> Stuart McCall <extra_id_1>
+798,9419,2010,<extra_id_0> is the head coach of Hammarby Fotboll.,<extra_id_0> Michael Borgqvist <extra_id_1>
+799,9461,2010,<extra_id_0> is the head coach of Greenock Morton F.C..,<extra_id_0> Allan Moore <extra_id_1>
+800,9487,2010,<extra_id_0> is the head coach of Penn FC.,<extra_id_0> Bill Becher <extra_id_1>
+801,9503,2010,<extra_id_0> is the head coach of Calcio Catania.,<extra_id_0> Marco Giampaolo <extra_id_1>
+802,9521,2010,<extra_id_0> is the head coach of Gap Connah's Quay F.C..,<extra_id_0> Mark McGregor <extra_id_1>
+803,9551,2010,<extra_id_0> is the head coach of Atalanta B.C..,<extra_id_0> Stefano Colantuono <extra_id_1>
+804,9562,2010,<extra_id_0> is the head coach of FCU Craiova 1948.,<extra_id_0> Nicolò Napoli <extra_id_1>
+805,9573,2010,<extra_id_0> is the head coach of RCD Espanyol de Barcelona.,<extra_id_0> Mauricio Pochettino <extra_id_1>
+806,9582,2010,<extra_id_0> is the head coach of A.C. ChievoVerona.,<extra_id_0> Stefano Pioli <extra_id_1>
+807,9587,2010,<extra_id_0> is the head coach of PFC CSKA Moscow.,<extra_id_0> Leonid Slutsky <extra_id_1>
+808,9607,2010,<extra_id_0> is the head coach of B36 Tórshavn.,<extra_id_0> Mikkjal Thomassen <extra_id_1>
+809,9731,2010,<extra_id_0> is the head coach of SV Waldhof Mannheim.,<extra_id_0> Reiner Hollich <extra_id_1>
+810,9742,2010,<extra_id_0> is the head coach of Belarus national football team.,<extra_id_0> Bernd Stange <extra_id_1>
+811,9783,2010,<extra_id_0> is the head coach of A.C. Pisa 1909.,<extra_id_0> Leonardo Semplici <extra_id_1>
+812,9794,2010,<extra_id_0> is the head coach of An Post-ChainReaction.,<extra_id_0> Danny Schoobaert <extra_id_1>
+813,9832,2010,<extra_id_0> is the head coach of FC Slutsk.,<extra_id_0> Yuriy Krot <extra_id_1>
+814,9847,2010,<extra_id_0> is the head coach of Gimnàstic de Tarragona.,<extra_id_0> César Ferrando <extra_id_1>
+815,9873,2010,<extra_id_0> is the head coach of Wolfsberger AC.,<extra_id_0> Nenad Bjelica <extra_id_1>
+816,9901,2010,<extra_id_0> is the head coach of Florida Gators women's basketball.,<extra_id_0> Amanda Butler <extra_id_1>
+817,9917,2010,<extra_id_0> is the head coach of FC Viitorul Constanța.,<extra_id_0> Gheorghe Hagi <extra_id_1>
+818,9939,2010,<extra_id_0> is the head coach of MFK Karviná.,<extra_id_0> Leoš Kalvoda <extra_id_1>
+819,9966,2010,<extra_id_0> is the head coach of FC Slavia-Mozyr.,<extra_id_0> Yuriy Maleyev <extra_id_1>
+820,10051,2010,<extra_id_0> is the head coach of FC Naftan Novopolotsk.,<extra_id_0> Igor Kovalevich <extra_id_1>
+821,10083,2010,Google is owned by <extra_id_0>.,<extra_id_0> Eric Schmidt <extra_id_1>
+822,10091,2010,Charlotte Hornets is owned by <extra_id_0>.,<extra_id_0> Michael Jordan <extra_id_1>
+823,10102,2010,Nordland Line is owned by <extra_id_0>.,<extra_id_0> Norwegian National Rail Administration <extra_id_1>
+824,10113,2010,Phase 10 is owned by <extra_id_0>.,<extra_id_0> Mattel <extra_id_1>
+825,10124,2010,Flåm Line is owned by <extra_id_0>.,<extra_id_0> Norwegian National Rail Administration <extra_id_1>
+826,10135,2010,Bergen Line is owned by <extra_id_0>.,<extra_id_0> Norwegian National Rail Administration <extra_id_1>
+827,10146,2010,VK is owned by <extra_id_0>.,<extra_id_0> Yitzchak Mirilashvili <extra_id_1>
+828,10151,2010,Rover is owned by <extra_id_0>.,<extra_id_0> Land Rover Ltd. <extra_id_1>
+829,10162,2010,Wind River Systems is owned by <extra_id_0>.,<extra_id_0> Intel <extra_id_1>
+830,10173,2010,Stratolaunch Systems is owned by <extra_id_0>.,<extra_id_0> Vulcan Inc. <extra_id_1>
+831,10184,2010,Rauma Line is owned by <extra_id_0>.,<extra_id_0> Norwegian National Rail Administration <extra_id_1>
+832,10195,2010,Yokohama DeNA BayStars is owned by <extra_id_0>.,<extra_id_0> Tokyo Broadcasting System Holdings <extra_id_1>
+833,10206,2010,Rosewood Hotel Group is owned by <extra_id_0>.,<extra_id_0> New World China Land <extra_id_1>
+834,10217,2010,Lanai is owned by <extra_id_0>.,<extra_id_0> David H. Murdock <extra_id_1>
+835,10228,2010,Eurosport is owned by <extra_id_0>.,<extra_id_0> TF1 Group <extra_id_1>
+836,10239,2010,Havas is owned by <extra_id_0>.,<extra_id_0> Bolloré <extra_id_1>
+837,10250,2010,Dimension Films is owned by <extra_id_0>.,<extra_id_0> The Walt Disney Company <extra_id_1>
+838,10259,2010,Rizzoli Libri is owned by <extra_id_0>.,<extra_id_0> RCS MediaGroup <extra_id_1>
+839,10270,2010,SourceForge is owned by <extra_id_0>.,<extra_id_0> Vera Augustin Research <extra_id_1>
+840,10285,2010,Tanimachi Line is owned by <extra_id_0>.,<extra_id_0> Osaka Municipal Transportation Bureau <extra_id_1>
+841,10296,2010,Ruptly is owned by <extra_id_0>.,<extra_id_0> RT <extra_id_1>
+842,10316,2010,The Free Lance–Star is owned by <extra_id_0>.,<extra_id_0> Berkshire Hathaway <extra_id_1>
+843,10327,2010,Place Ville Marie is owned by <extra_id_0>.,<extra_id_0> Ivanhoe Cambridge <extra_id_1>
+844,10339,2010,Duracell is owned by <extra_id_0>.,<extra_id_0> Procter & Gamble <extra_id_1>
+845,10350,2010,Westfield Wheaton is owned by <extra_id_0>.,<extra_id_0> Westfield Group <extra_id_1>
+846,10361,2010,Hero is owned by <extra_id_0>.,<extra_id_0> Creative Programs <extra_id_1>
+847,10372,2010,Thawte Consulting is owned by <extra_id_0>.,<extra_id_0> Verisign <extra_id_1>
+848,10383,2010,Viasat is owned by <extra_id_0>.,<extra_id_0> Modern Times Group <extra_id_1>
+849,10394,2010,Dovre Line is owned by <extra_id_0>.,<extra_id_0> Norwegian National Rail Administration <extra_id_1>
+850,10405,2010,Fox Entertainment Group is owned by <extra_id_0>.,<extra_id_0> News Corporation <extra_id_1>
+851,10416,2010,RV Melville is owned by <extra_id_0>.,<extra_id_0> United States Navy <extra_id_1>
+852,10427,2010,Stadio Friuli is owned by <extra_id_0>.,<extra_id_0> Udine <extra_id_1>
+853,10448,2010,TechCrunch is owned by <extra_id_0>.,<extra_id_0> AOL <extra_id_1>
+854,10459,2010,Boy and Dog in a Johnnypump is owned by <extra_id_0>.,<extra_id_0> Peter M. Brant <extra_id_1>
+855,10470,2010,Têtu is owned by <extra_id_0>.,<extra_id_0> Pierre Bergé <extra_id_1>
+856,10476,2010,Hilton Athens is owned by <extra_id_0>.,<extra_id_0> Alpha Bank <extra_id_1>
+857,10487,2010,BlaBlaBus is owned by <extra_id_0>.,<extra_id_0> SNCF <extra_id_1>
+858,10498,2010,Rauma shipyard is owned by <extra_id_0>.,<extra_id_0> STX Finland Oy <extra_id_1>
+859,10509,2010,PanAmericano is owned by <extra_id_0>.,<extra_id_0> Silvio Santos <extra_id_1>
+860,10520,2010,Hamburger Abendblatt is owned by <extra_id_0>.,<extra_id_0> Axel Springer SE <extra_id_1>
+861,10531,2010,Rabbit is owned by <extra_id_0>.,<extra_id_0> S. I. Newhouse <extra_id_1>
+862,10542,2010,Mountain Studios is owned by <extra_id_0>.,<extra_id_0> David Richards <extra_id_1>
+863,10553,2010,Wells Fargo Center is owned by <extra_id_0>.,<extra_id_0> Beacon Capital Partners <extra_id_1>
+864,10564,2010,Eastern Acoustic Works is owned by <extra_id_0>.,<extra_id_0> LOUD Technologies <extra_id_1>
+865,10575,2010,Fox Mobile Entertainment is owned by <extra_id_0>.,<extra_id_0> News Corporation <extra_id_1>
+866,10594,2010,Angaston Power Station is owned by <extra_id_0>.,<extra_id_0> Infratil <extra_id_1>
+867,10605,2010,Portrait of Professor Benjamin H. Rand is owned by <extra_id_0>.,<extra_id_0> Alice Walton <extra_id_1>
+868,10616,2010,Linha do Sul is owned by <extra_id_0>.,<extra_id_0> REFER <extra_id_1>
+869,10627,2010,Linha do Oeste is owned by <extra_id_0>.,<extra_id_0> REFER <extra_id_1>
+870,10638,2010,Dothan Eagle is owned by <extra_id_0>.,<extra_id_0> Berkshire Hathaway <extra_id_1>
+871,10649,2010,Leixões railway line is owned by <extra_id_0>.,<extra_id_0> REFER <extra_id_1>
+872,10660,2010,Danville Register & Bee is owned by <extra_id_0>.,<extra_id_0> Berkshire Hathaway <extra_id_1>
+873,10671,2010,Ramal de Braga is owned by <extra_id_0>.,<extra_id_0> REFER <extra_id_1>
+874,10682,2010,Kevitsa mine is owned by <extra_id_0>.,<extra_id_0> First Quantum Minerals <extra_id_1>
