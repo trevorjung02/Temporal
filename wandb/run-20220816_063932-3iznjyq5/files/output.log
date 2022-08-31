@@ -1,0 +1,825 @@
+Validation sanity check: 0it [00:00, ?it/s]split is 0
+Length of dataset retrieving is.. 479
+Validation sanity check:  50% 1/2 [00:01<00:01,  1.19s/it]
+Set SLURM handle signals.
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 81.7 M
+-----------------------------------------------------
+46.3 M    Trainable params
+35.3 M    Non-trainable params
+81.7 M    Total params
+split is 0
+Length of dataset retrieving is.. 3236
+Epoch 0:   7% 8/116 [00:00<00:12,  8.41it/s, loss=7.86, v_num=jyq5, em_score=0.000, f1_score=0.0516]
+
+
+Epoch 0:  88% 102/116 [00:06<00:00, 15.91it/s, loss=6.68, v_num=jyq5, em_score=0.000, f1_score=0.0516]
+
+
+
+
+
+
+
+
+Epoch 1:  88% 102/116 [00:06<00:00, 16.17it/s, loss=5.09, v_num=jyq5, em_score=0.000, f1_score=0.0515]
+
+
+
+
+
+
+
+Epoch 2:  88% 102/116 [00:06<00:00, 16.06it/s, loss=3.61, v_num=jyq5, em_score=0.000, f1_score=0.0664]
+
+
+
+
+
+
+
+
+Epoch 3:  88% 102/116 [00:06<00:00, 15.89it/s, loss=2.5, v_num=jyq5, em_score=0.000, f1_score=0.0691]
+
+
+
+
+
+
+
+
+Epoch 4:  88% 102/116 [00:06<00:00, 16.23it/s, loss=2.13, v_num=jyq5, em_score=0.00209, f1_score=0.0859]
+
+
+
+
+
+
+
+
+Epoch 5:  88% 102/116 [00:06<00:00, 16.19it/s, loss=1.99, v_num=jyq5, em_score=0.00626, f1_score=0.0956]
+
+
+
+
+
+
+
+
+Epoch 6:  88% 102/116 [00:06<00:00, 15.96it/s, loss=1.81, v_num=jyq5, em_score=0.0167, f1_score=0.0998]
+
+
+
+
+
+
+
+Epoch 7:  88% 102/116 [00:06<00:00, 16.24it/s, loss=1.75, v_num=jyq5, em_score=0.0167, f1_score=0.0975]
+
+
+
+
+
+
+
+
+
+Epoch 8:  88% 102/116 [00:06<00:00, 16.14it/s, loss=1.64, v_num=jyq5, em_score=0.0209, f1_score=0.0927]
+
+
+
+
+
+
+
+
+Epoch 9:  88% 102/116 [00:06<00:00, 16.23it/s, loss=1.59, v_num=jyq5, em_score=0.023, f1_score=0.0953]
+
+
+
+
+
+
+
+
+Epoch 10:  88% 102/116 [00:06<00:00, 16.18it/s, loss=1.5, v_num=jyq5, em_score=0.0251, f1_score=0.103]
+
+
+
+
+
+
+
+
+Epoch 11:  88% 102/116 [00:06<00:00, 16.17it/s, loss=1.44, v_num=jyq5, em_score=0.0188, f1_score=0.0902]
+
+
+
+
+
+
+
+
+
+Epoch 12:  88% 102/116 [00:06<00:00, 16.15it/s, loss=1.39, v_num=jyq5, em_score=0.0167, f1_score=0.0944]
+
+
+
+
+
+
+
+
+Epoch 13:  88% 102/116 [00:06<00:00, 16.14it/s, loss=1.32, v_num=jyq5, em_score=0.0188, f1_score=0.104]
+
+
+
+
+
+
+
+
+Epoch 14:  88% 102/116 [00:06<00:00, 16.16it/s, loss=1.26, v_num=jyq5, em_score=0.0167, f1_score=0.107]
+
+
+
+
+
+
+
+
+
+Epoch 15:  88% 102/116 [00:06<00:00, 16.13it/s, loss=1.19, v_num=jyq5, em_score=0.0146, f1_score=0.101]
+
+
+
+
+
+
+
+Epoch 16:  88% 102/116 [00:06<00:00, 16.17it/s, loss=1.16, v_num=jyq5, em_score=0.0209, f1_score=0.105]
+
+
+
+
+
+
+
+
+
+Epoch 17:  88% 102/116 [00:06<00:00, 16.05it/s, loss=1.09, v_num=jyq5, em_score=0.0271, f1_score=0.111]
+
+
+
+
+
+
+
+
+Epoch 18:  88% 102/116 [00:06<00:00, 16.13it/s, loss=1.04, v_num=jyq5, em_score=0.0355, f1_score=0.117]
+
+
+
+
+
+
+
+
+Epoch 19:  88% 102/116 [00:06<00:00, 16.27it/s, loss=1.01, v_num=jyq5, em_score=0.0376, f1_score=0.119]
+
+
+
+
+
+
+
+
+Epoch 20:  88% 102/116 [00:06<00:00, 16.12it/s, loss=0.969, v_num=jyq5, em_score=0.0313, f1_score=0.112]
+
+
+
+
+
+
+
+
+Epoch 21:  88% 102/116 [00:06<00:00, 16.19it/s, loss=0.92, v_num=jyq5, em_score=0.0459, f1_score=0.138]
+
+
+
+
+
+
+
+
+
+Epoch 22:  88% 102/116 [00:06<00:00, 16.15it/s, loss=0.907, v_num=jyq5, em_score=0.0355, f1_score=0.124]
+
+
+
+
+
+
+
+
+Epoch 23:  88% 102/116 [00:06<00:00, 16.00it/s, loss=0.855, v_num=jyq5, em_score=0.0501, f1_score=0.142]
+
+
+
+
+
+
+
+
+Epoch 24:  88% 102/116 [00:06<00:00, 16.10it/s, loss=0.826, v_num=jyq5, em_score=0.0459, f1_score=0.149]
+
+
+
+
+
+
+
+
+Epoch 25:  88% 102/116 [00:06<00:00, 16.24it/s, loss=0.779, v_num=jyq5, em_score=0.0501, f1_score=0.153]
+
+
+
+
+
+
+
+
+Epoch 26:  88% 102/116 [00:06<00:00, 16.14it/s, loss=0.74, v_num=jyq5, em_score=0.0397, f1_score=0.151]
+
+
+
+
+
+
+
+
+Epoch 27:  88% 102/116 [00:06<00:00, 16.18it/s, loss=0.713, v_num=jyq5, em_score=0.0397, f1_score=0.142]
+
+
+
+
+
+
+
+
+Epoch 28:  88% 102/116 [00:06<00:00, 16.06it/s, loss=0.685, v_num=jyq5, em_score=0.0543, f1_score=0.157]
+
+
+
+
+
+
+
+
+Epoch 29:  88% 102/116 [00:06<00:00, 16.20it/s, loss=0.649, v_num=jyq5, em_score=0.0501, f1_score=0.142]
+
+
+
+
+
+
+
+
+Epoch 30:  88% 102/116 [00:06<00:00, 16.06it/s, loss=0.626, v_num=jyq5, em_score=0.0522, f1_score=0.151]
+
+
+
+
+
+
+
+
+Epoch 31:  88% 102/116 [00:06<00:00, 16.01it/s, loss=0.592, v_num=jyq5, em_score=0.0459, f1_score=0.165]
+
+
+
+
+
+
+
+
+Epoch 32:  88% 102/116 [00:06<00:00, 16.23it/s, loss=0.563, v_num=jyq5, em_score=0.0564, f1_score=0.157]
+
+
+
+
+
+
+
+
+Epoch 33:  88% 102/116 [00:06<00:00, 16.16it/s, loss=0.534, v_num=jyq5, em_score=0.0501, f1_score=0.154]
+
+
+
+
+
+
+
+
+Epoch 34:  88% 102/116 [00:06<00:00, 16.16it/s, loss=0.497, v_num=jyq5, em_score=0.0522, f1_score=0.151]
+
+
+
+
+
+
+
+
+Epoch 35:  88% 102/116 [00:06<00:00, 16.23it/s, loss=0.481, v_num=jyq5, em_score=0.048, f1_score=0.142]
+
+
+
+
+
+
+
+
+Epoch 36:  88% 102/116 [00:06<00:00, 16.14it/s, loss=0.453, v_num=jyq5, em_score=0.0459, f1_score=0.142]
+
+
+
+
+
+
+
+Epoch 37:  88% 102/116 [00:06<00:00, 16.06it/s, loss=0.425, v_num=jyq5, em_score=0.0459, f1_score=0.139]
+
+
+
+
+
+
+
+
+Epoch 38:  88% 102/116 [00:06<00:00, 15.84it/s, loss=0.389, v_num=jyq5, em_score=0.0418, f1_score=0.141]
+
+
+
+
+
+
+
+
+Epoch 39:  88% 102/116 [00:06<00:00, 16.16it/s, loss=0.372, v_num=jyq5, em_score=0.0543, f1_score=0.165]
+
+
+
+
+
+
+
+
+Epoch 40:  88% 102/116 [00:06<00:00, 16.23it/s, loss=0.347, v_num=jyq5, em_score=0.048, f1_score=0.147]
+
+
+
+
+
+
+
+
+Epoch 41:  88% 102/116 [00:06<00:00, 16.22it/s, loss=0.306, v_num=jyq5, em_score=0.0585, f1_score=0.157]
+
+
+
+
+
+
+
+
+Epoch 42:  88% 102/116 [00:06<00:00, 16.09it/s, loss=0.292, v_num=jyq5, em_score=0.0501, f1_score=0.150]
+
+
+
+
+
+
+
+
+Epoch 43:  88% 102/116 [00:06<00:00, 16.06it/s, loss=0.277, v_num=jyq5, em_score=0.048, f1_score=0.161]
+
+
+
+
+
+
+
+
+Epoch 44:  88% 102/116 [00:06<00:00, 16.06it/s, loss=0.248, v_num=jyq5, em_score=0.048, f1_score=0.161]
+
+
+
+
+
+
+
+
+Epoch 45:  88% 102/116 [00:06<00:00, 16.13it/s, loss=0.232, v_num=jyq5, em_score=0.0585, f1_score=0.171]
+
+
+
+
+
+
+
+
+Epoch 46:  88% 102/116 [00:06<00:00, 16.15it/s, loss=0.218, v_num=jyq5, em_score=0.0522, f1_score=0.162]
+
+
+
+
+
+
+
+
+Epoch 47:  88% 102/116 [00:06<00:00, 15.99it/s, loss=0.195, v_num=jyq5, em_score=0.0459, f1_score=0.161]
+
+
+
+
+
+
+
+
+Epoch 48:  88% 102/116 [00:06<00:00, 15.98it/s, loss=0.184, v_num=jyq5, em_score=0.0355, f1_score=0.146]
+
+
+
+
+
+
+
+
+Epoch 49:  88% 102/116 [00:06<00:00, 16.15it/s, loss=0.167, v_num=jyq5, em_score=0.0397, f1_score=0.149]
+
+
+
+
+
+
+
+
+Epoch 50:  88% 102/116 [00:06<00:00, 16.01it/s, loss=0.157, v_num=jyq5, em_score=0.0418, f1_score=0.152]
+
+
+
+
+
+
+
+
+Epoch 51:  88% 102/116 [00:06<00:00, 16.07it/s, loss=0.145, v_num=jyq5, em_score=0.0376, f1_score=0.141]
+
+
+
+
+
+
+
+Epoch 52:  88% 102/116 [00:06<00:00, 16.15it/s, loss=0.14, v_num=jyq5, em_score=0.0438, f1_score=0.139]
+
+
+
+
+
+
+
+
+Epoch 53:  88% 102/116 [00:06<00:00, 16.11it/s, loss=0.127, v_num=jyq5, em_score=0.0313, f1_score=0.138]
+
+
+
+
+
+
+
+
+Epoch 54:  88% 102/116 [00:06<00:00, 16.09it/s, loss=0.12, v_num=jyq5, em_score=0.0459, f1_score=0.148]
+
+
+
+
+
+
+
+
+Epoch 55:  88% 102/116 [00:06<00:00, 16.07it/s, loss=0.103, v_num=jyq5, em_score=0.0334, f1_score=0.130]
+
+
+
+
+
+
+
+
+Epoch 56:  88% 102/116 [00:06<00:00, 16.08it/s, loss=0.107, v_num=jyq5, em_score=0.0438, f1_score=0.156]
+
+
+
+
+
+
+
+
+Epoch 57:  88% 102/116 [00:06<00:00, 16.25it/s, loss=0.0977, v_num=jyq5, em_score=0.048, f1_score=0.162]
+
+
+
+
+
+
+
+
+Epoch 58:  88% 102/116 [00:06<00:00, 15.99it/s, loss=0.0857, v_num=jyq5, em_score=0.0355, f1_score=0.147]
+
+
+
+
+
+
+
+
+Epoch 59:  88% 102/116 [00:06<00:00, 16.22it/s, loss=0.0842, v_num=jyq5, em_score=0.0397, f1_score=0.157]
+
+
+
+
+
+
+
+
+Epoch 60:  88% 102/116 [00:06<00:00, 16.03it/s, loss=0.0832, v_num=jyq5, em_score=0.0376, f1_score=0.141]
+
+
+
+
+
+
+
+
+Epoch 61:  88% 102/116 [00:06<00:00, 16.22it/s, loss=0.0876, v_num=jyq5, em_score=0.0564, f1_score=0.166]
+
+
+
+
+
+
+
+Epoch 62:  88% 102/116 [00:06<00:00, 16.04it/s, loss=0.0777, v_num=jyq5, em_score=0.0522, f1_score=0.164]
+
+
+
+
+
+
+
+
+Epoch 63:  88% 102/116 [00:06<00:00, 16.13it/s, loss=0.072, v_num=jyq5, em_score=0.0397, f1_score=0.159]
+
+
+
+
+
+
+
+
+Epoch 64:  88% 102/116 [00:06<00:00, 16.00it/s, loss=0.0618, v_num=jyq5, em_score=0.0355, f1_score=0.148]
+
+
+
+
+
+
+Validating: 100% 15/15 [00:11<00:00,  1.42it/s]
+
+
+
+Epoch 65:  88% 102/116 [00:06<00:00, 16.17it/s, loss=0.061, v_num=jyq5, em_score=0.0355, f1_score=0.149]
+
+
+
+
+
+
+
+
+Epoch 66:  88% 102/116 [00:06<00:00, 16.15it/s, loss=0.0608, v_num=jyq5, em_score=0.0376, f1_score=0.155]
+
+
+
+
+
+
+
+
+Epoch 67:  88% 102/116 [00:06<00:00, 16.14it/s, loss=0.0601, v_num=jyq5, em_score=0.0376, f1_score=0.156]
+
+
+
+
+
+
+
+
+Epoch 68:  88% 102/116 [00:06<00:00, 16.03it/s, loss=0.058, v_num=jyq5, em_score=0.0334, f1_score=0.148]
+
+
+
+
+
+
+
+
+Epoch 69:  88% 102/116 [00:06<00:00, 16.08it/s, loss=0.0545, v_num=jyq5, em_score=0.0397, f1_score=0.145]
+
+
+
+
+
+
+
+
+Epoch 70:  88% 102/116 [00:06<00:00, 15.90it/s, loss=0.0554, v_num=jyq5, em_score=0.0376, f1_score=0.152]
+
+
+
+
+
+
+
+
+Epoch 71:  88% 102/116 [00:06<00:00, 16.20it/s, loss=0.0535, v_num=jyq5, em_score=0.0418, f1_score=0.159]
+
+
+
+
+
+
+
+
+Epoch 72:  88% 102/116 [00:06<00:00, 16.23it/s, loss=0.0467, v_num=jyq5, em_score=0.0376, f1_score=0.150]
+
+
+
+
+
+
+
+
+Epoch 73:  88% 102/116 [00:06<00:00, 16.08it/s, loss=0.0455, v_num=jyq5, em_score=0.0292, f1_score=0.139]
+
+
+
+
+
+
+
+
+Epoch 74:  88% 102/116 [00:06<00:00, 16.03it/s, loss=0.0539, v_num=jyq5, em_score=0.0418, f1_score=0.144]
+
+
+
+
+
+
+
+
+Epoch 75:  88% 102/116 [00:06<00:00, 16.28it/s, loss=0.0512, v_num=jyq5, em_score=0.0355, f1_score=0.151]
+
+
+
+
+
+
+
+
+Epoch 76:  88% 102/116 [00:06<00:00, 15.99it/s, loss=0.0401, v_num=jyq5, em_score=0.0355, f1_score=0.144]
+
+
+
+
+
+
+
+
+Epoch 77:  88% 102/116 [00:06<00:00, 16.11it/s, loss=0.0375, v_num=jyq5, em_score=0.0438, f1_score=0.161]
+
+
+
+
+
+
+
+
+Epoch 78:  88% 102/116 [00:06<00:00, 16.20it/s, loss=0.0363, v_num=jyq5, em_score=0.0355, f1_score=0.157]
+
+
+
+
+
+
+
+
+Epoch 79:  88% 102/116 [00:06<00:00, 15.99it/s, loss=0.0401, v_num=jyq5, em_score=0.0438, f1_score=0.151]
+
+
+
+
+
+
+
+
+Epoch 80:  88% 102/116 [00:06<00:00, 16.06it/s, loss=0.0383, v_num=jyq5, em_score=0.0438, f1_score=0.160]
+
+
+
+
+
+
+
+
+Epoch 81:  88% 102/116 [00:06<00:00, 15.82it/s, loss=0.0359, v_num=jyq5, em_score=0.0438, f1_score=0.153]
+
+
+
+
+
+
+
+
+Epoch 82:  88% 102/116 [00:06<00:00, 16.01it/s, loss=0.0326, v_num=jyq5, em_score=0.0418, f1_score=0.149]
+
+
+
+
+
+
+
+Epoch 83:  88% 102/116 [00:06<00:00, 15.95it/s, loss=0.0343, v_num=jyq5, em_score=0.0376, f1_score=0.152]
+
+
+
+
+
+
+
+
+Epoch 84:  88% 102/116 [00:06<00:00, 16.04it/s, loss=0.0307, v_num=jyq5, em_score=0.0397, f1_score=0.168]
+
+
+
+
+
+
+
+
+Epoch 85:  88% 102/116 [00:06<00:00, 16.07it/s, loss=0.0314, v_num=jyq5, em_score=0.0418, f1_score=0.161]
+
+
+
+
+
+
+
+
+Epoch 86:  88% 102/116 [00:06<00:00, 16.12it/s, loss=0.0273, v_num=jyq5, em_score=0.0397, f1_score=0.155]
+
+
+
+
+
+
+
+
+Epoch 87:  88% 102/116 [00:06<00:00, 16.05it/s, loss=0.0267, v_num=jyq5, em_score=0.0376, f1_score=0.148]
+
+
+
+
+
+
+
+
+Epoch 88:  88% 102/116 [00:06<00:00, 16.18it/s, loss=0.03, v_num=jyq5, em_score=0.0376, f1_score=0.154]
+
+
+
+
+
+
+
+
+Epoch 89:  88% 102/116 [00:06<00:00, 16.24it/s, loss=0.0298, v_num=jyq5, em_score=0.0334, f1_score=0.139]
+
+
+
+
+
+
+Validating: 100% 15/15 [00:11<00:00,  1.44it/s]

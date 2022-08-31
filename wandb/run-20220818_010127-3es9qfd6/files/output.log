@@ -1,0 +1,221 @@
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory outputs/T5_small_templama(2010)_lr.0001_baseline_prefixed exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All DDP processes registered. Starting ddp with 1 processes
+----------------------------------------------------------------------------------------------------
+Not freezing any parameters!
+split is 0
+Length of dataset retrieving is.. 2866
+Validation sanity check: 0it [00:00, ?it/s]split is 0
+Length of dataset retrieving is.. 410
+Validation sanity check:   0% 0/2 [00:00<?, ?it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Set SLURM handle signals.
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 77.0 M
+-----------------------------------------------------
+77.0 M    Trainable params
+0         Non-trainable params
+77.0 M    Total params
+
+split is 0
+Length of dataset retrieving is.. 2866
+Epoch 0:   0% 0/26 [00:00<?, ?it/s]
+
+Epoch 0:  85% 22/26 [00:04<00:00,  5.26it/s, loss=7.37, v_num=qfd6, em_score=0.00781, f1_score=0.0543]
+
+
+
+
+
+
+Epoch 1:  85% 22/26 [00:04<00:00,  5.39it/s, loss=7.08, v_num=qfd6, em_score=0.00732, f1_score=0.0513]
+
+
+
+
+
+
+Epoch 2:  85% 22/26 [00:04<00:00,  5.38it/s, loss=6.61, v_num=qfd6, em_score=0.00732, f1_score=0.0534]
+
+
+
+
+
+
+Epoch 3:  85% 22/26 [00:04<00:00,  5.37it/s, loss=5.9, v_num=qfd6, em_score=0.00488, f1_score=0.0631]
+
+
+
+
+
+
+Epoch 4:  85% 22/26 [00:04<00:00,  5.31it/s, loss=5.1, v_num=qfd6, em_score=0.00732, f1_score=0.0807]
+
+
+
+
+
+
+Epoch 5:  85% 22/26 [00:04<00:00,  5.34it/s, loss=4.14, v_num=qfd6, em_score=0.00976, f1_score=0.0858]
+
+
+
+
+
+Epoch 6:  85% 22/26 [00:04<00:00,  5.32it/s, loss=3, v_num=qfd6, em_score=0.00732, f1_score=0.0618]
+
+
+
+
+
+
+Epoch 7:  85% 22/26 [00:04<00:00,  5.28it/s, loss=2.21, v_num=qfd6, em_score=0.0244, f1_score=0.151]
+
+
+
+
+
+
+Epoch 8:  85% 22/26 [00:04<00:00,  5.30it/s, loss=1.91, v_num=qfd6, em_score=0.0317, f1_score=0.184]
+
+
+
+
+
+
+Epoch 9:  85% 22/26 [00:04<00:00,  5.38it/s, loss=1.76, v_num=qfd6, em_score=0.0537, f1_score=0.207]
+
+
+
+
+
+Epoch 10:  85% 22/26 [00:04<00:00,  5.27it/s, loss=1.65, v_num=qfd6, em_score=0.0585, f1_score=0.203]
+
+
+
+
+
+
+Epoch 11:  85% 22/26 [00:04<00:00,  5.30it/s, loss=1.56, v_num=qfd6, em_score=0.0732, f1_score=0.208]
+
+
+
+
+
+Epoch 12:  85% 22/26 [00:04<00:00,  5.34it/s, loss=1.52, v_num=qfd6, em_score=0.0756, f1_score=0.212]
+
+
+
+
+
+Epoch 13:  85% 22/26 [00:04<00:00,  5.28it/s, loss=1.47, v_num=qfd6, em_score=0.0707, f1_score=0.211]
+
+
+
+
+
+Epoch 14:  85% 22/26 [00:04<00:00,  5.26it/s, loss=1.41, v_num=qfd6, em_score=0.078, f1_score=0.221]
+
+
+
+
+
+Epoch 15:  85% 22/26 [00:04<00:00,  5.30it/s, loss=1.39, v_num=qfd6, em_score=0.078, f1_score=0.220]
+
+
+
+
+
+Epoch 16:  85% 22/26 [00:04<00:00,  5.34it/s, loss=1.37, v_num=qfd6, em_score=0.078, f1_score=0.222]
+
+
+
+Validating: 100% 4/4 [00:08<00:00,  1.75s/it]
+
+
+Epoch 17:  85% 22/26 [00:04<00:00,  5.31it/s, loss=1.33, v_num=qfd6, em_score=0.078, f1_score=0.225]
+
+
+
+
+
+Epoch 18:  85% 22/26 [00:04<00:00,  5.35it/s, loss=1.31, v_num=qfd6, em_score=0.0756, f1_score=0.224]
+
+
+
+
+
+Epoch 19:  85% 22/26 [00:04<00:00,  5.32it/s, loss=1.29, v_num=qfd6, em_score=0.0829, f1_score=0.224]
+
+
+
+
+
+Epoch 20:  85% 22/26 [00:04<00:00,  5.28it/s, loss=1.29, v_num=qfd6, em_score=0.078, f1_score=0.219]
+
+
+
+
+
+
+Epoch 21:  85% 22/26 [00:04<00:00,  5.29it/s, loss=1.27, v_num=qfd6, em_score=0.078, f1_score=0.225]
+
+
+
+
+
+Epoch 22:  85% 22/26 [00:04<00:00,  5.29it/s, loss=1.27, v_num=qfd6, em_score=0.0732, f1_score=0.222]
+
+
+
+
+
+Epoch 23:  85% 22/26 [00:04<00:00,  5.35it/s, loss=1.24, v_num=qfd6, em_score=0.0756, f1_score=0.224]
+
+
+
+
+
+Epoch 24:  85% 22/26 [00:04<00:00,  5.34it/s, loss=1.24, v_num=qfd6, em_score=0.0683, f1_score=0.220]
+
+
+
+
+
+Epoch 25:  85% 22/26 [00:04<00:00,  5.26it/s, loss=1.23, v_num=qfd6, em_score=0.0707, f1_score=0.220]
+
+
+
+
+
+Epoch 26:  85% 22/26 [00:04<00:00,  5.27it/s, loss=1.24, v_num=qfd6, em_score=0.0707, f1_score=0.219]
+
+
+
+
+
+Epoch 27:  85% 22/26 [00:04<00:00,  5.28it/s, loss=1.23, v_num=qfd6, em_score=0.0707, f1_score=0.219]
+
+
+
+
+
+Epoch 28:  85% 22/26 [00:04<00:00,  5.29it/s, loss=1.23, v_num=qfd6, em_score=0.0707, f1_score=0.219]
+
+
+
+
+
+Epoch 29:  85% 22/26 [00:04<00:00,  5.28it/s, loss=1.23, v_num=qfd6, em_score=0.0707, f1_score=0.219]
+
+
+
+Validating:  50% 2/4 [00:05<00:05,  2.69s/it]

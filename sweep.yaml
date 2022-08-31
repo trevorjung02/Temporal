@@ -1,0 +1,14 @@
+program: run.py
+project: temporal_questions
+method: grid
+parameters:
+  learning_rate: 
+    values: [1e-4, 1e-5]
+  t5_learning_rate:
+    values: [1e-4,1e-5,1e-6]
+command:
+  - ${env}
+  - ${interpreter}
+  - ${program}
+  - --config
+  - configs/templama/training/t5_kadapters_2010_1freeze.json

@@ -1,0 +1,41 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=ark
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=04:59:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+python run.py --config configs/templama/training/t5_baseline_2010_prefixed_test.json
+--------------------
+Traceback (most recent call last):
+  File "run.py", line 9, in <module>
+    import pytorch_lightning as pl
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/__init__.py", line 21, in <module>
+    from pytorch_lightning.callbacks import Callback  # noqa: E402
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/__init__.py", line 26, in <module>
+    from pytorch_lightning.callbacks.stochastic_weight_avg import StochasticWeightAveraging
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/stochastic_weight_avg.py", line 26, in <module>
+    from pytorch_lightning.trainer.optimizers import _get_default_scheduler_config
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/__init__.py", line 18, in <module>
+    from pytorch_lightning.trainer.trainer import Trainer
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 32, in <module>
+    from pytorch_lightning.loggers import LightningLoggerBase
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/loggers/__init__.py", line 18, in <module>
+    from pytorch_lightning.loggers.tensorboard import TensorBoardLogger
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/loggers/tensorboard.py", line 25, in <module>
+    from torch.utils.tensorboard import SummaryWriter
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/torch/utils/tensorboard/__init__.py", line 4, in <module>
+    LooseVersion = distutils.version.LooseVersion
+AttributeError: module 'distutils' has no attribute 'version'

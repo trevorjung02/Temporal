@@ -1,0 +1,263 @@
+2022-08-25 22:22:45,758 INFO    StreamThr :9446 [internal.py:wandb_internal():90] W&B internal server running at pid: 9446, started at: 2022-08-25 22:22:45.756218
+2022-08-25 22:22:45,759 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: status
+2022-08-25 22:22:45,761 DEBUG   SenderThread:9446 [sender.py:send_request():316] send_request: status
+2022-08-25 22:22:45,763 DEBUG   SenderThread:9446 [sender.py:send():302] send: header
+2022-08-25 22:22:45,763 INFO    WriterThread:9446 [datastore.py:open_for_write():75] open: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/run-2972aynv.wandb
+2022-08-25 22:22:45,795 DEBUG   SenderThread:9446 [sender.py:send():302] send: run
+2022-08-25 22:22:46,559 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: check_version
+2022-08-25 22:22:46,570 INFO    SenderThread:9446 [dir_watcher.py:__init__():216] watching files in: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files
+2022-08-25 22:22:46,570 INFO    SenderThread:9446 [sender.py:_start_run_threads():913] run started: 2972aynv with start time 1661491365.741114
+2022-08-25 22:22:46,570 DEBUG   SenderThread:9446 [sender.py:send():302] send: summary
+2022-08-25 22:22:46,571 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-25 22:22:46,571 DEBUG   SenderThread:9446 [sender.py:send_request():316] send_request: check_version
+2022-08-25 22:22:46,638 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: run_start
+2022-08-25 22:22:47,572 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_created():275] file/dir created: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/wandb-summary.json
+2022-08-25 22:22:48,874 DEBUG   HandlerThread:9446 [meta.py:__init__():35] meta init
+2022-08-25 22:22:48,874 DEBUG   HandlerThread:9446 [meta.py:__init__():50] meta init done
+2022-08-25 22:22:48,874 DEBUG   HandlerThread:9446 [meta.py:probe():216] probe
+2022-08-25 22:22:48,903 DEBUG   HandlerThread:9446 [meta.py:_setup_git():206] setup git
+2022-08-25 22:22:48,916 DEBUG   HandlerThread:9446 [meta.py:_setup_git():213] setup git done
+2022-08-25 22:22:48,916 DEBUG   HandlerThread:9446 [meta.py:_save_pip():54] save pip
+2022-08-25 22:22:48,917 DEBUG   HandlerThread:9446 [meta.py:_save_pip():68] save pip done
+2022-08-25 22:22:48,920 DEBUG   HandlerThread:9446 [meta.py:_save_conda():75] save conda
+2022-08-25 22:22:49,573 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_created():275] file/dir created: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/conda-environment.yaml
+2022-08-25 22:22:49,573 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_created():275] file/dir created: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/requirements.txt
+2022-08-25 22:22:52,881 DEBUG   HandlerThread:9446 [meta.py:_save_conda():85] save conda done
+2022-08-25 22:22:52,881 DEBUG   HandlerThread:9446 [meta.py:probe():254] probe done
+2022-08-25 22:22:53,575 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/conda-environment.yaml
+2022-08-25 22:22:53,575 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_created():275] file/dir created: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/wandb-metadata.json
+2022-08-25 22:22:53,824 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-25 22:22:53,825 DEBUG   SenderThread:9446 [sender.py:send_request():316] send_request: stop_status
+2022-08-25 22:22:53,898 DEBUG   SenderThread:9446 [sender.py:send():302] send: telemetry
+2022-08-25 22:22:53,898 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:22:53,898 DEBUG   SenderThread:9446 [sender.py:send():302] send: telemetry
+2022-08-25 22:22:53,898 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:22:53,900 DEBUG   SenderThread:9446 [sender.py:send():302] send: files
+2022-08-25 22:22:53,900 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2022-08-25 22:22:54,262 INFO    Thread-16 :9446 [upload_job.py:push():138] Uploaded file /tmp/tmpqgpt4pbzwandb/rp33g8pn-wandb-metadata.json
+2022-08-25 22:22:54,575 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_created():275] file/dir created: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:22:56,576 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:22:58,577 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:23:08,900 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-25 22:23:08,900 DEBUG   SenderThread:9446 [sender.py:send_request():316] send_request: stop_status
+2022-08-25 22:23:13,982 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:14,023 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:14,023 WARNING SenderThread:9446 [sender.py:send_metric():1112] Seen metric with glob (shouldn't happen)
+2022-08-25 22:23:14,024 DEBUG   SenderThread:9446 [sender.py:send():302] send: config
+2022-08-25 22:23:16,311 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: log_artifact
+2022-08-25 22:23:16,311 DEBUG   SenderThread:9446 [sender.py:send_request():316] send_request: log_artifact
+2022-08-25 22:23:16,450 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-25 22:23:16,596 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:23:16,596 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/config.yaml
+2022-08-25 22:23:16,596 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_created():275] file/dir created: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/media/table/table_key_0_03cfee0d2b5c925e0f9d.table.json
+2022-08-25 22:23:16,597 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_created():275] file/dir created: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/media
+2022-08-25 22:23:16,597 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_created():275] file/dir created: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/media/table
+2022-08-25 22:23:16,957 INFO    Thread-17 :9446 [upload_job.py:push():138] Uploaded file /tmp/tmpqgpt4pbzwandb/1hicuej0-media/table/table_key_0_03cfee0d2b5c925e0f9d.table.json
+2022-08-25 22:23:17,075 INFO    Thread-19 :9446 [upload_job.py:push():96] Uploaded file /mmfs1/home/tjung2/.cache/wandb/artifacts/obj/md5/63/424f3b4e717342762c8a0741187073
+2022-08-25 22:23:17,821 INFO    SenderThread:9446 [sender.py:send_request_log_artifact():1207] logged artifact run-2972aynv-table_key - {'id': 'QXJ0aWZhY3Q6MTc4NzE4ODAw', 'digest': '6e81abec449dc6cf15044acbb66a2691', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI2NjAyODc5', 'latestArtifact': None}, 'version': 'latest'}
+2022-08-25 22:23:17,822 DEBUG   SenderThread:9446 [sender.py:send():302] send: files
+2022-08-25 22:23:17,822 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file media/table/table_key_0_03cfee0d2b5c925e0f9d.table.json with policy now
+2022-08-25 22:23:17,822 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:17,822 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:17,822 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:17,823 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:17,823 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:17,823 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:17,823 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:17,823 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:17,823 DEBUG   SenderThread:9446 [sender.py:send():302] send: history
+2022-08-25 22:23:17,823 DEBUG   SenderThread:9446 [sender.py:send():302] send: summary
+2022-08-25 22:23:17,825 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-25 22:23:17,826 DEBUG   SenderThread:9446 [sender.py:send():302] send: stats
+2022-08-25 22:23:18,183 INFO    Thread-20 :9446 [upload_job.py:push():138] Uploaded file /tmp/tmpqgpt4pbzwandb/1dxcij1f-media/table/table_key_0_03cfee0d2b5c925e0f9d.table.json
+2022-08-25 22:23:18,597 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:23:18,597 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/wandb-summary.json
+2022-08-25 22:23:19,367 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:19,367 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:19,367 WARNING SenderThread:9446 [sender.py:send_metric():1112] Seen metric with glob (shouldn't happen)
+2022-08-25 22:23:19,367 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-25 22:23:19,368 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:19,368 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:19,368 DEBUG   SenderThread:9446 [sender.py:send():302] send: history
+2022-08-25 22:23:19,368 DEBUG   SenderThread:9446 [sender.py:send():302] send: summary
+2022-08-25 22:23:19,368 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-25 22:23:19,411 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:19,412 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-25 22:23:19,412 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:19,412 WARNING SenderThread:9446 [sender.py:send_metric():1112] Seen metric with glob (shouldn't happen)
+2022-08-25 22:23:19,412 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:19,412 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:19,412 DEBUG   SenderThread:9446 [sender.py:send():302] send: history
+2022-08-25 22:23:19,412 DEBUG   SenderThread:9446 [sender.py:send():302] send: summary
+2022-08-25 22:23:19,413 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-25 22:23:19,597 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/wandb-summary.json
+2022-08-25 22:23:20,597 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:23:22,608 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:23:23,978 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-25 22:23:23,979 DEBUG   SenderThread:9446 [sender.py:send_request():316] send_request: stop_status
+2022-08-25 22:23:24,609 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:23:26,609 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:23:28,610 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:23:30,611 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:23:30,872 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: log_artifact
+2022-08-25 22:23:30,872 DEBUG   SenderThread:9446 [sender.py:send_request():316] send_request: log_artifact
+2022-08-25 22:23:30,884 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-25 22:23:31,501 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-25 22:23:31,611 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_created():275] file/dir created: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/media/table/table_key_3_59c56f77a0ed2aeaf8ce.table.json
+2022-08-25 22:23:31,611 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/media/table
+2022-08-25 22:23:31,617 INFO    Thread-22 :9446 [upload_job.py:push():96] Uploaded file /mmfs1/home/tjung2/.cache/wandb/artifacts/obj/md5/a3/fc646b0dd72b0dd2470f4188dd879c
+2022-08-25 22:23:32,196 INFO    Thread-23 :9446 [upload_job.py:push():138] Uploaded file /tmp/tmpqgpt4pbzwandb/2w09oe7f-media/table/table_key_3_59c56f77a0ed2aeaf8ce.table.json
+2022-08-25 22:23:32,348 INFO    SenderThread:9446 [sender.py:send_request_log_artifact():1207] logged artifact run-2972aynv-table_key - {'id': 'QXJ0aWZhY3Q6MTc4NzE4ODQy', 'digest': 'ba2c3513461f267698dd3ae190cf0d79', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI2NjAyODc5', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTc4NzE4ODAw', 'versionIndex': 0}}, 'version': 'latest'}
+2022-08-25 22:23:32,348 DEBUG   SenderThread:9446 [sender.py:send():302] send: files
+2022-08-25 22:23:32,349 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file media/table/table_key_3_59c56f77a0ed2aeaf8ce.table.json with policy now
+2022-08-25 22:23:32,349 DEBUG   SenderThread:9446 [sender.py:send():302] send: history
+2022-08-25 22:23:32,349 DEBUG   SenderThread:9446 [sender.py:send():302] send: summary
+2022-08-25 22:23:32,354 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-25 22:23:32,354 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:32,354 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:32,354 WARNING SenderThread:9446 [sender.py:send_metric():1112] Seen metric with glob (shouldn't happen)
+2022-08-25 22:23:32,355 DEBUG   SenderThread:9446 [sender.py:send():302] send: history
+2022-08-25 22:23:32,355 DEBUG   SenderThread:9446 [sender.py:send():302] send: summary
+2022-08-25 22:23:32,355 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-25 22:23:32,462 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:32,462 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:32,462 WARNING SenderThread:9446 [sender.py:send_metric():1112] Seen metric with glob (shouldn't happen)
+2022-08-25 22:23:32,462 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-25 22:23:32,462 DEBUG   SenderThread:9446 [sender.py:send():302] send: history
+2022-08-25 22:23:32,462 DEBUG   SenderThread:9446 [sender.py:send():302] send: summary
+2022-08-25 22:23:32,463 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-25 22:23:32,506 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:32,506 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:32,506 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-25 22:23:32,506 WARNING SenderThread:9446 [sender.py:send_metric():1112] Seen metric with glob (shouldn't happen)
+2022-08-25 22:23:32,507 DEBUG   SenderThread:9446 [sender.py:send():302] send: history
+2022-08-25 22:23:32,507 DEBUG   SenderThread:9446 [sender.py:send():302] send: summary
+2022-08-25 22:23:32,507 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-25 22:23:32,612 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:23:32,612 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/wandb-summary.json
+2022-08-25 22:23:32,849 INFO    Thread-24 :9446 [upload_job.py:push():138] Uploaded file /tmp/tmpqgpt4pbzwandb/3mn0tnxa-media/table/table_key_3_59c56f77a0ed2aeaf8ce.table.json
+2022-08-25 22:23:34,612 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:23:34,709 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:34,709 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:34,710 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-25 22:23:34,710 WARNING SenderThread:9446 [sender.py:send_metric():1112] Seen metric with glob (shouldn't happen)
+2022-08-25 22:23:34,710 DEBUG   SenderThread:9446 [sender.py:send():302] send: history
+2022-08-25 22:23:34,710 DEBUG   SenderThread:9446 [sender.py:send():302] send: summary
+2022-08-25 22:23:34,712 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-25 22:23:34,753 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:34,753 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-25 22:23:34,753 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:34,754 WARNING SenderThread:9446 [sender.py:send_metric():1112] Seen metric with glob (shouldn't happen)
+2022-08-25 22:23:34,754 DEBUG   SenderThread:9446 [sender.py:send():302] send: history
+2022-08-25 22:23:34,754 DEBUG   SenderThread:9446 [sender.py:send():302] send: summary
+2022-08-25 22:23:34,754 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-25 22:23:35,613 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/wandb-summary.json
+2022-08-25 22:23:36,614 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:23:38,614 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:23:39,049 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-25 22:23:39,049 DEBUG   SenderThread:9446 [sender.py:send_request():316] send_request: stop_status
+2022-08-25 22:23:40,615 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:23:42,616 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:23:44,617 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:23:46,421 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: log_artifact
+2022-08-25 22:23:46,421 DEBUG   SenderThread:9446 [sender.py:send_request():316] send_request: log_artifact
+2022-08-25 22:23:46,433 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-25 22:23:46,617 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:23:46,618 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/config.yaml
+2022-08-25 22:23:46,618 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_created():275] file/dir created: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/media/table/table_key_9_69cb97bb02e0d9cf2738.table.json
+2022-08-25 22:23:46,618 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/media/table
+2022-08-25 22:23:47,025 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-25 22:23:47,290 INFO    Thread-25 :9446 [upload_job.py:push():138] Uploaded file /tmp/tmpqgpt4pbzwandb/36xe6zlt-media/table/table_key_9_69cb97bb02e0d9cf2738.table.json
+2022-08-25 22:23:47,818 INFO    Thread-27 :9446 [upload_job.py:push():96] Uploaded file /mmfs1/home/tjung2/.cache/wandb/artifacts/obj/md5/6c/25ad7d3bf7a59b673f7f5e7d46af27
+2022-08-25 22:23:48,499 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-25 22:23:48,543 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-25 22:23:48,619 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:23:48,833 INFO    SenderThread:9446 [sender.py:send_request_log_artifact():1207] logged artifact run-2972aynv-table_key - {'id': 'QXJ0aWZhY3Q6MTc4NzE4ODk5', 'digest': 'b60961ba137064e156e4eacf3280bac1', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI2NjAyODc5', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTc4NzE4ODQy', 'versionIndex': 1}}, 'version': 'latest'}
+2022-08-25 22:23:48,833 DEBUG   SenderThread:9446 [sender.py:send():302] send: files
+2022-08-25 22:23:48,833 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file media/table/table_key_9_69cb97bb02e0d9cf2738.table.json with policy now
+2022-08-25 22:23:48,834 DEBUG   SenderThread:9446 [sender.py:send():302] send: history
+2022-08-25 22:23:48,834 DEBUG   SenderThread:9446 [sender.py:send():302] send: summary
+2022-08-25 22:23:48,837 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-25 22:23:48,837 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:48,837 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:48,837 WARNING SenderThread:9446 [sender.py:send_metric():1112] Seen metric with glob (shouldn't happen)
+2022-08-25 22:23:48,837 DEBUG   SenderThread:9446 [sender.py:send():302] send: history
+2022-08-25 22:23:48,838 DEBUG   SenderThread:9446 [sender.py:send():302] send: summary
+2022-08-25 22:23:48,838 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-25 22:23:48,838 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:48,838 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:48,838 WARNING SenderThread:9446 [sender.py:send_metric():1112] Seen metric with glob (shouldn't happen)
+2022-08-25 22:23:48,838 DEBUG   SenderThread:9446 [sender.py:send():302] send: history
+2022-08-25 22:23:48,838 DEBUG   SenderThread:9446 [sender.py:send():302] send: summary
+2022-08-25 22:23:48,839 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-25 22:23:48,839 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:48,839 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:48,839 WARNING SenderThread:9446 [sender.py:send_metric():1112] Seen metric with glob (shouldn't happen)
+2022-08-25 22:23:48,839 DEBUG   SenderThread:9446 [sender.py:send():302] send: history
+2022-08-25 22:23:48,839 DEBUG   SenderThread:9446 [sender.py:send():302] send: summary
+2022-08-25 22:23:48,839 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-25 22:23:49,359 INFO    Thread-28 :9446 [upload_job.py:push():138] Uploaded file /tmp/tmpqgpt4pbzwandb/2gjmmd9y-media/table/table_key_9_69cb97bb02e0d9cf2738.table.json
+2022-08-25 22:23:49,537 DEBUG   SenderThread:9446 [sender.py:send():302] send: stats
+2022-08-25 22:23:49,620 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/wandb-summary.json
+2022-08-25 22:23:50,621 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:23:50,797 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:50,797 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:50,797 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-25 22:23:50,797 WARNING SenderThread:9446 [sender.py:send_metric():1112] Seen metric with glob (shouldn't happen)
+2022-08-25 22:23:50,797 DEBUG   SenderThread:9446 [sender.py:send():302] send: history
+2022-08-25 22:23:50,798 DEBUG   SenderThread:9446 [sender.py:send():302] send: summary
+2022-08-25 22:23:50,800 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-25 22:23:50,842 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:50,842 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:23:50,842 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-25 22:23:50,842 WARNING SenderThread:9446 [sender.py:send_metric():1112] Seen metric with glob (shouldn't happen)
+2022-08-25 22:23:50,842 DEBUG   SenderThread:9446 [sender.py:send():302] send: history
+2022-08-25 22:23:50,842 DEBUG   SenderThread:9446 [sender.py:send():302] send: summary
+2022-08-25 22:23:50,843 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-25 22:23:51,622 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/wandb-summary.json
+2022-08-25 22:23:52,622 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:23:54,266 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-25 22:23:54,266 DEBUG   SenderThread:9446 [sender.py:send_request():316] send_request: stop_status
+2022-08-25 22:23:54,623 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:23:56,624 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:23:58,625 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:24:00,625 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:24:01,076 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: log_artifact
+2022-08-25 22:24:01,077 DEBUG   SenderThread:9446 [sender.py:send_request():316] send_request: log_artifact
+2022-08-25 22:24:01,090 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-25 22:24:01,626 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_created():275] file/dir created: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/media/table/table_key_15_7ea0c01b39225d200c93.table.json
+2022-08-25 22:24:01,626 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/media/table
+2022-08-25 22:24:01,682 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-25 22:24:01,815 INFO    Thread-30 :9446 [upload_job.py:push():96] Uploaded file /mmfs1/home/tjung2/.cache/wandb/artifacts/obj/md5/78/acfb6c6a0e82b66cdda9be6f2570d0
+2022-08-25 22:24:02,028 INFO    Thread-31 :9446 [upload_job.py:push():138] Uploaded file /tmp/tmpqgpt4pbzwandb/1l5f3wet-media/table/table_key_15_7ea0c01b39225d200c93.table.json
+2022-08-25 22:24:02,550 INFO    SenderThread:9446 [sender.py:send_request_log_artifact():1207] logged artifact run-2972aynv-table_key - {'id': 'QXJ0aWZhY3Q6MTc4NzE4OTQ5', 'digest': '24beb6611aa23c2a81eacca5307b4b8d', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI2NjAyODc5', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTc4NzE4ODk5', 'versionIndex': 2}}, 'version': 'latest'}
+2022-08-25 22:24:02,551 DEBUG   SenderThread:9446 [sender.py:send():302] send: files
+2022-08-25 22:24:02,551 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file media/table/table_key_15_7ea0c01b39225d200c93.table.json with policy now
+2022-08-25 22:24:02,551 DEBUG   SenderThread:9446 [sender.py:send():302] send: history
+2022-08-25 22:24:02,551 DEBUG   SenderThread:9446 [sender.py:send():302] send: summary
+2022-08-25 22:24:02,554 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-25 22:24:02,554 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:24:02,554 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:24:02,554 WARNING SenderThread:9446 [sender.py:send_metric():1112] Seen metric with glob (shouldn't happen)
+2022-08-25 22:24:02,555 DEBUG   SenderThread:9446 [sender.py:send():302] send: history
+2022-08-25 22:24:02,555 DEBUG   SenderThread:9446 [sender.py:send():302] send: summary
+2022-08-25 22:24:02,555 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-25 22:24:02,629 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:24:02,629 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/wandb-summary.json
+2022-08-25 22:24:02,922 INFO    Thread-32 :9446 [upload_job.py:push():138] Uploaded file /tmp/tmpqgpt4pbzwandb/37nn9u3t-media/table/table_key_15_7ea0c01b39225d200c93.table.json
+2022-08-25 22:24:03,637 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:24:03,637 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:24:03,638 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-25 22:24:03,638 WARNING SenderThread:9446 [sender.py:send_metric():1112] Seen metric with glob (shouldn't happen)
+2022-08-25 22:24:03,638 DEBUG   SenderThread:9446 [sender.py:send():302] send: history
+2022-08-25 22:24:03,638 DEBUG   SenderThread:9446 [sender.py:send():302] send: summary
+2022-08-25 22:24:03,639 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-25 22:24:03,679 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:24:03,679 DEBUG   HandlerThread:9446 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-25 22:24:03,679 DEBUG   SenderThread:9446 [sender.py:send():302] send: metric
+2022-08-25 22:24:03,679 WARNING SenderThread:9446 [sender.py:send_metric():1112] Seen metric with glob (shouldn't happen)
+2022-08-25 22:24:03,679 DEBUG   SenderThread:9446 [sender.py:send():302] send: history
+2022-08-25 22:24:03,680 DEBUG   SenderThread:9446 [sender.py:send():302] send: summary
+2022-08-25 22:24:03,680 INFO    SenderThread:9446 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-25 22:24:04,630 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/output.log
+2022-08-25 22:24:04,630 INFO    Thread-12 :9446 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_222245-2972aynv/files/wandb-summary.json

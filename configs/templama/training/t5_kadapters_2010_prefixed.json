@@ -1,0 +1,33 @@
+{
+    "input_length": 50,
+    "output_length": 25,
+    "num_train_epochs": 50,
+    "output_dir": "outputs/T5_small_templama(2010)_lr.001_adapters_prefixed",
+    "dataset": "templama",
+    "dataset_version": "2010",
+    "prefix": true,
+    "train_batch_size": 32,
+    "learning_rate": 1e-4,
+    "model": "google/t5-small-ssm",
+    "method": "kadapter",
+    "freeze_level": 1,
+    "t5_learning_rate": 1e-6,
+    "ngpu": 1,
+    "num_workers": 4,
+    "resume_from_checkpoint": null,
+    "accelerator": "ddp",
+    "use_deepspeed": false,
+    "CUDA_VISIBLE_DEVICES": "0",
+    "wandb_log": true,
+    "wandb_project": "temporal_questions",
+    "wandb_run_name": "T5_small_templama(2010)_lr.001_adapters_prefixed",
+    "mode": "pretrain",
+    "use_lr_scheduling": true,
+    "check_validation": false,
+    "checkpoint_path": "outputs/T5_small_templama(2010)_lr.001_adapters_prefixed/epoch=21-f1_score=0.22-em_score=0.08.ckpt",
+    "output_hidden_states": true,
+    "adapter_config": {
+        "adapter_hidden_size": 128,
+        "adapter_list": [1,5,8]
+    }
+}

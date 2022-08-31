@@ -1,0 +1,176 @@
+2022-08-18 17:38:37,052 INFO    StreamThr :492694 [internal.py:wandb_internal():90] W&B internal server running at pid: 492694, started at: 2022-08-18 17:38:37.051644
+2022-08-18 17:38:37,054 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: status
+2022-08-18 17:38:37,056 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: status
+2022-08-18 17:38:37,058 DEBUG   SenderThread:492694 [sender.py:send():302] send: header
+2022-08-18 17:38:37,058 INFO    WriterThread:492694 [datastore.py:open_for_write():75] open: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/run-38607pnn.wandb
+2022-08-18 17:38:37,059 DEBUG   SenderThread:492694 [sender.py:send():302] send: run
+2022-08-18 17:38:37,236 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: check_version
+2022-08-18 17:38:37,247 INFO    SenderThread:492694 [dir_watcher.py:__init__():216] watching files in: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files
+2022-08-18 17:38:37,247 INFO    SenderThread:492694 [sender.py:_start_run_threads():913] run started: 38607pnn with start time 1660869517.036146
+2022-08-18 17:38:37,248 DEBUG   SenderThread:492694 [sender.py:send():302] send: summary
+2022-08-18 17:38:37,248 INFO    SenderThread:492694 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-18 17:38:37,248 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: check_version
+2022-08-18 17:38:37,317 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: run_start
+2022-08-18 17:38:37,318 DEBUG   HandlerThread:492694 [meta.py:__init__():35] meta init
+2022-08-18 17:38:37,318 DEBUG   HandlerThread:492694 [meta.py:__init__():50] meta init done
+2022-08-18 17:38:37,319 DEBUG   HandlerThread:492694 [meta.py:probe():216] probe
+2022-08-18 17:38:37,320 DEBUG   HandlerThread:492694 [meta.py:_setup_git():206] setup git
+2022-08-18 17:38:37,334 DEBUG   HandlerThread:492694 [meta.py:_setup_git():213] setup git done
+2022-08-18 17:38:37,334 DEBUG   HandlerThread:492694 [meta.py:_save_pip():54] save pip
+2022-08-18 17:38:37,335 DEBUG   HandlerThread:492694 [meta.py:_save_pip():68] save pip done
+2022-08-18 17:38:37,336 DEBUG   HandlerThread:492694 [meta.py:_save_conda():75] save conda
+2022-08-18 17:38:38,249 INFO    Thread-12 :492694 [dir_watcher.py:_on_file_created():275] file/dir created: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/wandb-summary.json
+2022-08-18 17:38:38,250 INFO    Thread-12 :492694 [dir_watcher.py:_on_file_created():275] file/dir created: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/conda-environment.yaml
+2022-08-18 17:38:38,250 INFO    Thread-12 :492694 [dir_watcher.py:_on_file_created():275] file/dir created: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/requirements.txt
+2022-08-18 17:38:40,522 DEBUG   HandlerThread:492694 [meta.py:_save_conda():85] save conda done
+2022-08-18 17:38:40,522 DEBUG   HandlerThread:492694 [meta.py:probe():254] probe done
+2022-08-18 17:38:41,251 INFO    Thread-12 :492694 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/conda-environment.yaml
+2022-08-18 17:38:41,251 INFO    Thread-12 :492694 [dir_watcher.py:_on_file_created():275] file/dir created: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/wandb-metadata.json
+2022-08-18 17:38:41,275 DEBUG   SenderThread:492694 [sender.py:send():302] send: files
+2022-08-18 17:38:41,276 INFO    SenderThread:492694 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2022-08-18 17:38:41,282 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-18 17:38:41,283 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: stop_status
+2022-08-18 17:38:41,356 DEBUG   SenderThread:492694 [sender.py:send():302] send: telemetry
+2022-08-18 17:38:41,702 INFO    Thread-16 :492694 [upload_job.py:push():138] Uploaded file /tmp/tmp7frazwwjwandb/1usxx1gt-wandb-metadata.json
+2022-08-18 17:38:42,251 INFO    Thread-12 :492694 [dir_watcher.py:_on_file_created():275] file/dir created: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/output.log
+2022-08-18 17:38:44,253 INFO    Thread-12 :492694 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/output.log
+2022-08-18 17:38:56,358 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-18 17:38:56,358 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: stop_status
+2022-08-18 17:39:02,258 INFO    Thread-12 :492694 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/output.log
+2022-08-18 17:39:05,369 DEBUG   SenderThread:492694 [sender.py:send():302] send: stats
+2022-08-18 17:39:06,260 INFO    Thread-12 :492694 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/output.log
+2022-08-18 17:39:08,261 INFO    Thread-12 :492694 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/config.yaml
+2022-08-18 17:39:08,261 INFO    Thread-12 :492694 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/output.log
+2022-08-18 17:39:11,431 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-18 17:39:11,431 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: stop_status
+2022-08-18 17:39:26,505 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-18 17:39:26,505 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: stop_status
+2022-08-18 17:39:35,419 DEBUG   SenderThread:492694 [sender.py:send():302] send: stats
+2022-08-18 17:39:41,580 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-18 17:39:41,580 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: stop_status
+2022-08-18 17:39:46,274 INFO    Thread-12 :492694 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/output.log
+2022-08-18 17:39:50,275 INFO    Thread-12 :492694 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/output.log
+2022-08-18 17:39:52,276 INFO    Thread-12 :492694 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/output.log
+2022-08-18 17:39:56,277 INFO    Thread-12 :492694 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/output.log
+2022-08-18 17:39:56,655 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-18 17:39:56,655 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: stop_status
+2022-08-18 17:40:01,978 DEBUG   SenderThread:492694 [sender.py:send():302] send: exit
+2022-08-18 17:40:01,979 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-18 17:40:01,979 INFO    SenderThread:492694 [sender.py:send_exit():438] handling exit code: 0
+2022-08-18 17:40:01,979 INFO    SenderThread:492694 [sender.py:send_exit():440] handling runtime: 84
+2022-08-18 17:40:01,980 INFO    SenderThread:492694 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-18 17:40:01,980 INFO    SenderThread:492694 [sender.py:send_exit():446] send defer
+2022-08-18 17:40:01,980 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: poll_exit
+2022-08-18 17:40:01,981 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: defer
+2022-08-18 17:40:01,981 INFO    HandlerThread:492694 [handler.py:handle_request_defer():164] handle defer: 0
+2022-08-18 17:40:01,981 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: defer
+2022-08-18 17:40:01,982 INFO    SenderThread:492694 [sender.py:send_request_defer():455] handle sender defer: 0
+2022-08-18 17:40:01,982 INFO    SenderThread:492694 [sender.py:transition_state():459] send defer: 1
+2022-08-18 17:40:01,982 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: defer
+2022-08-18 17:40:01,982 INFO    HandlerThread:492694 [handler.py:handle_request_defer():164] handle defer: 1
+2022-08-18 17:40:02,065 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: defer
+2022-08-18 17:40:02,065 INFO    SenderThread:492694 [sender.py:send_request_defer():455] handle sender defer: 1
+2022-08-18 17:40:02,066 INFO    SenderThread:492694 [sender.py:transition_state():459] send defer: 2
+2022-08-18 17:40:02,066 DEBUG   SenderThread:492694 [sender.py:send():302] send: stats
+2022-08-18 17:40:02,066 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: defer
+2022-08-18 17:40:02,066 INFO    HandlerThread:492694 [handler.py:handle_request_defer():164] handle defer: 2
+2022-08-18 17:40:02,066 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: defer
+2022-08-18 17:40:02,066 INFO    SenderThread:492694 [sender.py:send_request_defer():455] handle sender defer: 2
+2022-08-18 17:40:02,067 INFO    SenderThread:492694 [sender.py:transition_state():459] send defer: 3
+2022-08-18 17:40:02,067 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: defer
+2022-08-18 17:40:02,067 INFO    HandlerThread:492694 [handler.py:handle_request_defer():164] handle defer: 3
+2022-08-18 17:40:02,067 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: defer
+2022-08-18 17:40:02,067 INFO    SenderThread:492694 [sender.py:send_request_defer():455] handle sender defer: 3
+2022-08-18 17:40:02,067 INFO    SenderThread:492694 [sender.py:transition_state():459] send defer: 4
+2022-08-18 17:40:02,067 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: defer
+2022-08-18 17:40:02,067 INFO    HandlerThread:492694 [handler.py:handle_request_defer():164] handle defer: 4
+2022-08-18 17:40:02,067 DEBUG   SenderThread:492694 [sender.py:send():302] send: summary
+2022-08-18 17:40:02,068 INFO    SenderThread:492694 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-18 17:40:02,068 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: defer
+2022-08-18 17:40:02,068 INFO    SenderThread:492694 [sender.py:send_request_defer():455] handle sender defer: 4
+2022-08-18 17:40:02,068 INFO    SenderThread:492694 [sender.py:transition_state():459] send defer: 5
+2022-08-18 17:40:02,068 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: defer
+2022-08-18 17:40:02,068 INFO    HandlerThread:492694 [handler.py:handle_request_defer():164] handle defer: 5
+2022-08-18 17:40:02,069 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: defer
+2022-08-18 17:40:02,069 INFO    SenderThread:492694 [sender.py:send_request_defer():455] handle sender defer: 5
+2022-08-18 17:40:02,069 INFO    SenderThread:492694 [sender.py:transition_state():459] send defer: 6
+2022-08-18 17:40:02,069 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: defer
+2022-08-18 17:40:02,069 INFO    HandlerThread:492694 [handler.py:handle_request_defer():164] handle defer: 6
+2022-08-18 17:40:02,069 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: defer
+2022-08-18 17:40:02,069 INFO    SenderThread:492694 [sender.py:send_request_defer():455] handle sender defer: 6
+2022-08-18 17:40:02,082 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-18 17:40:02,280 INFO    Thread-12 :492694 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/wandb-summary.json
+2022-08-18 17:40:03,941 INFO    SenderThread:492694 [sender.py:transition_state():459] send defer: 7
+2022-08-18 17:40:03,941 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: poll_exit
+2022-08-18 17:40:03,941 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: defer
+2022-08-18 17:40:03,941 INFO    HandlerThread:492694 [handler.py:handle_request_defer():164] handle defer: 7
+2022-08-18 17:40:03,942 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: defer
+2022-08-18 17:40:03,942 INFO    SenderThread:492694 [sender.py:send_request_defer():455] handle sender defer: 7
+2022-08-18 17:40:03,942 INFO    SenderThread:492694 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-08-18 17:40:04,042 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-18 17:40:04,281 INFO    SenderThread:492694 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/output.log
+2022-08-18 17:40:04,281 INFO    SenderThread:492694 [dir_watcher.py:finish():392] scan: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files
+2022-08-18 17:40:04,282 INFO    SenderThread:492694 [dir_watcher.py:finish():406] scan save: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/conda-environment.yaml conda-environment.yaml
+2022-08-18 17:40:04,282 INFO    SenderThread:492694 [dir_watcher.py:finish():406] scan save: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/wandb-metadata.json wandb-metadata.json
+2022-08-18 17:40:04,282 INFO    SenderThread:492694 [dir_watcher.py:finish():406] scan save: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/config.yaml config.yaml
+2022-08-18 17:40:04,285 INFO    SenderThread:492694 [dir_watcher.py:finish():406] scan save: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/requirements.txt requirements.txt
+2022-08-18 17:40:04,285 INFO    SenderThread:492694 [dir_watcher.py:finish():406] scan save: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/wandb-summary.json wandb-summary.json
+2022-08-18 17:40:04,289 INFO    SenderThread:492694 [dir_watcher.py:finish():406] scan save: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/output.log output.log
+2022-08-18 17:40:04,292 INFO    SenderThread:492694 [sender.py:transition_state():459] send defer: 8
+2022-08-18 17:40:04,292 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: poll_exit
+2022-08-18 17:40:04,296 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: defer
+2022-08-18 17:40:04,298 INFO    HandlerThread:492694 [handler.py:handle_request_defer():164] handle defer: 8
+2022-08-18 17:40:04,299 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: defer
+2022-08-18 17:40:04,299 INFO    SenderThread:492694 [sender.py:send_request_defer():455] handle sender defer: 8
+2022-08-18 17:40:04,300 INFO    SenderThread:492694 [file_pusher.py:finish():171] shutting down file pusher
+2022-08-18 17:40:04,400 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-18 17:40:04,401 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: poll_exit
+2022-08-18 17:40:04,501 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-18 17:40:04,501 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: poll_exit
+2022-08-18 17:40:04,602 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-18 17:40:04,602 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: poll_exit
+2022-08-18 17:40:04,642 INFO    Thread-17 :492694 [upload_job.py:push():138] Uploaded file /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/conda-environment.yaml
+2022-08-18 17:40:04,659 INFO    Thread-18 :492694 [upload_job.py:push():138] Uploaded file /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/config.yaml
+2022-08-18 17:40:04,668 INFO    Thread-19 :492694 [upload_job.py:push():138] Uploaded file /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/requirements.txt
+2022-08-18 17:40:04,702 INFO    Thread-20 :492694 [upload_job.py:push():138] Uploaded file /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/wandb-summary.json
+2022-08-18 17:40:04,703 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-18 17:40:04,703 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: poll_exit
+2022-08-18 17:40:04,725 INFO    Thread-21 :492694 [upload_job.py:push():138] Uploaded file /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/files/output.log
+2022-08-18 17:40:04,804 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-18 17:40:04,804 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: poll_exit
+2022-08-18 17:40:04,906 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-18 17:40:04,906 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: poll_exit
+2022-08-18 17:40:04,925 INFO    Thread-11 :492694 [sender.py:transition_state():459] send defer: 9
+2022-08-18 17:40:04,926 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: defer
+2022-08-18 17:40:04,926 INFO    HandlerThread:492694 [handler.py:handle_request_defer():164] handle defer: 9
+2022-08-18 17:40:04,926 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: defer
+2022-08-18 17:40:04,926 INFO    SenderThread:492694 [sender.py:send_request_defer():455] handle sender defer: 9
+2022-08-18 17:40:05,006 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-18 17:40:05,142 INFO    SenderThread:492694 [sender.py:transition_state():459] send defer: 10
+2022-08-18 17:40:05,143 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: poll_exit
+2022-08-18 17:40:05,143 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: defer
+2022-08-18 17:40:05,143 INFO    HandlerThread:492694 [handler.py:handle_request_defer():164] handle defer: 10
+2022-08-18 17:40:05,143 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: defer
+2022-08-18 17:40:05,143 INFO    SenderThread:492694 [sender.py:send_request_defer():455] handle sender defer: 10
+2022-08-18 17:40:05,144 INFO    SenderThread:492694 [sender.py:transition_state():459] send defer: 11
+2022-08-18 17:40:05,144 DEBUG   SenderThread:492694 [sender.py:send():302] send: final
+2022-08-18 17:40:05,144 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: defer
+2022-08-18 17:40:05,144 DEBUG   SenderThread:492694 [sender.py:send():302] send: footer
+2022-08-18 17:40:05,144 INFO    HandlerThread:492694 [handler.py:handle_request_defer():164] handle defer: 11
+2022-08-18 17:40:05,144 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: defer
+2022-08-18 17:40:05,144 INFO    SenderThread:492694 [sender.py:send_request_defer():455] handle sender defer: 11
+2022-08-18 17:40:05,244 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-18 17:40:05,244 DEBUG   SenderThread:492694 [sender.py:send_request():316] send_request: poll_exit
+2022-08-18 17:40:05,244 INFO    SenderThread:492694 [file_pusher.py:join():176] waiting for file pusher
+2022-08-18 17:40:05,485 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: sampled_history
+2022-08-18 17:40:05,486 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: get_summary
+2022-08-18 17:40:05,486 INFO    MainThread:492694 [wandb_run.py:_footer_history_summary_info():3305] rendering history
+2022-08-18 17:40:05,487 INFO    MainThread:492694 [wandb_run.py:_footer_history_summary_info():3337] rendering summary
+2022-08-18 17:40:05,487 INFO    MainThread:492694 [wandb_run.py:_footer_sync_info():3261] logging synced files
+2022-08-18 17:40:05,487 DEBUG   HandlerThread:492694 [handler.py:handle_request():141] handle_request: shutdown
+2022-08-18 17:40:05,487 INFO    HandlerThread:492694 [handler.py:finish():810] shutting down handler
+2022-08-18 17:40:06,144 INFO    WriterThread:492694 [datastore.py:close():279] close: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220818_173837-38607pnn/run-38607pnn.wandb
+2022-08-18 17:40:06,385 INFO    SenderThread:492694 [sender.py:finish():1312] shutting down sender
+2022-08-18 17:40:06,385 INFO    SenderThread:492694 [file_pusher.py:finish():171] shutting down file pusher
+2022-08-18 17:40:06,385 INFO    SenderThread:492694 [file_pusher.py:join():176] waiting for file pusher
+2022-08-18 17:40:06,490 INFO    MainThread:492694 [internal.py:handle_exit():80] Internal process exited

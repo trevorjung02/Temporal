@@ -1,0 +1,157 @@
+2022-08-16 05:46:19,189 INFO    MainThread:28760 [wandb_setup.py:_flush():76] Configure stats pid to 28760
+2022-08-16 05:46:19,189 INFO    MainThread:28760 [wandb_setup.py:_flush():76] Loading settings from /mmfs1/home/tjung2/.config/wandb/settings
+2022-08-16 05:46:19,190 INFO    MainThread:28760 [wandb_setup.py:_flush():76] Loading settings from /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/settings
+2022-08-16 05:46:19,191 INFO    MainThread:28760 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2022-08-16 05:46:19,191 INFO    MainThread:28760 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'run.py', 'program': 'run.py'}
+2022-08-16 05:46:19,191 INFO    MainThread:28760 [wandb_init.py:_log_setup():461] Logging user logs to /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220816_054618-vvh9p00x/logs/debug.log
+2022-08-16 05:46:19,191 INFO    MainThread:28760 [wandb_init.py:_log_setup():462] Logging internal logs to /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220816_054618-vvh9p00x/logs/debug-internal.log
+2022-08-16 05:46:19,191 INFO    MainThread:28760 [wandb_init.py:init():495] calling init triggers
+2022-08-16 05:46:19,191 INFO    MainThread:28760 [wandb_init.py:init():498] wandb.init called with sweep_config: {}
+config: {}
+2022-08-16 05:46:19,191 INFO    MainThread:28760 [wandb_init.py:init():548] starting backend
+2022-08-16 05:46:19,191 INFO    MainThread:28760 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-08-16 05:46:19,259 INFO    MainThread:28760 [backend.py:ensure_launched():217] starting backend process...
+2022-08-16 05:46:19,314 INFO    MainThread:28760 [backend.py:ensure_launched():222] started backend process with pid: 29391
+2022-08-16 05:46:19,315 INFO    MainThread:28760 [wandb_init.py:init():558] backend started and connected
+2022-08-16 05:46:19,319 INFO    MainThread:28760 [wandb_init.py:init():634] updated telemetry
+2022-08-16 05:46:19,442 INFO    MainThread:28760 [wandb_init.py:init():665] communicating run to backend with 30 second timeout
+2022-08-16 05:46:21,682 INFO    MainThread:28760 [wandb_run.py:_on_init():1919] communicating current version
+2022-08-16 05:46:21,715 INFO    MainThread:28760 [wandb_run.py:_on_init():1923] got version response upgrade_message: "wandb version 0.13.1 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2022-08-16 05:46:21,715 INFO    MainThread:28760 [wandb_init.py:init():700] starting run threads in backend
+2022-08-16 05:46:25,822 INFO    MainThread:28760 [wandb_run.py:_console_start():1893] atexit reg
+2022-08-16 05:46:25,823 INFO    MainThread:28760 [wandb_run.py:_redirect():1766] redirect: SettingsConsole.REDIRECT
+2022-08-16 05:46:25,823 INFO    MainThread:28760 [wandb_run.py:_redirect():1771] Redirecting console.
+2022-08-16 05:46:25,828 INFO    MainThread:28760 [wandb_run.py:_redirect():1827] Redirects installed.
+2022-08-16 05:46:25,828 INFO    MainThread:28760 [wandb_init.py:init():732] run started, returning control to user process
+2022-08-16 05:46:25,832 INFO    MainThread:28760 [wandb_run.py:_config_callback():1131] config_cb None None {'output_dir': 'outputs/T5_small_templama(2013)_lr.001_adapters_prefixed_batch32', 'dataset': 'templama', 'dataset_version': '2013', 'prefix': True, 'split_num': 1, 'split': 0, 'model_name_or_path': 'google/t5-small-ssm', 'method': 'kadapter', 'freeze_level': 1, 'mode': 'pretrain', 'tokenizer_name_or_path': 'google/t5-small-ssm', 'max_input_length': 50, 'max_output_length': 25, 'freeze_encoder': False, 'freeze_embeds': False, 'learning_rate': 0.001, 'weight_decay': 0.0, 'adam_epsilon': 1e-08, 'warmup_steps': 0, 'train_batch_size': 32, 'eval_batch_size': 32, 'num_train_epochs': 90, 'gradient_accumulation_steps': 3, 'n_gpu': 1, 'num_workers': 4, 'resume_from_checkpoint': 'None', 'use_lr_scheduling': True, 'val_check_interval': 1.0, 'n_val': -1, 'n_train': -1, 'n_test': -1, 'early_stop_callback': False, 'use_deepspeed': False, 'opt_level': 'O1', 'max_grad_norm': 0.5, 'seed': 42, 'check_validation_only': False, 'checkpoint_path': '', 'accelerator': 'ddp', 'output_log': 'None'}
+2022-08-16 06:12:06,351 INFO    MainThread:28760 [wandb_run.py:_atexit_cleanup():1862] got exitcode: 0
+2022-08-16 06:12:06,355 INFO    MainThread:28760 [wandb_run.py:_restore():1834] restore
+2022-08-16 06:12:08,896 INFO    MainThread:28760 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+  media_count: 91
+  artifact_count: 91
+}
+pusher_stats {
+  uploaded_bytes: 9857571
+  total_bytes: 9857571
+}
+
+2022-08-16 06:12:09,011 INFO    MainThread:28760 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+  media_count: 91
+  artifact_count: 91
+}
+pusher_stats {
+  uploaded_bytes: 9857571
+  total_bytes: 9857571
+}
+
+2022-08-16 06:12:09,295 INFO    MainThread:28760 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+  media_count: 91
+  artifact_count: 91
+}
+pusher_stats {
+  uploaded_bytes: 9857571
+  total_bytes: 9857571
+}
+
+2022-08-16 06:12:10,235 INFO    MainThread:28760 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 91
+  artifact_count: 91
+}
+pusher_stats {
+  uploaded_bytes: 9857571
+  total_bytes: 9877023
+}
+
+2022-08-16 06:12:10,336 INFO    MainThread:28760 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 91
+  artifact_count: 91
+}
+pusher_stats {
+  uploaded_bytes: 9857571
+  total_bytes: 9877023
+}
+
+2022-08-16 06:12:10,438 INFO    MainThread:28760 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 91
+  artifact_count: 91
+}
+pusher_stats {
+  uploaded_bytes: 9877023
+  total_bytes: 9877023
+}
+
+2022-08-16 06:12:10,539 INFO    MainThread:28760 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 91
+  artifact_count: 91
+}
+pusher_stats {
+  uploaded_bytes: 9877023
+  total_bytes: 9877023
+}
+
+2022-08-16 06:12:10,640 INFO    MainThread:28760 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 91
+  artifact_count: 91
+}
+pusher_stats {
+  uploaded_bytes: 9877023
+  total_bytes: 9877023
+}
+
+2022-08-16 06:12:10,741 INFO    MainThread:28760 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 91
+  artifact_count: 91
+}
+pusher_stats {
+  uploaded_bytes: 9877023
+  total_bytes: 9877023
+}
+
+2022-08-16 06:12:10,843 INFO    MainThread:28760 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 91
+  artifact_count: 91
+}
+pusher_stats {
+  uploaded_bytes: 9877023
+  total_bytes: 9877023
+}
+
+2022-08-16 06:12:11,202 INFO    MainThread:28760 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 91
+  artifact_count: 91
+}
+pusher_stats {
+  uploaded_bytes: 9877023
+  total_bytes: 9877023
+}
+
+2022-08-16 06:12:11,381 INFO    MainThread:28760 [wandb_run.py:_on_finish():1991] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+  media_count: 91
+  artifact_count: 91
+}
+pusher_stats {
+  uploaded_bytes: 9877023
+  total_bytes: 9877023
+}
+local_info {
+}
+
+2022-08-16 06:12:12,486 INFO    MainThread:28760 [wandb_run.py:_footer_history_summary_info():3099] rendering history
+2022-08-16 06:12:12,486 INFO    MainThread:28760 [wandb_run.py:_footer_history_summary_info():3131] rendering summary
+2022-08-16 06:12:12,488 INFO    MainThread:28760 [wandb_run.py:_footer_sync_info():3055] logging synced files

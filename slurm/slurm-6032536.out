@@ -1,0 +1,65 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=ark
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=16:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+    
+source ~/.bashrc
+conda activate ckl
+
+wandb agent --count 1 tjung2/temporal_questions/f90gkvkf
+wandb agent --count 1 tjung2/temporal_questions/f90gkvkf
+wandb agent --count 1 tjung2/temporal_questions/f90gkvkf
+--------------------
+wandb: Starting wandb agent 🕵️
+2022-08-31 15:43:48,302 - wandb.wandb_agent - INFO - Running runs: []
+2022-08-31 15:43:48,476 - wandb.wandb_agent - INFO - Agent received command: run
+2022-08-31 15:43:48,476 - wandb.wandb_agent - INFO - Agent starting run with config:
+	learning_rate: 0.001
+	t5_learning_rate: 0.0001
+2022-08-31 15:43:48,624 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 15:43:53,634 - wandb.wandb_agent - INFO - Running runs: ['vl769be5']
+Traceback (most recent call last):
+  File "run.py", line 96, in <module>
+    adapter_list = hparam.adapter_list,
+AttributeError: 'Namespace' object has no attribute 'adapter_list'
+2022-08-31 15:44:08,874 - wandb.wandb_agent - INFO - Cleaning up finished run: vl769be5
+wandb: Terminating and syncing runs. Press ctrl-c to kill.
+wandb: Starting wandb agent 🕵️
+2022-08-31 15:44:15,901 - wandb.wandb_agent - INFO - Running runs: []
+2022-08-31 15:44:16,104 - wandb.wandb_agent - INFO - Agent received command: run
+2022-08-31 15:44:16,104 - wandb.wandb_agent - INFO - Agent starting run with config:
+	learning_rate: 0.001
+	t5_learning_rate: 1e-06
+2022-08-31 15:44:16,206 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 15:44:21,216 - wandb.wandb_agent - INFO - Running runs: ['pi341ll6']
+Traceback (most recent call last):
+  File "run.py", line 96, in <module>
+    adapter_list = hparam.adapter_list,
+AttributeError: 'Namespace' object has no attribute 'adapter_list'
+2022-08-31 15:44:26,287 - wandb.wandb_agent - INFO - Cleaning up finished run: pi341ll6
+wandb: Terminating and syncing runs. Press ctrl-c to kill.
+wandb: Starting wandb agent 🕵️
+2022-08-31 15:44:33,965 - wandb.wandb_agent - INFO - Running runs: []
+2022-08-31 15:44:34,159 - wandb.wandb_agent - INFO - Agent received command: run
+2022-08-31 15:44:34,159 - wandb.wandb_agent - INFO - Agent starting run with config:
+	learning_rate: 0.0001
+	t5_learning_rate: 1e-05
+2022-08-31 15:44:34,270 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 15:44:39,280 - wandb.wandb_agent - INFO - Running runs: ['lwrp4390']
+Traceback (most recent call last):
+  File "run.py", line 96, in <module>
+    adapter_list = hparam.adapter_list,
+AttributeError: 'Namespace' object has no attribute 'adapter_list'
+2022-08-31 15:44:44,363 - wandb.wandb_agent - INFO - Cleaning up finished run: lwrp4390
+wandb: Terminating and syncing runs. Press ctrl-c to kill.

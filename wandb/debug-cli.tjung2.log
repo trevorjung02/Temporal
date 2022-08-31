@@ -1,0 +1,1378 @@
+2022-08-18 17:20:29 INFO Running runs: []
+2022-08-18 17:20:29 INFO Agent received command: run
+2022-08-18 17:20:29 INFO Agent starting run with config:
+	learning_rate: 0.0003
+	train_batch_size: 128
+2022-08-18 17:20:29 INFO About to run command: sbatch sweep.sh
+2022-08-18 17:20:34 INFO Running runs: ['sqfr5n6h']
+2022-08-18 17:20:34 INFO Cleaning up finished run: sqfr5n6h
+2022-08-18 17:22:58 INFO Running runs: []
+2022-08-18 17:22:58 INFO Agent received command: run
+2022-08-18 17:22:58 INFO Agent starting run with config:
+	learning_rate: 0.001
+	train_batch_size: 128
+2022-08-18 17:22:58 INFO About to run command: sbatch sweep.sh
+2022-08-18 17:23:03 INFO Running runs: ['f421l8ip']
+2022-08-18 17:23:03 INFO Cleaning up finished run: f421l8ip
+2022-08-18 18:33:04 INFO Running runs: []
+2022-08-18 18:33:04 INFO Agent received command: run
+2022-08-18 18:33:04 INFO Agent starting run with config:
+	learning_rate: 0.0003
+	train_batch_size: 128
+2022-08-18 18:33:04 INFO About to run command: sbatch sweep.sh
+2022-08-18 18:33:09 INFO Running runs: ['81qwg51d']
+2022-08-18 18:33:09 INFO Cleaning up finished run: 81qwg51d
+2022-08-18 18:35:32 INFO Running runs: []
+2022-08-18 18:35:32 INFO Agent received command: run
+2022-08-18 18:35:32 INFO Agent starting run with config:
+	learning_rate: 0.001
+	train_batch_size: 128
+2022-08-18 18:35:32 INFO About to run command: sbatch sweep.sh
+2022-08-18 18:35:37 INFO Running runs: ['gjunq4zx']
+2022-08-18 18:35:37 INFO Cleaning up finished run: gjunq4zx
+2022-08-18 20:25:42 ERROR Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 698, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep tjung2/temporal_questions_1/kc4ne0qw not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 97, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 1291, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 622, in agent
+    return run_agent(
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 564, in run_agent
+    agent.run()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 181, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/internal.py", line 99, in sweep
+    return self.api.sweep(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 61, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 698, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.CommError: Sweep tjung2/temporal_questions_1/kc4ne0qw not found
+
+2022-08-18 20:26:30 INFO Running runs: []
+2022-08-18 20:26:30 INFO Agent received command: run
+2022-08-18 20:26:30 INFO Agent starting run with config:
+	learning_rate: 0.0001
+	train_batch_size: 32
+2022-08-18 20:26:30 INFO About to run command: /usr/bin/env python sweep.sh "--config configs/templama/training/t5_kadapters_2010_prefixed.json"
+2022-08-18 20:26:35 INFO Running runs: ['yihkz7fj']
+2022-08-18 20:26:35 INFO Cleaning up finished run: yihkz7fj
+2022-08-18 20:26:35 INFO Agent received command: run
+2022-08-18 20:26:35 INFO Agent starting run with config:
+	learning_rate: 0.0003
+	train_batch_size: 64
+2022-08-18 20:26:35 INFO About to run command: /usr/bin/env python sweep.sh "--config configs/templama/training/t5_kadapters_2010_prefixed.json"
+2022-08-18 20:26:40 INFO Running runs: ['wr1wj0dk']
+2022-08-18 20:26:40 INFO Cleaning up finished run: wr1wj0dk
+2022-08-18 20:26:40 INFO Agent received command: run
+2022-08-18 20:26:40 INFO Agent starting run with config:
+	learning_rate: 0.0001
+	train_batch_size: 32
+2022-08-18 20:26:40 INFO About to run command: /usr/bin/env python sweep.sh "--config configs/templama/training/t5_kadapters_2010_prefixed.json"
+2022-08-18 20:26:45 INFO Running runs: ['lo57ip3i']
+2022-08-18 20:26:45 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2022-08-18 20:26:45 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2022-08-18 20:28:15 INFO Running runs: []
+2022-08-18 20:28:15 INFO Agent received command: run
+2022-08-18 20:28:15 INFO Agent starting run with config:
+	learning_rate: 0.001
+	train_batch_size: 64
+2022-08-18 20:28:15 INFO About to run command: /usr/bin/env python run.py "--config configs/templama/training/t5_kadapters_2010_prefixed.json"
+2022-08-18 20:28:20 INFO Running runs: ['et7vupr7']
+2022-08-18 20:28:30 INFO Cleaning up finished run: et7vupr7
+2022-08-18 20:28:30 INFO Agent received command: run
+2022-08-18 20:28:30 INFO Agent starting run with config:
+	learning_rate: 0.001
+	train_batch_size: 64
+2022-08-18 20:28:30 INFO About to run command: /usr/bin/env python run.py "--config configs/templama/training/t5_kadapters_2010_prefixed.json"
+2022-08-18 20:28:35 INFO Running runs: ['4e5zls6n']
+2022-08-18 20:28:41 INFO Cleaning up finished run: 4e5zls6n
+2022-08-18 20:28:41 INFO Agent received command: run
+2022-08-18 20:28:41 INFO Agent starting run with config:
+	learning_rate: 0.0001
+	train_batch_size: 32
+2022-08-18 20:28:41 INFO About to run command: /usr/bin/env python run.py "--config configs/templama/training/t5_kadapters_2010_prefixed.json"
+2022-08-18 20:28:46 INFO Running runs: ['8k6hokl2']
+2022-08-18 20:28:51 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2022-08-18 20:28:51 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2022-08-18 20:33:36 INFO Running runs: []
+2022-08-18 20:33:37 INFO Agent received command: run
+2022-08-18 20:33:37 INFO Agent starting run with config:
+	learning_rate: 0.0001
+	train_batch_size: 32
+2022-08-18 20:33:37 INFO About to run command: python run.py "--config configs/templama/training/t5_kadapters_2010_prefixed.json"
+2022-08-18 20:33:42 INFO Running runs: ['0035iatr']
+2022-08-18 20:33:47 INFO Cleaning up finished run: 0035iatr
+2022-08-18 20:33:47 INFO Agent received command: run
+2022-08-18 20:33:47 INFO Agent starting run with config:
+	learning_rate: 0.0001
+	train_batch_size: 32
+2022-08-18 20:33:47 INFO About to run command: python run.py "--config configs/templama/training/t5_kadapters_2010_prefixed.json"
+2022-08-18 20:33:52 INFO Running runs: ['wtpdiv94']
+2022-08-18 20:34:02 INFO Cleaning up finished run: wtpdiv94
+2022-08-18 20:34:02 INFO Agent received command: run
+2022-08-18 20:34:02 INFO Agent starting run with config:
+	learning_rate: 0.001
+	train_batch_size: 64
+2022-08-18 20:34:02 INFO About to run command: python run.py "--config configs/templama/training/t5_kadapters_2010_prefixed.json"
+2022-08-18 20:34:07 INFO Running runs: ['3jpfina1']
+2022-08-18 20:34:12 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2022-08-18 20:34:12 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2022-08-18 20:37:18 INFO Running runs: []
+2022-08-18 20:37:19 INFO Agent received command: run
+2022-08-18 20:37:19 INFO Agent starting run with config:
+	learning_rate: 0.0003
+	train_batch_size: 32
+2022-08-18 20:37:19 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 20:37:24 INFO Running runs: ['irzam7r8']
+2022-08-18 20:46:13 INFO Cleaning up finished run: irzam7r8
+2022-08-18 20:49:46 INFO Running runs: []
+2022-08-18 20:49:46 INFO Agent received command: run
+2022-08-18 20:49:46 INFO Agent starting run with config:
+	learning_rate: 0.0003
+	train_batch_size: 32
+2022-08-18 20:49:46 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 20:49:51 INFO Running runs: ['jkc6lme8']
+2022-08-18 20:55:42 INFO Running runs: []
+2022-08-18 20:55:42 INFO Agent received command: run
+2022-08-18 20:55:42 INFO Agent starting run with config:
+	learning_rate: 0.001
+	train_batch_size: 64
+2022-08-18 20:55:42 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 20:55:47 INFO Running runs: ['ht6n12u0']
+2022-08-18 20:57:54 INFO Running runs: []
+2022-08-18 20:57:55 INFO Agent received command: run
+2022-08-18 20:57:55 INFO Agent starting run with config:
+	learning_rate: 0.0003
+	train_batch_size: 64
+2022-08-18 20:57:55 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 20:58:00 INFO Running runs: ['xqnf70uv']
+2022-08-18 21:03:30 INFO Cleaning up finished run: ht6n12u0
+2022-08-18 21:05:55 INFO Cleaning up finished run: xqnf70uv
+2022-08-18 21:07:29 INFO Running runs: []
+2022-08-18 21:07:29 INFO Agent received command: run
+2022-08-18 21:07:29 INFO Agent starting run with config:
+	learning_rate: 0.0001
+	train_batch_size: 64
+2022-08-18 21:07:29 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 21:07:34 INFO Running runs: ['m8lr31tw']
+2022-08-18 21:15:13 INFO Cleaning up finished run: m8lr31tw
+2022-08-18 21:15:30 INFO Running runs: []
+2022-08-18 21:15:30 INFO Agent received command: run
+2022-08-18 21:15:30 INFO Agent starting run with config:
+	learning_rate: 0.001
+	train_batch_size: 64
+2022-08-18 21:15:30 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 21:15:35 INFO Running runs: ['7bw1lee7']
+2022-08-18 21:17:15 INFO Running runs: []
+2022-08-18 21:17:16 INFO Agent received command: run
+2022-08-18 21:17:16 INFO Agent starting run with config:
+	learning_rate: 0.0003
+	train_batch_size: 64
+2022-08-18 21:17:16 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 21:17:21 INFO Running runs: ['z6bhfs78']
+2022-08-18 21:23:15 INFO Cleaning up finished run: 7bw1lee7
+2022-08-18 21:25:19 INFO Cleaning up finished run: z6bhfs78
+2022-08-18 21:27:32 INFO Running runs: []
+2022-08-18 21:27:33 INFO Agent received command: run
+2022-08-18 21:27:33 INFO Agent starting run with config:
+	learning_rate: 0.001
+	train_batch_size: 64
+2022-08-18 21:27:33 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 21:27:38 INFO Running runs: ['4r38a99b']
+2022-08-18 21:28:44 INFO Running runs: []
+2022-08-18 21:28:44 INFO Agent received command: run
+2022-08-18 21:28:44 INFO Agent starting run with config:
+	learning_rate: 0.0001
+	train_batch_size: 32
+2022-08-18 21:28:44 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 21:28:49 INFO Running runs: ['ol229z3t']
+2022-08-18 21:35:11 INFO Cleaning up finished run: 4r38a99b
+2022-08-18 21:38:05 INFO Cleaning up finished run: ol229z3t
+2022-08-18 21:57:23 INFO Running runs: []
+2022-08-18 21:57:23 INFO Agent received command: run
+2022-08-18 21:57:23 INFO Agent starting run with config:
+	learning_rate: 0.001
+	train_batch_size: 64
+2022-08-18 21:57:23 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 21:57:28 INFO Running runs: ['koq5v7dx']
+2022-08-18 22:05:13 INFO Cleaning up finished run: koq5v7dx
+2022-08-18 22:05:28 INFO Running runs: []
+2022-08-18 22:05:29 INFO Agent received command: run
+2022-08-18 22:05:29 INFO Agent starting run with config:
+	learning_rate: 0.0001
+	train_batch_size: 64
+2022-08-18 22:05:29 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 22:05:34 INFO Running runs: ['mc3z3e9w']
+2022-08-18 22:13:08 INFO Cleaning up finished run: mc3z3e9w
+2022-08-18 22:13:21 INFO Running runs: []
+2022-08-18 22:13:22 INFO Agent received command: run
+2022-08-18 22:13:22 INFO Agent starting run with config:
+	learning_rate: 0.0001
+	train_batch_size: 64
+2022-08-18 22:13:22 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 22:13:27 INFO Running runs: ['6ehzupaw']
+2022-08-18 22:21:19 INFO Cleaning up finished run: 6ehzupaw
+2022-08-18 22:21:37 INFO Running runs: []
+2022-08-18 22:21:37 INFO Agent received command: run
+2022-08-18 22:21:37 INFO Agent starting run with config:
+	learning_rate: 0.001
+	train_batch_size: 64
+2022-08-18 22:21:37 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 22:21:42 INFO Running runs: ['x2tb5y7o']
+2022-08-18 22:29:36 INFO Cleaning up finished run: x2tb5y7o
+2022-08-18 22:29:51 INFO Running runs: []
+2022-08-18 22:29:52 INFO Agent received command: run
+2022-08-18 22:29:52 INFO Agent starting run with config:
+	learning_rate: 0.0003
+	train_batch_size: 32
+2022-08-18 22:29:52 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 22:29:57 INFO Running runs: ['qdflbgbw']
+2022-08-18 22:39:00 INFO Cleaning up finished run: qdflbgbw
+2022-08-18 23:27:11 INFO Running runs: []
+2022-08-18 23:27:11 INFO Agent received command: run
+2022-08-18 23:27:11 INFO Agent starting run with config:
+	learning_rate: 0.003
+	train_batch_size: 64
+2022-08-18 23:27:11 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 23:27:16 INFO Running runs: ['wnnv1xai']
+2022-08-18 23:36:38 INFO Cleaning up finished run: wnnv1xai
+2022-08-18 23:36:53 INFO Running runs: []
+2022-08-18 23:36:53 INFO Agent received command: run
+2022-08-18 23:36:53 INFO Agent starting run with config:
+	learning_rate: 0.003
+	train_batch_size: 32
+2022-08-18 23:36:53 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 23:36:58 INFO Running runs: ['grshh1d2']
+2022-08-18 23:37:13 INFO Running runs: []
+2022-08-18 23:37:13 INFO Agent received command: run
+2022-08-18 23:37:13 INFO Agent starting run with config:
+	learning_rate: 0.01
+	train_batch_size: 32
+2022-08-18 23:37:13 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 23:37:18 INFO Running runs: ['ue9ei3v3']
+2022-08-18 23:46:30 INFO Cleaning up finished run: ue9ei3v3
+2022-08-18 23:46:44 INFO Running runs: []
+2022-08-18 23:46:44 INFO Agent received command: run
+2022-08-18 23:46:44 INFO Agent starting run with config:
+	learning_rate: 0.001
+	train_batch_size: 32
+2022-08-18 23:46:44 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 23:46:49 INFO Running runs: ['g4ku889e']
+2022-08-18 23:47:08 INFO Cleaning up finished run: grshh1d2
+2022-08-18 23:47:24 INFO Running runs: []
+2022-08-18 23:47:24 INFO Agent received command: run
+2022-08-18 23:47:24 INFO Agent starting run with config:
+	learning_rate: 0.001
+	train_batch_size: 64
+2022-08-18 23:47:24 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 23:47:29 INFO Running runs: ['i5trfth7']
+2022-08-18 23:55:17 INFO Cleaning up finished run: i5trfth7
+2022-08-18 23:55:30 INFO Running runs: []
+2022-08-18 23:55:31 INFO Agent received command: run
+2022-08-18 23:55:31 INFO Agent starting run with config:
+	learning_rate: 0.001
+	train_batch_size: 64
+2022-08-18 23:55:31 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 23:55:33 INFO Cleaning up finished run: g4ku889e
+2022-08-18 23:55:36 INFO Running runs: ['z3ifm4zs']
+2022-08-18 23:55:46 INFO Running runs: []
+2022-08-18 23:55:46 INFO Agent received command: run
+2022-08-18 23:55:46 INFO Agent starting run with config:
+	learning_rate: 0.003
+	train_batch_size: 64
+2022-08-18 23:55:46 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 23:55:51 INFO Running runs: ['5pq31de1']
+2022-08-18 23:59:57 INFO Running runs: []
+2022-08-18 23:59:57 INFO Agent received command: run
+2022-08-18 23:59:57 INFO Agent starting run with config:
+	learning_rate: 0.0001
+	train_batch_size: 32
+2022-08-18 23:59:57 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_baseline_full_prefixed.json
+2022-08-19 00:00:02 INFO Running runs: ['5mxih3rt']
+2022-08-19 00:03:59 INFO Cleaning up finished run: 5pq31de1
+2022-08-19 00:04:16 INFO Running runs: []
+2022-08-19 00:04:16 INFO Agent received command: run
+2022-08-19 00:04:16 INFO Agent starting run with config:
+	learning_rate: 0.003
+	train_batch_size: 32
+2022-08-19 00:04:16 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-19 00:04:21 INFO Running runs: ['nzdstpt2']
+2022-08-19 00:04:25 INFO Cleaning up finished run: z3ifm4zs
+2022-08-19 00:04:40 INFO Running runs: []
+2022-08-19 00:04:40 INFO Agent received command: run
+2022-08-19 00:04:40 INFO Agent starting run with config:
+	learning_rate: 0.001
+	train_batch_size: 64
+2022-08-19 00:04:40 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-19 00:04:45 INFO Running runs: ['u6oly5om']
+2022-08-19 00:12:29 INFO Cleaning up finished run: u6oly5om
+2022-08-19 00:12:45 INFO Running runs: []
+2022-08-19 00:12:47 INFO Agent received command: run
+2022-08-19 00:12:47 INFO Agent starting run with config:
+	learning_rate: 0.003
+	train_batch_size: 32
+2022-08-19 00:12:47 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-19 00:12:52 INFO Running runs: ['cmqu0p78']
+2022-08-19 00:13:06 INFO Cleaning up finished run: nzdstpt2
+2022-08-19 00:13:22 INFO Running runs: []
+2022-08-19 00:13:24 INFO Agent received command: run
+2022-08-19 00:13:24 INFO Agent starting run with config:
+	learning_rate: 0.003
+	train_batch_size: 32
+2022-08-19 00:13:24 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-19 00:13:29 INFO Running runs: ['2fvv2s77']
+2022-08-19 00:21:56 INFO Cleaning up finished run: cmqu0p78
+2022-08-19 00:22:07 INFO Cleaning up finished run: 2fvv2s77
+2022-08-19 00:22:12 INFO Running runs: []
+2022-08-19 00:22:12 INFO Agent received command: run
+2022-08-19 00:22:12 INFO Agent starting run with config:
+	learning_rate: 0.003
+	train_batch_size: 32
+2022-08-19 00:22:12 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-19 00:22:17 INFO Running runs: ['tnkfbyu1']
+2022-08-19 00:22:19 INFO Running runs: []
+2022-08-19 00:22:19 INFO Agent received command: run
+2022-08-19 00:22:19 INFO Agent starting run with config:
+	learning_rate: 0.01
+	train_batch_size: 32
+2022-08-19 00:22:19 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-19 00:22:24 INFO Running runs: ['0bpzx5lm']
+2022-08-19 00:31:50 INFO Cleaning up finished run: 0bpzx5lm
+2022-08-19 00:32:04 INFO Cleaning up finished run: tnkfbyu1
+2022-08-19 00:32:04 INFO Running runs: []
+2022-08-19 00:32:04 INFO Agent received command: run
+2022-08-19 00:32:04 INFO Agent starting run with config:
+	learning_rate: 0.001
+	train_batch_size: 64
+2022-08-19 00:32:04 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-19 00:32:09 INFO Running runs: ['2q4x59oh']
+2022-08-19 00:32:16 INFO Running runs: []
+2022-08-19 00:32:16 INFO Agent received command: run
+2022-08-19 00:32:16 INFO Agent starting run with config:
+	learning_rate: 0.001
+	train_batch_size: 64
+2022-08-19 00:32:16 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-19 00:32:21 INFO Running runs: ['homy6sgd']
+2022-08-19 00:41:13 INFO Cleaning up finished run: 2q4x59oh
+2022-08-19 00:41:25 INFO Cleaning up finished run: homy6sgd
+2022-08-19 00:41:27 INFO Running runs: []
+2022-08-19 00:41:28 INFO Agent received command: run
+2022-08-19 00:41:28 INFO Agent starting run with config:
+	learning_rate: 0.003
+	train_batch_size: 64
+2022-08-19 00:41:28 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-19 00:41:33 INFO Running runs: ['tc53o4vv']
+2022-08-19 00:41:37 INFO Running runs: []
+2022-08-19 00:41:37 INFO Agent received command: run
+2022-08-19 00:41:37 INFO Agent starting run with config:
+	learning_rate: 0.003
+	train_batch_size: 64
+2022-08-19 00:41:37 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-19 00:41:42 INFO Running runs: ['unt1axx6']
+2022-08-19 00:50:02 INFO Cleaning up finished run: tc53o4vv
+2022-08-19 00:50:17 INFO Running runs: []
+2022-08-19 00:50:19 INFO Agent received command: run
+2022-08-19 00:50:19 INFO Agent starting run with config:
+	learning_rate: 0.001
+	train_batch_size: 32
+2022-08-19 00:50:19 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-19 00:50:22 INFO Cleaning up finished run: unt1axx6
+2022-08-19 00:50:24 INFO Running runs: ['ordjnrkw']
+2022-08-19 00:50:34 INFO Running runs: []
+2022-08-19 00:50:35 INFO Agent received command: run
+2022-08-19 00:50:35 INFO Agent starting run with config:
+	learning_rate: 0.001
+	train_batch_size: 64
+2022-08-19 00:50:35 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-19 00:50:40 INFO Running runs: ['vq46pe37']
+2022-08-19 00:59:08 INFO Cleaning up finished run: vq46pe37
+2022-08-19 00:59:59 INFO Cleaning up finished run: ordjnrkw
+2022-08-19 01:00:15 INFO Running runs: []
+2022-08-19 01:00:15 INFO Agent received command: run
+2022-08-19 01:00:15 INFO Agent starting run with config:
+	learning_rate: 0.01
+	train_batch_size: 32
+2022-08-19 01:00:15 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-19 01:00:20 INFO Running runs: ['99t6jpnr']
+2022-08-19 01:07:26 INFO Running runs: []
+2022-08-19 01:07:26 INFO Agent received command: run
+2022-08-19 01:07:26 INFO Agent starting run with config:
+	learning_rate: 0.01
+	train_batch_size: 32
+2022-08-19 01:07:26 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_full.json
+2022-08-19 01:07:31 INFO Running runs: ['v860do1c']
+2022-08-19 01:08:49 INFO Cleaning up finished run: 99t6jpnr
+2022-08-19 01:31:29 INFO Cleaning up finished run: 5mxih3rt
+2022-08-19 01:31:44 INFO Running runs: []
+2022-08-19 01:31:44 INFO Agent received command: run
+2022-08-19 01:31:44 INFO Agent starting run with config:
+	learning_rate: 3e-05
+	train_batch_size: 64
+2022-08-19 01:31:44 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_baseline_full_prefixed.json
+2022-08-19 01:31:49 INFO Running runs: ['cxmkct3v']
+2022-08-19 01:32:45 INFO Cleaning up finished run: cxmkct3v
+2022-08-19 01:33:52 INFO Running runs: []
+2022-08-19 01:33:52 INFO Agent received command: run
+2022-08-19 01:33:52 INFO Agent starting run with config:
+	learning_rate: 3e-05
+	train_batch_size: 32
+2022-08-19 01:33:52 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_baseline_full_prefixed.json
+2022-08-19 01:33:57 INFO Running runs: ['5y8t3x9g']
+2022-08-19 02:27:38 INFO Cleaning up finished run: v860do1c
+2022-08-19 02:28:02 INFO Running runs: []
+2022-08-19 02:28:02 INFO Agent received command: run
+2022-08-19 02:28:02 INFO Agent starting run with config:
+	learning_rate: 0.01
+	train_batch_size: 64
+2022-08-19 02:28:02 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_full.json
+2022-08-19 02:28:07 INFO Running runs: ['80onika6']
+2022-08-19 03:07:31 INFO Cleaning up finished run: 5y8t3x9g
+2022-08-19 03:07:45 INFO Running runs: []
+2022-08-19 03:07:46 INFO Agent received command: run
+2022-08-19 03:07:46 INFO Agent starting run with config:
+	learning_rate: 0.0001
+	train_batch_size: 64
+2022-08-19 03:07:46 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_baseline_full_prefixed.json
+2022-08-19 03:07:51 INFO Running runs: ['qdjmkm2s']
+2022-08-19 03:41:11 INFO Cleaning up finished run: 80onika6
+2022-08-19 03:41:29 INFO Running runs: []
+2022-08-19 03:41:29 INFO Agent received command: run
+2022-08-19 03:41:29 INFO Agent starting run with config:
+	learning_rate: 0.003
+	train_batch_size: 32
+2022-08-19 03:41:29 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_full.json
+2022-08-19 03:41:34 INFO Running runs: ['2axvxm5i']
+2022-08-19 04:21:35 INFO Cleaning up finished run: qdjmkm2s
+2022-08-19 04:21:49 INFO Running runs: []
+2022-08-19 04:21:49 INFO Agent received command: run
+2022-08-19 04:21:49 INFO Agent starting run with config:
+	learning_rate: 1e-05
+	train_batch_size: 64
+2022-08-19 04:21:49 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_baseline_full_prefixed.json
+2022-08-19 04:21:54 INFO Running runs: ['rri3oawu']
+2022-08-19 05:04:29 INFO Cleaning up finished run: 2axvxm5i
+2022-08-19 05:04:43 INFO Running runs: []
+2022-08-19 05:04:43 INFO Agent received command: run
+2022-08-19 05:04:43 INFO Agent starting run with config:
+	learning_rate: 0.003
+	train_batch_size: 64
+2022-08-19 05:04:43 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_full.json
+2022-08-19 05:04:48 INFO Running runs: ['pl0knc2w']
+2022-08-19 05:35:07 INFO Cleaning up finished run: rri3oawu
+2022-08-19 06:14:27 INFO Cleaning up finished run: pl0knc2w
+2022-08-19 06:14:43 INFO Running runs: []
+2022-08-19 06:14:43 INFO Agent received command: run
+2022-08-19 06:14:43 INFO Agent starting run with config:
+	learning_rate: 0.001
+	train_batch_size: 32
+2022-08-19 06:14:43 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_full.json
+2022-08-19 06:14:48 INFO Running runs: ['k41l7wlk']
+2022-08-19 07:37:12 INFO Cleaning up finished run: k41l7wlk
+2022-08-19 07:37:26 INFO Running runs: []
+2022-08-19 07:37:26 INFO Agent received command: run
+2022-08-19 07:37:26 INFO Agent starting run with config:
+	learning_rate: 0.001
+	train_batch_size: 64
+2022-08-19 07:37:26 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_full.json
+2022-08-19 07:37:31 INFO Running runs: ['xjpc6cmw']
+2022-08-19 08:46:03 INFO Cleaning up finished run: xjpc6cmw
+2022-08-22 22:29:14 INFO Running runs: []
+2022-08-22 22:29:14 INFO Agent received command: run
+2022-08-22 22:29:14 INFO Agent starting run with config:
+	learning_rate: 0.01
+2022-08-22 22:29:14 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-22 22:29:19 INFO Running runs: ['7p34wwsm']
+2022-08-22 22:42:59 INFO Cleaning up finished run: 7p34wwsm
+2022-08-22 22:43:14 INFO Running runs: []
+2022-08-22 22:43:15 INFO Agent received command: run
+2022-08-22 22:43:15 INFO Agent starting run with config:
+	learning_rate: 0.003
+2022-08-22 22:43:15 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-22 22:43:20 INFO Running runs: ['tc1pcj0a']
+2022-08-22 22:49:08 INFO Running runs: []
+2022-08-22 22:49:08 INFO Agent received command: run
+2022-08-22 22:49:08 INFO Agent starting run with config:
+	learning_rate: 0.01
+2022-08-22 22:49:08 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-22 22:49:13 INFO Running runs: ['0jeur0ge']
+2022-08-22 23:12:44 INFO Cleaning up finished run: 0jeur0ge
+2022-08-22 23:13:00 INFO Running runs: []
+2022-08-22 23:13:00 INFO Agent received command: run
+2022-08-22 23:13:00 INFO Agent starting run with config:
+	learning_rate: 0.003
+2022-08-22 23:13:00 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-22 23:13:05 INFO Running runs: ['wehv9qcr']
+2022-08-22 23:36:27 INFO Cleaning up finished run: wehv9qcr
+2022-08-22 23:36:42 INFO Running runs: []
+2022-08-22 23:36:43 INFO Agent received command: run
+2022-08-22 23:36:43 INFO Agent starting run with config:
+	learning_rate: 0.001
+2022-08-22 23:36:43 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-22 23:36:48 INFO Running runs: ['eajl79qx']
+2022-08-22 23:44:34 INFO Running runs: []
+2022-08-22 23:44:34 INFO Agent received command: run
+2022-08-22 23:44:34 INFO Agent starting run with config:
+	learning_rate: 0.01
+2022-08-22 23:44:34 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed_epochs30.json
+2022-08-22 23:44:39 INFO Running runs: ['0jvhbuxb']
+2022-08-22 23:53:40 INFO Cleaning up finished run: 0jvhbuxb
+2022-08-22 23:53:55 INFO Running runs: []
+2022-08-22 23:53:56 INFO Agent received command: run
+2022-08-22 23:53:56 INFO Agent starting run with config:
+	learning_rate: 0.003
+2022-08-22 23:53:56 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed_epochs30.json
+2022-08-22 23:54:01 INFO Running runs: ['mis77af1']
+2022-08-23 00:00:06 INFO Cleaning up finished run: eajl79qx
+2022-08-23 00:00:23 INFO Running runs: []
+2022-08-23 00:00:24 INFO Agent received command: run
+2022-08-23 00:00:24 INFO Agent starting run with config:
+	learning_rate: 0.0003
+2022-08-23 00:00:24 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-23 00:00:29 INFO Running runs: ['ex8ugr0v']
+2022-08-23 00:02:46 INFO Cleaning up finished run: mis77af1
+2022-08-23 00:03:06 INFO Running runs: []
+2022-08-23 00:03:06 INFO Agent received command: run
+2022-08-23 00:03:06 INFO Agent starting run with config:
+	learning_rate: 0.001
+2022-08-23 00:03:06 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed_epochs30.json
+2022-08-23 00:03:11 INFO Running runs: ['vbamdk52']
+2022-08-23 00:11:50 INFO Cleaning up finished run: vbamdk52
+2022-08-23 00:12:07 INFO Running runs: []
+2022-08-23 00:12:07 INFO Agent received command: run
+2022-08-23 00:12:07 INFO Agent starting run with config:
+	learning_rate: 0.0003
+2022-08-23 00:12:07 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed_epochs30.json
+2022-08-23 00:12:12 INFO Running runs: ['yl5z6ili']
+2022-08-23 00:21:07 INFO Cleaning up finished run: yl5z6ili
+2022-08-23 00:21:21 INFO Running runs: []
+2022-08-23 00:21:21 INFO Agent received command: run
+2022-08-23 00:21:21 INFO Agent starting run with config:
+	learning_rate: 0.0001
+2022-08-23 00:21:21 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed_epochs30.json
+2022-08-23 00:21:26 INFO Running runs: ['xqvgssrp']
+2022-08-23 00:25:19 INFO Cleaning up finished run: ex8ugr0v
+2022-08-23 00:25:33 INFO Running runs: []
+2022-08-23 00:25:33 INFO Agent received command: run
+2022-08-23 00:25:33 INFO Agent starting run with config:
+	learning_rate: 0.0001
+2022-08-23 00:25:33 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-23 00:25:38 INFO Running runs: ['xbmflmvg']
+2022-08-23 00:30:36 INFO Cleaning up finished run: xqvgssrp
+2022-08-23 00:49:39 INFO Cleaning up finished run: xbmflmvg
+2022-08-26 00:37:14 ERROR Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 698, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep tjung2/temporal_questions_1/uxdxy8vp not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 97, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 1291, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 622, in agent
+    return run_agent(
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 564, in run_agent
+    agent.run()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 181, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/internal.py", line 99, in sweep
+    return self.api.sweep(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 61, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 698, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.CommError: Sweep tjung2/temporal_questions_1/uxdxy8vp not found
+
+2022-08-26 00:37:15 ERROR Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 698, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep tjung2/temporal_questions_1/uxdxy8vp not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 97, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 1291, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 622, in agent
+    return run_agent(
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 564, in run_agent
+    agent.run()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 181, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/internal.py", line 99, in sweep
+    return self.api.sweep(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 61, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 698, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.CommError: Sweep tjung2/temporal_questions_1/uxdxy8vp not found
+
+2022-08-26 00:37:16 ERROR Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 698, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep tjung2/temporal_questions_1/uxdxy8vp not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 97, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 1291, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 622, in agent
+    return run_agent(
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 564, in run_agent
+    agent.run()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 181, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/internal.py", line 99, in sweep
+    return self.api.sweep(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 61, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 698, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.CommError: Sweep tjung2/temporal_questions_1/uxdxy8vp not found
+
+2022-08-26 00:37:18 ERROR Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 698, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep tjung2/temporal_questions_1/uxdxy8vp not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 97, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 1291, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 622, in agent
+    return run_agent(
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 564, in run_agent
+    agent.run()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 181, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/internal.py", line 99, in sweep
+    return self.api.sweep(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 61, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 698, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.CommError: Sweep tjung2/temporal_questions_1/uxdxy8vp not found
+
+2022-08-26 00:37:19 ERROR Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 698, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep tjung2/temporal_questions_1/uxdxy8vp not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 97, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 1291, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 622, in agent
+    return run_agent(
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 564, in run_agent
+    agent.run()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 181, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/internal.py", line 99, in sweep
+    return self.api.sweep(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 61, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 698, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.CommError: Sweep tjung2/temporal_questions_1/uxdxy8vp not found
+
+2022-08-26 00:37:20 ERROR Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 698, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep tjung2/temporal_questions_1/uxdxy8vp not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 97, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 1291, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 622, in agent
+    return run_agent(
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 564, in run_agent
+    agent.run()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 181, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/internal.py", line 99, in sweep
+    return self.api.sweep(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 61, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 698, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.CommError: Sweep tjung2/temporal_questions_1/uxdxy8vp not found
+
+2022-08-26 00:37:21 ERROR Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 698, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep tjung2/temporal_questions_1/uxdxy8vp not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 97, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 1291, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 622, in agent
+    return run_agent(
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 564, in run_agent
+    agent.run()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 181, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/internal.py", line 99, in sweep
+    return self.api.sweep(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 61, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 698, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.CommError: Sweep tjung2/temporal_questions_1/uxdxy8vp not found
+
+2022-08-26 00:37:22 ERROR Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 698, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep tjung2/temporal_questions_1/uxdxy8vp not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 97, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 1291, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 622, in agent
+    return run_agent(
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 564, in run_agent
+    agent.run()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 181, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/internal.py", line 99, in sweep
+    return self.api.sweep(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 61, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 698, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.CommError: Sweep tjung2/temporal_questions_1/uxdxy8vp not found
+
+2022-08-26 00:37:24 ERROR Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 698, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep tjung2/temporal_questions_1/uxdxy8vp not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 97, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 1291, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 622, in agent
+    return run_agent(
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 564, in run_agent
+    agent.run()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 181, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/internal.py", line 99, in sweep
+    return self.api.sweep(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 61, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 698, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.CommError: Sweep tjung2/temporal_questions_1/uxdxy8vp not found
+
+2022-08-26 00:37:44 INFO Running runs: []
+2022-08-26 00:37:45 INFO Agent received command: run
+2022-08-26 00:37:45 INFO Agent starting run with config:
+	learning_rate: 0.01
+	t5_learning_rate: 0.0003
+2022-08-26 00:37:45 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-26 00:37:50 INFO Running runs: ['9oofjcei']
+2022-08-26 00:52:46 INFO Cleaning up finished run: 9oofjcei
+2022-08-26 00:53:01 INFO Running runs: []
+2022-08-26 00:53:01 INFO Agent received command: run
+2022-08-26 00:53:01 INFO Agent starting run with config:
+	learning_rate: 0.01
+	t5_learning_rate: 0.0001
+2022-08-26 00:53:01 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-26 00:53:06 INFO Running runs: ['4pfnm3y1']
+2022-08-26 01:07:51 INFO Cleaning up finished run: 4pfnm3y1
+2022-08-26 01:08:07 INFO Running runs: []
+2022-08-26 01:08:07 INFO Agent received command: run
+2022-08-26 01:08:07 INFO Agent starting run with config:
+	learning_rate: 0.01
+	t5_learning_rate: 3e-05
+2022-08-26 01:08:07 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-26 01:08:12 INFO Running runs: ['t6wde4nm']
+2022-08-26 01:25:21 INFO Running runs: []
+2022-08-26 01:25:21 INFO Agent received command: run
+2022-08-26 01:25:21 INFO Agent starting run with config:
+	learning_rate: 0.01
+	t5_learning_rate: 0.0003
+2022-08-26 01:25:21 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_soft_full_prefixed_1freeze.json
+2022-08-26 01:25:26 INFO Running runs: ['uz9kzumm']
+2022-08-26 01:28:46 INFO Running runs: []
+2022-08-26 01:28:46 INFO Agent received command: run
+2022-08-26 01:28:46 INFO Agent starting run with config:
+	learning_rate: 0.01
+	train_batch_size: 32
+2022-08-26 01:28:46 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed_2freeze.json
+2022-08-26 01:28:51 INFO Running runs: ['wo9zqfo5']
+2022-08-26 01:30:43 INFO Cleaning up finished run: wo9zqfo5
+2022-08-26 01:31:16 INFO Running runs: []
+2022-08-26 01:31:17 INFO Agent received command: run
+2022-08-26 01:31:17 INFO Agent starting run with config:
+	learning_rate: 0.01
+	train_batch_size: 64
+2022-08-26 01:31:17 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed_2freeze.json
+2022-08-26 01:31:22 INFO Running runs: ['iuna9tc9']
+2022-08-26 01:32:39 INFO Cleaning up finished run: t6wde4nm
+2022-08-26 01:33:39 INFO Running runs: []
+2022-08-26 01:33:40 INFO Agent received command: run
+2022-08-26 01:33:40 INFO Agent starting run with config:
+	learning_rate: 0.003
+	t5_learning_rate: 0.0003
+2022-08-26 01:33:40 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-26 01:33:45 INFO Running runs: ['bsoamqb4']
+2022-08-26 01:41:51 INFO Running runs: []
+2022-08-26 01:41:51 INFO Agent received command: run
+2022-08-26 01:41:51 INFO Agent starting run with config:
+	learning_rate: 0.01
+2022-08-26 01:41:55 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_soft_full_prefixed.json
+2022-08-26 01:42:00 INFO Running runs: ['i2ii1oii']
+2022-08-26 02:02:28 INFO Cleaning up finished run: iuna9tc9
+2022-08-26 02:02:51 INFO Running runs: []
+2022-08-26 02:02:52 INFO Agent received command: run
+2022-08-26 02:02:52 INFO Agent starting run with config:
+	learning_rate: 0.003
+	train_batch_size: 32
+2022-08-26 02:02:52 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed_2freeze.json
+2022-08-26 02:02:57 INFO Running runs: ['srav2qr2']
+2022-08-26 02:05:38 INFO Cleaning up finished run: bsoamqb4
+2022-08-26 02:05:52 INFO Running runs: []
+2022-08-26 02:05:53 INFO Agent received command: run
+2022-08-26 02:05:53 INFO Agent starting run with config:
+	learning_rate: 0.003
+	t5_learning_rate: 0.0001
+2022-08-26 02:05:53 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-26 02:05:58 INFO Running runs: ['mx0fo10y']
+2022-08-26 02:31:34 INFO Cleaning up finished run: srav2qr2
+2022-08-26 02:32:41 INFO Running runs: []
+2022-08-26 02:32:46 INFO Agent received command: run
+2022-08-26 02:32:46 INFO Agent starting run with config:
+	learning_rate: 0.003
+	train_batch_size: 64
+2022-08-26 02:32:46 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed_2freeze.json
+2022-08-26 02:32:51 INFO Running runs: ['feemdjn7']
+2022-08-26 02:40:53 INFO Cleaning up finished run: mx0fo10y
+2022-08-26 02:41:08 INFO Running runs: []
+2022-08-26 02:41:09 INFO Agent received command: run
+2022-08-26 02:41:09 INFO Agent starting run with config:
+	learning_rate: 0.003
+	t5_learning_rate: 3e-05
+2022-08-26 02:41:09 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-26 02:41:14 INFO Running runs: ['yvbtmdgy']
+2022-08-26 02:58:25 INFO Cleaning up finished run: feemdjn7
+2022-08-26 02:58:38 INFO Running runs: []
+2022-08-26 02:58:38 INFO Agent received command: run
+2022-08-26 02:58:38 INFO Agent starting run with config:
+	learning_rate: 0.001
+	train_batch_size: 32
+2022-08-26 02:58:57 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed_2freeze.json
+2022-08-26 02:59:02 INFO Running runs: ['13workap']
+2022-08-26 03:07:26 INFO Cleaning up finished run: yvbtmdgy
+2022-08-26 03:07:41 INFO Running runs: []
+2022-08-26 03:07:42 INFO Agent received command: run
+2022-08-26 03:07:42 INFO Agent starting run with config:
+	learning_rate: 0.001
+	t5_learning_rate: 0.0003
+2022-08-26 03:07:42 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-26 03:07:47 INFO Running runs: ['y2f13v79']
+2022-08-26 03:15:46 INFO Cleaning up finished run: 13workap
+2022-08-26 03:16:00 INFO Running runs: []
+2022-08-26 03:16:00 INFO Agent received command: run
+2022-08-26 03:16:00 INFO Agent starting run with config:
+	learning_rate: 0.001
+	train_batch_size: 64
+2022-08-26 03:16:00 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed_2freeze.json
+2022-08-26 03:16:05 INFO Running runs: ['3bsir6zm']
+2022-08-26 03:21:58 INFO Cleaning up finished run: y2f13v79
+2022-08-26 03:22:12 INFO Running runs: []
+2022-08-26 03:22:12 INFO Agent received command: run
+2022-08-26 03:22:12 INFO Agent starting run with config:
+	learning_rate: 0.001
+	t5_learning_rate: 0.0001
+2022-08-26 03:22:12 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-26 03:22:17 INFO Running runs: ['ch68iprk']
+2022-08-26 03:28:44 INFO Cleaning up finished run: 3bsir6zm
+2022-08-26 03:29:03 INFO Running runs: []
+2022-08-26 03:29:03 INFO Agent received command: run
+2022-08-26 03:29:03 INFO Agent starting run with config:
+	learning_rate: 0.0003
+	train_batch_size: 32
+2022-08-26 03:29:03 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed_2freeze.json
+2022-08-26 03:29:08 INFO Running runs: ['tzcds3wm']
+2022-08-26 03:37:04 INFO Cleaning up finished run: ch68iprk
+2022-08-26 03:37:19 INFO Running runs: []
+2022-08-26 03:37:19 INFO Agent received command: run
+2022-08-26 03:37:19 INFO Agent starting run with config:
+	learning_rate: 0.001
+	t5_learning_rate: 3e-05
+2022-08-26 03:37:19 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-26 03:37:24 INFO Running runs: ['ylv184ty']
+2022-08-26 03:42:09 INFO Cleaning up finished run: tzcds3wm
+2022-08-26 03:42:23 INFO Running runs: []
+2022-08-26 03:42:23 INFO Agent received command: run
+2022-08-26 03:42:23 INFO Agent starting run with config:
+	learning_rate: 0.0003
+	train_batch_size: 64
+2022-08-26 03:42:23 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_prefixed_2freeze.json
+2022-08-26 03:42:28 INFO Running runs: ['6di13gpb']
+2022-08-26 03:51:34 INFO Cleaning up finished run: ylv184ty
+2022-08-26 03:55:03 INFO Cleaning up finished run: 6di13gpb
+2022-08-26 06:58:04 INFO Cleaning up finished run: uz9kzumm
+2022-08-26 06:58:17 INFO Running runs: []
+2022-08-26 06:58:17 INFO Agent received command: run
+2022-08-26 06:58:17 INFO Agent starting run with config:
+	learning_rate: 0.01
+	t5_learning_rate: 0.0001
+2022-08-26 06:58:17 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_soft_full_prefixed_1freeze.json
+2022-08-26 06:58:22 INFO Running runs: ['5vclfm0z']
+2022-08-26 07:09:58 INFO Cleaning up finished run: i2ii1oii
+2022-08-26 07:10:12 INFO Running runs: []
+2022-08-26 07:10:12 INFO Agent received command: run
+2022-08-26 07:10:12 INFO Agent starting run with config:
+	learning_rate: 0.003
+2022-08-26 07:10:12 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_soft_full_prefixed.json
+2022-08-26 07:10:17 INFO Running runs: ['a4r1c4jh']
+2022-08-26 12:17:18 INFO Cleaning up finished run: 5vclfm0z
+2022-08-26 12:17:33 INFO Running runs: []
+2022-08-26 12:17:33 INFO Agent received command: run
+2022-08-26 12:17:33 INFO Agent starting run with config:
+	learning_rate: 0.01
+	t5_learning_rate: 3e-05
+2022-08-26 12:17:33 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_soft_full_prefixed_1freeze.json
+2022-08-26 12:17:38 INFO Running runs: ['2lowk3tb']
+2022-08-26 12:24:38 INFO Cleaning up finished run: a4r1c4jh
+2022-08-26 12:24:52 INFO Running runs: []
+2022-08-26 12:24:53 INFO Agent received command: run
+2022-08-26 12:24:53 INFO Agent starting run with config:
+	learning_rate: 0.001
+2022-08-26 12:24:53 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_soft_full_prefixed.json
+2022-08-26 12:24:58 INFO Running runs: ['tm9gcha7']
+2022-08-26 17:40:49 INFO Cleaning up finished run: tm9gcha7
+2022-08-26 17:41:03 INFO Running runs: []
+2022-08-26 17:41:03 INFO Agent received command: run
+2022-08-26 17:41:03 INFO Agent starting run with config:
+	learning_rate: 0.0003
+2022-08-26 17:41:03 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_soft_full_prefixed.json
+2022-08-26 17:41:08 INFO Running runs: ['6034op4k']
+2022-08-29 05:58:37 INFO Running runs: []
+2022-08-29 05:58:37 INFO Agent received command: run
+2022-08-29 05:58:37 INFO Agent starting run with config:
+	learning_rate: 0.01
+	t5_learning_rate: 0.001
+2022-08-29 05:58:37 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_soft_full_prefixed_1freeze.json
+2022-08-29 05:58:42 INFO Running runs: ['yowbxt0d']
+2022-08-29 08:30:34 INFO Cleaning up finished run: yowbxt0d
+2022-08-29 08:30:47 INFO Running runs: []
+2022-08-29 08:30:47 INFO Agent received command: run
+2022-08-29 08:30:47 INFO Agent starting run with config:
+	learning_rate: 0.01
+	t5_learning_rate: 0.0003
+2022-08-29 08:30:47 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_soft_full_prefixed_1freeze.json
+2022-08-29 08:30:52 INFO Running runs: ['dwnfz9ta']
+2022-08-29 11:14:59 INFO Cleaning up finished run: dwnfz9ta
+2022-08-29 11:15:13 INFO Running runs: []
+2022-08-29 11:15:13 INFO Agent received command: run
+2022-08-29 11:15:13 INFO Agent starting run with config:
+	learning_rate: 0.01
+	t5_learning_rate: 0.0001
+2022-08-29 11:15:13 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_soft_full_prefixed_1freeze.json
+2022-08-29 11:15:18 INFO Running runs: ['v9jhs8dw']
+2022-08-29 13:58:57 INFO Cleaning up finished run: v9jhs8dw
+2022-08-29 13:59:11 INFO Running runs: []
+2022-08-29 13:59:11 INFO Agent received command: run
+2022-08-29 13:59:11 INFO Agent starting run with config:
+	learning_rate: 0.003
+	t5_learning_rate: 0.001
+2022-08-29 13:59:11 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_soft_full_prefixed_1freeze.json
+2022-08-29 13:59:16 INFO Running runs: ['9ev6i7pj']
+2022-08-29 16:29:44 INFO Cleaning up finished run: 9ev6i7pj
+2022-08-29 16:29:57 INFO Running runs: []
+2022-08-29 16:29:58 INFO Agent received command: run
+2022-08-29 16:29:58 INFO Agent starting run with config:
+	learning_rate: 0.003
+	t5_learning_rate: 0.0003
+2022-08-29 16:29:58 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_soft_full_prefixed_1freeze.json
+2022-08-29 16:30:03 INFO Running runs: ['x2wj78uq']
+2022-08-29 18:42:44 INFO Cleaning up finished run: x2wj78uq
+2022-08-29 18:42:58 INFO Running runs: []
+2022-08-29 18:42:58 INFO Agent received command: run
+2022-08-29 18:42:58 INFO Agent starting run with config:
+	learning_rate: 0.003
+	t5_learning_rate: 0.0001
+2022-08-29 18:42:58 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_soft_full_prefixed_1freeze.json
+2022-08-29 18:43:03 INFO Running runs: ['cab1sm85']
+2022-08-29 20:54:54 INFO Cleaning up finished run: cab1sm85
+2022-08-29 20:55:12 INFO Running runs: []
+2022-08-29 20:55:13 INFO Agent received command: run
+2022-08-29 20:55:13 INFO Agent starting run with config:
+	learning_rate: 0.001
+	t5_learning_rate: 0.001
+2022-08-29 20:55:13 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_soft_full_prefixed_1freeze.json
+2022-08-29 20:55:18 INFO Running runs: ['2uxqgyda']
+2022-08-31 02:43:59 INFO Running runs: []
+2022-08-31 02:44:01 INFO Agent received command: run
+2022-08-31 02:44:01 INFO Agent starting run with config:
+	adapter_hidden_size: 32
+	learning_rate: 0.01
+2022-08-31 02:44:01 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_2freeze.json
+2022-08-31 02:44:04 INFO Running runs: []
+2022-08-31 02:44:04 INFO Running runs: []
+2022-08-31 02:44:04 INFO Agent received command: run
+2022-08-31 02:44:04 INFO Agent starting run with config:
+	adapter_hidden_size: 32
+	learning_rate: 0.001
+2022-08-31 02:44:04 INFO Agent received command: run
+2022-08-31 02:44:04 INFO Agent starting run with config:
+	adapter_hidden_size: 32
+	learning_rate: 0.0001
+2022-08-31 02:44:04 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_2freeze.json
+2022-08-31 02:44:04 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_2freeze.json
+2022-08-31 02:44:06 INFO Running runs: ['w7a17qxh']
+2022-08-31 02:44:09 INFO Running runs: ['ah6jeu5a']
+2022-08-31 02:44:09 INFO Running runs: ['outyg68r']
+2022-08-31 02:45:12 INFO Cleaning up finished run: w7a17qxh
+2022-08-31 02:45:23 INFO Running runs: []
+2022-08-31 02:45:23 INFO Agent received command: run
+2022-08-31 02:45:23 INFO Agent starting run with config:
+	adapter_hidden_size: 64
+	learning_rate: 0.01
+2022-08-31 02:45:23 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_2freeze.json
+2022-08-31 02:45:28 INFO Running runs: ['wqhkuv7p']
+2022-08-31 03:22:05 INFO Cleaning up finished run: ah6jeu5a
+2022-08-31 03:22:19 INFO Running runs: []
+2022-08-31 03:22:19 INFO Agent received command: run
+2022-08-31 03:22:19 INFO Agent starting run with config:
+	adapter_hidden_size: 64
+	learning_rate: 0.001
+2022-08-31 03:22:19 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_2freeze.json
+2022-08-31 03:22:24 INFO Running runs: ['vse6tf04']
+2022-08-31 03:23:46 INFO Cleaning up finished run: wqhkuv7p
+2022-08-31 03:24:01 INFO Running runs: []
+2022-08-31 03:24:01 INFO Agent received command: run
+2022-08-31 03:24:01 INFO Agent starting run with config:
+	adapter_hidden_size: 64
+	learning_rate: 0.0001
+2022-08-31 03:24:01 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_2freeze.json
+2022-08-31 03:24:06 INFO Running runs: ['9vkmdmqf']
+2022-08-31 03:24:13 INFO Cleaning up finished run: outyg68r
+2022-08-31 03:24:27 INFO Running runs: []
+2022-08-31 03:24:27 INFO Agent received command: run
+2022-08-31 03:24:27 INFO Agent starting run with config:
+	adapter_hidden_size: 128
+	learning_rate: 0.01
+2022-08-31 03:24:27 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_2freeze.json
+2022-08-31 03:24:32 INFO Running runs: ['mpamrat0']
+2022-08-31 03:46:21 INFO Cleaning up finished run: vse6tf04
+2022-08-31 03:46:33 INFO Running runs: []
+2022-08-31 03:46:34 INFO Agent received command: run
+2022-08-31 03:46:34 INFO Agent starting run with config:
+	adapter_hidden_size: 128
+	learning_rate: 0.001
+2022-08-31 03:46:34 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_2freeze.json
+2022-08-31 03:46:39 INFO Running runs: ['kkgmq844']
+2022-08-31 03:48:04 INFO Cleaning up finished run: 9vkmdmqf
+2022-08-31 03:48:18 INFO Running runs: []
+2022-08-31 03:48:18 INFO Agent received command: run
+2022-08-31 03:48:18 INFO Agent starting run with config:
+	adapter_hidden_size: 128
+	learning_rate: 0.0001
+2022-08-31 03:48:18 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_2freeze.json
+2022-08-31 03:48:23 INFO Running runs: ['71trl8to']
+2022-08-31 03:49:08 INFO Cleaning up finished run: mpamrat0
+2022-08-31 03:49:21 INFO Running runs: []
+2022-08-31 03:49:21 INFO Agent received command: run
+2022-08-31 03:49:21 INFO Agent starting run with config:
+	adapter_hidden_size: 256
+	learning_rate: 0.01
+2022-08-31 03:49:21 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_2freeze.json
+2022-08-31 03:49:26 INFO Running runs: ['zq7ddvmm']
+2022-08-31 04:11:30 INFO Cleaning up finished run: 71trl8to
+2022-08-31 04:16:48 INFO Cleaning up finished run: kkgmq844
+2022-08-31 04:17:02 INFO Running runs: []
+2022-08-31 04:17:02 INFO Agent received command: run
+2022-08-31 04:17:02 INFO Agent starting run with config:
+	adapter_hidden_size: 256
+	learning_rate: 0.001
+2022-08-31 04:17:02 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_2freeze.json
+2022-08-31 04:17:07 INFO Running runs: ['gvcg2m04']
+2022-08-31 04:20:01 INFO Cleaning up finished run: zq7ddvmm
+2022-08-31 04:20:42 ERROR Retry attempt failed:
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/urllib3/connectionpool.py", line 451, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/urllib3/connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 113, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 204, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/requests/adapters.py", line 578, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=10)
+2022-08-31 04:20:52 INFO Running runs: []
+2022-08-31 04:20:52 INFO Agent received command: run
+2022-08-31 04:20:52 INFO Agent starting run with config:
+	adapter_hidden_size: 256
+	learning_rate: 0.0001
+2022-08-31 04:20:52 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_2freeze.json
+2022-08-31 04:20:57 INFO Running runs: ['kvl6l3m0']
+2022-08-31 04:43:51 INFO Cleaning up finished run: gvcg2m04
+2022-08-31 04:47:03 INFO Cleaning up finished run: kvl6l3m0
+2022-08-31 15:43:48 INFO Running runs: []
+2022-08-31 15:43:48 INFO Agent received command: run
+2022-08-31 15:43:48 INFO Agent starting run with config:
+	learning_rate: 0.001
+	t5_learning_rate: 0.0001
+2022-08-31 15:43:48 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 15:43:53 INFO Running runs: ['vl769be5']
+2022-08-31 15:44:04 INFO Running runs: []
+2022-08-31 15:44:05 INFO Agent received command: run
+2022-08-31 15:44:05 INFO Agent starting run with config:
+	learning_rate: 0.001
+	t5_learning_rate: 1e-05
+2022-08-31 15:44:05 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 15:44:08 INFO Cleaning up finished run: vl769be5
+2022-08-31 15:44:10 INFO Running runs: ['e3s9q932']
+2022-08-31 15:44:15 INFO Cleaning up finished run: e3s9q932
+2022-08-31 15:44:15 INFO Running runs: []
+2022-08-31 15:44:16 INFO Agent received command: run
+2022-08-31 15:44:16 INFO Agent starting run with config:
+	learning_rate: 0.001
+	t5_learning_rate: 1e-06
+2022-08-31 15:44:16 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 15:44:21 INFO Running runs: ['pi341ll6']
+2022-08-31 15:44:22 INFO Running runs: []
+2022-08-31 15:44:22 INFO Agent received command: run
+2022-08-31 15:44:22 INFO Agent starting run with config:
+	learning_rate: 0.0001
+	t5_learning_rate: 0.0001
+2022-08-31 15:44:22 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 15:44:26 INFO Cleaning up finished run: pi341ll6
+2022-08-31 15:44:27 INFO Running runs: ['y8jsm4o1']
+2022-08-31 15:44:32 INFO Cleaning up finished run: y8jsm4o1
+2022-08-31 15:44:33 INFO Running runs: []
+2022-08-31 15:44:34 INFO Agent received command: run
+2022-08-31 15:44:34 INFO Agent starting run with config:
+	learning_rate: 0.0001
+	t5_learning_rate: 1e-05
+2022-08-31 15:44:34 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 15:44:39 INFO Running runs: ['lwrp4390']
+2022-08-31 15:44:39 INFO Running runs: []
+2022-08-31 15:44:39 INFO Agent received command: run
+2022-08-31 15:44:39 INFO Agent starting run with config:
+	learning_rate: 0.0001
+	t5_learning_rate: 1e-06
+2022-08-31 15:44:40 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 15:44:44 INFO Cleaning up finished run: lwrp4390
+2022-08-31 15:44:45 INFO Running runs: ['8zyuxd7m']
+2022-08-31 15:44:50 INFO Cleaning up finished run: 8zyuxd7m
+2022-08-31 15:46:38 INFO Running runs: []
+2022-08-31 15:46:38 INFO Agent received command: run
+2022-08-31 15:46:38 INFO Agent starting run with config:
+	learning_rate: 0.001
+	t5_learning_rate: 0.0001
+2022-08-31 15:46:38 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 15:46:43 INFO Running runs: ['j5do6fqm']
+2022-08-31 15:47:03 INFO Cleaning up finished run: j5do6fqm
+2022-08-31 15:47:17 INFO Running runs: []
+2022-08-31 15:47:17 INFO Agent received command: run
+2022-08-31 15:47:17 INFO Agent starting run with config:
+	learning_rate: 0.001
+	t5_learning_rate: 1e-05
+2022-08-31 15:47:17 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 15:47:22 INFO Running runs: ['fybdu909']
+2022-08-31 15:47:43 INFO Cleaning up finished run: fybdu909
+2022-08-31 15:47:56 INFO Running runs: []
+2022-08-31 15:47:56 INFO Agent received command: run
+2022-08-31 15:47:56 INFO Agent starting run with config:
+	learning_rate: 0.001
+	t5_learning_rate: 1e-06
+2022-08-31 15:47:56 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 15:48:01 INFO Running runs: ['8ei1z5r7']
+2022-08-31 15:48:21 INFO Cleaning up finished run: 8ei1z5r7
+2022-08-31 15:57:00 INFO Running runs: []
+2022-08-31 15:57:00 INFO Agent received command: run
+2022-08-31 15:57:00 INFO Agent starting run with config:
+	learning_rate: 0.001
+	t5_learning_rate: 0.0001
+2022-08-31 15:57:00 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 15:57:05 INFO Running runs: ['tb1li9fk']
+2022-08-31 15:57:59 INFO Running runs: []
+2022-08-31 15:58:00 INFO Agent received command: run
+2022-08-31 15:58:00 INFO Agent starting run with config:
+	learning_rate: 0.001
+	t5_learning_rate: 1e-05
+2022-08-31 15:58:00 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 15:58:05 INFO Running runs: ['b43mvvjz']
+2022-08-31 16:06:24 INFO Cleaning up finished run: tb1li9fk
+2022-08-31 16:06:38 INFO Running runs: []
+2022-08-31 16:06:38 INFO Agent received command: run
+2022-08-31 16:06:38 INFO Agent starting run with config:
+	learning_rate: 0.001
+	t5_learning_rate: 1e-06
+2022-08-31 16:06:38 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 16:06:43 INFO Running runs: ['pr2m3q49']
+2022-08-31 16:07:19 INFO Cleaning up finished run: b43mvvjz
+2022-08-31 16:07:31 INFO Running runs: []
+2022-08-31 16:07:31 INFO Agent received command: run
+2022-08-31 16:07:31 INFO Agent starting run with config:
+	learning_rate: 0.0001
+	t5_learning_rate: 0.0001
+2022-08-31 16:07:31 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 16:07:36 INFO Running runs: ['d3krgrk1']
+2022-08-31 16:15:52 INFO Cleaning up finished run: pr2m3q49
+2022-08-31 16:16:06 INFO Running runs: []
+2022-08-31 16:16:06 INFO Agent received command: run
+2022-08-31 16:16:06 INFO Agent starting run with config:
+	learning_rate: 0.0001
+	t5_learning_rate: 1e-05
+2022-08-31 16:16:06 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 16:16:11 INFO Running runs: ['x20l9g5c']
+2022-08-31 16:17:00 INFO Cleaning up finished run: d3krgrk1
+2022-08-31 16:17:13 INFO Running runs: []
+2022-08-31 16:17:14 INFO Agent received command: run
+2022-08-31 16:17:14 INFO Agent starting run with config:
+	learning_rate: 0.0001
+	t5_learning_rate: 1e-06
+2022-08-31 16:17:14 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 16:17:19 INFO Running runs: ['swm48jnd']
+2022-08-31 16:25:16 INFO Cleaning up finished run: x20l9g5c
+2022-08-31 16:26:28 INFO Cleaning up finished run: swm48jnd
+2022-08-31 16:28:51 INFO Running runs: []
+2022-08-31 16:28:52 INFO Agent received command: run
+2022-08-31 16:28:52 INFO Agent starting run with config:
+	learning_rate: 0.0001
+	t5_learning_rate: 0.0001
+2022-08-31 16:28:52 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 16:28:57 INFO Running runs: ['rvc4yqua']
+2022-08-31 16:29:07 INFO Running runs: []
+2022-08-31 16:29:08 INFO Agent received command: run
+2022-08-31 16:29:08 INFO Agent starting run with config:
+	learning_rate: 0.0001
+	t5_learning_rate: 1e-05
+2022-08-31 16:29:08 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 16:29:13 INFO Running runs: ['42t7qxok']

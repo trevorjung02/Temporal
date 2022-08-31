@@ -1,0 +1,28 @@
+
+<wandb.sdk.wandb_run.Run object at 0x7f0d86657ca0>
+<wandb.sdk.wandb_run.Run object at 0x7f0d86657ca0>
+{}
+{}
+<class 'wandb.sdk.wandb_config.Config'>
+<class 'wandb.sdk.wandb_config.Config'>
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_config.py", line 160, in __getattr__
+    return self.__getitem__(key)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_config.py", line 127, in __getitem__
+    return self._items[key]
+KeyError: 'epochs'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_config.py", line 162, in __getattr__
+    raise AttributeError(
+AttributeError: '<class 'wandb.sdk.wandb_config.Config'>' object has no attribute 'epochs'
+1
+{'epochs': 1}
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_config.py", line 127, in __getitem__
+    return self._items[key]
+KeyError: 0
+{}
+{'epochs': 1}

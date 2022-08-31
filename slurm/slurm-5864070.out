@@ -1,0 +1,57 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=ark
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=04:59:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+python run.py --config configs/templama/evaluation/t5_baseline.json
+--------------------
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory  exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.1 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.21
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220811_235927-2lf9l63i
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run cerulean-deluge-5
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions_evaluation
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions_evaluation/runs/2lf9l63i
+Not freezing any parameters!
+Not freezing any parameters!
+split is 0
+Length of dataset retrieving is.. 5037
+Length of validation data:  5037
+log/templama folder already exists.
+Number of total validation data: 5037
+Number of correct predictions: 268. Percentage : 0.053206273575540995
+f1 = 0.16445638747253807
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 1.600 MB of 1.600 MB uploaded (0.000 MB deduped)wandb: \ 1.600 MB of 1.600 MB uploaded (0.000 MB deduped)wandb: | 1.600 MB of 1.607 MB uploaded (0.000 MB deduped)wandb: / 1.600 MB of 1.607 MB uploaded (0.000 MB deduped)wandb: - 1.607 MB of 1.607 MB uploaded (0.000 MB deduped)wandb: \ 1.607 MB of 1.607 MB uploaded (0.000 MB deduped)wandb: | 1.607 MB of 1.607 MB uploaded (0.000 MB deduped)wandb: / 1.607 MB of 1.607 MB uploaded (0.000 MB deduped)wandb: - 1.607 MB of 1.607 MB uploaded (0.000 MB deduped)wandb: \ 1.607 MB of 1.607 MB uploaded (0.000 MB deduped)wandb: | 1.607 MB of 1.607 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: em_score ▁
+wandb: f1_score ▁
+wandb: 
+wandb: Run summary:
+wandb: em_score 0.05321
+wandb: f1_score 0.16446
+wandb: 
+wandb: Synced cerulean-deluge-5: https://wandb.ai/tjung2/temporal_questions_evaluation/runs/2lf9l63i
+wandb: Synced 6 W&B file(s), 1 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220811_235927-2lf9l63i/logs

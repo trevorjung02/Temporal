@@ -1,0 +1,244 @@
+
+Namespace(accelerator='ddp', adam_epsilon=1e-08, check_validation_only=False, checkpoint_path='', dataset='templama', dataset_version='2010', early_stop_callback=False, eval_batch_size=32, freeze_embeds=False, freeze_encoder=False, freeze_level=1, learning_rate=0.0001, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='kadapter', mode='pretrain', model_name_or_path='google/t5-small-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=30, num_workers=4, opt_level='O1', output_dir='outputs/T5_small_templama(2010)_lr.001_adapters_prefixed', output_log=None, prefix=True, resume_from_checkpoint=None, seed=42, split=0, split_num=1, tokenizer_name_or_path='google/t5-small-ssm', train_batch_size=64, use_deepspeed=False, use_lr_scheduling=True, val_check_interval=1.0, warmup_steps=0, weight_decay=0.0)
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory outputs/T5_small_templama(2010)_lr.001_adapters_prefixed exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+Some weights of T5ForConditionalGeneration were not initialized from the model checkpoint at google/t5-small-ssm and are newly initialized: ['kadapter.adapter.0.layer.1.layer_norm.weight', 'kadapter.adapter.0.layer.0.layer_norm.weight', 'kadapter.adapter.0.layer.0.SelfAttention.q.weight', 'kadapter.adapter.1.layer.0.SelfAttention.v.weight', 'kadapter.adapter.0.layer.0.SelfAttention.relative_attention_bias.weight', 'kadapter.layer_norm.weight', 'kadapter.adapter.0.layer.1.DenseReluDense.wi_1.weight', 'kadapter.adapter.1.layer.0.SelfAttention.o.weight', 'kadapter.adapter.1.layer.0.SelfAttention.k.weight', 'kadapter.adapter.1.layer.1.layer_norm.weight', 'kadapter.adapter.1.layer.1.DenseReluDense.wi_1.weight', 'kadapter.adapter.0.layer.0.SelfAttention.o.weight', 'kadapter.adapter.0.layer.1.DenseReluDense.wo.weight', 'kadapter.adapter.1.layer.1.DenseReluDense.wi_0.weight', 'kadapter.adapter.1.layer.1.DenseReluDense.wo.weight', 'kadapter.adapter.0.layer.0.SelfAttention.k.weight', 'kadapter.adapter.1.layer.0.SelfAttention.q.weight', 'kadapter.adapter.1.layer.0.layer_norm.weight', 'kadapter.adapter.0.layer.0.SelfAttention.v.weight', 'kadapter.adapter.0.layer.1.DenseReluDense.wi_0.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All DDP processes registered. Starting ddp with 1 processes
+----------------------------------------------------------------------------------------------------
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'train_batch_size' was locked by 'sweep' (ignored update).
+Set SLURM handle signals.
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 81.7 M
+-----------------------------------------------------
+46.3 M    Trainable params
+35.3 M    Non-trainable params
+81.7 M    Total params
+326.730   Total estimated model params size (MB)
+split is 0
+Length of dataset retrieving is.. 2866
+Validation sanity check: 0it [00:00, ?it/s]split is 0
+Length of dataset retrieving is.. 410
+split is 0
+Length of dataset retrieving is.. 2866
+
+Epoch 0:  79%|███████▉  | 45/57 [00:04<00:01, 10.95it/s, loss=7.85, v_num=3e9w, em_score=0.0156, f1_score=0.0698]
+
+
+
+
+
+
+Epoch 1:  81%|████████  | 46/57 [00:05<00:01,  8.77it/s, loss=7.38, v_num=3e9w, em_score=0.00732, f1_score=0.0508]
+
+
+
+
+
+
+Epoch 2:  81%|████████  | 46/57 [00:05<00:01,  8.82it/s, loss=6.66, v_num=3e9w, em_score=0.00732, f1_score=0.0524]
+
+
+
+
+
+
+Epoch 3:  77%|███████▋  | 44/57 [00:04<00:01, 10.67it/s, loss=5.68, v_num=3e9w, em_score=0.00732, f1_score=0.0594]
+
+
+
+
+
+
+Epoch 4:  81%|████████  | 46/57 [00:05<00:01,  8.82it/s, loss=4.66, v_num=3e9w, em_score=0.00244, f1_score=0.0557]
+
+
+
+
+
+
+Epoch 5:  81%|████████  | 46/57 [00:05<00:01,  8.78it/s, loss=3.45, v_num=3e9w, em_score=0.00244, f1_score=0.0688]
+
+
+
+
+
+
+Epoch 6:  81%|████████  | 46/57 [00:05<00:01,  8.72it/s, loss=2.42, v_num=3e9w, em_score=0.00488, f1_score=0.0735]
+
+
+
+
+
+
+Epoch 7:  77%|███████▋  | 44/57 [00:04<00:01, 10.68it/s, loss=2.05, v_num=3e9w, em_score=0.00244, f1_score=0.0787]
+
+
+
+
+
+
+Epoch 8:  77%|███████▋  | 44/57 [00:04<00:01, 10.78it/s, loss=1.89, v_num=3e9w, em_score=0.00488, f1_score=0.0816]
+
+
+
+
+
+
+Epoch 9:  77%|███████▋  | 44/57 [00:04<00:01, 10.75it/s, loss=1.81, v_num=3e9w, em_score=0.00488, f1_score=0.0817]
+
+
+
+
+
+
+Epoch 10:  77%|███████▋  | 44/57 [00:04<00:01, 10.78it/s, loss=1.71, v_num=3e9w, em_score=0.00732, f1_score=0.0856]
+
+
+
+
+
+
+
+Epoch 11:  81%|████████  | 46/57 [00:05<00:01,  8.55it/s, loss=1.62, v_num=3e9w, em_score=0.00732, f1_score=0.0909]
+
+
+
+
+
+
+
+
+
+
+Epoch 13:  81%|████████  | 46/57 [00:05<00:01,  8.71it/s, loss=1.53, v_num=3e9w, em_score=0.00976, f1_score=0.0928]
+
+
+
+
+
+Epoch 14:  77%|███████▋  | 44/57 [00:04<00:01, 10.74it/s, loss=1.47, v_num=3e9w, em_score=0.0122, f1_score=0.0949]
+
+
+
+
+
+
+Epoch 15:  77%|███████▋  | 44/57 [00:04<00:01, 10.76it/s, loss=1.46, v_num=3e9w, em_score=0.0122, f1_score=0.0899]
+
+
+
+
+
+
+Epoch 16:  77%|███████▋  | 44/57 [00:04<00:01, 10.78it/s, loss=1.41, v_num=3e9w, em_score=0.0146, f1_score=0.0873]
+
+
+
+
+
+
+Epoch 17:  77%|███████▋  | 44/57 [00:04<00:01, 10.73it/s, loss=1.41, v_num=3e9w, em_score=0.0146, f1_score=0.0891]
+
+
+
+
+
+
+Epoch 18:  77%|███████▋  | 44/57 [00:04<00:01, 10.74it/s, loss=1.36, v_num=3e9w, em_score=0.0146, f1_score=0.091]
+
+
+
+
+
+
+Epoch 19:  77%|███████▋  | 44/57 [00:04<00:01, 10.78it/s, loss=1.37, v_num=3e9w, em_score=0.0122, f1_score=0.0888]
+
+
+
+
+
+
+Epoch 20:  77%|███████▋  | 44/57 [00:04<00:01, 10.77it/s, loss=1.36, v_num=3e9w, em_score=0.0146, f1_score=0.091]
+
+
+
+
+
+
+Epoch 21:  77%|███████▋  | 44/57 [00:04<00:01, 10.72it/s, loss=1.36, v_num=3e9w, em_score=0.0146, f1_score=0.0957]
+
+
+
+
+
+
+
+Epoch 22:  81%|████████  | 46/57 [00:05<00:01,  8.77it/s, loss=1.34, v_num=3e9w, em_score=0.0146, f1_score=0.0901]
+
+
+
+
+
+
+Epoch 23:  81%|████████  | 46/57 [00:05<00:01,  8.70it/s, loss=1.32, v_num=3e9w, em_score=0.0122, f1_score=0.0911]
+
+
+
+
+
+
+Epoch 24:  77%|███████▋  | 44/57 [00:04<00:01, 10.83it/s, loss=1.28, v_num=3e9w, em_score=0.0122, f1_score=0.0921]
+
+
+
+
+
+
+Epoch 25:  77%|███████▋  | 44/57 [00:04<00:01, 10.77it/s, loss=1.3, v_num=3e9w, em_score=0.0122, f1_score=0.0924]
+
+
+
+
+
+
+Epoch 26:  77%|███████▋  | 44/57 [00:04<00:01, 10.75it/s, loss=1.31, v_num=3e9w, em_score=0.0122, f1_score=0.0924]
+
+
+
+
+
+
+
+Epoch 27:  81%|████████  | 46/57 [00:05<00:01,  8.52it/s, loss=1.33, v_num=3e9w, em_score=0.0146, f1_score=0.0928]
+
+
+
+
+
+
+Epoch 28:  81%|████████  | 46/57 [00:05<00:01,  8.48it/s, loss=1.34, v_num=3e9w, em_score=0.0146, f1_score=0.0928]
+
+
+
+
+
+
+Epoch 29:  77%|███████▋  | 44/57 [00:04<00:01, 10.75it/s, loss=1.32, v_num=3e9w, em_score=0.0146, f1_score=0.0928]
+
+
+
+
+
+
+Validating: 100%|██████████| 13/13 [00:10<00:00,  1.34it/s]

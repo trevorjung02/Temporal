@@ -1,0 +1,172 @@
+Validation sanity check: 0it [00:00, ?it/s]split is 0
+Length of dataset retrieving is.. 410
+Validation sanity check:  50% 1/2 [00:01<00:01,  1.35s/it]
+Set SLURM handle signals.
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 81.7 M
+-----------------------------------------------------
+46.3 M    Trainable params
+35.3 M    Non-trainable params
+81.7 M    Total params
+split is 0
+Length of dataset retrieving is.. 2866
+Epoch 0:   0% 0/102 [00:00<?, ?it/s]
+
+
+Epoch 0:  88% 90/102 [00:05<00:00, 15.60it/s, loss=6.23, v_num=xw6w, em_score=0.0156, f1_score=0.0698]
+
+
+
+
+
+
+
+Epoch 1:  88% 90/102 [00:05<00:00, 15.72it/s, loss=3.46, v_num=xw6w, em_score=0.00488, f1_score=0.0571]
+
+
+
+
+
+
+
+Epoch 2:  88% 90/102 [00:05<00:00, 15.81it/s, loss=2.13, v_num=xw6w, em_score=0.00244, f1_score=0.0813]
+
+
+
+
+
+
+
+Epoch 3:  88% 90/102 [00:05<00:00, 15.77it/s, loss=1.82, v_num=xw6w, em_score=0.00488, f1_score=0.0905]
+
+
+
+
+
+
+Epoch 4:  88% 90/102 [00:05<00:00, 15.77it/s, loss=1.65, v_num=xw6w, em_score=0.00976, f1_score=0.0812]
+
+
+
+
+
+
+
+Epoch 5:  88% 90/102 [00:05<00:00, 15.72it/s, loss=1.5, v_num=xw6w, em_score=0.0244, f1_score=0.0937]
+
+
+
+
+
+
+
+Epoch 6:  88% 90/102 [00:05<00:00, 15.76it/s, loss=1.38, v_num=xw6w, em_score=0.0341, f1_score=0.122]
+
+
+
+
+
+
+Epoch 7:  88% 90/102 [00:05<00:00, 15.71it/s, loss=1.25, v_num=xw6w, em_score=0.0268, f1_score=0.118]
+
+
+
+
+
+
+
+Epoch 8:  88% 90/102 [00:05<00:00, 15.77it/s, loss=1.15, v_num=xw6w, em_score=0.0268, f1_score=0.127]
+
+
+
+
+
+
+
+Epoch 9:  88% 90/102 [00:05<00:00, 15.93it/s, loss=1.08, v_num=xw6w, em_score=0.0293, f1_score=0.122]
+
+
+
+
+
+
+
+Epoch 10:  88% 90/102 [00:05<00:00, 15.77it/s, loss=0.991, v_num=xw6w, em_score=0.0146, f1_score=0.111]
+
+
+
+
+
+
+
+Epoch 11:  88% 90/102 [00:06<00:00, 14.97it/s, loss=0.921, v_num=xw6w, em_score=0.0268, f1_score=0.132]
+
+
+
+
+
+
+
+Epoch 12:  88% 90/102 [00:06<00:00, 14.80it/s, loss=0.88, v_num=xw6w, em_score=0.0366, f1_score=0.134]
+
+
+
+
+
+
+
+Epoch 13:  88% 90/102 [00:06<00:00, 14.88it/s, loss=0.83, v_num=xw6w, em_score=0.0366, f1_score=0.136]
+
+
+
+
+
+
+
+Epoch 14:  88% 90/102 [00:05<00:00, 15.02it/s, loss=0.789, v_num=xw6w, em_score=0.0439, f1_score=0.138]
+
+
+
+
+
+
+
+Epoch 15:  88% 90/102 [00:06<00:00, 14.98it/s, loss=0.736, v_num=xw6w, em_score=0.0463, f1_score=0.152]
+
+
+
+
+
+
+
+Epoch 16:  88% 90/102 [00:06<00:00, 14.68it/s, loss=0.709, v_num=xw6w, em_score=0.0463, f1_score=0.153]
+
+
+
+
+
+
+
+Epoch 17:  88% 90/102 [00:06<00:00, 14.87it/s, loss=0.663, v_num=xw6w, em_score=0.0488, f1_score=0.149]
+
+
+
+
+
+
+
+Epoch 18:  88% 90/102 [00:05<00:00, 15.80it/s, loss=0.641, v_num=xw6w, em_score=0.0561, f1_score=0.170]
+
+
+
+
+
+
+Epoch 19:  88% 90/102 [00:05<00:00, 15.78it/s, loss=0.621, v_num=xw6w, em_score=0.0488, f1_score=0.151]
+
+
+
+
+
+Validating:  85% 11/13 [00:08<00:01,  1.38it/s]

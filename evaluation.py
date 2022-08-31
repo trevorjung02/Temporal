@@ -1,11 +1,17 @@
-
+import wandb
 from transformers import T5Tokenizer
 from Datasets import Pretrain
 from torch.utils.data import DataLoader
 import csv
 import os
 
-def evaluate(args, Model):
+def evaluate(args, wandb_project, wandb_run_name, Model):
+    run = wandb.init(project=wandb_project)
+    wandb.config.update(args)
+    wandb.run.name = wandb_run_name
+    columns=["id", "question", "truth", "prediction", "f1"]
+    test_table = wandb.Table(columns=columns)
+
     model = Model(args)
     if args.checkpoint_path!="":
         model = Model.load_from_checkpoint(checkpoint_path=args.checkpoint_path, hparams=args, strict=False)
@@ -27,14 +33,7 @@ def evaluate(args, Model):
     old_em_correct_num = 0
     new_em_correct_num = 0
     accuracy_correct_num = 0
-    def clean_up(text):
-        text = text.replace('<pad>', '')
-        text = text.replace('</s>', '')
-        text = text.replace(".", '')
-        text = text.replace(',', '')
-        text = text.replace("'", '')
-        text = text.replace('"', '')
-        return text   
+    f1_total = 0
     # If folder doesn't exist, then create it.
     MYDIR = ("/".join((args.output_log.split('/'))[:-1]))
     CHECK_FOLDER = os.path.isdir(MYDIR)
@@ -71,15 +70,17 @@ def evaluate(args, Model):
                 if args.dataset == 'templama':
                     answer_list = ids_to_answers[str(ids)]
                     em_correct = False
-                    global_answer = answer_list[0]
+                    f1 = 0
                     for answer in answer_list:
                         em = model.exact_match_score(predicted, answer)
                         if em == 1:
                             em_correct = True
-                            global_answer = answer
+                        f1 = max(f1, compute_f1(predicted, answer))
                     if em_correct:
                         em_correct_num+=1
-                    writer.writerow([ids, lines, global_answer, predicted])
+                    f1_total += f1
+                    writer.writerow([ids, lines, answer_list, predicted])
+                    test_table.add_data(ids, lines, answer_list, predicted, f1)    
                 elif args.dataset == 'invariantlama':
                     em = model.exact_match_score(predicted, ground_truth)  
                     writer.writerow([ids, lines, ground_truth, predicted])
@@ -147,3 +148,35 @@ def evaluate(args, Model):
             writer = csv.writer(writefile)
             writer.writerow([em_correct_num, em_correct_num / total_cnt])
         print(f'Number of correct predictions: {em_correct_num}. Percentage : {em_correct_num / total_cnt}')
+        print(f'f1 = {f1_total / total_cnt}')
+        wandb.log({'em_score': em_correct_num / total_cnt})
+        wandb.log({'f1_score': f1_total / total_cnt})
+        run.log({"table_key": test_table})
+
+def clean_up(text):
+    text = text.replace('<pad>', '')
+    text = text.replace('</s>', '')
+    text = text.replace(".", '')
+    text = text.replace(',', '')
+    text = text.replace("'", '')
+    text = text.replace('"', '')
+    return text
+
+def compute_f1(predicted, answer):
+    pred_tokens = clean_up(predicted).split()
+    truth_tokens = clean_up(answer).split()
+    
+    # if either the prediction or the truth is no-answer then f1 = 1 if they agree, 0 otherwise
+    if len(pred_tokens) == 0 or len(truth_tokens) == 0:
+        return int(pred_tokens == truth_tokens)
+    
+    common_tokens = set(pred_tokens) & set(truth_tokens)
+    
+    # if there are no common tokens then f1 = 0
+    if len(common_tokens) == 0:
+        return 0
+    
+    prec = len(common_tokens) / len(pred_tokens)
+    rec = len(common_tokens) / len(truth_tokens)
+    
+    return 2 * (prec * rec) / (prec + rec)

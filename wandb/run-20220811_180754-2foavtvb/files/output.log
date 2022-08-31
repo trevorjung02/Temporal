@@ -1,0 +1,194 @@
+Set SLURM handle signals.
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 81.7 M
+-----------------------------------------------------
+46.3 M    Trainable params
+35.3 M    Non-trainable params
+81.7 M    Total params
+326.730   Total estimated model params size (MB)
+Validation sanity check: 0it [00:00, ?it/s]split is 0
+Length of dataset retrieving is.. 410
+split is 0
+Length of dataset retrieving is.. 2866
+Epoch 0:   0% 0/655 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 0:  89% 585/655 [00:34<00:04, 16.91it/s, loss=2.18, v_num=vtvb, em_score=0.000, f1_score=0.040]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 1:  88% 576/655 [00:33<00:04, 17.26it/s, loss=1.82, v_num=vtvb, em_score=0.00488, f1_score=0.0948]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 2:  89% 582/655 [00:34<00:04, 17.09it/s, loss=1.63, v_num=vtvb, em_score=0.0171, f1_score=0.123]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 3:  88% 579/655 [00:33<00:04, 17.09it/s, loss=1.39, v_num=vtvb, em_score=0.0268, f1_score=0.123]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 4:  89% 582/655 [00:34<00:04, 17.05it/s, loss=1.28, v_num=vtvb, em_score=0.0463, f1_score=0.143]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 5:  87% 573/655 [00:32<00:04, 17.68it/s, loss=1.1, v_num=vtvb, em_score=0.0512, f1_score=0.143]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 6:  89% 582/655 [00:34<00:04, 17.07it/s, loss=0.917, v_num=vtvb, em_score=0.0537, f1_score=0.160]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 7:  87% 573/655 [00:32<00:04, 17.68it/s, loss=0.868, v_num=vtvb, em_score=0.0537, f1_score=0.157]
+
+
+
+
+
+
+Validating:  88% 72/82 [00:10<00:01,  7.30it/s]

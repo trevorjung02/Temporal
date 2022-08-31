@@ -1,0 +1,27 @@
+2022-08-25 22:44:40,209 INFO    MainThread:36374 [wandb_setup.py:_flush():76] Configure stats pid to 36374
+2022-08-25 22:44:40,209 INFO    MainThread:36374 [wandb_setup.py:_flush():76] Loading settings from /mmfs1/home/tjung2/.config/wandb/settings
+2022-08-25 22:44:40,209 INFO    MainThread:36374 [wandb_setup.py:_flush():76] Loading settings from /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/settings
+2022-08-25 22:44:40,212 INFO    MainThread:36374 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'_require_service': 'True'}
+2022-08-25 22:44:40,212 INFO    MainThread:36374 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'run.py', 'program': 'run.py'}
+2022-08-25 22:44:40,212 INFO    MainThread:36374 [wandb_init.py:_log_setup():461] Logging user logs to /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_224440-304h6jlr/logs/debug.log
+2022-08-25 22:44:40,212 INFO    MainThread:36374 [wandb_init.py:_log_setup():462] Logging internal logs to /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220825_224440-304h6jlr/logs/debug-internal.log
+2022-08-25 22:44:40,212 INFO    MainThread:36374 [wandb_init.py:init():495] calling init triggers
+2022-08-25 22:44:40,212 INFO    MainThread:36374 [wandb_init.py:init():498] wandb.init called with sweep_config: {}
+config: {'output_dir': 'outputs/T5_small_templama(2010)_lr.001_adapters_prefixed', 'dataset': 'templama', 'dataset_version': '2010', 'prefix': True, 'split_num': 1, 'split': 0, 'model_name_or_path': 'google/t5-small-ssm', 'method': 'kadapter', 'freeze_level': 2, 'mode': 'pretrain', 'tokenizer_name_or_path': 'google/t5-small-ssm', 'max_input_length': 50, 'max_output_length': 25, 'freeze_encoder': False, 'freeze_embeds': False, 'learning_rate': 0.001, 'weight_decay': 0.0, 'adam_epsilon': 1e-08, 'warmup_steps': 0, 'train_batch_size': 32, 'eval_batch_size': 32, 'num_train_epochs': 120, 'n_gpu': 1, 'num_workers': 4, 'resume_from_checkpoint': None, 'use_lr_scheduling': True, 'val_check_interval': 1.0, 'n_val': -1, 'n_train': -1, 'n_test': -1, 'early_stop_callback': False, 'use_deepspeed': False, 'opt_level': 'O1', 'max_grad_norm': 0.5, 'seed': 42, 'check_validation_only': False, 'checkpoint_path': '', 'accelerator': 'ddp', 'output_log': None, 'wandb_log': True, 'adapter_config': {'adapter_hidden_size': 128}}
+2022-08-25 22:44:40,212 INFO    MainThread:36374 [wandb_init.py:init():548] starting backend
+2022-08-25 22:44:40,212 INFO    MainThread:36374 [wandb_init.py:init():552] setting up manager
+2022-08-25 22:44:40,214 INFO    MainThread:36374 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-08-25 22:44:40,221 INFO    MainThread:36374 [wandb_init.py:init():558] backend started and connected
+2022-08-25 22:44:40,226 INFO    MainThread:36374 [wandb_init.py:init():636] updated telemetry
+2022-08-25 22:44:40,277 INFO    MainThread:36374 [wandb_init.py:init():667] communicating run to backend with 30 second timeout
+2022-08-25 22:44:40,443 INFO    MainThread:36374 [wandb_run.py:_on_init():1982] communicating current version
+2022-08-25 22:44:40,472 INFO    MainThread:36374 [wandb_run.py:_on_init():1986] got version response upgrade_message: "wandb version 0.13.2 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2022-08-25 22:44:40,472 INFO    MainThread:36374 [wandb_init.py:init():700] starting run threads in backend
+2022-08-25 22:44:45,481 INFO    MainThread:36374 [wandb_run.py:_console_start():1962] atexit reg
+2022-08-25 22:44:45,482 INFO    MainThread:36374 [wandb_run.py:_redirect():1820] redirect: SettingsConsole.WRAP_RAW
+2022-08-25 22:44:45,482 INFO    MainThread:36374 [wandb_run.py:_redirect():1885] Wrapping output streams.
+2022-08-25 22:44:45,482 INFO    MainThread:36374 [wandb_run.py:_redirect():1907] Redirects installed.
+2022-08-25 22:44:45,482 INFO    MainThread:36374 [wandb_init.py:init():732] run started, returning control to user process
+2022-08-25 22:45:06,726 INFO    MainThread:36374 [wandb_run.py:_config_callback():1152] config_cb None None {'output_dir': 'outputs/T5_small_templama(2010)_lr.001_adapters_prefixed', 'dataset': 'templama', 'dataset_version': '2010', 'prefix': True, 'split_num': 1, 'split': 0, 'model_name_or_path': 'google/t5-small-ssm', 'method': 'kadapter', 'freeze_level': 2, 'mode': 'pretrain', 'tokenizer_name_or_path': 'google/t5-small-ssm', 'max_input_length': 50, 'max_output_length': 25, 'freeze_encoder': False, 'freeze_embeds': False, 'learning_rate': 0.001, 'weight_decay': 0.0, 'adam_epsilon': 1e-08, 'warmup_steps': 0, 'train_batch_size': 32, 'eval_batch_size': 32, 'num_train_epochs': 120, 'n_gpu': 1, 'num_workers': 4, 'resume_from_checkpoint': 'None', 'use_lr_scheduling': True, 'val_check_interval': 1.0, 'n_val': -1, 'n_train': -1, 'n_test': -1, 'early_stop_callback': False, 'use_deepspeed': False, 'opt_level': 'O1', 'max_grad_norm': 0.5, 'seed': 42, 'check_validation_only': False, 'checkpoint_path': '', 'accelerator': 'ddp', 'output_log': 'None', 'wandb_log': True, 'adapter_config/adapter_hidden_size': 128}
+2022-08-25 23:15:57,567 WARNING MsgRouterThr:36374 [router.py:message_loop():76] message_loop has been closed

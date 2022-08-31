@@ -1,0 +1,9 @@
+
+<wandb.sdk.wandb_run.Run object at 0x7f4dfc1e2be0>
+{'epochs': 4}
+4
+4
+<class 'type'>
+<class 'str'>
+<class 'int'>
+<class 'wandb.sdk.wandb_config.Config'>

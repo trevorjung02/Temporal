@@ -1,0 +1,100 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=ark
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=04:59:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+python run.py --config configs/templama/training/t5_baseline_debug.json
+--------------------
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All DDP processes registered. Starting ddp with 1 processes
+----------------------------------------------------------------------------------------------------
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Set SLURM handle signals.
+
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 77.0 M
+-----------------------------------------------------
+77.0 M    Trainable params
+0         Non-trainable params
+77.0 M    Total params
+307.845   Total estimated model params size (MB)
+Not freezing any parameters!
+split is 0
+Length of dataset retrieving is.. 49
+Validation sanity check: 0it [00:00, ?it/s]split is 0
+Length of dataset retrieving is.. 410
+Validation sanity check:   0%|          | 0/2 [00:00<?, ?it/s]Validation sanity check:  50%|█████     | 1/2 [00:00<00:00,  2.36it/s]St. Mary's College ['University of Washington School of Law', 'University of Washington College of Education']
+em = False, f1 = 0.2222222222222222
+National Assembly of Pakistan ['Siumut']
+em = False, f1 = 0
+Ssei ['Minister for Foreign Affairs', 'Minister of Land, Infrastructure, Transport and Tourism']
+em = False, f1 = 0
+House of Representatives of Japan ['Democratic Party']
+em = False, f1 = 0
+Notre Dame ['INSEP']
+em = False, f1 = 0
+Copenhagen City Council ['Vibeke Storm Rasmussen']
+em = False, f1 = 0
+MEP ['Speaker of the Knesset']
+em = False, f1 = 0
+JS Kabylie ['Milton Keynes Dons F.C.', 'Stockport County F.C.']
+em = False, f1 = 0
+Yvonne ['Philipp Mißfelder']
+em = False, f1 = 0
+NBC ['University of Sussex']
+em = False, f1 = 0
+                                                                      split is 0
+Length of dataset retrieving is.. 49
+Training: 0it [00:00, ?it/s]Training:   0%|          | 0/91 [00:00<?, ?it/s]Epoch 0:   0%|          | 0/91 [00:00<?, ?it/s] Epoch 0:   1%|          | 1/91 [00:00<00:41,  2.15it/s]Epoch 0:   1%|          | 1/91 [00:00<00:41,  2.15it/s, loss=nan]Epoch 0:   2%|▏         | 2/91 [00:00<00:23,  3.85it/s, loss=nan][W reducer.cpp:1158] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+Epoch 0:   3%|▎         | 3/91 [00:00<00:18,  4.70it/s, loss=nan]Epoch 0:   3%|▎         | 3/91 [00:00<00:18,  4.70it/s, loss=7.39]Epoch 0:   4%|▍         | 4/91 [00:00<00:14,  5.83it/s, loss=7.39]Epoch 0:   5%|▌         | 5/91 [00:00<00:12,  6.82it/s, loss=7.39]Epoch 0:   7%|▋         | 6/91 [00:00<00:11,  7.20it/s, loss=7.39]Epoch 0:   7%|▋         | 6/91 [00:00<00:11,  7.20it/s, loss=6.98]Epoch 0:   8%|▊         | 7/91 [00:00<00:10,  7.93it/s, loss=6.98]Epoch 0:   9%|▉         | 8/91 [00:00<00:09,  8.60it/s, loss=6.98]Epoch 0:  10%|▉         | 9/91 [00:01<00:09,  8.28it/s, loss=6.98]Epoch 0:  10%|▉         | 9/91 [00:01<00:09,  8.27it/s, loss=7.12]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/82 [00:00<?, ?it/s][A
+Validating:   1%|          | 1/82 [00:00<00:33,  2.45it/s][AEpoch 0:  13%|█▎        | 12/91 [00:01<00:09,  7.96it/s, loss=7.12]
+Validating:  76%|███████▌  | 62/82 [00:00<00:00, 159.29it/s][AEpoch 0:  84%|████████▎ | 76/91 [00:01<00:00, 47.25it/s, loss=7.12]Traceback (most recent call last):
+  File "run.py", line 155, in <module>
+    trainer.fit(model)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 460, in fit
+    self._run(model)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 758, in _run
+    self.dispatch()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 799, in dispatch
+    self.accelerator.start_training(self)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/accelerators/accelerator.py", line 96, in start_training
+    self.training_type_plugin.start_training(trainer)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/plugins/training_type/training_type_plugin.py", line 144, in start_training
+    self._results = trainer.run_stage()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 809, in run_stage
+    return self.run_train()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 871, in run_train
+    self.train_loop.run_training_epoch()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/training_loop.py", line 584, in run_training_epoch
+    self.trainer.run_evaluation(on_epoch=True)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 993, in run_evaluation
+    self.evaluation_loop.evaluation_epoch_end(outputs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/evaluation_loop.py", line 213, in evaluation_epoch_end
+    model.validation_epoch_end(outputs)
+  File "/mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/models/T5_Model.py", line 363, in validation_epoch_end
+    answer_list = self.ids_to_answers[str(ids)]
+TypeError: 'NoneType' object is not subscriptable

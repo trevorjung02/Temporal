@@ -1,0 +1,52 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=ark
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=06:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+wandb agent --count 3 tjung2/temporal_questions_1/8zcqmpt9
+--------------------
+wandb: Starting wandb agent 🕵️
+2022-08-18 20:33:36,864 - wandb.wandb_agent - INFO - Running runs: []
+2022-08-18 20:33:37,030 - wandb.wandb_agent - INFO - Agent received command: run
+2022-08-18 20:33:37,030 - wandb.wandb_agent - INFO - Agent starting run with config:
+	learning_rate: 0.0001
+	train_batch_size: 32
+2022-08-18 20:33:37,034 - wandb.wandb_agent - INFO - About to run command: python run.py "--config configs/templama/training/t5_kadapters_2010_prefixed.json"
+2022-08-18 20:33:42,045 - wandb.wandb_agent - INFO - Running runs: ['0035iatr']
+usage: run.py [-h] [--config CONFIG]
+run.py: error: unrecognized arguments: --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 20:33:47,124 - wandb.wandb_agent - INFO - Cleaning up finished run: 0035iatr
+2022-08-18 20:33:47,399 - wandb.wandb_agent - INFO - Agent received command: run
+2022-08-18 20:33:47,399 - wandb.wandb_agent - INFO - Agent starting run with config:
+	learning_rate: 0.0001
+	train_batch_size: 32
+2022-08-18 20:33:47,403 - wandb.wandb_agent - INFO - About to run command: python run.py "--config configs/templama/training/t5_kadapters_2010_prefixed.json"
+2022-08-18 20:33:52,416 - wandb.wandb_agent - INFO - Running runs: ['wtpdiv94']
+usage: run.py [-h] [--config CONFIG]
+run.py: error: unrecognized arguments: --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 20:34:02,581 - wandb.wandb_agent - INFO - Cleaning up finished run: wtpdiv94
+2022-08-18 20:34:02,820 - wandb.wandb_agent - INFO - Agent received command: run
+2022-08-18 20:34:02,820 - wandb.wandb_agent - INFO - Agent starting run with config:
+	learning_rate: 0.001
+	train_batch_size: 64
+2022-08-18 20:34:02,826 - wandb.wandb_agent - INFO - About to run command: python run.py "--config configs/templama/training/t5_kadapters_2010_prefixed.json"
+2022-08-18 20:34:07,840 - wandb.wandb_agent - INFO - Running runs: ['3jpfina1']
+usage: run.py [-h] [--config CONFIG]
+run.py: error: unrecognized arguments: --config configs/templama/training/t5_kadapters_2010_prefixed.json
+2022-08-18 20:34:12,925 - wandb.wandb_agent - ERROR - Detected 3 failed runs in the first 60 seconds, shutting down.
+2022-08-18 20:34:12,925 - wandb.wandb_agent - INFO - To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+wandb: Terminating and syncing runs. Press ctrl-c to kill.

@@ -1,0 +1,53 @@
+Set SLURM handle signals.
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 77.0 M
+-----------------------------------------------------
+77.0 M    Trainable params
+0         Non-trainable params
+77.0 M    Total params
+307.845   Total estimated model params size (MB)
+Validation sanity check: 0it [00:00, ?it/s]split is 0
+Length of dataset retrieving is.. 431
+split is 0
+Length of dataset retrieving is.. 3019
+Epoch 0:   0% 0/690 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 0:  88% 606/690 [00:42<00:05, 14.39it/s, loss=1.99, v_num=10u6, em_score=0.000, f1_score=0.040]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

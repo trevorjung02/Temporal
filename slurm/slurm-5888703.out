@@ -1,0 +1,30 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=ark
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=04:59:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+python run.py --config configs/templama/training/t5_kadapters_soft_full_prefixed.json
+--------------------
+Traceback (most recent call last):
+  File "run.py", line 11, in <module>
+    from models import load_model
+  File "/mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/models/__init__.py", line 2, in <module>
+    from models.T5_Model import T5 as T5_Model
+  File "/mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/models/T5_Model.py", line 304
+    year = batch['year']
+    ^
+SyntaxError: invalid syntax

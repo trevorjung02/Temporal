@@ -1,0 +1,249 @@
+
+Namespace(accelerator='ddp', adam_epsilon=1e-08, check_validation_only=False, checkpoint_path='', dataset='templama', dataset_version='2010', early_stop_callback=False, eval_batch_size=64, freeze_embeds=False, freeze_encoder=False, freeze_level=0, learning_rate=0.0001, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='baseline', mode='pretrain', model_name_or_path='google/t5-small-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=30, num_workers=4, opt_level='O1', output_dir='outputs/T5_small_templama(2010)_lr.0001_baseline_prefixed', output_log=None, prefix=True, resume_from_checkpoint=None, seed=42, split=0, split_num=1, tokenizer_name_or_path='google/t5-small-ssm', train_batch_size=64, use_deepspeed=False, use_lr_scheduling=True, val_check_interval=1.0, warmup_steps=0, weight_decay=0.0)
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory outputs/T5_small_templama(2010)_lr.0001_baseline_prefixed exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+Not freezing any parameters!
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All DDP processes registered. Starting ddp with 1 processes
+----------------------------------------------------------------------------------------------------
+split is 0
+Length of dataset retrieving is.. 2866
+Validation sanity check: 0it [00:00, ?it/s]split is 0
+Length of dataset retrieving is.. 410
+Validation sanity check:   0%|          | 0/2 [00:00<?, ?it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Set SLURM handle signals.
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 77.0 M
+-----------------------------------------------------
+77.0 M    Trainable params
+0         Non-trainable params
+77.0 M    Total params
+
+split is 0
+Length of dataset retrieving is.. 2866
+
+Epoch 0:  86%|████████▋ | 44/51 [00:05<00:00,  8.77it/s, loss=7.23, v_num=vzxo, em_score=0.0156, f1_score=0.0617]
+
+
+
+
+
+
+Epoch 1:  86%|████████▋ | 44/51 [00:04<00:00,  8.89it/s, loss=6.7, v_num=vzxo, em_score=0.00732, f1_score=0.054]
+
+
+
+
+
+
+
+Epoch 2:  86%|████████▋ | 44/51 [00:04<00:00,  8.89it/s, loss=5.94, v_num=vzxo, em_score=0.00244, f1_score=0.0583]
+
+
+
+
+
+
+Epoch 3:  86%|████████▋ | 44/51 [00:04<00:00,  8.87it/s, loss=4.81, v_num=vzxo, em_score=0.0122, f1_score=0.074]
+
+
+
+
+
+
+Epoch 4:  86%|████████▋ | 44/51 [00:04<00:00,  8.89it/s, loss=3.48, v_num=vzxo, em_score=0.00732, f1_score=0.074]
+
+
+
+
+
+
+Epoch 5:  86%|████████▋ | 44/51 [00:04<00:00,  8.83it/s, loss=2.27, v_num=vzxo, em_score=0.0122, f1_score=0.155]
+
+
+
+
+
+
+
+Epoch 6:  86%|████████▋ | 44/51 [00:04<00:00,  8.84it/s, loss=1.93, v_num=vzxo, em_score=0.0341, f1_score=0.182]
+
+
+
+
+
+
+Epoch 7:  86%|████████▋ | 44/51 [00:04<00:00,  8.83it/s, loss=1.74, v_num=vzxo, em_score=0.0439, f1_score=0.194]
+
+
+
+
+
+
+Epoch 8:  86%|████████▋ | 44/51 [00:04<00:00,  8.87it/s, loss=1.63, v_num=vzxo, em_score=0.061, f1_score=0.206]
+
+
+
+
+
+Epoch 9:  86%|████████▋ | 44/51 [00:04<00:00,  8.88it/s, loss=1.57, v_num=vzxo, em_score=0.0707, f1_score=0.204]
+
+
+
+
+
+
+
+Epoch 10:  86%|████████▋ | 44/51 [00:04<00:00,  8.82it/s, loss=1.5, v_num=vzxo, em_score=0.0707, f1_score=0.222]
+
+
+
+
+
+
+Epoch 11:  86%|████████▋ | 44/51 [00:04<00:00,  8.87it/s, loss=1.4, v_num=vzxo, em_score=0.078, f1_score=0.221]
+
+
+
+
+
+
+
+Epoch 12:  86%|████████▋ | 44/51 [00:04<00:00,  8.82it/s, loss=1.37, v_num=vzxo, em_score=0.0805, f1_score=0.232]
+
+
+
+
+
+
+
+Epoch 13:  86%|████████▋ | 44/51 [00:04<00:00,  8.85it/s, loss=1.32, v_num=vzxo, em_score=0.0805, f1_score=0.229]
+
+
+
+
+
+
+Epoch 14:  86%|████████▋ | 44/51 [00:04<00:00,  8.82it/s, loss=1.26, v_num=vzxo, em_score=0.0805, f1_score=0.228]
+
+
+
+
+
+
+Epoch 15:  86%|████████▋ | 44/51 [00:04<00:00,  8.83it/s, loss=1.26, v_num=vzxo, em_score=0.0854, f1_score=0.236]
+
+
+
+
+
+
+Epoch 16:  86%|████████▋ | 44/51 [00:04<00:00,  8.91it/s, loss=1.22, v_num=vzxo, em_score=0.0756, f1_score=0.224]
+
+
+
+
+
+
+
+Epoch 17:  90%|█████████ | 46/51 [00:06<00:00,  6.81it/s, loss=1.21, v_num=vzxo, em_score=0.0756, f1_score=0.229]
+
+
+
+
+
+
+Epoch 18:  86%|████████▋ | 44/51 [00:04<00:00,  8.90it/s, loss=1.16, v_num=vzxo, em_score=0.0829, f1_score=0.229]
+
+
+
+
+
+
+Epoch 19:  86%|████████▋ | 44/51 [00:04<00:00,  8.87it/s, loss=1.17, v_num=vzxo, em_score=0.078, f1_score=0.228]
+
+
+
+
+
+
+Epoch 20:  86%|████████▋ | 44/51 [00:04<00:00,  8.88it/s, loss=1.16, v_num=vzxo, em_score=0.0829, f1_score=0.233]
+
+
+
+
+
+
+Epoch 21:  86%|████████▋ | 44/51 [00:04<00:00,  8.84it/s, loss=1.15, v_num=vzxo, em_score=0.0854, f1_score=0.234]
+
+
+
+
+
+
+Epoch 22:  86%|████████▋ | 44/51 [00:04<00:00,  8.88it/s, loss=1.14, v_num=vzxo, em_score=0.0756, f1_score=0.230]
+
+
+
+
+
+
+Epoch 23:  86%|████████▋ | 44/51 [00:04<00:00,  8.86it/s, loss=1.11, v_num=vzxo, em_score=0.0829, f1_score=0.231]
+
+
+
+
+
+
+Epoch 24:  86%|████████▋ | 44/51 [00:04<00:00,  8.86it/s, loss=1.08, v_num=vzxo, em_score=0.0805, f1_score=0.235]
+
+
+
+
+
+
+
+Epoch 25:  86%|████████▋ | 44/51 [00:04<00:00,  8.90it/s, loss=1.1, v_num=vzxo, em_score=0.0829, f1_score=0.237]
+
+
+
+
+
+
+
+Epoch 26:  86%|████████▋ | 44/51 [00:04<00:00,  8.80it/s, loss=1.1, v_num=vzxo, em_score=0.0854, f1_score=0.241]
+
+
+
+
+
+
+Epoch 27:  86%|████████▋ | 44/51 [00:04<00:00,  8.87it/s, loss=1.11, v_num=vzxo, em_score=0.0829, f1_score=0.237]
+
+
+
+
+
+
+Epoch 28:  86%|████████▋ | 44/51 [00:04<00:00,  8.86it/s, loss=1.1, v_num=vzxo, em_score=0.0854, f1_score=0.239]
+
+
+
+
+
+
+Epoch 29:  86%|████████▋ | 44/51 [00:04<00:00,  8.86it/s, loss=1.12, v_num=vzxo, em_score=0.0854, f1_score=0.239]
+
+
+
+
+
+Validating: 100%|██████████| 7/7 [00:09<00:00,  1.13s/it]

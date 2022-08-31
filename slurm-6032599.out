@@ -1,0 +1,119 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=ark
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=16:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+    
+source ~/.bashrc
+conda activate ckl
+
+wandb agent --count 1 tjung2/temporal_questions/4qlx1r3y
+wandb agent --count 1 tjung2/temporal_questions/4qlx1r3y
+wandb agent --count 1 tjung2/temporal_questions/4qlx1r3y
+--------------------
+wandb: Starting wandb agent 🕵️
+2022-08-31 15:46:38,444 - wandb.wandb_agent - INFO - Running runs: []
+2022-08-31 15:46:38,622 - wandb.wandb_agent - INFO - Agent received command: run
+2022-08-31 15:46:38,622 - wandb.wandb_agent - INFO - Agent starting run with config:
+	learning_rate: 0.001
+	t5_learning_rate: 0.0001
+2022-08-31 15:46:38,625 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 15:46:43,636 - wandb.wandb_agent - INFO - Running runs: ['j5do6fqm']
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: WARNING Ignored wandb.init() arg project when running a sweep.
+wandb: wandb version 0.13.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220831_154657-j5do6fqm
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run kadapters_2010
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🧹 View sweep at https://wandb.ai/tjung2/temporal_questions/sweeps/4qlx1r3y
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/j5do6fqm
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+Traceback (most recent call last):
+  File "run.py", line 133, in <module>
+    for filename in os.listdir(args.checkpoint_dir):
+FileNotFoundError: [Errno 2] No such file or directory: 'outputs/kadapters_2010_2freeze_158'
+2022-08-31 15:47:03,997 - wandb.wandb_agent - INFO - Cleaning up finished run: j5do6fqm
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.000 MB of 0.000 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.008 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: \ 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: | 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: / 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: - 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: \ 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: | 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: / 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: Synced kadapters_2010: https://wandb.ai/tjung2/temporal_questions/runs/j5do6fqm
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220831_154657-j5do6fqm/logs
+wandb: Terminating and syncing runs. Press ctrl-c to kill.
+wandb: Starting wandb agent 🕵️
+2022-08-31 15:47:17,748 - wandb.wandb_agent - INFO - Running runs: []
+2022-08-31 15:47:17,937 - wandb.wandb_agent - INFO - Agent received command: run
+2022-08-31 15:47:17,937 - wandb.wandb_agent - INFO - Agent starting run with config:
+	learning_rate: 0.001
+	t5_learning_rate: 1e-05
+2022-08-31 15:47:17,939 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 15:47:22,950 - wandb.wandb_agent - INFO - Running runs: ['fybdu909']
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: WARNING Ignored wandb.init() arg project when running a sweep.
+wandb: wandb version 0.13.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220831_154735-fybdu909
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run kadapters_2010
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🧹 View sweep at https://wandb.ai/tjung2/temporal_questions/sweeps/4qlx1r3y
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/fybdu909
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+Traceback (most recent call last):
+  File "run.py", line 133, in <module>
+    for filename in os.listdir(args.checkpoint_dir):
+FileNotFoundError: [Errno 2] No such file or directory: 'outputs/kadapters_2010_2freeze_158'
+2022-08-31 15:47:43,271 - wandb.wandb_agent - INFO - Cleaning up finished run: fybdu909
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.000 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.000 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.000 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: / 0.000 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.002 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: \ 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: | 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: / 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: - 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: \ 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: | 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: / 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: Synced kadapters_2010: https://wandb.ai/tjung2/temporal_questions/runs/fybdu909
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220831_154735-fybdu909/logs
+wandb: Terminating and syncing runs. Press ctrl-c to kill.
+wandb: Starting wandb agent 🕵️
+2022-08-31 15:47:56,442 - wandb.wandb_agent - INFO - Running runs: []
+2022-08-31 15:47:56,613 - wandb.wandb_agent - INFO - Agent received command: run
+2022-08-31 15:47:56,613 - wandb.wandb_agent - INFO - Agent starting run with config:
+	learning_rate: 0.001
+	t5_learning_rate: 1e-06
+2022-08-31 15:47:56,614 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 15:48:01,625 - wandb.wandb_agent - INFO - Running runs: ['8ei1z5r7']
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: WARNING Ignored wandb.init() arg project when running a sweep.
+wandb: wandb version 0.13.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220831_154812-8ei1z5r7
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run kadapters_2010
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🧹 View sweep at https://wandb.ai/tjung2/temporal_questions/sweeps/4qlx1r3y
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/8ei1z5r7
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+Traceback (most recent call last):
+  File "run.py", line 133, in <module>
+    max_em = 0
+FileNotFoundError: [Errno 2] No such file or directory: 'outputs/kadapters_2010_2freeze_158'
+2022-08-31 15:48:21,946 - wandb.wandb_agent - INFO - Cleaning up finished run: 8ei1z5r7
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: \ 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: | 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: / 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: - 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: \ 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: | 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: Synced kadapters_2010: https://wandb.ai/tjung2/temporal_questions/runs/8ei1z5r7
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220831_154812-8ei1z5r7/logs
+wandb: Terminating and syncing runs. Press ctrl-c to kill.

@@ -1,0 +1,6 @@
+
+{'output_dir': 'outputs/T5_small_templama(2010)_lr.0001_baseline_prefixed', 'dataset': 'templama', 'dataset_version': '2010', 'prefix': True, 'split_num': 1, 'split': 0, 'model_name_or_path': 'google/t5-small-ssm', 'method': 'baseline', 'freeze_level': 0, 'mode': 'pretrain', 'tokenizer_name_or_path': 'google/t5-small-ssm', 'max_input_length': 50, 'max_output_length': 25, 'freeze_encoder': False, 'freeze_embeds': False, 'learning_rate': 0.0001, 'weight_decay': 0.0, 'adam_epsilon': 1e-08, 'warmup_steps': 0, 'train_batch_size': 64, 'eval_batch_size': 64, 'num_train_epochs': 30, 'n_gpu': 1, 'num_workers': 4, 'resume_from_checkpoint': None, 'use_lr_scheduling': True, 'val_check_interval': 1.0, 'n_val': -1, 'n_train': -1, 'n_test': -1, 'early_stop_callback': False, 'use_deepspeed': False, 'opt_level': 'O1', 'max_grad_norm': 0.5, 'seed': 42, 'check_validation_only': False, 'checkpoint_path': '', 'accelerator': 'ddp', 'output_log': None}
+Traceback (most recent call last):
+  File "run.py", line 102, in <module>
+    print(args.output_dir)
+AttributeError: 'dict' object has no attribute 'output_dir'

@@ -1,0 +1,594 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=ark
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=04:59:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+python run.py --config configs/templama/training/t5_kadapters_2010_prefixed.json
+ 
+--------------------
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory outputs/T5_small_templama(2010)_lr.001_adapters_prefixed exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+Some weights of T5ForConditionalGeneration were not initialized from the model checkpoint at google/t5-small-ssm and are newly initialized: ['kadapter.adapter.1.layer.0.SelfAttention.q.weight', 'kadapter.adapter.0.layer.1.DenseReluDense.wo.weight', 'kadapter.adapter.0.layer.0.SelfAttention.k.weight', 'kadapter.adapter.0.layer.1.DenseReluDense.wi_0.weight', 'kadapter.adapter.0.layer.0.SelfAttention.q.weight', 'kadapter.adapter.1.layer.0.SelfAttention.v.weight', 'kadapter.adapter.0.layer.0.SelfAttention.relative_attention_bias.weight', 'kadapter.adapter.1.layer.0.layer_norm.weight', 'kadapter.layer_norm.weight', 'kadapter.adapter.1.layer.0.SelfAttention.k.weight', 'kadapter.adapter.1.layer.1.layer_norm.weight', 'kadapter.adapter.0.layer.0.SelfAttention.o.weight', 'kadapter.adapter.0.layer.0.SelfAttention.v.weight', 'kadapter.adapter.1.layer.0.SelfAttention.o.weight', 'kadapter.adapter.1.layer.1.DenseReluDense.wi_0.weight', 'kadapter.adapter.1.layer.1.DenseReluDense.wo.weight', 'kadapter.adapter.1.layer.1.DenseReluDense.wi_1.weight', 'kadapter.adapter.0.layer.0.layer_norm.weight', 'kadapter.adapter.0.layer.1.layer_norm.weight', 'kadapter.adapter.0.layer.1.DenseReluDense.wi_1.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All DDP processes registered. Starting ddp with 1 processes
+----------------------------------------------------------------------------------------------------
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Set SLURM handle signals.
+
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 81.7 M
+-----------------------------------------------------
+4.7 M     Trainable params
+77.0 M    Non-trainable params
+81.7 M    Total params
+326.730   Total estimated model params size (MB)
+Namespace(accelerator='ddp', adam_epsilon=1e-08, check_validation_only=False, checkpoint_path='', dataset='templama', dataset_version='2010', early_stop_callback=False, eval_batch_size=32, freeze_embeds=False, freeze_encoder=False, freeze_level=2, learning_rate=0.001, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='kadapter', mode='pretrain', model_name_or_path='google/t5-small-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=30, num_workers=4, opt_level='O1', output_dir='outputs/T5_small_templama(2010)_lr.001_adapters_prefixed', output_log=None, prefix=True, resume_from_checkpoint=None, seed=42, split=0, split_num=1, tokenizer_name_or_path='google/t5-small-ssm', train_batch_size=32, use_deepspeed=False, use_lr_scheduling=True, val_check_interval=1.0, wandb_log=False, warmup_steps=0, weight_decay=0.0)
+split is 0
+Length of dataset retrieving is.. 2866
+Validation sanity check: 0it [00:00, ?it/s]split is 0
+Length of dataset retrieving is.. 410
+Validation sanity check:   0%|          | 0/2 [00:00<?, ?it/s]Validation sanity check:  50%|█████     | 1/2 [00:01<00:01,  1.55s/it]Validation sanity check: 100%|██████████| 2/2 [00:02<00:00,  1.02s/it]                                                                      split is 0
+Length of dataset retrieving is.. 2866
+Training: 0it [00:00, ?it/s]Training:   0%|          | 0/102 [00:00<?, ?it/s]Epoch 0:   0%|          | 0/102 [00:00<?, ?it/s] [W reducer.cpp:1158] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+Adapter forward()
+Epoch 0:   1%|          | 1/102 [00:00<00:59,  1.70it/s]Epoch 0:   1%|          | 1/102 [00:00<00:59,  1.70it/s, loss=7.47, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:   2%|▏         | 2/102 [00:00<00:31,  3.15it/s, loss=8.13, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:   3%|▎         | 3/102 [00:00<00:22,  4.38it/s, loss=8.12, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:   4%|▍         | 4/102 [00:00<00:17,  5.48it/s, loss=8.12, em_score=0.0156, f1_score=0.0698]Epoch 0:   4%|▍         | 4/102 [00:00<00:17,  5.48it/s, loss=8.14, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:   5%|▍         | 5/102 [00:00<00:14,  6.47it/s, loss=8.08, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:   6%|▌         | 6/102 [00:00<00:13,  7.34it/s, loss=8.1, em_score=0.0156, f1_score=0.0698] Adapter forward()
+Epoch 0:   7%|▋         | 7/102 [00:00<00:11,  8.11it/s, loss=8.1, em_score=0.0156, f1_score=0.0698]Epoch 0:   7%|▋         | 7/102 [00:00<00:11,  8.10it/s, loss=8.08, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:   8%|▊         | 8/102 [00:00<00:10,  8.83it/s, loss=8.19, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:   9%|▉         | 9/102 [00:00<00:09,  9.45it/s, loss=8.14, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  10%|▉         | 10/102 [00:00<00:09, 10.02it/s, loss=8.14, em_score=0.0156, f1_score=0.0698]Epoch 0:  10%|▉         | 10/102 [00:00<00:09, 10.01it/s, loss=8.09, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  11%|█         | 11/102 [00:01<00:08, 10.55it/s, loss=8.1, em_score=0.0156, f1_score=0.0698] Adapter forward()
+Epoch 0:  12%|█▏        | 12/102 [00:01<00:08, 11.01it/s, loss=8.09, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  13%|█▎        | 13/102 [00:01<00:07, 11.44it/s, loss=8.09, em_score=0.0156, f1_score=0.0698]Epoch 0:  13%|█▎        | 13/102 [00:01<00:07, 11.44it/s, loss=8.05, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  14%|█▎        | 14/102 [00:01<00:07, 11.84it/s, loss=8.09, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  15%|█▍        | 15/102 [00:01<00:07, 12.20it/s, loss=8.09, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  16%|█▌        | 16/102 [00:01<00:06, 12.55it/s, loss=8.09, em_score=0.0156, f1_score=0.0698]Epoch 0:  16%|█▌        | 16/102 [00:01<00:06, 12.54it/s, loss=8.05, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  17%|█▋        | 17/102 [00:01<00:06, 12.87it/s, loss=8.01, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  18%|█▊        | 18/102 [00:01<00:06, 13.15it/s, loss=8.01, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  19%|█▊        | 19/102 [00:01<00:06, 13.44it/s, loss=8.01, em_score=0.0156, f1_score=0.0698]Epoch 0:  19%|█▊        | 19/102 [00:01<00:06, 13.44it/s, loss=8.01, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  20%|█▉        | 20/102 [00:01<00:05, 13.72it/s, loss=8.01, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  21%|██        | 21/102 [00:01<00:05, 13.97it/s, loss=8.01, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  22%|██▏       | 22/102 [00:01<00:05, 14.20it/s, loss=8.01, em_score=0.0156, f1_score=0.0698]Epoch 0:  22%|██▏       | 22/102 [00:01<00:05, 14.20it/s, loss=7.99, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  23%|██▎       | 23/102 [00:01<00:05, 14.44it/s, loss=7.99, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  24%|██▎       | 24/102 [00:01<00:05, 14.66it/s, loss=7.97, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  25%|██▍       | 25/102 [00:01<00:05, 14.85it/s, loss=7.97, em_score=0.0156, f1_score=0.0698]Epoch 0:  25%|██▍       | 25/102 [00:01<00:05, 14.85it/s, loss=7.99, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  25%|██▌       | 26/102 [00:01<00:05, 15.03it/s, loss=7.97, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  26%|██▋       | 27/102 [00:01<00:04, 15.18it/s, loss=7.96, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  27%|██▋       | 28/102 [00:01<00:04, 15.35it/s, loss=7.96, em_score=0.0156, f1_score=0.0698]Epoch 0:  27%|██▋       | 28/102 [00:01<00:04, 15.34it/s, loss=7.91, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  28%|██▊       | 29/102 [00:01<00:04, 15.51it/s, loss=7.91, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  29%|██▉       | 30/102 [00:01<00:04, 15.66it/s, loss=7.91, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  30%|███       | 31/102 [00:01<00:04, 15.81it/s, loss=7.91, em_score=0.0156, f1_score=0.0698]Epoch 0:  30%|███       | 31/102 [00:01<00:04, 15.80it/s, loss=7.92, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  31%|███▏      | 32/102 [00:02<00:04, 15.95it/s, loss=7.89, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  32%|███▏      | 33/102 [00:02<00:04, 16.09it/s, loss=7.95, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  33%|███▎      | 34/102 [00:02<00:04, 16.23it/s, loss=7.95, em_score=0.0156, f1_score=0.0698]Epoch 0:  33%|███▎      | 34/102 [00:02<00:04, 16.23it/s, loss=7.91, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  34%|███▍      | 35/102 [00:02<00:04, 16.36it/s, loss=7.88, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  35%|███▌      | 36/102 [00:02<00:04, 16.50it/s, loss=7.91, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  36%|███▋      | 37/102 [00:02<00:03, 16.61it/s, loss=7.91, em_score=0.0156, f1_score=0.0698]Epoch 0:  36%|███▋      | 37/102 [00:02<00:03, 16.61it/s, loss=7.93, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  37%|███▋      | 38/102 [00:02<00:03, 16.73it/s, loss=7.91, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  38%|███▊      | 39/102 [00:02<00:03, 16.86it/s, loss=7.9, em_score=0.0156, f1_score=0.0698] Adapter forward()
+Epoch 0:  39%|███▉      | 40/102 [00:02<00:03, 16.97it/s, loss=7.9, em_score=0.0156, f1_score=0.0698]Epoch 0:  39%|███▉      | 40/102 [00:02<00:03, 16.97it/s, loss=7.92, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  40%|████      | 41/102 [00:02<00:03, 17.08it/s, loss=7.97, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  41%|████      | 42/102 [00:02<00:03, 17.20it/s, loss=7.96, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  42%|████▏     | 43/102 [00:02<00:03, 17.30it/s, loss=7.96, em_score=0.0156, f1_score=0.0698]Epoch 0:  42%|████▏     | 43/102 [00:02<00:03, 17.29it/s, loss=7.95, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  43%|████▎     | 44/102 [00:02<00:03, 17.40it/s, loss=7.96, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  44%|████▍     | 45/102 [00:02<00:03, 17.50it/s, loss=7.94, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  45%|████▌     | 46/102 [00:02<00:03, 17.60it/s, loss=7.94, em_score=0.0156, f1_score=0.0698]Epoch 0:  45%|████▌     | 46/102 [00:02<00:03, 17.60it/s, loss=7.96, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  46%|████▌     | 47/102 [00:02<00:03, 17.70it/s, loss=7.97, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  47%|████▋     | 48/102 [00:02<00:03, 17.77it/s, loss=7.95, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  48%|████▊     | 49/102 [00:02<00:02, 17.85it/s, loss=7.95, em_score=0.0156, f1_score=0.0698]Epoch 0:  48%|████▊     | 49/102 [00:02<00:02, 17.85it/s, loss=7.95, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  49%|████▉     | 50/102 [00:02<00:02, 17.93it/s, loss=7.97, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  50%|█████     | 51/102 [00:02<00:02, 18.01it/s, loss=7.96, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  51%|█████     | 52/102 [00:02<00:02, 18.08it/s, loss=7.96, em_score=0.0156, f1_score=0.0698]Epoch 0:  51%|█████     | 52/102 [00:02<00:02, 18.07it/s, loss=8, em_score=0.0156, f1_score=0.0698]   Adapter forward()
+Epoch 0:  52%|█████▏    | 53/102 [00:02<00:02, 18.14it/s, loss=7.99, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  53%|█████▎    | 54/102 [00:02<00:02, 18.21it/s, loss=8, em_score=0.0156, f1_score=0.0698]   Adapter forward()
+Epoch 0:  54%|█████▍    | 55/102 [00:03<00:02, 18.27it/s, loss=8, em_score=0.0156, f1_score=0.0698]Epoch 0:  54%|█████▍    | 55/102 [00:03<00:02, 18.27it/s, loss=8.02, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  55%|█████▍    | 56/102 [00:03<00:02, 18.33it/s, loss=8.02, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  56%|█████▌    | 57/102 [00:03<00:02, 18.39it/s, loss=8.02, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  57%|█████▋    | 58/102 [00:03<00:02, 18.46it/s, loss=8.02, em_score=0.0156, f1_score=0.0698]Epoch 0:  57%|█████▋    | 58/102 [00:03<00:02, 18.45it/s, loss=8.04, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  58%|█████▊    | 59/102 [00:03<00:02, 18.51it/s, loss=8.04, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  59%|█████▉    | 60/102 [00:03<00:02, 18.57it/s, loss=7.99, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  60%|█████▉    | 61/102 [00:03<00:02, 18.64it/s, loss=7.99, em_score=0.0156, f1_score=0.0698]Epoch 0:  60%|█████▉    | 61/102 [00:03<00:02, 18.63it/s, loss=7.96, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  61%|██████    | 62/102 [00:03<00:02, 18.69it/s, loss=7.94, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  62%|██████▏   | 63/102 [00:03<00:02, 18.75it/s, loss=7.96, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  63%|██████▎   | 64/102 [00:03<00:02, 18.80it/s, loss=7.96, em_score=0.0156, f1_score=0.0698]Epoch 0:  63%|██████▎   | 64/102 [00:03<00:02, 18.80it/s, loss=7.93, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  64%|██████▎   | 65/102 [00:03<00:01, 18.85it/s, loss=7.96, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  65%|██████▍   | 66/102 [00:03<00:01, 18.91it/s, loss=7.93, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  66%|██████▌   | 67/102 [00:03<00:01, 18.97it/s, loss=7.93, em_score=0.0156, f1_score=0.0698]Epoch 0:  66%|██████▌   | 67/102 [00:03<00:01, 18.96it/s, loss=7.94, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  67%|██████▋   | 68/102 [00:03<00:01, 19.01it/s, loss=7.95, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  68%|██████▊   | 69/102 [00:03<00:01, 19.06it/s, loss=7.95, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  69%|██████▊   | 70/102 [00:03<00:01, 19.11it/s, loss=7.95, em_score=0.0156, f1_score=0.0698]Epoch 0:  69%|██████▊   | 70/102 [00:03<00:01, 19.11it/s, loss=7.96, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  70%|██████▉   | 71/102 [00:03<00:01, 19.15it/s, loss=7.95, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  71%|███████   | 72/102 [00:03<00:01, 19.18it/s, loss=7.91, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  72%|███████▏  | 73/102 [00:03<00:01, 19.20it/s, loss=7.91, em_score=0.0156, f1_score=0.0698]Epoch 0:  72%|███████▏  | 73/102 [00:03<00:01, 19.20it/s, loss=7.87, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  73%|███████▎  | 74/102 [00:03<00:01, 19.23it/s, loss=7.86, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  74%|███████▎  | 75/102 [00:03<00:01, 19.25it/s, loss=7.87, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  75%|███████▍  | 76/102 [00:03<00:01, 19.27it/s, loss=7.87, em_score=0.0156, f1_score=0.0698]Epoch 0:  75%|███████▍  | 76/102 [00:03<00:01, 19.27it/s, loss=7.84, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  75%|███████▌  | 77/102 [00:03<00:01, 19.29it/s, loss=7.86, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  76%|███████▋  | 78/102 [00:04<00:01, 19.31it/s, loss=7.89, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  77%|███████▋  | 79/102 [00:04<00:01, 19.33it/s, loss=7.89, em_score=0.0156, f1_score=0.0698]Epoch 0:  77%|███████▋  | 79/102 [00:04<00:01, 19.33it/s, loss=7.9, em_score=0.0156, f1_score=0.0698] Adapter forward()
+Epoch 0:  78%|███████▊  | 80/102 [00:04<00:01, 19.34it/s, loss=7.93, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  79%|███████▉  | 81/102 [00:04<00:01, 19.35it/s, loss=7.88, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  80%|████████  | 82/102 [00:04<00:01, 19.37it/s, loss=7.88, em_score=0.0156, f1_score=0.0698]Epoch 0:  80%|████████  | 82/102 [00:04<00:01, 19.36it/s, loss=7.88, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  81%|████████▏ | 83/102 [00:04<00:00, 19.38it/s, loss=7.88, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  82%|████████▏ | 84/102 [00:04<00:00, 19.40it/s, loss=7.89, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  83%|████████▎ | 85/102 [00:04<00:00, 19.41it/s, loss=7.89, em_score=0.0156, f1_score=0.0698]Epoch 0:  83%|████████▎ | 85/102 [00:04<00:00, 19.40it/s, loss=7.89, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  84%|████████▍ | 86/102 [00:04<00:00, 19.42it/s, loss=7.9, em_score=0.0156, f1_score=0.0698] Adapter forward()
+Epoch 0:  85%|████████▌ | 87/102 [00:04<00:00, 19.42it/s, loss=7.87, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  86%|████████▋ | 88/102 [00:04<00:00, 19.43it/s, loss=7.87, em_score=0.0156, f1_score=0.0698]Epoch 0:  86%|████████▋ | 88/102 [00:04<00:00, 19.43it/s, loss=7.85, em_score=0.0156, f1_score=0.0698]Adapter forward()
+Epoch 0:  87%|████████▋ | 89/102 [00:04<00:00, 19.04it/s, loss=7.86, em_score=0.0156, f1_score=0.0698]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/13 [00:00<?, ?it/s][A
+Validating:   8%|▊         | 1/13 [00:01<00:13,  1.16s/it][AEpoch 0:  89%|████████▉ | 91/102 [00:05<00:00, 15.57it/s, loss=7.86, em_score=0.0156, f1_score=0.0698]
+Validating:  15%|█▌        | 2/13 [00:01<00:09,  1.17it/s][A
+Validating:  23%|██▎       | 3/13 [00:02<00:07,  1.27it/s][A
+Validating:  31%|███       | 4/13 [00:03<00:06,  1.37it/s][AEpoch 0:  92%|█████████▏| 94/102 [00:07<00:00, 12.01it/s, loss=7.86, em_score=0.0156, f1_score=0.0698]
+Validating:  38%|███▊      | 5/13 [00:03<00:05,  1.37it/s][A
+Validating:  46%|████▌     | 6/13 [00:04<00:04,  1.43it/s][A
+Validating:  54%|█████▍    | 7/13 [00:05<00:04,  1.47it/s][AEpoch 0:  95%|█████████▌| 97/102 [00:09<00:00,  9.86it/s, loss=7.86, em_score=0.0156, f1_score=0.0698]
+Validating:  62%|██████▏   | 8/13 [00:05<00:03,  1.55it/s][A
+Validating:  69%|██████▉   | 9/13 [00:06<00:02,  1.60it/s][A
+Validating:  77%|███████▋  | 10/13 [00:06<00:01,  1.56it/s][AEpoch 0:  98%|█████████▊| 100/102 [00:11<00:00,  8.57it/s, loss=7.86, em_score=0.0156, f1_score=0.0698]
+Validating:  85%|████████▍ | 11/13 [00:07<00:01,  1.56it/s][A
+Validating:  92%|█████████▏| 12/13 [00:08<00:00,  1.57it/s][A
+Validating: 100%|██████████| 13/13 [00:08<00:00,  1.68it/s][AEpoch 0: 100%|██████████| 102/102 [00:13<00:00,  7.55it/s, loss=7.86, em_score=0.00732, f1_score=0.0517]
+                                                           [AEpoch 0:   0%|          | 0/102 [00:00<?, ?it/s, loss=7.86, em_score=0.00732, f1_score=0.0517]          Epoch 1:   0%|          | 0/102 [00:00<?, ?it/s, loss=7.86, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:   1%|          | 1/102 [00:00<00:55,  1.82it/s, loss=7.84, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:   2%|▏         | 2/102 [00:00<00:29,  3.40it/s, loss=7.88, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:   3%|▎         | 3/102 [00:00<00:20,  4.75it/s, loss=7.88, em_score=0.00732, f1_score=0.0517]Epoch 1:   3%|▎         | 3/102 [00:00<00:20,  4.74it/s, loss=7.87, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:   4%|▍         | 4/102 [00:00<00:16,  5.96it/s, loss=7.88, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:   5%|▍         | 5/102 [00:00<00:13,  7.05it/s, loss=7.86, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:   6%|▌         | 6/102 [00:00<00:11,  8.03it/s, loss=7.86, em_score=0.00732, f1_score=0.0517]Epoch 1:   6%|▌         | 6/102 [00:00<00:11,  8.03it/s, loss=7.85, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:   7%|▋         | 7/102 [00:00<00:10,  8.89it/s, loss=7.86, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:   8%|▊         | 8/102 [00:00<00:09,  9.64it/s, loss=7.85, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:   9%|▉         | 9/102 [00:00<00:08, 10.35it/s, loss=7.85, em_score=0.00732, f1_score=0.0517]Epoch 1:   9%|▉         | 9/102 [00:00<00:08, 10.35it/s, loss=7.8, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 1:  10%|▉         | 10/102 [00:00<00:08, 10.99it/s, loss=7.76, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  11%|█         | 11/102 [00:00<00:07, 11.57it/s, loss=7.75, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  12%|█▏        | 12/102 [00:00<00:07, 12.11it/s, loss=7.75, em_score=0.00732, f1_score=0.0517]Epoch 1:  12%|█▏        | 12/102 [00:00<00:07, 12.11it/s, loss=7.76, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  13%|█▎        | 13/102 [00:01<00:07, 12.60it/s, loss=7.74, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  14%|█▎        | 14/102 [00:01<00:06, 13.06it/s, loss=7.72, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  15%|█▍        | 15/102 [00:01<00:06, 13.49it/s, loss=7.72, em_score=0.00732, f1_score=0.0517]Epoch 1:  15%|█▍        | 15/102 [00:01<00:06, 13.49it/s, loss=7.72, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  16%|█▌        | 16/102 [00:01<00:06, 13.88it/s, loss=7.7, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 1:  17%|█▋        | 17/102 [00:01<00:05, 14.25it/s, loss=7.73, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  18%|█▊        | 18/102 [00:01<00:05, 14.59it/s, loss=7.73, em_score=0.00732, f1_score=0.0517]Epoch 1:  18%|█▊        | 18/102 [00:01<00:05, 14.59it/s, loss=7.7, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 1:  19%|█▊        | 19/102 [00:01<00:05, 14.90it/s, loss=7.68, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  20%|█▉        | 20/102 [00:01<00:05, 15.19it/s, loss=7.69, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  21%|██        | 21/102 [00:01<00:05, 15.47it/s, loss=7.69, em_score=0.00732, f1_score=0.0517]Epoch 1:  21%|██        | 21/102 [00:01<00:05, 15.46it/s, loss=7.68, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  22%|██▏       | 22/102 [00:01<00:05, 15.72it/s, loss=7.62, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  23%|██▎       | 23/102 [00:01<00:04, 15.96it/s, loss=7.65, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  24%|██▎       | 24/102 [00:01<00:04, 16.19it/s, loss=7.65, em_score=0.00732, f1_score=0.0517]Epoch 1:  24%|██▎       | 24/102 [00:01<00:04, 16.19it/s, loss=7.63, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  25%|██▍       | 25/102 [00:01<00:04, 16.41it/s, loss=7.64, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  25%|██▌       | 26/102 [00:01<00:04, 16.62it/s, loss=7.61, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  26%|██▋       | 27/102 [00:01<00:04, 16.81it/s, loss=7.61, em_score=0.00732, f1_score=0.0517]Epoch 1:  26%|██▋       | 27/102 [00:01<00:04, 16.81it/s, loss=7.59, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  27%|██▋       | 28/102 [00:01<00:04, 17.00it/s, loss=7.56, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  28%|██▊       | 29/102 [00:01<00:04, 17.17it/s, loss=7.55, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  29%|██▉       | 30/102 [00:01<00:04, 17.34it/s, loss=7.55, em_score=0.00732, f1_score=0.0517]Epoch 1:  29%|██▉       | 30/102 [00:01<00:04, 17.33it/s, loss=7.53, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  30%|███       | 31/102 [00:01<00:04, 17.49it/s, loss=7.5, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 1:  31%|███▏      | 32/102 [00:01<00:03, 17.65it/s, loss=7.53, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  32%|███▏      | 33/102 [00:01<00:03, 17.80it/s, loss=7.53, em_score=0.00732, f1_score=0.0517]Epoch 1:  32%|███▏      | 33/102 [00:01<00:03, 17.80it/s, loss=7.52, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  33%|███▎      | 34/102 [00:01<00:03, 17.94it/s, loss=7.52, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  34%|███▍      | 35/102 [00:01<00:03, 18.08it/s, loss=7.5, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 1:  35%|███▌      | 36/102 [00:01<00:03, 18.22it/s, loss=7.5, em_score=0.00732, f1_score=0.0517]Epoch 1:  35%|███▌      | 36/102 [00:01<00:03, 18.22it/s, loss=7.47, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  36%|███▋      | 37/102 [00:02<00:03, 18.34it/s, loss=7.42, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  37%|███▋      | 38/102 [00:02<00:03, 18.46it/s, loss=7.41, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  38%|███▊      | 39/102 [00:02<00:03, 18.59it/s, loss=7.41, em_score=0.00732, f1_score=0.0517]Epoch 1:  38%|███▊      | 39/102 [00:02<00:03, 18.58it/s, loss=7.43, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  39%|███▉      | 40/102 [00:02<00:03, 18.70it/s, loss=7.36, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  40%|████      | 41/102 [00:02<00:03, 18.81it/s, loss=7.32, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  41%|████      | 42/102 [00:02<00:03, 18.92it/s, loss=7.32, em_score=0.00732, f1_score=0.0517]Epoch 1:  41%|████      | 42/102 [00:02<00:03, 18.91it/s, loss=7.28, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  42%|████▏     | 43/102 [00:02<00:03, 19.02it/s, loss=7.24, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  43%|████▎     | 44/102 [00:02<00:03, 19.12it/s, loss=7.24, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  44%|████▍     | 45/102 [00:02<00:02, 19.21it/s, loss=7.24, em_score=0.00732, f1_score=0.0517]Epoch 1:  44%|████▍     | 45/102 [00:02<00:02, 19.21it/s, loss=7.22, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  45%|████▌     | 46/102 [00:02<00:02, 19.30it/s, loss=7.2, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 1:  46%|████▌     | 47/102 [00:02<00:02, 19.39it/s, loss=7.17, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  47%|████▋     | 48/102 [00:02<00:02, 19.47it/s, loss=7.17, em_score=0.00732, f1_score=0.0517]Epoch 1:  47%|████▋     | 48/102 [00:02<00:02, 19.47it/s, loss=7.16, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  48%|████▊     | 49/102 [00:02<00:02, 19.55it/s, loss=7.18, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  49%|████▉     | 50/102 [00:02<00:02, 19.63it/s, loss=7.17, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  50%|█████     | 51/102 [00:02<00:02, 19.70it/s, loss=7.17, em_score=0.00732, f1_score=0.0517]Epoch 1:  50%|█████     | 51/102 [00:02<00:02, 19.70it/s, loss=7.16, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  51%|█████     | 52/102 [00:02<00:02, 19.78it/s, loss=7.11, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  52%|█████▏    | 53/102 [00:02<00:02, 19.85it/s, loss=7.11, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  53%|█████▎    | 54/102 [00:02<00:02, 19.92it/s, loss=7.11, em_score=0.00732, f1_score=0.0517]Epoch 1:  53%|█████▎    | 54/102 [00:02<00:02, 19.92it/s, loss=7.06, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  54%|█████▍    | 55/102 [00:02<00:02, 19.99it/s, loss=7.02, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  55%|█████▍    | 56/102 [00:02<00:02, 20.06it/s, loss=6.99, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  56%|█████▌    | 57/102 [00:02<00:02, 20.12it/s, loss=6.99, em_score=0.00732, f1_score=0.0517]Epoch 1:  56%|█████▌    | 57/102 [00:02<00:02, 20.12it/s, loss=6.97, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  57%|█████▋    | 58/102 [00:02<00:02, 20.19it/s, loss=6.97, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  58%|█████▊    | 59/102 [00:02<00:02, 20.25it/s, loss=6.96, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  59%|█████▉    | 60/102 [00:02<00:02, 20.31it/s, loss=6.96, em_score=0.00732, f1_score=0.0517]Epoch 1:  59%|█████▉    | 60/102 [00:02<00:02, 20.31it/s, loss=6.99, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  60%|█████▉    | 61/102 [00:02<00:02, 20.37it/s, loss=6.95, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  61%|██████    | 62/102 [00:03<00:01, 20.42it/s, loss=6.97, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  62%|██████▏   | 63/102 [00:03<00:01, 20.48it/s, loss=6.97, em_score=0.00732, f1_score=0.0517]Epoch 1:  62%|██████▏   | 63/102 [00:03<00:01, 20.48it/s, loss=6.95, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  63%|██████▎   | 64/102 [00:03<00:01, 20.53it/s, loss=6.9, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 1:  64%|██████▎   | 65/102 [00:03<00:01, 20.56it/s, loss=6.86, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  65%|██████▍   | 66/102 [00:03<00:01, 20.61it/s, loss=6.86, em_score=0.00732, f1_score=0.0517]Epoch 1:  65%|██████▍   | 66/102 [00:03<00:01, 20.61it/s, loss=6.86, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  66%|██████▌   | 67/102 [00:03<00:01, 20.66it/s, loss=6.87, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  67%|██████▋   | 68/102 [00:03<00:01, 20.70it/s, loss=6.82, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  68%|██████▊   | 69/102 [00:03<00:01, 20.75it/s, loss=6.82, em_score=0.00732, f1_score=0.0517]Epoch 1:  68%|██████▊   | 69/102 [00:03<00:01, 20.75it/s, loss=6.77, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  69%|██████▊   | 70/102 [00:03<00:01, 20.80it/s, loss=6.75, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  70%|██████▉   | 71/102 [00:03<00:01, 20.84it/s, loss=6.76, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  71%|███████   | 72/102 [00:03<00:01, 20.89it/s, loss=6.76, em_score=0.00732, f1_score=0.0517]Epoch 1:  71%|███████   | 72/102 [00:03<00:01, 20.88it/s, loss=6.75, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  72%|███████▏  | 73/102 [00:03<00:01, 20.93it/s, loss=6.74, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  73%|███████▎  | 74/102 [00:03<00:01, 20.97it/s, loss=6.74, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  74%|███████▎  | 75/102 [00:03<00:01, 21.01it/s, loss=6.74, em_score=0.00732, f1_score=0.0517]Epoch 1:  74%|███████▎  | 75/102 [00:03<00:01, 21.01it/s, loss=6.76, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  75%|███████▍  | 76/102 [00:03<00:01, 21.05it/s, loss=6.76, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  75%|███████▌  | 77/102 [00:03<00:01, 21.09it/s, loss=6.75, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  76%|███████▋  | 78/102 [00:03<00:01, 21.13it/s, loss=6.75, em_score=0.00732, f1_score=0.0517]Epoch 1:  76%|███████▋  | 78/102 [00:03<00:01, 21.13it/s, loss=6.69, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  77%|███████▋  | 79/102 [00:03<00:01, 21.17it/s, loss=6.66, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  78%|███████▊  | 80/102 [00:03<00:01, 21.20it/s, loss=6.61, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  79%|███████▉  | 81/102 [00:03<00:00, 21.24it/s, loss=6.61, em_score=0.00732, f1_score=0.0517]Epoch 1:  79%|███████▉  | 81/102 [00:03<00:00, 21.24it/s, loss=6.6, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 1:  80%|████████  | 82/102 [00:03<00:00, 21.28it/s, loss=6.59, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  81%|████████▏ | 83/102 [00:03<00:00, 21.31it/s, loss=6.59, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  82%|████████▏ | 84/102 [00:03<00:00, 21.35it/s, loss=6.59, em_score=0.00732, f1_score=0.0517]Epoch 1:  82%|████████▏ | 84/102 [00:03<00:00, 21.34it/s, loss=6.59, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  83%|████████▎ | 85/102 [00:03<00:00, 21.38it/s, loss=6.58, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  84%|████████▍ | 86/102 [00:04<00:00, 21.41it/s, loss=6.55, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  85%|████████▌ | 87/102 [00:04<00:00, 21.45it/s, loss=6.55, em_score=0.00732, f1_score=0.0517]Epoch 1:  85%|████████▌ | 87/102 [00:04<00:00, 21.45it/s, loss=6.53, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  86%|████████▋ | 88/102 [00:04<00:00, 21.48it/s, loss=6.51, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 1:  87%|████████▋ | 89/102 [00:04<00:00, 21.10it/s, loss=6.49, em_score=0.00732, f1_score=0.0517]Epoch 1:  88%|████████▊ | 90/102 [00:04<00:00, 21.30it/s, loss=6.49, em_score=0.00732, f1_score=0.0517]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/13 [00:00<?, ?it/s][A
+Validating:   8%|▊         | 1/13 [00:01<00:13,  1.11s/it][A
+Validating:  15%|█▌        | 2/13 [00:01<00:08,  1.23it/s][A
+Validating:  23%|██▎       | 3/13 [00:02<00:07,  1.32it/s][AEpoch 1:  91%|█████████ | 93/102 [00:06<00:00, 14.03it/s, loss=6.49, em_score=0.00732, f1_score=0.0517]
+Validating:  31%|███       | 4/13 [00:02<00:06,  1.45it/s][A
+Validating:  38%|███▊      | 5/13 [00:03<00:05,  1.47it/s][A
+Validating:  46%|████▌     | 6/13 [00:04<00:04,  1.55it/s][AEpoch 1:  94%|█████████▍| 96/102 [00:08<00:00, 11.34it/s, loss=6.49, em_score=0.00732, f1_score=0.0517]
+Validating:  54%|█████▍    | 7/13 [00:04<00:03,  1.56it/s][A
+Validating:  62%|██████▏   | 8/13 [00:05<00:03,  1.62it/s][A
+Validating:  69%|██████▉   | 9/13 [00:05<00:02,  1.67it/s][AEpoch 1:  97%|█████████▋| 99/102 [00:10<00:00,  9.68it/s, loss=6.49, em_score=0.00732, f1_score=0.0517]
+Validating:  77%|███████▋  | 10/13 [00:06<00:01,  1.62it/s][A
+Validating:  85%|████████▍ | 11/13 [00:07<00:01,  1.61it/s][A
+Validating:  92%|█████████▏| 12/13 [00:07<00:00,  1.61it/s][AEpoch 1: 100%|██████████| 102/102 [00:12<00:00,  8.41it/s, loss=6.49, em_score=0.00732, f1_score=0.0517]
+Validating: 100%|██████████| 13/13 [00:08<00:00,  1.72it/s][AEpoch 1: 100%|██████████| 102/102 [00:12<00:00,  8.02it/s, loss=6.49, em_score=0.00732, f1_score=0.0517]
+                                                           [AEpoch 1:   0%|          | 0/102 [00:00<?, ?it/s, loss=6.49, em_score=0.00732, f1_score=0.0517]          Epoch 2:   0%|          | 0/102 [00:00<?, ?it/s, loss=6.49, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:   1%|          | 1/102 [00:00<00:54,  1.87it/s, loss=6.46, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:   2%|▏         | 2/102 [00:00<00:28,  3.48it/s, loss=6.43, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:   3%|▎         | 3/102 [00:00<00:20,  4.84it/s, loss=6.43, em_score=0.00732, f1_score=0.0517]Epoch 2:   3%|▎         | 3/102 [00:00<00:20,  4.84it/s, loss=6.39, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:   4%|▍         | 4/102 [00:00<00:16,  6.07it/s, loss=6.35, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:   5%|▍         | 5/102 [00:00<00:13,  7.17it/s, loss=6.32, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:   6%|▌         | 6/102 [00:00<00:11,  8.15it/s, loss=6.32, em_score=0.00732, f1_score=0.0517]Epoch 2:   6%|▌         | 6/102 [00:00<00:11,  8.15it/s, loss=6.27, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:   7%|▋         | 7/102 [00:00<00:10,  8.99it/s, loss=6.23, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:   8%|▊         | 8/102 [00:00<00:09,  9.79it/s, loss=6.22, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:   9%|▉         | 9/102 [00:00<00:08, 10.52it/s, loss=6.22, em_score=0.00732, f1_score=0.0517]Epoch 2:   9%|▉         | 9/102 [00:00<00:08, 10.51it/s, loss=6.2, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 2:  10%|▉         | 10/102 [00:00<00:08, 11.15it/s, loss=6.18, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  11%|█         | 11/102 [00:00<00:07, 11.73it/s, loss=6.17, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  12%|█▏        | 12/102 [00:00<00:07, 12.27it/s, loss=6.17, em_score=0.00732, f1_score=0.0517]Epoch 2:  12%|█▏        | 12/102 [00:00<00:07, 12.26it/s, loss=6.14, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  13%|█▎        | 13/102 [00:01<00:06, 12.76it/s, loss=6.09, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  14%|█▎        | 14/102 [00:01<00:06, 13.21it/s, loss=6.06, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  15%|█▍        | 15/102 [00:01<00:06, 13.63it/s, loss=6.06, em_score=0.00732, f1_score=0.0517]Epoch 2:  15%|█▍        | 15/102 [00:01<00:06, 13.63it/s, loss=6.01, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  16%|█▌        | 16/102 [00:01<00:06, 14.02it/s, loss=5.99, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  17%|█▋        | 17/102 [00:01<00:05, 14.37it/s, loss=5.99, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  18%|█▊        | 18/102 [00:01<00:05, 14.70it/s, loss=5.99, em_score=0.00732, f1_score=0.0517]Epoch 2:  18%|█▊        | 18/102 [00:01<00:05, 14.70it/s, loss=5.97, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  19%|█▊        | 19/102 [00:01<00:05, 15.00it/s, loss=5.97, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  20%|█▉        | 20/102 [00:01<00:05, 15.29it/s, loss=5.94, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  21%|██        | 21/102 [00:01<00:05, 15.56it/s, loss=5.94, em_score=0.00732, f1_score=0.0517]Epoch 2:  21%|██        | 21/102 [00:01<00:05, 15.55it/s, loss=5.95, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  22%|██▏       | 22/102 [00:01<00:05, 15.81it/s, loss=5.92, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  23%|██▎       | 23/102 [00:01<00:04, 16.05it/s, loss=5.91, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  24%|██▎       | 24/102 [00:01<00:04, 16.27it/s, loss=5.91, em_score=0.00732, f1_score=0.0517]Epoch 2:  24%|██▎       | 24/102 [00:01<00:04, 16.27it/s, loss=5.88, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  25%|██▍       | 25/102 [00:01<00:04, 16.48it/s, loss=5.85, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  25%|██▌       | 26/102 [00:01<00:04, 16.68it/s, loss=5.85, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  26%|██▋       | 27/102 [00:01<00:04, 16.87it/s, loss=5.85, em_score=0.00732, f1_score=0.0517]Epoch 2:  26%|██▋       | 27/102 [00:01<00:04, 16.87it/s, loss=5.83, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  27%|██▋       | 28/102 [00:01<00:04, 17.05it/s, loss=5.79, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  28%|██▊       | 29/102 [00:01<00:04, 17.22it/s, loss=5.79, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  29%|██▉       | 30/102 [00:01<00:04, 17.39it/s, loss=5.79, em_score=0.00732, f1_score=0.0517]Epoch 2:  29%|██▉       | 30/102 [00:01<00:04, 17.39it/s, loss=5.77, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  30%|███       | 31/102 [00:01<00:04, 17.55it/s, loss=5.75, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  31%|███▏      | 32/102 [00:01<00:03, 17.71it/s, loss=5.75, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  32%|███▏      | 33/102 [00:01<00:03, 17.86it/s, loss=5.75, em_score=0.00732, f1_score=0.0517]Epoch 2:  32%|███▏      | 33/102 [00:01<00:03, 17.86it/s, loss=5.74, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  33%|███▎      | 34/102 [00:01<00:03, 18.00it/s, loss=5.71, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  34%|███▍      | 35/102 [00:01<00:03, 18.14it/s, loss=5.69, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  35%|███▌      | 36/102 [00:01<00:03, 18.28it/s, loss=5.69, em_score=0.00732, f1_score=0.0517]Epoch 2:  35%|███▌      | 36/102 [00:01<00:03, 18.27it/s, loss=5.66, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  36%|███▋      | 37/102 [00:02<00:03, 18.40it/s, loss=5.63, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  37%|███▋      | 38/102 [00:02<00:03, 18.52it/s, loss=5.6, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 2:  38%|███▊      | 39/102 [00:02<00:03, 18.64it/s, loss=5.6, em_score=0.00732, f1_score=0.0517]Epoch 2:  38%|███▊      | 39/102 [00:02<00:03, 18.64it/s, loss=5.58, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  39%|███▉      | 40/102 [00:02<00:03, 18.74it/s, loss=5.56, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  40%|████      | 41/102 [00:02<00:03, 18.85it/s, loss=5.52, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  41%|████      | 42/102 [00:02<00:03, 18.95it/s, loss=5.52, em_score=0.00732, f1_score=0.0517]Epoch 2:  41%|████      | 42/102 [00:02<00:03, 18.95it/s, loss=5.5, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 2:  42%|████▏     | 43/102 [00:02<00:03, 19.05it/s, loss=5.47, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  43%|████▎     | 44/102 [00:02<00:03, 19.15it/s, loss=5.45, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  44%|████▍     | 45/102 [00:02<00:02, 19.25it/s, loss=5.45, em_score=0.00732, f1_score=0.0517]Epoch 2:  44%|████▍     | 45/102 [00:02<00:02, 19.24it/s, loss=5.45, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  45%|████▌     | 46/102 [00:02<00:02, 19.34it/s, loss=5.4, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 2:  46%|████▌     | 47/102 [00:02<00:02, 19.43it/s, loss=5.39, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  47%|████▋     | 48/102 [00:02<00:02, 19.52it/s, loss=5.39, em_score=0.00732, f1_score=0.0517]Epoch 2:  47%|████▋     | 48/102 [00:02<00:02, 19.51it/s, loss=5.39, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  48%|████▊     | 49/102 [00:02<00:02, 19.59it/s, loss=5.36, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  49%|████▉     | 50/102 [00:02<00:02, 19.67it/s, loss=5.36, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  50%|█████     | 51/102 [00:02<00:02, 19.75it/s, loss=5.36, em_score=0.00732, f1_score=0.0517]Epoch 2:  50%|█████     | 51/102 [00:02<00:02, 19.75it/s, loss=5.33, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  51%|█████     | 52/102 [00:02<00:02, 19.82it/s, loss=5.33, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  52%|█████▏    | 53/102 [00:02<00:02, 19.89it/s, loss=5.34, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  53%|█████▎    | 54/102 [00:02<00:02, 19.95it/s, loss=5.34, em_score=0.00732, f1_score=0.0517]Epoch 2:  53%|█████▎    | 54/102 [00:02<00:02, 19.95it/s, loss=5.32, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  54%|█████▍    | 55/102 [00:02<00:02, 20.02it/s, loss=5.31, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  55%|█████▍    | 56/102 [00:02<00:02, 20.08it/s, loss=5.29, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  56%|█████▌    | 57/102 [00:02<00:02, 20.14it/s, loss=5.29, em_score=0.00732, f1_score=0.0517]Epoch 2:  56%|█████▌    | 57/102 [00:02<00:02, 20.14it/s, loss=5.28, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  57%|█████▋    | 58/102 [00:02<00:02, 20.20it/s, loss=5.28, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  58%|█████▊    | 59/102 [00:02<00:02, 20.26it/s, loss=5.26, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  59%|█████▉    | 60/102 [00:02<00:02, 20.31it/s, loss=5.26, em_score=0.00732, f1_score=0.0517]Epoch 2:  59%|█████▉    | 60/102 [00:02<00:02, 20.31it/s, loss=5.27, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  60%|█████▉    | 61/102 [00:02<00:02, 20.36it/s, loss=5.26, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  61%|██████    | 62/102 [00:03<00:01, 20.41it/s, loss=5.25, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  62%|██████▏   | 63/102 [00:03<00:01, 20.47it/s, loss=5.25, em_score=0.00732, f1_score=0.0517]Epoch 2:  62%|██████▏   | 63/102 [00:03<00:01, 20.46it/s, loss=5.23, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  63%|██████▎   | 64/102 [00:03<00:01, 20.52it/s, loss=5.22, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  64%|██████▎   | 65/102 [00:03<00:01, 20.57it/s, loss=5.19, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  65%|██████▍   | 66/102 [00:03<00:01, 20.62it/s, loss=5.19, em_score=0.00732, f1_score=0.0517]Epoch 2:  65%|██████▍   | 66/102 [00:03<00:01, 20.62it/s, loss=5.19, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  66%|██████▌   | 67/102 [00:03<00:01, 20.67it/s, loss=5.17, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  67%|██████▋   | 68/102 [00:03<00:01, 20.72it/s, loss=5.16, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  68%|██████▊   | 69/102 [00:03<00:01, 20.77it/s, loss=5.16, em_score=0.00732, f1_score=0.0517]Epoch 2:  68%|██████▊   | 69/102 [00:03<00:01, 20.77it/s, loss=5.14, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  69%|██████▊   | 70/102 [00:03<00:01, 20.82it/s, loss=5.11, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  70%|██████▉   | 71/102 [00:03<00:01, 20.86it/s, loss=5.11, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  71%|███████   | 72/102 [00:03<00:01, 20.90it/s, loss=5.11, em_score=0.00732, f1_score=0.0517]Epoch 2:  71%|███████   | 72/102 [00:03<00:01, 20.90it/s, loss=5.09, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  72%|███████▏  | 73/102 [00:03<00:01, 20.94it/s, loss=5.05, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  73%|███████▎  | 74/102 [00:03<00:01, 20.98it/s, loss=5.03, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  74%|███████▎  | 75/102 [00:03<00:01, 21.02it/s, loss=5.03, em_score=0.00732, f1_score=0.0517]Epoch 2:  74%|███████▎  | 75/102 [00:03<00:01, 21.02it/s, loss=5.03, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  75%|███████▍  | 76/102 [00:03<00:01, 21.06it/s, loss=5.01, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  75%|███████▌  | 77/102 [00:03<00:01, 21.10it/s, loss=4.97, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  76%|███████▋  | 78/102 [00:03<00:01, 21.14it/s, loss=4.97, em_score=0.00732, f1_score=0.0517]Epoch 2:  76%|███████▋  | 78/102 [00:03<00:01, 21.14it/s, loss=4.96, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  77%|███████▋  | 79/102 [00:03<00:01, 21.17it/s, loss=4.93, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  78%|███████▊  | 80/102 [00:03<00:01, 21.21it/s, loss=4.91, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  79%|███████▉  | 81/102 [00:03<00:00, 21.24it/s, loss=4.91, em_score=0.00732, f1_score=0.0517]Epoch 2:  79%|███████▉  | 81/102 [00:03<00:00, 21.24it/s, loss=4.91, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  80%|████████  | 82/102 [00:03<00:00, 21.28it/s, loss=4.91, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  81%|████████▏ | 83/102 [00:03<00:00, 21.31it/s, loss=4.89, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  82%|████████▏ | 84/102 [00:03<00:00, 21.35it/s, loss=4.89, em_score=0.00732, f1_score=0.0517]Epoch 2:  82%|████████▏ | 84/102 [00:03<00:00, 21.35it/s, loss=4.88, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  83%|████████▎ | 85/102 [00:03<00:00, 21.38it/s, loss=4.88, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  84%|████████▍ | 86/102 [00:04<00:00, 21.42it/s, loss=4.88, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  85%|████████▌ | 87/102 [00:04<00:00, 21.45it/s, loss=4.88, em_score=0.00732, f1_score=0.0517]Epoch 2:  85%|████████▌ | 87/102 [00:04<00:00, 21.45it/s, loss=4.86, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  86%|████████▋ | 88/102 [00:04<00:00, 21.49it/s, loss=4.83, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 2:  87%|████████▋ | 89/102 [00:04<00:00, 21.12it/s, loss=4.83, em_score=0.00732, f1_score=0.0517]Epoch 2:  88%|████████▊ | 90/102 [00:04<00:00, 21.33it/s, loss=4.83, em_score=0.00732, f1_score=0.0517]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/13 [00:00<?, ?it/s][A
+Validating:   8%|▊         | 1/13 [00:01<00:12,  1.07s/it][A
+Validating:  15%|█▌        | 2/13 [00:01<00:08,  1.26it/s][A
+Validating:  23%|██▎       | 3/13 [00:02<00:07,  1.35it/s][AEpoch 2:  91%|█████████ | 93/102 [00:06<00:00, 14.16it/s, loss=4.83, em_score=0.00732, f1_score=0.0517]
+Validating:  31%|███       | 4/13 [00:02<00:06,  1.48it/s][A
+Validating:  38%|███▊      | 5/13 [00:03<00:05,  1.49it/s][A
+Validating:  46%|████▌     | 6/13 [00:04<00:04,  1.57it/s][AEpoch 2:  94%|█████████▍| 96/102 [00:08<00:00, 11.45it/s, loss=4.83, em_score=0.00732, f1_score=0.0517]
+Validating:  54%|█████▍    | 7/13 [00:04<00:03,  1.58it/s][A
+Validating:  62%|██████▏   | 8/13 [00:05<00:03,  1.65it/s][A
+Validating:  69%|██████▉   | 9/13 [00:05<00:02,  1.68it/s][AEpoch 2:  97%|█████████▋| 99/102 [00:10<00:00,  9.78it/s, loss=4.83, em_score=0.00732, f1_score=0.0517]
+Validating:  77%|███████▋  | 10/13 [00:06<00:01,  1.64it/s][A
+Validating:  85%|████████▍ | 11/13 [00:07<00:01,  1.62it/s][A
+Validating:  92%|█████████▏| 12/13 [00:07<00:00,  1.61it/s][AEpoch 2: 100%|██████████| 102/102 [00:12<00:00,  8.48it/s, loss=4.83, em_score=0.00732, f1_score=0.0517]
+Validating: 100%|██████████| 13/13 [00:08<00:00,  1.72it/s][AEpoch 2: 100%|██████████| 102/102 [00:12<00:00,  8.08it/s, loss=4.83, em_score=0.00732, f1_score=0.0517]
+                                                           [AEpoch 2:   0%|          | 0/102 [00:00<?, ?it/s, loss=4.83, em_score=0.00732, f1_score=0.0517]          Epoch 3:   0%|          | 0/102 [00:00<?, ?it/s, loss=4.83, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:   1%|          | 1/102 [00:00<00:51,  1.96it/s, loss=4.8, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:   2%|▏         | 2/102 [00:00<00:27,  3.61it/s, loss=4.76, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:   3%|▎         | 3/102 [00:00<00:19,  5.05it/s, loss=4.76, em_score=0.00732, f1_score=0.0517]Epoch 3:   3%|▎         | 3/102 [00:00<00:19,  5.04it/s, loss=4.75, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:   4%|▍         | 4/102 [00:00<00:15,  6.32it/s, loss=4.75, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:   5%|▍         | 5/102 [00:00<00:13,  7.45it/s, loss=4.75, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:   6%|▌         | 6/102 [00:00<00:11,  8.44it/s, loss=4.75, em_score=0.00732, f1_score=0.0517]Epoch 3:   6%|▌         | 6/102 [00:00<00:11,  8.43it/s, loss=4.73, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:   7%|▋         | 7/102 [00:00<00:10,  9.32it/s, loss=4.73, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:   8%|▊         | 8/102 [00:00<00:09, 10.13it/s, loss=4.74, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:   9%|▉         | 9/102 [00:00<00:08, 10.85it/s, loss=4.74, em_score=0.00732, f1_score=0.0517]Epoch 3:   9%|▉         | 9/102 [00:00<00:08, 10.84it/s, loss=4.71, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  10%|▉         | 10/102 [00:00<00:08, 11.49it/s, loss=4.7, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  11%|█         | 11/102 [00:00<00:07, 12.08it/s, loss=4.68, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  12%|█▏        | 12/102 [00:00<00:07, 12.62it/s, loss=4.68, em_score=0.00732, f1_score=0.0517]Epoch 3:  12%|█▏        | 12/102 [00:00<00:07, 12.62it/s, loss=4.67, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  13%|█▎        | 13/102 [00:00<00:06, 13.11it/s, loss=4.65, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  14%|█▎        | 14/102 [00:01<00:06, 13.56it/s, loss=4.64, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  15%|█▍        | 15/102 [00:01<00:06, 13.98it/s, loss=4.64, em_score=0.00732, f1_score=0.0517]Epoch 3:  15%|█▍        | 15/102 [00:01<00:06, 13.98it/s, loss=4.63, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  16%|█▌        | 16/102 [00:01<00:05, 14.37it/s, loss=4.61, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  17%|█▋        | 17/102 [00:01<00:05, 14.73it/s, loss=4.58, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  18%|█▊        | 18/102 [00:01<00:05, 15.06it/s, loss=4.58, em_score=0.00732, f1_score=0.0517]Epoch 3:  18%|█▊        | 18/102 [00:01<00:05, 15.06it/s, loss=4.61, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  19%|█▊        | 19/102 [00:01<00:05, 15.37it/s, loss=4.61, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  20%|█▉        | 20/102 [00:01<00:05, 15.68it/s, loss=4.59, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  21%|██        | 21/102 [00:01<00:05, 15.95it/s, loss=4.59, em_score=0.00732, f1_score=0.0517]Epoch 3:  21%|██        | 21/102 [00:01<00:05, 15.95it/s, loss=4.61, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  22%|██▏       | 22/102 [00:01<00:04, 16.21it/s, loss=4.6, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 3:  23%|██▎       | 23/102 [00:01<00:04, 16.45it/s, loss=4.59, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  24%|██▎       | 24/102 [00:01<00:04, 16.69it/s, loss=4.59, em_score=0.00732, f1_score=0.0517]Epoch 3:  24%|██▎       | 24/102 [00:01<00:04, 16.68it/s, loss=4.58, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  25%|██▍       | 25/102 [00:01<00:04, 16.90it/s, loss=4.56, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  25%|██▌       | 26/102 [00:01<00:04, 17.11it/s, loss=4.56, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  26%|██▋       | 27/102 [00:01<00:04, 17.31it/s, loss=4.56, em_score=0.00732, f1_score=0.0517]Epoch 3:  26%|██▋       | 27/102 [00:01<00:04, 17.31it/s, loss=4.58, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  27%|██▋       | 28/102 [00:01<00:04, 17.50it/s, loss=4.55, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  28%|██▊       | 29/102 [00:01<00:04, 17.68it/s, loss=4.54, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  29%|██▉       | 30/102 [00:01<00:04, 17.84it/s, loss=4.54, em_score=0.00732, f1_score=0.0517]Epoch 3:  29%|██▉       | 30/102 [00:01<00:04, 17.84it/s, loss=4.55, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  30%|███       | 31/102 [00:01<00:03, 18.00it/s, loss=4.56, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  31%|███▏      | 32/102 [00:01<00:03, 18.15it/s, loss=4.55, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  32%|███▏      | 33/102 [00:01<00:03, 18.30it/s, loss=4.55, em_score=0.00732, f1_score=0.0517]Epoch 3:  32%|███▏      | 33/102 [00:01<00:03, 18.30it/s, loss=4.55, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  33%|███▎      | 34/102 [00:01<00:03, 18.44it/s, loss=4.55, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  34%|███▍      | 35/102 [00:01<00:03, 18.57it/s, loss=4.56, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  35%|███▌      | 36/102 [00:01<00:03, 18.70it/s, loss=4.56, em_score=0.00732, f1_score=0.0517]Epoch 3:  35%|███▌      | 36/102 [00:01<00:03, 18.70it/s, loss=4.55, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  36%|███▋      | 37/102 [00:01<00:03, 18.82it/s, loss=4.55, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  37%|███▋      | 38/102 [00:02<00:03, 18.94it/s, loss=4.49, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  38%|███▊      | 39/102 [00:02<00:03, 19.06it/s, loss=4.49, em_score=0.00732, f1_score=0.0517]Epoch 3:  38%|███▊      | 39/102 [00:02<00:03, 19.06it/s, loss=4.48, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  39%|███▉      | 40/102 [00:02<00:03, 19.17it/s, loss=4.48, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  40%|████      | 41/102 [00:02<00:03, 19.28it/s, loss=4.45, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  41%|████      | 42/102 [00:02<00:03, 19.38it/s, loss=4.45, em_score=0.00732, f1_score=0.0517]Epoch 3:  41%|████      | 42/102 [00:02<00:03, 19.38it/s, loss=4.45, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  42%|████▏     | 43/102 [00:02<00:03, 19.48it/s, loss=4.44, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  43%|████▎     | 44/102 [00:02<00:02, 19.58it/s, loss=4.41, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  44%|████▍     | 45/102 [00:02<00:02, 19.67it/s, loss=4.41, em_score=0.00732, f1_score=0.0517]Epoch 3:  44%|████▍     | 45/102 [00:02<00:02, 19.66it/s, loss=4.39, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  45%|████▌     | 46/102 [00:02<00:02, 19.75it/s, loss=4.37, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  46%|████▌     | 47/102 [00:02<00:02, 19.84it/s, loss=4.35, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  47%|████▋     | 48/102 [00:02<00:02, 19.92it/s, loss=4.35, em_score=0.00732, f1_score=0.0517]Epoch 3:  47%|████▋     | 48/102 [00:02<00:02, 19.92it/s, loss=4.35, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  48%|████▊     | 49/102 [00:02<00:02, 20.00it/s, loss=4.34, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  49%|████▉     | 50/102 [00:02<00:02, 20.07it/s, loss=4.32, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  50%|█████     | 51/102 [00:02<00:02, 20.15it/s, loss=4.32, em_score=0.00732, f1_score=0.0517]Epoch 3:  50%|█████     | 51/102 [00:02<00:02, 20.15it/s, loss=4.29, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  51%|█████     | 52/102 [00:02<00:02, 20.22it/s, loss=4.29, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  52%|█████▏    | 53/102 [00:02<00:02, 20.28it/s, loss=4.27, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  53%|█████▎    | 54/102 [00:02<00:02, 20.35it/s, loss=4.27, em_score=0.00732, f1_score=0.0517]Epoch 3:  53%|█████▎    | 54/102 [00:02<00:02, 20.35it/s, loss=4.26, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  54%|█████▍    | 55/102 [00:02<00:02, 20.41it/s, loss=4.24, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  55%|█████▍    | 56/102 [00:02<00:02, 20.47it/s, loss=4.25, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  56%|█████▌    | 57/102 [00:02<00:02, 20.53it/s, loss=4.25, em_score=0.00732, f1_score=0.0517]Epoch 3:  56%|█████▌    | 57/102 [00:02<00:02, 20.52it/s, loss=4.26, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  57%|█████▋    | 58/102 [00:02<00:02, 20.58it/s, loss=4.27, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  58%|█████▊    | 59/102 [00:02<00:02, 20.63it/s, loss=4.25, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  59%|█████▉    | 60/102 [00:02<00:02, 20.68it/s, loss=4.25, em_score=0.00732, f1_score=0.0517]Epoch 3:  59%|█████▉    | 60/102 [00:02<00:02, 20.68it/s, loss=4.23, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  60%|█████▉    | 61/102 [00:02<00:01, 20.73it/s, loss=4.24, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  61%|██████    | 62/102 [00:02<00:01, 20.78it/s, loss=4.23, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  62%|██████▏   | 63/102 [00:03<00:01, 20.83it/s, loss=4.23, em_score=0.00732, f1_score=0.0517]Epoch 3:  62%|██████▏   | 63/102 [00:03<00:01, 20.83it/s, loss=4.23, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  63%|██████▎   | 64/102 [00:03<00:01, 20.88it/s, loss=4.24, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  64%|██████▎   | 65/102 [00:03<00:01, 20.93it/s, loss=4.24, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  65%|██████▍   | 66/102 [00:03<00:01, 20.97it/s, loss=4.24, em_score=0.00732, f1_score=0.0517]Epoch 3:  65%|██████▍   | 66/102 [00:03<00:01, 20.97it/s, loss=4.24, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  66%|██████▌   | 67/102 [00:03<00:01, 21.02it/s, loss=4.23, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  67%|██████▋   | 68/102 [00:03<00:01, 21.07it/s, loss=4.2, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 3:  68%|██████▊   | 69/102 [00:03<00:01, 21.11it/s, loss=4.2, em_score=0.00732, f1_score=0.0517]Epoch 3:  68%|██████▊   | 69/102 [00:03<00:01, 21.11it/s, loss=4.19, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  69%|██████▊   | 70/102 [00:03<00:01, 21.16it/s, loss=4.18, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  70%|██████▉   | 71/102 [00:03<00:01, 21.20it/s, loss=4.18, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  71%|███████   | 72/102 [00:03<00:01, 21.21it/s, loss=4.18, em_score=0.00732, f1_score=0.0517]Epoch 3:  71%|███████   | 72/102 [00:03<00:01, 21.21it/s, loss=4.15, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  72%|███████▏  | 73/102 [00:03<00:01, 21.22it/s, loss=4.15, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  73%|███████▎  | 74/102 [00:03<00:01, 21.26it/s, loss=4.15, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  74%|███████▎  | 75/102 [00:03<00:01, 21.30it/s, loss=4.15, em_score=0.00732, f1_score=0.0517]Epoch 3:  74%|███████▎  | 75/102 [00:03<00:01, 21.30it/s, loss=4.13, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  75%|███████▍  | 76/102 [00:03<00:01, 21.34it/s, loss=4.1, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 3:  75%|███████▌  | 77/102 [00:03<00:01, 21.35it/s, loss=4.08, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  76%|███████▋  | 78/102 [00:03<00:01, 21.37it/s, loss=4.08, em_score=0.00732, f1_score=0.0517]Epoch 3:  76%|███████▋  | 78/102 [00:03<00:01, 21.37it/s, loss=4.05, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  77%|███████▋  | 79/102 [00:03<00:01, 21.41it/s, loss=4.04, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  78%|███████▊  | 80/102 [00:03<00:01, 21.44it/s, loss=4.05, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  79%|███████▉  | 81/102 [00:03<00:00, 21.47it/s, loss=4.05, em_score=0.00732, f1_score=0.0517]Epoch 3:  79%|███████▉  | 81/102 [00:03<00:00, 21.47it/s, loss=4.04, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  80%|████████  | 82/102 [00:03<00:00, 21.50it/s, loss=4.03, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  81%|████████▏ | 83/102 [00:03<00:00, 21.54it/s, loss=4.01, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  82%|████████▏ | 84/102 [00:03<00:00, 21.57it/s, loss=4.01, em_score=0.00732, f1_score=0.0517]Epoch 3:  82%|████████▏ | 84/102 [00:03<00:00, 21.57it/s, loss=3.99, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  83%|████████▎ | 85/102 [00:03<00:00, 21.60it/s, loss=3.98, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  84%|████████▍ | 86/102 [00:03<00:00, 21.64it/s, loss=3.95, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  85%|████████▌ | 87/102 [00:04<00:00, 21.67it/s, loss=3.95, em_score=0.00732, f1_score=0.0517]Epoch 3:  85%|████████▌ | 87/102 [00:04<00:00, 21.67it/s, loss=3.94, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  86%|████████▋ | 88/102 [00:04<00:00, 21.70it/s, loss=3.94, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 3:  87%|████████▋ | 89/102 [00:04<00:00, 21.30it/s, loss=3.95, em_score=0.00732, f1_score=0.0517]Epoch 3:  88%|████████▊ | 90/102 [00:04<00:00, 21.51it/s, loss=3.95, em_score=0.00732, f1_score=0.0517]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/13 [00:00<?, ?it/s][A
+Validating:   8%|▊         | 1/13 [00:01<00:13,  1.11s/it][A
+Validating:  15%|█▌        | 2/13 [00:01<00:08,  1.23it/s][A
+Validating:  23%|██▎       | 3/13 [00:02<00:07,  1.33it/s][AEpoch 3:  91%|█████████ | 93/102 [00:06<00:00, 14.13it/s, loss=3.95, em_score=0.00732, f1_score=0.0517]
+Validating:  31%|███       | 4/13 [00:02<00:06,  1.46it/s][A
+Validating:  38%|███▊      | 5/13 [00:03<00:05,  1.47it/s][A
+Validating:  46%|████▌     | 6/13 [00:04<00:04,  1.55it/s][AEpoch 3:  94%|█████████▍| 96/102 [00:08<00:00, 11.41it/s, loss=3.95, em_score=0.00732, f1_score=0.0517]
+Validating:  54%|█████▍    | 7/13 [00:04<00:03,  1.57it/s][A
+Validating:  62%|██████▏   | 8/13 [00:05<00:03,  1.65it/s][A
+Validating:  69%|██████▉   | 9/13 [00:05<00:02,  1.67it/s][AEpoch 3:  97%|█████████▋| 99/102 [00:10<00:00,  9.75it/s, loss=3.95, em_score=0.00732, f1_score=0.0517]
+Validating:  77%|███████▋  | 10/13 [00:06<00:01,  1.62it/s][A
+Validating:  85%|████████▍ | 11/13 [00:07<00:01,  1.59it/s][A
+Validating:  92%|█████████▏| 12/13 [00:07<00:00,  1.58it/s][AEpoch 3: 100%|██████████| 102/102 [00:12<00:00,  8.42it/s, loss=3.95, em_score=0.00732, f1_score=0.0517]
+Validating: 100%|██████████| 13/13 [00:08<00:00,  1.68it/s][AEpoch 3: 100%|██████████| 102/102 [00:12<00:00,  8.02it/s, loss=3.95, em_score=0.00732, f1_score=0.0517]
+                                                           [AEpoch 3:   0%|          | 0/102 [00:00<?, ?it/s, loss=3.95, em_score=0.00732, f1_score=0.0517]          Epoch 4:   0%|          | 0/102 [00:00<?, ?it/s, loss=3.95, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:   1%|          | 1/102 [00:00<00:55,  1.81it/s, loss=3.92, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:   2%|▏         | 2/102 [00:00<00:29,  3.35it/s, loss=3.93, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:   3%|▎         | 3/102 [00:00<00:21,  4.68it/s, loss=3.93, em_score=0.00732, f1_score=0.0517]Epoch 4:   3%|▎         | 3/102 [00:00<00:21,  4.68it/s, loss=3.93, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:   4%|▍         | 4/102 [00:00<00:16,  5.89it/s, loss=3.91, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:   5%|▍         | 5/102 [00:00<00:13,  6.97it/s, loss=3.9, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 4:   6%|▌         | 6/102 [00:00<00:12,  7.93it/s, loss=3.9, em_score=0.00732, f1_score=0.0517]Epoch 4:   6%|▌         | 6/102 [00:00<00:12,  7.93it/s, loss=3.88, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:   7%|▋         | 7/102 [00:00<00:10,  8.77it/s, loss=3.87, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:   8%|▊         | 8/102 [00:00<00:09,  9.56it/s, loss=3.85, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:   9%|▉         | 9/102 [00:00<00:09, 10.26it/s, loss=3.85, em_score=0.00732, f1_score=0.0517]Epoch 4:   9%|▉         | 9/102 [00:00<00:09, 10.25it/s, loss=3.89, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  10%|▉         | 10/102 [00:00<00:08, 10.89it/s, loss=3.86, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  11%|█         | 11/102 [00:00<00:07, 11.48it/s, loss=3.85, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  12%|█▏        | 12/102 [00:00<00:07, 12.01it/s, loss=3.85, em_score=0.00732, f1_score=0.0517]Epoch 4:  12%|█▏        | 12/102 [00:00<00:07, 12.01it/s, loss=3.83, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  13%|█▎        | 13/102 [00:01<00:07, 12.50it/s, loss=3.82, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  14%|█▎        | 14/102 [00:01<00:06, 12.96it/s, loss=3.83, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  15%|█▍        | 15/102 [00:01<00:06, 13.38it/s, loss=3.83, em_score=0.00732, f1_score=0.0517]Epoch 4:  15%|█▍        | 15/102 [00:01<00:06, 13.38it/s, loss=3.8, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 4:  16%|█▌        | 16/102 [00:01<00:06, 13.78it/s, loss=3.81, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  17%|█▋        | 17/102 [00:01<00:06, 14.14it/s, loss=3.83, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  18%|█▊        | 18/102 [00:01<00:05, 14.49it/s, loss=3.83, em_score=0.00732, f1_score=0.0517]Epoch 4:  18%|█▊        | 18/102 [00:01<00:05, 14.49it/s, loss=3.82, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  19%|█▊        | 19/102 [00:01<00:05, 14.81it/s, loss=3.81, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  20%|█▉        | 20/102 [00:01<00:05, 15.11it/s, loss=3.77, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  21%|██        | 21/102 [00:01<00:05, 15.39it/s, loss=3.77, em_score=0.00732, f1_score=0.0517]Epoch 4:  21%|██        | 21/102 [00:01<00:05, 15.39it/s, loss=3.78, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  22%|██▏       | 22/102 [00:01<00:05, 15.67it/s, loss=3.76, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  23%|██▎       | 23/102 [00:01<00:04, 15.92it/s, loss=3.76, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  24%|██▎       | 24/102 [00:01<00:04, 16.15it/s, loss=3.76, em_score=0.00732, f1_score=0.0517]Epoch 4:  24%|██▎       | 24/102 [00:01<00:04, 16.15it/s, loss=3.74, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  25%|██▍       | 25/102 [00:01<00:04, 16.38it/s, loss=3.72, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  25%|██▌       | 26/102 [00:01<00:04, 16.59it/s, loss=3.73, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  26%|██▋       | 27/102 [00:01<00:04, 16.80it/s, loss=3.73, em_score=0.00732, f1_score=0.0517]Epoch 4:  26%|██▋       | 27/102 [00:01<00:04, 16.80it/s, loss=3.74, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  27%|██▋       | 28/102 [00:01<00:04, 16.99it/s, loss=3.74, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  28%|██▊       | 29/102 [00:01<00:04, 17.17it/s, loss=3.71, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  29%|██▉       | 30/102 [00:01<00:04, 17.35it/s, loss=3.71, em_score=0.00732, f1_score=0.0517]Epoch 4:  29%|██▉       | 30/102 [00:01<00:04, 17.35it/s, loss=3.73, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  30%|███       | 31/102 [00:01<00:04, 17.52it/s, loss=3.71, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  31%|███▏      | 32/102 [00:01<00:03, 17.68it/s, loss=3.7, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 4:  32%|███▏      | 33/102 [00:01<00:03, 17.83it/s, loss=3.7, em_score=0.00732, f1_score=0.0517]Epoch 4:  32%|███▏      | 33/102 [00:01<00:03, 17.83it/s, loss=3.71, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  33%|███▎      | 34/102 [00:01<00:03, 17.98it/s, loss=3.7, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 4:  34%|███▍      | 35/102 [00:01<00:03, 18.12it/s, loss=3.7, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  35%|███▌      | 36/102 [00:01<00:03, 18.25it/s, loss=3.7, em_score=0.00732, f1_score=0.0517]Epoch 4:  35%|███▌      | 36/102 [00:01<00:03, 18.25it/s, loss=3.7, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  36%|███▋      | 37/102 [00:02<00:03, 18.38it/s, loss=3.68, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  37%|███▋      | 38/102 [00:02<00:03, 18.51it/s, loss=3.65, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  38%|███▊      | 39/102 [00:02<00:03, 18.63it/s, loss=3.65, em_score=0.00732, f1_score=0.0517]Epoch 4:  38%|███▊      | 39/102 [00:02<00:03, 18.63it/s, loss=3.65, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  39%|███▉      | 40/102 [00:02<00:03, 18.74it/s, loss=3.66, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  40%|████      | 41/102 [00:02<00:03, 18.85it/s, loss=3.66, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  41%|████      | 42/102 [00:02<00:03, 18.96it/s, loss=3.66, em_score=0.00732, f1_score=0.0517]Epoch 4:  41%|████      | 42/102 [00:02<00:03, 18.96it/s, loss=3.64, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  42%|████▏     | 43/102 [00:02<00:03, 19.06it/s, loss=3.64, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  43%|████▎     | 44/102 [00:02<00:03, 19.16it/s, loss=3.64, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  44%|████▍     | 45/102 [00:02<00:02, 19.25it/s, loss=3.64, em_score=0.00732, f1_score=0.0517]Epoch 4:  44%|████▍     | 45/102 [00:02<00:02, 19.25it/s, loss=3.65, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  45%|████▌     | 46/102 [00:02<00:02, 19.35it/s, loss=3.65, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  46%|████▌     | 47/102 [00:02<00:02, 19.43it/s, loss=3.63, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  47%|████▋     | 48/102 [00:02<00:02, 19.52it/s, loss=3.63, em_score=0.00732, f1_score=0.0517]Epoch 4:  47%|████▋     | 48/102 [00:02<00:02, 19.52it/s, loss=3.63, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  48%|████▊     | 49/102 [00:02<00:02, 19.61it/s, loss=3.62, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  49%|████▉     | 50/102 [00:02<00:02, 19.69it/s, loss=3.61, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  50%|█████     | 51/102 [00:02<00:02, 19.77it/s, loss=3.61, em_score=0.00732, f1_score=0.0517]Epoch 4:  50%|█████     | 51/102 [00:02<00:02, 19.77it/s, loss=3.59, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  51%|█████     | 52/102 [00:02<00:02, 19.84it/s, loss=3.59, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  52%|█████▏    | 53/102 [00:02<00:02, 19.92it/s, loss=3.56, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  53%|█████▎    | 54/102 [00:02<00:02, 19.99it/s, loss=3.56, em_score=0.00732, f1_score=0.0517]Epoch 4:  53%|█████▎    | 54/102 [00:02<00:02, 19.99it/s, loss=3.57, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  54%|█████▍    | 55/102 [00:02<00:02, 20.06it/s, loss=3.57, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  55%|█████▍    | 56/102 [00:02<00:02, 20.12it/s, loss=3.56, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  56%|█████▌    | 57/102 [00:02<00:02, 20.19it/s, loss=3.56, em_score=0.00732, f1_score=0.0517]Epoch 4:  56%|█████▌    | 57/102 [00:02<00:02, 20.19it/s, loss=3.57, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  57%|█████▋    | 58/102 [00:02<00:02, 20.25it/s, loss=3.61, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  58%|█████▊    | 59/102 [00:02<00:02, 20.31it/s, loss=3.58, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  59%|█████▉    | 60/102 [00:02<00:02, 20.37it/s, loss=3.58, em_score=0.00732, f1_score=0.0517]Epoch 4:  59%|█████▉    | 60/102 [00:02<00:02, 20.37it/s, loss=3.6, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 4:  60%|█████▉    | 61/102 [00:02<00:02, 20.43it/s, loss=3.59, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  61%|██████    | 62/102 [00:03<00:01, 20.48it/s, loss=3.59, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  62%|██████▏   | 63/102 [00:03<00:01, 20.54it/s, loss=3.59, em_score=0.00732, f1_score=0.0517]Epoch 4:  62%|██████▏   | 63/102 [00:03<00:01, 20.54it/s, loss=3.59, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  63%|██████▎   | 64/102 [00:03<00:01, 20.59it/s, loss=3.59, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  64%|██████▎   | 65/102 [00:03<00:01, 20.64it/s, loss=3.58, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  65%|██████▍   | 66/102 [00:03<00:01, 20.70it/s, loss=3.58, em_score=0.00732, f1_score=0.0517]Epoch 4:  65%|██████▍   | 66/102 [00:03<00:01, 20.69it/s, loss=3.58, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  66%|██████▌   | 67/102 [00:03<00:01, 20.74it/s, loss=3.57, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  67%|██████▋   | 68/102 [00:03<00:01, 20.79it/s, loss=3.59, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  68%|██████▊   | 69/102 [00:03<00:01, 20.84it/s, loss=3.59, em_score=0.00732, f1_score=0.0517]Epoch 4:  68%|██████▊   | 69/102 [00:03<00:01, 20.84it/s, loss=3.59, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  69%|██████▊   | 70/102 [00:03<00:01, 20.88it/s, loss=3.59, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  70%|██████▉   | 71/102 [00:03<00:01, 20.93it/s, loss=3.61, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  71%|███████   | 72/102 [00:03<00:01, 20.97it/s, loss=3.61, em_score=0.00732, f1_score=0.0517]Epoch 4:  71%|███████   | 72/102 [00:03<00:01, 20.96it/s, loss=3.61, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  72%|███████▏  | 73/102 [00:03<00:01, 21.01it/s, loss=3.6, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 4:  73%|███████▎  | 74/102 [00:03<00:01, 21.05it/s, loss=3.6, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  74%|███████▎  | 75/102 [00:03<00:01, 21.09it/s, loss=3.6, em_score=0.00732, f1_score=0.0517]Epoch 4:  74%|███████▎  | 75/102 [00:03<00:01, 21.09it/s, loss=3.6, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  75%|███████▍  | 76/102 [00:03<00:01, 21.13it/s, loss=3.58, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  75%|███████▌  | 77/102 [00:03<00:01, 21.17it/s, loss=3.57, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  76%|███████▋  | 78/102 [00:03<00:01, 21.20it/s, loss=3.57, em_score=0.00732, f1_score=0.0517]Epoch 4:  76%|███████▋  | 78/102 [00:03<00:01, 21.20it/s, loss=3.54, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  77%|███████▋  | 79/102 [00:03<00:01, 21.24it/s, loss=3.57, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  78%|███████▊  | 80/102 [00:03<00:01, 21.27it/s, loss=3.57, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  79%|███████▉  | 81/102 [00:03<00:00, 21.31it/s, loss=3.57, em_score=0.00732, f1_score=0.0517]Epoch 4:  79%|███████▉  | 81/102 [00:03<00:00, 21.31it/s, loss=3.58, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  80%|████████  | 82/102 [00:03<00:00, 21.34it/s, loss=3.59, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  81%|████████▏ | 83/102 [00:03<00:00, 21.38it/s, loss=3.59, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  82%|████████▏ | 84/102 [00:03<00:00, 21.42it/s, loss=3.59, em_score=0.00732, f1_score=0.0517]Epoch 4:  82%|████████▏ | 84/102 [00:03<00:00, 21.41it/s, loss=3.59, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  83%|████████▎ | 85/102 [00:03<00:00, 21.45it/s, loss=3.6, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 4:  84%|████████▍ | 86/102 [00:04<00:00, 21.48it/s, loss=3.57, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  85%|████████▌ | 87/102 [00:04<00:00, 21.51it/s, loss=3.57, em_score=0.00732, f1_score=0.0517]Epoch 4:  85%|████████▌ | 87/102 [00:04<00:00, 21.51it/s, loss=3.56, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  86%|████████▋ | 88/102 [00:04<00:00, 21.54it/s, loss=3.54, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 4:  87%|████████▋ | 89/102 [00:04<00:00, 21.10it/s, loss=3.52, em_score=0.00732, f1_score=0.0517]Epoch 4:  88%|████████▊ | 90/102 [00:04<00:00, 21.31it/s, loss=3.52, em_score=0.00732, f1_score=0.0517]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/13 [00:00<?, ?it/s][A
+Validating:   8%|▊         | 1/13 [00:01<00:13,  1.09s/it][A
+Validating:  15%|█▌        | 2/13 [00:01<00:08,  1.24it/s][A
+Validating:  23%|██▎       | 3/13 [00:02<00:07,  1.33it/s][AEpoch 4:  91%|█████████ | 93/102 [00:06<00:00, 14.07it/s, loss=3.52, em_score=0.00732, f1_score=0.0517]
+Validating:  31%|███       | 4/13 [00:02<00:06,  1.46it/s][A
+Validating:  38%|███▊      | 5/13 [00:03<00:05,  1.47it/s][A
+Validating:  46%|████▌     | 6/13 [00:04<00:04,  1.55it/s][AEpoch 4:  94%|█████████▍| 96/102 [00:08<00:00, 11.37it/s, loss=3.52, em_score=0.00732, f1_score=0.0517]
+Validating:  54%|█████▍    | 7/13 [00:04<00:03,  1.57it/s][A
+Validating:  62%|██████▏   | 8/13 [00:05<00:03,  1.65it/s][A
+Validating:  69%|██████▉   | 9/13 [00:05<00:02,  1.68it/s][AEpoch 4:  97%|█████████▋| 99/102 [00:10<00:00,  9.73it/s, loss=3.52, em_score=0.00732, f1_score=0.0517]
+Validating:  77%|███████▋  | 10/13 [00:06<00:01,  1.64it/s][A
+Validating:  85%|████████▍ | 11/13 [00:07<00:01,  1.62it/s][A
+Validating:  92%|█████████▏| 12/13 [00:07<00:00,  1.60it/s][AEpoch 4: 100%|██████████| 102/102 [00:12<00:00,  8.43it/s, loss=3.52, em_score=0.00732, f1_score=0.0517]
+Validating: 100%|██████████| 13/13 [00:08<00:00,  1.70it/s][AEpoch 4: 100%|██████████| 102/102 [00:12<00:00,  8.04it/s, loss=3.52, em_score=0.00732, f1_score=0.0517]
+                                                           [AEpoch 4:   0%|          | 0/102 [00:00<?, ?it/s, loss=3.52, em_score=0.00732, f1_score=0.0517]          Epoch 5:   0%|          | 0/102 [00:00<?, ?it/s, loss=3.52, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 5:   1%|          | 1/102 [00:00<01:15,  1.34it/s, loss=3.51, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 5:   2%|▏         | 2/102 [00:00<00:39,  2.52it/s, loss=3.5, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 5:   3%|▎         | 3/102 [00:00<00:27,  3.58it/s, loss=3.5, em_score=0.00732, f1_score=0.0517]Epoch 5:   3%|▎         | 3/102 [00:00<00:27,  3.58it/s, loss=3.51, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 5:   4%|▍         | 4/102 [00:00<00:21,  4.55it/s, loss=3.51, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 5:   5%|▍         | 5/102 [00:00<00:17,  5.43it/s, loss=3.52, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 5:   6%|▌         | 6/102 [00:00<00:15,  6.24it/s, loss=3.52, em_score=0.00732, f1_score=0.0517]Epoch 5:   6%|▌         | 6/102 [00:00<00:15,  6.23it/s, loss=3.51, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 5:   7%|▋         | 7/102 [00:01<00:13,  6.96it/s, loss=3.51, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 5:   8%|▊         | 8/102 [00:01<00:12,  7.62it/s, loss=3.51, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 5:   9%|▉         | 9/102 [00:01<00:11,  8.23it/s, loss=3.51, em_score=0.00732, f1_score=0.0517]Epoch 5:   9%|▉         | 9/102 [00:01<00:11,  8.23it/s, loss=3.5, em_score=0.00732, f1_score=0.0517] Adapter forward()
+Epoch 5:  10%|▉         | 10/102 [00:01<00:10,  8.80it/s, loss=3.47, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 5:  11%|█         | 11/102 [00:01<00:09,  9.32it/s, loss=3.45, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 5:  12%|█▏        | 12/102 [00:01<00:09,  9.80it/s, loss=3.45, em_score=0.00732, f1_score=0.0517]Epoch 5:  12%|█▏        | 12/102 [00:01<00:09,  9.80it/s, loss=3.44, em_score=0.00732, f1_score=0.0517]Adapter forward()
+Epoch 5:  13%|█▎        | 13/102 [00:01<00:08, 10.25it/s, loss=3.43, em_score=0.00732, f1_score=0.0517]slurmstepd: error: *** JOB 5903682 ON g3074 CANCELLED AT 2022-08-22T22:07:57 ***

@@ -1,0 +1,219 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.1
+    framework: huggingface
+    huggingface_version: 4.12.3
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    m:
+    - 1: em_score
+      6:
+      - 3
+      7:
+      - 2
+    - 1: f1_score
+      6:
+      - 3
+      7:
+      - 2
+    - 1: trainer/global_step
+      6:
+      - 3
+    - 1: table_key._type
+      5: 3
+      6:
+      - 1
+    - 1: table_key.sha256
+      5: 3
+      6:
+      - 1
+    - 1: table_key.size
+      5: 3
+      6:
+      - 1
+    - 1: table_key.artifact_path
+      5: 3
+      6:
+      - 1
+    - 1: table_key._latest_artifact_path
+      5: 3
+      6:
+      - 1
+    - 1: table_key.path
+      5: 3
+      6:
+      - 1
+    - 1: table_key.ncols
+      5: 3
+      6:
+      - 1
+    - 1: table_key.nrows
+      5: 3
+      6:
+      - 1
+    - 1: learning rate/pg1
+      5: 3
+      6:
+      - 1
+    - 1: learning rate/pg2
+      5: 3
+      6:
+      - 1
+    - 1: loss
+      5: 3
+      6:
+      - 1
+    - 1: epoch
+      5: 3
+      6:
+      - 1
+    python_version: 3.8.13
+    start_time: 1660893175.00832
+    t:
+      1:
+      - 1
+      - 9
+      - 11
+      - 41
+      - 49
+      - 51
+      - 55
+      2:
+      - 1
+      - 9
+      - 11
+      - 41
+      - 49
+      - 51
+      - 55
+      3:
+      - 7
+      - 13
+      - 16
+      - 23
+      - 37
+      4: 3.8.13
+      5: 0.13.1
+      6: 4.12.3
+      8:
+      - 5
+accelerator:
+  desc: null
+  value: ddp
+adam_epsilon:
+  desc: null
+  value: 1.0e-08
+check_validation_only:
+  desc: null
+  value: false
+checkpoint_path:
+  desc: null
+  value: ''
+dataset:
+  desc: null
+  value: templama
+dataset_version:
+  desc: null
+  value: '2010'
+early_stop_callback:
+  desc: null
+  value: false
+eval_batch_size:
+  desc: null
+  value: 32
+freeze_embeds:
+  desc: null
+  value: false
+freeze_encoder:
+  desc: null
+  value: false
+freeze_level:
+  desc: null
+  value: 1
+learning_rate:
+  desc: null
+  value: 0.003
+max_grad_norm:
+  desc: null
+  value: 0.5
+max_input_length:
+  desc: null
+  value: 50
+max_output_length:
+  desc: null
+  value: 25
+method:
+  desc: null
+  value: kadapter
+mode:
+  desc: null
+  value: pretrain
+model_name_or_path:
+  desc: null
+  value: google/t5-small-ssm
+n_gpu:
+  desc: null
+  value: 1
+n_test:
+  desc: null
+  value: -1
+n_train:
+  desc: null
+  value: -1
+n_val:
+  desc: null
+  value: -1
+num_train_epochs:
+  desc: null
+  value: 30
+num_workers:
+  desc: null
+  value: 4
+opt_level:
+  desc: null
+  value: O1
+output_dir:
+  desc: null
+  value: outputs/T5_small_templama(2010)_lr.001_adapters_prefixed
+output_log:
+  desc: null
+  value: None
+prefix:
+  desc: null
+  value: true
+resume_from_checkpoint:
+  desc: null
+  value: None
+seed:
+  desc: null
+  value: 42
+split:
+  desc: null
+  value: 0
+split_num:
+  desc: null
+  value: 1
+tokenizer_name_or_path:
+  desc: null
+  value: google/t5-small-ssm
+train_batch_size:
+  desc: null
+  value: 32
+use_deepspeed:
+  desc: null
+  value: false
+use_lr_scheduling:
+  desc: null
+  value: true
+val_check_interval:
+  desc: null
+  value: 1.0
+warmup_steps:
+  desc: null
+  value: 0
+weight_decay:
+  desc: null
+  value: 0.0

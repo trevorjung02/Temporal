@@ -1,0 +1,53 @@
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory outputs/T5_small_templama(2010)_lr.001_adapters_prefixed exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+Traceback (most recent call last):
+  File "run.py", line 164, in <module>
+    model = Model(args)
+  File "/mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/models/T5_Model.py", line 47, in __init__
+    self.model = T5_Kadapter.from_pretrained(hparams.model_name_or_path)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/transformers/modeling_utils.py", line 1402, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/models/Kadapter_T5.py", line 1521, in __init__
+    self.kadapter = AdapterModel(encoder_config)
+  File "/mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/models/Kadapter_T5.py", line 1840, in __init__
+    [Adapter(self.config) for i in range(self.adapter_num)]
+  File "/mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/models/Kadapter_T5.py", line 1840, in <listcomp>
+    [Adapter(self.config) for i in range(self.adapter_num)]
+  File "/mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/models/Kadapter_T5.py", line 1813, in __init__
+    self.init_weights()
+  File "/mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/models/Kadapter_T5.py", line 1822, in init_weights
+    self.down_project.weight.data.normal_(mean=0.0, std=self.adapter_config.adapter_initializer_range)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/transformers/configuration_utils.py", line 237, in __getattribute__
+    return super().__getattribute__(key)
+AttributeError: 'T5Config' object has no attribute 'adapter_initializer_range'
+Namespace(accelerator='ddp', adam_epsilon=1e-08, check_validation_only=False, checkpoint_path='', dataset='templama', dataset_version='2010', early_stop_callback=False, eval_batch_size=32, freeze_embeds=False, freeze_encoder=False, freeze_level=2, learning_rate=0.001, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='kadapter', mode='pretrain', model_name_or_path='google/t5-small-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=120, num_workers=4, opt_level='O1', output_dir='outputs/T5_small_templama(2010)_lr.001_adapters_prefixed', output_log=None, prefix=True, project_hidden_size=128, resume_from_checkpoint=None, seed=42, split=0, split_num=1, tokenizer_name_or_path='google/t5-small-ssm', train_batch_size=32, use_deepspeed=False, use_lr_scheduling=True, val_check_interval=1.0, wandb_log=True, warmup_steps=0, weight_decay=0.0)
+T5Config {
+  "_name_or_path": "google/t5-small-ssm",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 1024,
+  "d_kv": 64,
+  "d_model": 512,
+  "decoder_start_token_id": 0,
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "num_decoder_layers": 8,
+  "num_heads": 6,
+  "num_layers": 8,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_num_buckets": 32,
+  "tie_word_embeddings": false,
+  "transformers_version": "4.12.3",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+adapter_list = [1, 5, 8]

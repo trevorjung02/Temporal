@@ -1,6 +1,7 @@
 import argparse
 from argparse import ArgumentParser
 import os
+import re
 import json
 import random
 from evaluation import evaluate
@@ -9,20 +10,15 @@ import torch
 import pytorch_lightning as pl
 from pytorch_lightning.loggers import WandbLogger
 from models import load_model
+import wandb
 
 from Datasets import Pretrain
 from pytorch_lightning.callbacks.model_checkpoint import ModelCheckpoint
 
-def set_seed(seed):
-    random.seed(seed)
-    np.random.seed(seed)
-    torch.manual_seed(seed)
-    if torch.cuda.is_available():
-        torch.cuda.manual_seed_all(seed)
-
 if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument('--config', default=None, type=str)
+    parser.add_argument('-datav', type=str)
     arg_ = parser.parse_args()
     if arg_.config == None:
         raise NameError("Include a config file in the argument please.")
@@ -36,12 +32,6 @@ if __name__ == '__main__':
     os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"
     os.environ["CUDA_VISIBLE_DEVICES"]=hparam.CUDA_VISIBLE_DEVICES
 
-    #Logging into WANDB if needed
-    if hparam.wandb_log:
-        wandb_logger = WandbLogger(project=hparam.wandb_project, name=hparam.wandb_run_name)
-    else:
-        wandb_logger = None
-
     #Init configs that are not given
     if 'split_num' not in hparam:
         hparam.split_num = 1
@@ -53,12 +43,21 @@ if __name__ == '__main__':
         hparam.weight_decay = 0.0
     if 'output_log' not in hparam:
         hparam.output_log = None
+    if 'prefix' not in hparam:
+        hparam.prefix = None
+    if 't5_learning_rate' not in hparam:
+        hparam.t5_learning_rate = None
+    if 'checkpoint_dir' not in hparam:
+        hparam.checkpoint_dir = None
+    if 'adapter_enc_dec' not in hparam:
+        hparam.adapter_enc_dec = None
         
     #Setting configurations
-    args_dict = dict(
+    args = dict(
         output_dir=hparam.output_dir, # Path to save the checkpoints
         dataset=hparam.dataset,
         dataset_version = hparam.dataset_version,
+        prefix = hparam.prefix,
         split_num = hparam.split_num,
         split = hparam.split,
         model_name_or_path=hparam.model,
@@ -77,7 +76,6 @@ if __name__ == '__main__':
         train_batch_size=hparam.train_batch_size,
         eval_batch_size=hparam.train_batch_size,
         num_train_epochs=hparam.num_train_epochs,
-        gradient_accumulation_steps=hparam.gradient_accumulation_steps,
         n_gpu=hparam.ngpu,
         num_workers=hparam.num_workers,
         resume_from_checkpoint=hparam.resume_from_checkpoint, 
@@ -95,16 +93,66 @@ if __name__ == '__main__':
         checkpoint_path=hparam.checkpoint_path,
         accelerator=hparam.accelerator,
         output_log=hparam.output_log,
+        wandb_log = hparam.wandb_log,
+        adapter_list = hparam.adapter_list,
+        adapter_hidden_size = hparam.adapter_hidden_size,
+        t5_learning_rate = hparam.t5_learning_rate,
+        checkpoint_dir = hparam.checkpoint_dir,
+        adapter_enc_dec = hparam.adapter_enc_dec
     )
-    args = argparse.Namespace(**args_dict)
+    if arg_.datav is not None:
+        args['dataset_version'] = arg_.datav
 
-    # Defining how to save model checkpoints during training. Details: https://pytorch-lightning.readthedocs.io/en/stable/api/pytorch_lightning.callbacks.model_checkpoint.html 
-    callbacks = [ModelCheckpoint(dirpath = args.output_dir, save_top_k=-1, period=1)]
-    checkpoint_callback = True
+
+    #Logging into WANDB if needed
+    if hparam.wandb_log:
+        wandb.init(project=hparam.wandb_project, name=f"{hparam.method}_{args['dataset_version']}" , config=args, settings=wandb.Settings(start_method="fork"))
+        wandb_logger = WandbLogger(project=hparam.wandb_project)
+        wandb.define_metric("em_score", summary="max")
+        wandb.define_metric("f1_score", summary="max")
+
+        args = wandb.config.as_dict()
+    else:
+        wandb_logger = None 
+
+    args = argparse.Namespace(**args)
+    args.adapter_config = {'adapter_list': args.adapter_list, 'adapter_hidden_size': args.adapter_hidden_size, 'adapter_enc_dec': args.adapter_enc_dec}
 
     if args.output_dir=="":
         checkpoint_callback = False # Do not save model checkpoints when output dir is empty
         callbacks=[]
+    else:
+        args.output_dir += args.method
+        args.output_dir += '_' + str(args.dataset_version)
+        args.output_dir += '_' + str(args.freeze_level) + 'freeze'
+        args.output_dir += '_' + ''.join(map(str, args.adapter_list))
+        args.output_dir += '_' + str(args.adapter_hidden_size)
+        if args.adapter_enc_dec:
+            args.output_dir += '_' + 'encdec'
+        callbacks = [ModelCheckpoint(dirpath = args.output_dir, filename = '{epoch}-{f1_score:.3f}-{em_score:.3f}', save_top_k=1, period=1, mode="max", monitor="em_score")]
+    checkpoint_callback = True
+
+    if args.checkpoint_dir is not None:
+        args.checkpoint_dir += args.method
+        args.checkpoint_dir += '_' + str(args.dataset_version)
+        args.checkpoint_dir += '_' + '2freeze'
+        args.checkpoint_dir += '_' + ''.join(map(str, args.adapter_list))
+        args.checkpoint_dir += '_' + str(args.adapter_hidden_size)
+        pattern = 'em_score=(\d.\d*)'
+        checkpoint_path = None
+        max_em = 0
+        for filename in os.listdir(args.checkpoint_dir):
+            f = os.path.join(args.checkpoint_dir, filename)
+            # checking if it is a file
+            if os.path.isfile(f) and os.path.splitext(f)[1] == '.ckpt':
+                em = float(re.search(pattern, filename).group(1))
+                if em > max_em:
+                    max_em = em
+                    checkpoint_path = f
+        args.checkpoint_path = checkpoint_path
+        print(f"checkpoint path = {args.checkpoint_path}")
+
+    print(args)
 
     # Logging Learning Rate Scheduling
     if args.use_lr_scheduling and hparam.wandb_log:
@@ -119,7 +167,6 @@ if __name__ == '__main__':
 
     # Setting Flags for pytorch lightning trainer. Details: https://pytorch-lightning.readthedocs.io/en/stable/common/trainer.html#trainer-flags
     train_params = dict(
-        accumulate_grad_batches=args.gradient_accumulation_steps,
         plugins=plugins,
         gpus=args.n_gpu,
         max_epochs=args.num_train_epochs,
@@ -131,22 +178,22 @@ if __name__ == '__main__':
         val_check_interval=args.val_check_interval,
         logger=wandb_logger,
         callbacks = callbacks,
-        accelerator=args.accelerator,
+        accelerator=args.accelerator,   
     )
 
-    #Getting the Model type & Method
-    if 't5' in args.model_name_or_path:
-        model_type='T5'
-    elif 'gpt2' in args.model_name_or_path:
-        model_type='GPT2'
-    else:
-        raise Exception('Select the correct model. Supporting "t5" and "gpt2" only.')
-    Model = load_model(type=model_type)
-    
+    Model = load_model(type='T5')
+
     if args.check_validation_only:
-       evaluate(args, Model)
+    #    evaluate(args, hparam.wandb_project, hparam.wandb_run_name, Model)
+        # set_seed(40)
+        if args.checkpoint_path!="":
+            model = Model.load_from_checkpoint(checkpoint_path=args.checkpoint_path, hparams=args, strict=False) 
+        else:
+            model = Model(args)
+        trainer = pl.Trainer(**train_params)
+        trainer.validate(model)
     else:
-        set_seed(40)
+        # set_seed(40)
         if args.checkpoint_path!="":
             model = Model.load_from_checkpoint(checkpoint_path=args.checkpoint_path, hparams=args, strict=False) 
         else:

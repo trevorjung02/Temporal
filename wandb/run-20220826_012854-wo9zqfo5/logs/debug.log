@@ -1,0 +1,22 @@
+2022-08-26 01:29:12,541 INFO    MainThread:60523 [wandb_setup.py:_flush():76] Configure stats pid to 60523
+2022-08-26 01:29:12,541 INFO    MainThread:60523 [wandb_setup.py:_flush():76] Loading settings from /mmfs1/home/tjung2/.config/wandb/settings
+2022-08-26 01:29:12,541 INFO    MainThread:60523 [wandb_setup.py:_flush():76] Loading settings from wandb/settings
+2022-08-26 01:29:12,541 WARNING MainThread:60523 [wandb_setup.py:_flush():76] Unknown environment variable: WANDB_SERVICE
+2022-08-26 01:29:12,544 INFO    MainThread:60523 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'_require_service': 'True', 'entity': 'tjung2', 'project': 'temporal_questions', 'sweep_id': 'laxzcy2j', 'root_dir': '/mmfs1/gscratch/ark/tjung2/continual-knowledge-learning', 'run_id': 'wo9zqfo5', 'sweep_param_path': '/mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/sweep-laxzcy2j/config-wo9zqfo5.yaml'}
+2022-08-26 01:29:12,544 INFO    MainThread:60523 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'run.py', 'program': 'run.py'}
+2022-08-26 01:29:12,544 INFO    MainThread:60523 [wandb_init.py:_log_setup():461] Logging user logs to /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220826_012854-wo9zqfo5/logs/debug.log
+2022-08-26 01:29:12,544 INFO    MainThread:60523 [wandb_init.py:_log_setup():462] Logging internal logs to /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220826_012854-wo9zqfo5/logs/debug-internal.log
+2022-08-26 01:29:12,544 INFO    MainThread:60523 [wandb_init.py:init():495] calling init triggers
+2022-08-26 01:29:12,544 INFO    MainThread:60523 [wandb_init.py:init():498] wandb.init called with sweep_config: {'learning_rate': 0.01, 'train_batch_size': 32}
+config: {'output_dir': 'outputs/T5_small_templama(2010)_lr.001_adapters_prefixed', 'dataset': 'templama', 'dataset_version': '2010', 'prefix': True, 'split_num': 1, 'split': 0, 'model_name_or_path': 'google/t5-small-ssm', 'method': 'kadapter', 'freeze_level': 2, 'mode': 'pretrain', 'tokenizer_name_or_path': 'google/t5-small-ssm', 'max_input_length': 50, 'max_output_length': 25, 'freeze_encoder': False, 'freeze_embeds': False, 'learning_rate': 0.003, 'weight_decay': 0.0, 'adam_epsilon': 1e-08, 'warmup_steps': 0, 'train_batch_size': 32, 'eval_batch_size': 32, 'num_train_epochs': 50, 'n_gpu': 1, 'num_workers': 4, 'resume_from_checkpoint': None, 'use_lr_scheduling': True, 'val_check_interval': 1.0, 'n_val': -1, 'n_train': -1, 'n_test': -1, 'early_stop_callback': False, 'use_deepspeed': False, 'opt_level': 'O1', 'max_grad_norm': 0.5, 'seed': 42, 'check_validation_only': False, 'checkpoint_path': '', 'accelerator': 'ddp', 'output_log': None, 'wandb_log': True, 'adapter_config': {'adapter_hidden_size': 128, 'adapter_list': [1, 5, 8]}, 't5_learning_rate': None}
+2022-08-26 01:29:12,544 INFO    MainThread:60523 [wandb_init.py:init():548] starting backend
+2022-08-26 01:29:12,544 INFO    MainThread:60523 [wandb_init.py:init():552] setting up manager
+2022-08-26 01:29:12,548 INFO    MainThread:60523 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-08-26 01:29:12,556 INFO    MainThread:60523 [wandb_init.py:init():558] backend started and connected
+2022-08-26 01:29:12,560 INFO    MainThread:60523 [wandb_run.py:_config_callback():1152] config_cb None None {'learning_rate': 0.01, 'train_batch_size': 32}
+2022-08-26 01:29:12,564 INFO    MainThread:60523 [wandb_init.py:init():636] updated telemetry
+2022-08-26 01:29:12,606 INFO    MainThread:60523 [wandb_init.py:init():667] communicating run to backend with 30 second timeout
+2022-08-26 01:29:42,607 INFO    MainThread:60523 [interface_shared.py:_communicate_run():331] couldn't get run from backend
+2022-08-26 01:29:42,607 ERROR   MainThread:60523 [wandb_init.py:init():676] backend process timed out
+2022-08-26 01:29:42,608 ERROR   MainThread:60523 [wandb_init.py:init():685] encountered error: Error communicating with wandb process
+For more info see: https://docs.wandb.ai/library/init#init-start-error

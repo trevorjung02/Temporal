@@ -1,0 +1,16 @@
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory outputs/T5_small_templama(2010)_lr.0001_baseline_prefixed exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+Traceback (most recent call last):
+  File "run.py", line 159, in <module>
+    model = Model(wandb.config)
+  File "/mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/models/T5_Model.py", line 31, in __init__
+    self.save_hyperparameters(hparams)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/core/lightning.py", line 1685, in save_hyperparameters
+    save_hyperparameters(self, *args, ignore=ignore, frame=frame)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/utilities/parsing.py", line 227, in save_hyperparameters
+    obj._set_hparams(hp)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/core/lightning.py", line 1695, in _set_hparams
+    raise ValueError(f"Unsupported config type of {type(hp)}.")
+ValueError: Unsupported config type of <class 'wandb.sdk.wandb_config.Config'>.

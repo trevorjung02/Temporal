@@ -1,0 +1,42 @@
+Validation sanity check: 0it [00:00, ?it/s]split is 0
+Length of dataset retrieving is.. 410
+split is 0
+Length of dataset retrieving is.. 2866
+Epoch 0:   0% 0/655 [00:00<?, ?it/s]
+Set SLURM handle signals.
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 81.7 M
+-----------------------------------------------------
+4.7 M     Trainable params
+77.0 M    Non-trainable params
+81.7 M    Total params
+
+Epoch 0:   6% 42/655 [00:02<00:31, 19.57it/s, loss=8.24, v_num=myqe, em_score=0.000, f1_score=0.040]
+
+
+
+
+
+
+
+
+
+
+Epoch 0:  88% 574/655 [00:23<00:03, 24.47it/s, loss=5.36, v_num=myqe, em_score=0.000, f1_score=0.040]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

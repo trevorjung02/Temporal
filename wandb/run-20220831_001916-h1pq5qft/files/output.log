@@ -1,0 +1,1015 @@
+Namespace(accelerator='ddp', adam_epsilon=1e-08, adapter_config={'adapter_hidden_size': 32, 'adapter_list': [1, 5, 8]}, check_validation_only=False, checkpoint_dir=None, checkpoint_path='', dataset='templama', dataset_version='2010', early_stop_callback=False, enc_dec=None, eval_batch_size=32, freeze_embeds=False, freeze_encoder=False, freeze_level=2, learning_rate=0.001, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='kadapter', mode='pretrain', model_name_or_path='google/t5-small-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=90, num_workers=4, opt_level='O1', output_dir='outputs/kadapters_2010_2freeze', output_log=None, prefix=True, resume_from_checkpoint=None, seed=42, split=0, split_num=1, t5_learning_rate=None, tokenizer_name_or_path='google/t5-small-ssm', train_batch_size=32, use_deepspeed=False, use_lr_scheduling=True, val_check_interval=1.0, wandb_log=True, warmup_steps=0, weight_decay=0.0)
+T5Config {
+  "_name_or_path": "google/t5-small-ssm",
+  "adapter_hidden_size": 32,
+  "adapter_list": [
+    1,
+    5,
+    8
+  ],
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 1024,
+  "d_kv": 64,
+  "d_model": 512,
+  "decoder_start_token_id": 0,
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "num_decoder_layers": 8,
+  "num_heads": 6,
+  "num_layers": 8,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_num_buckets": 32,
+  "tie_word_embeddings": false,
+  "transformers_version": "4.12.3",
+  "use_cache": false,
+  "vocab_size": 32128
+}
+T5Config {
+  "_name_or_path": "google/t5-small-ssm",
+  "adapter_hidden_size": 32,
+  "adapter_list": [
+    1,
+    5,
+    8
+  ],
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 1024,
+  "d_kv": 64,
+  "d_model": 512,
+  "decoder_start_token_id": 0,
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_decoder": true,
+  "is_encoder_decoder": false,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "num_decoder_layers": 8,
+  "num_heads": 6,
+  "num_layers": 8,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_num_buckets": 32,
+  "tie_word_embeddings": false,
+  "transformers_version": "4.12.3",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory outputs/kadapters_2010_2freeze_158_32 exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+Some weights of T5ForConditionalGeneration were not initialized from the model checkpoint at google/t5-small-ssm and are newly initialized: ['dec_kadapter.adapter.2.encoder.layer.2.DenseReluDense.wi_1.weight', 'enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapter.adapter.0.down_project.bias', 'enc_kadapter.adapter.1.encoder.layer.1.layer_norm.weight', 'enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.q.weight', 'dec_kadapter.adapter.2.encoder.layer.1.EncDecAttention.k.weight', 'enc_kadapter.adapter.2.down_project.bias', 'enc_kadapter.adapter.2.up_project.bias', 'enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapter.adapter.0.up_project.weight', 'dec_kadapter.adapter.1.encoder.layer.2.layer_norm.weight', 'enc_kadapter.adapter.0.encoder.layer.0.layer_norm.weight', 'enc_kadapter.adapter.0.encoder.layer.1.DenseReluDense.wi_0.weight', 'enc_kadapter.adapter.1.encoder.layer.1.DenseReluDense.wo.weight', 'dec_kadapter.adapter.1.down_project.weight', 'enc_kadapter.pool.weight', 'dec_kadapter.adapter.0.encoder.layer.1.EncDecAttention.k.weight', 'dec_kadapter.adapter.0.encoder.layer.0.SelfAttention.o.weight', 'dec_kadapter.adapter.2.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.q.weight', 'dec_kadapter.pool.bias', 'enc_kadapter.adapter.1.encoder.layer.1.DenseReluDense.wi_1.weight', 'enc_kadapter.adapter.2.down_project.weight', 'dec_kadapter.adapter.2.encoder.layer.1.EncDecAttention.v.weight', 'dec_kadapter.adapter.0.down_project.bias', 'dec_kadapter.adapter.2.down_project.bias', 'dec_kadapter.adapter.1.encoder.layer.0.SelfAttention.q.weight', 'dec_kadapter.adapter.1.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapter.adapter.1.down_project.bias', 'enc_kadapter.adapter.0.encoder.layer.1.DenseReluDense.wo.weight', 'dec_kadapter.adapter.0.down_project.weight', 'dec_kadapter.adapter.0.encoder.layer.2.layer_norm.weight', 'enc_kadapter.adapter.2.up_project.weight', 'enc_kadapter.adapter.2.encoder.layer.1.layer_norm.weight', 'dec_kadapter.adapter.2.encoder.layer.1.layer_norm.weight', 'enc_kadapter.adapter.2.encoder.layer.1.DenseReluDense.wo.weight', 'dec_kadapter.adapter.2.encoder.layer.2.layer_norm.weight', 'enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapter.layer_norm.weight', 'dec_kadapter.adapter.0.encoder.layer.1.EncDecAttention.q.weight', 'dec_kadapter.adapter.2.encoder.layer.0.layer_norm.weight', 'enc_kadapter.pool.bias', 'dec_kadapter.adapter.2.down_project.weight', 'dec_kadapter.adapter.2.encoder.layer.2.DenseReluDense.wo.weight', 'enc_kadapter.adapter.0.encoder.layer.1.layer_norm.weight', 'dec_kadapter.adapter.1.up_project.bias', 'dec_kadapter.adapter.2.encoder.layer.2.DenseReluDense.wi_0.weight', 'enc_kadapter.adapter.0.up_project.bias', 'enc_kadapter.adapter.0.down_project.weight', 'dec_kadapter.adapter.1.encoder.layer.1.EncDecAttention.q.weight', 'dec_kadapter.adapter.2.encoder.layer.0.SelfAttention.v.weight', 'dec_kadapter.adapter.2.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapter.adapter.1.down_project.weight', 'dec_kadapter.adapter.2.up_project.weight', 'dec_kadapter.adapter.1.encoder.layer.2.DenseReluDense.wo.weight', 'enc_kadapter.adapter.2.encoder.layer.1.DenseReluDense.wi_0.weight', 'dec_kadapter.adapter.1.down_project.bias', 'dec_kadapter.adapter.1.encoder.layer.1.layer_norm.weight', 'dec_kadapter.adapter.2.encoder.layer.1.EncDecAttention.o.weight', 'enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.o.weight', 'dec_kadapter.adapter.0.encoder.layer.0.SelfAttention.k.weight', 'dec_kadapter.pool.weight', 'enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'dec_kadapter.adapter.0.encoder.layer.1.EncDecAttention.o.weight', 'enc_kadapter.adapter.1.encoder.layer.1.DenseReluDense.wi_0.weight', 'dec_kadapter.adapter.1.encoder.layer.2.DenseReluDense.wi_0.weight', 'enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.v.weight', 'dec_kadapter.adapter.1.up_project.weight', 'dec_kadapter.adapter.0.up_project.bias', 'enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.k.weight', 'dec_kadapter.adapter.0.encoder.layer.2.DenseReluDense.wi_1.weight', 'dec_kadapter.adapter.0.encoder.layer.1.layer_norm.weight', 'dec_kadapter.adapter.2.encoder.layer.0.SelfAttention.o.weight', 'dec_kadapter.adapter.1.encoder.layer.0.layer_norm.weight', 'dec_kadapter.adapter.0.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapter.adapter.0.encoder.layer.1.DenseReluDense.wi_1.weight', 'enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.o.weight', 'dec_kadapter.adapter.0.encoder.layer.0.SelfAttention.v.weight', 'dec_kadapter.adapter.0.encoder.layer.0.layer_norm.weight', 'enc_kadapter.adapter.2.encoder.layer.0.layer_norm.weight', 'dec_kadapter.adapter.0.encoder.layer.2.DenseReluDense.wi_0.weight', 'dec_kadapter.adapter.1.encoder.layer.0.SelfAttention.k.weight', 'dec_kadapter.adapter.1.encoder.layer.1.EncDecAttention.k.weight', 'dec_kadapter.adapter.2.encoder.layer.1.EncDecAttention.q.weight', 'dec_kadapter.adapter.1.encoder.layer.1.EncDecAttention.o.weight', 'enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.q.weight', 'dec_kadapter.adapter.1.encoder.layer.0.SelfAttention.v.weight', 'dec_kadapter.adapter.0.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.o.weight', 'dec_kadapter.adapter.0.encoder.layer.1.EncDecAttention.v.weight', 'dec_kadapter.adapter.1.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'dec_kadapter.adapter.0.up_project.weight', 'enc_kadapter.adapter.1.up_project.weight', 'enc_kadapter.adapter.1.up_project.bias', 'dec_kadapter.adapter.2.up_project.bias', 'dec_kadapter.layer_norm.weight', 'enc_kadapter.adapter.1.encoder.layer.0.layer_norm.weight', 'enc_kadapter.adapter.2.encoder.layer.1.DenseReluDense.wi_1.weight', 'dec_kadapter.adapter.2.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.v.weight', 'dec_kadapter.adapter.1.encoder.layer.2.DenseReluDense.wi_1.weight', 'dec_kadapter.adapter.1.encoder.layer.1.EncDecAttention.v.weight', 'dec_kadapter.adapter.0.encoder.layer.2.DenseReluDense.wo.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All DDP processes registered. Starting ddp with 1 processes
+----------------------------------------------------------------------------------------------------
+split is 0
+Length of dataset retrieving is.. 2866
+Validation sanity check: 0it [00:00, ?it/s]split is 0
+Length of dataset retrieving is.. 410
+Validation sanity check:   0%|          | 0/2 [00:00<?, ?it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Set SLURM handle signals.
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 78.2 M
+-----------------------------------------------------
+1.2 M     Trainable params
+77.0 M    Non-trainable params
+78.2 M    Total params
+
+split is 0
+Length of dataset retrieving is.. 2866
+
+
+Epoch 0:  89%|████████▉ | 91/102 [00:07<00:00, 12.07it/s, loss=27.7, v_num=5qft, em_score=0.000, f1_score=0.000]
+
+
+
+
+
+
+
+
+Epoch 1:  88%|████████▊ | 90/102 [00:06<00:00, 14.89it/s, loss=14.3, v_num=5qft, em_score=0.000, f1_score=0.00217]
+
+
+
+
+
+
+
+
+
+Epoch 2:  90%|█████████ | 92/102 [00:07<00:00, 12.37it/s, loss=9.21, v_num=5qft, em_score=0.000, f1_score=0.00289]
+
+
+
+
+
+
+
+
+
+
+Epoch 4:  90%|█████████ | 92/102 [00:07<00:00, 12.38it/s, loss=5.49, v_num=5qft, em_score=0.000, f1_score=0.0104]
+
+
+
+
+
+Epoch 5:  88%|████████▊ | 90/102 [00:06<00:00, 15.00it/s, loss=4.7, v_num=5qft, em_score=0.00488, f1_score=0.0841]
+
+
+
+
+
+
+
+
+Epoch 6:  88%|████████▊ | 90/102 [00:06<00:00, 14.92it/s, loss=4.18, v_num=5qft, em_score=0.000, f1_score=0.130]
+
+
+
+
+
+
+
+
+Epoch 7:  88%|████████▊ | 90/102 [00:06<00:00, 14.96it/s, loss=3.74, v_num=5qft, em_score=0.000, f1_score=0.0853]
+
+
+
+
+
+
+
+
+
+Epoch 8:  88%|████████▊ | 90/102 [00:06<00:00, 14.96it/s, loss=3.47, v_num=5qft, em_score=0.00976, f1_score=0.171]
+
+
+
+
+
+
+
+
+
+Epoch 9:  88%|████████▊ | 90/102 [00:06<00:00, 14.88it/s, loss=3.21, v_num=5qft, em_score=0.00488, f1_score=0.129]
+
+
+
+
+
+
+
+
+
+
+Epoch 10:  88%|████████▊ | 90/102 [00:06<00:00, 14.93it/s, loss=2.95, v_num=5qft, em_score=0.000, f1_score=0.114]
+
+
+
+
+
+
+
+
+
+Epoch 11:  88%|████████▊ | 90/102 [00:06<00:00, 14.89it/s, loss=2.78, v_num=5qft, em_score=0.0146, f1_score=0.116]
+
+
+
+
+
+
+
+
+
+
+Epoch 12:  88%|████████▊ | 90/102 [00:06<00:00, 14.90it/s, loss=2.58, v_num=5qft, em_score=0.000, f1_score=0.0743]
+
+
+
+
+
+
+
+
+Epoch 13:  88%|████████▊ | 90/102 [00:05<00:00, 15.05it/s, loss=2.31, v_num=5qft, em_score=0.00732, f1_score=0.078]
+
+
+
+
+
+
+
+
+
+Epoch 14:  88%|████████▊ | 90/102 [00:06<00:00, 14.82it/s, loss=2.09, v_num=5qft, em_score=0.00244, f1_score=0.0719]
+
+
+
+
+
+
+
+
+
+
+Epoch 15:  88%|████████▊ | 90/102 [00:06<00:00, 14.79it/s, loss=1.85, v_num=5qft, em_score=0.00488, f1_score=0.0533]
+
+
+
+
+
+
+
+
+
+Epoch 16:  88%|████████▊ | 90/102 [00:06<00:00, 14.91it/s, loss=1.63, v_num=5qft, em_score=0.00976, f1_score=0.136]
+
+
+
+
+
+
+
+
+
+Epoch 17:  88%|████████▊ | 90/102 [00:06<00:00, 14.83it/s, loss=1.56, v_num=5qft, em_score=0.00488, f1_score=0.126]
+
+
+
+
+
+
+
+
+
+Epoch 18:  88%|████████▊ | 90/102 [00:06<00:00, 14.95it/s, loss=1.38, v_num=5qft, em_score=0.000, f1_score=0.106]
+
+
+
+
+
+
+
+
+
+Epoch 19:  88%|████████▊ | 90/102 [00:06<00:00, 14.98it/s, loss=1.33, v_num=5qft, em_score=0.00732, f1_score=0.105]
+
+
+
+
+
+
+
+
+
+Epoch 20:  88%|████████▊ | 90/102 [00:06<00:00, 14.84it/s, loss=1.27, v_num=5qft, em_score=0.00488, f1_score=0.100]
+
+
+
+
+
+
+
+
+
+
+Epoch 21:  88%|████████▊ | 90/102 [00:06<00:00, 14.92it/s, loss=1.18, v_num=5qft, em_score=0.000, f1_score=0.0925]
+
+
+
+
+
+
+
+
+
+Epoch 22:  88%|████████▊ | 90/102 [00:06<00:00, 14.85it/s, loss=1.15, v_num=5qft, em_score=0.000, f1_score=0.118]
+
+
+
+
+
+
+
+
+
+Epoch 23:  88%|████████▊ | 90/102 [00:05<00:00, 15.04it/s, loss=1.02, v_num=5qft, em_score=0.00488, f1_score=0.0761]
+
+
+
+
+
+
+
+
+
+
+Epoch 24:  88%|████████▊ | 90/102 [00:06<00:00, 14.97it/s, loss=0.978, v_num=5qft, em_score=0.00732, f1_score=0.108]
+
+
+
+
+
+
+
+
+
+Epoch 25:  88%|████████▊ | 90/102 [00:06<00:00, 14.92it/s, loss=0.922, v_num=5qft, em_score=0.00488, f1_score=0.101]
+
+
+
+
+
+
+
+
+
+
+Epoch 26:  88%|████████▊ | 90/102 [00:06<00:00, 14.96it/s, loss=0.862, v_num=5qft, em_score=0.00488, f1_score=0.101]
+
+
+
+
+
+
+
+
+
+Epoch 27:  88%|████████▊ | 90/102 [00:06<00:00, 14.90it/s, loss=0.841, v_num=5qft, em_score=0.00732, f1_score=0.089]
+
+
+
+
+
+
+
+
+
+Epoch 28:  88%|████████▊ | 90/102 [00:06<00:00, 14.87it/s, loss=0.786, v_num=5qft, em_score=0.00488, f1_score=0.0754]
+
+
+
+
+
+
+
+
+
+Epoch 29:  88%|████████▊ | 90/102 [00:06<00:00, 14.91it/s, loss=0.723, v_num=5qft, em_score=0.00244, f1_score=0.090]
+
+
+
+
+
+
+
+
+
+Epoch 30:  88%|████████▊ | 90/102 [00:06<00:00, 14.81it/s, loss=0.687, v_num=5qft, em_score=0.00488, f1_score=0.0589]
+
+
+
+
+
+
+
+
+
+Epoch 31:  88%|████████▊ | 90/102 [00:05<00:00, 15.07it/s, loss=0.591, v_num=5qft, em_score=0.00976, f1_score=0.126]
+
+
+
+
+
+
+
+
+
+Epoch 32:  88%|████████▊ | 90/102 [00:05<00:00, 15.03it/s, loss=0.583, v_num=5qft, em_score=0.000, f1_score=0.0666]
+
+
+
+
+
+
+
+
+
+Epoch 33:  88%|████████▊ | 90/102 [00:05<00:00, 15.07it/s, loss=0.518, v_num=5qft, em_score=0.00488, f1_score=0.0704]
+
+
+
+
+
+
+
+
+
+Epoch 34:  88%|████████▊ | 90/102 [00:06<00:00, 14.83it/s, loss=0.484, v_num=5qft, em_score=0.00244, f1_score=0.0684]
+
+
+
+
+
+
+
+
+
+
+Epoch 35:  88%|████████▊ | 90/102 [00:06<00:00, 14.83it/s, loss=0.438, v_num=5qft, em_score=0.00488, f1_score=0.0886]
+
+
+
+
+
+
+
+
+
+Epoch 36:  88%|████████▊ | 90/102 [00:05<00:00, 15.12it/s, loss=0.432, v_num=5qft, em_score=0.00244, f1_score=0.0668]
+
+
+
+
+
+
+
+
+
+Epoch 37:  88%|████████▊ | 90/102 [00:05<00:00, 15.08it/s, loss=0.39, v_num=5qft, em_score=0.000, f1_score=0.0636]
+
+
+
+
+
+
+
+
+
+
+Epoch 38:  88%|████████▊ | 90/102 [00:06<00:00, 14.93it/s, loss=0.383, v_num=5qft, em_score=0.000, f1_score=0.0492]
+
+
+
+
+
+
+
+
+
+
+Epoch 39:  88%|████████▊ | 90/102 [00:05<00:00, 15.07it/s, loss=0.323, v_num=5qft, em_score=0.00244, f1_score=0.0653]
+
+
+
+
+
+
+
+
+
+Epoch 40:  88%|████████▊ | 90/102 [00:05<00:00, 15.06it/s, loss=0.331, v_num=5qft, em_score=0.000, f1_score=0.0549]
+
+
+
+
+
+
+
+
+
+
+Epoch 41:  88%|████████▊ | 90/102 [00:06<00:00, 14.77it/s, loss=0.289, v_num=5qft, em_score=0.000, f1_score=0.0271]
+
+
+
+
+
+
+
+
+
+Epoch 42:  88%|████████▊ | 90/102 [00:05<00:00, 15.10it/s, loss=0.286, v_num=5qft, em_score=0.000, f1_score=0.0392]
+
+
+
+
+
+
+
+
+
+Epoch 43:  88%|████████▊ | 90/102 [00:06<00:00, 14.92it/s, loss=0.248, v_num=5qft, em_score=0.000, f1_score=0.0508]
+
+
+
+
+
+
+
+
+
+Epoch 44:  88%|████████▊ | 90/102 [00:05<00:00, 15.11it/s, loss=0.237, v_num=5qft, em_score=0.000, f1_score=0.0375]
+
+
+
+
+
+
+
+
+
+Epoch 45:  88%|████████▊ | 90/102 [00:05<00:00, 15.12it/s, loss=0.246, v_num=5qft, em_score=0.000, f1_score=0.0368]
+
+
+
+
+
+
+
+
+
+
+Epoch 46:  88%|████████▊ | 90/102 [00:05<00:00, 15.19it/s, loss=0.229, v_num=5qft, em_score=0.000, f1_score=0.0398]
+
+
+
+
+
+
+
+
+
+
+Epoch 47:  88%|████████▊ | 90/102 [00:05<00:00, 15.11it/s, loss=0.2, v_num=5qft, em_score=0.000, f1_score=0.0375]
+
+
+
+
+
+
+
+
+
+Epoch 48:  88%|████████▊ | 90/102 [00:05<00:00, 15.13it/s, loss=0.182, v_num=5qft, em_score=0.000, f1_score=0.0367]
+
+
+
+
+
+
+
+
+
+
+Epoch 49:  88%|████████▊ | 90/102 [00:05<00:00, 15.17it/s, loss=0.17, v_num=5qft, em_score=0.000, f1_score=0.0332]
+
+
+
+
+
+
+
+
+
+Epoch 50:  88%|████████▊ | 90/102 [00:05<00:00, 15.16it/s, loss=0.176, v_num=5qft, em_score=0.000, f1_score=0.0285]
+
+
+
+
+
+
+
+
+
+
+Epoch 51:  88%|████████▊ | 90/102 [00:05<00:00, 15.06it/s, loss=0.153, v_num=5qft, em_score=0.00244, f1_score=0.0427]
+
+
+
+
+
+
+
+
+
+
+Epoch 52:  88%|████████▊ | 90/102 [00:05<00:00, 15.14it/s, loss=0.139, v_num=5qft, em_score=0.000, f1_score=0.0268]
+
+
+
+
+
+
+
+
+
+Epoch 53:  88%|████████▊ | 90/102 [00:05<00:00, 15.28it/s, loss=0.139, v_num=5qft, em_score=0.000, f1_score=0.0274]
+
+
+
+
+
+
+
+
+
+
+Epoch 54:  88%|████████▊ | 90/102 [00:05<00:00, 15.28it/s, loss=0.137, v_num=5qft, em_score=0.00244, f1_score=0.0384]
+
+
+
+
+
+
+
+
+
+Epoch 55:  88%|████████▊ | 90/102 [00:05<00:00, 15.24it/s, loss=0.14, v_num=5qft, em_score=0.000, f1_score=0.0343]
+
+
+
+
+
+
+
+
+
+
+Epoch 56:  88%|████████▊ | 90/102 [00:05<00:00, 15.29it/s, loss=0.131, v_num=5qft, em_score=0.000, f1_score=0.0283]
+
+
+
+
+
+
+
+
+
+Epoch 57:  88%|████████▊ | 90/102 [00:05<00:00, 15.27it/s, loss=0.124, v_num=5qft, em_score=0.000, f1_score=0.0319]
+
+
+
+
+
+
+
+
+
+Epoch 58:  88%|████████▊ | 90/102 [00:05<00:00, 15.17it/s, loss=0.103, v_num=5qft, em_score=0.000, f1_score=0.0245]
+
+
+
+
+
+
+
+
+
+
+Epoch 59:  88%|████████▊ | 90/102 [00:05<00:00, 15.19it/s, loss=0.118, v_num=5qft, em_score=0.000, f1_score=0.0346]
+
+
+
+
+
+
+
+
+
+Epoch 60:  88%|████████▊ | 90/102 [00:05<00:00, 15.29it/s, loss=0.0904, v_num=5qft, em_score=0.00244, f1_score=0.0434]
+
+
+
+
+
+
+
+
+
+
+Epoch 61:  88%|████████▊ | 90/102 [00:05<00:00, 15.17it/s, loss=0.0998, v_num=5qft, em_score=0.000, f1_score=0.0332]
+
+
+
+
+
+
+
+
+Epoch 62:  88%|████████▊ | 90/102 [00:05<00:00, 15.12it/s, loss=0.0749, v_num=5qft, em_score=0.000, f1_score=0.0428]
+
+
+
+
+
+
+
+
+
+
+Epoch 63:  88%|████████▊ | 90/102 [00:05<00:00, 15.22it/s, loss=0.0656, v_num=5qft, em_score=0.000, f1_score=0.0327]
+
+
+
+
+
+
+
+
+
+Epoch 64:  88%|████████▊ | 90/102 [00:05<00:00, 15.27it/s, loss=0.0614, v_num=5qft, em_score=0.000, f1_score=0.0338]
+
+
+
+
+
+
+
+
+
+
+Epoch 65:  88%|████████▊ | 90/102 [00:05<00:00, 15.18it/s, loss=0.0754, v_num=5qft, em_score=0.000, f1_score=0.0351]
+
+
+
+
+
+
+
+
+
+Epoch 66:  88%|████████▊ | 90/102 [00:05<00:00, 15.16it/s, loss=0.0765, v_num=5qft, em_score=0.000, f1_score=0.0332]
+
+
+
+
+
+
+
+
+
+
+Epoch 67:  88%|████████▊ | 90/102 [00:05<00:00, 15.24it/s, loss=0.0727, v_num=5qft, em_score=0.000, f1_score=0.035]
+
+
+
+
+
+
+
+
+
+Epoch 68:  88%|████████▊ | 90/102 [00:05<00:00, 15.23it/s, loss=0.0719, v_num=5qft, em_score=0.000, f1_score=0.0499]
+
+
+
+
+
+
+
+
+
+
+Epoch 69:  88%|████████▊ | 90/102 [00:05<00:00, 15.25it/s, loss=0.0526, v_num=5qft, em_score=0.000, f1_score=0.0387]
+
+
+
+
+
+
+
+
+
+Epoch 70:  88%|████████▊ | 90/102 [00:05<00:00, 15.13it/s, loss=0.0544, v_num=5qft, em_score=0.000, f1_score=0.0385]
+
+
+
+
+
+
+
+
+
+
+Epoch 71:  88%|████████▊ | 90/102 [00:05<00:00, 15.05it/s, loss=0.0467, v_num=5qft, em_score=0.000, f1_score=0.027]
+
+
+
+
+
+
+
+
+
+Epoch 72:  88%|████████▊ | 90/102 [00:05<00:00, 15.19it/s, loss=0.0503, v_num=5qft, em_score=0.000, f1_score=0.029]
+
+
+
+
+
+
+
+
+
+
+Epoch 73:  88%|████████▊ | 90/102 [00:05<00:00, 15.06it/s, loss=0.0399, v_num=5qft, em_score=0.000, f1_score=0.0295]
+
+
+
+
+
+
+
+
+
+Epoch 74:  88%|████████▊ | 90/102 [00:05<00:00, 15.21it/s, loss=0.0502, v_num=5qft, em_score=0.000, f1_score=0.0302]
+
+
+
+
+
+
+
+
+
+Epoch 75:  88%|████████▊ | 90/102 [00:05<00:00, 15.14it/s, loss=0.0486, v_num=5qft, em_score=0.000, f1_score=0.0293]
+
+
+
+
+
+
+
+
+
+
+Epoch 76:  88%|████████▊ | 90/102 [00:05<00:00, 15.30it/s, loss=0.0412, v_num=5qft, em_score=0.000, f1_score=0.0291]
+
+
+
+
+
+
+
+
+
+Epoch 77:  88%|████████▊ | 90/102 [00:05<00:00, 15.18it/s, loss=0.0395, v_num=5qft, em_score=0.000, f1_score=0.0304]
+
+
+
+
+
+
+
+
+
+
+Epoch 78:  88%|████████▊ | 90/102 [00:05<00:00, 15.22it/s, loss=0.0365, v_num=5qft, em_score=0.000, f1_score=0.0292]
+
+
+
+
+
+
+
+
+
+Epoch 79:  88%|████████▊ | 90/102 [00:05<00:00, 15.02it/s, loss=0.0391, v_num=5qft, em_score=0.000, f1_score=0.0238]
+
+
+
+
+
+
+
+
+
+
+Epoch 80:  88%|████████▊ | 90/102 [00:05<00:00, 15.12it/s, loss=0.0364, v_num=5qft, em_score=0.000, f1_score=0.0259]
+
+
+
+
+
+
+
+
+
+Epoch 81:  88%|████████▊ | 90/102 [00:06<00:00, 14.95it/s, loss=0.0409, v_num=5qft, em_score=0.000, f1_score=0.0227]
+
+
+
+
+
+
+
+
+
+
+Epoch 82:  88%|████████▊ | 90/102 [00:05<00:00, 15.06it/s, loss=0.0373, v_num=5qft, em_score=0.000, f1_score=0.025]
+
+
+
+
+
+
+
+
+
+Epoch 83:  88%|████████▊ | 90/102 [00:05<00:00, 15.11it/s, loss=0.0338, v_num=5qft, em_score=0.000, f1_score=0.028]
+
+
+
+
+
+
+
+
+
+
+Epoch 84:  88%|████████▊ | 90/102 [00:05<00:00, 15.20it/s, loss=0.0302, v_num=5qft, em_score=0.000, f1_score=0.0262]
+
+
+
+
+
+
+
+
+
+
+Epoch 85:  88%|████████▊ | 90/102 [00:05<00:00, 15.19it/s, loss=0.034, v_num=5qft, em_score=0.000, f1_score=0.0263]
+
+
+
+
+
+
+
+
+
+Epoch 86:  88%|████████▊ | 90/102 [00:05<00:00, 15.25it/s, loss=0.0336, v_num=5qft, em_score=0.000, f1_score=0.0279]
+
+
+
+
+
+
+
+
+
+
+Epoch 87:  88%|████████▊ | 90/102 [00:05<00:00, 15.18it/s, loss=0.0372, v_num=5qft, em_score=0.000, f1_score=0.0286]
+
+
+
+
+
+
+
+
+
+Epoch 88:  88%|████████▊ | 90/102 [00:05<00:00, 15.09it/s, loss=0.0326, v_num=5qft, em_score=0.000, f1_score=0.0283]
+
+
+
+
+
+
+
+
+
+
+Epoch 89:  88%|████████▊ | 90/102 [00:05<00:00, 15.18it/s, loss=0.0303, v_num=5qft, em_score=0.000, f1_score=0.0275]
+
+
+
+
+
+
+
+
+Validating: 100%|██████████| 13/13 [00:14<00:00,  1.04s/it]

@@ -1,0 +1,58 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=ark
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=06:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+wandb agent --count 3 tjung2/temporal_questions_1/gzo723zu
+--------------------
+wandb: Starting wandb agent 🕵️
+2022-08-18 20:26:30,009 - wandb.wandb_agent - INFO - Running runs: []
+2022-08-18 20:26:30,194 - wandb.wandb_agent - INFO - Agent received command: run
+2022-08-18 20:26:30,194 - wandb.wandb_agent - INFO - Agent starting run with config:
+	learning_rate: 0.0001
+	train_batch_size: 32
+2022-08-18 20:26:30,198 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python sweep.sh "--config configs/templama/training/t5_kadapters_2010_prefixed.json"
+  File "sweep.sh", line 14
+    cat $0
+        ^
+SyntaxError: invalid syntax
+2022-08-18 20:26:35,208 - wandb.wandb_agent - INFO - Running runs: ['yihkz7fj']
+2022-08-18 20:26:35,209 - wandb.wandb_agent - INFO - Cleaning up finished run: yihkz7fj
+2022-08-18 20:26:35,513 - wandb.wandb_agent - INFO - Agent received command: run
+2022-08-18 20:26:35,513 - wandb.wandb_agent - INFO - Agent starting run with config:
+	learning_rate: 0.0003
+	train_batch_size: 64
+2022-08-18 20:26:35,514 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python sweep.sh "--config configs/templama/training/t5_kadapters_2010_prefixed.json"
+  File "sweep.sh", line 14
+    cat $0
+        ^
+SyntaxError: invalid syntax
+2022-08-18 20:26:40,524 - wandb.wandb_agent - INFO - Running runs: ['wr1wj0dk']
+2022-08-18 20:26:40,525 - wandb.wandb_agent - INFO - Cleaning up finished run: wr1wj0dk
+2022-08-18 20:26:40,733 - wandb.wandb_agent - INFO - Agent received command: run
+2022-08-18 20:26:40,733 - wandb.wandb_agent - INFO - Agent starting run with config:
+	learning_rate: 0.0001
+	train_batch_size: 32
+2022-08-18 20:26:40,735 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python sweep.sh "--config configs/templama/training/t5_kadapters_2010_prefixed.json"
+  File "sweep.sh", line 14
+    cat $0
+        ^
+SyntaxError: invalid syntax
+2022-08-18 20:26:45,742 - wandb.wandb_agent - INFO - Running runs: ['lo57ip3i']
+2022-08-18 20:26:45,743 - wandb.wandb_agent - ERROR - Detected 3 failed runs in the first 60 seconds, shutting down.
+2022-08-18 20:26:45,743 - wandb.wandb_agent - INFO - To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+wandb: Terminating and syncing runs. Press ctrl-c to kill.

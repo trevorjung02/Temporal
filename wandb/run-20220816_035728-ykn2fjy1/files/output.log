@@ -1,0 +1,281 @@
+Set SLURM handle signals.
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 81.7 M
+-----------------------------------------------------
+46.3 M    Trainable params
+35.3 M    Non-trainable params
+81.7 M    Total params
+326.730   Total estimated model params size (MB)
+Validation sanity check: 0it [00:00, ?it/s]split is 0
+Length of dataset retrieving is.. 455
+Validation sanity check:  50% 1/2 [00:01<00:01,  1.13s/it]
+split is 0
+Length of dataset retrieving is.. 3213
+
+
+Epoch 0:  87% 100/115 [00:06<00:00, 15.35it/s, loss=6.24, v_num=fjy1, em_score=0.000, f1_score=0.0516]
+
+
+
+
+
+
+
+Epoch 1:  87% 100/115 [00:06<00:00, 15.78it/s, loss=3.8, v_num=fjy1, em_score=0.0044, f1_score=0.0534]
+
+
+
+
+
+
+
+
+Epoch 2:  89% 102/115 [00:07<00:00, 13.46it/s, loss=2.31, v_num=fjy1, em_score=0.0044, f1_score=0.076]
+
+
+
+
+
+
+
+Epoch 3:  87% 100/115 [00:06<00:01, 14.46it/s, loss=1.99, v_num=fjy1, em_score=0.00659, f1_score=0.0811]
+
+
+
+
+
+
+
+
+Epoch 4:  89% 102/115 [00:07<00:01, 12.93it/s, loss=1.79, v_num=fjy1, em_score=0.011, f1_score=0.0923]
+
+
+
+
+
+
+
+
+Epoch 5:  89% 102/115 [00:08<00:01, 12.73it/s, loss=1.67, v_num=fjy1, em_score=0.0044, f1_score=0.079]
+
+
+
+
+
+
+
+
+Epoch 6:  89% 102/115 [00:07<00:01, 12.75it/s, loss=1.55, v_num=fjy1, em_score=0.0264, f1_score=0.0986]
+
+
+
+
+
+
+
+
+Epoch 7:  89% 102/115 [00:07<00:01, 12.84it/s, loss=1.44, v_num=fjy1, em_score=0.0242, f1_score=0.0974]
+
+
+
+
+
+
+
+
+Epoch 8:  89% 102/115 [00:07<00:01, 12.79it/s, loss=1.35, v_num=fjy1, em_score=0.0418, f1_score=0.109]
+
+
+
+
+
+
+
+
+Epoch 9:  87% 100/115 [00:06<00:01, 14.65it/s, loss=1.24, v_num=fjy1, em_score=0.0352, f1_score=0.111]
+
+
+
+
+
+
+
+
+Epoch 10:  87% 100/115 [00:06<00:00, 15.40it/s, loss=1.16, v_num=fjy1, em_score=0.0418, f1_score=0.121]
+
+
+
+
+
+
+
+
+Epoch 11:  87% 100/115 [00:06<00:00, 15.64it/s, loss=1.09, v_num=fjy1, em_score=0.0286, f1_score=0.110]
+
+
+
+
+
+
+
+
+
+Epoch 12:  89% 102/115 [00:07<00:00, 13.01it/s, loss=1, v_num=fjy1, em_score=0.0418, f1_score=0.111]
+
+
+
+
+
+
+
+
+Epoch 13:  89% 102/115 [00:07<00:00, 13.03it/s, loss=0.957, v_num=fjy1, em_score=0.044, f1_score=0.123]
+
+
+
+
+
+
+
+
+Epoch 14:  89% 102/115 [00:07<00:00, 13.32it/s, loss=0.901, v_num=fjy1, em_score=0.0549, f1_score=0.121]
+
+
+
+
+
+
+
+Epoch 15:  87% 100/115 [00:06<00:00, 15.56it/s, loss=0.861, v_num=fjy1, em_score=0.0571, f1_score=0.139]
+
+
+
+
+
+
+
+
+Epoch 16:  87% 100/115 [00:06<00:00, 15.47it/s, loss=0.798, v_num=fjy1, em_score=0.0549, f1_score=0.145]
+
+
+
+
+
+
+
+
+Epoch 17:  87% 100/115 [00:06<00:00, 15.63it/s, loss=0.755, v_num=fjy1, em_score=0.0593, f1_score=0.129]
+
+
+
+
+
+
+
+
+Epoch 18:  89% 102/115 [00:07<00:00, 13.33it/s, loss=0.729, v_num=fjy1, em_score=0.0549, f1_score=0.126]
+
+
+
+
+
+
+
+Epoch 19:  87% 100/115 [00:06<00:00, 15.87it/s, loss=0.676, v_num=fjy1, em_score=0.0571, f1_score=0.134]
+
+
+
+
+
+
+
+
+Epoch 20:  87% 100/115 [00:06<00:01, 14.84it/s, loss=0.653, v_num=fjy1, em_score=0.0549, f1_score=0.144]
+
+
+
+
+
+
+
+
+Epoch 21:  87% 100/115 [00:06<00:01, 14.90it/s, loss=0.608, v_num=fjy1, em_score=0.0484, f1_score=0.133]
+
+
+
+
+
+
+
+
+Epoch 22:  87% 100/115 [00:06<00:01, 14.83it/s, loss=0.587, v_num=fjy1, em_score=0.0571, f1_score=0.142]
+
+
+
+
+
+
+
+
+Epoch 23:  87% 100/115 [00:06<00:01, 14.59it/s, loss=0.568, v_num=fjy1, em_score=0.0549, f1_score=0.135]
+
+
+
+
+
+
+
+
+Epoch 24:  87% 100/115 [00:06<00:01, 14.84it/s, loss=0.524, v_num=fjy1, em_score=0.0549, f1_score=0.137]
+
+
+
+
+
+
+
+
+Epoch 25:  87% 100/115 [00:06<00:01, 14.76it/s, loss=0.514, v_num=fjy1, em_score=0.0615, f1_score=0.141]
+
+
+
+
+
+
+
+
+Epoch 26:  87% 100/115 [00:06<00:01, 14.91it/s, loss=0.47, v_num=fjy1, em_score=0.0418, f1_score=0.130]
+
+
+
+
+
+
+
+
+Epoch 27:  89% 102/115 [00:07<00:00, 13.41it/s, loss=0.459, v_num=fjy1, em_score=0.0549, f1_score=0.138]
+
+
+
+
+
+
+
+
+Epoch 28:  89% 102/115 [00:07<00:00, 13.32it/s, loss=0.426, v_num=fjy1, em_score=0.0462, f1_score=0.131]
+
+
+
+
+
+
+
+Epoch 29:  87% 100/115 [00:06<00:00, 15.54it/s, loss=0.404, v_num=fjy1, em_score=0.0549, f1_score=0.129]
+
+
+
+
+
+
+Validating: 100% 15/15 [00:10<00:00,  1.76it/s]

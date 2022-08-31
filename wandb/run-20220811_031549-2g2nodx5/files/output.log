@@ -1,0 +1,11 @@
+
+Validation sanity check: 0it [00:00, ?it/s]split is 0
+Set SLURM handle signals.
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 77.0 M
+-----------------------------------------------------
+77.0 M    Trainable params
+0         Non-trainable params
+77.0 M    Total params
+307.845   Total estimated model params size (MB)

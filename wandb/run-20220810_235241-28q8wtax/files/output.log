@@ -1,0 +1,13 @@
+Validation sanity check: 0it [00:00, ?it/s]split is 0
+Length of dataset retrieving is.. 410
+Validation sanity check:   0% 0/2 [00:00<?, ?it/s]preds ["St. Mary's College", 'National Assembly of Pakistan', 'Ssei', 'House of Representatives of Japan', 'Notre Dame']
+targets ['University of Washington School of Law;University of Washington College of Education', 'Siumut', 'Minister for Foreign Affairs;Minister of Land, Infrastructure, Transport and Tourism', 'Democratic Party', 'INSEP']
+Set SLURM handle signals.
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 77.0 M
+-----------------------------------------------------
+77.0 M    Trainable params
+0         Non-trainable params
+77.0 M    Total params
+307.845   Total estimated model params size (MB)

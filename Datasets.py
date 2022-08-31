@@ -62,13 +62,19 @@ class Pretrain(Dataset):
         else: 
             if self.args.dataset == 'templama':
                 if type_path == 'train':
-                    if not self.dataset_version in dataset_v[2:]:
+                    if not self.dataset_version in dataset_v[1:]:
                         raise Exception(f'Using templama, did not provide the correct dataset version among {dataset_v[2:]}')
-                    self.dataset= pd.read_csv(f'data/templama/templama_train_{self.dataset_version}.csv')
+                    if self.args.prefix:
+                        self.dataset= pd.read_csv(f'data/templama/templama_train_{self.dataset_version}_prefixed.csv')
+                    else:
+                        self.dataset= pd.read_csv(f'data/templama/templama_train_{self.dataset_version}.csv')
                 elif type_path == 'validation':
                     if not self.dataset_version in dataset_v[1:]:
                         raise Exception(f'Using templama, did not provide the correct dataset version among {dataset_v[2:]}')
-                    self.dataset = pd.read_csv(f'data/templama/templama_val_{self.dataset_version}.csv') 
+                    if self.args.prefix:
+                        self.dataset = pd.read_csv(f'data/templama/templama_val_{self.dataset_version}_prefixed.csv') 
+                    else:
+                        self.dataset = pd.read_csv(f'data/templama/templama_val_{self.dataset_version}.csv') 
                     with open(f'data/templama/templama_val_{self.dataset_version}_answers.json') as f:
                         ids_to_answers = json.load(f)  
             elif self.args.dataset == 'invariantlama':
@@ -189,6 +195,7 @@ class Pretrain(Dataset):
 
     def convert_to_features(self, example_batch, index=None):
         # continual pretraining
+        year = None
         if self.args.dataset == 'recentnews':
             if self.model_type == 'GPT2':
                 input_ = example_batch['original']
@@ -210,6 +217,7 @@ class Pretrain(Dataset):
                 input_=''
             if type(target_)!=str:
                 target_=''
+            year = example_batch['date']
         # evaluation
         else: 
             if self.args.dataset == 'invariantlama':
@@ -269,14 +277,14 @@ class Pretrain(Dataset):
             labels = example_batch['unique_id']
         else:
             labels = None                       
-        return source, targets, labels, ground_truth
+        return source, targets, labels, ground_truth, year
   
     def __getitem__(self, index):
         if (self.args.dataset== 'TriviaQA' or self.args.dataset== 'fever' or self.args.dataset== 'AY2' or self.args.dataset== 'WNED' or self.args.dataset== 'CWEB' 
         or self.args.dataset== 'TREX' or self.args.dataset== 'zsRE' or self.args.dataset== 'NQ' or self.args.dataset== 'HotpotQA' or self.args.dataset== 'ELI5' or self.args.dataset== 'WOW'):
-            source, targets, labels, ground_truth = self.convert_to_features(self.dataset[index])
+            source, targets, labels, ground_truth, year = self.convert_to_features(self.dataset[index])
         else:
-            source, targets, labels, ground_truth = self.convert_to_features(self.dataset.iloc[index])
+            source, targets, labels, ground_truth, year = self.convert_to_features(self.dataset.iloc[index])
         
         source_ids = source["input_ids"].squeeze()
         target_ids = targets["input_ids"].squeeze()
@@ -294,4 +302,4 @@ class Pretrain(Dataset):
         else: 
             ground_truth_ids = -1
 
-        return {"source_ids": source_ids, "source_mask": src_mask, "target_ids": target_ids, "target_mask": target_mask, "label_ids": label_ids, "ground_truth_ids": ground_truth_ids}
+        return {"source_ids": source_ids, "source_mask": src_mask, "target_ids": target_ids, "target_mask": target_mask, "label_ids": label_ids, "ground_truth_ids": ground_truth_ids, "year": year}

@@ -4,12 +4,13 @@ from models.Modular_Small_T5 import T5ForConditionalGeneration as T5_Modular_Sma
 from models.Modular_Small_T52 import T5ForConditionalGeneration as T5_Modular_Small2
 from models.Kadapter_T5 import T5ForConditionalGeneration as T5_Kadapter
 from models.Kadapter_T52 import T5ForConditionalGeneration as T5_Kadapter2
+from models.Kadapter_T5_parallel import T5ForConditionalGeneration as T5_Kadapter_parallel
+from models.Kadapter_T5_soft import T5ForConditionalGeneration as T5_Kadapter_soft
 from models.Lora_T5 import T5ForConditionalGeneration as T5_Lora
 from models.Lora_T52 import T5ForConditionalGeneration as T5_Lora2
 from models.RecAdam import RecAdam
 import torch.nn.functional as F
 from transformers import (
-    Adafactor,
     T5Tokenizer,
     T5ForConditionalGeneration,
 )
@@ -17,8 +18,10 @@ import torch
 from Datasets import Pretrain
 from torch.utils.data import RandomSampler
 from torch.utils.data import DataLoader, ConcatDataset
+from torch.optim import AdamW
 from rouge import Rouge
 from collections import Counter
+import wandb
 
 import re
 import string
@@ -41,10 +44,14 @@ class T5(pl.LightningModule):
             previous_model_dir = (hparams.output_dir)[:len(hparams.output_dir)-1]
             self.model = T5_Modular_Small2.from_pretrained(previous_model_dir)
         elif hparams.method=='kadapter':
-            self.model = T5_Kadapter.from_pretrained(hparams.model_name_or_path)
+            self.model = T5_Kadapter.from_pretrained(hparams.model_name_or_path, hparams.adapter_config)
         elif hparams.method=='kadapter2':
             previous_model_dir = (hparams.output_dir)[:len(hparams.output_dir)-1]
             self.model = T5_Kadapter2.from_pretrained(previous_model_dir)
+        elif hparams.method=='kadapter_parallel':
+            self.model = T5_Kadapter_parallel.from_pretrained(hparams.model_name_or_path)
+        elif hparams.method=='kadapter_soft':
+            self.model = T5_Kadapter_soft.from_pretrained(hparams.model_name_or_path, hparams.adapter_config)
         elif hparams.method=='lora':
             self.model = T5_Lora.from_pretrained(hparams.model_name_or_path)
         elif hparams.method=='lora2':
@@ -79,6 +86,11 @@ class T5(pl.LightningModule):
                 if 'encoder_modular2' in name or name=='encoder_modular_projection':
                     param.requires_grad = True
         elif hparams.method=='kadapter':
+            # Unfreezing the parameters used for lora
+            for name, param in self.model.named_parameters():
+                if 'kadapter' in name:
+                    param.requires_grad = True
+        elif hparams.method=='kadapter_soft':
             # Unfreezing the parameters used for lora
             for name, param in self.model.named_parameters():
                 if 'kadapter' in name:
@@ -227,7 +239,8 @@ class T5(pl.LightningModule):
         if args.mode == 'pretrain' or args.mode == 'finetune':
             dataset = Pretrain(tokenizer=tokenizer, type_path=type_path, num_samples=num_samples,  input_length=args.max_input_length, 
                             output_length=args.max_output_length, args=args, length=length)
-            self.ids_to_answers = dataset.ids_to_answers
+            if dataset.ids_to_answers is not None:
+                self.ids_to_answers = dataset.ids_to_answers
             return dataset
         else:
             raise NameError('Select the correct mode please.')
@@ -244,25 +257,44 @@ class T5(pl.LightningModule):
     def is_logger(self):
         return self.trainer.global_rank <= 0
     
-    def forward(self, input_ids, attention_mask=None, decoder_input_ids=None, decoder_attention_mask=None, lm_labels=None):
-        return self.model(
-            input_ids,
-            attention_mask=attention_mask,
-            decoder_input_ids=decoder_input_ids,
-            decoder_attention_mask=decoder_attention_mask,
-            labels=lm_labels,
-    )
+    def forward(self, input_ids, attention_mask=None, decoder_input_ids=None, decoder_attention_mask=None, lm_labels=None, year=None):
+        if self.hparams.method == 'kadapter_soft':
+            return self.model(
+                input_ids,
+                attention_mask=attention_mask,
+                decoder_input_ids=decoder_input_ids,
+                decoder_attention_mask=decoder_attention_mask,
+                labels=lm_labels,
+                year=year
+            )
+        else:        
+            return self.model(
+                input_ids,
+                attention_mask=attention_mask,
+                decoder_input_ids=decoder_input_ids,
+                decoder_attention_mask=decoder_attention_mask,
+                labels=lm_labels,
+            )
 
     def _step(self, batch):
         lm_labels = batch["target_ids"]
         lm_labels[lm_labels[:, :] == self.tokenizer.pad_token_id] = -100
-        outputs = self(
+        if self.hparams.method == "kadapter_soft":
+            outputs = self(
+                input_ids=batch["source_ids"],
+                attention_mask=batch["source_mask"],
+                lm_labels=lm_labels,
+                decoder_attention_mask=batch['target_mask'],
+                year = batch['year']
+            )
+        else:
+            outputs = self(
             input_ids=batch["source_ids"],
             attention_mask=batch["source_mask"],
             lm_labels=lm_labels,
-            decoder_attention_mask=batch['target_mask']
+            decoder_attention_mask=batch['target_mask'],
         )
-
+        
         loss = outputs[0]
         return loss
     
@@ -274,56 +306,31 @@ class T5(pl.LightningModule):
         return self.lmap(str.strip, gen_text)
     
      
-    def _generative_step(self, batch, batch_idx):     
-        
-        generated_ids = self.model.generate(
-            batch["source_ids"],
-            attention_mask=batch["source_mask"],
-            use_cache=True,
-            decoder_attention_mask=batch['target_mask'],
-            max_length=10,
-            num_beams=2,
-            early_stopping=True
-        )
+    def _generative_step(self, batch):     
+        if self.hparams.method == 'kadapter_soft':
+            generated_ids = self.model.generate(
+                batch["source_ids"],
+                attention_mask=batch["source_mask"],
+                use_cache=True,
+                decoder_attention_mask=batch['target_mask'],
+                max_length=self.hparams.max_output_length,
+                num_beams=2,
+                early_stopping=True,
+                year = batch['year']
+            )
+        else:
+            generated_ids = self.model.generate(
+                batch["source_ids"],
+                attention_mask=batch["source_mask"],
+                use_cache=True,
+                decoder_attention_mask=batch['target_mask'],
+                max_length=self.hparams.max_output_length,
+                num_beams=2,
+                early_stopping=True
+            )
         
         preds = self.ids_to_clean_text(generated_ids)
-        targets = self.ids_to_clean_text(batch["target_ids"])
-        ids = batch["label_ids"]
-        source = self.ids_to_clean_text(batch["source_ids"])
-        print("preds", preds)
-        print("targets", targets)
-            
-        loss = self._step(batch)
-
-        self.log('val_loss', loss, on_step=True, on_epoch=True, prog_bar=True, logger=True)
-
-        em_score = 0
-        accuracy = 0
-        rouge_score = 0
-        f1_score = 0
-
-        if self.hparams.dataset == 'TriviaQA' or self.hparams.dataset == 'zsRE' or self.hparams.dataset == 'TREX' or self.hparams.dataset == 'NQ' or self.hparams.dataset == 'HotpotQA':
-            em_score, accuracy = self.calculate_scores_multipleanswers(preds, targets, ids)
-        elif self.hparams.dataset =='ELI5':
-            rouge_score = self.calculate_rouge_multipleanswers(preds, targets, ids)
-        elif self.hparams.dataset =='WOW':
-            f1_score = self.calculate_f1_scores(preds, targets, ids)
-        else:
-            em_score, accuracy = self.calculate_scores(preds, targets)
-
-        em_score = torch.tensor(em_score,dtype=torch.float32)
-        accuracy = torch.tensor(accuracy,dtype=torch.float32)
-        rouge_score = torch.tensor(rouge_score, dtype=torch.float32)
-        f1_score = torch.tensor(f1_score, dtype=torch.float32)
-        if self.hparams.dataset == 'ELI5':
-            self.log('rouge_score', rouge_score, prog_bar=True, logger=True)
-        elif self.hparams.dataset == 'WOW':
-            self.log('f1_score', f1_score, prog_bar=True, logger=True)
-        elif self.hparams.dataset == 'fever' or self.hparams.dataset == 'AY2' or self.args.dataset== 'TREX' or self.args.dataset== 'zsRE':
-            self.log('accuracy', accuracy, prog_bar=True, logger=True)
-        else:
-            self.log('em_score', em_score, prog_bar=True, logger=True)
-
+        return preds
 
     def training_step(self, batch, batch_idx):
         loss = self._step(batch)
@@ -342,125 +349,101 @@ class T5(pl.LightningModule):
             elif self.hparams.method=='kadapter' or self.hparams.method=='lora' or self.hparams.method=='modular_small':
                 self.model.save_pretrained(self.hparams.output_dir)
 
+    def on_validation_epoch_start(self) -> None:
+        columns=["id", "question", "truth", "prediction", "f1"]
+        if self.hparams.wandb_log:
+            self.test_table = wandb.Table(columns=columns)
+    
     def validation_step(self, batch, batch_idx):
-        return self._generative_step(batch, batch_idx)
+        total_cnt = len(batch['source_ids'])
+        em_correct_num = 0
+        f1_total = 0
+        preds = self._generative_step(batch)
+        texts = self.ids_to_clean_text(batch["source_ids"])
+        for i in range(total_cnt):
+            predicted = preds[i]
+            ids = batch['label_ids'][i].item()
+            lines = texts[i]
+
+            answer_list = self.ids_to_answers[str(ids)]
+            em_correct = False
+            f1 = 0
+            for answer in answer_list:
+                em = self.exact_match_score(predicted, answer)
+                if em == 1:
+                    em_correct = True
+                f1 = max(f1, self._f1_score(predicted, answer))
+            if em_correct:
+                em_correct_num+=1
+            f1_total += f1
+            # print(predicted, answer_list)
+            # print(f"em = {em_correct}, f1 = {f1}")
+            if self.hparams.wandb_log:
+                self.test_table.add_data(ids, lines, answer_list, predicted, f1)    
+        f1 = f1_total / total_cnt
+        em = em_correct_num / total_cnt
+        self.log('em_score', em, prog_bar=True, on_epoch=True, logger=True)
+        self.log('f1_score', f1, prog_bar=True, on_epoch=True, logger=True)
+
+    def on_validation_epoch_end(self) -> None:
+        if self.hparams.wandb_log:
+            wandb.log({"table_key": self.test_table})
 
     def configure_optimizers(self, train_len=None):
         "Prepare optimizer and schedule (linear warmup and decay)"
-        if self.hparams.method=='recadam':
-            no_decay = ["bias", "LayerNorm.weight"]
-            model_type = 't5'
-            recadam_anneal_w = 1.0
-            recadam_anneal_fun = 'sigmoid'
-            recadam_anneal_k = 0.5
-            recadam_anneal_t0 = 250
-            recadam_pretrain_cof = 5000.0
-            new_model = self.model
-            pretrained_model = self.pretrained_model
-            optimizer_grouped_parameters = [
-                {
-                    "params": [p for n, p in new_model.named_parameters() if
-                            not any(nd in n for nd in no_decay) and model_type in n],
-                    "weight_decay": self.hparams.weight_decay,
-                    "anneal_w": recadam_anneal_w,
-                    "pretrain_params": [p_p for p_n, p_p in pretrained_model.named_parameters() if
-                                        not any(nd in p_n for nd in no_decay) and model_type in p_n]
-                },
-                {
-                    "params": [p for n, p in new_model.named_parameters() if
-                            not any(nd in n for nd in no_decay) and model_type not in n],
-                    "weight_decay": self.hparams.weight_decay,
-                    "anneal_w": 0.0,
-                    "pretrain_params": [p_p for p_n, p_p in pretrained_model.named_parameters() if
-                                        not any(nd in p_n for nd in no_decay) and model_type not in p_n]
-                },
-                {
-                    "params": [p for n, p in new_model.named_parameters() if
-                            any(nd in n for nd in no_decay) and model_type in n],
-                    "weight_decay": 0.0,
-                    "anneal_w": recadam_anneal_w,
-                    "pretrain_params": [p_p for p_n, p_p in pretrained_model.named_parameters() if
-                                        any(nd in p_n for nd in no_decay) and model_type in p_n]
-                },
-                {
-                    "params": [p for n, p in new_model.named_parameters() if
-                            any(nd in n for nd in no_decay) and model_type not in n],
-                    "weight_decay": 0.0,
-                    "anneal_w": 0.0,
-                    "pretrain_params": [p_p for p_n, p_p in pretrained_model.named_parameters() if
-                                        any(nd in p_n for nd in no_decay) and model_type not in p_n]
-                }
-            ]
-            optimizer = RecAdam(optimizer_grouped_parameters, lr=self.hparams.learning_rate, eps=self.hparams.adam_epsilon,
-                                anneal_fun=recadam_anneal_fun, anneal_k=recadam_anneal_k,
-                                anneal_t0=recadam_anneal_t0, pretrain_cof=recadam_pretrain_cof)
-        else:
-            model = self.model
-            no_decay = ["bias", "LayerNorm.weight"]
-            optimizer_grouped_parameters = [
-                {
-                    "params": [p for n, p in model.named_parameters() if not any(nd in n for nd in no_decay)],
-                    "weight_decay": self.hparams.weight_decay,
-                },
-                {
-                    "params": [p for n, p in model.named_parameters() if any(nd in n for nd in no_decay)],
-                    "weight_decay": 0.0,
-                },
-            ]
-            
-            optimizer = Adafactor(optimizer_grouped_parameters, lr=self.hparams.learning_rate, scale_parameter=False, relative_step=False)
+        model = self.model
+        no_decay = ["bias", "LayerNorm.weight"]
+        # if "adapter" in self.hparams.method and self.hparams.freeze_level < 2:
+        #     adapter_params = [(n, p) for n, p in model.named_parameters() if "adapter" in n]
+        #     optimizer_grouped_parameters = [
+        #         {
+        #             "params": [p for n,p in adapter_params if not any(nd in n for nd in no_decay)],
+        #             "weight_decay": self.hparams.weight_decay,
+        #         },
+        #         {
+        #             "params": [p for n, p in adapter_params if any(nd in n for nd in no_decay)],
+        #             "weight_decay": 0.0,
+        #         },
+        #     ]
+        #     max_lr = [self.hparams.learning_rate, self.hparams.t5_learning_rate]
+        # else:
+        optimizer_grouped_parameters = [
+            {
+                "params": [p for n, p in model.named_parameters() if not any(nd in n for nd in no_decay)],
+                "weight_decay": self.hparams.weight_decay,
+            },
+            {
+                "params": [p for n, p in model.named_parameters() if any(nd in n for nd in no_decay)],
+                "weight_decay": 0.0,
+            },
+        ]
+        max_lr = self.hparams.learning_rate
+        
+        optimizer = AdamW(optimizer_grouped_parameters, lr=self.hparams.learning_rate)
 
         #self.optimizer = optimizer
         if self.hparams.use_lr_scheduling:
             len_data = len(self.train_dataloader())
-            denomniator = (self.hparams.n_gpu * self.hparams.gradient_accumulation_steps) // 3 # Do not decay learning rate to 0 for small set 
-            if self.hparams.dataset_version=='full':
-                denomniator = (self.hparams.n_gpu * self.hparams.gradient_accumulation_steps) // 2 # Do not decay learning rate to 0 for full set 
-            steps_per_epoch = ( len_data // denomniator ) + 1
-            lr_scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr=self.hparams.learning_rate, steps_per_epoch=steps_per_epoch, pct_start=0.1, epochs=self.hparams.num_train_epochs, anneal_strategy='linear', cycle_momentum=False)
+            lr_scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr=max_lr, steps_per_epoch=len_data, epochs=self.hparams.num_train_epochs)
             return [optimizer], [{"scheduler": lr_scheduler, "interval": "step", "name": "learning rate"}]
         else:
             return [optimizer]
 
     def train_dataloader(self):
         n_samples = self.n_obs['train']
-        if self.hparams.method=='mixreview':
-            if self.hparams.split_num==2:
-                train_dataset = self.get_dataset(tokenizer=self.tokenizer, type_path="split", num_samples=n_samples, args=self.hparams)
-            else:
-                train_dataset = self.get_dataset(tokenizer=self.tokenizer, type_path="train", num_samples=n_samples, args=self.hparams)
-            mix_len = int(len(train_dataset) * self.mix_ratio * (self.mix_decay ** self.epoch))
-            pretrain_dataset = self.get_dataset(tokenizer=self.tokenizer, type_path="pretrain", num_samples=n_samples, args=self.hparams, length=mix_len)  
-            if self.hparams.split==2:
-                args2 = copy.deepcopy(self.hparams)
-                args2.split = 1
-                previous_dataset = self.get_dataset(tokenizer=self.tokenizer, type_path="split", num_samples=n_samples, args=args2)  
-                pretrain_dataset = ConcatDataset([previous_dataset,pretrain_dataset])
-            mixed_dataset = ConcatDataset([train_dataset,pretrain_dataset])
-            print("mix len is ", mix_len)
-            sampler=RandomSampler(mixed_dataset)
-            dataloader = DataLoader(mixed_dataset, sampler = sampler, batch_size=self.hparams.train_batch_size, drop_last=True, num_workers=self.hparams.num_workers)
-            print("dataset length is ", len(dataloader.dataset))
-        elif self.hparams.split_num==2:
-            train_dataset = self.get_dataset(tokenizer=self.tokenizer, type_path="split", num_samples=n_samples, args=self.hparams)
-            sampler = RandomSampler(train_dataset)
-            dataloader = DataLoader(train_dataset, sampler=sampler,  batch_size=self.hparams.train_batch_size, drop_last=True, num_workers=self.hparams.num_workers)  
-        else:     
-            train_dataset = self.get_dataset(tokenizer=self.tokenizer, type_path="train", num_samples=n_samples, args=self.hparams)
-            sampler = RandomSampler(train_dataset)
-            dataloader = DataLoader(train_dataset, sampler=sampler,  batch_size=self.hparams.train_batch_size, drop_last=True, num_workers=self.hparams.num_workers)
+        train_dataset = self.get_dataset(tokenizer=self.tokenizer, type_path="train", num_samples=n_samples, args=self.hparams)
+        sampler = RandomSampler(train_dataset)
+        dataloader = DataLoader(train_dataset, sampler=sampler,  batch_size=self.hparams.train_batch_size, drop_last=True, num_workers=self.hparams.num_workers)
         return dataloader
 
     def val_dataloader(self):
-        if self.hparams.mode == 'pretrain':
-            return None
-        else: 
-            n_samples = self.n_obs['validation']
-            validation_dataset = self.get_dataset(tokenizer=self.tokenizer, type_path="validation", num_samples=n_samples, args=self.hparams,)
-            return DataLoader(validation_dataset, batch_size=self.hparams.eval_batch_size, num_workers=self.hparams.num_workers, shuffle=False)
+        n_samples = self.n_obs['validation']
+        validation_dataset = self.get_dataset(tokenizer=self.tokenizer, type_path="validation", num_samples=n_samples, args=self.hparams)
+        return DataLoader(validation_dataset, batch_size=self.hparams.eval_batch_size, num_workers=self.hparams.num_workers, shuffle=False)
     
     def test_dataloader(self):
         n_samples = self.n_obs['test']
         test_dataset = self.get_dataset(tokenizer=self.tokenizer, type_path="test", num_samples=n_samples, args=self.hparams)
         
         return DataLoader(test_dataset, batch_size=self.hparams.eval_batch_size, num_workers=self.hparams.num_workers, shuffle=False)
+        

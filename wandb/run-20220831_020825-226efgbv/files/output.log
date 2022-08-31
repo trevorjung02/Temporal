@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "run.py", line 123, in <module>
+    if args.enc_dec:
+AttributeError: 'Namespace' object has no attribute 'enc_dec'
