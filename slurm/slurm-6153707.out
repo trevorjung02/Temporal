@@ -1,0 +1,210 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=ark
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=11:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+python run.py --config configs/templama/evaluation/t5_kadapters_soft_full_diff.json -val_data 2010
+python run.py --config configs/templama/evaluation/t5_kadapters_soft_full_diff.json -val_data 2011
+python run.py --config configs/templama/evaluation/t5_kadapters_soft_full_diff.json -val_data 2012
+python run.py --config configs/templama/evaluation/t5_kadapters_soft_full_diff.json -val_data 2013
+python run.py --config configs/templama/evaluation/t5_kadapters_soft_full_diff.json -val_data 2014
+python run.py --config configs/templama/evaluation/t5_kadapters_soft_full_diff.json -val_data 2015
+python run.py --config configs/templama/evaluation/t5_kadapters_soft_full_diff.json -val_data 2016
+python run.py --config configs/templama/evaluation/t5_kadapters_soft_full_diff.json -val_data 2017
+python run.py --config configs/templama/evaluation/t5_kadapters_soft_full_diff.json -val_data 2018
+--------------------
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1040, in init
+    wi.setup(kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 151, in setup
+    self._wl = wandb_setup.setup()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 320, in setup
+    ret = _setup(settings=settings)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 315, in _setup
+    wl = _WandbSetup(settings=settings)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 301, in __init__
+    _WandbSetup._instance = _WandbSetup__WandbSetup(settings=settings, pid=pid)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 114, in __init__
+    self._setup()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 242, in _setup
+    self._setup_manager()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 273, in _setup_manager
+    self._manager = wandb_manager._Manager(
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_manager.py", line 106, in __init__
+    self._service.start()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/service/service.py", line 106, in start
+    self._launch_server()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/service/service.py", line 102, in _launch_server
+    assert ports_found
+AssertionError
+wandb: ERROR Abnormal program exit
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1040, in init
+    wi.setup(kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 151, in setup
+    self._wl = wandb_setup.setup()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 320, in setup
+    ret = _setup(settings=settings)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 315, in _setup
+    wl = _WandbSetup(settings=settings)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 301, in __init__
+    _WandbSetup._instance = _WandbSetup__WandbSetup(settings=settings, pid=pid)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 114, in __init__
+    self._setup()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 242, in _setup
+    self._setup_manager()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 273, in _setup_manager
+    self._manager = wandb_manager._Manager(
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_manager.py", line 106, in __init__
+    self._service.start()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/service/service.py", line 106, in start
+    self._launch_server()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/service/service.py", line 102, in _launch_server
+    assert ports_found
+AssertionError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run.py", line 124, in <module>
+    wandb.init(project=hparam.wandb_project, name=f"{hparam.method}_{args['dataset_version']}" , config=args, settings=wandb.Settings(start_method="fork"))
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1081, in init
+    raise Exception("problem") from error_seen
+Exception: problem
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/__main__.py", line 3, in <module>
+    cli.cli(prog_name="python -m wandb")
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/click/core.py", line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 97, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 286, in service
+    server.serve()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/service/server.py", line 128, in serve
+    self._inform_used_ports(grpc_port=grpc_port, sock_port=sock_port)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/service/server.py", line 65, in _inform_used_ports
+    pf.write(self._port_fname)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/service/port_file.py", line 25, in write
+    f = tempfile.NamedTemporaryFile(prefix=bname, dir=dname, mode="w", delete=False)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/tempfile.py", line 540, in NamedTemporaryFile
+    (fd, name) = _mkstemp_inner(dir, prefix, suffix, flags, output_type)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/tempfile.py", line 250, in _mkstemp_inner
+    fd = _os.open(file, flags, 0o600)
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmp_r8osbu2/port-70411.txt9xo5sav5'
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1040, in init
+    wi.setup(kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 151, in setup
+    self._wl = wandb_setup.setup()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 320, in setup
+    ret = _setup(settings=settings)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 315, in _setup
+    wl = _WandbSetup(settings=settings)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 301, in __init__
+    _WandbSetup._instance = _WandbSetup__WandbSetup(settings=settings, pid=pid)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 114, in __init__
+    self._setup()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 242, in _setup
+    self._setup_manager()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 273, in _setup_manager
+    self._manager = wandb_manager._Manager(
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_manager.py", line 106, in __init__
+    self._service.start()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/service/service.py", line 106, in start
+    self._launch_server()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/service/service.py", line 102, in _launch_server
+    assert ports_found
+AssertionError
+wandb: ERROR Abnormal program exit
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1040, in init
+    wi.setup(kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 151, in setup
+    self._wl = wandb_setup.setup()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 320, in setup
+    ret = _setup(settings=settings)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 315, in _setup
+    wl = _WandbSetup(settings=settings)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 301, in __init__
+    _WandbSetup._instance = _WandbSetup__WandbSetup(settings=settings, pid=pid)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 114, in __init__
+    self._setup()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 242, in _setup
+    self._setup_manager()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_setup.py", line 273, in _setup_manager
+    self._manager = wandb_manager._Manager(
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_manager.py", line 106, in __init__
+    self._service.start()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/service/service.py", line 106, in start
+    self._launch_server()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/service/service.py", line 102, in _launch_server
+    assert ports_found
+AssertionError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run.py", line 124, in <module>
+    wandb.init(project=hparam.wandb_project, name=f"{hparam.method}_{args['dataset_version']}" , config=args, settings=wandb.Settings(start_method="fork"))
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1081, in init
+    raise Exception("problem") from error_seen
+Exception: problem
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/__main__.py", line 3, in <module>
+    cli.cli(prog_name="python -m wandb")
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/click/core.py", line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 97, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 286, in service
+    server.serve()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/service/server.py", line 128, in serve
+    self._inform_used_ports(grpc_port=grpc_port, sock_port=sock_port)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/service/server.py", line 65, in _inform_used_ports
+    pf.write(self._port_fname)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/service/port_file.py", line 25, in write
+    f = tempfile.NamedTemporaryFile(prefix=bname, dir=dname, mode="w", delete=False)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/tempfile.py", line 540, in NamedTemporaryFile
+    (fd, name) = _mkstemp_inner(dir, prefix, suffix, flags, output_type)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/tempfile.py", line 250, in _mkstemp_inner
+    fd = _os.open(file, flags, 0o600)
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmp4ij00bsn/port-78381.txtf55f81o7'
+slurmstepd: error: *** JOB 6153707 ON g3073 CANCELLED AT 2022-09-15T04:42:50 ***

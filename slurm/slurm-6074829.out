@@ -1,0 +1,443 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=ark
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=11:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+python run.py --config configs/templama/evaluation/t5_baseline_full.json -val_data 2010
+python run.py --config configs/templama/evaluation/t5_baseline_full.json -val_data 2011
+python run.py --config configs/templama/evaluation/t5_baseline_full.json -val_data 2012
+python run.py --config configs/templama/evaluation/t5_baseline_full.json -val_data 2013
+python run.py --config configs/templama/evaluation/t5_baseline_full.json -val_data 2014
+python run.py --config configs/templama/evaluation/t5_baseline_full.json -val_data 2015
+python run.py --config configs/templama/evaluation/t5_baseline_full.json -val_data 2016
+python run.py --config configs/templama/evaluation/t5_baseline_full.json -val_data 2017
+python run.py --config configs/templama/evaluation/t5_baseline_full.json -val_data 2018
+--------------------
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220902_042220-3uv2mi0o
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run baseline_full
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/3uv2mi0o
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory outputs/baseline_full exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All DDP processes registered. Starting ddp with 1 processes
+----------------------------------------------------------------------------------------------------
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Namespace(accelerator='ddp', adam_epsilon=1e-08, adapter_config={'adapter_list': None, 'adapter_hidden_size': None, 'adapter_enc_dec': None, 'pool_size': None}, adapter_enc_dec=None, adapter_hidden_size=None, adapter_list=None, check_validation_only=True, checkpoint_dir=None, checkpoint_path='outputs/baseline_full/epoch=7-f1_score=0.192-em_score=0.069.ckpt', dataset='templama', dataset_version='full', early_stop_callback=False, eval_batch_size=64, freeze_embeds=False, freeze_encoder=False, freeze_level=0, learning_rate=1e-05, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='baseline', mode='pretrain', model_name_or_path='google/t5-small-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=30, num_workers=4, opt_level='O1', output_dir='outputs/baseline_full', output_log=None, pool_size=None, prefix=True, resume_from_checkpoint=None, seed=42, split=0, split_num=1, t5_learning_rate=None, tokenizer_name_or_path='google/t5-small-ssm', train_batch_size=64, use_deepspeed=False, use_lr_scheduling=True, val_check_interval=1.0, val_data='2010', wandb_log=True, warmup_steps=0, weight_decay=0.0)
+Not freezing any parameters!
+split is 0
+Length of dataset retrieving is.. 410
+Validating: 0it [00:00, ?it/s]Validating:   0%|          | 0/7 [00:00<?, ?it/s]Validating:  14%|█▍        | 1/7 [00:03<00:21,  3.51s/it]Validating:  29%|██▊       | 2/7 [00:05<00:11,  2.38s/it]Validating:  43%|████▎     | 3/7 [00:06<00:08,  2.03s/it]Validating:  57%|█████▋    | 4/7 [00:08<00:05,  1.87s/it]Validating:  71%|███████▏  | 5/7 [00:09<00:03,  1.76s/it]Validating:  86%|████████▌ | 6/7 [00:11<00:01,  1.69s/it]Validating: 100%|██████████| 7/7 [00:12<00:00,  1.42s/it]                                                         --------------------------------------------------------------------------------
+DATALOADER:0 VALIDATE RESULTS
+{'em_score': 0.07804878056049347, 'f1_score': 0.20791026949882507}
+--------------------------------------------------------------------------------
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.051 MB of 0.100 MB uploaded (0.000 MB deduped)wandb: \ 0.051 MB of 0.100 MB uploaded (0.000 MB deduped)wandb: | 0.100 MB of 0.100 MB uploaded (0.000 MB deduped)wandb: / 0.100 MB of 0.112 MB uploaded (0.000 MB deduped)wandb: - 0.103 MB of 0.112 MB uploaded (0.000 MB deduped)wandb: \ 0.112 MB of 0.112 MB uploaded (0.000 MB deduped)wandb: | 0.112 MB of 0.112 MB uploaded (0.000 MB deduped)wandb: / 0.112 MB of 0.112 MB uploaded (0.000 MB deduped)wandb: - 0.112 MB of 0.112 MB uploaded (0.000 MB deduped)wandb: \ 0.112 MB of 0.112 MB uploaded (0.000 MB deduped)wandb: | 0.112 MB of 0.112 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            em_score ▁
+wandb:               epoch ▁
+wandb:            f1_score ▁
+wandb: trainer/global_step ▁
+wandb: 
+wandb: Run summary:
+wandb:               epoch 0
+wandb: trainer/global_step 0
+wandb: 
+wandb: Synced baseline_full: https://wandb.ai/tjung2/temporal_questions/runs/3uv2mi0o
+wandb: Synced 6 W&B file(s), 1 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220902_042220-3uv2mi0o/logs
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220902_042328-3ji1ur2q
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run baseline_full
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/3ji1ur2q
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory outputs/baseline_full exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All DDP processes registered. Starting ddp with 1 processes
+----------------------------------------------------------------------------------------------------
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Namespace(accelerator='ddp', adam_epsilon=1e-08, adapter_config={'adapter_list': None, 'adapter_hidden_size': None, 'adapter_enc_dec': None, 'pool_size': None}, adapter_enc_dec=None, adapter_hidden_size=None, adapter_list=None, check_validation_only=True, checkpoint_dir=None, checkpoint_path='outputs/baseline_full/epoch=7-f1_score=0.192-em_score=0.069.ckpt', dataset='templama', dataset_version='full', early_stop_callback=False, eval_batch_size=64, freeze_embeds=False, freeze_encoder=False, freeze_level=0, learning_rate=1e-05, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='baseline', mode='pretrain', model_name_or_path='google/t5-small-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=30, num_workers=4, opt_level='O1', output_dir='outputs/baseline_full', output_log=None, pool_size=None, prefix=True, resume_from_checkpoint=None, seed=42, split=0, split_num=1, t5_learning_rate=None, tokenizer_name_or_path='google/t5-small-ssm', train_batch_size=64, use_deepspeed=False, use_lr_scheduling=True, val_check_interval=1.0, val_data='2011', wandb_log=True, warmup_steps=0, weight_decay=0.0)
+Not freezing any parameters!
+split is 0
+Length of dataset retrieving is.. 431
+Validating: 0it [00:00, ?it/s]Validating:   0%|          | 0/7 [00:00<?, ?it/s]Validating:  14%|█▍        | 1/7 [00:03<00:19,  3.19s/it]Validating:  29%|██▊       | 2/7 [00:04<00:11,  2.26s/it]Validating:  43%|████▎     | 3/7 [00:06<00:08,  2.04s/it]Validating:  57%|█████▋    | 4/7 [00:08<00:05,  1.91s/it]Validating:  71%|███████▏  | 5/7 [00:09<00:03,  1.78s/it]Validating:  86%|████████▌ | 6/7 [00:11<00:01,  1.73s/it]Validating: 100%|██████████| 7/7 [00:12<00:00,  1.62s/it]                                                         --------------------------------------------------------------------------------
+DATALOADER:0 VALIDATE RESULTS
+{'em_score': 0.08584687113761902, 'f1_score': 0.21712449193000793}
+--------------------------------------------------------------------------------
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.053 MB of 0.105 MB uploaded (0.000 MB deduped)wandb: \ 0.105 MB of 0.105 MB uploaded (0.000 MB deduped)wandb: | 0.105 MB of 0.105 MB uploaded (0.000 MB deduped)wandb: / 0.105 MB of 0.105 MB uploaded (0.000 MB deduped)wandb: - 0.105 MB of 0.116 MB uploaded (0.000 MB deduped)wandb: \ 0.110 MB of 0.116 MB uploaded (0.000 MB deduped)wandb: | 0.116 MB of 0.116 MB uploaded (0.000 MB deduped)wandb: / 0.116 MB of 0.116 MB uploaded (0.000 MB deduped)wandb: - 0.116 MB of 0.116 MB uploaded (0.000 MB deduped)wandb: \ 0.116 MB of 0.116 MB uploaded (0.000 MB deduped)wandb: | 0.116 MB of 0.116 MB uploaded (0.000 MB deduped)wandb: / 0.116 MB of 0.116 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            em_score ▁
+wandb:               epoch ▁
+wandb:            f1_score ▁
+wandb: trainer/global_step ▁
+wandb: 
+wandb: Run summary:
+wandb:               epoch 0
+wandb: trainer/global_step 0
+wandb: 
+wandb: Synced baseline_full: https://wandb.ai/tjung2/temporal_questions/runs/3ji1ur2q
+wandb: Synced 6 W&B file(s), 1 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220902_042328-3ji1ur2q/logs
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220902_042424-13pv78a9
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run baseline_full
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/13pv78a9
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory outputs/baseline_full exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All DDP processes registered. Starting ddp with 1 processes
+----------------------------------------------------------------------------------------------------
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Namespace(accelerator='ddp', adam_epsilon=1e-08, adapter_config={'adapter_list': None, 'adapter_hidden_size': None, 'adapter_enc_dec': None, 'pool_size': None}, adapter_enc_dec=None, adapter_hidden_size=None, adapter_list=None, check_validation_only=True, checkpoint_dir=None, checkpoint_path='outputs/baseline_full/epoch=7-f1_score=0.192-em_score=0.069.ckpt', dataset='templama', dataset_version='full', early_stop_callback=False, eval_batch_size=64, freeze_embeds=False, freeze_encoder=False, freeze_level=0, learning_rate=1e-05, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='baseline', mode='pretrain', model_name_or_path='google/t5-small-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=30, num_workers=4, opt_level='O1', output_dir='outputs/baseline_full', output_log=None, pool_size=None, prefix=True, resume_from_checkpoint=None, seed=42, split=0, split_num=1, t5_learning_rate=None, tokenizer_name_or_path='google/t5-small-ssm', train_batch_size=64, use_deepspeed=False, use_lr_scheduling=True, val_check_interval=1.0, val_data='2012', wandb_log=True, warmup_steps=0, weight_decay=0.0)
+Not freezing any parameters!
+split is 0
+Length of dataset retrieving is.. 446
+Validating: 0it [00:00, ?it/s]Validating:   0%|          | 0/7 [00:00<?, ?it/s]Validating:  14%|█▍        | 1/7 [00:02<00:17,  2.98s/it]Validating:  29%|██▊       | 2/7 [00:04<00:10,  2.15s/it]Validating:  43%|████▎     | 3/7 [00:06<00:07,  1.94s/it]Validating:  57%|█████▋    | 4/7 [00:07<00:05,  1.84s/it]Validating:  71%|███████▏  | 5/7 [00:09<00:03,  1.72s/it]Validating:  86%|████████▌ | 6/7 [00:10<00:01,  1.66s/it]Validating: 100%|██████████| 7/7 [00:12<00:00,  1.66s/it]                                                         --------------------------------------------------------------------------------
+DATALOADER:0 VALIDATE RESULTS
+{'em_score': 0.08520179241895676, 'f1_score': 0.21118497848510742}
+--------------------------------------------------------------------------------
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.054 MB of 0.107 MB uploaded (0.000 MB deduped)wandb: \ 0.107 MB of 0.107 MB uploaded (0.000 MB deduped)wandb: | 0.107 MB of 0.107 MB uploaded (0.000 MB deduped)wandb: / 0.107 MB of 0.118 MB uploaded (0.000 MB deduped)wandb: - 0.107 MB of 0.118 MB uploaded (0.000 MB deduped)wandb: \ 0.118 MB of 0.118 MB uploaded (0.000 MB deduped)wandb: | 0.118 MB of 0.118 MB uploaded (0.000 MB deduped)wandb: / 0.118 MB of 0.118 MB uploaded (0.000 MB deduped)wandb: - 0.118 MB of 0.118 MB uploaded (0.000 MB deduped)wandb: \ 0.118 MB of 0.118 MB uploaded (0.000 MB deduped)wandb: | 0.118 MB of 0.118 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            em_score ▁
+wandb:               epoch ▁
+wandb:            f1_score ▁
+wandb: trainer/global_step ▁
+wandb: 
+wandb: Run summary:
+wandb:               epoch 0
+wandb: trainer/global_step 0
+wandb: 
+wandb: Synced baseline_full: https://wandb.ai/tjung2/temporal_questions/runs/13pv78a9
+wandb: Synced 6 W&B file(s), 1 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220902_042424-13pv78a9/logs
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220902_042520-3cnotpuo
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run baseline_full
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/3cnotpuo
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory outputs/baseline_full exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All DDP processes registered. Starting ddp with 1 processes
+----------------------------------------------------------------------------------------------------
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Namespace(accelerator='ddp', adam_epsilon=1e-08, adapter_config={'adapter_list': None, 'adapter_hidden_size': None, 'adapter_enc_dec': None, 'pool_size': None}, adapter_enc_dec=None, adapter_hidden_size=None, adapter_list=None, check_validation_only=True, checkpoint_dir=None, checkpoint_path='outputs/baseline_full/epoch=7-f1_score=0.192-em_score=0.069.ckpt', dataset='templama', dataset_version='full', early_stop_callback=False, eval_batch_size=64, freeze_embeds=False, freeze_encoder=False, freeze_level=0, learning_rate=1e-05, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='baseline', mode='pretrain', model_name_or_path='google/t5-small-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=30, num_workers=4, opt_level='O1', output_dir='outputs/baseline_full', output_log=None, pool_size=None, prefix=True, resume_from_checkpoint=None, seed=42, split=0, split_num=1, t5_learning_rate=None, tokenizer_name_or_path='google/t5-small-ssm', train_batch_size=64, use_deepspeed=False, use_lr_scheduling=True, val_check_interval=1.0, val_data='2013', wandb_log=True, warmup_steps=0, weight_decay=0.0)
+Not freezing any parameters!
+split is 0
+Length of dataset retrieving is.. 455
+Validating: 0it [00:00, ?it/s]Validating:   0%|          | 0/8 [00:00<?, ?it/s]Validating:  12%|█▎        | 1/8 [00:03<00:21,  3.01s/it]Validating:  25%|██▌       | 2/8 [00:04<00:13,  2.18s/it]Validating:  38%|███▊      | 3/8 [00:06<00:09,  1.97s/it]Validating:  50%|█████     | 4/8 [00:07<00:07,  1.83s/it]Validating:  62%|██████▎   | 5/8 [00:09<00:05,  1.72s/it]Validating:  75%|███████▌  | 6/8 [00:11<00:03,  1.72s/it]Validating:  88%|████████▊ | 7/8 [00:12<00:01,  1.71s/it]Validating: 100%|██████████| 8/8 [00:13<00:00,  1.28s/it]                                                         --------------------------------------------------------------------------------
+DATALOADER:0 VALIDATE RESULTS
+{'em_score': 0.07692307978868484, 'f1_score': 0.1939147561788559}
+--------------------------------------------------------------------------------
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.055 MB of 0.108 MB uploaded (0.000 MB deduped)wandb: \ 0.108 MB of 0.108 MB uploaded (0.000 MB deduped)wandb: | 0.108 MB of 0.108 MB uploaded (0.000 MB deduped)wandb: / 0.108 MB of 0.108 MB uploaded (0.000 MB deduped)wandb: - 0.108 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: \ 0.108 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: | 0.120 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: / 0.120 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: - 0.120 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: \ 0.120 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: | 0.120 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: / 0.120 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: - 0.120 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: \ 0.120 MB of 0.120 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            em_score ▁
+wandb:               epoch ▁
+wandb:            f1_score ▁
+wandb: trainer/global_step ▁
+wandb: 
+wandb: Run summary:
+wandb:               epoch 0
+wandb: trainer/global_step 0
+wandb: 
+wandb: Synced baseline_full: https://wandb.ai/tjung2/temporal_questions/runs/3cnotpuo
+wandb: Synced 6 W&B file(s), 1 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220902_042520-3cnotpuo/logs
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220902_042614-37uvkt72
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run baseline_full
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/37uvkt72
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory outputs/baseline_full exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All DDP processes registered. Starting ddp with 1 processes
+----------------------------------------------------------------------------------------------------
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Namespace(accelerator='ddp', adam_epsilon=1e-08, adapter_config={'adapter_list': None, 'adapter_hidden_size': None, 'adapter_enc_dec': None, 'pool_size': None}, adapter_enc_dec=None, adapter_hidden_size=None, adapter_list=None, check_validation_only=True, checkpoint_dir=None, checkpoint_path='outputs/baseline_full/epoch=7-f1_score=0.192-em_score=0.069.ckpt', dataset='templama', dataset_version='full', early_stop_callback=False, eval_batch_size=64, freeze_embeds=False, freeze_encoder=False, freeze_level=0, learning_rate=1e-05, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='baseline', mode='pretrain', model_name_or_path='google/t5-small-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=30, num_workers=4, opt_level='O1', output_dir='outputs/baseline_full', output_log=None, pool_size=None, prefix=True, resume_from_checkpoint=None, seed=42, split=0, split_num=1, t5_learning_rate=None, tokenizer_name_or_path='google/t5-small-ssm', train_batch_size=64, use_deepspeed=False, use_lr_scheduling=True, val_check_interval=1.0, val_data='2014', wandb_log=True, warmup_steps=0, weight_decay=0.0)
+Not freezing any parameters!
+split is 0
+Length of dataset retrieving is.. 469
+Validating: 0it [00:00, ?it/s]Validating:   0%|          | 0/8 [00:00<?, ?it/s]Validating:  12%|█▎        | 1/8 [00:02<00:16,  2.39s/it]Validating:  25%|██▌       | 2/8 [00:03<00:10,  1.75s/it]Validating:  38%|███▊      | 3/8 [00:05<00:08,  1.61s/it]Validating:  50%|█████     | 4/8 [00:06<00:06,  1.52s/it]Validating:  62%|██████▎   | 5/8 [00:07<00:04,  1.46s/it]Validating:  75%|███████▌  | 6/8 [00:09<00:02,  1.44s/it]Validating:  88%|████████▊ | 7/8 [00:10<00:01,  1.43s/it]Validating: 100%|██████████| 8/8 [00:11<00:00,  1.13s/it]                                                         --------------------------------------------------------------------------------
+DATALOADER:0 VALIDATE RESULTS
+{'em_score': 0.0746268630027771, 'f1_score': 0.19781959056854248}
+--------------------------------------------------------------------------------
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.057 MB of 0.112 MB uploaded (0.000 MB deduped)wandb: \ 0.112 MB of 0.112 MB uploaded (0.000 MB deduped)wandb: | 0.112 MB of 0.112 MB uploaded (0.000 MB deduped)wandb: / 0.112 MB of 0.123 MB uploaded (0.000 MB deduped)wandb: - 0.119 MB of 0.123 MB uploaded (0.000 MB deduped)wandb: \ 0.123 MB of 0.123 MB uploaded (0.000 MB deduped)wandb: | 0.123 MB of 0.123 MB uploaded (0.000 MB deduped)wandb: / 0.123 MB of 0.123 MB uploaded (0.000 MB deduped)wandb: - 0.123 MB of 0.123 MB uploaded (0.000 MB deduped)wandb: \ 0.123 MB of 0.123 MB uploaded (0.000 MB deduped)wandb: | 0.123 MB of 0.123 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            em_score ▁
+wandb:               epoch ▁
+wandb:            f1_score ▁
+wandb: trainer/global_step ▁
+wandb: 
+wandb: Run summary:
+wandb:               epoch 0
+wandb: trainer/global_step 0
+wandb: 
+wandb: Synced baseline_full: https://wandb.ai/tjung2/temporal_questions/runs/37uvkt72
+wandb: Synced 6 W&B file(s), 1 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220902_042614-37uvkt72/logs
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220902_042701-21hp91ek
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run baseline_full
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/21hp91ek
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory outputs/baseline_full exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All DDP processes registered. Starting ddp with 1 processes
+----------------------------------------------------------------------------------------------------
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Namespace(accelerator='ddp', adam_epsilon=1e-08, adapter_config={'adapter_list': None, 'adapter_hidden_size': None, 'adapter_enc_dec': None, 'pool_size': None}, adapter_enc_dec=None, adapter_hidden_size=None, adapter_list=None, check_validation_only=True, checkpoint_dir=None, checkpoint_path='outputs/baseline_full/epoch=7-f1_score=0.192-em_score=0.069.ckpt', dataset='templama', dataset_version='full', early_stop_callback=False, eval_batch_size=64, freeze_embeds=False, freeze_encoder=False, freeze_level=0, learning_rate=1e-05, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='baseline', mode='pretrain', model_name_or_path='google/t5-small-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=30, num_workers=4, opt_level='O1', output_dir='outputs/baseline_full', output_log=None, pool_size=None, prefix=True, resume_from_checkpoint=None, seed=42, split=0, split_num=1, t5_learning_rate=None, tokenizer_name_or_path='google/t5-small-ssm', train_batch_size=64, use_deepspeed=False, use_lr_scheduling=True, val_check_interval=1.0, val_data='2015', wandb_log=True, warmup_steps=0, weight_decay=0.0)
+Not freezing any parameters!
+split is 0
+Length of dataset retrieving is.. 479
+Validating: 0it [00:00, ?it/s]Validating:   0%|          | 0/8 [00:00<?, ?it/s]Validating:  12%|█▎        | 1/8 [00:02<00:16,  2.35s/it]Validating:  25%|██▌       | 2/8 [00:03<00:10,  1.73s/it]Validating:  38%|███▊      | 3/8 [00:05<00:07,  1.57s/it]Validating:  50%|█████     | 4/8 [00:06<00:05,  1.48s/it]Validating:  62%|██████▎   | 5/8 [00:07<00:04,  1.42s/it]Validating:  75%|███████▌  | 6/8 [00:09<00:02,  1.40s/it]Validating:  88%|████████▊ | 7/8 [00:10<00:01,  1.34s/it]Validating: 100%|██████████| 8/8 [00:10<00:00,  1.13s/it]                                                         --------------------------------------------------------------------------------
+DATALOADER:0 VALIDATE RESULTS
+{'em_score': 0.06263048201799393, 'f1_score': 0.19375422596931458}
+--------------------------------------------------------------------------------
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.058 MB of 0.114 MB uploaded (0.000 MB deduped)wandb: \ 0.114 MB of 0.114 MB uploaded (0.000 MB deduped)wandb: | 0.114 MB of 0.114 MB uploaded (0.000 MB deduped)wandb: / 0.114 MB of 0.126 MB uploaded (0.000 MB deduped)wandb: - 0.120 MB of 0.126 MB uploaded (0.000 MB deduped)wandb: \ 0.126 MB of 0.126 MB uploaded (0.000 MB deduped)wandb: | 0.126 MB of 0.126 MB uploaded (0.000 MB deduped)wandb: / 0.126 MB of 0.126 MB uploaded (0.000 MB deduped)wandb: - 0.126 MB of 0.126 MB uploaded (0.000 MB deduped)wandb: \ 0.126 MB of 0.126 MB uploaded (0.000 MB deduped)wandb: | 0.126 MB of 0.126 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            em_score ▁
+wandb:               epoch ▁
+wandb:            f1_score ▁
+wandb: trainer/global_step ▁
+wandb: 
+wandb: Run summary:
+wandb:               epoch 0
+wandb: trainer/global_step 0
+wandb: 
+wandb: Synced baseline_full: https://wandb.ai/tjung2/temporal_questions/runs/21hp91ek
+wandb: Synced 6 W&B file(s), 1 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220902_042701-21hp91ek/logs
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220902_042748-3cee8o5p
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run baseline_full
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/3cee8o5p
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory outputs/baseline_full exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All DDP processes registered. Starting ddp with 1 processes
+----------------------------------------------------------------------------------------------------
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Namespace(accelerator='ddp', adam_epsilon=1e-08, adapter_config={'adapter_list': None, 'adapter_hidden_size': None, 'adapter_enc_dec': None, 'pool_size': None}, adapter_enc_dec=None, adapter_hidden_size=None, adapter_list=None, check_validation_only=True, checkpoint_dir=None, checkpoint_path='outputs/baseline_full/epoch=7-f1_score=0.192-em_score=0.069.ckpt', dataset='templama', dataset_version='full', early_stop_callback=False, eval_batch_size=64, freeze_embeds=False, freeze_encoder=False, freeze_level=0, learning_rate=1e-05, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='baseline', mode='pretrain', model_name_or_path='google/t5-small-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=30, num_workers=4, opt_level='O1', output_dir='outputs/baseline_full', output_log=None, pool_size=None, prefix=True, resume_from_checkpoint=None, seed=42, split=0, split_num=1, t5_learning_rate=None, tokenizer_name_or_path='google/t5-small-ssm', train_batch_size=64, use_deepspeed=False, use_lr_scheduling=True, val_check_interval=1.0, val_data='2016', wandb_log=True, warmup_steps=0, weight_decay=0.0)
+Not freezing any parameters!
+split is 0
+Length of dataset retrieving is.. 480
+Validating: 0it [00:00, ?it/s]Validating:   0%|          | 0/8 [00:00<?, ?it/s]Validating:  12%|█▎        | 1/8 [00:02<00:16,  2.29s/it]Validating:  25%|██▌       | 2/8 [00:03<00:10,  1.73s/it]Validating:  38%|███▊      | 3/8 [00:05<00:07,  1.59s/it]Validating:  50%|█████     | 4/8 [00:06<00:05,  1.50s/it]Validating:  62%|██████▎   | 5/8 [00:07<00:04,  1.44s/it]Validating:  75%|███████▌  | 6/8 [00:09<00:02,  1.42s/it]Validating:  88%|████████▊ | 7/8 [00:10<00:01,  1.37s/it]Validating: 100%|██████████| 8/8 [00:11<00:00,  1.15s/it]                                                         --------------------------------------------------------------------------------
+DATALOADER:0 VALIDATE RESULTS
+{'em_score': 0.05833333358168602, 'f1_score': 0.1823892891407013}
+--------------------------------------------------------------------------------
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.057 MB of 0.112 MB uploaded (0.000 MB deduped)wandb: \ 0.112 MB of 0.112 MB uploaded (0.000 MB deduped)wandb: | 0.112 MB of 0.112 MB uploaded (0.000 MB deduped)wandb: / 0.112 MB of 0.122 MB uploaded (0.000 MB deduped)wandb: - 0.123 MB of 0.124 MB uploaded (0.000 MB deduped)wandb: \ 0.124 MB of 0.124 MB uploaded (0.000 MB deduped)wandb: | 0.124 MB of 0.124 MB uploaded (0.000 MB deduped)wandb: / 0.124 MB of 0.124 MB uploaded (0.000 MB deduped)wandb: - 0.124 MB of 0.124 MB uploaded (0.000 MB deduped)wandb: \ 0.124 MB of 0.124 MB uploaded (0.000 MB deduped)wandb: | 0.124 MB of 0.124 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            em_score ▁
+wandb:               epoch ▁
+wandb:            f1_score ▁
+wandb: trainer/global_step ▁
+wandb: 
+wandb: Run summary:
+wandb:               epoch 0
+wandb: trainer/global_step 0
+wandb: 
+wandb: Synced baseline_full: https://wandb.ai/tjung2/temporal_questions/runs/3cee8o5p
+wandb: Synced 6 W&B file(s), 1 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220902_042748-3cee8o5p/logs
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220902_042833-dvkwnq86
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run baseline_full
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/dvkwnq86
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory outputs/baseline_full exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All DDP processes registered. Starting ddp with 1 processes
+----------------------------------------------------------------------------------------------------
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Namespace(accelerator='ddp', adam_epsilon=1e-08, adapter_config={'adapter_list': None, 'adapter_hidden_size': None, 'adapter_enc_dec': None, 'pool_size': None}, adapter_enc_dec=None, adapter_hidden_size=None, adapter_list=None, check_validation_only=True, checkpoint_dir=None, checkpoint_path='outputs/baseline_full/epoch=7-f1_score=0.192-em_score=0.069.ckpt', dataset='templama', dataset_version='full', early_stop_callback=False, eval_batch_size=64, freeze_embeds=False, freeze_encoder=False, freeze_level=0, learning_rate=1e-05, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='baseline', mode='pretrain', model_name_or_path='google/t5-small-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=30, num_workers=4, opt_level='O1', output_dir='outputs/baseline_full', output_log=None, pool_size=None, prefix=True, resume_from_checkpoint=None, seed=42, split=0, split_num=1, t5_learning_rate=None, tokenizer_name_or_path='google/t5-small-ssm', train_batch_size=64, use_deepspeed=False, use_lr_scheduling=True, val_check_interval=1.0, val_data='2017', wandb_log=True, warmup_steps=0, weight_decay=0.0)
+Not freezing any parameters!
+split is 0
+Length of dataset retrieving is.. 481
+Validating: 0it [00:00, ?it/s]Validating:   0%|          | 0/8 [00:00<?, ?it/s]Validating:  12%|█▎        | 1/8 [00:02<00:16,  2.32s/it]Validating:  25%|██▌       | 2/8 [00:03<00:10,  1.71s/it]Validating:  38%|███▊      | 3/8 [00:05<00:07,  1.58s/it]Validating:  50%|█████     | 4/8 [00:06<00:05,  1.50s/it]Validating:  62%|██████▎   | 5/8 [00:07<00:04,  1.44s/it]Validating:  75%|███████▌  | 6/8 [00:09<00:02,  1.42s/it]Validating:  88%|████████▊ | 7/8 [00:10<00:01,  1.37s/it]Validating: 100%|██████████| 8/8 [00:11<00:00,  1.16s/it]                                                         --------------------------------------------------------------------------------
+DATALOADER:0 VALIDATE RESULTS
+{'em_score': 0.05613305792212486, 'f1_score': 0.17441849410533905}
+--------------------------------------------------------------------------------
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.057 MB of 0.112 MB uploaded (0.000 MB deduped)wandb: \ 0.112 MB of 0.112 MB uploaded (0.000 MB deduped)wandb: | 0.112 MB of 0.112 MB uploaded (0.000 MB deduped)wandb: / 0.112 MB of 0.124 MB uploaded (0.000 MB deduped)wandb: - 0.119 MB of 0.124 MB uploaded (0.000 MB deduped)wandb: \ 0.124 MB of 0.124 MB uploaded (0.000 MB deduped)wandb: | 0.124 MB of 0.124 MB uploaded (0.000 MB deduped)wandb: / 0.124 MB of 0.124 MB uploaded (0.000 MB deduped)wandb: - 0.124 MB of 0.124 MB uploaded (0.000 MB deduped)wandb: \ 0.124 MB of 0.124 MB uploaded (0.000 MB deduped)wandb: | 0.124 MB of 0.124 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            em_score ▁
+wandb:               epoch ▁
+wandb:            f1_score ▁
+wandb: trainer/global_step ▁
+wandb: 
+wandb: Run summary:
+wandb:               epoch 0
+wandb: trainer/global_step 0
+wandb: 
+wandb: Synced baseline_full: https://wandb.ai/tjung2/temporal_questions/runs/dvkwnq86
+wandb: Synced 6 W&B file(s), 1 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220902_042833-dvkwnq86/logs
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220902_042919-pu6drpb2
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run baseline_full
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/pu6drpb2
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory outputs/baseline_full exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All DDP processes registered. Starting ddp with 1 processes
+----------------------------------------------------------------------------------------------------
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Namespace(accelerator='ddp', adam_epsilon=1e-08, adapter_config={'adapter_list': None, 'adapter_hidden_size': None, 'adapter_enc_dec': None, 'pool_size': None}, adapter_enc_dec=None, adapter_hidden_size=None, adapter_list=None, check_validation_only=True, checkpoint_dir=None, checkpoint_path='outputs/baseline_full/epoch=7-f1_score=0.192-em_score=0.069.ckpt', dataset='templama', dataset_version='full', early_stop_callback=False, eval_batch_size=64, freeze_embeds=False, freeze_encoder=False, freeze_level=0, learning_rate=1e-05, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='baseline', mode='pretrain', model_name_or_path='google/t5-small-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=30, num_workers=4, opt_level='O1', output_dir='outputs/baseline_full', output_log=None, pool_size=None, prefix=True, resume_from_checkpoint=None, seed=42, split=0, split_num=1, t5_learning_rate=None, tokenizer_name_or_path='google/t5-small-ssm', train_batch_size=64, use_deepspeed=False, use_lr_scheduling=True, val_check_interval=1.0, val_data='2018', wandb_log=True, warmup_steps=0, weight_decay=0.0)
+Not freezing any parameters!
+split is 0
+Length of dataset retrieving is.. 473
+Validating: 0it [00:00, ?it/s]Validating:   0%|          | 0/8 [00:00<?, ?it/s]Validating:  12%|█▎        | 1/8 [00:02<00:16,  2.42s/it]Validating:  25%|██▌       | 2/8 [00:03<00:10,  1.78s/it]Validating:  38%|███▊      | 3/8 [00:05<00:08,  1.61s/it]Validating:  50%|█████     | 4/8 [00:06<00:06,  1.51s/it]Validating:  62%|██████▎   | 5/8 [00:07<00:04,  1.43s/it]Validating:  75%|███████▌  | 6/8 [00:09<00:02,  1.43s/it]Validating:  88%|████████▊ | 7/8 [00:10<00:01,  1.38s/it]Validating: 100%|██████████| 8/8 [00:11<00:00,  1.12s/it]                                                         --------------------------------------------------------------------------------
+DATALOADER:0 VALIDATE RESULTS
+{'em_score': 0.04862579330801964, 'f1_score': 0.15753374993801117}
+--------------------------------------------------------------------------------
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.055 MB of 0.109 MB uploaded (0.000 MB deduped)wandb: \ 0.109 MB of 0.109 MB uploaded (0.000 MB deduped)wandb: | 0.109 MB of 0.109 MB uploaded (0.000 MB deduped)wandb: / 0.109 MB of 0.121 MB uploaded (0.000 MB deduped)wandb: - 0.109 MB of 0.121 MB uploaded (0.000 MB deduped)wandb: \ 0.121 MB of 0.121 MB uploaded (0.000 MB deduped)wandb: | 0.121 MB of 0.121 MB uploaded (0.000 MB deduped)wandb: / 0.121 MB of 0.121 MB uploaded (0.000 MB deduped)wandb: - 0.121 MB of 0.121 MB uploaded (0.000 MB deduped)wandb: \ 0.121 MB of 0.121 MB uploaded (0.000 MB deduped)wandb: | 0.121 MB of 0.121 MB uploaded (0.000 MB deduped)wandb: / 0.121 MB of 0.121 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            em_score ▁
+wandb:               epoch ▁
+wandb:            f1_score ▁
+wandb: trainer/global_step ▁
+wandb: 
+wandb: Run summary:
+wandb:               epoch 0
+wandb: trainer/global_step 0
+wandb: 
+wandb: Synced baseline_full: https://wandb.ai/tjung2/temporal_questions/runs/pu6drpb2
+wandb: Synced 6 W&B file(s), 1 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220902_042919-pu6drpb2/logs

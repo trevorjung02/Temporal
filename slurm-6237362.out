@@ -1,0 +1,166 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-rtx6k
+#SBATCH --account=cse
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=1-00:00:00 
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+# python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.151-em_score=0.000.ckpt
+
+python preprocess_wmt_train_data.py 2007 -debug
+--------------------
+{'entity': 'B-ORG', 'score': 0.9906389, 'index': 7, 'word': 'New', 'start': 23, 'end': 26}
+{'entity': 'I-ORG', 'score': 0.9930313, 'index': 8, 'word': 'York', 'start': 27, 'end': 31}
+{'entity': 'I-ORG', 'score': 0.9871223, 'index': 9, 'word': 'Times', 'start': 32, 'end': 37}
+{'entity': 'B-PER', 'score': 0.99896437, 'index': 16, 'word': 'Bush', 'start': 78, 'end': 82}
+{'entity': 'B-PER', 'score': 0.9997631, 'index': 29, 'word': 'Mike', 'start': 134, 'end': 138}
+{'entity': 'I-PER', 'score': 0.99971896, 'index': 30, 'word': 'M', 'start': 139, 'end': 140}
+{'entity': 'I-PER', 'score': 0.9990775, 'index': 31, 'word': '##c', 'start': 140, 'end': 141}
+{'entity': 'I-PER', 'score': 0.9995585, 'index': 32, 'word': '##C', 'start': 141, 'end': 142}
+{'entity': 'I-PER', 'score': 0.9989204, 'index': 33, 'word': '##onnell', 'start': 142, 'end': 148}
+{'entity': 'B-PER', 'score': 0.9949025, 'index': 10, 'word': 'M', 'start': 32, 'end': 33}
+{'entity': 'B-PER', 'score': 0.9661034, 'index': 11, 'word': '##c', 'start': 33, 'end': 34}
+{'entity': 'B-PER', 'score': 0.5855713, 'index': 12, 'word': '##C', 'start': 34, 'end': 35}
+{'entity': 'B-PER', 'score': 0.68773437, 'index': 13, 'word': '##onnell', 'start': 35, 'end': 41}
+{'entity': 'B-LOC', 'score': 0.99966747, 'index': 31, 'word': 'United', 'start': 155, 'end': 161}
+{'entity': 'I-LOC', 'score': 0.99941254, 'index': 32, 'word': 'States', 'start': 162, 'end': 168}
+{'entity': 'B-LOC', 'score': 0.9996766, 'index': 16, 'word': 'United', 'start': 76, 'end': 82}
+{'entity': 'I-LOC', 'score': 0.9993446, 'index': 17, 'word': 'States', 'start': 83, 'end': 89}
+{'entity': 'B-PER', 'score': 0.9993718, 'index': 7, 'word': 'Bush', 'start': 14, 'end': 18}
+{'entity': 'B-ORG', 'score': 0.99941736, 'index': 10, 'word': 'National', 'start': 31, 'end': 39}
+{'entity': 'I-ORG', 'score': 0.9993359, 'index': 11, 'word': 'Security', 'start': 40, 'end': 48}
+{'entity': 'I-ORG', 'score': 0.9991879, 'index': 12, 'word': 'Agency', 'start': 49, 'end': 55}
+{'entity': 'B-LOC', 'score': 0.9996326, 'index': 20, 'word': 'United', 'start': 106, 'end': 112}
+{'entity': 'I-LOC', 'score': 0.999348, 'index': 21, 'word': 'States', 'start': 113, 'end': 119}
+{'entity': 'B-MISC', 'score': 0.99727947, 'index': 8, 'word': 'Foreign', 'start': 32, 'end': 39}
+{'entity': 'I-MISC', 'score': 0.9981664, 'index': 9, 'word': 'Intelligence', 'start': 40, 'end': 52}
+{'entity': 'I-MISC', 'score': 0.99868464, 'index': 10, 'word': 'Sur', 'start': 53, 'end': 56}
+{'entity': 'I-MISC', 'score': 0.99701834, 'index': 11, 'word': '##ve', 'start': 56, 'end': 58}
+{'entity': 'I-MISC', 'score': 0.99789304, 'index': 12, 'word': '##illa', 'start': 58, 'end': 62}
+{'entity': 'I-MISC', 'score': 0.9984245, 'index': 13, 'word': '##nce', 'start': 62, 'end': 65}
+{'entity': 'I-MISC', 'score': 0.9987287, 'index': 14, 'word': 'Act', 'start': 66, 'end': 69}
+{'entity': 'B-MISC', 'score': 0.9933175, 'index': 18, 'word': 'F', 'start': 80, 'end': 81}
+{'entity': 'I-MISC', 'score': 0.9433084, 'index': 19, 'word': '##IS', 'start': 81, 'end': 83}
+{'entity': 'I-MISC', 'score': 0.9958875, 'index': 20, 'word': '##A', 'start': 83, 'end': 84}
+{'entity': 'B-LOC', 'score': 0.99957293, 'index': 21, 'word': 'United', 'start': 98, 'end': 104}
+{'entity': 'I-LOC', 'score': 0.9991644, 'index': 22, 'word': 'States', 'start': 105, 'end': 111}
+{'entity': 'B-PER', 'score': 0.99875116, 'index': 30, 'word': 'M', 'start': 133, 'end': 134}
+{'entity': 'B-PER', 'score': 0.9937033, 'index': 31, 'word': '##c', 'start': 134, 'end': 135}
+{'entity': 'B-PER', 'score': 0.90556014, 'index': 32, 'word': '##C', 'start': 135, 'end': 136}
+{'entity': 'B-PER', 'score': 0.624541, 'index': 33, 'word': '##onnell', 'start': 136, 'end': 142}
+{'entity': 'B-MISC', 'score': 0.9973593, 'index': 11, 'word': 'Fourth', 'start': 46, 'end': 52}
+{'entity': 'I-MISC', 'score': 0.9974007, 'index': 12, 'word': 'Amendment', 'start': 53, 'end': 62}
+{'entity': 'B-PER', 'score': 0.9982948, 'index': 3, 'word': 'M', 'start': 4, 'end': 5}
+{'entity': 'B-PER', 'score': 0.99612874, 'index': 4, 'word': '##c', 'start': 5, 'end': 6}
+{'entity': 'B-PER', 'score': 0.843123, 'index': 5, 'word': '##C', 'start': 6, 'end': 7}
+{'entity': 'B-PER', 'score': 0.68655497, 'index': 6, 'word': '##onnell', 'start': 7, 'end': 13}
+{'entity': 'B-ORG', 'score': 0.99723375, 'index': 8, 'word': 'The', 'start': 19, 'end': 22}
+{'entity': 'I-ORG', 'score': 0.99888724, 'index': 9, 'word': 'El', 'start': 23, 'end': 25}
+{'entity': 'I-ORG', 'score': 0.99889797, 'index': 10, 'word': 'Paso', 'start': 26, 'end': 30}
+{'entity': 'I-ORG', 'score': 0.99858713, 'index': 11, 'word': 'Times', 'start': 31, 'end': 36}
+{'entity': 'B-ORG', 'score': 0.9903454, 'index': 22, 'word': 'F', 'start': 92, 'end': 93}
+{'entity': 'B-MISC', 'score': 0.5510725, 'index': 23, 'word': '##IS', 'start': 93, 'end': 95}
+{'entity': 'I-ORG', 'score': 0.87004656, 'index': 24, 'word': '##A', 'start': 95, 'end': 96}
+{'entity': 'B-ORG', 'score': 0.9989142, 'index': 26, 'word': 'Congress', 'start': 104, 'end': 112}
+{'entity': 'B-ORG', 'score': 0.9254556, 'index': 8, 'word': 'F', 'start': 33, 'end': 34}
+{'entity': 'B-ORG', 'score': 0.63735354, 'index': 9, 'word': '##IS', 'start': 34, 'end': 36}
+{'entity': 'I-ORG', 'score': 0.82368815, 'index': 10, 'word': '##A', 'start': 36, 'end': 37}
+{'entity': 'B-ORG', 'score': 0.93873185, 'index': 19, 'word': 'T', 'start': 71, 'end': 72}
+{'entity': 'I-ORG', 'score': 0.8368738, 'index': 20, 'word': '##hr', 'start': 72, 'end': 74}
+{'entity': 'B-ORG', 'score': 0.6233364, 'index': 21, 'word': '##eat', 'start': 74, 'end': 77}
+{'entity': 'I-ORG', 'score': 0.8997097, 'index': 22, 'word': 'Level', 'start': 78, 'end': 83}
+{'entity': 'B-ORG', 'score': 0.95455694, 'index': 33, 'word': 'F', 'start': 137, 'end': 138}
+{'entity': 'B-ORG', 'score': 0.49803308, 'index': 34, 'word': '##IS', 'start': 138, 'end': 140}
+{'entity': 'I-ORG', 'score': 0.8244128, 'index': 35, 'word': '##A', 'start': 140, 'end': 141}
+{'entity': 'B-PER', 'score': 0.99890924, 'index': 3, 'word': 'M', 'start': 4, 'end': 5}
+{'entity': 'B-PER', 'score': 0.9962762, 'index': 4, 'word': '##c', 'start': 5, 'end': 6}
+{'entity': 'B-PER', 'score': 0.9607244, 'index': 5, 'word': '##C', 'start': 6, 'end': 7}
+{'entity': 'B-PER', 'score': 0.81914204, 'index': 6, 'word': '##onnell', 'start': 7, 'end': 13}
+{'entity': 'B-ORG', 'score': 0.9995018, 'index': 16, 'word': 'National', 'start': 68, 'end': 76}
+{'entity': 'I-ORG', 'score': 0.99938285, 'index': 17, 'word': 'Security', 'start': 77, 'end': 85}
+{'entity': 'I-ORG', 'score': 0.9991944, 'index': 18, 'word': 'Agency', 'start': 86, 'end': 92}
+{'entity': 'B-ORG', 'score': 0.99906564, 'index': 6, 'word': 'Congress', 'start': 32, 'end': 40}
+{'entity': 'B-ORG', 'score': 0.99894613, 'index': 6, 'word': 'Congress', 'start': 14, 'end': 22}
+{'entity': 'B-PER', 'score': 0.9966172, 'index': 30, 'word': 'Bush', 'start': 128, 'end': 132}
+{'entity': 'B-ORG', 'score': 0.99036247, 'index': 35, 'word': 'F', 'start': 154, 'end': 155}
+{'entity': 'B-ORG', 'score': 0.56342036, 'index': 36, 'word': '##IS', 'start': 155, 'end': 157}
+{'entity': 'I-ORG', 'score': 0.7363712, 'index': 37, 'word': '##A', 'start': 157, 'end': 158}
+{'entity': 'B-PER', 'score': 0.9977205, 'index': 6, 'word': 'M', 'start': 19, 'end': 20}
+{'entity': 'B-PER', 'score': 0.9920391, 'index': 7, 'word': '##c', 'start': 20, 'end': 21}
+{'entity': 'I-PER', 'score': 0.5982267, 'index': 8, 'word': '##C', 'start': 21, 'end': 22}
+{'entity': 'I-PER', 'score': 0.81777555, 'index': 9, 'word': '##onnell', 'start': 22, 'end': 28}
+{'entity': 'B-ORG', 'score': 0.9987008, 'index': 27, 'word': 'Congress', 'start': 103, 'end': 111}
+{'entity': 'B-MISC', 'score': 0.9996917, 'index': 30, 'word': 'American', 'start': 123, 'end': 131}
+{'entity': 'B-PER', 'score': 0.98673445, 'index': 8, 'word': 'M', 'start': 27, 'end': 28}
+{'entity': 'B-PER', 'score': 0.93553454, 'index': 9, 'word': '##c', 'start': 28, 'end': 29}
+{'entity': 'I-PER', 'score': 0.6302565, 'index': 10, 'word': '##C', 'start': 29, 'end': 30}
+{'entity': 'B-PER', 'score': 0.712508, 'index': 11, 'word': '##onnell', 'start': 30, 'end': 36}
+{'entity': 'B-LOC', 'score': 0.998892, 'index': 6, 'word': 'White', 'start': 21, 'end': 26}
+{'entity': 'I-LOC', 'score': 0.99718875, 'index': 7, 'word': 'House', 'start': 27, 'end': 32}
+{'entity': 'B-ORG', 'score': 0.96726424, 'index': 11, 'word': 'Congressional', 'start': 60, 'end': 73}
+{'entity': 'B-PER', 'score': 0.99883467, 'index': 3, 'word': 'M', 'start': 4, 'end': 5}
+{'entity': 'B-PER', 'score': 0.9968228, 'index': 4, 'word': '##c', 'start': 5, 'end': 6}
+{'entity': 'B-PER', 'score': 0.9753071, 'index': 5, 'word': '##C', 'start': 6, 'end': 7}
+{'entity': 'B-PER', 'score': 0.8742855, 'index': 6, 'word': '##onnell', 'start': 7, 'end': 13}
+{'entity': 'B-LOC', 'score': 0.99855334, 'index': 2, 'word': 'White', 'start': 4, 'end': 9}
+{'entity': 'I-LOC', 'score': 0.988882, 'index': 3, 'word': 'House', 'start': 10, 'end': 15}
+{'entity': 'B-ORG', 'score': 0.99930096, 'index': 7, 'word': 'Congress', 'start': 31, 'end': 39}
+{'entity': 'B-ORG', 'score': 0.9932706, 'index': 21, 'word': 'F', 'start': 89, 'end': 90}
+{'entity': 'B-ORG', 'score': 0.6596585, 'index': 22, 'word': '##IS', 'start': 90, 'end': 92}
+{'entity': 'I-ORG', 'score': 0.7642783, 'index': 23, 'word': '##A', 'start': 92, 'end': 93}
+{'entity': 'B-ORG', 'score': 0.99942213, 'index': 3, 'word': 'Federal', 'start': 13, 'end': 20}
+{'entity': 'I-ORG', 'score': 0.99898076, 'index': 4, 'word': 'Reserve', 'start': 21, 'end': 28}
+{'entity': 'B-LOC', 'score': 0.99838346, 'index': 35, 'word': 'Wall', 'start': 168, 'end': 172}
+{'entity': 'I-LOC', 'score': 0.99895513, 'index': 36, 'word': 'Street', 'start': 173, 'end': 179}
+{'entity': 'B-ORG', 'score': 0.999086, 'index': 12, 'word': 'Fed', 'start': 59, 'end': 62}
+{'entity': 'B-PER', 'score': 0.99959517, 'index': 2, 'word': 'Bush', 'start': 10, 'end': 14}
+{'entity': 'B-ORG', 'score': 0.99908787, 'index': 2, 'word': 'Fed', 'start': 4, 'end': 7}
+{'entity': 'B-LOC', 'score': 0.99727553, 'index': 21, 'word': 'White', 'start': 74, 'end': 79}
+{'entity': 'I-LOC', 'score': 0.99595463, 'index': 22, 'word': 'House', 'start': 80, 'end': 85}
+{'entity': 'B-PER', 'score': 0.79035985, 'index': 29, 'word': 'Fan', 'start': 125, 'end': 128}
+{'entity': 'I-ORG', 'score': 0.74477553, 'index': 30, 'word': '##nie', 'start': 128, 'end': 131}
+{'entity': 'I-ORG', 'score': 0.6951668, 'index': 31, 'word': 'Mae', 'start': 132, 'end': 135}
+{'entity': 'B-ORG', 'score': 0.99776745, 'index': 1, 'word': 'WA', 'start': 0, 'end': 2}
+{'entity': 'I-ORG', 'score': 0.9956051, 'index': 2, 'word': '##S', 'start': 2, 'end': 3}
+{'entity': 'I-ORG', 'score': 0.9956969, 'index': 3, 'word': '##H', 'start': 3, 'end': 4}
+{'entity': 'I-ORG', 'score': 0.9894912, 'index': 4, 'word': '##ING', 'start': 4, 'end': 7}
+{'entity': 'I-ORG', 'score': 0.9982893, 'index': 5, 'word': '##TO', 'start': 7, 'end': 9}
+{'entity': 'I-ORG', 'score': 0.99710363, 'index': 6, 'word': '##N', 'start': 9, 'end': 10}
+{'entity': 'B-ORG', 'score': 0.9991404, 'index': 8, 'word': 'Re', 'start': 12, 'end': 14}
+{'entity': 'I-ORG', 'score': 0.99857235, 'index': 9, 'word': '##uters', 'start': 14, 'end': 19}
+{'entity': 'B-LOC', 'score': 0.99954784, 'index': 12, 'word': 'U', 'start': 23, 'end': 24}
+{'entity': 'I-LOC', 'score': 0.9969414, 'index': 13, 'word': '.', 'start': 24, 'end': 25}
+{'entity': 'I-LOC', 'score': 0.9988825, 'index': 14, 'word': 'S', 'start': 25, 'end': 26}
+{'entity': 'I-LOC', 'score': 0.9928492, 'index': 15, 'word': '.', 'start': 26, 'end': 27}
+{'entity': 'B-ORG', 'score': 0.99793535, 'index': 52, 'word': 'Commerce', 'start': 197, 'end': 205}
+{'entity': 'I-ORG', 'score': 0.99866575, 'index': 53, 'word': 'Department', 'start': 206, 'end': 216}
+{'entity': 'B-LOC', 'score': 0.99893653, 'index': 24, 'word': 'Wall', 'start': 113, 'end': 117}
+{'entity': 'I-LOC', 'score': 0.9990919, 'index': 25, 'word': 'Street', 'start': 118, 'end': 124}
+{'entity': 'B-ORG', 'score': 0.99896926, 'index': 11, 'word': 'Federal', 'start': 56, 'end': 63}
+{'entity': 'I-ORG', 'score': 0.9985638, 'index': 12, 'word': 'Reserve', 'start': 64, 'end': 71}
+{'entity': 'B-ORG', 'score': 0.9989217, 'index': 2, 'word': 'Fed', 'start': 4, 'end': 7}
+{'entity': 'B-LOC', 'score': 0.9995906, 'index': 37, 'word': 'U', 'start': 189, 'end': 190}
+{'entity': 'I-LOC', 'score': 0.9978477, 'index': 38, 'word': '.', 'start': 190, 'end': 191}
+{'entity': 'I-LOC', 'score': 0.9990538, 'index': 39, 'word': 'S', 'start': 191, 'end': 192}
+{'entity': 'I-LOC', 'score': 0.6558054, 'index': 40, 'word': '.', 'start': 192, 'end': 193}
+{'entity': 'I-MISC', 'score': 0.7913033, 'index': 2, 'word': 'Luck', 'start': 5, 'end': 9}
+Traceback (most recent call last):
+  File "preprocess_wmt_train_data.py", line 149, in <module>
+    main()
+  File "preprocess_wmt_train_data.py", line 65, in main
+    sentence, answers = mask_sentence(sentences[i], mask_chance, bert_ner, spacy_ner)
+  File "preprocess_wmt_train_data.py", line 108, in mask_sentence
+    combined[-1]['end'] = ner_results[i]['end']
+IndexError: list index out of range

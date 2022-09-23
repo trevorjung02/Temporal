@@ -1,0 +1,32 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=cse
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=1-00:00:00 
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+# python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.151-em_score=0.000.ckpt
+
+# python run.py --config configs/wmt/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtkadapter_2010_2freeze_158_128/epoch=8-f1_score=0.084-em_score=0.000.ckpt
+
+# python preprocess_wmt_train_data.py 2007
+
+pip install setuptools=58.2.0--------------------
+WARNING: Ignoring invalid distribution -umpy (/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages)
+ERROR: Invalid requirement: 'setuptools=58.2.0'
+Hint: = is not a valid operator. Did you mean == ?
+WARNING: Ignoring invalid distribution -umpy (/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -umpy (/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -umpy (/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages)

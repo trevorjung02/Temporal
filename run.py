@@ -19,6 +19,8 @@ if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument('--config', default=None, type=str)
     parser.add_argument('-datav', type=str)
+    parser.add_argument('-val_data', type=str)
+    parser.add_argument('-checkpoint_path', type=str)
     arg_ = parser.parse_args()
     if arg_.config == None:
         raise NameError("Include a config file in the argument please.")
@@ -51,6 +53,14 @@ if __name__ == '__main__':
         hparam.checkpoint_dir = None
     if 'adapter_enc_dec' not in hparam:
         hparam.adapter_enc_dec = None
+    if 'adapter_list' not in hparam:
+        hparam.adapter_list = None
+    if 'adapter_hidden_size' not in hparam:
+        hparam.adapter_hidden_size = None
+    if 'pool_size' not in hparam:
+        hparam.pool_size = None
+    if 'val_data' not in hparam:
+        hparam.val_data = None
         
     #Setting configurations
     args = dict(
@@ -80,7 +90,7 @@ if __name__ == '__main__':
         num_workers=hparam.num_workers,
         resume_from_checkpoint=hparam.resume_from_checkpoint, 
         use_lr_scheduling = hparam.use_lr_scheduling,
-        val_check_interval = 1.0,
+        val_check_interval = 0.1 if hparam.dataset == 'wmt' else 1.0,
         n_val=-1,
         n_train=-1,
         n_test=-1,
@@ -98,10 +108,16 @@ if __name__ == '__main__':
         adapter_hidden_size = hparam.adapter_hidden_size,
         t5_learning_rate = hparam.t5_learning_rate,
         checkpoint_dir = hparam.checkpoint_dir,
-        adapter_enc_dec = hparam.adapter_enc_dec
+        adapter_enc_dec = hparam.adapter_enc_dec,
+        pool_size = hparam.pool_size,
+        val_data = hparam.val_data
     )
     if arg_.datav is not None:
         args['dataset_version'] = arg_.datav
+    if arg_.val_data is not None:
+        args['val_data'] = arg_.val_data
+    else:
+        args['val_data'] = args['dataset_version']
 
 
     #Logging into WANDB if needed
@@ -116,7 +132,7 @@ if __name__ == '__main__':
         wandb_logger = None 
 
     args = argparse.Namespace(**args)
-    args.adapter_config = {'adapter_list': args.adapter_list, 'adapter_hidden_size': args.adapter_hidden_size, 'adapter_enc_dec': args.adapter_enc_dec}
+    args.adapter_config = {'adapter_list': args.adapter_list, 'adapter_hidden_size': args.adapter_hidden_size, 'adapter_enc_dec': args.adapter_enc_dec, 'pool_size': args.pool_size}
 
     if args.output_dir=="":
         checkpoint_callback = False # Do not save model checkpoints when output dir is empty
@@ -124,20 +140,25 @@ if __name__ == '__main__':
     else:
         args.output_dir += args.method
         args.output_dir += '_' + str(args.dataset_version)
-        args.output_dir += '_' + str(args.freeze_level) + 'freeze'
-        args.output_dir += '_' + ''.join(map(str, args.adapter_list))
-        args.output_dir += '_' + str(args.adapter_hidden_size)
-        if args.adapter_enc_dec:
-            args.output_dir += '_' + 'encdec'
-        callbacks = [ModelCheckpoint(dirpath = args.output_dir, filename = '{epoch}-{f1_score:.3f}-{em_score:.3f}', save_top_k=1, period=1, mode="max", monitor="em_score")]
+        if 'kadapter' in args.method: 
+            args.output_dir += '_' + str(args.freeze_level) + 'freeze'
+            args.output_dir += '_' + ''.join(map(str, args.adapter_list))
+            args.output_dir += '_' + str(args.adapter_hidden_size)
+            if args.adapter_enc_dec:
+                args.output_dir += '_' + 'encdec'
+        if args.dataset == 'wmt':
+            callbacks = [ModelCheckpoint(dirpath = args.output_dir, filename = '{epoch}-{f1_score:.3f}-{em_score:.3f}', save_top_k=3, period=1, mode="max", monitor="f1_score")]
+        else:
+            callbacks = [ModelCheckpoint(dirpath = args.output_dir, filename = '{epoch}-{f1_score:.3f}-{em_score:.3f}', save_top_k=1, period=1, mode="max", monitor="em_score")]
     checkpoint_callback = True
 
     if args.checkpoint_dir is not None:
-        args.checkpoint_dir += args.method
+        # args.checkpoint_dir += args.method
+        args.checkpoint_dir += 'baseline'
         args.checkpoint_dir += '_' + str(args.dataset_version)
-        args.checkpoint_dir += '_' + '2freeze'
-        args.checkpoint_dir += '_' + ''.join(map(str, args.adapter_list))
-        args.checkpoint_dir += '_' + str(args.adapter_hidden_size)
+        # args.checkpoint_dir += '_' + '2freeze'
+        # args.checkpoint_dir += '_' + ''.join(map(str, args.adapter_list))
+        # args.checkpoint_dir += '_' + str(args.adapter_hidden_size)
         pattern = 'em_score=(\d.\d*)'
         checkpoint_path = None
         max_em = 0
@@ -152,6 +173,8 @@ if __name__ == '__main__':
         args.checkpoint_path = checkpoint_path
         print(f"checkpoint path = {args.checkpoint_path}")
 
+    if arg_.checkpoint_path is not None:
+        args.checkpoint_path = arg_.checkpoint_path
     print(args)
 
     # Logging Learning Rate Scheduling

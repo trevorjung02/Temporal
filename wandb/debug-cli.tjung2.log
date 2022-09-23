@@ -1376,3 +1376,313 @@ requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=4
 	t5_learning_rate: 1e-05
 2022-08-31 16:29:08 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
 2022-08-31 16:29:13 INFO Running runs: ['42t7qxok']
+2022-08-31 16:47:33 INFO Cleaning up finished run: rvc4yqua
+2022-08-31 16:47:36 INFO Cleaning up finished run: 42t7qxok
+2022-08-31 16:47:48 INFO Running runs: []
+2022-08-31 16:47:48 INFO Running runs: []
+2022-08-31 16:47:49 INFO Agent received command: run
+2022-08-31 16:47:49 INFO Agent starting run with config:
+	learning_rate: 0.0001
+	t5_learning_rate: 1e-06
+2022-08-31 16:47:49 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 16:47:49 INFO Agent received command: run
+2022-08-31 16:47:49 INFO Agent starting run with config:
+	learning_rate: 1e-05
+	t5_learning_rate: 0.0001
+2022-08-31 16:47:49 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 16:47:54 INFO Running runs: ['keo018df']
+2022-08-31 16:47:54 INFO Running runs: ['chdt6qmt']
+2022-08-31 17:05:53 INFO Cleaning up finished run: chdt6qmt
+2022-08-31 17:05:59 INFO Cleaning up finished run: keo018df
+2022-08-31 17:06:07 INFO Running runs: []
+2022-08-31 17:06:07 INFO Agent received command: run
+2022-08-31 17:06:07 INFO Agent starting run with config:
+	learning_rate: 1e-05
+	t5_learning_rate: 1e-05
+2022-08-31 17:06:07 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 17:06:09 INFO Running runs: []
+2022-08-31 17:06:09 INFO Agent received command: run
+2022-08-31 17:06:09 INFO Agent starting run with config:
+	learning_rate: 1e-05
+	t5_learning_rate: 1e-06
+2022-08-31 17:06:09 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_2010_1freeze.json
+2022-08-31 17:06:12 INFO Running runs: ['op2tc9lw']
+2022-08-31 17:06:14 INFO Running runs: ['45w2nqu0']
+2022-08-31 17:24:06 INFO Cleaning up finished run: op2tc9lw
+2022-08-31 17:24:12 INFO Cleaning up finished run: 45w2nqu0
+2022-09-01 01:21:08 INFO Running runs: []
+2022-09-01 01:21:08 INFO Agent received command: run
+2022-09-01 01:21:08 INFO Agent starting run with config:
+	learning_rate: 0.003
+2022-09-01 01:21:08 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json
+2022-09-01 01:21:13 INFO Running runs: ['m5fcswi4']
+2022-09-01 01:22:20 INFO Cleaning up finished run: m5fcswi4
+2022-09-01 01:23:55 INFO Running runs: []
+2022-09-01 01:23:55 INFO Agent received command: run
+2022-09-01 01:23:55 INFO Agent starting run with config:
+	learning_rate: 0.003
+2022-09-01 01:23:55 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -datav 2016
+2022-09-01 01:24:00 INFO Running runs: ['v3jxgpc9']
+2022-09-01 01:27:03 INFO Running runs: []
+2022-09-01 01:27:04 INFO Agent received command: run
+2022-09-01 01:27:04 INFO Agent starting run with config:
+	learning_rate: 0.003
+2022-09-01 01:27:04 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -datav 2017
+2022-09-01 01:27:09 INFO Running runs: ['tom4vj43']
+2022-09-01 01:28:55 INFO Cleaning up finished run: tom4vj43
+2022-09-01 01:29:10 INFO Running runs: []
+2022-09-01 01:29:10 INFO Agent received command: run
+2022-09-01 01:29:10 INFO Agent starting run with config:
+	learning_rate: 0.001
+2022-09-01 01:29:10 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -datav 2017
+2022-09-01 01:29:15 INFO Running runs: ['u1zk2jk3']
+2022-09-01 01:30:01 INFO Cleaning up finished run: u1zk2jk3
+2022-09-01 01:53:48 INFO Running runs: []
+2022-09-01 01:53:48 INFO Agent received command: run
+2022-09-01 01:53:48 INFO Agent starting run with config:
+	learning_rate: 0.0001
+2022-09-01 01:53:48 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -datav 2017
+2022-09-01 01:53:53 INFO Running runs: ['xokfabj2']
+2022-09-01 01:56:09 INFO Running runs: []
+2022-09-01 01:56:09 INFO Agent received command: run
+2022-09-01 01:56:09 INFO Agent starting run with config:
+	learning_rate: 0.001
+2022-09-01 01:56:09 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -datav 2016
+2022-09-01 01:56:14 INFO Running runs: ['1phfe96l']
+2022-09-01 02:05:38 INFO Running runs: []
+2022-09-01 02:05:38 INFO Agent received command: run
+2022-09-01 02:05:38 INFO Agent starting run with config:
+	learning_rate: 0.0001
+2022-09-01 02:05:38 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -datav 2016
+2022-09-01 02:05:43 INFO Running runs: ['hm0e8f3b']
+2022-09-01 02:07:40 INFO Cleaning up finished run: hm0e8f3b
+2022-09-01 02:07:51 INFO Running runs: []
+2022-09-01 02:07:51 INFO Agent received command: exit
+2022-09-01 02:07:51 INFO Received exit command. Killing runs and quitting.
+2022-09-01 02:07:52 ERROR 400 response executing GraphQL.
+2022-09-01 02:07:52 ERROR {"errors":[{"message":"Sweep tjung2/temporal_questions/33sphw68 is not running","path":["createAgent"]}],"data":{"createAgent":null}}
+2022-09-01 02:07:52 ERROR Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 113, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 204, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 39, in execute
+    request.raise_for_status()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 1948, in register_agent
+    response = self.gql(
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 129, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 1946, in no_retry_4xx
+    raise UsageError(body["errors"][0]["message"])
+wandb.errors.UsageError: Sweep tjung2/temporal_questions/33sphw68 is not running
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 97, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 1291, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 622, in agent
+    return run_agent(
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 564, in run_agent
+    agent.run()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/wandb_agent.py", line 192, in run
+    agent = self._api.register_agent(socket.gethostname(), sweep_id=self._sweep_id)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/internal.py", line 123, in register_agent
+    return self.api.register_agent(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 61, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 1948, in register_agent
+    response = self.gql(
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 129, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 1946, in no_retry_4xx
+    raise UsageError(body["errors"][0]["message"])
+wandb.errors.CommError: Sweep tjung2/temporal_questions/33sphw68 is not running
+
+2022-09-01 02:11:01 INFO Running runs: []
+2022-09-01 02:11:01 INFO Agent received command: run
+2022-09-01 02:11:01 INFO Agent starting run with config:
+	learning_rate: 0.003
+2022-09-01 02:11:01 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -datav 2016
+2022-09-01 02:11:06 INFO Running runs: ['05an90y7']
+2022-09-01 02:14:12 INFO Running runs: []
+2022-09-01 02:23:37 INFO Running runs: []
+2022-09-01 02:26:45 INFO Running runs: []
+2022-09-01 02:26:45 INFO Agent received command: run
+2022-09-01 02:26:45 INFO Agent starting run with config:
+	learning_rate: 0.003
+2022-09-01 02:27:03 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -datav 2017
+2022-09-01 02:27:08 INFO Running runs: ['9ncy9uau']
+2022-09-01 03:23:36 INFO Cleaning up finished run: 05an90y7
+2022-09-01 03:23:49 INFO Running runs: []
+2022-09-01 03:23:50 INFO Agent received command: run
+2022-09-01 03:23:50 INFO Agent starting run with config:
+	learning_rate: 0.001
+2022-09-01 03:23:50 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -datav 2016
+2022-09-01 03:23:55 INFO Running runs: ['9im9td06']
+2022-09-01 03:33:54 INFO Cleaning up finished run: 9ncy9uau
+2022-09-01 03:34:09 INFO Running runs: []
+2022-09-01 03:34:09 INFO Agent received command: run
+2022-09-01 03:34:09 INFO Agent starting run with config:
+	learning_rate: 0.001
+2022-09-01 03:34:09 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -datav 2017
+2022-09-01 03:34:14 INFO Running runs: ['tnqt6da5']
+2022-09-01 04:01:48 INFO Cleaning up finished run: 9im9td06
+2022-09-01 04:02:01 INFO Running runs: []
+2022-09-01 04:02:01 INFO Agent received command: run
+2022-09-01 04:02:01 INFO Agent starting run with config:
+	learning_rate: 0.0001
+2022-09-01 04:02:01 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -datav 2016
+2022-09-01 04:02:06 INFO Running runs: ['4krjo0fk']
+2022-09-01 04:12:41 INFO Cleaning up finished run: tnqt6da5
+2022-09-01 04:12:54 INFO Running runs: []
+2022-09-01 04:12:54 INFO Agent received command: run
+2022-09-01 04:12:54 INFO Agent starting run with config:
+	learning_rate: 0.0001
+2022-09-01 04:12:54 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -datav 2017
+2022-09-01 04:12:59 INFO Running runs: ['5udl6pjc']
+2022-09-01 04:41:44 INFO Cleaning up finished run: 4krjo0fk
+2022-09-01 04:50:49 INFO Cleaning up finished run: 5udl6pjc
+2022-09-02 04:59:01 INFO Running runs: []
+2022-09-02 04:59:01 INFO Agent received command: run
+2022-09-02 04:59:01 INFO Agent starting run with config:
+	learning_rate: 0.003
+2022-09-02 04:59:01 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_padapters_yearly_2freeze.json
+2022-09-02 04:59:06 INFO Running runs: ['1ejyru7h']
+2022-09-02 05:27:07 INFO Cleaning up finished run: 1ejyru7h
+2022-09-02 05:27:20 INFO Running runs: []
+2022-09-02 05:27:20 INFO Agent received command: run
+2022-09-02 05:27:20 INFO Agent starting run with config:
+	learning_rate: 0.001
+2022-09-02 05:27:20 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_padapters_yearly_2freeze.json
+2022-09-02 05:27:25 INFO Running runs: ['p3v44zc7']
+2022-09-02 05:58:20 INFO Cleaning up finished run: p3v44zc7
+2022-09-02 05:58:35 INFO Running runs: []
+2022-09-02 05:58:35 INFO Agent received command: run
+2022-09-02 05:58:35 INFO Agent starting run with config:
+	learning_rate: 0.0001
+2022-09-02 05:58:35 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_padapters_yearly_2freeze.json
+2022-09-02 05:58:40 INFO Running runs: ['n9cv7e79']
+2022-09-02 06:27:53 INFO Cleaning up finished run: n9cv7e79
+2022-09-08 03:00:09 INFO Running runs: []
+2022-09-08 03:00:09 INFO Agent received command: run
+2022-09-08 03:00:09 INFO Agent starting run with config:
+	learning_rate: 0.003
+2022-09-08 03:00:09 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_padapters_yearly_2freeze.json
+2022-09-08 03:00:14 INFO Running runs: ['p5o5hvrt']
+2022-09-08 03:02:42 INFO Running runs: []
+2022-09-08 03:02:43 INFO Agent received command: run
+2022-09-08 03:02:43 INFO Agent starting run with config:
+	learning_rate: 0.003
+2022-09-08 03:02:43 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json
+2022-09-08 03:02:48 INFO Running runs: ['8smg00ie']
+2022-09-08 03:23:31 INFO Cleaning up finished run: p5o5hvrt
+2022-09-08 03:23:44 INFO Running runs: []
+2022-09-08 03:23:45 INFO Agent received command: run
+2022-09-08 03:23:45 INFO Agent starting run with config:
+	learning_rate: 0.001
+2022-09-08 03:23:45 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_padapters_yearly_2freeze.json
+2022-09-08 03:23:50 INFO Running runs: ['nh77s8s0']
+2022-09-08 03:34:07 INFO Cleaning up finished run: 8smg00ie
+2022-09-08 03:34:20 INFO Running runs: []
+2022-09-08 03:34:21 INFO Agent received command: run
+2022-09-08 03:34:21 INFO Agent starting run with config:
+	learning_rate: 0.001
+2022-09-08 03:34:21 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json
+2022-09-08 03:34:26 INFO Running runs: ['e53fct07']
+2022-09-08 03:46:06 INFO Cleaning up finished run: nh77s8s0
+2022-09-08 03:46:26 INFO Running runs: []
+2022-09-08 03:46:26 INFO Agent received command: run
+2022-09-08 03:46:26 INFO Agent starting run with config:
+	learning_rate: 0.0001
+2022-09-08 03:46:26 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_padapters_yearly_2freeze.json
+2022-09-08 03:46:31 INFO Running runs: ['vl0gimhz']
+2022-09-08 04:05:51 INFO Cleaning up finished run: e53fct07
+2022-09-08 04:06:05 INFO Running runs: []
+2022-09-08 04:06:05 INFO Agent received command: run
+2022-09-08 04:06:05 INFO Agent starting run with config:
+	learning_rate: 0.0001
+2022-09-08 04:06:05 INFO About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json
+2022-09-08 04:06:10 INFO Running runs: ['bco9tb7j']
+2022-09-08 04:09:01 INFO Cleaning up finished run: vl0gimhz
+2022-09-08 04:38:22 INFO Cleaning up finished run: bco9tb7j
+2022-09-09 05:14:00 INFO Running runs: []
+2022-09-09 05:14:01 INFO Agent received command: run
+2022-09-09 05:14:01 INFO Agent starting run with config:
+	learning_rate: 0.003
+2022-09-09 05:14:01 INFO About to run command: /usr/bin/env python run.py --config configs/situatedqa/training/t5_kadapters_yearly_2freeze.json
+2022-09-09 05:14:06 INFO Running runs: ['86vl970t']
+2022-09-09 05:15:16 INFO Running runs: []
+2022-09-09 05:15:16 INFO Agent received command: run
+2022-09-09 05:15:16 INFO Agent starting run with config:
+	learning_rate: 0.003
+2022-09-09 05:15:16 INFO About to run command: /usr/bin/env python run.py --config configs/situatedqa/training/t5_padapters2_yearly_2freeze.json
+2022-09-09 05:15:17 INFO Cleaning up finished run: 86vl970t
+2022-09-09 05:15:21 INFO Running runs: ['y95id2hs']
+2022-09-09 05:15:30 INFO Running runs: []
+2022-09-09 05:15:31 INFO Agent received command: run
+2022-09-09 05:15:31 INFO Agent starting run with config:
+	learning_rate: 0.001
+2022-09-09 05:15:31 INFO About to run command: /usr/bin/env python run.py --config configs/situatedqa/training/t5_kadapters_yearly_2freeze.json
+2022-09-09 05:15:36 INFO Running runs: ['wfkaxga6']
+2022-09-09 05:16:11 INFO Cleaning up finished run: wfkaxga6
+2022-09-09 05:16:12 INFO Cleaning up finished run: y95id2hs
+2022-09-09 05:16:33 INFO Running runs: []
+2022-09-09 05:16:33 INFO Running runs: []
+2022-09-09 05:16:34 INFO Agent received command: run
+2022-09-09 05:16:34 INFO Agent starting run with config:
+	learning_rate: 0.0001
+2022-09-09 05:16:34 INFO About to run command: /usr/bin/env python run.py --config configs/situatedqa/training/t5_kadapters_yearly_2freeze.json
+2022-09-09 05:16:34 INFO Agent received command: run
+2022-09-09 05:16:34 INFO Agent starting run with config:
+	learning_rate: 0.001
+2022-09-09 05:16:34 INFO About to run command: /usr/bin/env python run.py --config configs/situatedqa/training/t5_padapters2_yearly_2freeze.json
+2022-09-09 05:16:39 INFO Running runs: ['d5ie1ajo']
+2022-09-09 05:16:39 INFO Running runs: ['9jszx5p9']
+2022-09-09 05:17:24 INFO Cleaning up finished run: 9jszx5p9
+2022-09-09 05:17:24 INFO Cleaning up finished run: d5ie1ajo
+2022-09-09 05:17:50 INFO Running runs: []
+2022-09-09 05:17:51 INFO Agent received command: run
+2022-09-09 05:17:51 INFO Agent starting run with config:
+	learning_rate: 0.0001
+2022-09-09 05:17:51 INFO About to run command: /usr/bin/env python run.py --config configs/situatedqa/training/t5_padapters2_yearly_2freeze.json
+2022-09-09 05:17:56 INFO Running runs: ['c7tjlg36']
+2022-09-09 05:18:51 INFO Cleaning up finished run: c7tjlg36
+2022-09-15 05:54:41 INFO Running runs: []
+2022-09-15 05:54:42 INFO Agent received command: run
+2022-09-15 05:54:42 INFO Agent starting run with config:
+	learning_rate: 0.001
+2022-09-15 05:54:42 INFO About to run command: /usr/bin/env python run.py --config configs/situatedqa/training/t5_baseline_yearly.json
+2022-09-15 05:54:47 INFO Running runs: ['chvprcs7']
+2022-09-15 08:04:32 INFO Cleaning up finished run: chvprcs7
+2022-09-15 08:04:59 INFO Running runs: []
+2022-09-15 08:05:00 INFO Agent received command: run
+2022-09-15 08:05:00 INFO Agent starting run with config:
+	learning_rate: 0.0001
+2022-09-15 08:05:00 INFO About to run command: /usr/bin/env python run.py --config configs/situatedqa/training/t5_baseline_yearly.json
+2022-09-15 08:05:05 INFO Running runs: ['ss9emm53']
+2022-09-15 09:43:57 INFO Cleaning up finished run: ss9emm53
+2022-09-15 09:44:29 INFO Running runs: []
+2022-09-15 09:44:29 INFO Agent received command: run
+2022-09-15 09:44:29 INFO Agent starting run with config:
+	learning_rate: 1e-05
+2022-09-15 09:44:29 INFO About to run command: /usr/bin/env python run.py --config configs/situatedqa/training/t5_baseline_yearly.json
+2022-09-15 09:44:34 INFO Running runs: ['9e52qbab']
+2022-09-15 11:04:36 INFO Cleaning up finished run: 9e52qbab

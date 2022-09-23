@@ -1,0 +1,29 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-rtx6k
+#SBATCH --account=cse
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=11:00:00 
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+python convert_answers.py 2008
+python convert_answers.py 2009
+python convert_answers.py 2010
+python convert_answers.py 2011
+python convert_answers.py 2012
+python convert_answers.py 2013
+python convert_answers.py 2014
+python convert_answers.py 2015
+python convert_answers.py 2016
+--------------------

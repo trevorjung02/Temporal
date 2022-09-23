@@ -1,0 +1,58 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=ark
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=16:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+    
+source ~/.bashrc
+conda activate ckl
+
+wandb agent --count 1 tjung2/temporal_questions/33sphw68
+wandb agent --count 1 tjung2/temporal_questions/33sphw68
+wandb agent --count 1 tjung2/temporal_questions/33sphw68
+--------------------
+wandb: Starting wandb agent 🕵️
+2022-09-01 02:05:38,100 - wandb.wandb_agent - INFO - Running runs: []
+2022-09-01 02:05:38,264 - wandb.wandb_agent - INFO - Agent received command: run
+2022-09-01 02:05:38,264 - wandb.wandb_agent - INFO - Agent starting run with config:
+	learning_rate: 0.0001
+2022-09-01 02:05:38,269 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -datav 2016
+2022-09-01 02:05:43,279 - wandb.wandb_agent - INFO - Running runs: ['hm0e8f3b']
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: WARNING Ignored wandb.init() arg project when running a sweep.
+wandb: ERROR Error communicating with wandb process
+Problem at: run.py 116 <module>
+Traceback (most recent call last):
+  File "run.py", line 116, in <module>
+    wandb.init(project=hparam.wandb_project, name=f"{hparam.method}_{args['dataset_version']}" , config=args, settings=wandb.Settings(start_method="fork"))
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1043, in init
+    run = wi.init()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 691, in init
+    raise UsageError(error_message)
+wandb.errors.UsageError: Error communicating with wandb process
+2022-09-01 02:07:40,080 - wandb.wandb_agent - INFO - Cleaning up finished run: hm0e8f3b
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.000 MB of 0.000 MB uploaded (0.000 MB deduped)wandb: \ 0.000 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: | 0.002 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: / 0.002 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: - 0.002 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: \ 0.002 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: | 0.002 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: / 0.002 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: - 0.002 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: \ 0.002 MB of 0.002 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: Synced kadapter_2016: https://wandb.ai/tjung2/temporal_questions/runs/hm0e8f3b
+wandb: Synced 2 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220901_020556-hm0e8f3b/logs
+wandb: Terminating and syncing runs. Press ctrl-c to kill.
+wandb: Starting wandb agent 🕵️
+2022-09-01 02:07:51,224 - wandb.wandb_agent - INFO - Running runs: []
+2022-09-01 02:07:51,409 - wandb.wandb_agent - INFO - Agent received command: exit
+2022-09-01 02:07:51,410 - wandb.wandb_agent - INFO - Received exit command. Killing runs and quitting.
+wandb: Terminating and syncing runs. Press ctrl-c to kill.
+wandb: Starting wandb agent 🕵️
+wandb: ERROR Error while calling W&B API: Sweep tjung2/temporal_questions/33sphw68 is not running (<Response [400]>)
+wandb: ERROR Find detailed error logs at: /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/debug-cli.log
+Error: Sweep tjung2/temporal_questions/33sphw68 is not running

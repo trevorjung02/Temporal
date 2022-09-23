@@ -1,0 +1,112 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=ark
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=11:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+python evaluate_yearly.py --config configs/templama/training/t5_kadapters_yearly_1freeze.json
+--------------------
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+Some weights of T5ForConditionalGeneration were not initialized from the model checkpoint at google/t5-small-ssm and are newly initialized: ['enc_kadapter.adapter.0.up_project.weight', 'enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapter.adapter.0.down_project.bias', 'enc_kadapter.adapter.1.encoder.layer.0.layer_norm.weight', 'enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapter.adapter.2.up_project.weight', 'enc_kadapter.adapter.2.down_project.bias', 'enc_kadapter.adapter.1.down_project.bias', 'enc_kadapter.pool.weight', 'enc_kadapter.layer_norm.weight', 'enc_kadapter.adapter.1.up_project.bias', 'enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapter.pool.bias', 'enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapter.adapter.0.down_project.weight', 'enc_kadapter.adapter.2.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapter.adapter.1.up_project.weight', 'enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapter.adapter.1.encoder.layer.1.layer_norm.weight', 'enc_kadapter.adapter.1.down_project.weight', 'enc_kadapter.adapter.1.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapter.adapter.2.encoder.layer.1.DenseReluDense.wi_0.weight', 'enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapter.adapter.2.up_project.bias', 'enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapter.adapter.2.encoder.layer.1.layer_norm.weight', 'enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapter.adapter.2.down_project.weight', 'enc_kadapter.adapter.0.up_project.bias', 'enc_kadapter.adapter.1.encoder.layer.1.DenseReluDense.wi_0.weight', 'enc_kadapter.adapter.0.encoder.layer.0.layer_norm.weight', 'enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapter.adapter.0.encoder.layer.1.DenseReluDense.wi_1.weight', 'enc_kadapter.adapter.2.encoder.layer.1.DenseReluDense.wi_1.weight', 'enc_kadapter.adapter.0.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapter.adapter.1.encoder.layer.1.DenseReluDense.wi_1.weight', 'enc_kadapter.adapter.0.encoder.layer.1.DenseReluDense.wi_0.weight', 'enc_kadapter.adapter.0.encoder.layer.1.layer_norm.weight', 'enc_kadapter.adapter.2.encoder.layer.0.layer_norm.weight', 'enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.relative_attention_bias.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Namespace(accelerator='ddp', adam_epsilon=1e-08, adapter_config={'adapter_list': [1, 5, 8], 'adapter_hidden_size': 128, 'adapter_enc_dec': None, 'pool_size': None}, adapter_enc_dec=None, adapter_hidden_size=128, adapter_list=[1, 5, 8], check_validation_only=False, checkpoint_dir='outputs/', checkpoint_path='', dataset='templama', dataset_version='2010', early_stop_callback=False, eval_batch_size=32, freeze_embeds=False, freeze_encoder=False, freeze_level=1, learning_rate=0.0001, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='kadapter', mode='pretrain', model_name_or_path='google/t5-small-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=40, num_workers=4, opt_level='O1', output_dir='outputs/kadapter_2010_1freeze_158_128', output_log=None, pool_size=None, prefix=True, resume_from_checkpoint=None, seed=42, split=0, split_num=1, t5_learning_rate=1e-05, tokenizer_name_or_path='google/t5-small-ssm', train_batch_size=32, use_deepspeed=False, use_lr_scheduling=True, val_check_interval=1.0, val_data=None, wandb_log=False, warmup_steps=0, weight_decay=0.0)
+outputs/kadapter_2010_0freeze_158_64
+outputs/kadapter_2010_1freeze_158_64
+exists
+checkpoint path = outputs/kadapter_2010_1freeze_158_64/epoch=20-f1_score=0.197-em_score=0.080.ckpt
+T5Config {
+  "_name_or_path": "google/t5-small-ssm",
+  "adapter_enc_dec": null,
+  "adapter_hidden_size": 128,
+  "adapter_list": [
+    1,
+    5,
+    8
+  ],
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 1024,
+  "d_kv": 64,
+  "d_model": 512,
+  "decoder_start_token_id": 0,
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "num_decoder_layers": 8,
+  "num_heads": 6,
+  "num_layers": 8,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pool_size": null,
+  "relative_attention_num_buckets": 32,
+  "tie_word_embeddings": false,
+  "transformers_version": "4.12.3",
+  "use_cache": false,
+  "vocab_size": 32128
+}
+
+Traceback (most recent call last):
+  File "evaluate_yearly.py", line 215, in <module>
+    model = Model.load_from_checkpoint(checkpoint_path=args.checkpoint_path, hparams=args, strict=False) 
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/core/saving.py", line 157, in load_from_checkpoint
+    model = cls._load_model_state(checkpoint, strict=strict, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/core/saving.py", line 205, in _load_model_state
+    model.load_state_dict(checkpoint['state_dict'], strict=strict)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1406, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for T5:
+	size mismatch for model.enc_kadapter.adapter.0.down_project.weight: copying a param with shape torch.Size([64, 512]) from checkpoint, the shape in current model is torch.Size([128, 512]).
+	size mismatch for model.enc_kadapter.adapter.0.down_project.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for model.enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.q.weight: copying a param with shape torch.Size([384, 64]) from checkpoint, the shape in current model is torch.Size([384, 128]).
+	size mismatch for model.enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.k.weight: copying a param with shape torch.Size([384, 64]) from checkpoint, the shape in current model is torch.Size([384, 128]).
+	size mismatch for model.enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.v.weight: copying a param with shape torch.Size([384, 64]) from checkpoint, the shape in current model is torch.Size([384, 128]).
+	size mismatch for model.enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.o.weight: copying a param with shape torch.Size([64, 384]) from checkpoint, the shape in current model is torch.Size([128, 384]).
+	size mismatch for model.enc_kadapter.adapter.0.encoder.layer.0.layer_norm.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for model.enc_kadapter.adapter.0.encoder.layer.1.DenseReluDense.wi_0.weight: copying a param with shape torch.Size([1024, 64]) from checkpoint, the shape in current model is torch.Size([1024, 128]).
+	size mismatch for model.enc_kadapter.adapter.0.encoder.layer.1.DenseReluDense.wi_1.weight: copying a param with shape torch.Size([1024, 64]) from checkpoint, the shape in current model is torch.Size([1024, 128]).
+	size mismatch for model.enc_kadapter.adapter.0.encoder.layer.1.DenseReluDense.wo.weight: copying a param with shape torch.Size([64, 1024]) from checkpoint, the shape in current model is torch.Size([128, 1024]).
+	size mismatch for model.enc_kadapter.adapter.0.encoder.layer.1.layer_norm.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for model.enc_kadapter.adapter.0.up_project.weight: copying a param with shape torch.Size([512, 64]) from checkpoint, the shape in current model is torch.Size([512, 128]).
+	size mismatch for model.enc_kadapter.adapter.1.down_project.weight: copying a param with shape torch.Size([64, 512]) from checkpoint, the shape in current model is torch.Size([128, 512]).
+	size mismatch for model.enc_kadapter.adapter.1.down_project.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for model.enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.q.weight: copying a param with shape torch.Size([384, 64]) from checkpoint, the shape in current model is torch.Size([384, 128]).
+	size mismatch for model.enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.k.weight: copying a param with shape torch.Size([384, 64]) from checkpoint, the shape in current model is torch.Size([384, 128]).
+	size mismatch for model.enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.v.weight: copying a param with shape torch.Size([384, 64]) from checkpoint, the shape in current model is torch.Size([384, 128]).
+	size mismatch for model.enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.o.weight: copying a param with shape torch.Size([64, 384]) from checkpoint, the shape in current model is torch.Size([128, 384]).
+	size mismatch for model.enc_kadapter.adapter.1.encoder.layer.0.layer_norm.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for model.enc_kadapter.adapter.1.encoder.layer.1.DenseReluDense.wi_0.weight: copying a param with shape torch.Size([1024, 64]) from checkpoint, the shape in current model is torch.Size([1024, 128]).
+	size mismatch for model.enc_kadapter.adapter.1.encoder.layer.1.DenseReluDense.wi_1.weight: copying a param with shape torch.Size([1024, 64]) from checkpoint, the shape in current model is torch.Size([1024, 128]).
+	size mismatch for model.enc_kadapter.adapter.1.encoder.layer.1.DenseReluDense.wo.weight: copying a param with shape torch.Size([64, 1024]) from checkpoint, the shape in current model is torch.Size([128, 1024]).
+	size mismatch for model.enc_kadapter.adapter.1.encoder.layer.1.layer_norm.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for model.enc_kadapter.adapter.1.up_project.weight: copying a param with shape torch.Size([512, 64]) from checkpoint, the shape in current model is torch.Size([512, 128]).
+	size mismatch for model.enc_kadapter.adapter.2.down_project.weight: copying a param with shape torch.Size([64, 512]) from checkpoint, the shape in current model is torch.Size([128, 512]).
+	size mismatch for model.enc_kadapter.adapter.2.down_project.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for model.enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.q.weight: copying a param with shape torch.Size([384, 64]) from checkpoint, the shape in current model is torch.Size([384, 128]).
+	size mismatch for model.enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.k.weight: copying a param with shape torch.Size([384, 64]) from checkpoint, the shape in current model is torch.Size([384, 128]).
+	size mismatch for model.enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.v.weight: copying a param with shape torch.Size([384, 64]) from checkpoint, the shape in current model is torch.Size([384, 128]).
+	size mismatch for model.enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.o.weight: copying a param with shape torch.Size([64, 384]) from checkpoint, the shape in current model is torch.Size([128, 384]).
+	size mismatch for model.enc_kadapter.adapter.2.encoder.layer.0.layer_norm.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for model.enc_kadapter.adapter.2.encoder.layer.1.DenseReluDense.wi_0.weight: copying a param with shape torch.Size([1024, 64]) from checkpoint, the shape in current model is torch.Size([1024, 128]).
+	size mismatch for model.enc_kadapter.adapter.2.encoder.layer.1.DenseReluDense.wi_1.weight: copying a param with shape torch.Size([1024, 64]) from checkpoint, the shape in current model is torch.Size([1024, 128]).
+	size mismatch for model.enc_kadapter.adapter.2.encoder.layer.1.DenseReluDense.wo.weight: copying a param with shape torch.Size([64, 1024]) from checkpoint, the shape in current model is torch.Size([128, 1024]).
+	size mismatch for model.enc_kadapter.adapter.2.encoder.layer.1.layer_norm.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for model.enc_kadapter.adapter.2.up_project.weight: copying a param with shape torch.Size([512, 64]) from checkpoint, the shape in current model is torch.Size([512, 128]).

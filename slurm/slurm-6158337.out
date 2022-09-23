@@ -1,0 +1,32 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-rtx6k
+#SBATCH --account=cse
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=11:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+python preprocess_wmt_train_data.py 2008
+python preprocess_wmt_train_data.py 2009
+--------------------
+max input length = 2229
+max output length = 357
+Traceback (most recent call last):
+  File "preprocess_wmt_train_data.py", line 70, in <module>
+    main()
+  File "preprocess_wmt_train_data.py", line 67, in main
+    w.writerows(dataset)
+_csv.Error: iterable expected, not int
+max input length = 2226
+max output length = 314

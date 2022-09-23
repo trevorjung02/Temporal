@@ -1,0 +1,23 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-2080ti
+#SBATCH --account=cse
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=1-00:00:00 
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json outputs/wmtbaseline_full/epoch=0-f1_score=0.151-em_score=0.000.ckpt--------------------
+usage: run.py [-h] [--config CONFIG] [-datav DATAV] [-val_data VAL_DATA]
+              [-checkpoint_path CHECKPOINT_PATH]
+run.py: error: unrecognized arguments: outputs/wmtbaseline_full/epoch=0-f1_score=0.151-em_score=0.000.ckpt

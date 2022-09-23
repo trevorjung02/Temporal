@@ -6,6 +6,8 @@ from models.Kadapter_T5 import T5ForConditionalGeneration as T5_Kadapter
 from models.Kadapter_T52 import T5ForConditionalGeneration as T5_Kadapter2
 from models.Kadapter_T5_parallel import T5ForConditionalGeneration as T5_Kadapter_parallel
 from models.Kadapter_T5_soft import T5ForConditionalGeneration as T5_Kadapter_soft
+from models.Padapter_T5 import T5ForConditionalGeneration as T5_Padapter
+from models.Padapter2_T5 import T5ForConditionalGeneration as T5_Padapter2
 from models.Lora_T5 import T5ForConditionalGeneration as T5_Lora
 from models.Lora_T52 import T5ForConditionalGeneration as T5_Lora2
 from models.RecAdam import RecAdam
@@ -44,14 +46,18 @@ class T5(pl.LightningModule):
             previous_model_dir = (hparams.output_dir)[:len(hparams.output_dir)-1]
             self.model = T5_Modular_Small2.from_pretrained(previous_model_dir)
         elif hparams.method=='kadapter':
-            self.model = T5_Kadapter.from_pretrained(hparams.model_name_or_path, hparams.adapter_config)
+            self.model = T5_Kadapter.from_pretrained(hparams.model_name_or_path, hparams.adapter_config, cache_dir = 'huggingface')
         elif hparams.method=='kadapter2':
             previous_model_dir = (hparams.output_dir)[:len(hparams.output_dir)-1]
             self.model = T5_Kadapter2.from_pretrained(previous_model_dir)
         elif hparams.method=='kadapter_parallel':
             self.model = T5_Kadapter_parallel.from_pretrained(hparams.model_name_or_path)
         elif hparams.method=='kadapter_soft':
-            self.model = T5_Kadapter_soft.from_pretrained(hparams.model_name_or_path, hparams.adapter_config)
+            self.model = T5_Kadapter_soft.from_pretrained(hparams.model_name_or_path, hparams.adapter_config, cache_dir = 'huggingface')
+        elif hparams.method=='padapter':
+            self.model = T5_Padapter.from_pretrained(hparams.model_name_or_path, hparams.adapter_config, cache_dir = 'huggingface')
+        elif hparams.method=='padapter2':
+            self.model = T5_Padapter2.from_pretrained(hparams.model_name_or_path, hparams.adapter_config, cache_dir = 'huggingface')
         elif hparams.method=='lora':
             self.model = T5_Lora.from_pretrained(hparams.model_name_or_path)
         elif hparams.method=='lora2':
@@ -66,7 +72,7 @@ class T5(pl.LightningModule):
             self.pretrained_model = T5ForConditionalGeneration.from_pretrained(hparams.model_name_or_path)
             self.freeze_params(self.pretrained_model) #Freezing pretrained model
         else:
-            self.model = T5ForConditionalGeneration.from_pretrained(hparams.model_name_or_path)
+            self.model = T5ForConditionalGeneration.from_pretrained(hparams.model_name_or_path, cache_dir = 'huggingface')
         self.tokenizer = T5Tokenizer.from_pretrained(hparams.tokenizer_name_or_path)
         
         #Freezing only encoder or the whole model
@@ -104,6 +110,16 @@ class T5(pl.LightningModule):
             # Unfreezing the parameters used for lora
             for name, param in self.model.named_parameters():
                 if 'kadapter2' in name:
+                    param.requires_grad = True
+        elif hparams.method=='padapter':
+            # Unfreezing the parameters used for lora
+            for name, param in self.model.named_parameters():
+                if 'adapter' in name:
+                    param.requires_grad = True
+        elif hparams.method=='padapter2':
+            # Unfreezing the parameters used for lora
+            for name, param in self.model.named_parameters():
+                if 'adapter' in name:
                     param.requires_grad = True
         elif hparams.method=='lora2':
             # Unfreezing the parameters used for lora

@@ -2,3 +2,7 @@ outputs
 __pycache__
 data/*
 !data/templama*
+news-docs*
+wandb
+wandb_cache
+huggingface

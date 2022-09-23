@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=data-proc
-#SBATCH --partition=gpu-a40
-#SBATCH --account=ark
+#SBATCH --partition=gpu-rtx6k
+#SBATCH --account=cse
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=32G
@@ -17,6 +17,6 @@ echo "--------------------"
 source ~/.bashrc
 conda activate ckl
 
-wandb agent --count 1 tjung2/temporal_questions/mli64tqp
-wandb agent --count 1 tjung2/temporal_questions/mli64tqp
-wandb agent --count 1 tjung2/temporal_questions/mli64tqp
+wandb agent --count 1 tjung2/temporal_questions/ozdm48zv
+wandb agent --count 1 tjung2/temporal_questions/ozdm48zv
+wandb agent --count 1 tjung2/temporal_questions/ozdm48zv

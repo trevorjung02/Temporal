@@ -17,7 +17,7 @@ def evaluate(args, wandb_project, wandb_run_name, Model):
         model = Model.load_from_checkpoint(checkpoint_path=args.checkpoint_path, hparams=args, strict=False)
     model.eval()
     model.to('cuda')
-    tokenizer = T5Tokenizer.from_pretrained(args.model_name_or_path)
+    tokenizer = T5Tokenizer.from_pretrained(args.model_name_or_path, cache_dir = 'huggingface')
     #Get Validation Data
     if args.mode=='pretrain' or args.mode=='finetune':
         dataset = Pretrain(tokenizer, 'validation', None, input_length=args.max_input_length, 

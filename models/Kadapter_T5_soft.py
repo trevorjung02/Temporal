@@ -1834,9 +1834,8 @@ class AdapterModel(nn.Module):
         self.config = config
         self.adapter_list = self.config.adapter_list
         self.adapter_num = len(self.adapter_list)
-        self.num_years = 11
+        self.num_years = 1000
         self.pool_size = self.config.pool_size
-        self.year_embed = nn.Embedding(self.num_years, self.pool_size)
         self.softmax = nn.Softmax(dim=-1)
         self.layer_norm = T5LayerNorm(self.config.d_model, eps=self.config.layer_norm_epsilon)
         # self.adapters = nn.ModuleList(
@@ -1844,6 +1843,9 @@ class AdapterModel(nn.Module):
         # )
         self.adapters = nn.ModuleList(
             [Adapter(self.config) for i in range(self.adapter_num * self.pool_size)]
+        )
+        self.year_embeds = nn.ModuleList(
+            [nn.Embedding(self.num_years, self.pool_size) for i in range(self.adapter_num)]
         )
         self.pool = nn.Linear(2, 1)
 
@@ -1853,22 +1855,32 @@ class AdapterModel(nn.Module):
         hidden_states = outputs.hidden_states
         device = 'cuda:'+str(sequence_output.get_device())
         hidden_states_last = torch.zeros((self.pool_size,) + hidden_states[1].size(), device=device)
+        hidden_states_last_pooled = torch.zeros(hidden_states[1].size(), device=device)
 
+        year_id = year - (2022-self.num_years+1)
         for i in range(self.adapter_num):
             pretrained_hidden_state = hidden_states[self.adapter_list[i]]
+            # print(f"pretrained_hidden_state size = {pretrained_hidden_state.size()}")
             for j in range(self.pool_size):
-                fusion_state = pretrained_hidden_state + hidden_states_last[j]
+                fusion_state = pretrained_hidden_state + hidden_states_last_pooled
                 adapter_idx = self.get_adapter_idx(i, j)
-                hidden_states_last[j] = self.adapters[adapter_idx](fusion_state)[0]
+                hidden_states_last = hidden_states_last.index_put([torch.tensor(j)], self.adapters[adapter_idx](fusion_state)[0])
+            year_embeddings = self.year_embeds[i](year_id)
+            year_embeddings = self.softmax(year_embeddings)
+            year_embeddings = year_embeddings.unsqueeze(1)        
+            year_embeddings = year_embeddings.unsqueeze(-1)
+            permuted = hidden_states_last.permute(1,2,3,0)    
+            hidden_states_last_pooled = torch.matmul(permuted, year_embeddings)
+            hidden_states_last_pooled = hidden_states_last_pooled.squeeze()
+            # print(f"hidden_states_last_pooled size = {hidden_states_last_pooled.size()}")
 
-        hidden_states_last = hidden_states_last.permute(1,2,3,0)
-        year_id = year - 2010
-        year_embeddings = self.year_embed(year_id) 
-        year_embeddings = self.softmax(year_embeddings)
-        year_embeddings = year_embeddings.unsqueeze(1)        
-        year_embeddings = year_embeddings.unsqueeze(-1)        
-        hidden_states_last = hidden_states_last @ year_embeddings
-        hidden_states_last = hidden_states_last.squeeze()
+        # year_embeddings = self.softmax(year_embeddings)
+        # year_embeddings = year_embeddings.unsqueeze(1)        
+        # year_embeddings = year_embeddings.unsqueeze(-1)        
+        # hidden_states_last = hidden_states_last @ year_embeddings
+
+        # hidden_states_last = hidden_states_last.squeeze()
+        hidden_states_last = hidden_states_last_pooled.squeeze()
 
         # scale_factor = 0.1
         # outputs = (scale_factor * self.layer_norm(hidden_states_last))

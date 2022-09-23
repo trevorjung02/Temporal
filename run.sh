@@ -1,12 +1,12 @@
 #!/bin/bash
 #SBATCH --job-name=data-proc
 #SBATCH --partition=gpu-a40
-#SBATCH --account=ark
+#SBATCH --account=cse
 #SBATCH --nodes=1
-#SBATCH --cpus-per-task=4
+#SBATCH --cpus-per-task=8
 #SBATCH --mem=32G
 #SBATCH --gres=gpu:1
-#SBATCH --time=11:00:00
+#SBATCH --time=12:00:00 
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=tjung2@uw.edu
 
@@ -17,7 +17,12 @@ echo "--------------------"
 source ~/.bashrc
 conda activate ckl
 
-python run.py --config configs/templama/training/t5_kadapters_2010_2freeze.json -datav 2015
-python run.py --config configs/templama/training/t5_kadapters_2010_2freeze.json -datav 2016
-python run.py --config configs/templama/training/t5_kadapters_2010_2freeze.json -datav 2017
-python run.py --config configs/templama/training/t5_kadapters_2010_2freeze.json -datav 2018
+# python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.151-em_score=0.000.ckpt
+
+# python run.py --config configs/wmt/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtkadapter_2010_2freeze_158_128/epoch=8-f1_score=0.084-em_score=0.000.ckpt
+
+# python preprocess_wmt_train_data.py 2016
+# python preprocess_wmt_train_data.py 2017
+# python preprocess_wmt_train_data.py 2018
+
+python run.py --config configs/templama/training/t5_kadapters_soft_full.json -checkpoint_path outputs/wmtkadapter_2010_2freeze_158_128/epoch=8-f1_score=0.084-em_score=0.000.ckpt

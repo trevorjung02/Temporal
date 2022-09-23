@@ -1,0 +1,75 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=ark
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=11:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+python run.py --config configs/templama/evaluation/t5_baseline_full.json -val_data 2010
+# python run.py --config configs/templama/evaluation/t5_baseline_full.json -val_data 2011
+# python run.py --config configs/templama/evaluation/t5_baseline_full.json -val_data 2012
+# python run.py --config configs/templama/evaluation/t5_baseline_full.json -val_data 2013
+# python run.py --config configs/templama/evaluation/t5_baseline_full.json -val_data 2014
+# python run.py --config configs/templama/evaluation/t5_baseline_full.json -val_data 2015
+# python run.py --config configs/templama/evaluation/t5_baseline_full.json -val_data 2016
+# python run.py --config configs/templama/evaluation/t5_baseline_full.json -val_data 2017
+# python run.py --config configs/templama/evaluation/t5_baseline_full.json -val_data 2018
+--------------------
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220902_041855-1waprzau
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run baseline_full
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/1waprzau
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory outputs/baseline_full exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All DDP processes registered. Starting ddp with 1 processes
+----------------------------------------------------------------------------------------------------
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Namespace(accelerator='ddp', adam_epsilon=1e-08, adapter_config={'adapter_list': None, 'adapter_hidden_size': None, 'adapter_enc_dec': None, 'pool_size': None}, adapter_enc_dec=None, adapter_hidden_size=None, adapter_list=None, check_validation_only=True, checkpoint_dir=None, checkpoint_path='outputs/baseline_full/epoch=7-f1_score=0.192-em_score=0.069.ckpt', dataset='templama', dataset_version='full', early_stop_callback=False, eval_batch_size=64, freeze_embeds=False, freeze_encoder=False, freeze_level=0, learning_rate=1e-05, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='baseline', mode='pretrain', model_name_or_path='google/t5-small-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=30, num_workers=4, opt_level='O1', output_dir='outputs/baseline_full', output_log=None, pool_size=None, prefix=True, resume_from_checkpoint=None, seed=42, split=0, split_num=1, t5_learning_rate=None, tokenizer_name_or_path='google/t5-small-ssm', train_batch_size=64, use_deepspeed=False, use_lr_scheduling=True, val_check_interval=1.0, val_data='2010', wandb_log=True, warmup_steps=0, weight_decay=0.0)
+Not freezing any parameters!
+split is 0
+Length of dataset retrieving is.. 410
+Validating: 0it [00:00, ?it/s]Validating:   0%|          | 0/7 [00:00<?, ?it/s]Validating:  14%|█▍        | 1/7 [00:02<00:16,  2.73s/it]Validating:  29%|██▊       | 2/7 [00:03<00:09,  1.87s/it]Validating:  43%|████▎     | 3/7 [00:05<00:06,  1.60s/it]Validating:  57%|█████▋    | 4/7 [00:06<00:04,  1.50s/it]Validating:  71%|███████▏  | 5/7 [00:07<00:02,  1.41s/it]Validating:  86%|████████▌ | 6/7 [00:09<00:01,  1.35s/it]Validating: 100%|██████████| 7/7 [00:09<00:00,  1.12s/it]                                                         --------------------------------------------------------------------------------
+DATALOADER:0 VALIDATE RESULTS
+{'em_score': 0.07804878056049347, 'f1_score': 0.20791026949882507}
+--------------------------------------------------------------------------------
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.051 MB of 0.100 MB uploaded (0.000 MB deduped)wandb: \ 0.100 MB of 0.100 MB uploaded (0.000 MB deduped)wandb: | 0.100 MB of 0.100 MB uploaded (0.000 MB deduped)wandb: / 0.100 MB of 0.111 MB uploaded (0.000 MB deduped)wandb: - 0.100 MB of 0.111 MB uploaded (0.000 MB deduped)wandb: \ 0.111 MB of 0.111 MB uploaded (0.000 MB deduped)wandb: | 0.111 MB of 0.111 MB uploaded (0.000 MB deduped)wandb: / 0.111 MB of 0.111 MB uploaded (0.000 MB deduped)wandb: - 0.111 MB of 0.111 MB uploaded (0.000 MB deduped)wandb: \ 0.111 MB of 0.111 MB uploaded (0.000 MB deduped)wandb: | 0.111 MB of 0.111 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            em_score ▁
+wandb:               epoch ▁
+wandb:            f1_score ▁
+wandb: trainer/global_step ▁
+wandb: 
+wandb: Run summary:
+wandb:               epoch 0
+wandb: trainer/global_step 0
+wandb: 
+wandb: Synced baseline_full: https://wandb.ai/tjung2/temporal_questions/runs/1waprzau
+wandb: Synced 6 W&B file(s), 1 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220902_041855-1waprzau/logs

@@ -3,12 +3,6 @@ import csv
 
 def main():
     version = 'val'
-    # with open(f"data/templama/templama_{version}.json") as f:
-    #     lines = f.read().splitlines()
-
-    # with open(f"data/templama/templama_{version}.json", "w") as f:
-    #     for line in lines:
-    #         f.write(line + ",\n")
 
     with open(f"data/templama/templama_{version}.json") as f:
         data = json.load(f)

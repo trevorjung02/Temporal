@@ -1,0 +1,263 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=ark
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=16:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+    
+source ~/.bashrc
+conda activate ckl
+
+wandb agent --count 1 tjung2/temporal_questions/l0ca8tny
+wandb agent --count 1 tjung2/temporal_questions/l0ca8tny
+wandb agent --count 1 tjung2/temporal_questions/l0ca8tny
+--------------------
+wandb: Starting wandb agent 🕵️
+2022-09-01 01:27:03,979 - wandb.wandb_agent - INFO - Running runs: []
+2022-09-01 01:27:04,152 - wandb.wandb_agent - INFO - Agent received command: run
+2022-09-01 01:27:04,152 - wandb.wandb_agent - INFO - Agent starting run with config:
+	learning_rate: 0.003
+2022-09-01 01:27:04,157 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -datav 2017
+2022-09-01 01:27:09,166 - wandb.wandb_agent - INFO - Running runs: ['tom4vj43']
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: WARNING Ignored wandb.init() arg project when running a sweep.
+wandb: wandb version 0.13.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220901_012722-tom4vj43
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run kadapter_2017
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🧹 View sweep at https://wandb.ai/tjung2/temporal_questions/sweeps/l0ca8tny
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/tom4vj43
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory outputs/kadapter_2017_2freeze_158_128 exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+Some weights of T5ForConditionalGeneration were not initialized from the model checkpoint at google/t5-small-ssm and are newly initialized: ['enc_kadapter.adapter.0.encoder.layer.0.layer_norm.weight', 'enc_kadapter.adapter.2.down_project.weight', 'enc_kadapter.adapter.2.down_project.bias', 'enc_kadapter.adapter.0.down_project.weight', 'enc_kadapter.pool.weight', 'enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapter.adapter.2.encoder.layer.1.DenseReluDense.wi_0.weight', 'enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapter.adapter.0.down_project.bias', 'enc_kadapter.pool.bias', 'enc_kadapter.adapter.1.down_project.weight', 'enc_kadapter.adapter.0.up_project.weight', 'enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapter.adapter.1.up_project.weight', 'enc_kadapter.adapter.1.encoder.layer.1.DenseReluDense.wi_1.weight', 'enc_kadapter.adapter.2.encoder.layer.0.layer_norm.weight', 'enc_kadapter.adapter.2.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapter.adapter.2.encoder.layer.1.layer_norm.weight', 'enc_kadapter.adapter.1.down_project.bias', 'enc_kadapter.adapter.2.encoder.layer.1.DenseReluDense.wi_1.weight', 'enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapter.adapter.1.encoder.layer.0.layer_norm.weight', 'enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapter.adapter.0.encoder.layer.1.DenseReluDense.wi_0.weight', 'enc_kadapter.adapter.1.up_project.bias', 'enc_kadapter.adapter.2.up_project.weight', 'enc_kadapter.adapter.0.encoder.layer.1.DenseReluDense.wi_1.weight', 'enc_kadapter.adapter.0.encoder.layer.1.layer_norm.weight', 'enc_kadapter.adapter.0.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapter.adapter.1.encoder.layer.1.DenseReluDense.wi_0.weight', 'enc_kadapter.adapter.2.up_project.bias', 'enc_kadapter.adapter.1.encoder.layer.1.layer_norm.weight', 'enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapter.adapter.1.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapter.layer_norm.weight', 'enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapter.adapter.0.up_project.bias', 'enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.o.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All DDP processes registered. Starting ddp with 1 processes
+----------------------------------------------------------------------------------------------------
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+Set SLURM handle signals.
+
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 79.1 M
+-----------------------------------------------------
+2.2 M     Trainable params
+77.0 M    Non-trainable params
+79.1 M    Total params
+316.510   Total estimated model params size (MB)
+Namespace(accelerator='ddp', adam_epsilon=1e-08, adapter_config={'adapter_list': [1, 5, 8], 'adapter_hidden_size': 128, 'adapter_enc_dec': None, 'pool_size': None}, adapter_enc_dec=None, adapter_hidden_size=128, adapter_list=[1, 5, 8], check_validation_only=False, checkpoint_dir=None, checkpoint_path='', dataset='templama', dataset_version='2017', early_stop_callback=False, eval_batch_size=32, freeze_embeds=False, freeze_encoder=False, freeze_level=2, learning_rate=0.003, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='kadapter', mode='pretrain', model_name_or_path='google/t5-small-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=120, num_workers=4, opt_level='O1', output_dir='outputs/kadapter_2017_2freeze_158_128', output_log=None, pool_size=None, prefix=True, resume_from_checkpoint=None, seed=42, split=0, split_num=1, t5_learning_rate=None, tokenizer_name_or_path='google/t5-small-ssm', train_batch_size=32, use_deepspeed=False, use_lr_scheduling=True, val_check_interval=1.0, wandb_log=True, warmup_steps=0, weight_decay=0.0)
+T5Config {
+  "_name_or_path": "google/t5-small-ssm",
+  "adapter_enc_dec": null,
+  "adapter_hidden_size": 128,
+  "adapter_list": [
+    1,
+    5,
+    8
+  ],
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 1024,
+  "d_kv": 64,
+  "d_model": 512,
+  "decoder_start_token_id": 0,
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "num_decoder_layers": 8,
+  "num_heads": 6,
+  "num_layers": 8,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pool_size": null,
+  "relative_attention_num_buckets": 32,
+  "tie_word_embeddings": false,
+  "transformers_version": "4.12.3",
+  "use_cache": false,
+  "vocab_size": 32128
+}
+
+split is 0
+Length of dataset retrieving is.. 3300
+Validation sanity check: 0it [00:00, ?it/s]split is 0
+Length of dataset retrieving is.. 481
+Validation sanity check:   0%|          | 0/2 [00:00<?, ?it/s]Validation sanity check:  50%|█████     | 1/2 [00:01<00:01,  1.55s/it]Validation sanity check: 100%|██████████| 2/2 [00:02<00:00,  1.06it/s]                                                                      split is 0
+Length of dataset retrieving is.. 3300
+Training: 0it [00:00, ?it/s]Training:   0%|          | 0/119 [00:00<?, ?it/s]Epoch 0:   0%|          | 0/119 [00:00<?, ?it/s] [W reducer.cpp:1158] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+Epoch 0:   1%|          | 1/119 [00:00<01:47,  1.10it/s]Epoch 0:   1%|          | 1/119 [00:00<01:47,  1.10it/s, loss=8.88, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:   2%|▏         | 2/119 [00:00<00:56,  2.07it/s, loss=9.02, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:   3%|▎         | 3/119 [00:01<00:39,  2.95it/s, loss=9.02, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:   3%|▎         | 3/119 [00:01<00:39,  2.95it/s, loss=8.85, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:   3%|▎         | 4/119 [00:01<00:30,  3.76it/s, loss=8.84, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:   4%|▍         | 5/119 [00:01<00:25,  4.51it/s, loss=8.88, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:   5%|▌         | 6/119 [00:01<00:21,  5.20it/s, loss=8.88, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:   5%|▌         | 6/119 [00:01<00:21,  5.20it/s, loss=8.77, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:   6%|▌         | 7/119 [00:01<00:19,  5.83it/s, loss=8.73, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:   7%|▋         | 8/119 [00:01<00:17,  6.41it/s, loss=8.69, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:   8%|▊         | 9/119 [00:01<00:15,  6.96it/s, loss=8.69, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:   8%|▊         | 9/119 [00:01<00:15,  6.96it/s, loss=8.68, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:   8%|▊         | 10/119 [00:01<00:14,  7.46it/s, loss=8.63, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:   9%|▉         | 11/119 [00:01<00:13,  7.94it/s, loss=8.58, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  10%|█         | 12/119 [00:01<00:12,  8.38it/s, loss=8.58, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  10%|█         | 12/119 [00:01<00:12,  8.37it/s, loss=8.55, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  11%|█         | 13/119 [00:01<00:12,  8.78it/s, loss=8.53, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  12%|█▏        | 14/119 [00:01<00:11,  9.16it/s, loss=8.52, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  13%|█▎        | 15/119 [00:01<00:10,  9.53it/s, loss=8.52, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  13%|█▎        | 15/119 [00:01<00:10,  9.52it/s, loss=8.48, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  13%|█▎        | 16/119 [00:01<00:10,  9.87it/s, loss=8.49, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  14%|█▍        | 17/119 [00:01<00:10, 10.20it/s, loss=8.45, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  15%|█▌        | 18/119 [00:01<00:09, 10.50it/s, loss=8.45, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  15%|█▌        | 18/119 [00:01<00:09, 10.50it/s, loss=8.43, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  16%|█▌        | 19/119 [00:01<00:09, 10.79it/s, loss=8.4, v_num=vj43, em_score=0.000, f1_score=0.000] Epoch 0:  17%|█▋        | 20/119 [00:01<00:08, 11.05it/s, loss=8.37, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  18%|█▊        | 21/119 [00:01<00:08, 11.31it/s, loss=8.37, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  18%|█▊        | 21/119 [00:01<00:08, 11.31it/s, loss=8.31, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  18%|█▊        | 22/119 [00:01<00:08, 11.56it/s, loss=8.23, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  19%|█▉        | 23/119 [00:01<00:08, 11.80it/s, loss=8.19, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  20%|██        | 24/119 [00:01<00:07, 12.02it/s, loss=8.19, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  20%|██        | 24/119 [00:01<00:07, 12.02it/s, loss=8.15, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  21%|██        | 25/119 [00:02<00:07, 12.23it/s, loss=8.09, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  22%|██▏       | 26/119 [00:02<00:07, 12.44it/s, loss=8.06, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  23%|██▎       | 27/119 [00:02<00:07, 12.63it/s, loss=8.06, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  23%|██▎       | 27/119 [00:02<00:07, 12.63it/s, loss=8.03, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  24%|██▎       | 28/119 [00:02<00:07, 12.82it/s, loss=8, v_num=vj43, em_score=0.000, f1_score=0.000]   Epoch 0:  24%|██▍       | 29/119 [00:02<00:06, 13.00it/s, loss=7.95, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  25%|██▌       | 30/119 [00:02<00:06, 13.18it/s, loss=7.95, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  25%|██▌       | 30/119 [00:02<00:06, 13.18it/s, loss=7.92, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  26%|██▌       | 31/119 [00:02<00:06, 13.34it/s, loss=7.89, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  27%|██▋       | 32/119 [00:02<00:06, 13.49it/s, loss=7.87, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  28%|██▊       | 33/119 [00:02<00:06, 13.65it/s, loss=7.87, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  28%|██▊       | 33/119 [00:02<00:06, 13.65it/s, loss=7.82, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  29%|██▊       | 34/119 [00:02<00:06, 13.80it/s, loss=7.78, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  29%|██▉       | 35/119 [00:02<00:06, 13.94it/s, loss=7.75, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  30%|███       | 36/119 [00:02<00:05, 14.08it/s, loss=7.75, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  30%|███       | 36/119 [00:02<00:05, 14.08it/s, loss=7.69, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  31%|███       | 37/119 [00:02<00:05, 14.21it/s, loss=7.66, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  32%|███▏      | 38/119 [00:02<00:05, 14.33it/s, loss=7.64, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  33%|███▎      | 39/119 [00:02<00:05, 14.46it/s, loss=7.64, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  33%|███▎      | 39/119 [00:02<00:05, 14.46it/s, loss=7.6, v_num=vj43, em_score=0.000, f1_score=0.000] Epoch 0:  34%|███▎      | 40/119 [00:02<00:05, 14.58it/s, loss=7.59, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  34%|███▍      | 41/119 [00:02<00:05, 14.70it/s, loss=7.57, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  35%|███▌      | 42/119 [00:02<00:05, 14.81it/s, loss=7.57, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  35%|███▌      | 42/119 [00:02<00:05, 14.81it/s, loss=7.53, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  36%|███▌      | 43/119 [00:02<00:05, 14.91it/s, loss=7.51, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  37%|███▋      | 44/119 [00:02<00:04, 15.02it/s, loss=7.46, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  38%|███▊      | 45/119 [00:02<00:04, 15.12it/s, loss=7.46, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  38%|███▊      | 45/119 [00:02<00:04, 15.12it/s, loss=7.44, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  39%|███▊      | 46/119 [00:03<00:04, 15.22it/s, loss=7.41, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  39%|███▉      | 47/119 [00:03<00:04, 15.32it/s, loss=7.38, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  40%|████      | 48/119 [00:03<00:04, 15.41it/s, loss=7.38, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  40%|████      | 48/119 [00:03<00:04, 15.41it/s, loss=7.34, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  41%|████      | 49/119 [00:03<00:04, 15.50it/s, loss=7.3, v_num=vj43, em_score=0.000, f1_score=0.000] Epoch 0:  42%|████▏     | 50/119 [00:03<00:04, 15.58it/s, loss=7.27, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  43%|████▎     | 51/119 [00:03<00:04, 15.65it/s, loss=7.27, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  43%|████▎     | 51/119 [00:03<00:04, 15.65it/s, loss=7.24, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  44%|████▎     | 52/119 [00:03<00:04, 15.73it/s, loss=7.21, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  45%|████▍     | 53/119 [00:03<00:04, 15.81it/s, loss=7.21, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  45%|████▌     | 54/119 [00:03<00:04, 15.89it/s, loss=7.21, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  45%|████▌     | 54/119 [00:03<00:04, 15.89it/s, loss=7.16, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  46%|████▌     | 55/119 [00:03<00:04, 15.96it/s, loss=7.16, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  47%|████▋     | 56/119 [00:03<00:03, 16.03it/s, loss=7.14, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  48%|████▊     | 57/119 [00:03<00:03, 16.10it/s, loss=7.14, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  48%|████▊     | 57/119 [00:03<00:03, 16.10it/s, loss=7.13, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  49%|████▊     | 58/119 [00:03<00:03, 16.17it/s, loss=7.11, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  50%|████▉     | 59/119 [00:03<00:03, 16.24it/s, loss=7.11, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  50%|█████     | 60/119 [00:03<00:03, 16.31it/s, loss=7.11, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  50%|█████     | 60/119 [00:03<00:03, 16.30it/s, loss=7.05, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  51%|█████▏    | 61/119 [00:03<00:03, 16.36it/s, loss=7.03, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  52%|█████▏    | 62/119 [00:03<00:03, 16.42it/s, loss=7.02, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  53%|█████▎    | 63/119 [00:03<00:03, 16.48it/s, loss=7.02, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  53%|█████▎    | 63/119 [00:03<00:03, 16.48it/s, loss=7.01, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  54%|█████▍    | 64/119 [00:03<00:03, 16.54it/s, loss=6.97, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  55%|█████▍    | 65/119 [00:03<00:03, 16.60it/s, loss=6.93, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  55%|█████▌    | 66/119 [00:03<00:03, 16.66it/s, loss=6.93, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  55%|█████▌    | 66/119 [00:03<00:03, 16.66it/s, loss=6.9, v_num=vj43, em_score=0.000, f1_score=0.000] Epoch 0:  56%|█████▋    | 67/119 [00:04<00:03, 16.71it/s, loss=6.88, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  57%|█████▋    | 68/119 [00:04<00:03, 16.76it/s, loss=6.88, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  58%|█████▊    | 69/119 [00:04<00:02, 16.81it/s, loss=6.88, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  58%|█████▊    | 69/119 [00:04<00:02, 16.81it/s, loss=6.86, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  59%|█████▉    | 70/119 [00:04<00:02, 16.86it/s, loss=6.83, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  60%|█████▉    | 71/119 [00:04<00:02, 16.90it/s, loss=6.81, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  61%|██████    | 72/119 [00:04<00:02, 16.95it/s, loss=6.81, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  61%|██████    | 72/119 [00:04<00:02, 16.95it/s, loss=6.79, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  61%|██████▏   | 73/119 [00:04<00:02, 16.99it/s, loss=6.72, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  62%|██████▏   | 74/119 [00:04<00:02, 17.04it/s, loss=6.71, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  63%|██████▎   | 75/119 [00:04<00:02, 17.09it/s, loss=6.71, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  63%|██████▎   | 75/119 [00:04<00:02, 17.09it/s, loss=6.67, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  64%|██████▍   | 76/119 [00:04<00:02, 17.13it/s, loss=6.63, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  65%|██████▍   | 77/119 [00:04<00:02, 17.18it/s, loss=6.59, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  66%|██████▌   | 78/119 [00:04<00:02, 17.22it/s, loss=6.59, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  66%|██████▌   | 78/119 [00:04<00:02, 17.22it/s, loss=6.54, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  66%|██████▋   | 79/119 [00:04<00:02, 17.26it/s, loss=6.5, v_num=vj43, em_score=0.000, f1_score=0.000] Epoch 0:  67%|██████▋   | 80/119 [00:04<00:02, 17.30it/s, loss=6.5, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  68%|██████▊   | 81/119 [00:04<00:02, 17.34it/s, loss=6.5, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  68%|██████▊   | 81/119 [00:04<00:02, 17.33it/s, loss=6.48, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  69%|██████▉   | 82/119 [00:04<00:02, 17.38it/s, loss=6.44, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  70%|██████▉   | 83/119 [00:04<00:02, 17.41it/s, loss=6.43, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  71%|███████   | 84/119 [00:04<00:02, 17.45it/s, loss=6.43, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  71%|███████   | 84/119 [00:04<00:02, 17.45it/s, loss=6.4, v_num=vj43, em_score=0.000, f1_score=0.000] Epoch 0:  71%|███████▏  | 85/119 [00:04<00:01, 17.49it/s, loss=6.39, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  72%|███████▏  | 86/119 [00:04<00:01, 17.52it/s, loss=6.37, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  73%|███████▎  | 87/119 [00:04<00:01, 17.56it/s, loss=6.37, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  73%|███████▎  | 87/119 [00:04<00:01, 17.56it/s, loss=6.34, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  74%|███████▍  | 88/119 [00:05<00:01, 17.60it/s, loss=6.3, v_num=vj43, em_score=0.000, f1_score=0.000] Epoch 0:  75%|███████▍  | 89/119 [00:05<00:01, 17.63it/s, loss=6.29, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  76%|███████▌  | 90/119 [00:05<00:01, 17.66it/s, loss=6.29, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  76%|███████▌  | 90/119 [00:05<00:01, 17.66it/s, loss=6.29, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  76%|███████▋  | 91/119 [00:05<00:01, 17.69it/s, loss=6.26, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  77%|███████▋  | 92/119 [00:05<00:01, 17.72it/s, loss=6.25, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  78%|███████▊  | 93/119 [00:05<00:01, 17.75it/s, loss=6.25, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  78%|███████▊  | 93/119 [00:05<00:01, 17.75it/s, loss=6.26, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  79%|███████▉  | 94/119 [00:05<00:01, 17.79it/s, loss=6.22, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  80%|███████▉  | 95/119 [00:05<00:01, 17.82it/s, loss=6.21, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  81%|████████  | 96/119 [00:05<00:01, 17.85it/s, loss=6.21, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  81%|████████  | 96/119 [00:05<00:01, 17.85it/s, loss=6.21, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  82%|████████▏ | 97/119 [00:05<00:01, 17.88it/s, loss=6.2, v_num=vj43, em_score=0.000, f1_score=0.000] Epoch 0:  82%|████████▏ | 98/119 [00:05<00:01, 17.91it/s, loss=6.18, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  83%|████████▎ | 99/119 [00:05<00:01, 17.94it/s, loss=6.18, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  83%|████████▎ | 99/119 [00:05<00:01, 17.94it/s, loss=6.17, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  84%|████████▍ | 100/119 [00:05<00:01, 17.97it/s, loss=6.15, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  85%|████████▍ | 101/119 [00:05<00:01, 18.00it/s, loss=6.12, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  86%|████████▌ | 102/119 [00:05<00:00, 18.02it/s, loss=6.12, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  86%|████████▌ | 102/119 [00:05<00:00, 18.02it/s, loss=6.13, v_num=vj43, em_score=0.000, f1_score=0.000]Epoch 0:  87%|████████▋ | 103/119 [00:05<00:00, 17.81it/s, loss=6.1, v_num=vj43, em_score=0.000, f1_score=0.000] 
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/16 [00:00<?, ?it/s][A
+Validating:   6%|▋         | 1/16 [00:01<00:20,  1.36s/it][AEpoch 0:  88%|████████▊ | 105/119 [00:07<00:00, 14.67it/s, loss=6.1, v_num=vj43, em_score=0.000, f1_score=0.000]
+Validating:  12%|█▎        | 2/16 [00:01<00:11,  1.18it/s][A
+Validating:  19%|█▉        | 3/16 [00:02<00:09,  1.38it/s][A
+Validating:  25%|██▌       | 4/16 [00:03<00:08,  1.49it/s][AEpoch 0:  91%|█████████ | 108/119 [00:08<00:00, 12.26it/s, loss=6.1, v_num=vj43, em_score=0.000, f1_score=0.000]
+Validating:  31%|███▏      | 5/16 [00:03<00:06,  1.57it/s][A
+Validating:  38%|███▊      | 6/16 [00:04<00:06,  1.61it/s][A
+Validating:  44%|████▍     | 7/16 [00:04<00:05,  1.72it/s][AEpoch 0:  93%|█████████▎| 111/119 [00:10<00:00, 10.60it/s, loss=6.1, v_num=vj43, em_score=0.000, f1_score=0.000]
+Validating:  50%|█████     | 8/16 [00:05<00:04,  1.69it/s][A
+Validating:  56%|█████▋    | 9/16 [00:05<00:04,  1.74it/s][A
+Validating:  62%|██████▎   | 10/16 [00:06<00:03,  1.83it/s][AEpoch 0:  96%|█████████▌| 114/119 [00:12<00:00,  9.41it/s, loss=6.1, v_num=vj43, em_score=0.000, f1_score=0.000]
+Validating:  69%|██████▉   | 11/16 [00:06<00:02,  1.78it/s][A
+Validating:  75%|███████▌  | 12/16 [00:07<00:02,  1.76it/s][A
+Validating:  81%|████████▏ | 13/16 [00:08<00:01,  1.72it/s][AEpoch 0:  98%|█████████▊| 117/119 [00:13<00:00,  8.42it/s, loss=6.1, v_num=vj43, em_score=0.000, f1_score=0.000]
+Validating:  88%|████████▊ | 14/16 [00:08<00:01,  1.71it/s][A
+Validating:  94%|█████████▍| 15/16 [00:09<00:00,  1.70it/s][ATraceback (most recent call last):
+  File "run.py", line 210, in <module>
+    trainer.fit(model)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 460, in fit
+    self._run(model)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 758, in _run
+    self.dispatch()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 799, in dispatch
+    self.accelerator.start_training(self)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/accelerators/accelerator.py", line 96, in start_training
+    self.training_type_plugin.start_training(trainer)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/plugins/training_type/training_type_plugin.py", line 144, in start_training
+    self._results = trainer.run_stage()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 809, in run_stage
+    return self.run_train()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 871, in run_train
+    self.train_loop.run_training_epoch()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/training_loop.py", line 584, in run_training_epoch
+    self.trainer.run_evaluation(on_epoch=True)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 996, in run_evaluation
+    self.evaluation_loop.on_evaluation_epoch_end()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/evaluation_loop.py", line 265, in on_evaluation_epoch_end
+    model_hook_fx()
+  File "/mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/models/T5_Model.py", line 390, in on_validation_epoch_end
+    wandb.log({"table_key": self.test_table})
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 289, in wrapper
+    return func(self, *args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 255, in wrapper
+    return func(self, *args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1591, in log
+    self._log(data=data, step=step, commit=commit)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1375, in _log
+    self._partial_history_callback(data, step, commit)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1259, in _partial_history_callback
+    self._backend.interface.publish_partial_history(
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 541, in publish_partial_history
+    data = history_dict_to_json(run, data, step=user_step, ignore_copy_err=True)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/data_types/utils.py", line 54, in history_dict_to_json
+    payload[key] = val_to_json(
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/data_types/utils.py", line 154, in val_to_json
+    art.add(val, key)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_artifacts.py", line 530, in add
+    do_write(f)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_artifacts.py", line 371, in new_file
+    self.add_file(path, name=name)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_artifacts.py", line 392, in add_file
+    return self._add_local_file(name, local_path, digest=digest)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_artifacts.py", line 705, in _add_local_file
+    shutil.copyfile(path, f.name)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/shutil.py", line 285, in copyfile
+    copyfileobj(fsrc, fdst)
+OSError: [Errno 122] Disk quota exceeded
+2022-09-01 01:28:55,903 - wandb.wandb_agent - INFO - Cleaning up finished run: tom4vj43
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.013 MB of 0.013 MB uploaded (0.000 MB deduped)wandb: \ 0.013 MB of 0.013 MB uploaded (0.000 MB deduped)wandb: | 0.013 MB of 0.034 MB uploaded (0.000 MB deduped)wandb: / 0.020 MB of 0.034 MB uploaded (0.000 MB deduped)wandb: - 0.034 MB of 0.034 MB uploaded (0.000 MB deduped)wandb: \ 0.034 MB of 0.034 MB uploaded (0.000 MB deduped)wandb: | 0.034 MB of 0.034 MB uploaded (0.000 MB deduped)wandb: / 0.034 MB of 0.034 MB uploaded (0.000 MB deduped)wandb: - 0.034 MB of 0.034 MB uploaded (0.000 MB deduped)wandb: \ 0.034 MB of 0.034 MB uploaded (0.000 MB deduped)wandb: | 0.034 MB of 0.034 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:               epoch ▁▁
+wandb:   learning rate/pg1 ▁█
+wandb:   learning rate/pg2 ▁█
+wandb:                loss █▁
+wandb: trainer/global_step ▁▁██
+wandb: 
+wandb: Run summary:
+wandb:               epoch 0
+wandb:   learning rate/pg1 0.00013
+wandb:   learning rate/pg2 0.00013
+wandb:                loss 6.11702
+wandb: trainer/global_step 99
+wandb: 
+wandb: Synced kadapter_2017: https://wandb.ai/tjung2/temporal_questions/runs/tom4vj43
+wandb: Synced 6 W&B file(s), 1 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220901_012722-tom4vj43/logs
+wandb: Terminating and syncing runs. Press ctrl-c to kill.
+wandb: Starting wandb agent 🕵️
+2022-09-01 01:29:10,382 - wandb.wandb_agent - INFO - Running runs: []
+2022-09-01 01:29:10,589 - wandb.wandb_agent - INFO - Agent received command: run
+2022-09-01 01:29:10,589 - wandb.wandb_agent - INFO - Agent starting run with config:
+	learning_rate: 0.001
+2022-09-01 01:29:10,592 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -datav 2017
+2022-09-01 01:29:15,601 - wandb.wandb_agent - INFO - Running runs: ['u1zk2jk3']
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: WARNING Ignored wandb.init() arg project when running a sweep.
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/__main__.py", line 3, in <module>
+    cli.cli(prog_name="python -m wandb")
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/click/core.py", line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 97, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/cli/cli.py", line 286, in service
+    server.serve()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/service/server.py", line 140, in serve
+    mux.loop()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/service/streams.py", line 336, in loop
+    raise e
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/service/streams.py", line 334, in loop
+    self._loop()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/service/streams.py", line 327, in _loop
+    self._process_action(action)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/service/streams.py", line 292, in _process_action
+    self._process_add(action)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/service/streams.py", line 208, in _process_add
+    stream.start_thread(thread)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/service/streams.py", line 68, in start_thread
+    self._wait_thread_active()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/service/streams.py", line 73, in _wait_thread_active
+    assert result
+AssertionError
+wandb: ERROR Error communicating with wandb process
+Problem at: run.py 116 <module>
+Traceback (most recent call last):
+  File "run.py", line 116, in <module>
+    wandb.init(project=hparam.wandb_project, name=f"{hparam.method}_{args['dataset_version']}" , config=args, settings=wandb.Settings(start_method="fork"))
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1043, in init
+    run = wi.init()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 691, in init
+    raise UsageError(error_message)
+wandb.errors.UsageError: Error communicating with wandb process
+2022-09-01 01:30:01,286 - wandb.wandb_agent - INFO - Cleaning up finished run: u1zk2jk3
+slurmstepd: error: *** JOB 6045586 ON g3040 CANCELLED AT 2022-09-01T01:32:40 ***

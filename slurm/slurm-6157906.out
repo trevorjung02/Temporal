@@ -1,0 +1,23 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-rtx6k
+#SBATCH --account=cse
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=11:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+python preprocess_wmt_train_data.py 2018
+--------------------
+/var/spool/slurmd/job6157906/slurm_script: line 20: 81001 Killed                  python preprocess_wmt_train_data.py 2018
+slurmstepd: error: Detected 1 oom-kill event(s) in StepId=6157906.batch. Some of your processes may have been killed by the cgroup out-of-memory handler.

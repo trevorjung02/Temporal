@@ -1,0 +1,82 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=ark
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=11:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+python run.py --config configs/templama/evaluation/t5_baseline_full.json--------------------
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.3 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220909_131922-2elhpivw
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run baseline_full_diff
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/2elhpivw
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All DDP processes registered. Starting ddp with 1 processes
+----------------------------------------------------------------------------------------------------
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Namespace(accelerator='ddp', adam_epsilon=1e-08, adapter_config={'adapter_list': None, 'adapter_hidden_size': None, 'adapter_enc_dec': None, 'pool_size': None}, adapter_enc_dec=None, adapter_hidden_size=None, adapter_list=None, check_validation_only=True, checkpoint_dir=None, checkpoint_path='outputs/baseline_full/epoch=7-f1_score=0.192-em_score=0.069.ckpt', dataset='templama', dataset_version='full_diff', early_stop_callback=False, eval_batch_size=64, freeze_embeds=False, freeze_encoder=False, freeze_level=0, learning_rate=1e-05, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='baseline', mode='pretrain', model_name_or_path='google/t5-small-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=30, num_workers=4, opt_level='O1', output_dir='outputs/baseline_full_diff', output_log=None, pool_size=None, prefix=True, resume_from_checkpoint=None, seed=42, split=0, split_num=1, t5_learning_rate=None, tokenizer_name_or_path='google/t5-small-ssm', train_batch_size=64, use_deepspeed=False, use_lr_scheduling=True, val_check_interval=1.0, val_data='full_diff', wandb_log=True, warmup_steps=0, weight_decay=0.0)
+Not freezing any parameters!
+split is 0
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.000 MB of 0.000 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: - 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: \ 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: | 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: / 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: - 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: \ 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: | 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: Synced baseline_full_diff: https://wandb.ai/tjung2/temporal_questions/runs/2elhpivw
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220909_131922-2elhpivw/logs
+Traceback (most recent call last):
+  File "run.py", line 211, in <module>
+    trainer.validate(model)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 521, in validate
+    results = self._run(model)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 758, in _run
+    self.dispatch()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 795, in dispatch
+    self.accelerator.start_evaluating(self)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/accelerators/accelerator.py", line 99, in start_evaluating
+    self.training_type_plugin.start_evaluating(trainer)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/plugins/training_type/training_type_plugin.py", line 148, in start_evaluating
+    self._results = trainer.run_stage()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 806, in run_stage
+    return self.run_evaluate()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 1049, in run_evaluate
+    eval_loop_results = self.run_evaluation()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 925, in run_evaluation
+    dataloaders, max_batches = self.evaluation_loop.get_evaluation_dataloaders()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/evaluation_loop.py", line 63, in get_evaluation_dataloaders
+    self.trainer.reset_val_dataloader(model)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/data_loading.py", line 409, in reset_val_dataloader
+    self.num_val_batches, self.val_dataloaders = self._reset_eval_dataloader(model, 'val')
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/data_loading.py", line 318, in _reset_eval_dataloader
+    dataloaders = self.request_dataloader(model, mode)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/data_loading.py", line 442, in request_dataloader
+    dataloader: DataLoader = getattr(model, f'{stage}_dataloader')()
+  File "/mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/models/T5_Model.py", line 457, in val_dataloader
+    validation_dataset = self.get_dataset(tokenizer=self.tokenizer, type_path="validation", num_samples=n_samples, args=self.hparams)
+  File "/mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/models/T5_Model.py", line 256, in get_dataset
+    dataset = Pretrain(tokenizer=tokenizer, type_path=type_path, num_samples=num_samples,  input_length=args.max_input_length,
+  File "/mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/Datasets.py", line 24, in __init__
+    raise Exception(f'Provided the correct dataset version among {dataset_v}')
+Exception: Provided the correct dataset version among ['small', 'full', 'debug', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']

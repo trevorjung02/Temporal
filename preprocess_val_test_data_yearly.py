@@ -48,7 +48,7 @@ def main():
             for row in datasets[year]:
                 temp = copy.deepcopy(row)
                 temp[2] = f"In {year}, " + temp[2]
-                w.writetemp(row)
+                w.writerow(temp)
 
 
 

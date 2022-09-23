@@ -1,0 +1,995 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=cse
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=11:00:00 
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+python run.py --config configs/situatedqa/training/t5_kadapters_soft_yearly_2freeze.json--------------------
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.3 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220916_071612-369g9qo1
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run kadapter_soft_2018-
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/369g9qo1
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory outputs/situatedqakadapter_soft_2018-_2freeze_158_128 exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+Some weights of T5ForConditionalGeneration were not initialized from the model checkpoint at google/t5-small-ssm and are newly initialized: ['kadapter.adapters.2.encoder.layer.1.layer_norm.weight', 'kadapter.adapters.4.encoder.layer.1.layer_norm.weight', 'kadapter.adapters.1.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'kadapter.adapters.3.encoder.layer.1.layer_norm.weight', 'kadapter.adapters.0.down_project.weight', 'kadapter.adapters.5.encoder.layer.0.layer_norm.weight', 'kadapter.adapters.0.encoder.layer.0.SelfAttention.k.weight', 'kadapter.adapters.7.encoder.layer.0.SelfAttention.o.weight', 'kadapter.adapters.1.encoder.layer.1.layer_norm.weight', 'kadapter.adapters.8.encoder.layer.0.layer_norm.weight', 'kadapter.adapters.4.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'kadapter.adapters.2.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'kadapter.adapters.7.down_project.weight', 'kadapter.pool.weight', 'kadapter.adapters.4.up_project.weight', 'kadapter.adapters.8.encoder.layer.0.SelfAttention.o.weight', 'kadapter.year_embeds.0.weight', 'kadapter.adapters.6.encoder.layer.0.layer_norm.weight', 'kadapter.adapters.2.encoder.layer.0.SelfAttention.o.weight', 'kadapter.adapters.0.encoder.layer.0.layer_norm.weight', 'kadapter.pool.bias', 'kadapter.adapters.1.encoder.layer.0.SelfAttention.k.weight', 'kadapter.adapters.1.encoder.layer.0.SelfAttention.q.weight', 'kadapter.adapters.3.encoder.layer.0.SelfAttention.k.weight', 'kadapter.adapters.2.encoder.layer.0.SelfAttention.k.weight', 'kadapter.adapters.7.up_project.bias', 'kadapter.adapters.5.down_project.bias', 'kadapter.adapters.6.encoder.layer.1.DenseReluDense.wi_0.weight', 'kadapter.adapters.7.up_project.weight', 'kadapter.adapters.1.up_project.weight', 'kadapter.adapters.0.encoder.layer.1.layer_norm.weight', 'kadapter.adapters.2.encoder.layer.1.DenseReluDense.wi_1.weight', 'kadapter.adapters.3.encoder.layer.0.SelfAttention.o.weight', 'kadapter.adapters.1.encoder.layer.0.SelfAttention.o.weight', 'kadapter.adapters.3.encoder.layer.1.DenseReluDense.wo.weight', 'kadapter.adapters.5.up_project.weight', 'kadapter.adapters.1.down_project.bias', 'kadapter.adapters.3.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'kadapter.adapters.1.up_project.bias', 'kadapter.adapters.6.encoder.layer.0.SelfAttention.v.weight', 'kadapter.adapters.7.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'kadapter.adapters.0.up_project.bias', 'kadapter.adapters.2.encoder.layer.0.layer_norm.weight', 'kadapter.adapters.6.encoder.layer.1.DenseReluDense.wi_1.weight', 'kadapter.adapters.4.encoder.layer.0.layer_norm.weight', 'kadapter.adapters.6.encoder.layer.1.layer_norm.weight', 'kadapter.adapters.6.down_project.weight', 'kadapter.adapters.3.encoder.layer.0.layer_norm.weight', 'kadapter.adapters.0.down_project.bias', 'kadapter.adapters.3.up_project.weight', 'kadapter.adapters.4.encoder.layer.0.SelfAttention.k.weight', 'kadapter.adapters.0.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'kadapter.adapters.6.down_project.bias', 'kadapter.adapters.4.encoder.layer.1.DenseReluDense.wo.weight', 'kadapter.adapters.4.encoder.layer.0.SelfAttention.v.weight', 'kadapter.layer_norm.weight', 'kadapter.adapters.1.encoder.layer.1.DenseReluDense.wi_1.weight', 'kadapter.adapters.1.encoder.layer.1.DenseReluDense.wo.weight', 'kadapter.adapters.2.up_project.bias', 'kadapter.adapters.5.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'kadapter.adapters.8.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'kadapter.adapters.7.encoder.layer.1.DenseReluDense.wi_1.weight', 'kadapter.adapters.6.encoder.layer.1.DenseReluDense.wo.weight', 'kadapter.adapters.2.encoder.layer.1.DenseReluDense.wo.weight', 'kadapter.year_embeds.1.weight', 'kadapter.adapters.6.encoder.layer.0.SelfAttention.o.weight', 'kadapter.adapters.5.up_project.bias', 'kadapter.adapters.8.encoder.layer.0.SelfAttention.k.weight', 'kadapter.adapters.4.encoder.layer.1.DenseReluDense.wi_0.weight', 'kadapter.adapters.5.encoder.layer.0.SelfAttention.q.weight', 'kadapter.adapters.5.encoder.layer.0.SelfAttention.v.weight', 'kadapter.adapters.8.up_project.weight', 'kadapter.adapters.4.down_project.bias', 'kadapter.adapters.7.encoder.layer.0.SelfAttention.k.weight', 'kadapter.adapters.4.encoder.layer.1.DenseReluDense.wi_1.weight', 'kadapter.adapters.5.encoder.layer.1.layer_norm.weight', 'kadapter.adapters.7.down_project.bias', 'kadapter.adapters.1.encoder.layer.0.SelfAttention.v.weight', 'kadapter.adapters.5.encoder.layer.1.DenseReluDense.wo.weight', 'kadapter.adapters.8.encoder.layer.0.SelfAttention.q.weight', 'kadapter.adapters.8.encoder.layer.1.DenseReluDense.wi_0.weight', 'kadapter.adapters.5.down_project.weight', 'kadapter.adapters.4.encoder.layer.0.SelfAttention.o.weight', 'kadapter.adapters.0.encoder.layer.1.DenseReluDense.wo.weight', 'kadapter.adapters.8.encoder.layer.0.SelfAttention.v.weight', 'kadapter.adapters.3.up_project.bias', 'kadapter.adapters.2.encoder.layer.1.DenseReluDense.wi_0.weight', 'kadapter.adapters.7.encoder.layer.0.SelfAttention.q.weight', 'kadapter.adapters.6.encoder.layer.0.SelfAttention.q.weight', 'kadapter.adapters.6.encoder.layer.0.SelfAttention.k.weight', 'kadapter.adapters.3.encoder.layer.0.SelfAttention.q.weight', 'kadapter.adapters.6.up_project.weight', 'kadapter.adapters.3.down_project.bias', 'kadapter.adapters.7.encoder.layer.1.DenseReluDense.wi_0.weight', 'kadapter.adapters.8.encoder.layer.1.DenseReluDense.wo.weight', 'kadapter.adapters.3.down_project.weight', 'kadapter.adapters.3.encoder.layer.1.DenseReluDense.wi_0.weight', 'kadapter.adapters.8.down_project.weight', 'kadapter.adapters.0.up_project.weight', 'kadapter.adapters.0.encoder.layer.0.SelfAttention.o.weight', 'kadapter.adapters.2.encoder.layer.0.SelfAttention.q.weight', 'kadapter.adapters.7.encoder.layer.0.SelfAttention.v.weight', 'kadapter.adapters.3.encoder.layer.0.SelfAttention.v.weight', 'kadapter.adapters.1.encoder.layer.0.layer_norm.weight', 'kadapter.year_embeds.2.weight', 'kadapter.adapters.6.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'kadapter.adapters.5.encoder.layer.1.DenseReluDense.wi_1.weight', 'kadapter.adapters.5.encoder.layer.1.DenseReluDense.wi_0.weight', 'kadapter.adapters.8.encoder.layer.1.layer_norm.weight', 'kadapter.adapters.2.down_project.weight', 'kadapter.adapters.4.down_project.weight', 'kadapter.adapters.6.up_project.bias', 'kadapter.adapters.4.encoder.layer.0.SelfAttention.q.weight', 'kadapter.adapters.8.encoder.layer.1.DenseReluDense.wi_1.weight', 'kadapter.adapters.1.down_project.weight', 'kadapter.adapters.3.encoder.layer.1.DenseReluDense.wi_1.weight', 'kadapter.adapters.0.encoder.layer.0.SelfAttention.q.weight', 'kadapter.adapters.4.up_project.bias', 'kadapter.adapters.0.encoder.layer.1.DenseReluDense.wi_1.weight', 'kadapter.adapters.0.encoder.layer.1.DenseReluDense.wi_0.weight', 'kadapter.adapters.7.encoder.layer.1.DenseReluDense.wo.weight', 'kadapter.adapters.7.encoder.layer.0.layer_norm.weight', 'kadapter.adapters.2.up_project.weight', 'kadapter.adapters.2.encoder.layer.0.SelfAttention.v.weight', 'kadapter.adapters.5.encoder.layer.0.SelfAttention.o.weight', 'kadapter.adapters.5.encoder.layer.0.SelfAttention.k.weight', 'kadapter.adapters.7.encoder.layer.1.layer_norm.weight', 'kadapter.adapters.2.down_project.bias', 'kadapter.adapters.8.down_project.bias', 'kadapter.adapters.0.encoder.layer.0.SelfAttention.v.weight', 'kadapter.adapters.8.up_project.bias', 'kadapter.adapters.1.encoder.layer.1.DenseReluDense.wi_0.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All DDP processes registered. Starting ddp with 1 processes
+----------------------------------------------------------------------------------------------------
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Set SLURM handle signals.
+
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 83.5 M
+-----------------------------------------------------
+6.5 M     Trainable params
+77.0 M    Non-trainable params
+83.5 M    Total params
+333.874   Total estimated model params size (MB)
+checkpoint path = outputs/situatedqabaseline_2018-/epoch=70-f1_score=0.975-em_score=0.962.ckpt
+Namespace(accelerator='ddp', adam_epsilon=1e-08, adapter_config={'adapter_list': [1, 5, 8], 'adapter_hidden_size': 128, 'adapter_enc_dec': None, 'pool_size': 3}, adapter_enc_dec=None, adapter_hidden_size=128, adapter_list=[1, 5, 8], check_validation_only=False, checkpoint_dir='outputs/situatedqabaseline_2018-', checkpoint_path='outputs/situatedqabaseline_2018-/epoch=70-f1_score=0.975-em_score=0.962.ckpt', dataset='situatedqa', dataset_version='2018-', early_stop_callback=False, eval_batch_size=64, freeze_embeds=False, freeze_encoder=False, freeze_level=2, learning_rate=0.001, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='kadapter_soft', mode='pretrain', model_name_or_path='google/t5-small-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=60, num_workers=4, opt_level='O1', output_dir='outputs/situatedqakadapter_soft_2018-_2freeze_158_128', output_log=None, pool_size=3, prefix=True, resume_from_checkpoint=None, seed=42, split=0, split_num=1, t5_learning_rate=None, tokenizer_name_or_path='google/t5-small-ssm', train_batch_size=64, use_deepspeed=False, use_lr_scheduling=True, val_check_interval=1, val_data='2018-', wandb_log=True, warmup_steps=0, weight_decay=0.0)
+T5Config {
+  "_name_or_path": "google/t5-small-ssm",
+  "adapter_enc_dec": null,
+  "adapter_hidden_size": 128,
+  "adapter_list": [
+    1,
+    5,
+    8
+  ],
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 1024,
+  "d_kv": 64,
+  "d_model": 512,
+  "decoder_start_token_id": 0,
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "num_decoder_layers": 8,
+  "num_heads": 6,
+  "num_layers": 8,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pool_size": 3,
+  "relative_attention_num_buckets": 32,
+  "tie_word_embeddings": false,
+  "transformers_version": "4.12.3",
+  "use_cache": false,
+  "vocab_size": 32128
+}
+
+split is 0
+Length of dataset retrieving is.. 2902
+Validation sanity check: 0it [00:00, ?it/s]split is 0
+Length of dataset retrieving is.. 1683
+Validation sanity check:   0%|          | 0/2 [00:00<?, ?it/s]Validation sanity check:  50%|█████     | 1/2 [00:03<00:03,  3.31s/it]Validation sanity check: 100%|██████████| 2/2 [00:05<00:00,  2.69s/it]                                                                      split is 0
+Length of dataset retrieving is.. 2902
+Training: 0it [00:00, ?it/s]Training:   0%|          | 0/1260 [00:00<?, ?it/s]Epoch 0:   0%|          | 0/1260 [00:00<?, ?it/s] [W reducer.cpp:1158] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+Epoch 0:   0%|          | 1/1260 [00:00<19:07,  1.10it/s]Epoch 0:   0%|          | 1/1260 [00:00<19:08,  1.10it/s, loss=26.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:12,  2.80s/it][AEpoch 0:   0%|          | 3/1260 [00:03<25:59,  1.24s/it, loss=26.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:   7%|▋         | 2/27 [00:05<01:02,  2.48s/it][A
+Validating:  11%|█         | 3/27 [00:07<00:57,  2.38s/it][AEpoch 0:   0%|          | 5/1260 [00:08<34:28,  1.65s/it, loss=26.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  15%|█▍        | 4/27 [00:09<00:54,  2.35s/it][A
+Validating:  19%|█▊        | 5/27 [00:11<00:50,  2.30s/it][AEpoch 0:   1%|          | 7/1260 [00:12<38:03,  1.82s/it, loss=26.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  22%|██▏       | 6/27 [00:14<00:48,  2.29s/it][A
+Validating:  26%|██▌       | 7/27 [00:16<00:45,  2.26s/it][AEpoch 0:   1%|          | 9/1260 [00:17<39:55,  1.91s/it, loss=26.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.25s/it][A
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.28s/it][AEpoch 0:   1%|          | 11/1260 [00:21<41:14,  1.98s/it, loss=26.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  37%|███▋      | 10/27 [00:23<00:38,  2.28s/it][A
+Validating:  41%|████      | 11/27 [00:25<00:36,  2.28s/it][AEpoch 0:   1%|          | 13/1260 [00:26<42:08,  2.03s/it, loss=26.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.26s/it][A
+Validating:  48%|████▊     | 13/27 [00:29<00:31,  2.27s/it][AEpoch 0:   1%|          | 15/1260 [00:30<42:41,  2.06s/it, loss=26.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  52%|█████▏    | 14/27 [00:32<00:29,  2.25s/it][A
+Validating:  56%|█████▌    | 15/27 [00:34<00:26,  2.24s/it][AEpoch 0:   1%|▏         | 17/1260 [00:35<42:59,  2.08s/it, loss=26.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.25s/it][A
+Validating:  63%|██████▎   | 17/27 [00:38<00:22,  2.24s/it][AEpoch 0:   2%|▏         | 19/1260 [00:39<43:17,  2.09s/it, loss=26.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  67%|██████▋   | 18/27 [00:41<00:20,  2.23s/it][A
+Validating:  70%|███████   | 19/27 [00:43<00:17,  2.22s/it][AEpoch 0:   2%|▏         | 21/1260 [00:44<43:26,  2.10s/it, loss=26.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  74%|███████▍  | 20/27 [00:45<00:15,  2.23s/it][A
+Validating:  78%|███████▊  | 21/27 [00:47<00:13,  2.21s/it][AEpoch 0:   2%|▏         | 23/1260 [00:48<43:33,  2.11s/it, loss=26.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  81%|████████▏ | 22/27 [00:49<00:11,  2.22s/it][A
+Validating:  85%|████████▌ | 23/27 [00:52<00:08,  2.22s/it][AEpoch 0:   2%|▏         | 25/1260 [00:53<43:40,  2.12s/it, loss=26.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  89%|████████▉ | 24/27 [00:54<00:06,  2.19s/it][A
+Validating:  93%|█████████▎| 25/27 [00:56<00:04,  2.21s/it][AEpoch 0:   2%|▏         | 27/1260 [00:57<43:42,  2.13s/it, loss=26.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  96%|█████████▋| 26/27 [00:58<00:02,  2.23s/it][A
+Validating: 100%|██████████| 27/27 [00:59<00:00,  1.86s/it][AEpoch 0:   2%|▏         | 29/1260 [01:00<42:57,  2.09s/it, loss=26.7, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:   2%|▏         | 29/1260 [01:01<43:11,  2.11s/it, loss=26.7, v_num=9qo1, em_score=0.000, f1_score=4.95e-5]
+                                                           [AEpoch 0:   2%|▏         | 30/1260 [01:01<42:11,  2.06s/it, loss=27.1, v_num=9qo1, em_score=0.000, f1_score=4.95e-5]Epoch 0:   2%|▏         | 31/1260 [01:01<40:47,  1.99s/it, loss=27.1, v_num=9qo1, em_score=0.000, f1_score=4.95e-5]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:12,  2.79s/it][A
+Validating:   7%|▋         | 2/27 [00:05<01:02,  2.48s/it][AEpoch 0:   3%|▎         | 33/1260 [01:06<41:23,  2.02s/it, loss=27.1, v_num=9qo1, em_score=0.000, f1_score=4.95e-5]
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.36s/it][A
+Validating:  15%|█▍        | 4/27 [00:09<00:53,  2.34s/it][AEpoch 0:   3%|▎         | 35/1260 [01:11<41:36,  2.04s/it, loss=27.1, v_num=9qo1, em_score=0.000, f1_score=4.95e-5]
+Validating:  19%|█▊        | 5/27 [00:11<00:50,  2.28s/it][A
+Validating:  22%|██▏       | 6/27 [00:14<00:47,  2.28s/it][AEpoch 0:   3%|▎         | 37/1260 [01:15<41:44,  2.05s/it, loss=27.1, v_num=9qo1, em_score=0.000, f1_score=4.95e-5]
+Validating:  26%|██▌       | 7/27 [00:16<00:45,  2.25s/it][A
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.24s/it][AEpoch 0:   3%|▎         | 39/1260 [01:20<41:50,  2.06s/it, loss=27.1, v_num=9qo1, em_score=0.000, f1_score=4.95e-5]
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.26s/it][A
+Validating:  37%|███▋      | 10/27 [00:22<00:38,  2.25s/it][AEpoch 0:   3%|▎         | 41/1260 [01:24<41:58,  2.07s/it, loss=27.1, v_num=9qo1, em_score=0.000, f1_score=4.95e-5]
+Validating:  41%|████      | 11/27 [00:25<00:36,  2.26s/it][A
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.23s/it][AEpoch 0:   3%|▎         | 43/1260 [01:29<42:03,  2.07s/it, loss=27.1, v_num=9qo1, em_score=0.000, f1_score=4.95e-5]
+Validating:  48%|████▊     | 13/27 [00:29<00:31,  2.24s/it][A
+Validating:  52%|█████▏    | 14/27 [00:31<00:29,  2.23s/it][AEpoch 0:   4%|▎         | 45/1260 [01:33<42:08,  2.08s/it, loss=27.1, v_num=9qo1, em_score=0.000, f1_score=4.95e-5]
+Validating:  56%|█████▌    | 15/27 [00:34<00:26,  2.24s/it][A
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.23s/it][AEpoch 0:   4%|▎         | 47/1260 [01:38<42:12,  2.09s/it, loss=27.1, v_num=9qo1, em_score=0.000, f1_score=4.95e-5]
+Validating:  63%|██████▎   | 17/27 [00:38<00:22,  2.22s/it][A
+Validating:  67%|██████▋   | 18/27 [00:40<00:20,  2.22s/it][AEpoch 0:   4%|▍         | 49/1260 [01:42<42:14,  2.09s/it, loss=27.1, v_num=9qo1, em_score=0.000, f1_score=4.95e-5]
+Validating:  70%|███████   | 19/27 [00:43<00:17,  2.22s/it][A
+Validating:  74%|███████▍  | 20/27 [00:45<00:15,  2.23s/it][AEpoch 0:   4%|▍         | 51/1260 [01:47<42:16,  2.10s/it, loss=27.1, v_num=9qo1, em_score=0.000, f1_score=4.95e-5]
+Validating:  78%|███████▊  | 21/27 [00:47<00:13,  2.21s/it][A
+Validating:  81%|████████▏ | 22/27 [00:49<00:11,  2.21s/it][AEpoch 0:   4%|▍         | 53/1260 [01:51<42:16,  2.10s/it, loss=27.1, v_num=9qo1, em_score=0.000, f1_score=4.95e-5]
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.22s/it][A
+Validating:  89%|████████▉ | 24/27 [00:54<00:06,  2.21s/it][AEpoch 0:   4%|▍         | 55/1260 [01:55<42:16,  2.11s/it, loss=27.1, v_num=9qo1, em_score=0.000, f1_score=4.95e-5]
+Validating:  93%|█████████▎| 25/27 [00:56<00:04,  2.21s/it][A
+Validating:  96%|█████████▋| 26/27 [00:58<00:02,  2.25s/it][AEpoch 0:   5%|▍         | 57/1260 [02:00<42:19,  2.11s/it, loss=27.1, v_num=9qo1, em_score=0.000, f1_score=4.95e-5]
+Validating: 100%|██████████| 27/27 [00:59<00:00,  1.87s/it][AEpoch 0:   5%|▍         | 58/1260 [02:02<42:10,  2.11s/it, loss=27.1, v_num=9qo1, em_score=0.000, f1_score=0.000]  
+                                                           [AEpoch 0:   5%|▍         | 59/1260 [02:02<41:28,  2.07s/it, loss=27.1, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:   5%|▍         | 59/1260 [02:02<41:28,  2.07s/it, loss=26.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:12,  2.78s/it][AEpoch 0:   5%|▍         | 61/1260 [02:05<40:57,  2.05s/it, loss=26.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:   7%|▋         | 2/27 [00:05<01:01,  2.47s/it][A
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.36s/it][AEpoch 0:   5%|▌         | 63/1260 [02:09<41:00,  2.06s/it, loss=26.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  15%|█▍        | 4/27 [00:09<00:53,  2.34s/it][A
+Validating:  19%|█▊        | 5/27 [00:11<00:50,  2.28s/it][AEpoch 0:   5%|▌         | 65/1260 [02:13<41:03,  2.06s/it, loss=26.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  22%|██▏       | 6/27 [00:14<00:47,  2.28s/it][A
+Validating:  26%|██▌       | 7/27 [00:16<00:45,  2.25s/it][AEpoch 0:   5%|▌         | 67/1260 [02:18<41:05,  2.07s/it, loss=26.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.24s/it][A
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.25s/it][AEpoch 0:   5%|▌         | 69/1260 [02:22<41:07,  2.07s/it, loss=26.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  37%|███▋      | 10/27 [00:22<00:38,  2.25s/it][A
+Validating:  41%|████      | 11/27 [00:25<00:36,  2.25s/it][AEpoch 0:   6%|▌         | 71/1260 [02:27<41:09,  2.08s/it, loss=26.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.24s/it][A
+Validating:  48%|████▊     | 13/27 [00:29<00:31,  2.24s/it][AEpoch 0:   6%|▌         | 73/1260 [02:31<41:09,  2.08s/it, loss=26.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  52%|█████▏    | 14/27 [00:31<00:29,  2.23s/it][A
+Validating:  56%|█████▌    | 15/27 [00:34<00:26,  2.24s/it][AEpoch 0:   6%|▌         | 75/1260 [02:36<41:10,  2.08s/it, loss=26.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.24s/it][A
+Validating:  63%|██████▎   | 17/27 [00:38<00:22,  2.22s/it][AEpoch 0:   6%|▌         | 77/1260 [02:40<41:09,  2.09s/it, loss=26.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  67%|██████▋   | 18/27 [00:40<00:19,  2.22s/it][A
+Validating:  70%|███████   | 19/27 [00:42<00:17,  2.21s/it][AEpoch 0:   6%|▋         | 79/1260 [02:45<41:09,  2.09s/it, loss=26.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  74%|███████▍  | 20/27 [00:45<00:15,  2.23s/it][A
+Validating:  78%|███████▊  | 21/27 [00:47<00:13,  2.21s/it][AEpoch 0:   6%|▋         | 81/1260 [02:49<41:09,  2.09s/it, loss=26.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  81%|████████▏ | 22/27 [00:49<00:11,  2.21s/it][A
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.21s/it][AEpoch 0:   7%|▋         | 83/1260 [02:54<41:08,  2.10s/it, loss=26.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  89%|████████▉ | 24/27 [00:54<00:06,  2.21s/it][A
+Validating:  93%|█████████▎| 25/27 [00:56<00:04,  2.21s/it][AEpoch 0:   7%|▋         | 85/1260 [02:58<41:07,  2.10s/it, loss=26.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  96%|█████████▋| 26/27 [00:58<00:02,  2.24s/it][A
+Validating: 100%|██████████| 27/27 [00:59<00:00,  1.87s/it][AEpoch 0:   7%|▋         | 87/1260 [03:01<40:50,  2.09s/it, loss=26.9, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:   7%|▋         | 87/1260 [03:02<40:58,  2.10s/it, loss=26.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+                                                           [AEpoch 0:   7%|▋         | 88/1260 [03:02<40:30,  2.07s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:   7%|▋         | 89/1260 [03:02<40:01,  2.05s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:13,  2.83s/it][A
+Validating:   7%|▋         | 2/27 [00:05<01:02,  2.49s/it][AEpoch 0:   7%|▋         | 91/1260 [03:07<40:09,  2.06s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.37s/it][A
+Validating:  15%|█▍        | 4/27 [00:09<00:53,  2.33s/it][AEpoch 0:   7%|▋         | 93/1260 [03:12<40:10,  2.07s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  19%|█▊        | 5/27 [00:11<00:50,  2.28s/it][A
+Validating:  22%|██▏       | 6/27 [00:14<00:47,  2.27s/it][AEpoch 0:   8%|▊         | 95/1260 [03:16<40:09,  2.07s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  26%|██▌       | 7/27 [00:16<00:44,  2.25s/it][A
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.23s/it][AEpoch 0:   8%|▊         | 97/1260 [03:20<40:08,  2.07s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.26s/it][A
+Validating:  37%|███▋      | 10/27 [00:22<00:38,  2.25s/it][AEpoch 0:   8%|▊         | 99/1260 [03:25<40:09,  2.08s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  41%|████      | 11/27 [00:25<00:35,  2.25s/it][A
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.24s/it][AEpoch 0:   8%|▊         | 101/1260 [03:29<40:09,  2.08s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  48%|████▊     | 13/27 [00:29<00:31,  2.24s/it][A
+Validating:  52%|█████▏    | 14/27 [00:31<00:29,  2.23s/it][AEpoch 0:   8%|▊         | 103/1260 [03:34<40:08,  2.08s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  56%|█████▌    | 15/27 [00:34<00:26,  2.23s/it][A
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.25s/it][AEpoch 0:   8%|▊         | 105/1260 [03:38<40:07,  2.08s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  63%|██████▎   | 17/27 [00:38<00:22,  2.23s/it][A
+Validating:  67%|██████▋   | 18/27 [00:40<00:20,  2.23s/it][AEpoch 0:   8%|▊         | 107/1260 [03:43<40:06,  2.09s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  70%|███████   | 19/27 [00:43<00:17,  2.22s/it][A
+Validating:  74%|███████▍  | 20/27 [00:45<00:15,  2.23s/it][AEpoch 0:   9%|▊         | 109/1260 [03:47<40:05,  2.09s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  78%|███████▊  | 21/27 [00:47<00:13,  2.22s/it][A
+Validating:  81%|████████▏ | 22/27 [00:49<00:11,  2.22s/it][AEpoch 0:   9%|▉         | 111/1260 [03:52<40:03,  2.09s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.22s/it][A
+Validating:  89%|████████▉ | 24/27 [00:54<00:06,  2.20s/it][AEpoch 0:   9%|▉         | 113/1260 [03:56<40:01,  2.09s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  93%|█████████▎| 25/27 [00:56<00:04,  2.21s/it][A
+Validating:  96%|█████████▋| 26/27 [00:58<00:02,  2.24s/it][AEpoch 0:   9%|▉         | 115/1260 [04:01<40:00,  2.10s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 100%|██████████| 27/27 [00:59<00:00,  1.88s/it][AEpoch 0:   9%|▉         | 116/1260 [04:02<39:54,  2.09s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000229]
+                                                           [AEpoch 0:   9%|▉         | 117/1260 [04:02<39:32,  2.08s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000229]Epoch 0:   9%|▉         | 117/1260 [04:02<39:32,  2.08s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000229]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:12,  2.80s/it][AEpoch 0:   9%|▉         | 119/1260 [04:05<39:15,  2.06s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000229]
+Validating:   7%|▋         | 2/27 [00:05<01:02,  2.49s/it][A
+Validating:  11%|█         | 3/27 [00:07<00:57,  2.38s/it][AEpoch 0:  10%|▉         | 121/1260 [04:10<39:15,  2.07s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000229]
+Validating:  15%|█▍        | 4/27 [00:09<00:54,  2.35s/it][A
+Validating:  19%|█▊        | 5/27 [00:11<00:50,  2.30s/it][AEpoch 0:  10%|▉         | 123/1260 [04:14<39:14,  2.07s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000229]
+Validating:  22%|██▏       | 6/27 [00:14<00:48,  2.30s/it][A
+Validating:  26%|██▌       | 7/27 [00:16<00:45,  2.27s/it][AEpoch 0:  10%|▉         | 125/1260 [04:19<39:13,  2.07s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000229]
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.25s/it][A
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.26s/it][AEpoch 0:  10%|█         | 127/1260 [04:23<39:12,  2.08s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000229]
+Validating:  37%|███▋      | 10/27 [00:23<00:38,  2.25s/it][A
+Validating:  41%|████      | 11/27 [00:25<00:35,  2.25s/it][AEpoch 0:  10%|█         | 129/1260 [04:28<39:11,  2.08s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000229]
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.24s/it][A
+Validating:  48%|████▊     | 13/27 [00:29<00:31,  2.24s/it][AEpoch 0:  10%|█         | 131/1260 [04:32<39:09,  2.08s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000229]
+Validating:  52%|█████▏    | 14/27 [00:31<00:28,  2.23s/it][A
+Validating:  56%|█████▌    | 15/27 [00:34<00:26,  2.23s/it][AEpoch 0:  11%|█         | 133/1260 [04:37<39:07,  2.08s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000229]
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.23s/it][A
+Validating:  63%|██████▎   | 17/27 [00:38<00:22,  2.22s/it][AEpoch 0:  11%|█         | 135/1260 [04:41<39:05,  2.09s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000229]
+Validating:  67%|██████▋   | 18/27 [00:40<00:20,  2.23s/it][A
+Validating:  70%|███████   | 19/27 [00:43<00:17,  2.23s/it][AEpoch 0:  11%|█         | 137/1260 [04:45<39:04,  2.09s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000229]
+Validating:  74%|███████▍  | 20/27 [00:45<00:15,  2.23s/it][A
+Validating:  78%|███████▊  | 21/27 [00:47<00:13,  2.22s/it][AEpoch 0:  11%|█         | 139/1260 [04:50<39:02,  2.09s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000229]
+Validating:  81%|████████▏ | 22/27 [00:49<00:11,  2.22s/it][A
+Validating:  85%|████████▌ | 23/27 [00:52<00:08,  2.23s/it][AEpoch 0:  11%|█         | 141/1260 [04:54<39:00,  2.09s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000229]
+Validating:  89%|████████▉ | 24/27 [00:54<00:06,  2.21s/it][A
+Validating:  93%|█████████▎| 25/27 [00:56<00:04,  2.22s/it][AEpoch 0:  11%|█▏        | 143/1260 [04:59<38:57,  2.09s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000229]
+Validating:  96%|█████████▋| 26/27 [00:58<00:02,  2.24s/it][A
+Validating: 100%|██████████| 27/27 [00:59<00:00,  1.87s/it][AEpoch 0:  12%|█▏        | 145/1260 [05:02<38:46,  2.09s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=0.000229]Epoch 0:  12%|█▏        | 145/1260 [05:03<38:51,  2.09s/it, loss=26.5, v_num=9qo1, em_score=0.000, f1_score=5.4e-5]  
+                                                           [AEpoch 0:  12%|█▏        | 146/1260 [05:03<38:34,  2.08s/it, loss=26.2, v_num=9qo1, em_score=0.000, f1_score=5.4e-5]Epoch 0:  12%|█▏        | 147/1260 [05:03<38:16,  2.06s/it, loss=26.2, v_num=9qo1, em_score=0.000, f1_score=5.4e-5]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:12,  2.77s/it][A
+Validating:   7%|▋         | 2/27 [00:05<01:01,  2.47s/it][AEpoch 0:  12%|█▏        | 149/1260 [05:08<38:19,  2.07s/it, loss=26.2, v_num=9qo1, em_score=0.000, f1_score=5.4e-5]
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.36s/it][A
+Validating:  15%|█▍        | 4/27 [00:09<00:53,  2.34s/it][AEpoch 0:  12%|█▏        | 151/1260 [05:12<38:18,  2.07s/it, loss=26.2, v_num=9qo1, em_score=0.000, f1_score=5.4e-5]
+Validating:  19%|█▊        | 5/27 [00:11<00:50,  2.28s/it][A
+Validating:  22%|██▏       | 6/27 [00:14<00:47,  2.28s/it][AEpoch 0:  12%|█▏        | 153/1260 [05:17<38:16,  2.07s/it, loss=26.2, v_num=9qo1, em_score=0.000, f1_score=5.4e-5]
+Validating:  26%|██▌       | 7/27 [00:16<00:45,  2.26s/it][A
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.25s/it][AEpoch 0:  12%|█▏        | 155/1260 [05:21<38:14,  2.08s/it, loss=26.2, v_num=9qo1, em_score=0.000, f1_score=5.4e-5]
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.26s/it][A
+Validating:  37%|███▋      | 10/27 [00:22<00:38,  2.25s/it][AEpoch 0:  12%|█▏        | 157/1260 [05:26<38:12,  2.08s/it, loss=26.2, v_num=9qo1, em_score=0.000, f1_score=5.4e-5]
+Validating:  41%|████      | 11/27 [00:25<00:36,  2.26s/it][A
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.25s/it][AEpoch 0:  13%|█▎        | 159/1260 [05:30<38:10,  2.08s/it, loss=26.2, v_num=9qo1, em_score=0.000, f1_score=5.4e-5]
+Validating:  48%|████▊     | 13/27 [00:29<00:31,  2.24s/it][A
+Validating:  52%|█████▏    | 14/27 [00:31<00:28,  2.23s/it][AEpoch 0:  13%|█▎        | 161/1260 [05:35<38:08,  2.08s/it, loss=26.2, v_num=9qo1, em_score=0.000, f1_score=5.4e-5]
+Validating:  56%|█████▌    | 15/27 [00:34<00:26,  2.24s/it][A
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.24s/it][AEpoch 0:  13%|█▎        | 163/1260 [05:39<38:06,  2.08s/it, loss=26.2, v_num=9qo1, em_score=0.000, f1_score=5.4e-5]
+Validating:  63%|██████▎   | 17/27 [00:38<00:22,  2.23s/it][A
+Validating:  67%|██████▋   | 18/27 [00:40<00:20,  2.23s/it][AEpoch 0:  13%|█▎        | 165/1260 [05:44<38:04,  2.09s/it, loss=26.2, v_num=9qo1, em_score=0.000, f1_score=5.4e-5]
+Validating:  70%|███████   | 19/27 [00:43<00:17,  2.22s/it][A
+Validating:  74%|███████▍  | 20/27 [00:45<00:15,  2.23s/it][AEpoch 0:  13%|█▎        | 167/1260 [05:48<38:01,  2.09s/it, loss=26.2, v_num=9qo1, em_score=0.000, f1_score=5.4e-5]
+Validating:  78%|███████▊  | 21/27 [00:47<00:13,  2.22s/it][A
+Validating:  81%|████████▏ | 22/27 [00:49<00:11,  2.22s/it][AEpoch 0:  13%|█▎        | 169/1260 [05:53<37:59,  2.09s/it, loss=26.2, v_num=9qo1, em_score=0.000, f1_score=5.4e-5]
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.22s/it][A
+Validating:  89%|████████▉ | 24/27 [00:54<00:06,  2.20s/it][AEpoch 0:  14%|█▎        | 171/1260 [05:57<37:56,  2.09s/it, loss=26.2, v_num=9qo1, em_score=0.000, f1_score=5.4e-5]
+Validating:  93%|█████████▎| 25/27 [00:56<00:04,  2.21s/it][A
+Validating:  96%|█████████▋| 26/27 [00:58<00:02,  2.23s/it][AEpoch 0:  14%|█▎        | 173/1260 [06:01<37:54,  2.09s/it, loss=26.2, v_num=9qo1, em_score=0.000, f1_score=5.4e-5]
+Validating: 100%|██████████| 27/27 [00:59<00:00,  1.87s/it][AEpoch 0:  14%|█▍        | 174/1260 [06:03<37:47,  2.09s/it, loss=26.2, v_num=9qo1, em_score=0.000, f1_score=0.000] 
+                                                           [AEpoch 0:  14%|█▍        | 175/1260 [06:03<37:33,  2.08s/it, loss=26.2, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  14%|█▍        | 175/1260 [06:03<37:33,  2.08s/it, loss=26.1, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:11,  2.75s/it][AEpoch 0:  14%|█▍        | 177/1260 [06:06<37:20,  2.07s/it, loss=26.1, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:   7%|▋         | 2/27 [00:05<01:01,  2.47s/it][A
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.35s/it][AEpoch 0:  14%|█▍        | 179/1260 [06:10<37:18,  2.07s/it, loss=26.1, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  15%|█▍        | 4/27 [00:09<00:53,  2.33s/it][A
+Validating:  19%|█▊        | 5/27 [00:11<00:50,  2.27s/it][AEpoch 0:  14%|█▍        | 181/1260 [06:15<37:16,  2.07s/it, loss=26.1, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  22%|██▏       | 6/27 [00:13<00:47,  2.27s/it][A
+Validating:  26%|██▌       | 7/27 [00:16<00:44,  2.25s/it][AEpoch 0:  15%|█▍        | 183/1260 [06:19<37:13,  2.07s/it, loss=26.1, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.23s/it][A
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.25s/it][AEpoch 0:  15%|█▍        | 185/1260 [06:24<37:11,  2.08s/it, loss=26.1, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  37%|███▋      | 10/27 [00:22<00:38,  2.24s/it][A
+Validating:  41%|████      | 11/27 [00:25<00:35,  2.24s/it][AEpoch 0:  15%|█▍        | 187/1260 [06:28<37:09,  2.08s/it, loss=26.1, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.23s/it][A
+Validating:  48%|████▊     | 13/27 [00:29<00:31,  2.23s/it][AEpoch 0:  15%|█▌        | 189/1260 [06:32<37:06,  2.08s/it, loss=26.1, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  52%|█████▏    | 14/27 [00:31<00:28,  2.22s/it][A
+Validating:  56%|█████▌    | 15/27 [00:33<00:26,  2.22s/it][AEpoch 0:  15%|█▌        | 191/1260 [06:37<37:04,  2.08s/it, loss=26.1, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.22s/it][A
+Validating:  63%|██████▎   | 17/27 [00:38<00:22,  2.21s/it][AEpoch 0:  15%|█▌        | 193/1260 [06:41<37:01,  2.08s/it, loss=26.1, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  67%|██████▋   | 18/27 [00:40<00:19,  2.21s/it][A
+Validating:  70%|███████   | 19/27 [00:42<00:17,  2.20s/it][AEpoch 0:  15%|█▌        | 195/1260 [06:46<36:58,  2.08s/it, loss=26.1, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  74%|███████▍  | 20/27 [00:44<00:15,  2.21s/it][A
+Validating:  78%|███████▊  | 21/27 [00:47<00:13,  2.20s/it][AEpoch 0:  16%|█▌        | 197/1260 [06:50<36:55,  2.08s/it, loss=26.1, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  81%|████████▏ | 22/27 [00:49<00:10,  2.20s/it][A
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.20s/it][AEpoch 0:  16%|█▌        | 199/1260 [06:54<36:52,  2.09s/it, loss=26.1, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  89%|████████▉ | 24/27 [00:53<00:06,  2.19s/it][A
+Validating:  93%|█████████▎| 25/27 [00:55<00:04,  2.20s/it][AEpoch 0:  16%|█▌        | 201/1260 [06:59<36:49,  2.09s/it, loss=26.1, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  96%|█████████▋| 26/27 [00:58<00:02,  2.23s/it][A
+Validating: 100%|██████████| 27/27 [00:59<00:00,  1.87s/it][AEpoch 0:  16%|█▌        | 203/1260 [07:02<36:40,  2.08s/it, loss=26.1, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  16%|█▌        | 203/1260 [07:03<36:42,  2.08s/it, loss=26.1, v_num=9qo1, em_score=0.000, f1_score=0.000]
+                                                           [AEpoch 0:  16%|█▌        | 204/1260 [07:03<36:30,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]  Epoch 0:  16%|█▋        | 205/1260 [07:03<36:17,  2.06s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:11,  2.76s/it][A
+Validating:   7%|▋         | 2/27 [00:05<01:01,  2.46s/it][AEpoch 0:  16%|█▋        | 207/1260 [07:08<36:17,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.36s/it][A
+Validating:  15%|█▍        | 4/27 [00:09<00:53,  2.34s/it][AEpoch 0:  17%|█▋        | 209/1260 [07:12<36:15,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  19%|█▊        | 5/27 [00:11<00:50,  2.28s/it][A
+Validating:  22%|██▏       | 6/27 [00:13<00:47,  2.27s/it][AEpoch 0:  17%|█▋        | 211/1260 [07:17<36:13,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  26%|██▌       | 7/27 [00:16<00:45,  2.26s/it][A
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.25s/it][AEpoch 0:  17%|█▋        | 213/1260 [07:21<36:10,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.25s/it][A
+Validating:  37%|███▋      | 10/27 [00:22<00:38,  2.25s/it][AEpoch 0:  17%|█▋        | 215/1260 [07:26<36:08,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  41%|████      | 11/27 [00:25<00:35,  2.25s/it][A
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.23s/it][AEpoch 0:  17%|█▋        | 217/1260 [07:30<36:05,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  48%|████▊     | 13/27 [00:29<00:31,  2.22s/it][A
+Validating:  52%|█████▏    | 14/27 [00:31<00:28,  2.22s/it][AEpoch 0:  17%|█▋        | 219/1260 [07:34<36:02,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  56%|█████▌    | 15/27 [00:34<00:26,  2.22s/it][A
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.22s/it][AEpoch 0:  18%|█▊        | 221/1260 [07:39<35:59,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  63%|██████▎   | 17/27 [00:38<00:22,  2.21s/it][A
+Validating:  67%|██████▋   | 18/27 [00:40<00:19,  2.21s/it][AEpoch 0:  18%|█▊        | 223/1260 [07:43<35:56,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  70%|███████   | 19/27 [00:42<00:17,  2.21s/it][A
+Validating:  74%|███████▍  | 20/27 [00:45<00:15,  2.21s/it][AEpoch 0:  18%|█▊        | 225/1260 [07:48<35:53,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  78%|███████▊  | 21/27 [00:47<00:13,  2.20s/it][A
+Validating:  81%|████████▏ | 22/27 [00:49<00:11,  2.20s/it][AEpoch 0:  18%|█▊        | 227/1260 [07:52<35:50,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.21s/it][A
+Validating:  89%|████████▉ | 24/27 [00:53<00:06,  2.19s/it][AEpoch 0:  18%|█▊        | 229/1260 [07:56<35:47,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  93%|█████████▎| 25/27 [00:56<00:04,  2.20s/it][A
+Validating:  96%|█████████▋| 26/27 [00:58<00:02,  2.23s/it][AEpoch 0:  18%|█▊        | 231/1260 [08:01<35:44,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 100%|██████████| 27/27 [00:59<00:00,  1.86s/it][AEpoch 0:  18%|█▊        | 232/1260 [08:02<35:39,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=9.14e-5]
+                                                           [AEpoch 0:  18%|█▊        | 233/1260 [08:02<35:28,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=9.14e-5]Epoch 0:  18%|█▊        | 233/1260 [08:02<35:28,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=9.14e-5]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:11,  2.75s/it][AEpoch 0:  19%|█▊        | 235/1260 [08:05<35:18,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=9.14e-5]
+Validating:   7%|▋         | 2/27 [00:05<01:01,  2.47s/it][A
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.35s/it][AEpoch 0:  19%|█▉        | 237/1260 [08:10<35:15,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=9.14e-5]
+Validating:  15%|█▍        | 4/27 [00:09<00:53,  2.32s/it][A
+Validating:  19%|█▊        | 5/27 [00:11<00:49,  2.27s/it][AEpoch 0:  19%|█▉        | 239/1260 [08:14<35:12,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=9.14e-5]
+Validating:  22%|██▏       | 6/27 [00:13<00:47,  2.27s/it][A
+Validating:  26%|██▌       | 7/27 [00:16<00:44,  2.25s/it][AEpoch 0:  19%|█▉        | 241/1260 [08:19<35:10,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=9.14e-5]
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.24s/it][A
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.26s/it][AEpoch 0:  19%|█▉        | 243/1260 [08:23<35:07,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=9.14e-5]
+Validating:  37%|███▋      | 10/27 [00:22<00:38,  2.25s/it][A
+Validating:  41%|████      | 11/27 [00:25<00:35,  2.25s/it][AEpoch 0:  19%|█▉        | 245/1260 [08:28<35:04,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=9.14e-5]
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.25s/it][A
+Validating:  48%|████▊     | 13/27 [00:29<00:31,  2.23s/it][AEpoch 0:  20%|█▉        | 247/1260 [08:32<35:01,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=9.14e-5]
+Validating:  52%|█████▏    | 14/27 [00:31<00:28,  2.21s/it][A
+Validating:  56%|█████▌    | 15/27 [00:33<00:26,  2.21s/it][AEpoch 0:  20%|█▉        | 249/1260 [08:36<34:58,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=9.14e-5]
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.21s/it][A
+Validating:  63%|██████▎   | 17/27 [00:38<00:22,  2.21s/it][AEpoch 0:  20%|█▉        | 251/1260 [08:41<34:55,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=9.14e-5]
+Validating:  67%|██████▋   | 18/27 [00:40<00:19,  2.21s/it][A
+Validating:  70%|███████   | 19/27 [00:42<00:17,  2.21s/it][AEpoch 0:  20%|██        | 253/1260 [08:45<34:52,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=9.14e-5]
+Validating:  74%|███████▍  | 20/27 [00:45<00:15,  2.22s/it][A
+Validating:  78%|███████▊  | 21/27 [00:47<00:13,  2.20s/it][AEpoch 0:  20%|██        | 255/1260 [08:50<34:49,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=9.14e-5]
+Validating:  81%|████████▏ | 22/27 [00:49<00:11,  2.21s/it][A
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.22s/it][AEpoch 0:  20%|██        | 257/1260 [08:54<34:46,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=9.14e-5]
+Validating:  89%|████████▉ | 24/27 [00:53<00:06,  2.20s/it][A
+Validating:  93%|█████████▎| 25/27 [00:56<00:04,  2.21s/it][AEpoch 0:  21%|██        | 259/1260 [08:58<34:43,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=9.14e-5]
+Validating:  96%|█████████▋| 26/27 [00:58<00:02,  2.24s/it][A
+Validating: 100%|██████████| 27/27 [00:59<00:00,  1.86s/it][AEpoch 0:  21%|██        | 261/1260 [09:02<34:35,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=9.14e-5]Epoch 0:  21%|██        | 261/1260 [09:02<34:36,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]  
+                                                           [AEpoch 0:  21%|██        | 262/1260 [09:02<34:27,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  21%|██        | 263/1260 [09:02<34:17,  2.06s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:12,  2.80s/it][A
+Validating:   7%|▋         | 2/27 [00:05<01:02,  2.50s/it][AEpoch 0:  21%|██        | 265/1260 [09:07<34:16,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  11%|█         | 3/27 [00:07<00:57,  2.38s/it][A
+Validating:  15%|█▍        | 4/27 [00:09<00:53,  2.35s/it][AEpoch 0:  21%|██        | 267/1260 [09:12<34:14,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  19%|█▊        | 5/27 [00:11<00:50,  2.28s/it][A
+Validating:  22%|██▏       | 6/27 [00:14<00:47,  2.28s/it][AEpoch 0:  21%|██▏       | 269/1260 [09:16<34:11,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  26%|██▌       | 7/27 [00:16<00:45,  2.27s/it][A
+Validating:  30%|██▉       | 8/27 [00:18<00:43,  2.27s/it][AEpoch 0:  22%|██▏       | 271/1260 [09:21<34:08,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.27s/it][A
+Validating:  37%|███▋      | 10/27 [00:23<00:38,  2.26s/it][AEpoch 0:  22%|██▏       | 273/1260 [09:25<34:05,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  41%|████      | 11/27 [00:25<00:36,  2.25s/it][A
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.24s/it][AEpoch 0:  22%|██▏       | 275/1260 [09:30<34:02,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  48%|████▊     | 13/27 [00:29<00:31,  2.23s/it][A
+Validating:  52%|█████▏    | 14/27 [00:31<00:28,  2.22s/it][AEpoch 0:  22%|██▏       | 277/1260 [09:34<33:59,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  56%|█████▌    | 15/27 [00:34<00:26,  2.22s/it][A
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.23s/it][AEpoch 0:  22%|██▏       | 279/1260 [09:39<33:56,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  63%|██████▎   | 17/27 [00:38<00:22,  2.23s/it][A
+Validating:  67%|██████▋   | 18/27 [00:40<00:20,  2.22s/it][AEpoch 0:  22%|██▏       | 281/1260 [09:43<33:53,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  70%|███████   | 19/27 [00:43<00:17,  2.22s/it][A
+Validating:  74%|███████▍  | 20/27 [00:45<00:15,  2.22s/it][AEpoch 0:  22%|██▏       | 283/1260 [09:48<33:49,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  78%|███████▊  | 21/27 [00:47<00:13,  2.21s/it][A
+Validating:  81%|████████▏ | 22/27 [00:49<00:11,  2.21s/it][AEpoch 0:  23%|██▎       | 285/1260 [09:52<33:46,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.21s/it][A
+Validating:  89%|████████▉ | 24/27 [00:54<00:06,  2.20s/it][AEpoch 0:  23%|██▎       | 287/1260 [09:56<33:43,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  93%|█████████▎| 25/27 [00:56<00:04,  2.20s/it][A
+Validating:  96%|█████████▋| 26/27 [00:58<00:02,  2.23s/it][AEpoch 0:  23%|██▎       | 289/1260 [10:01<33:40,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 100%|██████████| 27/27 [00:59<00:00,  1.86s/it][AEpoch 0:  23%|██▎       | 290/1260 [10:02<33:35,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+                                                           [AEpoch 0:  23%|██▎       | 291/1260 [10:02<33:26,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  23%|██▎       | 291/1260 [10:02<33:26,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:13,  2.81s/it][AEpoch 0:  23%|██▎       | 293/1260 [10:05<33:18,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:   7%|▋         | 2/27 [00:05<01:02,  2.50s/it][A
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.37s/it][AEpoch 0:  23%|██▎       | 295/1260 [10:10<33:15,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  15%|█▍        | 4/27 [00:09<00:54,  2.35s/it][A
+Validating:  19%|█▊        | 5/27 [00:11<00:50,  2.29s/it][AEpoch 0:  24%|██▎       | 297/1260 [10:14<33:12,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  22%|██▏       | 6/27 [00:14<00:47,  2.29s/it][A
+Validating:  26%|██▌       | 7/27 [00:16<00:45,  2.27s/it][AEpoch 0:  24%|██▎       | 299/1260 [10:19<33:09,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.26s/it][A
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.27s/it][AEpoch 0:  24%|██▍       | 301/1260 [10:23<33:06,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  37%|███▋      | 10/27 [00:23<00:38,  2.27s/it][A
+Validating:  41%|████      | 11/27 [00:25<00:36,  2.27s/it][AEpoch 0:  24%|██▍       | 303/1260 [10:28<33:03,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.25s/it][A
+Validating:  48%|████▊     | 13/27 [00:29<00:31,  2.24s/it][AEpoch 0:  24%|██▍       | 305/1260 [10:32<33:00,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  52%|█████▏    | 14/27 [00:31<00:28,  2.22s/it][A
+Validating:  56%|█████▌    | 15/27 [00:34<00:26,  2.22s/it][AEpoch 0:  24%|██▍       | 307/1260 [10:36<32:57,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.22s/it][A
+Validating:  63%|██████▎   | 17/27 [00:38<00:22,  2.22s/it][AEpoch 0:  25%|██▍       | 309/1260 [10:41<32:53,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  67%|██████▋   | 18/27 [00:40<00:19,  2.21s/it][A
+Validating:  70%|███████   | 19/27 [00:43<00:17,  2.20s/it][AEpoch 0:  25%|██▍       | 311/1260 [10:45<32:50,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  74%|███████▍  | 20/27 [00:45<00:15,  2.22s/it][A
+Validating:  78%|███████▊  | 21/27 [00:47<00:13,  2.21s/it][AEpoch 0:  25%|██▍       | 313/1260 [10:50<32:47,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  81%|████████▏ | 22/27 [00:49<00:11,  2.21s/it][A
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.21s/it][AEpoch 0:  25%|██▌       | 315/1260 [10:54<32:43,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  89%|████████▉ | 24/27 [00:54<00:06,  2.19s/it][A
+Validating:  93%|█████████▎| 25/27 [00:56<00:04,  2.20s/it][AEpoch 0:  25%|██▌       | 317/1260 [10:58<32:40,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  96%|█████████▋| 26/27 [00:58<00:02,  2.23s/it][A
+Validating: 100%|██████████| 27/27 [00:59<00:00,  1.87s/it][AEpoch 0:  25%|██▌       | 319/1260 [11:02<32:33,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  25%|██▌       | 319/1260 [11:02<32:34,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=6.6e-5]
+                                                           [AEpoch 0:  25%|██▌       | 320/1260 [11:02<32:26,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=6.6e-5]Epoch 0:  25%|██▌       | 321/1260 [11:02<32:18,  2.06s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=6.6e-5]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:11,  2.76s/it][A
+Validating:   7%|▋         | 2/27 [00:05<01:02,  2.48s/it][AEpoch 0:  26%|██▌       | 323/1260 [11:07<32:17,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=6.6e-5]
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.36s/it][A
+Validating:  15%|█▍        | 4/27 [00:09<00:53,  2.33s/it][AEpoch 0:  26%|██▌       | 325/1260 [11:12<32:14,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=6.6e-5]
+Validating:  19%|█▊        | 5/27 [00:11<00:50,  2.28s/it][A
+Validating:  22%|██▏       | 6/27 [00:14<00:47,  2.28s/it][AEpoch 0:  26%|██▌       | 327/1260 [11:16<32:10,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=6.6e-5]
+Validating:  26%|██▌       | 7/27 [00:16<00:45,  2.26s/it][A
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.25s/it][AEpoch 0:  26%|██▌       | 329/1260 [11:21<32:07,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=6.6e-5]
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.26s/it][A
+Validating:  37%|███▋      | 10/27 [00:22<00:38,  2.25s/it][AEpoch 0:  26%|██▋       | 331/1260 [11:25<32:04,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=6.6e-5]
+Validating:  41%|████      | 11/27 [00:25<00:36,  2.26s/it][A
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.24s/it][AEpoch 0:  26%|██▋       | 333/1260 [11:30<32:01,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=6.6e-5]
+Validating:  48%|████▊     | 13/27 [00:29<00:31,  2.24s/it][A
+Validating:  52%|█████▏    | 14/27 [00:31<00:28,  2.23s/it][AEpoch 0:  27%|██▋       | 335/1260 [11:34<31:57,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=6.6e-5]
+Validating:  56%|█████▌    | 15/27 [00:34<00:26,  2.23s/it][A
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.21s/it][AEpoch 0:  27%|██▋       | 337/1260 [11:39<31:54,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=6.6e-5]
+Validating:  63%|██████▎   | 17/27 [00:38<00:22,  2.21s/it][A
+Validating:  67%|██████▋   | 18/27 [00:40<00:19,  2.22s/it][AEpoch 0:  27%|██▋       | 339/1260 [11:43<31:51,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=6.6e-5]
+Validating:  70%|███████   | 19/27 [00:42<00:17,  2.21s/it][A
+Validating:  74%|███████▍  | 20/27 [00:45<00:15,  2.22s/it][AEpoch 0:  27%|██▋       | 341/1260 [11:47<31:47,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=6.6e-5]
+Validating:  78%|███████▊  | 21/27 [00:47<00:13,  2.21s/it][A
+Validating:  81%|████████▏ | 22/27 [00:49<00:11,  2.22s/it][AEpoch 0:  27%|██▋       | 343/1260 [11:52<31:44,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=6.6e-5]
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.21s/it][A
+Validating:  89%|████████▉ | 24/27 [00:53<00:06,  2.20s/it][AEpoch 0:  27%|██▋       | 345/1260 [11:56<31:40,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=6.6e-5]
+Validating:  93%|█████████▎| 25/27 [00:56<00:04,  2.21s/it][A
+Validating:  96%|█████████▋| 26/27 [00:58<00:02,  2.23s/it][AEpoch 0:  28%|██▊       | 347/1260 [12:01<31:37,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=6.6e-5]
+Validating: 100%|██████████| 27/27 [00:59<00:00,  1.87s/it][AEpoch 0:  28%|██▊       | 348/1260 [12:02<31:33,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000] 
+                                                           [AEpoch 0:  28%|██▊       | 349/1260 [12:02<31:26,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  28%|██▊       | 349/1260 [12:02<31:26,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:12,  2.77s/it][AEpoch 0:  28%|██▊       | 351/1260 [12:05<31:18,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:   7%|▋         | 2/27 [00:05<01:01,  2.48s/it][A
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.36s/it][AEpoch 0:  28%|██▊       | 353/1260 [12:09<31:15,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  15%|█▍        | 4/27 [00:09<00:53,  2.33s/it][A
+Validating:  19%|█▊        | 5/27 [00:11<00:50,  2.27s/it][AEpoch 0:  28%|██▊       | 355/1260 [12:14<31:12,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  22%|██▏       | 6/27 [00:13<00:47,  2.27s/it][A
+Validating:  26%|██▌       | 7/27 [00:16<00:45,  2.25s/it][AEpoch 0:  28%|██▊       | 357/1260 [12:18<31:08,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.24s/it][A
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.26s/it][AEpoch 0:  28%|██▊       | 359/1260 [12:23<31:05,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  37%|███▋      | 10/27 [00:22<00:38,  2.24s/it][A
+Validating:  41%|████      | 11/27 [00:25<00:35,  2.24s/it][AEpoch 0:  29%|██▊       | 361/1260 [12:27<31:02,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.23s/it][A
+Validating:  48%|████▊     | 13/27 [00:29<00:31,  2.22s/it][AEpoch 0:  29%|██▉       | 363/1260 [12:32<30:58,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  52%|█████▏    | 14/27 [00:31<00:28,  2.21s/it][A
+Validating:  56%|█████▌    | 15/27 [00:33<00:26,  2.21s/it][AEpoch 0:  29%|██▉       | 365/1260 [12:36<30:55,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.21s/it][A
+Validating:  63%|██████▎   | 17/27 [00:38<00:22,  2.20s/it][AEpoch 0:  29%|██▉       | 367/1260 [12:41<30:51,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  67%|██████▋   | 18/27 [00:40<00:19,  2.20s/it][A
+Validating:  70%|███████   | 19/27 [00:42<00:17,  2.19s/it][AEpoch 0:  29%|██▉       | 369/1260 [12:45<30:48,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  74%|███████▍  | 20/27 [00:44<00:15,  2.21s/it][A
+Validating:  78%|███████▊  | 21/27 [00:47<00:13,  2.20s/it][AEpoch 0:  29%|██▉       | 371/1260 [12:49<30:44,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  81%|████████▏ | 22/27 [00:49<00:11,  2.20s/it][A
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.20s/it][AEpoch 0:  30%|██▉       | 373/1260 [12:54<30:41,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  89%|████████▉ | 24/27 [00:53<00:06,  2.18s/it][A
+Validating:  93%|█████████▎| 25/27 [00:55<00:04,  2.19s/it][AEpoch 0:  30%|██▉       | 375/1260 [12:58<30:37,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  96%|█████████▋| 26/27 [00:58<00:02,  2.22s/it][A
+Validating: 100%|██████████| 27/27 [00:59<00:00,  1.86s/it][AEpoch 0:  30%|██▉       | 377/1260 [13:01<30:31,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  30%|██▉       | 377/1260 [13:02<30:32,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+                                                           [AEpoch 0:  30%|███       | 378/1260 [13:02<30:25,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  30%|███       | 379/1260 [13:02<30:18,  2.06s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:11,  2.74s/it][A
+Validating:   7%|▋         | 2/27 [00:05<01:01,  2.47s/it][AEpoch 0:  30%|███       | 381/1260 [13:07<30:16,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.36s/it][A
+Validating:  15%|█▍        | 4/27 [00:09<00:53,  2.34s/it][AEpoch 0:  30%|███       | 383/1260 [13:11<30:13,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  19%|█▊        | 5/27 [00:11<00:49,  2.27s/it][A
+Validating:  22%|██▏       | 6/27 [00:13<00:47,  2.26s/it][AEpoch 0:  31%|███       | 385/1260 [13:16<30:09,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  26%|██▌       | 7/27 [00:16<00:45,  2.25s/it][A
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.24s/it][AEpoch 0:  31%|███       | 387/1260 [13:20<30:06,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.27s/it][A
+Validating:  37%|███▋      | 10/27 [00:22<00:38,  2.27s/it][AEpoch 0:  31%|███       | 389/1260 [13:25<30:03,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  41%|████      | 11/27 [00:25<00:36,  2.27s/it][A
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.24s/it][AEpoch 0:  31%|███       | 391/1260 [13:29<29:59,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  48%|████▊     | 13/27 [00:29<00:31,  2.24s/it][A
+Validating:  52%|█████▏    | 14/27 [00:31<00:29,  2.23s/it][AEpoch 0:  31%|███       | 393/1260 [13:34<29:56,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  56%|█████▌    | 15/27 [00:34<00:26,  2.23s/it][A
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.22s/it][AEpoch 0:  31%|███▏      | 395/1260 [13:38<29:52,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  63%|██████▎   | 17/27 [00:38<00:22,  2.20s/it][A
+Validating:  67%|██████▋   | 18/27 [00:40<00:19,  2.21s/it][AEpoch 0:  32%|███▏      | 397/1260 [13:43<29:49,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  70%|███████   | 19/27 [00:42<00:17,  2.21s/it][A
+Validating:  74%|███████▍  | 20/27 [00:45<00:15,  2.22s/it][AEpoch 0:  32%|███▏      | 399/1260 [13:47<29:45,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  78%|███████▊  | 21/27 [00:47<00:13,  2.21s/it][A
+Validating:  81%|████████▏ | 22/27 [00:49<00:11,  2.21s/it][AEpoch 0:  32%|███▏      | 401/1260 [13:51<29:41,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.21s/it][A
+Validating:  89%|████████▉ | 24/27 [00:53<00:06,  2.19s/it][AEpoch 0:  32%|███▏      | 403/1260 [13:56<29:38,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  93%|█████████▎| 25/27 [00:56<00:04,  2.19s/it][A
+Validating:  96%|█████████▋| 26/27 [00:58<00:02,  2.23s/it][AEpoch 0:  32%|███▏      | 405/1260 [14:00<29:34,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 100%|██████████| 27/27 [00:59<00:00,  1.87s/it][AEpoch 0:  32%|███▏      | 406/1260 [14:02<29:31,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+                                                           [AEpoch 0:  32%|███▏      | 407/1260 [14:02<29:25,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  32%|███▏      | 407/1260 [14:02<29:25,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:11,  2.75s/it][AEpoch 0:  32%|███▏      | 409/1260 [14:05<29:18,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:   7%|▋         | 2/27 [00:05<01:01,  2.47s/it][A
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.37s/it][AEpoch 0:  33%|███▎      | 411/1260 [14:09<29:14,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  15%|█▍        | 4/27 [00:09<00:54,  2.35s/it][A
+Validating:  19%|█▊        | 5/27 [00:11<00:50,  2.29s/it][AEpoch 0:  33%|███▎      | 413/1260 [14:14<29:11,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  22%|██▏       | 6/27 [00:14<00:47,  2.28s/it][A
+Validating:  26%|██▌       | 7/27 [00:16<00:45,  2.26s/it][AEpoch 0:  33%|███▎      | 415/1260 [14:18<29:08,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.24s/it][A
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.26s/it][AEpoch 0:  33%|███▎      | 417/1260 [14:23<29:04,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  37%|███▋      | 10/27 [00:23<00:38,  2.25s/it][A
+Validating:  41%|████      | 11/27 [00:25<00:36,  2.26s/it][AEpoch 0:  33%|███▎      | 419/1260 [14:27<29:01,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.24s/it][A
+Validating:  48%|████▊     | 13/27 [00:29<00:31,  2.25s/it][AEpoch 0:  33%|███▎      | 421/1260 [14:32<28:57,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  52%|█████▏    | 14/27 [00:31<00:28,  2.23s/it][A
+Validating:  56%|█████▌    | 15/27 [00:34<00:26,  2.23s/it][AEpoch 0:  34%|███▎      | 423/1260 [14:36<28:54,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.23s/it][A
+Validating:  63%|██████▎   | 17/27 [00:38<00:22,  2.22s/it][AEpoch 0:  34%|███▎      | 425/1260 [14:40<28:50,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  67%|██████▋   | 18/27 [00:40<00:19,  2.21s/it][A
+Validating:  70%|███████   | 19/27 [00:42<00:17,  2.21s/it][AEpoch 0:  34%|███▍      | 427/1260 [14:45<28:46,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  74%|███████▍  | 20/27 [00:45<00:15,  2.23s/it][A
+Validating:  78%|███████▊  | 21/27 [00:47<00:13,  2.22s/it][AEpoch 0:  34%|███▍      | 429/1260 [14:49<28:43,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  81%|████████▏ | 22/27 [00:49<00:11,  2.22s/it][A
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.22s/it][AEpoch 0:  34%|███▍      | 431/1260 [14:54<28:39,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  89%|████████▉ | 24/27 [00:54<00:06,  2.20s/it][A
+Validating:  93%|█████████▎| 25/27 [00:56<00:04,  2.20s/it][AEpoch 0:  34%|███▍      | 433/1260 [14:58<28:36,  2.08s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  96%|█████████▋| 26/27 [00:58<00:02,  2.23s/it][A
+Validating: 100%|██████████| 27/27 [00:59<00:00,  1.87s/it][AEpoch 0:  35%|███▍      | 435/1260 [15:01<28:30,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  35%|███▍      | 435/1260 [15:02<28:31,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+                                                           [AEpoch 0:  35%|███▍      | 436/1260 [15:02<28:25,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  35%|███▍      | 437/1260 [15:02<28:19,  2.06s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:11,  2.77s/it][A
+Validating:   7%|▋         | 2/27 [00:04<01:01,  2.45s/it][AEpoch 0:  35%|███▍      | 439/1260 [15:07<28:16,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.34s/it][A
+Validating:  15%|█▍        | 4/27 [00:09<00:53,  2.33s/it][AEpoch 0:  35%|███▌      | 441/1260 [15:11<28:13,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  19%|█▊        | 5/27 [00:11<00:49,  2.27s/it][A
+Validating:  22%|██▏       | 6/27 [00:13<00:47,  2.26s/it][AEpoch 0:  35%|███▌      | 443/1260 [15:16<28:09,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  26%|██▌       | 7/27 [00:16<00:44,  2.24s/it][A
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.23s/it][AEpoch 0:  35%|███▌      | 445/1260 [15:20<28:06,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.25s/it][A
+Validating:  37%|███▋      | 10/27 [00:22<00:38,  2.24s/it][AEpoch 0:  35%|███▌      | 447/1260 [15:25<28:02,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  41%|████      | 11/27 [00:25<00:35,  2.24s/it][A
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.22s/it][AEpoch 0:  36%|███▌      | 449/1260 [15:29<27:58,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  48%|████▊     | 13/27 [00:29<00:30,  2.21s/it][A
+Validating:  52%|█████▏    | 14/27 [00:31<00:28,  2.20s/it][AEpoch 0:  36%|███▌      | 451/1260 [15:33<27:55,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  56%|█████▌    | 15/27 [00:33<00:26,  2.19s/it][A
+Validating:  59%|█████▉    | 16/27 [00:35<00:24,  2.19s/it][AEpoch 0:  36%|███▌      | 453/1260 [15:38<27:51,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  63%|██████▎   | 17/27 [00:38<00:21,  2.18s/it][A
+Validating:  67%|██████▋   | 18/27 [00:40<00:19,  2.18s/it][AEpoch 0:  36%|███▌      | 455/1260 [15:42<27:47,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  70%|███████   | 19/27 [00:42<00:17,  2.18s/it][A
+Validating:  74%|███████▍  | 20/27 [00:44<00:15,  2.19s/it][AEpoch 0:  36%|███▋      | 457/1260 [15:46<27:43,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  78%|███████▊  | 21/27 [00:46<00:13,  2.19s/it][A
+Validating:  81%|████████▏ | 22/27 [00:49<00:10,  2.20s/it][AEpoch 0:  36%|███▋      | 459/1260 [15:51<27:40,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.20s/it][A
+Validating:  89%|████████▉ | 24/27 [00:53<00:06,  2.19s/it][AEpoch 0:  37%|███▋      | 461/1260 [15:55<27:36,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  93%|█████████▎| 25/27 [00:55<00:04,  2.20s/it][A
+Validating:  96%|█████████▋| 26/27 [00:57<00:02,  2.22s/it][AEpoch 0:  37%|███▋      | 463/1260 [16:00<27:32,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 100%|██████████| 27/27 [00:58<00:00,  1.86s/it][AEpoch 0:  37%|███▋      | 464/1260 [16:01<27:29,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+                                                           [AEpoch 0:  37%|███▋      | 465/1260 [16:01<27:24,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  37%|███▋      | 465/1260 [16:01<27:24,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:12,  2.79s/it][AEpoch 0:  37%|███▋      | 467/1260 [16:04<27:17,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:   7%|▋         | 2/27 [00:05<01:01,  2.46s/it][A
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.36s/it][AEpoch 0:  37%|███▋      | 469/1260 [16:08<27:14,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  15%|█▍        | 4/27 [00:09<00:53,  2.33s/it][A
+Validating:  19%|█▊        | 5/27 [00:11<00:50,  2.28s/it][AEpoch 0:  37%|███▋      | 471/1260 [16:13<27:10,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  22%|██▏       | 6/27 [00:13<00:47,  2.27s/it][A
+Validating:  26%|██▌       | 7/27 [00:16<00:44,  2.25s/it][AEpoch 0:  38%|███▊      | 473/1260 [16:17<27:07,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.23s/it][A
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.25s/it][AEpoch 0:  38%|███▊      | 475/1260 [16:22<27:03,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  37%|███▋      | 10/27 [00:22<00:38,  2.25s/it][A
+Validating:  41%|████      | 11/27 [00:25<00:35,  2.24s/it][AEpoch 0:  38%|███▊      | 477/1260 [16:26<26:59,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.22s/it][A
+Validating:  48%|████▊     | 13/27 [00:29<00:31,  2.22s/it][AEpoch 0:  38%|███▊      | 479/1260 [16:31<26:56,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  52%|█████▏    | 14/27 [00:31<00:28,  2.22s/it][A
+Validating:  56%|█████▌    | 15/27 [00:33<00:26,  2.22s/it][AEpoch 0:  38%|███▊      | 481/1260 [16:35<26:52,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.21s/it][A
+Validating:  63%|██████▎   | 17/27 [00:38<00:21,  2.19s/it][AEpoch 0:  38%|███▊      | 483/1260 [16:40<26:48,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  67%|██████▋   | 18/27 [00:40<00:19,  2.20s/it][A
+Validating:  70%|███████   | 19/27 [00:42<00:17,  2.19s/it][AEpoch 0:  38%|███▊      | 485/1260 [16:44<26:44,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  74%|███████▍  | 20/27 [00:44<00:15,  2.21s/it][A
+Validating:  78%|███████▊  | 21/27 [00:47<00:13,  2.20s/it][AEpoch 0:  39%|███▊      | 487/1260 [16:48<26:41,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  81%|████████▏ | 22/27 [00:49<00:11,  2.21s/it][A
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.21s/it][AEpoch 0:  39%|███▉      | 489/1260 [16:53<26:37,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  89%|████████▉ | 24/27 [00:53<00:06,  2.19s/it][A
+Validating:  93%|█████████▎| 25/27 [00:55<00:04,  2.19s/it][AEpoch 0:  39%|███▉      | 491/1260 [16:57<26:33,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  96%|█████████▋| 26/27 [00:58<00:02,  2.23s/it][A
+Validating: 100%|██████████| 27/27 [00:59<00:00,  1.86s/it][AEpoch 0:  39%|███▉      | 493/1260 [17:00<26:28,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  39%|███▉      | 493/1260 [17:01<26:28,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+                                                           [AEpoch 0:  39%|███▉      | 494/1260 [17:01<26:23,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  39%|███▉      | 495/1260 [17:01<26:18,  2.06s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:11,  2.76s/it][A
+Validating:   7%|▋         | 2/27 [00:04<01:01,  2.45s/it][AEpoch 0:  39%|███▉      | 497/1260 [17:06<26:15,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.35s/it][A
+Validating:  15%|█▍        | 4/27 [00:09<00:53,  2.33s/it][AEpoch 0:  40%|███▉      | 499/1260 [17:10<26:12,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  19%|█▊        | 5/27 [00:11<00:50,  2.28s/it][A
+Validating:  22%|██▏       | 6/27 [00:13<00:47,  2.27s/it][AEpoch 0:  40%|███▉      | 501/1260 [17:15<26:08,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  26%|██▌       | 7/27 [00:16<00:44,  2.25s/it][A
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.24s/it][AEpoch 0:  40%|███▉      | 503/1260 [17:19<26:04,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.26s/it][A
+Validating:  37%|███▋      | 10/27 [00:22<00:38,  2.26s/it][AEpoch 0:  40%|████      | 505/1260 [17:24<26:01,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  41%|████      | 11/27 [00:25<00:36,  2.26s/it][A
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.24s/it][AEpoch 0:  40%|████      | 507/1260 [17:28<25:57,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  48%|████▊     | 13/27 [00:29<00:31,  2.24s/it][A
+Validating:  52%|█████▏    | 14/27 [00:31<00:28,  2.23s/it][AEpoch 0:  40%|████      | 509/1260 [17:33<25:53,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  56%|█████▌    | 15/27 [00:34<00:26,  2.22s/it][A
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.21s/it][AEpoch 0:  41%|████      | 511/1260 [17:37<25:50,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  63%|██████▎   | 17/27 [00:38<00:22,  2.21s/it][A
+Validating:  67%|██████▋   | 18/27 [00:40<00:19,  2.21s/it][AEpoch 0:  41%|████      | 513/1260 [17:41<25:46,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  70%|███████   | 19/27 [00:42<00:17,  2.21s/it][A
+Validating:  74%|███████▍  | 20/27 [00:45<00:15,  2.21s/it][AEpoch 0:  41%|████      | 515/1260 [17:46<25:42,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  78%|███████▊  | 21/27 [00:47<00:13,  2.20s/it][A
+Validating:  81%|████████▏ | 22/27 [00:49<00:11,  2.21s/it][AEpoch 0:  41%|████      | 517/1260 [17:50<25:38,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.21s/it][A
+Validating:  89%|████████▉ | 24/27 [00:53<00:06,  2.19s/it][AEpoch 0:  41%|████      | 519/1260 [17:55<25:35,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  93%|█████████▎| 25/27 [00:56<00:04,  2.19s/it][A
+Validating:  96%|█████████▋| 26/27 [00:58<00:02,  2.22s/it][AEpoch 0:  41%|████▏     | 521/1260 [17:59<25:31,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 100%|██████████| 27/27 [00:59<00:00,  1.86s/it][AEpoch 0:  41%|████▏     | 522/1260 [18:01<25:28,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]
+                                                           [AEpoch 0:  42%|████▏     | 523/1260 [18:01<25:23,  2.07s/it, loss=26, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  42%|████▏     | 523/1260 [18:01<25:23,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:12,  2.81s/it][AEpoch 0:  42%|████▏     | 525/1260 [18:04<25:17,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:   7%|▋         | 2/27 [00:05<01:01,  2.46s/it][A
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.36s/it][AEpoch 0:  42%|████▏     | 527/1260 [18:08<25:14,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  15%|█▍        | 4/27 [00:09<00:53,  2.33s/it][A
+Validating:  19%|█▊        | 5/27 [00:11<00:49,  2.27s/it][AEpoch 0:  42%|████▏     | 529/1260 [18:13<25:10,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  22%|██▏       | 6/27 [00:13<00:47,  2.27s/it][A
+Validating:  26%|██▌       | 7/27 [00:16<00:44,  2.24s/it][AEpoch 0:  42%|████▏     | 531/1260 [18:17<25:06,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.22s/it][A
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.24s/it][AEpoch 0:  42%|████▏     | 533/1260 [18:22<25:03,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  37%|███▋      | 10/27 [00:22<00:38,  2.24s/it][A
+Validating:  41%|████      | 11/27 [00:25<00:35,  2.24s/it][AEpoch 0:  42%|████▏     | 535/1260 [18:26<24:59,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.22s/it][A
+Validating:  48%|████▊     | 13/27 [00:29<00:31,  2.23s/it][AEpoch 0:  43%|████▎     | 537/1260 [18:30<24:55,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  52%|█████▏    | 14/27 [00:31<00:28,  2.22s/it][A
+Validating:  56%|█████▌    | 15/27 [00:33<00:26,  2.21s/it][AEpoch 0:  43%|████▎     | 539/1260 [18:35<24:51,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.22s/it][A
+Validating:  63%|██████▎   | 17/27 [00:38<00:22,  2.21s/it][AEpoch 0:  43%|████▎     | 541/1260 [18:39<24:48,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  67%|██████▋   | 18/27 [00:40<00:19,  2.21s/it][A
+Validating:  70%|███████   | 19/27 [00:42<00:17,  2.21s/it][AEpoch 0:  43%|████▎     | 543/1260 [18:44<24:44,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  74%|███████▍  | 20/27 [00:44<00:15,  2.21s/it][A
+Validating:  78%|███████▊  | 21/27 [00:47<00:13,  2.20s/it][AEpoch 0:  43%|████▎     | 545/1260 [18:48<24:40,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  81%|████████▏ | 22/27 [00:49<00:10,  2.19s/it][A
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.20s/it][AEpoch 0:  43%|████▎     | 547/1260 [18:52<24:36,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  89%|████████▉ | 24/27 [00:53<00:06,  2.18s/it][A
+Validating:  93%|█████████▎| 25/27 [00:55<00:04,  2.19s/it][AEpoch 0:  44%|████▎     | 549/1260 [18:57<24:32,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  96%|█████████▋| 26/27 [00:58<00:02,  2.21s/it][A
+Validating: 100%|██████████| 27/27 [00:59<00:00,  1.85s/it][AEpoch 0:  44%|████▎     | 551/1260 [19:00<24:27,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  44%|████▎     | 551/1260 [19:00<24:28,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+                                                           [AEpoch 0:  44%|████▍     | 552/1260 [19:01<24:23,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  44%|████▍     | 553/1260 [19:01<24:18,  2.06s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:10,  2.71s/it][A
+Validating:   7%|▋         | 2/27 [00:04<01:00,  2.42s/it][AEpoch 0:  44%|████▍     | 555/1260 [19:05<24:15,  2.06s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  11%|█         | 3/27 [00:07<00:55,  2.33s/it][A
+Validating:  15%|█▍        | 4/27 [00:09<00:53,  2.31s/it][AEpoch 0:  44%|████▍     | 557/1260 [19:10<24:12,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  19%|█▊        | 5/27 [00:11<00:49,  2.27s/it][A
+Validating:  22%|██▏       | 6/27 [00:13<00:47,  2.26s/it][AEpoch 0:  44%|████▍     | 559/1260 [19:14<24:08,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  26%|██▌       | 7/27 [00:16<00:44,  2.24s/it][A
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.23s/it][AEpoch 0:  45%|████▍     | 561/1260 [19:19<24:04,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.25s/it][A
+Validating:  37%|███▋      | 10/27 [00:22<00:38,  2.24s/it][AEpoch 0:  45%|████▍     | 563/1260 [19:23<24:00,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  41%|████      | 11/27 [00:24<00:35,  2.23s/it][A
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.21s/it][AEpoch 0:  45%|████▍     | 565/1260 [19:28<23:56,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  48%|████▊     | 13/27 [00:29<00:30,  2.21s/it][A
+Validating:  52%|█████▏    | 14/27 [00:31<00:28,  2.20s/it][AEpoch 0:  45%|████▌     | 567/1260 [19:32<23:53,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  56%|█████▌    | 15/27 [00:33<00:26,  2.20s/it][A
+Validating:  59%|█████▉    | 16/27 [00:35<00:24,  2.20s/it][AEpoch 0:  45%|████▌     | 569/1260 [19:36<23:49,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  63%|██████▎   | 17/27 [00:38<00:21,  2.18s/it][A
+Validating:  67%|██████▋   | 18/27 [00:40<00:19,  2.18s/it][AEpoch 0:  45%|████▌     | 571/1260 [19:41<23:45,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  70%|███████   | 19/27 [00:42<00:17,  2.19s/it][A
+Validating:  74%|███████▍  | 20/27 [00:44<00:15,  2.20s/it][AEpoch 0:  45%|████▌     | 573/1260 [19:45<23:41,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  78%|███████▊  | 21/27 [00:46<00:13,  2.19s/it][A
+Validating:  81%|████████▏ | 22/27 [00:49<00:10,  2.19s/it][AEpoch 0:  46%|████▌     | 575/1260 [19:50<23:37,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.19s/it][A
+Validating:  89%|████████▉ | 24/27 [00:53<00:06,  2.18s/it][AEpoch 0:  46%|████▌     | 577/1260 [19:54<23:33,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  93%|█████████▎| 25/27 [00:55<00:04,  2.18s/it][A
+Validating:  96%|█████████▋| 26/27 [00:57<00:02,  2.21s/it][AEpoch 0:  46%|████▌     | 579/1260 [19:58<23:30,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 100%|██████████| 27/27 [00:58<00:00,  1.84s/it][AEpoch 0:  46%|████▌     | 580/1260 [20:00<23:27,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+                                                           [AEpoch 0:  46%|████▌     | 581/1260 [20:00<23:22,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  46%|████▌     | 581/1260 [20:00<23:22,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:12,  2.81s/it][AEpoch 0:  46%|████▋     | 583/1260 [20:03<23:17,  2.06s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:   7%|▋         | 2/27 [00:05<01:02,  2.50s/it][A
+Validating:  11%|█         | 3/27 [00:07<00:57,  2.39s/it][AEpoch 0:  46%|████▋     | 585/1260 [20:07<23:13,  2.06s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  15%|█▍        | 4/27 [00:09<00:54,  2.37s/it][A
+Validating:  19%|█▊        | 5/27 [00:11<00:50,  2.31s/it][AEpoch 0:  47%|████▋     | 587/1260 [20:12<23:09,  2.06s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  22%|██▏       | 6/27 [00:14<00:48,  2.30s/it][A
+Validating:  26%|██▌       | 7/27 [00:16<00:45,  2.27s/it][AEpoch 0:  47%|████▋     | 589/1260 [20:16<23:06,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.26s/it][A
+Validating:  33%|███▎      | 9/27 [00:20<00:41,  2.28s/it][AEpoch 0:  47%|████▋     | 591/1260 [20:21<23:02,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  37%|███▋      | 10/27 [00:23<00:38,  2.27s/it][A
+Validating:  41%|████      | 11/27 [00:25<00:36,  2.27s/it][AEpoch 0:  47%|████▋     | 593/1260 [20:25<22:58,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.25s/it][A
+Validating:  48%|████▊     | 13/27 [00:29<00:31,  2.26s/it][AEpoch 0:  47%|████▋     | 595/1260 [20:30<22:54,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  52%|█████▏    | 14/27 [00:32<00:29,  2.24s/it][A
+Validating:  56%|█████▌    | 15/27 [00:34<00:26,  2.24s/it][AEpoch 0:  47%|████▋     | 597/1260 [20:34<22:51,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.24s/it][A
+Validating:  63%|██████▎   | 17/27 [00:38<00:22,  2.23s/it][AEpoch 0:  48%|████▊     | 599/1260 [20:39<22:47,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  67%|██████▋   | 18/27 [00:41<00:19,  2.22s/it][A
+Validating:  70%|███████   | 19/27 [00:43<00:17,  2.20s/it][AEpoch 0:  48%|████▊     | 601/1260 [20:43<22:43,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  74%|███████▍  | 20/27 [00:45<00:15,  2.21s/it][A
+Validating:  78%|███████▊  | 21/27 [00:47<00:13,  2.21s/it][AEpoch 0:  48%|████▊     | 603/1260 [20:47<22:39,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  81%|████████▏ | 22/27 [00:49<00:11,  2.20s/it][A
+Validating:  85%|████████▌ | 23/27 [00:52<00:08,  2.21s/it][AEpoch 0:  48%|████▊     | 605/1260 [20:52<22:35,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  89%|████████▉ | 24/27 [00:54<00:06,  2.19s/it][A
+Validating:  93%|█████████▎| 25/27 [00:56<00:04,  2.19s/it][AEpoch 0:  48%|████▊     | 607/1260 [20:56<22:31,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  96%|█████████▋| 26/27 [00:58<00:02,  2.22s/it][A
+Validating: 100%|██████████| 27/27 [00:59<00:00,  1.85s/it][AEpoch 0:  48%|████▊     | 609/1260 [20:59<22:26,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  48%|████▊     | 609/1260 [21:00<22:27,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+                                                           [AEpoch 0:  48%|████▊     | 610/1260 [21:00<22:22,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  48%|████▊     | 611/1260 [21:00<22:18,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:11,  2.74s/it][A
+Validating:   7%|▋         | 2/27 [00:04<01:00,  2.43s/it][AEpoch 0:  49%|████▊     | 613/1260 [21:05<22:15,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  11%|█         | 3/27 [00:07<00:55,  2.32s/it][A
+Validating:  15%|█▍        | 4/27 [00:09<00:53,  2.32s/it][AEpoch 0:  49%|████▉     | 615/1260 [21:09<22:11,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  19%|█▊        | 5/27 [00:11<00:49,  2.25s/it][A
+Validating:  22%|██▏       | 6/27 [00:13<00:47,  2.25s/it][AEpoch 0:  49%|████▉     | 617/1260 [21:14<22:07,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  26%|██▌       | 7/27 [00:16<00:44,  2.23s/it][A
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.22s/it][AEpoch 0:  49%|████▉     | 619/1260 [21:18<22:03,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.24s/it][A
+Validating:  37%|███▋      | 10/27 [00:22<00:38,  2.24s/it][AEpoch 0:  49%|████▉     | 621/1260 [21:23<22:00,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  41%|████      | 11/27 [00:24<00:35,  2.23s/it][A
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.21s/it][AEpoch 0:  49%|████▉     | 623/1260 [21:27<21:56,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  48%|████▊     | 13/27 [00:29<00:30,  2.21s/it][A
+Validating:  52%|█████▏    | 14/27 [00:31<00:28,  2.21s/it][AEpoch 0:  50%|████▉     | 625/1260 [21:31<21:52,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  56%|█████▌    | 15/27 [00:33<00:26,  2.21s/it][A
+Validating:  59%|█████▉    | 16/27 [00:35<00:24,  2.20s/it][AEpoch 0:  50%|████▉     | 627/1260 [21:36<21:48,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  63%|██████▎   | 17/27 [00:38<00:21,  2.19s/it][A
+Validating:  67%|██████▋   | 18/27 [00:40<00:19,  2.19s/it][AEpoch 0:  50%|████▉     | 629/1260 [21:40<21:44,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  70%|███████   | 19/27 [00:42<00:17,  2.19s/it][A
+Validating:  74%|███████▍  | 20/27 [00:44<00:15,  2.21s/it][AEpoch 0:  50%|█████     | 631/1260 [21:45<21:40,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  78%|███████▊  | 21/27 [00:46<00:13,  2.19s/it][A
+Validating:  81%|████████▏ | 22/27 [00:49<00:10,  2.20s/it][AEpoch 0:  50%|█████     | 633/1260 [21:49<21:36,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.20s/it][A
+Validating:  89%|████████▉ | 24/27 [00:53<00:06,  2.18s/it][AEpoch 0:  50%|█████     | 635/1260 [21:53<21:33,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  93%|█████████▎| 25/27 [00:55<00:04,  2.19s/it][A
+Validating:  96%|█████████▋| 26/27 [00:57<00:02,  2.21s/it][AEpoch 0:  51%|█████     | 637/1260 [21:58<21:29,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 100%|██████████| 27/27 [00:58<00:00,  1.85s/it][AEpoch 0:  51%|█████     | 638/1260 [21:59<21:26,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+                                                           [AEpoch 0:  51%|█████     | 639/1260 [21:59<21:22,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  51%|█████     | 639/1260 [21:59<21:22,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:12,  2.80s/it][AEpoch 0:  51%|█████     | 641/1260 [22:02<21:16,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:   7%|▋         | 2/27 [00:05<01:01,  2.47s/it][A
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.35s/it][AEpoch 0:  51%|█████     | 643/1260 [22:06<21:13,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  15%|█▍        | 4/27 [00:09<00:53,  2.33s/it][A
+Validating:  19%|█▊        | 5/27 [00:11<00:49,  2.27s/it][AEpoch 0:  51%|█████     | 645/1260 [22:11<21:09,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  22%|██▏       | 6/27 [00:13<00:47,  2.27s/it][A
+Validating:  26%|██▌       | 7/27 [00:16<00:44,  2.24s/it][AEpoch 0:  51%|█████▏    | 647/1260 [22:15<21:05,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.23s/it][A
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.24s/it][AEpoch 0:  52%|█████▏    | 649/1260 [22:20<21:01,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  37%|███▋      | 10/27 [00:22<00:37,  2.23s/it][A
+Validating:  41%|████      | 11/27 [00:25<00:35,  2.22s/it][AEpoch 0:  52%|█████▏    | 651/1260 [22:24<20:57,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.20s/it][A
+Validating:  48%|████▊     | 13/27 [00:29<00:30,  2.21s/it][AEpoch 0:  52%|█████▏    | 653/1260 [22:28<20:53,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  52%|█████▏    | 14/27 [00:31<00:28,  2.20s/it][A
+Validating:  56%|█████▌    | 15/27 [00:33<00:26,  2.20s/it][AEpoch 0:  52%|█████▏    | 655/1260 [22:33<20:50,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  59%|█████▉    | 16/27 [00:35<00:24,  2.19s/it][A
+Validating:  63%|██████▎   | 17/27 [00:38<00:21,  2.19s/it][AEpoch 0:  52%|█████▏    | 657/1260 [22:37<20:46,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  67%|██████▋   | 18/27 [00:40<00:19,  2.18s/it][A
+Validating:  70%|███████   | 19/27 [00:42<00:17,  2.19s/it][AEpoch 0:  52%|█████▏    | 659/1260 [22:42<20:42,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  74%|███████▍  | 20/27 [00:44<00:15,  2.20s/it][A
+Validating:  78%|███████▊  | 21/27 [00:46<00:13,  2.18s/it][AEpoch 0:  52%|█████▏    | 661/1260 [22:46<20:38,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  81%|████████▏ | 22/27 [00:49<00:10,  2.19s/it][A
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.19s/it][AEpoch 0:  53%|█████▎    | 663/1260 [22:50<20:34,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  89%|████████▉ | 24/27 [00:53<00:06,  2.17s/it][A
+Validating:  93%|█████████▎| 25/27 [00:55<00:04,  2.18s/it][AEpoch 0:  53%|█████▎    | 665/1260 [22:55<20:30,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  96%|█████████▋| 26/27 [00:57<00:02,  2.21s/it][A
+Validating: 100%|██████████| 27/27 [00:58<00:00,  1.84s/it][AEpoch 0:  53%|█████▎    | 667/1260 [22:58<20:25,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  53%|█████▎    | 667/1260 [22:58<20:25,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+                                                           [AEpoch 0:  53%|█████▎    | 668/1260 [22:58<20:21,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  53%|█████▎    | 669/1260 [22:58<20:18,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:11,  2.77s/it][A
+Validating:   7%|▋         | 2/27 [00:05<01:01,  2.48s/it][AEpoch 0:  53%|█████▎    | 671/1260 [23:03<20:14,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.36s/it][A
+Validating:  15%|█▍        | 4/27 [00:09<00:54,  2.35s/it][AEpoch 0:  53%|█████▎    | 673/1260 [23:08<20:11,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  19%|█▊        | 5/27 [00:11<00:50,  2.31s/it][A
+Validating:  22%|██▏       | 6/27 [00:14<00:48,  2.29s/it][AEpoch 0:  54%|█████▎    | 675/1260 [23:12<20:07,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  26%|██▌       | 7/27 [00:16<00:45,  2.27s/it][A
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.25s/it][AEpoch 0:  54%|█████▎    | 677/1260 [23:17<20:03,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.27s/it][A
+Validating:  37%|███▋      | 10/27 [00:23<00:38,  2.26s/it][AEpoch 0:  54%|█████▍    | 679/1260 [23:21<19:59,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  41%|████      | 11/27 [00:25<00:35,  2.25s/it][A
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.23s/it][AEpoch 0:  54%|█████▍    | 681/1260 [23:26<19:55,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  48%|████▊     | 13/27 [00:29<00:31,  2.23s/it][A
+Validating:  52%|█████▏    | 14/27 [00:31<00:28,  2.22s/it][AEpoch 0:  54%|█████▍    | 683/1260 [23:30<19:51,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  56%|█████▌    | 15/27 [00:34<00:26,  2.22s/it][A
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.23s/it][AEpoch 0:  54%|█████▍    | 685/1260 [23:35<19:47,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  63%|██████▎   | 17/27 [00:38<00:22,  2.22s/it][A
+Validating:  67%|██████▋   | 18/27 [00:40<00:19,  2.21s/it][AEpoch 0:  55%|█████▍    | 687/1260 [23:39<19:44,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  70%|███████   | 19/27 [00:42<00:17,  2.21s/it][A
+Validating:  74%|███████▍  | 20/27 [00:45<00:15,  2.22s/it][AEpoch 0:  55%|█████▍    | 689/1260 [23:44<19:40,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  78%|███████▊  | 21/27 [00:47<00:13,  2.20s/it][A
+Validating:  81%|████████▏ | 22/27 [00:49<00:11,  2.20s/it][AEpoch 0:  55%|█████▍    | 691/1260 [23:48<19:36,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.21s/it][A
+Validating:  89%|████████▉ | 24/27 [00:53<00:06,  2.20s/it][AEpoch 0:  55%|█████▌    | 693/1260 [23:52<19:32,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  93%|█████████▎| 25/27 [00:56<00:04,  2.20s/it][A
+Validating:  96%|█████████▋| 26/27 [00:58<00:02,  2.23s/it][AEpoch 0:  55%|█████▌    | 695/1260 [23:57<19:28,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 100%|██████████| 27/27 [00:59<00:00,  1.87s/it][AEpoch 0:  55%|█████▌    | 696/1260 [23:58<19:25,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+                                                           [AEpoch 0:  55%|█████▌    | 697/1260 [23:58<19:22,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  55%|█████▌    | 697/1260 [23:58<19:22,  2.06s/it, loss=25.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:12,  2.77s/it][AEpoch 0:  55%|█████▌    | 699/1260 [24:01<19:16,  2.06s/it, loss=25.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:   7%|▋         | 2/27 [00:05<01:01,  2.47s/it][A
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.37s/it][AEpoch 0:  56%|█████▌    | 701/1260 [24:06<19:13,  2.06s/it, loss=25.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  15%|█▍        | 4/27 [00:09<00:54,  2.36s/it][A
+Validating:  19%|█▊        | 5/27 [00:11<00:50,  2.30s/it][AEpoch 0:  56%|█████▌    | 703/1260 [24:10<19:09,  2.06s/it, loss=25.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  22%|██▏       | 6/27 [00:14<00:47,  2.29s/it][A
+Validating:  26%|██▌       | 7/27 [00:16<00:45,  2.27s/it][AEpoch 0:  56%|█████▌    | 705/1260 [24:15<19:05,  2.06s/it, loss=25.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.26s/it][A
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.27s/it][AEpoch 0:  56%|█████▌    | 707/1260 [24:19<19:01,  2.06s/it, loss=25.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  37%|███▋      | 10/27 [00:23<00:38,  2.26s/it][A
+Validating:  41%|████      | 11/27 [00:25<00:36,  2.25s/it][AEpoch 0:  56%|█████▋    | 709/1260 [24:24<18:57,  2.06s/it, loss=25.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.24s/it][A
+Validating:  48%|████▊     | 13/27 [00:29<00:31,  2.25s/it][AEpoch 0:  56%|█████▋    | 711/1260 [24:28<18:53,  2.07s/it, loss=25.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  52%|█████▏    | 14/27 [00:32<00:29,  2.24s/it][A
+Validating:  56%|█████▌    | 15/27 [00:34<00:26,  2.24s/it][AEpoch 0:  57%|█████▋    | 713/1260 [24:32<18:50,  2.07s/it, loss=25.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.24s/it][A
+Validating:  63%|██████▎   | 17/27 [00:38<00:22,  2.22s/it][AEpoch 0:  57%|█████▋    | 715/1260 [24:37<18:46,  2.07s/it, loss=25.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  67%|██████▋   | 18/27 [00:40<00:20,  2.22s/it][A
+Validating:  70%|███████   | 19/27 [00:43<00:17,  2.23s/it][AEpoch 0:  57%|█████▋    | 717/1260 [24:41<18:42,  2.07s/it, loss=25.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  74%|███████▍  | 20/27 [00:45<00:15,  2.23s/it][A
+Validating:  78%|███████▊  | 21/27 [00:47<00:13,  2.22s/it][AEpoch 0:  57%|█████▋    | 719/1260 [24:46<18:38,  2.07s/it, loss=25.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  81%|████████▏ | 22/27 [00:49<00:11,  2.22s/it][A
+Validating:  85%|████████▌ | 23/27 [00:52<00:08,  2.22s/it][AEpoch 0:  57%|█████▋    | 721/1260 [24:50<18:34,  2.07s/it, loss=25.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  89%|████████▉ | 24/27 [00:54<00:06,  2.21s/it][A
+Validating:  93%|█████████▎| 25/27 [00:56<00:04,  2.25s/it][AEpoch 0:  57%|█████▋    | 723/1260 [24:55<18:30,  2.07s/it, loss=25.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  96%|█████████▋| 26/27 [00:58<00:02,  2.27s/it][A
+Validating: 100%|██████████| 27/27 [00:59<00:00,  1.89s/it][AEpoch 0:  58%|█████▊    | 725/1260 [24:58<18:25,  2.07s/it, loss=25.7, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  58%|█████▊    | 725/1260 [24:58<18:26,  2.07s/it, loss=25.7, v_num=9qo1, em_score=0.000, f1_score=0.000]
+                                                           [AEpoch 0:  58%|█████▊    | 726/1260 [24:58<18:22,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  58%|█████▊    | 727/1260 [24:58<18:18,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:11,  2.73s/it][A
+Validating:   7%|▋         | 2/27 [00:04<01:00,  2.44s/it][AEpoch 0:  58%|█████▊    | 729/1260 [25:03<18:15,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.34s/it][A
+Validating:  15%|█▍        | 4/27 [00:09<00:53,  2.31s/it][AEpoch 0:  58%|█████▊    | 731/1260 [25:08<18:11,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  19%|█▊        | 5/27 [00:11<00:49,  2.25s/it][A
+Validating:  22%|██▏       | 6/27 [00:13<00:47,  2.25s/it][AEpoch 0:  58%|█████▊    | 733/1260 [25:12<18:07,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  26%|██▌       | 7/27 [00:16<00:44,  2.23s/it][A
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.22s/it][AEpoch 0:  58%|█████▊    | 735/1260 [25:17<18:03,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.24s/it][A
+Validating:  37%|███▋      | 10/27 [00:22<00:37,  2.23s/it][AEpoch 0:  58%|█████▊    | 737/1260 [25:21<17:59,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  41%|████      | 11/27 [00:24<00:35,  2.23s/it][A
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.20s/it][AEpoch 0:  59%|█████▊    | 739/1260 [25:26<17:55,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  48%|████▊     | 13/27 [00:29<00:30,  2.21s/it][A
+Validating:  52%|█████▏    | 14/27 [00:31<00:28,  2.20s/it][AEpoch 0:  59%|█████▉    | 741/1260 [25:30<17:51,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  56%|█████▌    | 15/27 [00:33<00:26,  2.21s/it][A
+Validating:  59%|█████▉    | 16/27 [00:35<00:24,  2.20s/it][AEpoch 0:  59%|█████▉    | 743/1260 [25:34<17:48,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  63%|██████▎   | 17/27 [00:38<00:21,  2.19s/it][A
+Validating:  67%|██████▋   | 18/27 [00:40<00:19,  2.19s/it][AEpoch 0:  59%|█████▉    | 745/1260 [25:39<17:44,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  70%|███████   | 19/27 [00:42<00:17,  2.18s/it][A
+Validating:  74%|███████▍  | 20/27 [00:44<00:15,  2.19s/it][AEpoch 0:  59%|█████▉    | 747/1260 [25:43<17:40,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  78%|███████▊  | 21/27 [00:46<00:13,  2.19s/it][A
+Validating:  81%|████████▏ | 22/27 [00:49<00:10,  2.19s/it][AEpoch 0:  59%|█████▉    | 749/1260 [25:48<17:36,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.19s/it][A
+Validating:  89%|████████▉ | 24/27 [00:53<00:06,  2.18s/it][AEpoch 0:  60%|█████▉    | 751/1260 [25:52<17:32,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  93%|█████████▎| 25/27 [00:55<00:04,  2.18s/it][A
+Validating:  96%|█████████▋| 26/27 [00:57<00:02,  2.22s/it][AEpoch 0:  60%|█████▉    | 753/1260 [25:56<17:28,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 100%|██████████| 27/27 [00:58<00:00,  1.86s/it][AEpoch 0:  60%|█████▉    | 754/1260 [25:58<17:25,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+                                                           [AEpoch 0:  60%|█████▉    | 755/1260 [25:58<17:22,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  60%|█████▉    | 755/1260 [25:58<17:22,  2.06s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:12,  2.81s/it][AEpoch 0:  60%|██████    | 757/1260 [26:01<17:17,  2.06s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:   7%|▋         | 2/27 [00:05<01:01,  2.48s/it][A
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.37s/it][AEpoch 0:  60%|██████    | 759/1260 [26:05<17:13,  2.06s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  15%|█▍        | 4/27 [00:09<00:54,  2.36s/it][A
+Validating:  19%|█▊        | 5/27 [00:11<00:50,  2.30s/it][AEpoch 0:  60%|██████    | 761/1260 [26:10<17:09,  2.06s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  22%|██▏       | 6/27 [00:14<00:48,  2.29s/it][A
+Validating:  26%|██▌       | 7/27 [00:16<00:45,  2.26s/it][AEpoch 0:  61%|██████    | 763/1260 [26:14<17:05,  2.06s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.25s/it][A
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.26s/it][AEpoch 0:  61%|██████    | 765/1260 [26:19<17:01,  2.06s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  37%|███▋      | 10/27 [00:23<00:38,  2.26s/it][A
+Validating:  41%|████      | 11/27 [00:25<00:36,  2.26s/it][AEpoch 0:  61%|██████    | 767/1260 [26:23<16:57,  2.06s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.23s/it][A
+Validating:  48%|████▊     | 13/27 [00:29<00:31,  2.23s/it][AEpoch 0:  61%|██████    | 769/1260 [26:27<16:53,  2.06s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  52%|█████▏    | 14/27 [00:31<00:28,  2.22s/it][A
+Validating:  56%|█████▌    | 15/27 [00:34<00:26,  2.24s/it][AEpoch 0:  61%|██████    | 771/1260 [26:32<16:50,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.23s/it][A
+Validating:  63%|██████▎   | 17/27 [00:38<00:22,  2.21s/it][AEpoch 0:  61%|██████▏   | 773/1260 [26:36<16:46,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  67%|██████▋   | 18/27 [00:40<00:19,  2.22s/it][A
+Validating:  70%|███████   | 19/27 [00:43<00:17,  2.21s/it][AEpoch 0:  62%|██████▏   | 775/1260 [26:41<16:42,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  74%|███████▍  | 20/27 [00:45<00:15,  2.22s/it][A
+Validating:  78%|███████▊  | 21/27 [00:47<00:13,  2.21s/it][AEpoch 0:  62%|██████▏   | 777/1260 [26:45<16:38,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  81%|████████▏ | 22/27 [00:49<00:11,  2.21s/it][A
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.21s/it][AEpoch 0:  62%|██████▏   | 779/1260 [26:50<16:34,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  89%|████████▉ | 24/27 [00:53<00:06,  2.19s/it][A
+Validating:  93%|█████████▎| 25/27 [00:56<00:04,  2.20s/it][AEpoch 0:  62%|██████▏   | 781/1260 [26:54<16:30,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  96%|█████████▋| 26/27 [00:58<00:02,  2.25s/it][A
+Validating: 100%|██████████| 27/27 [00:59<00:00,  1.88s/it][AEpoch 0:  62%|██████▏   | 783/1260 [26:57<16:25,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  62%|██████▏   | 783/1260 [26:58<16:25,  2.07s/it, loss=25.9, v_num=9qo1, em_score=0.000, f1_score=0.000]
+                                                           [AEpoch 0:  62%|██████▏   | 784/1260 [26:58<16:22,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  62%|██████▏   | 785/1260 [26:58<16:19,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:12,  2.77s/it][A
+Validating:   7%|▋         | 2/27 [00:05<01:01,  2.46s/it][AEpoch 0:  62%|██████▏   | 787/1260 [27:03<16:15,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.36s/it][A
+Validating:  15%|█▍        | 4/27 [00:09<00:53,  2.33s/it][AEpoch 0:  63%|██████▎   | 789/1260 [27:07<16:11,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  19%|█▊        | 5/27 [00:11<00:49,  2.26s/it][A
+Validating:  22%|██▏       | 6/27 [00:13<00:47,  2.26s/it][AEpoch 0:  63%|██████▎   | 791/1260 [27:12<16:07,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  26%|██▌       | 7/27 [00:16<00:44,  2.23s/it][A
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.22s/it][AEpoch 0:  63%|██████▎   | 793/1260 [27:16<16:03,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.24s/it][A
+Validating:  37%|███▋      | 10/27 [00:22<00:37,  2.23s/it][AEpoch 0:  63%|██████▎   | 795/1260 [27:21<15:59,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  41%|████      | 11/27 [00:25<00:35,  2.23s/it][A
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.21s/it][AEpoch 0:  63%|██████▎   | 797/1260 [27:25<15:55,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  48%|████▊     | 13/27 [00:29<00:30,  2.21s/it][A
+Validating:  52%|█████▏    | 14/27 [00:31<00:28,  2.20s/it][AEpoch 0:  63%|██████▎   | 799/1260 [27:29<15:51,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  56%|█████▌    | 15/27 [00:33<00:26,  2.21s/it][A
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.22s/it][AEpoch 0:  64%|██████▎   | 801/1260 [27:34<15:47,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  63%|██████▎   | 17/27 [00:38<00:22,  2.21s/it][A
+Validating:  67%|██████▋   | 18/27 [00:40<00:19,  2.20s/it][AEpoch 0:  64%|██████▎   | 803/1260 [27:38<15:43,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  70%|███████   | 19/27 [00:42<00:17,  2.19s/it][A
+Validating:  74%|███████▍  | 20/27 [00:44<00:15,  2.20s/it][AEpoch 0:  64%|██████▍   | 805/1260 [27:43<15:39,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  78%|███████▊  | 21/27 [00:46<00:13,  2.18s/it][A
+Validating:  81%|████████▏ | 22/27 [00:49<00:10,  2.19s/it][AEpoch 0:  64%|██████▍   | 807/1260 [27:47<15:35,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.19s/it][A
+Validating:  89%|████████▉ | 24/27 [00:53<00:06,  2.17s/it][AEpoch 0:  64%|██████▍   | 809/1260 [27:51<15:31,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  93%|█████████▎| 25/27 [00:55<00:04,  2.17s/it][A
+Validating:  96%|█████████▋| 26/27 [00:57<00:02,  2.21s/it][AEpoch 0:  64%|██████▍   | 811/1260 [27:56<15:27,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 100%|██████████| 27/27 [00:58<00:00,  1.85s/it][AEpoch 0:  64%|██████▍   | 812/1260 [27:57<15:25,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+                                                           [AEpoch 0:  65%|██████▍   | 813/1260 [27:58<15:22,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  65%|██████▍   | 813/1260 [27:58<15:22,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:11,  2.75s/it][AEpoch 0:  65%|██████▍   | 815/1260 [28:00<15:17,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:   7%|▋         | 2/27 [00:04<01:01,  2.45s/it][A
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.36s/it][AEpoch 0:  65%|██████▍   | 817/1260 [28:05<15:13,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  15%|█▍        | 4/27 [00:09<00:53,  2.34s/it][A
+Validating:  19%|█▊        | 5/27 [00:11<00:49,  2.27s/it][AEpoch 0:  65%|██████▌   | 819/1260 [28:09<15:09,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  22%|██▏       | 6/27 [00:13<00:47,  2.26s/it][A
+Validating:  26%|██▌       | 7/27 [00:16<00:44,  2.24s/it][AEpoch 0:  65%|██████▌   | 821/1260 [28:14<15:05,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.23s/it][A
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.25s/it][AEpoch 0:  65%|██████▌   | 823/1260 [28:18<15:01,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  37%|███▋      | 10/27 [00:22<00:38,  2.24s/it][A
+Validating:  41%|████      | 11/27 [00:25<00:35,  2.25s/it][AEpoch 0:  65%|██████▌   | 825/1260 [28:23<14:58,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.23s/it][A
+Validating:  48%|████▊     | 13/27 [00:29<00:31,  2.22s/it][AEpoch 0:  66%|██████▌   | 827/1260 [28:27<14:54,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  52%|█████▏    | 14/27 [00:31<00:28,  2.20s/it][A
+Validating:  56%|█████▌    | 15/27 [00:33<00:26,  2.21s/it][AEpoch 0:  66%|██████▌   | 829/1260 [28:31<14:50,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  59%|█████▉    | 16/27 [00:36<00:24,  2.21s/it][A
+Validating:  63%|██████▎   | 17/27 [00:38<00:21,  2.20s/it][AEpoch 0:  66%|██████▌   | 831/1260 [28:36<14:46,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  67%|██████▋   | 18/27 [00:40<00:19,  2.20s/it][A
+Validating:  70%|███████   | 19/27 [00:42<00:17,  2.20s/it][AEpoch 0:  66%|██████▌   | 833/1260 [28:40<14:42,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  74%|███████▍  | 20/27 [00:44<00:15,  2.20s/it][A
+Validating:  78%|███████▊  | 21/27 [00:47<00:13,  2.19s/it][AEpoch 0:  66%|██████▋   | 835/1260 [28:45<14:38,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  81%|████████▏ | 22/27 [00:49<00:10,  2.20s/it][A
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.22s/it][AEpoch 0:  66%|██████▋   | 837/1260 [28:49<14:34,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  89%|████████▉ | 24/27 [00:53<00:06,  2.19s/it][A
+Validating:  93%|█████████▎| 25/27 [00:55<00:04,  2.20s/it][AEpoch 0:  67%|██████▋   | 839/1260 [28:53<14:30,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  96%|█████████▋| 26/27 [00:58<00:02,  2.22s/it][A
+Validating: 100%|██████████| 27/27 [00:59<00:00,  1.86s/it][AEpoch 0:  67%|██████▋   | 841/1260 [28:57<14:25,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  67%|██████▋   | 841/1260 [28:57<14:25,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+                                                           [AEpoch 0:  67%|██████▋   | 842/1260 [28:57<14:22,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]Epoch 0:  67%|██████▋   | 843/1260 [28:57<14:19,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating: 0it [00:00, ?it/s][A
+Validating:   0%|          | 0/27 [00:00<?, ?it/s][A
+Validating:   4%|▎         | 1/27 [00:02<01:13,  2.82s/it][A
+Validating:   7%|▋         | 2/27 [00:05<01:02,  2.48s/it][AEpoch 0:  67%|██████▋   | 845/1260 [29:02<14:16,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  11%|█         | 3/27 [00:07<00:56,  2.36s/it][A
+Validating:  15%|█▍        | 4/27 [00:09<00:53,  2.32s/it][AEpoch 0:  67%|██████▋   | 847/1260 [29:07<14:12,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  19%|█▊        | 5/27 [00:11<00:49,  2.27s/it][A
+Validating:  22%|██▏       | 6/27 [00:13<00:47,  2.25s/it][AEpoch 0:  67%|██████▋   | 849/1260 [29:11<14:08,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  26%|██▌       | 7/27 [00:16<00:44,  2.23s/it][A
+Validating:  30%|██▉       | 8/27 [00:18<00:42,  2.21s/it][AEpoch 0:  68%|██████▊   | 851/1260 [29:16<14:04,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  33%|███▎      | 9/27 [00:20<00:40,  2.23s/it][A
+Validating:  37%|███▋      | 10/27 [00:22<00:37,  2.23s/it][AEpoch 0:  68%|██████▊   | 853/1260 [29:20<14:00,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  41%|████      | 11/27 [00:25<00:35,  2.23s/it][A
+Validating:  44%|████▍     | 12/27 [00:27<00:33,  2.21s/it][AEpoch 0:  68%|██████▊   | 855/1260 [29:25<13:56,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  48%|████▊     | 13/27 [00:29<00:30,  2.21s/it][A
+Validating:  52%|█████▏    | 14/27 [00:31<00:28,  2.19s/it][AEpoch 0:  68%|██████▊   | 857/1260 [29:29<13:52,  2.06s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  56%|█████▌    | 15/27 [00:33<00:26,  2.20s/it][A
+Validating:  59%|█████▉    | 16/27 [00:35<00:24,  2.19s/it][AEpoch 0:  68%|██████▊   | 859/1260 [29:33<13:48,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  63%|██████▎   | 17/27 [00:38<00:21,  2.17s/it][A
+Validating:  67%|██████▋   | 18/27 [00:40<00:19,  2.18s/it][AEpoch 0:  68%|██████▊   | 861/1260 [29:38<13:44,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  70%|███████   | 19/27 [00:42<00:17,  2.18s/it][A
+Validating:  74%|███████▍  | 20/27 [00:44<00:15,  2.20s/it][AEpoch 0:  68%|██████▊   | 863/1260 [29:42<13:40,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  78%|███████▊  | 21/27 [00:46<00:13,  2.18s/it][A
+Validating:  81%|████████▏ | 22/27 [00:48<00:10,  2.18s/it][AEpoch 0:  69%|██████▊   | 865/1260 [29:46<13:35,  2.07s/it, loss=25.8, v_num=9qo1, em_score=0.000, f1_score=0.000]
+Validating:  85%|████████▌ | 23/27 [00:51<00:08,  2.18s/it][Aslurmstepd: error: *** JOB 6158810 ON g3052 CANCELLED AT 2022-09-16T07:46:44 ***

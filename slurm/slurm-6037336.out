@@ -1,0 +1,102 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=ark
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=11:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+python run.py --config configs/templama/training/t5_baseline_yearly.json -datav 2010
+python run.py --config configs/templama/training/t5_baseline_yearly.json -datav 2011
+python run.py --config configs/templama/training/t5_baseline_yearly.json -datav 2012
+python run.py --config configs/templama/training/t5_baseline_yearly.json -datav 2013
+python run.py --config configs/templama/training/t5_baseline_yearly.json -datav 2014
+python run.py --config configs/templama/training/t5_baseline_yearly.json -datav 2015
+python run.py --config configs/templama/training/t5_baseline_yearly.json -datav 2016
+python run.py --config configs/templama/training/t5_baseline_yearly.json -datav 2017
+python run.py --config configs/templama/training/t5_baseline_yearly.json -datav 2018
+--------------------
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220831_211038-y87jy2i9
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run baseline_2010
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/y87jy2i9
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.000 MB of 0.000 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.008 MB uploaded (0.000 MB deduped)wandb: - 0.003 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: \ 0.005 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: | 0.005 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: / 0.005 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: - 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: \ 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: | 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: / 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: - 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: \ 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: Synced baseline_2010: https://wandb.ai/tjung2/temporal_questions/runs/y87jy2i9
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220831_211038-y87jy2i9/logs
+Traceback (most recent call last):
+  File "run.py", line 132, in <module>
+    args.output_dir += '_' + ''.join(map(str, args.adapter_list))
+TypeError: 'NoneType' object is not iterable
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220831_211101-2l0l59s3
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run baseline_2011
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/2l0l59s3
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.000 MB of 0.000 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: - 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: \ 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: | 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: / 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: - 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: \ 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: | 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: Synced baseline_2011: https://wandb.ai/tjung2/temporal_questions/runs/2l0l59s3
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220831_211101-2l0l59s3/logs
+Traceback (most recent call last):
+  File "run.py", line 132, in <module>
+    args.output_dir += '_' + ''.join(map(str, args.adapter_list))
+TypeError: 'NoneType' object is not iterable
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220831_211124-2p1ham28
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run baseline_2012
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/2p1ham28
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.000 MB of 0.000 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.008 MB uploaded (0.000 MB deduped)wandb: - 0.008 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: \ 0.008 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: | 0.008 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: / 0.008 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: - 0.008 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: \ 0.008 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: | 0.008 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: / 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: - 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: \ 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: | 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: / 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: - 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: Synced baseline_2012: https://wandb.ai/tjung2/temporal_questions/runs/2p1ham28
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220831_211124-2p1ham28/logs
+Traceback (most recent call last):
+  File "run.py", line 132, in <module>
+    args.output_dir += '_' + ''.join(map(str, args.adapter_list))
+TypeError: 'NoneType' object is not iterable
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220831_211147-1tpiw19g
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run baseline_2013
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/1tpiw19g
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.000 MB of 0.000 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.008 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: \ 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: | 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: / 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: - 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: \ 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: | 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: Synced baseline_2013: https://wandb.ai/tjung2/temporal_questions/runs/1tpiw19g
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220831_211147-1tpiw19g/logs
+Traceback (most recent call last):
+  File "run.py", line 132, in <module>
+    args.output_dir += '_' + ''.join(map(str, args.adapter_list))
+TypeError: 'NoneType' object is not iterable
+slurmstepd: error: *** JOB 6037336 ON g3075 CANCELLED AT 2022-08-31T21:12:03 ***
