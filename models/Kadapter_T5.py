@@ -1509,6 +1509,7 @@ class T5ForConditionalGeneration(T5PreTrainedModel):
 
     def __init__(self, config, adapter_config):
         super().__init__(config)
+        print(config)
         self.model_dim = config.d_model
 
         self.shared = nn.Embedding(config.vocab_size, config.d_model)

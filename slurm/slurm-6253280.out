@@ -1,0 +1,60 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-2080ti
+#SBATCH --account=ark
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=12:00:00 
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+# python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.151-em_score=0.000.ckpt
+
+# python run.py --config configs/wmt/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtkadapter_2010_2freeze_158_128/epoch=8-f1_score=0.084-em_score=0.000.ckpt
+
+python preprocess_wmt_train_data.py 2013
+python preprocess_wmt_train_data.py 2014
+python preprocess_wmt_train_data.py 2015
+--------------------
+number of articles: 1146387
+300000 articles loaded
+Read csv: 27.216909149 seconds
+decode sentences: 4.428463107999995 seconds
+Create sentences: 1.4240071559999947 seconds
+total sentences 7400869
+Run spacy on sentences: 5.033000000764787e-06 seconds
+Construct datasets: 464.58637894000003 seconds
+max input length = 732
+max output length = 2
+Write datasets: 1.8627370350000092 seconds
+number of articles: 1074842
+300000 articles loaded
+Read csv: 27.717901979 seconds
+decode sentences: 4.737803143000001 seconds
+Create sentences: 1.5598081030000017 seconds
+total sentences 7982294
+Run spacy on sentences: 5.8700000025169174e-06 seconds
+Construct datasets: 448.281391913 seconds
+max input length = 675
+max output length = 2
+Write datasets: 1.8415983920000372 seconds
+number of articles: 1089891
+300000 articles loaded
+Read csv: 28.810532455 seconds
+decode sentences: 4.8763133669999945 seconds
+Create sentences: 1.5845077489999966 seconds
+total sentences 8327347
+Run spacy on sentences: 5.549000000826254e-06 seconds
+Construct datasets: 441.084921959 seconds
+max input length = 388
+max output length = 2
+Write datasets: 1.78312502 seconds

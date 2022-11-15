@@ -1,0 +1,964 @@
+id,date,input,output
+0,2019,"In 2019, <extra_id_0> is the head of the government of Nizhny Novgorod.",<extra_id_0> Vladimir Panov <extra_id_1>
+1,2019,"In 2019, Ghulam Rasool Sahi is a member of the <extra_id_0>.",<extra_id_0> Pakistan Tehreek-e-Insaf <extra_id_1>
+2,2019,"In 2019, Yuli Edelstein holds the position of <extra_id_0>.",<extra_id_0> Speaker of the Knesset <extra_id_1>
+3,2019,"In 2019, <extra_id_0> is the head coach of FC Granit Mikashevichi.",<extra_id_0> Valery Bakhno <extra_id_1>
+4,2019,"In 2019, Gianluigi Paragone is a member of the <extra_id_0>.",<extra_id_0> Five Star Movement <extra_id_1>
+5,2019,"In 2019, <extra_id_0> is the head coach of Southampton F.C..",<extra_id_0> Ralph Hasenhüttl <extra_id_1>
+6,2019,"In 2019, <extra_id_0> is the head of the government of Federal District.",<extra_id_0> Ibaneis Rocha <extra_id_1>
+7,2019,"In 2019, Judy Foote holds the position of <extra_id_0>.",<extra_id_0> Lieutenant Governor of Newfoundland and Labrador <extra_id_1>
+8,2019,"In 2019, <extra_id_0> is the head coach of Venezia F.C..",<extra_id_0> Alessio Dionisi <extra_id_1>
+9,2019,"In 2019, Nicola Gaston works for <extra_id_0>.",<extra_id_0> MacDiarmid Institute for Advanced Materials and Nanotechnology <extra_id_1>
+10,2019,"In 2019, Nick Swisher plays for <extra_id_0>.",<extra_id_0> Atlanta Braves <extra_id_1>
+11,2019,"In 2019, <extra_id_0> is the head coach of Washington Football Team.",<extra_id_0> Jay Gruden <extra_id_1>
+12,2019,"In 2019, Ilya Ponomarev is a member of the <extra_id_0>.",<extra_id_0> Green Alliance–The People's Party <extra_id_1>
+13,2019,"In 2019, <extra_id_0> is the head coach of St. Mirren F.C..",<extra_id_0> Oran Kearney <extra_id_1>
+14,2019,"In 2019, <extra_id_0> is the head coach of Germany national handball team.",<extra_id_0> Dagur Sigurðsson <extra_id_1>
+15,2019,"In 2019, <extra_id_0> is the head coach of FC Bayern Munich.",<extra_id_0> Niko Kovač <extra_id_1>
+16,2019,"In 2019, <extra_id_0> is the head coach of Sheffield United F.C..",<extra_id_0> Chris Wilder <extra_id_1>
+17,2019,"In 2019, Luke Freeman plays for <extra_id_0>.",<extra_id_0> Bristol City F.C. <extra_id_1>
+18,2019,"In 2019, Bruno Mantovani works for <extra_id_0>.",<extra_id_0> Conservatoire de Paris <extra_id_1>
+19,2019,"In 2019, Sebastian Giovinco plays for <extra_id_0>.",<extra_id_0> Real Madrid Fc <extra_id_1>
+20,2019,"In 2019, Andrew D. Martin works for <extra_id_0>.",<extra_id_0> University of Michigan <extra_id_1>
+21,2019,"In 2019, Annegret Kramp-Karrenbauer holds the position of <extra_id_0>.",<extra_id_0> Leader of the Christian Democratic Union <extra_id_1>
+22,2019,"In 2019, Wu Den-yih holds the position of <extra_id_0>.",<extra_id_0> Chairperson of the Kuomintang <extra_id_1>
+23,2019,"In 2019, Sardar Azmoun plays for <extra_id_0>.",<extra_id_0> Iran national football team <extra_id_1>
+24,2019,"In 2019, <extra_id_0> is the chair of International Shooting Sport Federation.",<extra_id_0> Vladimir Lisin <extra_id_1>
+25,2019,"In 2019, Julie Bentley works for <extra_id_0>.",<extra_id_0> Action for Children <extra_id_1>
+26,2019,"In 2019, <extra_id_0> is the head coach of Hapoel Ironi Kiryat Shmona F.C..",<extra_id_0> Kobi Refua <extra_id_1>
+27,2019,"In 2019, <extra_id_0> is the chair of Moscow Mathematical Society.",<extra_id_0> Viktor Vasilyev <extra_id_1>
+28,2019,"In 2019, David Castle works for <extra_id_0>.",<extra_id_0> University of Victoria <extra_id_1>
+29,2019,"In 2019, Alexis Sánchez plays for <extra_id_0>.",<extra_id_0> Inter Milan <extra_id_1>
+30,2019,"In 2019, Equanimity is owned by <extra_id_0>.",<extra_id_0> Genting Group <extra_id_1>
+31,2019,"In 2019, Anne Madden attended <extra_id_0>.",<extra_id_0> North Carolina State University <extra_id_1>
+32,2019,"In 2019, Clarice E. Phelps attended <extra_id_0>.",<extra_id_0> University of Texas at Austin <extra_id_1>
+33,2019,"In 2019, Ingebjørg Godskesen is a member of the <extra_id_0>.",<extra_id_0> Pensioners' Party <extra_id_1>
+34,2019,"In 2019, Dennis Villarojo holds the position of <extra_id_0>.",<extra_id_0> auxiliary bishop <extra_id_1>
+35,2019,"In 2019, <extra_id_0> is the head coach of PFC Litex Lovech.",<extra_id_0> Ljupko Petrović <extra_id_1>
+36,2019,"In 2019, Akhtarul Iman is a member of the <extra_id_0>.",<extra_id_0> All India Majlis-e-Ittehadul Muslimeen <extra_id_1>
+37,2019,"In 2019, Jessica Valenti works for <extra_id_0>.",<extra_id_0> The Guardian <extra_id_1>
+38,2019,"In 2019, <extra_id_0> is the head coach of FC Krasnodar.",<extra_id_0> Murad Musayev <extra_id_1>
+39,2019,"In 2019, <extra_id_0> is the head coach of FC Dila Gori.",<extra_id_0> Georgi Nemsadze <extra_id_1>
+40,2019,"In 2019, Steve Womack holds the position of <extra_id_0>.",<extra_id_0> United States representative <extra_id_1>
+41,2019,"In 2019, <extra_id_0> is the head of the government of Sudan.",<extra_id_0> Abdalla Hamdok <extra_id_1>
+42,2019,"In 2019, <extra_id_0> is the head coach of FC Akzhayik.",<extra_id_0> Artur Avakyants <extra_id_1>
+43,2019,"In 2019, Louis Bontes is a member of the <extra_id_0>.",<extra_id_0> VoorNederland <extra_id_1>
+44,2019,"In 2019, Kathryn Mann works for <extra_id_0>.",<extra_id_0> Brown University <extra_id_1>
+45,2019,"In 2019, Sabine Carey works for <extra_id_0>.",<extra_id_0> University of Mannheim <extra_id_1>
+46,2019,"In 2019, Tabaré Vázquez holds the position of <extra_id_0>.",<extra_id_0> President of Uruguay <extra_id_1>
+47,2019,"In 2019, Carson Palmer plays for <extra_id_0>.",<extra_id_0> Arizona Cardinals <extra_id_1>
+48,2019,"In 2019, <extra_id_0> is the head coach of FC Chita.",<extra_id_0> Maksim Shvetsov <extra_id_1>
+49,2019,"In 2019, <extra_id_0> is the head coach of Hamburger SV.",<extra_id_0> Hannes Wolf <extra_id_1>
+50,2019,"In 2019, Hatem Ben Arfa plays for <extra_id_0>.",<extra_id_0> OGC Nice <extra_id_1>
+51,2019,"In 2019, <extra_id_0> is the chair of University of Waterloo.",<extra_id_0> Feridun Hamdullahpur <extra_id_1>
+52,2019,"In 2019, <extra_id_0> is the head coach of FC Orsha.",<extra_id_0> Sergey Vekhtev <extra_id_1>
+53,2019,"In 2019, <extra_id_0> is the head coach of SC Freiburg.",<extra_id_0> Christian Streich <extra_id_1>
+54,2019,"In 2019, <extra_id_0> is the head coach of A.C. Pisa 1909.",<extra_id_0> Luca D'Angelo <extra_id_1>
+55,2019,"In 2019, <extra_id_0> is the chair of Association for Computing Machinery.",<extra_id_0> Cherri M. Pancake <extra_id_1>
+56,2019,"In 2019, John Dew holds the position of <extra_id_0>.",<extra_id_0> cardinal <extra_id_1>
+57,2019,"In 2019, Sarath Fonseka is a member of the <extra_id_0>.",<extra_id_0> United National Front for Good Governance <extra_id_1>
+58,2019,"In 2019, Philippe Verdier works for <extra_id_0>.",<extra_id_0> RT France <extra_id_1>
+59,2019,"In 2019, Mark Cavendish plays for <extra_id_0>.",<extra_id_0> NTT Pro Cycling Team <extra_id_1>
+60,2019,"In 2019, <extra_id_0> is the head coach of Israel Start-Up Nation.",<extra_id_0> Eric Van Lancker <extra_id_1>
+61,2019,"In 2019, <extra_id_0> is the chair of Ministry of Internal Affairs of Ukraine.",<extra_id_0> Arsen Avakov <extra_id_1>
+62,2019,"In 2019, Jeppe Kofod holds the position of <extra_id_0>.",<extra_id_0> member of the European Parliament <extra_id_1>
+63,2019,"In 2019, Michel Temer holds the position of <extra_id_0>.",<extra_id_0> President of Brazil <extra_id_1>
+64,2019,"In 2019, Wonpil Im works for <extra_id_0>.",<extra_id_0> Lehigh University <extra_id_1>
+65,2019,"In 2019, <extra_id_0> is the head coach of St Johnstone F.C..",<extra_id_0> Tommy Wright <extra_id_1>
+66,2019,"In 2019, Fraser Forster plays for <extra_id_0>.",<extra_id_0> Southampton F.C. <extra_id_1>
+67,2019,"In 2019, <extra_id_0> is the chair of The CW.",<extra_id_0> Mark Pedowitz <extra_id_1>
+68,2019,"In 2019, Anna J. Phillips works for <extra_id_0>.",<extra_id_0> National Museum of Natural History <extra_id_1>
+69,2019,"In 2019, Antonio Valencia plays for <extra_id_0>.",<extra_id_0> Real Madrid CF <extra_id_1>
+70,2019,"In 2019, Daniel Constantin is a member of the <extra_id_0>.",<extra_id_0> PRO Romania Social Liberal <extra_id_1>
+71,2019,"In 2019, Alberto Abadie works for <extra_id_0>.",<extra_id_0> Massachusetts Institute of Technology <extra_id_1>
+72,2019,"In 2019, Susan B. Sinnott works for <extra_id_0>.",<extra_id_0> Pennsylvania State University <extra_id_1>
+73,2019,"In 2019, Douglas Crockford works for <extra_id_0>.",<extra_id_0> PayPal <extra_id_1>
+74,2019,"In 2019, <extra_id_0> is the head of the government of Pennsylvania.",<extra_id_0> Tom Wolf <extra_id_1>
+75,2019,"In 2019, <extra_id_0> is the head coach of Poland national association football team.",<extra_id_0> Jerzy Brzęczek <extra_id_1>
+76,2019,"In 2019, <extra_id_0> is the head of the government of Sardinia.",<extra_id_0> Francesco Pigliaru <extra_id_1>
+77,2019,"In 2019, Federico Macheda plays for <extra_id_0>.",<extra_id_0> Nottingham Forest F.C. <extra_id_1>
+78,2019,"In 2019, <extra_id_0> is the head of the government of Florence.",<extra_id_0> Dario Nardella <extra_id_1>
+79,2019,"In 2019, <extra_id_0> is the head of the government of Wassenaar.",<extra_id_0> Leendert de Lange <extra_id_1>
+80,2019,"In 2019, Apryl A. Alexander works for <extra_id_0>.",<extra_id_0> University of Denver <extra_id_1>
+81,2019,"In 2019, Johann-Dietrich Wörner holds the position of <extra_id_0>.",<extra_id_0> chief executive officer <extra_id_1>
+82,2019,"In 2019, <extra_id_0> is the head of the government of Budapest District I.",<extra_id_0> Gábor Tamás Nagy <extra_id_1>
+83,2019,"In 2019, Terry Mills is a member of the <extra_id_0>.",<extra_id_0> Territory Alliance <extra_id_1>
+84,2019,"In 2019, Shavkat Mirziyoyev holds the position of <extra_id_0>.",<extra_id_0> President of Uzbekistan <extra_id_1>
+85,2019,"In 2019, Regina E. Dugan works for <extra_id_0>.","<extra_id_0> Facebook, Inc. <extra_id_1>"
+86,2019,"In 2019, Íñigo Errejón is a member of the <extra_id_0>.",<extra_id_0> Podemos <extra_id_1>
+87,2019,"In 2019, Bastian Schweinsteiger plays for <extra_id_0>.",<extra_id_0> Chicago Fire FC <extra_id_1>
+88,2019,"In 2019, Tom MacArthur holds the position of <extra_id_0>.",<extra_id_0> United States representative <extra_id_1>
+89,2019,"In 2019, Fratelli Fabbri Editori is owned by <extra_id_0>.",<extra_id_0> Arnoldo Mondadori Editore <extra_id_1>
+90,2019,"In 2019, Karen Handel holds the position of <extra_id_0>.",<extra_id_0> United States representative <extra_id_1>
+91,2019,"In 2019, South China Morning Post is owned by <extra_id_0>.",<extra_id_0> Alibaba Group <extra_id_1>
+92,2019,"In 2019, George Boyd plays for <extra_id_0>.",<extra_id_0> Burnley F.C. <extra_id_1>
+93,2019,"In 2019, Dennis Hood is a member of the <extra_id_0>.",<extra_id_0> Liberal Party of Australia <extra_id_1>
+94,2019,"In 2019, Nelson Valdez plays for <extra_id_0>.",<extra_id_0> Seattle Sounders FC <extra_id_1>
+95,2019,"In 2019, <extra_id_0> is the head coach of FK Liepāja.",<extra_id_0> Aleksandrs Starkovs <extra_id_1>
+96,2019,"In 2019, <extra_id_0> is the head coach of Ivory Coast national football team.",<extra_id_0> Ibrahim Kamara <extra_id_1>
+97,2019,"In 2019, Sud de France Arena is owned by <extra_id_0>.",<extra_id_0> Occitania <extra_id_1>
+98,2019,"In 2019, <extra_id_0> is the head coach of FK Olimpik.",<extra_id_0> Darko Vojvodić <extra_id_1>
+99,2019,"In 2019, Michail Michailowitsch Kapranow works for <extra_id_0>.",<extra_id_0> Institute for the Physics and Mathematics of the Universe <extra_id_1>
+100,2019,"In 2019, <extra_id_0> is the head coach of FC Illichivets Mariupol.",<extra_id_0> Oleksandr Babych <extra_id_1>
+101,2019,"In 2019, <extra_id_0> is the head coach of Derby County F.C..",<extra_id_0> Frank Lampard <extra_id_1>
+102,2019,"In 2019, Yvan Benedetti is a member of the <extra_id_0>.",<extra_id_0> French nationalist party <extra_id_1>
+103,2019,"In 2019, Paul McGowan plays for <extra_id_0>.",<extra_id_0> Dundee F.C. <extra_id_1>
+104,2019,"In 2019, Kushboo is a member of the <extra_id_0>.",<extra_id_0> Indian National Congress <extra_id_1>
+105,2019,"In 2019, Kelly Loeffler holds the position of <extra_id_0>.",<extra_id_0> chief executive officer <extra_id_1>
+106,2019,"In 2019, <extra_id_0> is the head coach of Gazprom–RusVelo.",<extra_id_0> Alexander Serov <extra_id_1>
+107,2019,"In 2019, Cat Hope works for <extra_id_0>.",<extra_id_0> Monash University <extra_id_1>
+108,2019,"In 2019, <extra_id_0> is the chair of Democratic National Committee.",<extra_id_0> Thomas Perez <extra_id_1>
+109,2019,"In 2019, <extra_id_0> is the head coach of Real Sociedad.",<extra_id_0> Imanol Alguacil <extra_id_1>
+110,2019,"In 2019, <extra_id_0> is the head of the government of Poland.",<extra_id_0> Mateusz Morawiecki <extra_id_1>
+111,2019,"In 2019, Tan Chuan-Jin holds the position of <extra_id_0>.",<extra_id_0> list of Speakers of the Parliament of Singapore <extra_id_1>
+112,2019,"In 2019, Gabriela Pazmiño is a member of the <extra_id_0>.",<extra_id_0> Fuerza Ecuador <extra_id_1>
+113,2019,"In 2019, Gabriela Pazmiño works for <extra_id_0>.",<extra_id_0> Ecuavisa <extra_id_1>
+114,2019,"In 2019, Sally M. Foster works for <extra_id_0>.",<extra_id_0> University of Stirling <extra_id_1>
+115,2019,"In 2019, <extra_id_0> is the head of the government of São Paulo.",<extra_id_0> Bruno Covas <extra_id_1>
+116,2019,"In 2019, <extra_id_0> is the head of the government of São Paulo.",<extra_id_0> João Doria Júnior <extra_id_1>
+117,2019,"In 2019, Javier Hernández plays for <extra_id_0>.",<extra_id_0> West Ham United F.C. <extra_id_1>
+118,2019,"In 2019, <extra_id_0> is the head of the government of Odessa Oblast.",<extra_id_0> Maksym Stepanov <extra_id_1>
+119,2019,"In 2019, <extra_id_0> is the head of the government of Saarbrücken.",<extra_id_0> Charlotte Britz <extra_id_1>
+120,2019,"In 2019, <extra_id_0> is the head of the government of Guernsey.",<extra_id_0> Gavin St Pier <extra_id_1>
+121,2019,"In 2019, <extra_id_0> is the head coach of FK Tuzla City.",<extra_id_0> Mirza Varešanović <extra_id_1>
+122,2019,"In 2019, Ismaïl Aissati plays for <extra_id_0>.",<extra_id_0> FC Akhmat Grozny <extra_id_1>
+123,2019,"In 2019, <extra_id_0> is the head coach of FC Lida.",<extra_id_0> Vyacheslav Geraschenko <extra_id_1>
+124,2019,"In 2019, Jose Manuel Sabucedo works for <extra_id_0>.",<extra_id_0> University of Santiago de Compostela <extra_id_1>
+125,2019,"In 2019, Lee Hyun-joo attended <extra_id_0>.",<extra_id_0> Sungshin Women's University <extra_id_1>
+126,2019,"In 2019, John Galliano works for <extra_id_0>.",<extra_id_0> Maison Martin Margiela <extra_id_1>
+127,2019,"In 2019, Tom Cleverley plays for <extra_id_0>.",<extra_id_0> Everton F.C. <extra_id_1>
+128,2019,"In 2019, Helen McEntee holds the position of <extra_id_0>.",<extra_id_0> Teachta Dála <extra_id_1>
+129,2019,"In 2019, Margaret Ferguson works for <extra_id_0>.",<extra_id_0> Indianapolis Business Journal <extra_id_1>
+130,2019,"In 2019, Bojan Krkić plays for <extra_id_0>.",<extra_id_0> Stoke City F.C. <extra_id_1>
+131,2019,"In 2019, <extra_id_0> is the head of the government of Bulgaria.",<extra_id_0> Boyko Borisov <extra_id_1>
+132,2019,"In 2019, Patricia Scotland, Baroness Scotland of Asthal holds the position of <extra_id_0>.",<extra_id_0> Commonwealth Secretary-General <extra_id_1>
+133,2019,"In 2019, James Howard works for <extra_id_0>.",<extra_id_0> Johns Hopkins University Applied Physics Laboratory <extra_id_1>
+134,2019,"In 2019, <extra_id_0> is the head of the government of Andorra.",<extra_id_0> Xavier Espot Zamora <extra_id_1>
+135,2019,"In 2019, Sebastian Kurz holds the position of <extra_id_0>.",<extra_id_0> Federal Chancellor of Austria <extra_id_1>
+136,2019,"In 2019, Steven Naismith plays for <extra_id_0>.",<extra_id_0> Norwich City F.C. <extra_id_1>
+137,2019,"In 2019, Dorien Herremans works for <extra_id_0>.",<extra_id_0> Queen Mary University of London <extra_id_1>
+138,2019,"In 2019, Joseph Strickland holds the position of <extra_id_0>.",<extra_id_0> diocesan bishop <extra_id_1>
+139,2019,"In 2019, Mitchell Johnson plays for <extra_id_0>.",<extra_id_0> Kolkata Knight Riders <extra_id_1>
+140,2019,"In 2019, Anna Keay works for <extra_id_0>.",<extra_id_0> Landmark Trust <extra_id_1>
+141,2019,"In 2019, Tony Renda works for <extra_id_0>.",<extra_id_0> Cincinnati Reds <extra_id_1>
+142,2019,"In 2019, Guðni Jóhannesson holds the position of <extra_id_0>.",<extra_id_0> President of Iceland <extra_id_1>
+143,2019,"In 2019, David Kaye works for <extra_id_0>.","<extra_id_0> University of California, Irvine <extra_id_1>"
+144,2019,"In 2019, <extra_id_0> is the head of the government of Jiangsu.",<extra_id_0> Wu Zhenglong <extra_id_1>
+145,2019,"In 2019, Bridget McKenzie holds the position of <extra_id_0>.",<extra_id_0> Member of the Australian Senate <extra_id_1>
+146,2019,"In 2019, <extra_id_0> is the head coach of Atlético Madrid.",<extra_id_0> Diego Simeone <extra_id_1>
+147,2019,"In 2019, Adam Chicksen plays for <extra_id_0>.",<extra_id_0> Brighton & Hove Albion F.C. <extra_id_1>
+148,2019,"In 2019, <extra_id_0> is the head of the government of Cameroon.",<extra_id_0> Philémon Yang <extra_id_1>
+149,2019,"In 2019, <extra_id_0> is the head coach of Sporting CP.",<extra_id_0> Leonel Pontes <extra_id_1>
+150,2019,"In 2019, The Eagle is owned by <extra_id_0>.",<extra_id_0> Berkshire Hathaway <extra_id_1>
+151,2019,"In 2019, <extra_id_0> is the chair of All Progressives Congress.",<extra_id_0> Adams Oshiomhole <extra_id_1>
+152,2019,"In 2019, Marcus Bosch works for <extra_id_0>.",<extra_id_0> Hochschule für Musik und Theater München <extra_id_1>
+153,2019,"In 2019, <extra_id_0> is the chair of Gibraltar Socialist Labour Party.",<extra_id_0> Fabian Picardo <extra_id_1>
+154,2019,"In 2019, <extra_id_0> is the head of the government of Saudi Arabia.",<extra_id_0> Salman of Saudi Arabia <extra_id_1>
+155,2019,"In 2019, Don Bacon holds the position of <extra_id_0>.",<extra_id_0> United States representative <extra_id_1>
+156,2019,"In 2019, <extra_id_0> is the head coach of OL Reign.",<extra_id_0> Vlatko Andonovski <extra_id_1>
+157,2019,"In 2019, <extra_id_0> is the head coach of PFC Sochi.",<extra_id_0> Aleksandr Tochilin <extra_id_1>
+158,2019,"In 2019, Chris Hackett plays for <extra_id_0>.",<extra_id_0> Northampton Town F.C. <extra_id_1>
+159,2019,"In 2019, <extra_id_0> is the chair of Association for the Advancement of Artificial Intelligence.",<extra_id_0> Yolanda Gil <extra_id_1>
+160,2019,"In 2019, <extra_id_0> is the chair of Associated British Foods.",<extra_id_0> Michael McLintock <extra_id_1>
+161,2019,"In 2019, Havas is owned by <extra_id_0>.",<extra_id_0> Vivendi <extra_id_1>
+162,2019,"In 2019, <extra_id_0> is the head of the government of Lyon.",<extra_id_0> Gérard Collomb <extra_id_1>
+163,2019,"In 2019, Eduardo da Silva plays for <extra_id_0>.",<extra_id_0> FC Shakhtar Donetsk <extra_id_1>
+164,2019,"In 2019, <extra_id_0> is the head coach of FC Rukh Lviv.",<extra_id_0> Leonid Kuchuk <extra_id_1>
+165,2019,"In 2019, Robert John Reed, Lord Reed holds the position of <extra_id_0>.",<extra_id_0> Deputy President of the Supreme Court of the United Kingdom <extra_id_1>
+166,2019,"In 2019, Stade Pierre-Mauroy is owned by <extra_id_0>.",<extra_id_0> Eiffage <extra_id_1>
+167,2019,"In 2019, <extra_id_0> is the head coach of Inter Milan.",<extra_id_0> Luciano Spalletti <extra_id_1>
+168,2019,"In 2019, <extra_id_0> is the head coach of F.C. Paços de Ferreira.",<extra_id_0> Pepa <extra_id_1>
+169,2019,"In 2019, <extra_id_0> is the chair of Roman Catholic Archdiocese of Cardiff.",<extra_id_0> George Stack <extra_id_1>
+170,2019,"In 2019, Mark Hudson plays for <extra_id_0>.",<extra_id_0> Huddersfield Town A.F.C. <extra_id_1>
+171,2019,"In 2019, <extra_id_0> is the head coach of Metec-TKH-Mantel.",<extra_id_0> Robin Chaigneau <extra_id_1>
+172,2019,"In 2019, <extra_id_0> is the head coach of Newcastle United F.C..",<extra_id_0> Rafael Benítez <extra_id_1>
+173,2019,"In 2019, <extra_id_0> is the head coach of NK Rudeš.",<extra_id_0> Marko Babić <extra_id_1>
+174,2019,"In 2019, Kevin Cobb works for <extra_id_0>.",<extra_id_0> Yale School of Music <extra_id_1>
+175,2019,"In 2019, Chris Johnson plays for <extra_id_0>.",<extra_id_0> Arizona Cardinals <extra_id_1>
+176,2019,"In 2019, Jordi Xuclà is a member of the <extra_id_0>.",<extra_id_0> Catalan European Democratic Party <extra_id_1>
+177,2019,"In 2019, Graham Harman works for <extra_id_0>.",<extra_id_0> Southern California Institute of Architecture <extra_id_1>
+178,2019,"In 2019, Kawlo Iyun Pacidal is a member of the <extra_id_0>.",<extra_id_0> Taiwan Renewal Party <extra_id_1>
+179,2019,"In 2019, Tomohiro Ishikawa is a member of the <extra_id_0>.",<extra_id_0> Constitutional Democratic Party of Japan <extra_id_1>
+180,2019,"In 2019, Michael D. Higgins holds the position of <extra_id_0>.",<extra_id_0> President of Ireland <extra_id_1>
+181,2019,"In 2019, David Gauke holds the position of <extra_id_0>.",<extra_id_0> Lord Chancellor <extra_id_1>
+182,2019,"In 2019, Lomana LuaLua plays for <extra_id_0>.",<extra_id_0> Şanlıurfaspor <extra_id_1>
+183,2019,"In 2019, <extra_id_0> is the head coach of Portland Timbers.",<extra_id_0> Giovanni Savarese <extra_id_1>
+184,2019,"In 2019, <extra_id_0> is the head of the government of Poznań.",<extra_id_0> Jacek Jaśkowiak <extra_id_1>
+185,2019,"In 2019, <extra_id_0> is the head of the government of Kinmen.",<extra_id_0> Yang Cheng-wu <extra_id_1>
+186,2019,"In 2019, Marcelo plays for <extra_id_0>.",<extra_id_0> Juventus FC <extra_id_1>
+187,2019,"In 2019, <extra_id_0> is the head coach of NK Osijek.",<extra_id_0> Ivica Kulešević <extra_id_1>
+188,2019,"In 2019, Ursula Staudinger works for <extra_id_0>.",<extra_id_0> Columbia University <extra_id_1>
+189,2019,"In 2019, Rudy Fernández plays for <extra_id_0>.",<extra_id_0> Real Madrid Baloncesto <extra_id_1>
+190,2019,"In 2019, <extra_id_0> is the head coach of FC Girondins de Bordeaux.",<extra_id_0> Ricardo Gomes <extra_id_1>
+191,2019,"In 2019, <extra_id_0> is the chair of FC Girondins de Bordeaux.",<extra_id_0> Joseph DaGrosa <extra_id_1>
+192,2019,"In 2019, Robert Green plays for <extra_id_0>.",<extra_id_0> Queens Park Rangers F.C. <extra_id_1>
+193,2019,"In 2019, Gerardo Villanueva Albarrán is a member of the <extra_id_0>.",<extra_id_0> National Regeneration Movement <extra_id_1>
+194,2019,"In 2019, Åsane Storsenter is owned by <extra_id_0>.",<extra_id_0> Olav Thon Eiendomsselskap <extra_id_1>
+195,2019,"In 2019, Ranil Wickremesinghe holds the position of <extra_id_0>.",<extra_id_0> Prime Minister of Sri Lanka <extra_id_1>
+196,2019,"In 2019, Jo Cribb works for <extra_id_0>.",<extra_id_0> Read NZ Te Pou Muramura (formerly the New Zealand Book Council) <extra_id_1>
+197,2019,"In 2019, Jay Huff attended <extra_id_0>.",<extra_id_0> University of Virginia <extra_id_1>
+198,2019,"In 2019, Radosław Sikorski holds the position of <extra_id_0>.",<extra_id_0> member of the European Parliament <extra_id_1>
+199,2019,"In 2019, <extra_id_0> is the head coach of Rayo Vallecano.",<extra_id_0> Miguel Ángel Sánchez Muñoz <extra_id_1>
+200,2019,"In 2019, Mia Love holds the position of <extra_id_0>.",<extra_id_0> United States representative <extra_id_1>
+201,2019,"In 2019, <extra_id_0> is the chair of University of Tokyo.",<extra_id_0> Makoto Gonokami <extra_id_1>
+202,2019,"In 2019, <extra_id_0> is the head coach of Diósgyőri VTK.",<extra_id_0> Tamás Feczkó <extra_id_1>
+203,2019,"In 2019, Daniel Diermeier works for <extra_id_0>.",<extra_id_0> University of Chicago <extra_id_1>
+204,2019,"In 2019, Marine Le Pen holds the position of <extra_id_0>.",<extra_id_0> chairperson <extra_id_1>
+205,2019,"In 2019, Dovre Line is owned by <extra_id_0>.",<extra_id_0> Bane NOR <extra_id_1>
+206,2019,"In 2019, Mario Balotelli plays for <extra_id_0>.",<extra_id_0> OGC Nice <extra_id_1>
+207,2019,"In 2019, Mark Drakeford holds the position of <extra_id_0>.",<extra_id_0> First Minister of Wales <extra_id_1>
+208,2019,"In 2019, <extra_id_0> is the head coach of Sociedad Deportiva Huesca.",<extra_id_0> Miguel Ángel Sánchez Muñoz <extra_id_1>
+209,2019,"In 2019, Sajith Premadasa holds the position of <extra_id_0>.","<extra_id_0> Ministry of Construction, Engineering Services, Housing, and Common Amenities <extra_id_1>"
+210,2019,"In 2019, Mary E. Northridge works for <extra_id_0>.",<extra_id_0> New York University College of Dentistry <extra_id_1>
+211,2019,"In 2019, Robin van Persie plays for <extra_id_0>.",<extra_id_0> Feyenoord <extra_id_1>
+212,2019,"In 2019, <extra_id_0> is the head of the government of Canada.",<extra_id_0> Justin Trudeau <extra_id_1>
+213,2019,"In 2019, <extra_id_0> is the chair of ITV plc.",<extra_id_0> Peter Bazalgette <extra_id_1>
+214,2019,"In 2019, Matt Bors works for <extra_id_0>.",<extra_id_0> The Nib <extra_id_1>
+215,2019,"In 2019, Bharat Mehra works for <extra_id_0>.",<extra_id_0> University of Alabama <extra_id_1>
+216,2019,"In 2019, <extra_id_0> is the head of the government of Vienna.",<extra_id_0> Michael Ludwig <extra_id_1>
+217,2019,"In 2019, Jair Bolsonaro is a member of the <extra_id_0>.",<extra_id_0> Social Liberal Party <extra_id_1>
+218,2019,"In 2019, <extra_id_0> is the chair of Next plc.",<extra_id_0> Michael Roney <extra_id_1>
+219,2019,"In 2019, <extra_id_0> is the chair of Federal Emergency Management Agency.",<extra_id_0> Pete Gaynor <extra_id_1>
+220,2019,"In 2019, <extra_id_0> is the head coach of Maccabi Petah Tikva F.C..",<extra_id_0> Elisha Levy <extra_id_1>
+221,2019,"In 2019, Sandy Abi-Elias attended <extra_id_0>.",<extra_id_0> University of Bath <extra_id_1>
+222,2019,"In 2019, <extra_id_0> is the head coach of FC Viktoria Plzeň.",<extra_id_0> Pavel Vrba <extra_id_1>
+223,2019,"In 2019, Self-portrait wearing a white feathered bonnet is owned by <extra_id_0>.",<extra_id_0> National Trust <extra_id_1>
+224,2019,"In 2019, Kenneth Clarke holds the position of <extra_id_0>.",<extra_id_0> Father of the House <extra_id_1>
+225,2019,"In 2019, Paul Butler holds the position of <extra_id_0>.",<extra_id_0> Bishop of Durham <extra_id_1>
+226,2019,"In 2019, <extra_id_0> is the head of the government of New Brunswick.",<extra_id_0> Brian Gallant <extra_id_1>
+227,2019,"In 2019, Marta Lewicka works for <extra_id_0>.",<extra_id_0> University of Pittsburgh <extra_id_1>
+228,2019,"In 2019, beIN Media Group is owned by <extra_id_0>.",<extra_id_0> beIN Media Group <extra_id_1>
+229,2019,"In 2019, Boy and Dog in a Johnnypump is owned by <extra_id_0>.",<extra_id_0> Peter M. Brant <extra_id_1>
+230,2019,"In 2019, Joseph F. Dunford, Jr. holds the position of <extra_id_0>.",<extra_id_0> Chairman of the Joint Chiefs of Staff <extra_id_1>
+231,2019,"In 2019, Carolyn Abbate works for <extra_id_0>.",<extra_id_0> Harvard University <extra_id_1>
+232,2019,"In 2019, Henrikh Mkhitaryan plays for <extra_id_0>.",<extra_id_0> Arsenal F.C. <extra_id_1>
+233,2019,"In 2019, Raheel Sharif holds the position of <extra_id_0>.",<extra_id_0> Islamic Military Counter Terrorism Coalition <extra_id_1>
+234,2019,"In 2019, <extra_id_0> is the chair of Pirate Party.",<extra_id_0> Magnus Andersson <extra_id_1>
+235,2019,"In 2019, Carolyn Lawrence-Dill works for <extra_id_0>.",<extra_id_0> Iowa State University <extra_id_1>
+236,2019,"In 2019, Blase J. Cupich holds the position of <extra_id_0>.",<extra_id_0> cardinal <extra_id_1>
+237,2019,"In 2019, Theodoros Currentzis works for <extra_id_0>.",<extra_id_0> Perm Opera and Ballet Theatre <extra_id_1>
+238,2019,"In 2019, Lucy Gichuhi is a member of the <extra_id_0>.",<extra_id_0> Liberal Party of Australia <extra_id_1>
+239,2019,"In 2019, <extra_id_0> is the head coach of 1. FC Tatran Prešov.",<extra_id_0> Anton Mišovec <extra_id_1>
+240,2019,"In 2019, <extra_id_0> is the head coach of South Africa national rugby union team.",<extra_id_0> Rassie Erasmus <extra_id_1>
+241,2019,"In 2019, <extra_id_0> is the chair of Italian Liberal Party.",<extra_id_0> Stefano De Luca <extra_id_1>
+242,2019,"In 2019, <extra_id_0> is the head coach of FK Sutjeska Nikšić.",<extra_id_0> Nikola Rakojević <extra_id_1>
+243,2019,"In 2019, Bernard Monot is a member of the <extra_id_0>.",<extra_id_0> France Arise <extra_id_1>
+244,2019,"In 2019, Phil Murphy holds the position of <extra_id_0>.",<extra_id_0> Governor of New Jersey <extra_id_1>
+245,2019,"In 2019, Leo Varadkar holds the position of <extra_id_0>.",<extra_id_0> Teachta Dála <extra_id_1>
+246,2019,"In 2019, Chase Young attended <extra_id_0>.",<extra_id_0> Ohio State University <extra_id_1>
+247,2019,"In 2019, Jaguar is owned by <extra_id_0>.",<extra_id_0> Jaguar Land Rover <extra_id_1>
+248,2019,"In 2019, Jimmy Smith plays for <extra_id_0>.",<extra_id_0> Crawley Town F.C. <extra_id_1>
+249,2019,"In 2019, Ryan Babel plays for <extra_id_0>.",<extra_id_0> Deportivo de La Coruña <extra_id_1>
+250,2019,"In 2019, Kalani Brown attended <extra_id_0>.",<extra_id_0> Baylor University <extra_id_1>
+251,2019,"In 2019, Domantas Sabonis plays for <extra_id_0>.",<extra_id_0> Oklahoma City Thunder <extra_id_1>
+252,2019,"In 2019, Lluís Puig i Gordi is a member of the <extra_id_0>.",<extra_id_0> Catalan European Democratic Party <extra_id_1>
+253,2019,"In 2019, Marina Silva is a member of the <extra_id_0>.",<extra_id_0> Sustainability Network <extra_id_1>
+254,2019,"In 2019, Damien Carême is a member of the <extra_id_0>.",<extra_id_0> Europe Ecology – The Greens <extra_id_1>
+255,2019,"In 2019, <extra_id_0> is the chair of Alberta New Democratic Party.",<extra_id_0> Rachel Notley <extra_id_1>
+256,2019,"In 2019, Frank Scholze works for <extra_id_0>.",<extra_id_0> Karlsruhe Institute of Technology <extra_id_1>
+257,2019,"In 2019, Freddie Sears plays for <extra_id_0>.",<extra_id_0> Ipswich Town F.C. <extra_id_1>
+258,2019,"In 2019, Dimitris Papadimoulis is a member of the <extra_id_0>.",<extra_id_0> SYRIZA <extra_id_1>
+259,2019,"In 2019, Sandra Schmid works for <extra_id_0>.",<extra_id_0> University of Texas Southwestern Medical Center <extra_id_1>
+260,2019,"In 2019, Sandra Wolin works for <extra_id_0>.",<extra_id_0> National Cancer Institute <extra_id_1>
+261,2019,"In 2019, Stephen Donnelly holds the position of <extra_id_0>.",<extra_id_0> Teachta Dála <extra_id_1>
+262,2019,"In 2019, Stephen Donnelly is a member of the <extra_id_0>.",<extra_id_0> Fianna Fáil <extra_id_1>
+263,2019,"In 2019, Ilir Meta holds the position of <extra_id_0>.",<extra_id_0> President of Albania <extra_id_1>
+264,2019,"In 2019, Miguel de Icaza works for <extra_id_0>.",<extra_id_0> Microsoft Corporation <extra_id_1>
+265,2019,"In 2019, Dominique Bertinotti is a member of the <extra_id_0>.",<extra_id_0> Génération.s <extra_id_1>
+266,2019,"In 2019, <extra_id_0> is the head coach of FC Rapid București.",<extra_id_0> Daniel Pancu <extra_id_1>
+267,2019,"In 2019, <extra_id_0> is the chair of Toulouse FC.",<extra_id_0> Olivier Sadran <extra_id_1>
+268,2019,"In 2019, <extra_id_0> is the head coach of Toulouse FC.",<extra_id_0> Antoine Kombouaré <extra_id_1>
+269,2019,"In 2019, Peter Odemwingie plays for <extra_id_0>.",<extra_id_0> Bristol City F.C. <extra_id_1>
+270,2019,"In 2019, Mark T. Esper holds the position of <extra_id_0>.",<extra_id_0> United States Secretary of the Army <extra_id_1>
+271,2019,"In 2019, Wolfgang Wiehle is a member of the <extra_id_0>.",<extra_id_0> Alternative for Germany <extra_id_1>
+272,2019,"In 2019, Angaston Power Station is owned by <extra_id_0>.",<extra_id_0> Snowy Hydro <extra_id_1>
+273,2019,"In 2019, Bob Chapek holds the position of <extra_id_0>.",<extra_id_0> chairperson <extra_id_1>
+274,2019,"In 2019, Sylvain Maillard is a member of the <extra_id_0>.",<extra_id_0> La République En Marche <extra_id_1>
+275,2019,"In 2019, Raúl Jiménez plays for <extra_id_0>.",<extra_id_0> Mexico national football team <extra_id_1>
+276,2019,"In 2019, Sandy MacIver attended <extra_id_0>.",<extra_id_0> Clemson University <extra_id_1>
+277,2019,"In 2019, Tom Frieden holds the position of <extra_id_0>.",<extra_id_0> président-directeur général <extra_id_1>
+278,2019,"In 2019, Francesc Homs Molist is a member of the <extra_id_0>.",<extra_id_0> Catalan European Democratic Party <extra_id_1>
+279,2019,"In 2019, Teaira McCowan attended <extra_id_0>.",<extra_id_0> Mississippi State University <extra_id_1>
+280,2019,"In 2019, <extra_id_0> is the head coach of FC Academica Clinceni.",<extra_id_0> Ilie Poenaru <extra_id_1>
+281,2019,"In 2019, Ubaldo Jiménez plays for <extra_id_0>.",<extra_id_0> Baltimore Orioles <extra_id_1>
+282,2019,"In 2019, Matti Vanhanen holds the position of <extra_id_0>.",<extra_id_0> Speaker of the Parliament of Finland <extra_id_1>
+283,2019,"In 2019, Trevor Lawrence attended <extra_id_0>.",<extra_id_0> Clemson University <extra_id_1>
+284,2019,"In 2019, <extra_id_0> is the head of the government of Delaware.",<extra_id_0> John Carney <extra_id_1>
+285,2019,"In 2019, The Onion is owned by <extra_id_0>.",<extra_id_0> G/O Media <extra_id_1>
+286,2019,"In 2019, Kris Boyd plays for <extra_id_0>.",<extra_id_0> Kilmarnock F.C. <extra_id_1>
+287,2019,"In 2019, Willie O'Dea holds the position of <extra_id_0>.",<extra_id_0> Teachta Dála <extra_id_1>
+288,2019,"In 2019, Joaquim Forn is a member of the <extra_id_0>.",<extra_id_0> Catalan European Democratic Party <extra_id_1>
+289,2019,"In 2019, Belinda Johnson works for <extra_id_0>.",<extra_id_0> Airbnb <extra_id_1>
+290,2019,"In 2019, <extra_id_0> is the chair of Parliamentary Assembly of the Organization for Security and Co-operation in Europe.",<extra_id_0> Gigi Tsereteli <extra_id_1>
+291,2019,"In 2019, České aerolinie is owned by <extra_id_0>.",<extra_id_0> Smartwings <extra_id_1>
+292,2019,"In 2019, Loizza Aquino attended <extra_id_0>.",<extra_id_0> University of Toronto <extra_id_1>
+293,2019,"In 2019, John Ratcliffe holds the position of <extra_id_0>.",<extra_id_0> United States representative <extra_id_1>
+294,2019,"In 2019, <extra_id_0> is the head coach of VfL Osnabrück.",<extra_id_0> Daniel Thioune <extra_id_1>
+295,2019,"In 2019, James Marape is a member of the <extra_id_0>.",<extra_id_0> People's National Congress Party <extra_id_1>
+296,2019,"In 2019, <extra_id_0> is the chair of Franco-German Parliamentary Assembly.",<extra_id_0> Wolfgang Schäuble <extra_id_1>
+297,2019,"In 2019, Alexander De Croo holds the position of <extra_id_0>.",<extra_id_0> Minister of Development Cooperation <extra_id_1>
+298,2019,"In 2019, <extra_id_0> is the head coach of Unione Sportiva Lecce.",<extra_id_0> Fabio Liverani <extra_id_1>
+299,2019,"In 2019, <extra_id_0> is the head of the government of United States of America.",<extra_id_0> Donald Trump <extra_id_1>
+300,2019,"In 2019, Curt Rice works for <extra_id_0>.",<extra_id_0> Oslo and Akershus University College of Applied Sciences <extra_id_1>
+301,2019,"In 2019, <extra_id_0> is the head coach of F.C. Copenhagen.",<extra_id_0> Ståle Solbakken <extra_id_1>
+302,2019,"In 2019, Joshua Greenberg works for <extra_id_0>.",<extra_id_0> Alfred P. Sloan Foundation <extra_id_1>
+303,2019,"In 2019, Yukio Edano is a member of the <extra_id_0>.",<extra_id_0> Constitutional Democratic Party of Japan <extra_id_1>
+304,2019,"In 2019, Mathieu Valbuena plays for <extra_id_0>.",<extra_id_0> France national association football team <extra_id_1>
+305,2019,"In 2019, Joseph William Tobin holds the position of <extra_id_0>.",<extra_id_0> cardinal <extra_id_1>
+306,2019,"In 2019, Rauff Hakeem holds the position of <extra_id_0>.",<extra_id_0> Ministry of Water Supply and Drainage <extra_id_1>
+307,2019,"In 2019, Michael Bostwick plays for <extra_id_0>.",<extra_id_0> Lincoln City F.C. <extra_id_1>
+308,2019,"In 2019, <extra_id_0> is the head coach of Silkeborg IF.",<extra_id_0> Michael Hansen <extra_id_1>
+309,2019,"In 2019, Renate Weber holds the position of <extra_id_0>.",<extra_id_0> member of the European Parliament <extra_id_1>
+310,2019,"In 2019, <extra_id_0> is the head coach of Olympique de Marseille.",<extra_id_0> Rudi Garcia <extra_id_1>
+311,2019,"In 2019, Martin Heinrich holds the position of <extra_id_0>.",<extra_id_0> United States senator <extra_id_1>
+312,2019,"In 2019, Deborah Orr works for <extra_id_0>.",<extra_id_0> i <extra_id_1>
+313,2019,"In 2019, Mo'ne Davis attended <extra_id_0>.",<extra_id_0> Hampton University <extra_id_1>
+314,2019,"In 2019, Tom Cairney plays for <extra_id_0>.",<extra_id_0> Fulham F.C. <extra_id_1>
+315,2019,"In 2019, Felix Finkbeiner attended <extra_id_0>.",<extra_id_0> ETH Zurich <extra_id_1>
+316,2019,"In 2019, Thiago Silva plays for <extra_id_0>.",<extra_id_0> Paris Saint-Germain <extra_id_1>
+317,2019,"In 2019, Younis Mahmoud plays for <extra_id_0>.",<extra_id_0> Talaba SC <extra_id_1>
+318,2019,"In 2019, Bernhard Schölkopf works for <extra_id_0>.",<extra_id_0> Max Planck Institute for Intelligent Systems <extra_id_1>
+319,2019,"In 2019, <extra_id_0> is the chair of Hungarian Academy of Sciences.",<extra_id_0> László Lovász <extra_id_1>
+320,2019,"In 2019, Tim Cahill plays for <extra_id_0>.",<extra_id_0> Zhejiang Greentown F.C. <extra_id_1>
+321,2019,"In 2019, Richard Burgon holds the position of <extra_id_0>.",<extra_id_0> Shadow Secretary of State for Justice <extra_id_1>
+322,2019,"In 2019, Brandi M. Cossairt works for <extra_id_0>.",<extra_id_0> University of Washington <extra_id_1>
+323,2019,"In 2019, <extra_id_0> is the chair of Hungarian Socialist Party.",<extra_id_0> Bertalan Tóth <extra_id_1>
+324,2019,"In 2019, Manuel Neuer plays for <extra_id_0>.",<extra_id_0> FC Bayern Munich <extra_id_1>
+325,2019,"In 2019, Glenn Maxwell plays for <extra_id_0>.",<extra_id_0> Melbourne Stars <extra_id_1>
+326,2019,"In 2019, Steve Jones plays for <extra_id_0>.",<extra_id_0> Nantwich Town F.C. <extra_id_1>
+327,2019,"In 2019, Brandon Clarke attended <extra_id_0>.",<extra_id_0> Gonzaga University <extra_id_1>
+328,2019,"In 2019, <extra_id_0> is the head of the government of Manitoba.",<extra_id_0> Brian Pallister <extra_id_1>
+329,2019,"In 2019, Álvaro Uribe Vélez is a member of the <extra_id_0>.",<extra_id_0> Democratic Center <extra_id_1>
+330,2019,"In 2019, <extra_id_0> is the chair of Mejlis of the Crimean Tatar People.",<extra_id_0> Refat Chubarov <extra_id_1>
+331,2019,"In 2019, <extra_id_0> is the head coach of Olympiakos Nicosia FC.",<extra_id_0> Fangio Buyse <extra_id_1>
+332,2019,"In 2019, Alyssa Healy plays for <extra_id_0>.",<extra_id_0> Sydney Sixers <extra_id_1>
+333,2019,"In 2019, <extra_id_0> is the head of the government of Montgomery County.",<extra_id_0> Marc Elrich <extra_id_1>
+334,2019,"In 2019, Andrea Dutton works for <extra_id_0>.",<extra_id_0> University of Florida <extra_id_1>
+335,2019,"In 2019, Brian Schatz holds the position of <extra_id_0>.",<extra_id_0> United States senator <extra_id_1>
+336,2019,"In 2019, J. J. Watt plays for <extra_id_0>.",<extra_id_0> Houston Texans <extra_id_1>
+337,2019,"In 2019, <extra_id_0> is the head coach of Androni Giocattoli-Sidermec.",<extra_id_0> Leonardo Scarselli <extra_id_1>
+338,2019,"In 2019, Gail Koziara Boudreaux works for <extra_id_0>.",<extra_id_0> Anthem Inc. <extra_id_1>
+339,2019,"In 2019, <extra_id_0> is the chair of Social Democratic Party of Austria.",<extra_id_0> Pamela Rendi-Wagner <extra_id_1>
+340,2019,"In 2019, <extra_id_0> is the chair of Rijksmuseum.",<extra_id_0> Jaap de Hoop Scheffer <extra_id_1>
+341,2019,"In 2019, Elissa Slotkin holds the position of <extra_id_0>.",<extra_id_0> United States representative <extra_id_1>
+342,2019,"In 2019, <extra_id_0> is the head of the government of Niigata Prefecture.",<extra_id_0> Hideyo Hanazumi <extra_id_1>
+343,2019,"In 2019, Chesley ""Sully"" Sullenberger works for <extra_id_0>.",<extra_id_0> CBS News <extra_id_1>
+344,2019,"In 2019, Eli Cohen is a member of the <extra_id_0>.",<extra_id_0> Kulanu <extra_id_1>
+345,2019,"In 2019, <extra_id_0> is the head coach of KS Vllaznia Shkodër.",<extra_id_0> Hasan Lika <extra_id_1>
+346,2019,"In 2019, <extra_id_0> is the head coach of Watford F.C..",<extra_id_0> Quique Sánchez Flores <extra_id_1>
+347,2019,"In 2019, Merete Riisager is a member of the <extra_id_0>.",<extra_id_0> Liberal Alliance <extra_id_1>
+348,2019,"In 2019, <extra_id_0> is the chair of Verein für Socialpolitik.",<extra_id_0> Nicola Fuchs-Schündeln <extra_id_1>
+349,2019,"In 2019, Doug Shane works for <extra_id_0>.",<extra_id_0> The Spaceship Company <extra_id_1>
+350,2019,"In 2019, Giuseppe Veltri works for <extra_id_0>.",<extra_id_0> University of Hamburg <extra_id_1>
+351,2019,"In 2019, Glider Ushñahua is a member of the <extra_id_0>.",<extra_id_0> Popular Force <extra_id_1>
+352,2019,"In 2019, Vincent Chauvet works for <extra_id_0>.",<extra_id_0> Autun <extra_id_1>
+353,2019,"In 2019, People's Vote is owned by <extra_id_0>.",<extra_id_0> Richard Reed <extra_id_1>
+354,2019,"In 2019, <extra_id_0> is the chair of Myanmar Dental Association.",<extra_id_0> Thein Kyu <extra_id_1>
+355,2019,"In 2019, <extra_id_0> is the head coach of Shonan Bellmare.",<extra_id_0> Cho Kwi-jae <extra_id_1>
+356,2019,"In 2019, Edinson Cavani plays for <extra_id_0>.",<extra_id_0> Paris Saint-Germain <extra_id_1>
+357,2019,"In 2019, Danny White works for <extra_id_0>.",<extra_id_0> University of Central Florida <extra_id_1>
+358,2019,"In 2019, <extra_id_0> is the head coach of FC Astra Giurgiu.",<extra_id_0> Costel Enache <extra_id_1>
+359,2019,"In 2019, <extra_id_0> is the head of the government of Catalonia.",<extra_id_0> Quim Torra <extra_id_1>
+360,2019,"In 2019, Andy Lonergan plays for <extra_id_0>.",<extra_id_0> Fulham F.C. <extra_id_1>
+361,2019,"In 2019, Mindy Grossman works for <extra_id_0>.",<extra_id_0> WW International <extra_id_1>
+362,2019,"In 2019, <extra_id_0> is the head of the government of Transnistria.",<extra_id_0> Alexander Wladimirowitsch Martynow <extra_id_1>
+363,2019,"In 2019, <extra_id_0> is the head coach of Hapoel Haifa F.C..",<extra_id_0> Haim Silvas <extra_id_1>
+364,2019,"In 2019, Gianni Pittella holds the position of <extra_id_0>.",<extra_id_0> parliamentary group leader <extra_id_1>
+365,2019,"In 2019, Jimmer Fredette plays for <extra_id_0>.",<extra_id_0> Panathinaikos B.C. <extra_id_1>
+366,2019,"In 2019, Michèle Dittlot is a member of the <extra_id_0>.",<extra_id_0> Horizon Monaco <extra_id_1>
+367,2019,"In 2019, John Guidetti plays for <extra_id_0>.",<extra_id_0> Sweden national association football team <extra_id_1>
+368,2019,"In 2019, Meritxell Budó i Pla is a member of the <extra_id_0>.",<extra_id_0> Catalan European Democratic Party <extra_id_1>
+369,2019,"In 2019, Brian Hayes holds the position of <extra_id_0>.",<extra_id_0> member of the European Parliament <extra_id_1>
+370,2019,"In 2019, <extra_id_0> is the head coach of KÍ Klaksvík.",<extra_id_0> Mikkjal Thomassen <extra_id_1>
+371,2019,"In 2019, Miguel Díaz-Canel holds the position of <extra_id_0>.",<extra_id_0> Prime Minister of Cuba <extra_id_1>
+372,2019,"In 2019, Yoh Iwasa works for <extra_id_0>.",<extra_id_0> Kwansei Gakuin University <extra_id_1>
+373,2019,"In 2019, <extra_id_0> is the chair of University of Richmond.",<extra_id_0> Ronald Crutcher <extra_id_1>
+374,2019,"In 2019, Didier Fassin works for <extra_id_0>.",<extra_id_0> Collège de France <extra_id_1>
+375,2019,"In 2019, Jos Buttler plays for <extra_id_0>.",<extra_id_0> Lancashire County Cricket Club <extra_id_1>
+376,2019,"In 2019, Sintra Line is owned by <extra_id_0>.",<extra_id_0> Infrastructures of Portugal <extra_id_1>
+377,2019,"In 2019, <extra_id_0> is the head coach of Hallescher FC.",<extra_id_0> Torsten Ziegner <extra_id_1>
+378,2019,"In 2019, <extra_id_0> is the head of the government of Istanbul.",<extra_id_0> Ekrem İmamoğlu <extra_id_1>
+379,2019,"In 2019, Kelly Craft holds the position of <extra_id_0>.",<extra_id_0> United States Ambassador to the United Nations <extra_id_1>
+380,2019,"In 2019, Alexander Hamilton is owned by <extra_id_0>.",<extra_id_0> Crystal Bridges Museum of American Art <extra_id_1>
+381,2019,"In 2019, Lin Jianhua works for <extra_id_0>.",<extra_id_0> Peking University <extra_id_1>
+382,2019,"In 2019, Laura Borràs is a member of the <extra_id_0>.",<extra_id_0> independent politician <extra_id_1>
+383,2019,"In 2019, Laura Borràs works for <extra_id_0>.",<extra_id_0> Government of Catalonia <extra_id_1>
+384,2019,"In 2019, Dan Koehl works for <extra_id_0>.",<extra_id_0> Airavata Elephant Foundation <extra_id_1>
+385,2019,"In 2019, Chelsea Walton works for <extra_id_0>.",<extra_id_0> University of Illinois at Urbana–Champaign <extra_id_1>
+386,2019,"In 2019, <extra_id_0> is the chair of Liga Veneta.",<extra_id_0> Massimo Bitonci <extra_id_1>
+387,2019,"In 2019, Lucía Sosa is a member of the <extra_id_0>.",<extra_id_0> Popular Unity <extra_id_1>
+388,2019,"In 2019, <extra_id_0> is the head coach of Movistar Team.",<extra_id_0> Pablo Lastras <extra_id_1>
+389,2019,"In 2019, Artur Lompart works for <extra_id_0>.",<extra_id_0> Ministry of Foreign Affairs of Poland <extra_id_1>
+390,2019,"In 2019, Cole Hamels plays for <extra_id_0>.",<extra_id_0> Chicago Cubs <extra_id_1>
+391,2019,"In 2019, Eric Abetz holds the position of <extra_id_0>.",<extra_id_0> Leader of the Government in the Senate <extra_id_1>
+392,2019,"In 2019, <extra_id_0> is the chair of Bank of Finland.",<extra_id_0> Olli Rehn <extra_id_1>
+393,2019,"In 2019, Don Farrell holds the position of <extra_id_0>.",<extra_id_0> Member of the Australian Senate <extra_id_1>
+394,2019,"In 2019, Cristian Popescu Piedone is a member of the <extra_id_0>.",<extra_id_0> National Union for the Progress of Romania <extra_id_1>
+395,2019,"In 2019, <extra_id_0> is the head of the government of Bonn.",<extra_id_0> Ashok-Alexander Sridharan <extra_id_1>
+396,2019,"In 2019, Brenda Hale, Baroness Hale of Richmond holds the position of <extra_id_0>.",<extra_id_0> Justice of the Supreme Court of the United Kingdom <extra_id_1>
+397,2019,"In 2019, <extra_id_0> is the chair of National Society of Film Critics.",<extra_id_0> Justin Chang <extra_id_1>
+398,2019,"In 2019, Sam Lantinga works for <extra_id_0>.",<extra_id_0> Valve Corporation <extra_id_1>
+399,2019,"In 2019, Phil Hudson works for <extra_id_0>.",<extra_id_0> University of Winnipeg <extra_id_1>
+400,2019,"In 2019, Neymar plays for <extra_id_0>.",<extra_id_0> Brazil national football team <extra_id_1>
+401,2019,"In 2019, <extra_id_0> is the head coach of FK Budućnost Podgorica.",<extra_id_0> Mladen Milinković <extra_id_1>
+402,2019,"In 2019, John Longworth is a member of the <extra_id_0>.",<extra_id_0> Brexit Party <extra_id_1>
+403,2019,"In 2019, <extra_id_0> is the head of the government of Albany.",<extra_id_0> Kathy Sheehan <extra_id_1>
+404,2019,"In 2019, Daniele Gatti works for <extra_id_0>.",<extra_id_0> Teatro dell'Opera di Roma <extra_id_1>
+405,2019,"In 2019, <extra_id_0> is the head coach of FK Austria Wien.",<extra_id_0> Christian Ilzer <extra_id_1>
+406,2019,"In 2019, Zoi Konstantopoulou holds the position of <extra_id_0>.",<extra_id_0> chairperson <extra_id_1>
+407,2019,"In 2019, Zoi Konstantopoulou is a member of the <extra_id_0>.",<extra_id_0> Course of Freedom <extra_id_1>
+408,2019,"In 2019, <extra_id_0> is the head coach of A.C. ChievoVerona.",<extra_id_0> Domenico Di Carlo <extra_id_1>
+409,2019,"In 2019, Mario Mandžukić plays for <extra_id_0>.",<extra_id_0> Juventus FC <extra_id_1>
+410,2019,"In 2019, Mirela Holy is a member of the <extra_id_0>.",<extra_id_0> Croatian Sustainable Development <extra_id_1>
+411,2019,"In 2019, Pau Gasol plays for <extra_id_0>.",<extra_id_0> San Antonio Spurs <extra_id_1>
+412,2019,"In 2019, <extra_id_0> is the chair of State Ethnic Affairs Commission.",<extra_id_0> Bagatur <extra_id_1>
+413,2019,"In 2019, Westfield Wheaton is owned by <extra_id_0>.",<extra_id_0> Unibail Rodamco Westfield <extra_id_1>
+414,2019,"In 2019, <extra_id_0> is the head coach of Euskadi Basque Country-Murias.",<extra_id_0> Jon Odriozola <extra_id_1>
+415,2019,"In 2019, Nicola Sturgeon holds the position of <extra_id_0>.",<extra_id_0> First Minister of Scotland <extra_id_1>
+416,2019,"In 2019, Bryan Alberts attended <extra_id_0>.","<extra_id_0> California State University, Long Beach <extra_id_1>"
+417,2019,"In 2019, Yoann Gourcuff plays for <extra_id_0>.",<extra_id_0> Dijon FCO <extra_id_1>
+418,2019,"In 2019, <extra_id_0> is the head coach of FK Spartaks Jūrmala.",<extra_id_0> Tomas Ražanauskas <extra_id_1>
+419,2019,"In 2019, George van Kooten works for <extra_id_0>.",<extra_id_0> University of Cambridge <extra_id_1>
+420,2019,"In 2019, Dario Hunter is a member of the <extra_id_0>.",<extra_id_0> Green Party of the United States <extra_id_1>
+421,2019,"In 2019, Thorbjørn Jagland holds the position of <extra_id_0>.",<extra_id_0> Secretary General of the Council of Europe <extra_id_1>
+422,2019,"In 2019, Arancha González works for <extra_id_0>.",<extra_id_0> International Trade Centre <extra_id_1>
+423,2019,"In 2019, RJ Barrett plays for <extra_id_0>.",<extra_id_0> New York Knicks <extra_id_1>
+424,2019,"In 2019, Ricardo Clark plays for <extra_id_0>.",<extra_id_0> Columbus Crew SC <extra_id_1>
+425,2019,"In 2019, Selkent is owned by <extra_id_0>.",<extra_id_0> Stagecoach Group <extra_id_1>
+426,2019,"In 2019, Tulsi Gabbard holds the position of <extra_id_0>.",<extra_id_0> United States representative <extra_id_1>
+427,2019,"In 2019, <extra_id_0> is the head coach of Hapoel Holon.",<extra_id_0> Dan Shamir <extra_id_1>
+428,2019,"In 2019, <extra_id_0> is the head of the government of Khyber Pakhtunkhwa.",<extra_id_0> Shah Farman <extra_id_1>
+429,2019,"In 2019, Sergio Villalobos works for <extra_id_0>.",<extra_id_0> San Sebastián University <extra_id_1>
+430,2019,"In 2019, Romain Grau is a member of the <extra_id_0>.",<extra_id_0> La République En Marche <extra_id_1>
+431,2019,"In 2019, Deborah L. Birx works for <extra_id_0>.",<extra_id_0> President's Emergency Plan for AIDS Relief <extra_id_1>
+432,2019,"In 2019, Tim Scott holds the position of <extra_id_0>.",<extra_id_0> United States senator <extra_id_1>
+433,2019,"In 2019, Kenneth Vermeer plays for <extra_id_0>.",<extra_id_0> Feyenoord <extra_id_1>
+434,2019,"In 2019, <extra_id_0> is the head of the government of Turkish Republic of Northern Cyprus.",<extra_id_0> Hüseyin Özgürgün <extra_id_1>
+435,2019,"In 2019, Moxie Marlinspike works for <extra_id_0>.",<extra_id_0> Signal Messenger <extra_id_1>
+436,2019,"In 2019, Anna Rosling Rönnlund works for <extra_id_0>.",<extra_id_0> Uppsala University <extra_id_1>
+437,2019,"In 2019, <extra_id_0> is the head coach of Feyenoord.",<extra_id_0> Giovanni van Bronckhorst <extra_id_1>
+438,2019,"In 2019, Fernando Torres plays for <extra_id_0>.",<extra_id_0> Sagan Tosu <extra_id_1>
+439,2019,"In 2019, Muttah Suresh plays for <extra_id_0>.",<extra_id_0> United Sikkim F.C. <extra_id_1>
+440,2019,"In 2019, Sabine Hossenfelder works for <extra_id_0>.",<extra_id_0> Frankfurt Institute for Advanced Studies <extra_id_1>
+441,2019,"In 2019, Meir Cohen is a member of the <extra_id_0>.",<extra_id_0> Yesh Atid <extra_id_1>
+442,2019,"In 2019, Rhana Devenport works for <extra_id_0>.",<extra_id_0> Art Gallery of South Australia <extra_id_1>
+443,2019,"In 2019, Jyrki Katainen holds the position of <extra_id_0>.",<extra_id_0> European Commissioner for Industry and Entrepreneurship <extra_id_1>
+444,2019,"In 2019, Aurore Bergé is a member of the <extra_id_0>.",<extra_id_0> La République En Marche <extra_id_1>
+445,2019,"In 2019, Richard Keogh plays for <extra_id_0>.",<extra_id_0> Derby County F.C. <extra_id_1>
+446,2019,"In 2019, Annastacia Palaszczuk holds the position of <extra_id_0>.",<extra_id_0> Premier of Queensland <extra_id_1>
+447,2019,"In 2019, <extra_id_0> is the chair of Société des océanistes.",<extra_id_0> Emmanuel Kasarhérou <extra_id_1>
+448,2019,"In 2019, Yannick Kerlogot is a member of the <extra_id_0>.",<extra_id_0> La République En Marche <extra_id_1>
+449,2019,"In 2019, Teodoro Locsin, Jr. holds the position of <extra_id_0>.",<extra_id_0> Secretary of Foreign Affairs <extra_id_1>
+450,2019,"In 2019, <extra_id_0> is the chair of Ministry of Defence of Germany.",<extra_id_0> Annegret Kramp-Karrenbauer <extra_id_1>
+451,2019,"In 2019, Wout Brama plays for <extra_id_0>.",<extra_id_0> PEC Zwolle <extra_id_1>
+452,2019,"In 2019, Samuel Eto'o plays for <extra_id_0>.",<extra_id_0> Qatar SC <extra_id_1>
+453,2019,"In 2019, Jeffrey Mark Deskovic attended <extra_id_0>.",<extra_id_0> Pace University School of Law <extra_id_1>
+454,2019,"In 2019, <extra_id_0> is the head coach of Genoa C.F.C..",<extra_id_0> Davide Nicola <extra_id_1>
+455,2019,"In 2019, Mohammad Amir plays for <extra_id_0>.",<extra_id_0> Karachi Kings <extra_id_1>
+456,2019,"In 2019, <extra_id_0> is the chair of Post Office Ltd.",<extra_id_0> Tim Parker <extra_id_1>
+457,2019,"In 2019, Statue of Robert Milligan is owned by <extra_id_0>.",<extra_id_0> Canal & River Trust <extra_id_1>
+458,2019,"In 2019, Amy Coney Barrett holds the position of <extra_id_0>.",<extra_id_0> judge <extra_id_1>
+459,2019,"In 2019, <extra_id_0> is the head coach of FC Astana.",<extra_id_0> Roman Hryhorchuk <extra_id_1>
+460,2019,"In 2019, Jean-Martin Aussant is a member of the <extra_id_0>.",<extra_id_0> Option nationale <extra_id_1>
+461,2019,"In 2019, Rickie Lambert plays for <extra_id_0>.",<extra_id_0> West Bromwich Albion F.C. <extra_id_1>
+462,2019,"In 2019, <extra_id_0> is the head of the government of Toronto.",<extra_id_0> John Tory <extra_id_1>
+463,2019,"In 2019, <extra_id_0> is the chair of Caritas Italiana.",<extra_id_0> Francesco Montenegro <extra_id_1>
+464,2019,"In 2019, John Darley is a member of the <extra_id_0>.",<extra_id_0> Advance SA <extra_id_1>
+465,2019,"In 2019, Ewa Paluch works for <extra_id_0>.",<extra_id_0> University of Cambridge <extra_id_1>
+466,2019,"In 2019, Benjamin Fung works for <extra_id_0>.",<extra_id_0> McGill University <extra_id_1>
+467,2019,"In 2019, Corrie Moreau works for <extra_id_0>.",<extra_id_0> Cornell University <extra_id_1>
+468,2019,"In 2019, <extra_id_0> is the head coach of FC Farul Constanța.",<extra_id_0> Petre Grigoraș <extra_id_1>
+469,2019,"In 2019, Galina Timchenko works for <extra_id_0>.",<extra_id_0> Meduza <extra_id_1>
+470,2019,"In 2019, Rob Pyne is a member of the <extra_id_0>.",<extra_id_0> independent politician <extra_id_1>
+471,2019,"In 2019, <extra_id_0> is the head of the government of Key West.",<extra_id_0> Teri Johnston <extra_id_1>
+472,2019,"In 2019, Mourad Boudjellal works for <extra_id_0>.",<extra_id_0> RMC <extra_id_1>
+473,2019,"In 2019, Charlie Adam plays for <extra_id_0>.",<extra_id_0> Stoke City F.C. <extra_id_1>
+474,2019,"In 2019, Robert Gates holds the position of <extra_id_0>.",<extra_id_0> Chancellor of the College of William & Mary <extra_id_1>
+475,2019,"In 2019, Penny James works for <extra_id_0>.",<extra_id_0> Direct Line Group <extra_id_1>
+476,2019,"In 2019, Andrew Rambaut works for <extra_id_0>.",<extra_id_0> University of Edinburgh <extra_id_1>
+477,2019,"In 2019, Seán Barrett holds the position of <extra_id_0>.",<extra_id_0> Teachta Dála <extra_id_1>
+478,2019,"In 2019, Jennifer Westacott works for <extra_id_0>.",<extra_id_0> Business Council of Australia <extra_id_1>
+479,2019,"In 2019, Andrea Bargnani plays for <extra_id_0>.",<extra_id_0> Saski Baskonia <extra_id_1>
+480,2019,"In 2019, Nicolas Ghesquière works for <extra_id_0>.",<extra_id_0> Louis Vuitton <extra_id_1>
+481,2019,"In 2019, Jacinda Ardern holds the position of <extra_id_0>.",<extra_id_0> Leader of the New Zealand Labour Party <extra_id_1>
+482,2019,"In 2019, Enda Kenny holds the position of <extra_id_0>.",<extra_id_0> Teachta Dála <extra_id_1>
+483,2019,"In 2019, <extra_id_0> is the head coach of RoPS.",<extra_id_0> Toni Koskela <extra_id_1>
+484,2019,"In 2019, Anne-Marie Slaughter holds the position of <extra_id_0>.",<extra_id_0> chief executive officer <extra_id_1>
+485,2019,"In 2019, Anne-Marie Slaughter works for <extra_id_0>.",<extra_id_0> New America <extra_id_1>
+486,2019,"In 2019, National Geographic Partners is owned by <extra_id_0>.",<extra_id_0> 21st Century Fox <extra_id_1>
+487,2019,"In 2019, Andris Piebalgs holds the position of <extra_id_0>.","<extra_id_0> European Commissioner for International Cooperation, Humanitarian Aid and Crisis Response <extra_id_1>"
+488,2019,"In 2019, Vernon Davis plays for <extra_id_0>.",<extra_id_0> Denver Broncos <extra_id_1>
+489,2019,"In 2019, Numedal Line is owned by <extra_id_0>.",<extra_id_0> Bane NOR <extra_id_1>
+490,2019,"In 2019, <extra_id_0> is the head coach of PFC CSKA Moscow.",<extra_id_0> Viktor Goncharenko <extra_id_1>
+491,2019,"In 2019, Seiji Maehara is a member of the <extra_id_0>.",<extra_id_0> independent politician <extra_id_1>
+492,2019,"In 2019, Orrin Hatch holds the position of <extra_id_0>.",<extra_id_0> United States senator <extra_id_1>
+493,2019,"In 2019, James A. Robinson works for <extra_id_0>.",<extra_id_0> Harris School of Public Policy Studies <extra_id_1>
+494,2019,"In 2019, <extra_id_0> is the head coach of Bnei Sakhnin F.C..",<extra_id_0> Amir Turgeman <extra_id_1>
+495,2019,"In 2019, Filip Petrušev attended <extra_id_0>.",<extra_id_0> Gonzaga University <extra_id_1>
+496,2019,"In 2019, Dr Ranga Dias works for <extra_id_0>.",<extra_id_0> Harvard University <extra_id_1>
+497,2019,"In 2019, Rohit Sharma plays for <extra_id_0>.",<extra_id_0> Mumbai Indians <extra_id_1>
+498,2019,"In 2019, Elizabeth Truss holds the position of <extra_id_0>.",<extra_id_0> President of the Board of Trade <extra_id_1>
+499,2019,"In 2019, <extra_id_0> is the head coach of Turkey national association football team.",<extra_id_0> Şenol Güneş <extra_id_1>
+500,2019,"In 2019, <extra_id_0> is the head coach of Colorado Rapids.",<extra_id_0> Anthony Hudson <extra_id_1>
+501,2019,"In 2019, <extra_id_0> is the head coach of UTA Arad.",<extra_id_0> Ionuț Popa <extra_id_1>
+502,2019,"In 2019, <extra_id_0> is the head coach of Seinäjoen Jalkapallokerho.",<extra_id_0> Aleksey Yeryomenko <extra_id_1>
+503,2019,"In 2019, Dwayne Haskins attended <extra_id_0>.",<extra_id_0> Ohio State University <extra_id_1>
+504,2019,"In 2019, The Gainesville Sun is owned by <extra_id_0>.",<extra_id_0> Halifax Media Group <extra_id_1>
+505,2019,"In 2019, Juice Robinson works for <extra_id_0>.",<extra_id_0> New Japan Pro-Wrestling <extra_id_1>
+506,2019,"In 2019, Julian Smith holds the position of <extra_id_0>.",<extra_id_0> Parliamentary Secretary to the Treasury <extra_id_1>
+507,2019,"In 2019, Navjot Singh Sidhu holds the position of <extra_id_0>.",<extra_id_0> Member of a Legislative Assembly of India <extra_id_1>
+508,2019,"In 2019, Navjot Singh Sidhu is a member of the <extra_id_0>.",<extra_id_0> Indian National Congress <extra_id_1>
+509,2019,"In 2019, <extra_id_0> is the head of the government of Capital Region of Denmark.",<extra_id_0> Sophie Hæstorp Andersen <extra_id_1>
+510,2019,"In 2019, <extra_id_0> is the chair of PAIS Alliance.",<extra_id_0> Lenín Moreno <extra_id_1>
+511,2019,"In 2019, Gilbert Arenas plays for <extra_id_0>.",<extra_id_0> Shanghai Sharks <extra_id_1>
+512,2019,"In 2019, <extra_id_0> is the head coach of FC Rapid 1923.",<extra_id_0> Daniel Pancu <extra_id_1>
+513,2019,"In 2019, <extra_id_0> is the head coach of FC Vorskla Poltava.",<extra_id_0> Yuriy Maksymov <extra_id_1>
+514,2019,"In 2019, Simon Emil Ammitzbøll is a member of the <extra_id_0>.",<extra_id_0> Liberal Alliance <extra_id_1>
+515,2019,"In 2019, Yves Brun works for <extra_id_0>.",<extra_id_0> Université de Montréal <extra_id_1>
+516,2019,"In 2019, Shahruddin bin Md. Salleh is a member of the <extra_id_0>.",<extra_id_0> Malaysian United Indigenous Party <extra_id_1>
+517,2019,"In 2019, <extra_id_0> is the head of the government of Saxony-Anhalt.",<extra_id_0> Reiner Haseloff <extra_id_1>
+518,2019,"In 2019, <extra_id_0> is the head coach of Cowdenbeath F.C..",<extra_id_0> Gary Bollan <extra_id_1>
+519,2019,"In 2019, Christophe Steiner is a member of the <extra_id_0>.",<extra_id_0> Horizon Monaco <extra_id_1>
+520,2019,"In 2019, <extra_id_0> is the head of the government of Seoul.",<extra_id_0> Park Won-soon <extra_id_1>
+521,2019,"In 2019, <extra_id_0> is the head coach of FCU Craiova 1948.",<extra_id_0> Nicolò Napoli <extra_id_1>
+522,2019,"In 2019, Robert Barron holds the position of <extra_id_0>.",<extra_id_0> auxiliary bishop <extra_id_1>
+523,2019,"In 2019, Bernie Sanders is a member of the <extra_id_0>.",<extra_id_0> independent politician <extra_id_1>
+524,2019,"In 2019, <extra_id_0> is the chair of Indian National Congress.",<extra_id_0> Sonia Gandhi <extra_id_1>
+525,2019,"In 2019, Thierry Breton holds the position of <extra_id_0>.",<extra_id_0> European Commissioner for Internal Market and Services <extra_id_1>
+526,2019,"In 2019, <extra_id_0> is the head of the government of Altai Republic.",<extra_id_0> Oleg Khorokhordin <extra_id_1>
+527,2019,"In 2019, Bella Alarie attended <extra_id_0>.",<extra_id_0> Princeton University <extra_id_1>
+528,2019,"In 2019, Alan Smith plays for <extra_id_0>.",<extra_id_0> Notts County F.C. <extra_id_1>
+529,2019,"In 2019, <extra_id_0> is the chair of FDP.The Liberals.",<extra_id_0> Petra Gössi <extra_id_1>
+530,2019,"In 2019, <extra_id_0> is the head coach of FC Zhetysu.",<extra_id_0> Dmitriy Ogai <extra_id_1>
+531,2019,"In 2019, David W. Kissane works for <extra_id_0>.",<extra_id_0> University of Notre Dame Australia <extra_id_1>
+532,2019,"In 2019, Jordan Henderson plays for <extra_id_0>.",<extra_id_0> England national association football team <extra_id_1>
+533,2019,"In 2019, Lucas Biglia plays for <extra_id_0>.",<extra_id_0> Associazione Calcio Milan <extra_id_1>
+534,2019,"In 2019, Ivan Štefanec is a member of the <extra_id_0>.",<extra_id_0> Christian Democratic Movement <extra_id_1>
+535,2019,"In 2019, Sara Ganim works for <extra_id_0>.",<extra_id_0> CNN <extra_id_1>
+536,2019,"In 2019, Dominique Kalifa works for <extra_id_0>.",<extra_id_0> University of Paris 1 Pantheon-Sorbonne <extra_id_1>
+537,2019,"In 2019, Anna van der Breggen plays for <extra_id_0>.",<extra_id_0> Boels Dolmans Cycling Team <extra_id_1>
+538,2019,"In 2019, <extra_id_0> is the head of the government of Odder Municipality.",<extra_id_0> Uffe Jensen <extra_id_1>
+539,2019,"In 2019, Christina Warinner works for <extra_id_0>.",<extra_id_0> University of Oklahoma <extra_id_1>
+540,2019,"In 2019, Fideo Di María plays for <extra_id_0>.",<extra_id_0> Paris Saint-Germain <extra_id_1>
+541,2019,"In 2019, <extra_id_0> is the chair of SWPS University of Social Sciences and Humanities.",<extra_id_0> Roman Cieślak <extra_id_1>
+542,2019,"In 2019, José Évrard is a member of the <extra_id_0>.",<extra_id_0> The Patriots <extra_id_1>
+543,2019,"In 2019, <extra_id_0> is the chair of Polish People's Party.",<extra_id_0> Władysław Kosiniak-Kamysz <extra_id_1>
+544,2019,"In 2019, Tim Kaine holds the position of <extra_id_0>.",<extra_id_0> United States senator <extra_id_1>
+545,2019,"In 2019, Drew McDonald attended <extra_id_0>.",<extra_id_0> Northern Kentucky University <extra_id_1>
+546,2019,"In 2019, Scott Laird plays for <extra_id_0>.",<extra_id_0> Scunthorpe United F.C. <extra_id_1>
+547,2019,"In 2019, Caitlin Rivers works for <extra_id_0>.",<extra_id_0> Johns Hopkins Center for Health Security <extra_id_1>
+548,2019,"In 2019, Keiko Torii works for <extra_id_0>.",<extra_id_0> University of Texas at Austin <extra_id_1>
+549,2019,"In 2019, Ken Murphy works for <extra_id_0>.",<extra_id_0> Walgreens Boots Alliance <extra_id_1>
+550,2019,"In 2019, Keith Brown holds the position of <extra_id_0>.","<extra_id_0> Cabinet Secretary for Economy, Jobs and Fair Work <extra_id_1>"
+551,2019,"In 2019, <extra_id_0> is the chair of Christian Democratic Union.",<extra_id_0> Annegret Kramp-Karrenbauer <extra_id_1>
+552,2019,"In 2019, <extra_id_0> is the head coach of Delfino Pescara 1936.",<extra_id_0> Giuseppe Pillon <extra_id_1>
+553,2019,"In 2019, <extra_id_0> is the head coach of S.S. Lazio.",<extra_id_0> Simone Inzaghi <extra_id_1>
+554,2019,"In 2019, Brittney Griner plays for <extra_id_0>.",<extra_id_0> Phoenix Mercury <extra_id_1>
+555,2019,"In 2019, Michael Woodley works for <extra_id_0>.",<extra_id_0> Vrije Universiteit Brussel <extra_id_1>
+556,2019,"In 2019, Marcel Ciolacu holds the position of <extra_id_0>.",<extra_id_0> President of the Chamber of Deputies of Romania <extra_id_1>
+557,2019,"In 2019, Lynika Strozier works for <extra_id_0>.",<extra_id_0> Field Museum of Natural History <extra_id_1>
+558,2019,"In 2019, Tom Kennedy plays for <extra_id_0>.",<extra_id_0> Rochdale A.F.C. <extra_id_1>
+559,2019,"In 2019, Frances Fitzgerald holds the position of <extra_id_0>.",<extra_id_0> Teachta Dála <extra_id_1>
+560,2019,"In 2019, Jiří Pospíšil is a member of the <extra_id_0>.",<extra_id_0> TOP 09 <extra_id_1>
+561,2019,"In 2019, Farida Kabir works for <extra_id_0>.",<extra_id_0> Department for International Development <extra_id_1>
+562,2019,"In 2019, Farida Kabir attended <extra_id_0>.",<extra_id_0> International Finance Corporation <extra_id_1>
+563,2019,"In 2019, Nedum Onuoha plays for <extra_id_0>.",<extra_id_0> Queens Park Rangers F.C. <extra_id_1>
+564,2019,"In 2019, Kalidou Koulibaly plays for <extra_id_0>.",<extra_id_0> S.S.C. Napoli <extra_id_1>
+565,2019,"In 2019, WKVB is owned by <extra_id_0>.",<extra_id_0> Entercom <extra_id_1>
+566,2019,"In 2019, <extra_id_0> is the head of the government of Jewish Autonomous Oblast.",<extra_id_0> Alexander Levintal <extra_id_1>
+567,2019,"In 2019, <extra_id_0> is the chair of Massachusetts Institute of Technology.",<extra_id_0> L. Rafael Reif <extra_id_1>
+568,2019,"In 2019, Piyush Goyal holds the position of <extra_id_0>.",<extra_id_0> Minister of Coal <extra_id_1>
+569,2019,"In 2019, Joy Koesten is a member of the <extra_id_0>.",<extra_id_0> Democratic Party <extra_id_1>
+570,2019,"In 2019, <extra_id_0> is the head coach of F.K. Željezničar Sarajevo.",<extra_id_0> Amar Osim <extra_id_1>
+571,2019,"In 2019, <extra_id_0> is the head of the government of Baltimore.",<extra_id_0> Catherine E. Pugh <extra_id_1>
+572,2019,"In 2019, Matthew Trundle works for <extra_id_0>.",<extra_id_0> University of Auckland <extra_id_1>
+573,2019,"In 2019, <extra_id_0> is the head coach of Lechia Gdańsk.",<extra_id_0> Piotr Stokowiec <extra_id_1>
+574,2019,"In 2019, Mark Hurd works for <extra_id_0>.",<extra_id_0> Oracle Corporation <extra_id_1>
+575,2019,"In 2019, Chase F. Robinson works for <extra_id_0>.",<extra_id_0> Freer Gallery of Art <extra_id_1>
+576,2019,"In 2019, <extra_id_0> is the chair of European Border and Coast Guard Agency.",<extra_id_0> Fabrice Leggeri <extra_id_1>
+577,2019,"In 2019, N'Golo Kanté plays for <extra_id_0>.",<extra_id_0> France national association football team <extra_id_1>
+578,2019,"In 2019, <extra_id_0> is the chair of French Football Federation.",<extra_id_0> Noël Le Graët <extra_id_1>
+579,2019,"In 2019, Joe Root plays for <extra_id_0>.",<extra_id_0> Sydney Thunder <extra_id_1>
+580,2019,"In 2019, <extra_id_0> is the head coach of Djurgårdens IF.",<extra_id_0> Kim Bergstrand <extra_id_1>
+581,2019,"In 2019, Greg Woolf works for <extra_id_0>.",<extra_id_0> Institute of Classical Studies <extra_id_1>
+582,2019,"In 2019, Jérôme Boateng plays for <extra_id_0>.",<extra_id_0> FC Bayern Munich <extra_id_1>
+583,2019,"In 2019, Craig Reid plays for <extra_id_0>.",<extra_id_0> Brentwood Town F.C. <extra_id_1>
+584,2019,"In 2019, <extra_id_0> is the head of the government of Brazil.",<extra_id_0> Jair Bolsonaro <extra_id_1>
+585,2019,"In 2019, USNS Arrowhead is owned by <extra_id_0>.",<extra_id_0> United States Navy <extra_id_1>
+586,2019,"In 2019, Lappeenranta Airport is owned by <extra_id_0>.",<extra_id_0> Lappeenranta <extra_id_1>
+587,2019,"In 2019, Justin Amash is a member of the <extra_id_0>.",<extra_id_0> Republican Party <extra_id_1>
+588,2019,"In 2019, <extra_id_0> is the head of the government of Guangdong.",<extra_id_0> Ma Xingrui <extra_id_1>
+589,2019,"In 2019, Branislav Ivanović plays for <extra_id_0>.",<extra_id_0> FC Zenit Saint Petersburg <extra_id_1>
+590,2019,"In 2019, Marcela Aguiñaga is a member of the <extra_id_0>.",<extra_id_0> Citizen Revolution <extra_id_1>
+591,2019,"In 2019, <extra_id_0> is the chair of RCD Mallorca.",<extra_id_0> Andy Kohlberg <extra_id_1>
+592,2019,"In 2019, Valtteri Bottas plays for <extra_id_0>.",<extra_id_0> Mercedes <extra_id_1>
+593,2019,"In 2019, Sölvi Ottesen plays for <extra_id_0>.",<extra_id_0> Wuhan Zall F.C. <extra_id_1>
+594,2019,"In 2019, Galit Shmueli works for <extra_id_0>.",<extra_id_0> National Tsing Hua University <extra_id_1>
+595,2019,"In 2019, Adam Lallana plays for <extra_id_0>.",<extra_id_0> Liverpool F.C. <extra_id_1>
+596,2019,"In 2019, <extra_id_0> is the head coach of Helsingin Jalkapalloklubi.",<extra_id_0> Toni Koskela <extra_id_1>
+597,2019,"In 2019, Vincent Kompany plays for <extra_id_0>.",<extra_id_0> R.S.C. Anderlecht <extra_id_1>
+598,2019,"In 2019, <extra_id_0> is the head of the government of Saint Petersburg.",<extra_id_0> Alexander Beglov <extra_id_1>
+599,2019,"In 2019, Chris Dercon works for <extra_id_0>.",<extra_id_0> Tate Modern <extra_id_1>
+600,2019,"In 2019, <extra_id_0> is the head coach of FK Žalgiris Vilnius.",<extra_id_0> João Luís Martins <extra_id_1>
+601,2019,"In 2019, Darius Bogdan Vâlcov is a member of the <extra_id_0>.",<extra_id_0> Social Democratic Party <extra_id_1>
+602,2019,"In 2019, <extra_id_0> is the chair of Airbus Group.",<extra_id_0> Denis Ranque <extra_id_1>
+603,2019,"In 2019, <extra_id_0> is the head coach of Palermo FC.",<extra_id_0> Rosario Pergolizzi <extra_id_1>
+604,2019,"In 2019, DiDi Richards attended <extra_id_0>.",<extra_id_0> Baylor University <extra_id_1>
+605,2019,"In 2019, Vidya Arankalle works for <extra_id_0>.",<extra_id_0> Agharkar Research Institute <extra_id_1>
+606,2019,"In 2019, Remo Sernagiotto is a member of the <extra_id_0>.",<extra_id_0> European Conservatives and Reformists <extra_id_1>
+607,2019,"In 2019, <extra_id_0> is the head of the government of Chaco Province.",<extra_id_0> Domingo Peppo <extra_id_1>
+608,2019,"In 2019, <extra_id_0> is the head coach of FC Neman Grodno.",<extra_id_0> Igor Kovalevich <extra_id_1>
+609,2019,"In 2019, <extra_id_0> is the head of the government of People's Republic of China.",<extra_id_0> Li Keqiang <extra_id_1>
+610,2019,"In 2019, <extra_id_0> is the chair of Jamiat Ahle Hadith.",<extra_id_0> Sajid Mir <extra_id_1>
+611,2019,"In 2019, <extra_id_0> is the head coach of FC Okzhetpes.",<extra_id_0> Andrei Karpovich <extra_id_1>
+612,2019,"In 2019, Salvador Sánchez Cerén holds the position of <extra_id_0>.",<extra_id_0> President of El Salvador <extra_id_1>
+613,2019,"In 2019, Franziska Brantner holds the position of <extra_id_0>.",<extra_id_0> Chief Whip <extra_id_1>
+614,2019,"In 2019, Eamon Ryan holds the position of <extra_id_0>.",<extra_id_0> party leader <extra_id_1>
+615,2019,"In 2019, Matteo Renzi is a member of the <extra_id_0>.",<extra_id_0> Democratic Party <extra_id_1>
+616,2019,"In 2019, <extra_id_0> is the head of the government of Burkina Faso.",<extra_id_0> Paul Kaba Thieba <extra_id_1>
+617,2019,"In 2019, Katharine A Michie works for <extra_id_0>.",<extra_id_0> University of New South Wales <extra_id_1>
+618,2019,"In 2019, <extra_id_0> is the head of the government of Perm Krai.",<extra_id_0> Maxim Reshetnikov <extra_id_1>
+619,2019,"In 2019, Heiko Maas holds the position of <extra_id_0>.",<extra_id_0> Federal Minister for Foreign Affairs <extra_id_1>
+620,2019,"In 2019, <extra_id_0> is the chair of Norwegian Parliamentary Intelligence Oversight Committee.",<extra_id_0> Eldbjørg Løwer <extra_id_1>
+621,2019,"In 2019, Michael Bach works for <extra_id_0>.",<extra_id_0> University Medical Center Freiburg <extra_id_1>
+622,2019,"In 2019, <extra_id_0> is the head coach of Blackburn Rovers F.C..",<extra_id_0> Tony Mowbray <extra_id_1>
+623,2019,"In 2019, Katherine Zappone holds the position of <extra_id_0>.",<extra_id_0> Teachta Dála <extra_id_1>
+624,2019,"In 2019, Eskil Brøndbo is a member of the <extra_id_0>.",<extra_id_0> Conservative Party of Norway <extra_id_1>
+625,2019,"In 2019, Abdrabbuh Mansour Hadi holds the position of <extra_id_0>.",<extra_id_0> President of Yemenمهدي محمد المشاط <extra_id_1>
+626,2019,"In 2019, <extra_id_0> is the head coach of A.C. Perugia Calcio.",<extra_id_0> Alessandro Nesta <extra_id_1>
+627,2019,"In 2019, Roger Holeindre is a member of the <extra_id_0>.",<extra_id_0> Party of France <extra_id_1>
+628,2019,"In 2019, Maisons du Monde is owned by <extra_id_0>.",<extra_id_0> Bain Capital <extra_id_1>
+629,2019,"In 2019, <extra_id_0> is the chair of Volga Federal District.",<extra_id_0> Igor Komarov <extra_id_1>
+630,2019,"In 2019, Abba Gumel works for <extra_id_0>.",<extra_id_0> Arizona State University <extra_id_1>
+631,2019,"In 2019, Pamela Russell works for <extra_id_0>.",<extra_id_0> The University of Queensland <extra_id_1>
+632,2019,"In 2019, <extra_id_0> is the head coach of Bursaspor.",<extra_id_0> Mesut Bakkal <extra_id_1>
+633,2019,"In 2019, Péter Polt works for <extra_id_0>.",<extra_id_0> National University of Public Service <extra_id_1>
+634,2019,"In 2019, Mike Pence holds the position of <extra_id_0>.",<extra_id_0> Vice President of the United States <extra_id_1>
+635,2019,"In 2019, <extra_id_0> is the chair of Anti-Defamation League.",<extra_id_0> Jonathan Greenblatt <extra_id_1>
+636,2019,"In 2019, <extra_id_0> is the chair of Likud Central Committee.",<extra_id_0> Haim Katz <extra_id_1>
+637,2019,"In 2019, <extra_id_0> is the chair of Mossad.",<extra_id_0> Yossi Cohen <extra_id_1>
+638,2019,"In 2019, <extra_id_0> is the head coach of FC Botoșani.",<extra_id_0> Marius Croitoru <extra_id_1>
+639,2019,"In 2019, <extra_id_0> is the head coach of FK Csíkszereda.",<extra_id_0> Valentin Suciu <extra_id_1>
+640,2019,"In 2019, <extra_id_0> is the head coach of Hull City A.F.C..",<extra_id_0> Nigel Adkins <extra_id_1>
+641,2019,"In 2019, <extra_id_0> is the head of the government of Toulouse.",<extra_id_0> Jean-Luc Moudenc <extra_id_1>
+642,2019,"In 2019, Juan Orlando Hernández holds the position of <extra_id_0>.",<extra_id_0> President of Honduras <extra_id_1>
+643,2019,"In 2019, <extra_id_0> is the chair of Royal Spanish Football Federation.",<extra_id_0> Luis Rubiales <extra_id_1>
+644,2019,"In 2019, <extra_id_0> is the head of the government of Senegal.",<extra_id_0> Macky Sall <extra_id_1>
+645,2019,"In 2019, Michelle Lujan Grisham holds the position of <extra_id_0>.",<extra_id_0> United States representative <extra_id_1>
+646,2019,"In 2019, John Hoeven holds the position of <extra_id_0>.",<extra_id_0> United States senator <extra_id_1>
+647,2019,"In 2019, <extra_id_0> is the chair of Politics Can Be Different.",<extra_id_0> Erzsébet Schmuck <extra_id_1>
+648,2019,"In 2019, Luna is owned by <extra_id_0>.",<extra_id_0> Farkhad Akhmedov <extra_id_1>
+649,2019,"In 2019, <extra_id_0> is the head of the government of Mainz.",<extra_id_0> Michael Ebling <extra_id_1>
+650,2019,"In 2019, Kristin Michelsen is a member of the <extra_id_0>.",<extra_id_0> Social Democratic Party of the Faroe Islands <extra_id_1>
+651,2019,"In 2019, Àngels Martínez Castells is a member of the <extra_id_0>.",<extra_id_0> Som Alternativa <extra_id_1>
+652,2019,"In 2019, <extra_id_0> is the chair of PEN America.",<extra_id_0> Jennifer Egan <extra_id_1>
+653,2019,"In 2019, Søren Wichmann works for <extra_id_0>.",<extra_id_0> Kazan Federal University <extra_id_1>
+654,2019,"In 2019, Oliver Günther works for <extra_id_0>.",<extra_id_0> University of Potsdam <extra_id_1>
+655,2019,"In 2019, Liêm Hoang-Ngoc is a member of the <extra_id_0>.",<extra_id_0> Unsubmissive France <extra_id_1>
+656,2019,"In 2019, Rachel Croson works for <extra_id_0>.",<extra_id_0> Michigan State University <extra_id_1>
+657,2019,"In 2019, <extra_id_0> is the chair of Delta Air Lines.",<extra_id_0> Frank Blake <extra_id_1>
+658,2019,"In 2019, <extra_id_0> is the head coach of MŠK Žilina.",<extra_id_0> Jaroslav Kentoš <extra_id_1>
+659,2019,"In 2019, Ruth Simmons works for <extra_id_0>.",<extra_id_0> Prairie View A&M University <extra_id_1>
+660,2019,"In 2019, Diego Biseswar plays for <extra_id_0>.",<extra_id_0> Kayserispor <extra_id_1>
+661,2019,"In 2019, Karin Baur works for <extra_id_0>.",<extra_id_0> University of Graz <extra_id_1>
+662,2019,"In 2019, Vitaliy Klitschko holds the position of <extra_id_0>.",<extra_id_0> Mayor of Kyiv <extra_id_1>
+663,2019,"In 2019, <extra_id_0> is the head coach of FK Partizan.",<extra_id_0> Savo Milošević <extra_id_1>
+664,2019,"In 2019, Ben Stokes plays for <extra_id_0>.",<extra_id_0> Rajasthan Royals <extra_id_1>
+665,2019,"In 2019, Shuli Mualem is a member of the <extra_id_0>.",<extra_id_0> New Right <extra_id_1>
+666,2019,"In 2019, Evgeny Konnov attended <extra_id_0>.",<extra_id_0> Leopold Mozart Centre <extra_id_1>
+667,2019,"In 2019, <extra_id_0> is the head coach of Western Bulldogs.",<extra_id_0> Luke Beveridge <extra_id_1>
+668,2019,"In 2019, Caroline Spelman holds the position of <extra_id_0>.",<extra_id_0> Church Estates Commissioners <extra_id_1>
+669,2019,"In 2019, J. J. Redick plays for <extra_id_0>.",<extra_id_0> Philadelphia 76ers <extra_id_1>
+670,2019,"In 2019, <extra_id_0> is the chair of Ministry of SMEs and Startups.",<extra_id_0> Park Young-sun <extra_id_1>
+671,2019,"In 2019, Michael Noonan holds the position of <extra_id_0>.",<extra_id_0> Teachta Dála <extra_id_1>
+672,2019,"In 2019, Franck Ferrand works for <extra_id_0>.",<extra_id_0> Radio Classique <extra_id_1>
+673,2019,"In 2019, Mihalj Kertes is a member of the <extra_id_0>.",<extra_id_0> Serbian Progressive Party <extra_id_1>
+674,2019,"In 2019, Computer Weekly is owned by <extra_id_0>.",<extra_id_0> TechTarget <extra_id_1>
+675,2019,"In 2019, Antony John Williams works for <extra_id_0>.",<extra_id_0> United States Environmental Protection Agency <extra_id_1>
+676,2019,"In 2019, Guy Bailey works for <extra_id_0>.",<extra_id_0> University of Texas Rio Grande Valley <extra_id_1>
+677,2019,"In 2019, Enrico dal Covolo holds the position of <extra_id_0>.",<extra_id_0> titular bishop <extra_id_1>
+678,2019,"In 2019, Alexia Petsalis-Diomidis works for <extra_id_0>.",<extra_id_0> University of St Andrews <extra_id_1>
+679,2019,"In 2019, <extra_id_0> is the head coach of S.K. Sturm Graz.",<extra_id_0> Nestor El Maestro <extra_id_1>
+680,2019,"In 2019, Hsu Hsin-ying is a member of the <extra_id_0>.",<extra_id_0> Congress Party Alliance <extra_id_1>
+681,2019,"In 2019, Kym Anderson works for <extra_id_0>.",<extra_id_0> Australian National University <extra_id_1>
+682,2019,"In 2019, Michael Atwood Mason works for <extra_id_0>.",<extra_id_0> Smithsonian Center for Folklife and Cultural Heritage <extra_id_1>
+683,2019,"In 2019, Linda Sánchez holds the position of <extra_id_0>.",<extra_id_0> Democratic Caucus Vice Chairman of the United States House of Representatives <extra_id_1>
+684,2019,"In 2019, Yasiel Puig plays for <extra_id_0>.",<extra_id_0> Cincinnati Reds <extra_id_1>
+685,2019,"In 2019, Scott Andrews is a member of the <extra_id_0>.",<extra_id_0> independent politician <extra_id_1>
+686,2019,"In 2019, <extra_id_0> is the head coach of AC Omonia.",<extra_id_0> Yannis Anastasiou <extra_id_1>
+687,2019,"In 2019, ADV Ocean Shield is owned by <extra_id_0>.",<extra_id_0> Australian Border Force <extra_id_1>
+688,2019,"In 2019, GameRankings is owned by <extra_id_0>.",<extra_id_0> Metacritic <extra_id_1>
+689,2019,"In 2019, <extra_id_0> is the head coach of Çaykur Rizespor.",<extra_id_0> Okan Buruk <extra_id_1>
+690,2019,"In 2019, <extra_id_0> is the head coach of Rubin Kazan.",<extra_id_0> Leonid Slutsky <extra_id_1>
+691,2019,"In 2019, <extra_id_0> is the head of the government of Montpellier Méditerranée Métropole.",<extra_id_0> Philippe Saurel <extra_id_1>
+692,2019,"In 2019, <extra_id_0> is the chair of KDU-ČSL.",<extra_id_0> Pavel Bělobrádek <extra_id_1>
+693,2019,"In 2019, Arne H. Krumsvik works for <extra_id_0>.",<extra_id_0> University of Oslo <extra_id_1>
+694,2019,"In 2019, Dacian Cioloș holds the position of <extra_id_0>.",<extra_id_0> member of the European Parliament <extra_id_1>
+695,2019,"In 2019, Stewart Downing plays for <extra_id_0>.",<extra_id_0> Middlesbrough F.C. <extra_id_1>
+696,2019,"In 2019, Don Beyer holds the position of <extra_id_0>.",<extra_id_0> United States representative <extra_id_1>
+697,2019,"In 2019, Daniel Kráľ works for <extra_id_0>.",<extra_id_0> Masaryk University <extra_id_1>
+698,2019,"In 2019, Sarafina Nance works for <extra_id_0>.","<extra_id_0> University of California, Berkeley <extra_id_1>"
+699,2019,"In 2019, Sarafina Nance attended <extra_id_0>.","<extra_id_0> University of California, Berkeley <extra_id_1>"
+700,2019,"In 2019, Syed Saddiq Abdul Rahman is a member of the <extra_id_0>.",<extra_id_0> Malaysian United Indigenous Party <extra_id_1>
+701,2019,"In 2019, Beauden Barrett plays for <extra_id_0>.",<extra_id_0> Hurricanes <extra_id_1>
+702,2019,"In 2019, <extra_id_0> is the chair of Embassy of Ukraine, Tallinn.",<extra_id_0> Mariana Betsa <extra_id_1>
+703,2019,"In 2019, Anthony Grant plays for <extra_id_0>.",<extra_id_0> Port Vale F.C. <extra_id_1>
+704,2019,"In 2019, WOSX is owned by <extra_id_0>.",<extra_id_0> Denison University <extra_id_1>
+705,2019,"In 2019, Áron Szilágyi attended <extra_id_0>.",<extra_id_0> Eötvös Loránd University <extra_id_1>
+706,2019,"In 2019, Nicola Fratoianni is a member of the <extra_id_0>.",<extra_id_0> Sinistra Italiana <extra_id_1>
+707,2019,"In 2019, Jennifer MacLean works for <extra_id_0>.",<extra_id_0> International Game Developers Association <extra_id_1>
+708,2019,"In 2019, Vouga railway line is owned by <extra_id_0>.",<extra_id_0> Infrastructures of Portugal <extra_id_1>
+709,2019,"In 2019, Silvio Berlusconi holds the position of <extra_id_0>.",<extra_id_0> member of the European Parliament <extra_id_1>
+710,2019,"In 2019, Silvio Berlusconi is a member of the <extra_id_0>.",<extra_id_0> Forza Italia (2013) <extra_id_1>
+711,2019,"In 2019, <extra_id_0> is the head coach of PFC Lokomotiv Plovdiv.",<extra_id_0> Bruno Akrapović <extra_id_1>
+712,2019,"In 2019, Kaspars Gerhards is a member of the <extra_id_0>.",<extra_id_0> National Alliance <extra_id_1>
+713,2019,"In 2019, Nunzio Galantino holds the position of <extra_id_0>.",<extra_id_0> Catholic bishop <extra_id_1>
+714,2019,"In 2019, Jina Osothsilp works for <extra_id_0>.",<extra_id_0> GDH 559 <extra_id_1>
+715,2019,"In 2019, <extra_id_0> is the head of the government of State of Palestine.",<extra_id_0> Mohammad Shtayyeh <extra_id_1>
+716,2019,"In 2019, Kathleen Rice holds the position of <extra_id_0>.",<extra_id_0> United States representative <extra_id_1>
+717,2019,"In 2019, Ko Wen-je holds the position of <extra_id_0>.",<extra_id_0> party leader <extra_id_1>
+718,2019,"In 2019, Ko Wen-je is a member of the <extra_id_0>.",<extra_id_0> independent politician <extra_id_1>
+719,2019,"In 2019, <extra_id_0> is the head coach of Borussia Dortmund.",<extra_id_0> Lucien Favre <extra_id_1>
+720,2019,"In 2019, Ana Pombo works for <extra_id_0>.",<extra_id_0> Humboldt University of Berlin <extra_id_1>
+721,2019,"In 2019, <extra_id_0> is the head of the government of Province of Buenos Aires.",<extra_id_0> María Eugenia Vidal <extra_id_1>
+722,2019,"In 2019, Kyrsten Sinema holds the position of <extra_id_0>.",<extra_id_0> United States senator <extra_id_1>
+723,2019,"In 2019, Tonny Vilhena plays for <extra_id_0>.",<extra_id_0> Netherlands national under-21 football team <extra_id_1>
+724,2019,"In 2019, Lieven Scheire works for <extra_id_0>.",<extra_id_0> Flemish Radio and Television Broadcasting Organization <extra_id_1>
+725,2019,"In 2019, <extra_id_0> is the head of the government of Memphis.",<extra_id_0> Jim Strickland <extra_id_1>
+726,2019,"In 2019, Robert C. O'Brien holds the position of <extra_id_0>.",<extra_id_0> Special Envoy for Hostage Affairs <extra_id_1>
+727,2019,"In 2019, <extra_id_0> is the head coach of Astana City.",<extra_id_0> Bolat Raimbekov <extra_id_1>
+728,2019,"In 2019, <extra_id_0> is the head coach of PSV Eindhoven.",<extra_id_0> Mark van Bommel <extra_id_1>
+729,2019,"In 2019, Piero Aiello is a member of the <extra_id_0>.",<extra_id_0> New Centre-Right <extra_id_1>
+730,2019,"In 2019, <extra_id_0> is the head coach of NSÍ Runavík.",<extra_id_0> Guðjón Þórðarson <extra_id_1>
+731,2019,"In 2019, Massimo Zedda is a member of the <extra_id_0>.",<extra_id_0> Progressive Area <extra_id_1>
+732,2019,"In 2019, Patricia Harris works for <extra_id_0>.",<extra_id_0> Bloomberg Philanthropies <extra_id_1>
+733,2019,"In 2019, <extra_id_0> is the head coach of Szombathelyi Haladás.",<extra_id_0> János Mátyus <extra_id_1>
+734,2019,"In 2019, Peter J. Wagner works for <extra_id_0>.",<extra_id_0> University of Nebraska–Lincoln <extra_id_1>
+735,2019,"In 2019, <extra_id_0> is the head coach of GNK Dinamo Zagreb.",<extra_id_0> Nenad Bjelica <extra_id_1>
+736,2019,"In 2019, Jared Kushner holds the position of <extra_id_0>.",<extra_id_0> Office of American Innovation <extra_id_1>
+737,2019,"In 2019, <extra_id_0> is the head coach of Brentford F.C..",<extra_id_0> Thomas Frank <extra_id_1>
+738,2019,"In 2019, José Antonio Carrillo works for <extra_id_0>.",<extra_id_0> Imperial College London <extra_id_1>
+739,2019,"In 2019, <extra_id_0> is the head coach of Philadelphia Eagles.",<extra_id_0> Doug Pederson <extra_id_1>
+740,2019,"In 2019, <extra_id_0> is the head of the government of Bavaria.",<extra_id_0> Markus Söder <extra_id_1>
+741,2019,"In 2019, Diane Holl works for <extra_id_0>.",<extra_id_0> Hendrick Motorsports <extra_id_1>
+742,2019,"In 2019, <extra_id_0> is the head coach of Tampa Bay Rowdies.",<extra_id_0> Neill Collins <extra_id_1>
+743,2019,"In 2019, <extra_id_0> is the head coach of NK Celje.",<extra_id_0> Dušan Kosič <extra_id_1>
+744,2019,"In 2019, <extra_id_0> is the head of the government of New Jersey.",<extra_id_0> Phil Murphy <extra_id_1>
+745,2019,"In 2019, Wilson Lima is a member of the <extra_id_0>.",<extra_id_0> Social Christian Party <extra_id_1>
+746,2019,"In 2019, <extra_id_0> is the head coach of Kilmarnock F.C..",<extra_id_0> Alex Dyer <extra_id_1>
+747,2019,"In 2019, Carrie Lam holds the position of <extra_id_0>.",<extra_id_0> Chief Executive of Hong Kong <extra_id_1>
+748,2019,"In 2019, Hamdi Salihi plays for <extra_id_0>.",<extra_id_0> SC Wiener Neustadt <extra_id_1>
+749,2019,"In 2019, Raheem Sterling plays for <extra_id_0>.",<extra_id_0> Manchester City F.C. <extra_id_1>
+750,2019,"In 2019, <extra_id_0> is the chair of National Development and Reform Commission.",<extra_id_0> He Lifeng <extra_id_1>
+751,2019,"In 2019, Ernest Benach i Pascual works for <extra_id_0>.",<extra_id_0> University of Lleida <extra_id_1>
+752,2019,"In 2019, János Volner is a member of the <extra_id_0>.",<extra_id_0> Our Homeland Movement <extra_id_1>
+753,2019,"In 2019, <extra_id_0> is the head of the government of Sector 5.",<extra_id_0> Daniel Florea <extra_id_1>
+754,2019,"In 2019, Tele2 Russia is owned by <extra_id_0>.",<extra_id_0> Rostelecom <extra_id_1>
+755,2019,"In 2019, Mark Rober works for <extra_id_0>.",<extra_id_0> Apple Inc. <extra_id_1>
+756,2019,"In 2019, Giuseppe Civati is a member of the <extra_id_0>.",<extra_id_0> Possible <extra_id_1>
+757,2019,"In 2019, Kristalina Georgieva holds the position of <extra_id_0>.",<extra_id_0> chief executive officer <extra_id_1>
+758,2019,"In 2019, <extra_id_0> is the head of the government of Amsterdam.",<extra_id_0> Femke Halsema <extra_id_1>
+759,2019,"In 2019, <extra_id_0> is the head of the government of Amsterdam.",<extra_id_0> Femke Halsema <extra_id_1>
+760,2019,"In 2019, Jonathan Mensah plays for <extra_id_0>.",<extra_id_0> FC Anzhi Makhachkala <extra_id_1>
+761,2019,"In 2019, Joseph Daul holds the position of <extra_id_0>.",<extra_id_0> chairperson <extra_id_1>
+762,2019,"In 2019, Migen Memelli plays for <extra_id_0>.",<extra_id_0> KS Kastrioti <extra_id_1>
+763,2019,"In 2019, <extra_id_0> is the head of the government of Cebu.",<extra_id_0> Hilario Davide III <extra_id_1>
+764,2019,"In 2019, Ulrike Guérot works for <extra_id_0>.",<extra_id_0> Danube University Krems <extra_id_1>
+765,2019,"In 2019, <extra_id_0> is the chair of Roman Catholic Archdiocese of Kingston.",<extra_id_0> Michael Mulhall <extra_id_1>
+766,2019,"In 2019, Rathika Sitsabaiesan is a member of the <extra_id_0>.",<extra_id_0> Ontario Liberal Party <extra_id_1>
+767,2019,"In 2019, Hugo Barra works for <extra_id_0>.","<extra_id_0> Facebook, Inc. <extra_id_1>"
+768,2019,"In 2019, Clotilde Armand holds the position of <extra_id_0>.",<extra_id_0> member of the European Parliament <extra_id_1>
+769,2019,"In 2019, <extra_id_0> is the head of the government of Austria.",<extra_id_0> Hartwig Löger <extra_id_1>
+770,2019,"In 2019, Mike Nahan holds the position of <extra_id_0>.",<extra_id_0> Leader of the Opposition <extra_id_1>
+771,2019,"In 2019, Moeen Ali plays for <extra_id_0>.",<extra_id_0> Royal Challengers Bangalore <extra_id_1>
+772,2019,"In 2019, <extra_id_0> is the head coach of Örebro SK.",<extra_id_0> Axel Kjäll <extra_id_1>
+773,2019,"In 2019, Sönke Neitzel works for <extra_id_0>.",<extra_id_0> University of Potsdam <extra_id_1>
+774,2019,"In 2019, Yehoshua Menachem Pollack is a member of the <extra_id_0>.",<extra_id_0> Bnei Torah <extra_id_1>
+775,2019,"In 2019, Giorgia Meloni is a member of the <extra_id_0>.",<extra_id_0> Brothers of Italy <extra_id_1>
+776,2019,"In 2019, Danville Register & Bee is owned by <extra_id_0>.",<extra_id_0> Berkshire Hathaway <extra_id_1>
+777,2019,"In 2019, Virginia Barbour works for <extra_id_0>.",<extra_id_0> Queensland University of Technology <extra_id_1>
+778,2019,"In 2019, <extra_id_0> is the head coach of Clube de Regatas do Flamengo.",<extra_id_0> Jorge Jesus <extra_id_1>
+779,2019,"In 2019, <extra_id_0> is the head coach of Fremantle Football Club.",<extra_id_0> Justin Longmuir <extra_id_1>
+780,2019,"In 2019, <extra_id_0> is the head of the government of Batangas.",<extra_id_0> Hermilando Mandanas <extra_id_1>
+781,2019,"In 2019, Mònica Terribas works for <extra_id_0>.",<extra_id_0> Catalunya Ràdio <extra_id_1>
+782,2019,"In 2019, Sarah Zerbes works for <extra_id_0>.",<extra_id_0> University College London <extra_id_1>
+783,2019,"In 2019, <extra_id_0> is the head of the government of Basse-Terre.",<extra_id_0> Marie-Luce Penchard <extra_id_1>
+784,2019,"In 2019, <extra_id_0> is the head coach of Fulham F.C..",<extra_id_0> Scott Parker <extra_id_1>
+785,2019,"In 2019, Valpak is owned by <extra_id_0>.",<extra_id_0> Platinum Equity <extra_id_1>
+786,2019,"In 2019, José Ramón de la Morena works for <extra_id_0>.",<extra_id_0> Onda Cero <extra_id_1>
+787,2019,"In 2019, Bekim Balaj plays for <extra_id_0>.",<extra_id_0> Albania national association football team <extra_id_1>
+788,2019,"In 2019, Scott Morrison holds the position of <extra_id_0>.",<extra_id_0> Prime Minister of Australia <extra_id_1>
+789,2019,"In 2019, Philippe Coutinho plays for <extra_id_0>.",<extra_id_0> FC Barcelona <extra_id_1>
+790,2019,"In 2019, Sarah T. Roberts works for <extra_id_0>.",<extra_id_0> UCLA Graduate School of Education and Information Studies <extra_id_1>
+791,2019,"In 2019, Andrus Ansip holds the position of <extra_id_0>.",<extra_id_0> European Commissioner for Digital Agenda <extra_id_1>
+792,2019,"In 2019, Todd Young holds the position of <extra_id_0>.",<extra_id_0> United States senator <extra_id_1>
+793,2019,"In 2019, <extra_id_0> is the head coach of Los Angeles Galaxy.",<extra_id_0> Guillermo Barros Schelotto <extra_id_1>
+794,2019,"In 2019, Franck de Lapersonne is a member of the <extra_id_0>.",<extra_id_0> The Patriots <extra_id_1>
+795,2019,"In 2019, Michael Brown plays for <extra_id_0>.",<extra_id_0> Port Vale F.C. <extra_id_1>
+796,2019,"In 2019, <extra_id_0> is the chair of HSBC.",<extra_id_0> Mark Tucker <extra_id_1>
+797,2019,"In 2019, David M. Evans works for <extra_id_0>.",<extra_id_0> The University of Queensland <extra_id_1>
+798,2019,"In 2019, <extra_id_0> is the chair of Ocado.",<extra_id_0> Stuart Rose <extra_id_1>
+799,2019,"In 2019, Alan Kelly holds the position of <extra_id_0>.",<extra_id_0> Teachta Dála <extra_id_1>
+800,2019,"In 2019, Marcus Berg plays for <extra_id_0>.",<extra_id_0> Al Ain FC <extra_id_1>
+801,2019,"In 2019, <extra_id_0> is the head coach of FC Dnepr Mogilev.",<extra_id_0> Yawhen Kapaw <extra_id_1>
+802,2019,"In 2019, Philip Hammond holds the position of <extra_id_0>.",<extra_id_0> Chancellor of the Exchequer <extra_id_1>
+803,2019,"In 2019, Flåm Line is owned by <extra_id_0>.",<extra_id_0> Bane NOR <extra_id_1>
+804,2019,"In 2019, Christopher Barner-Kowollik works for <extra_id_0>.",<extra_id_0> Queensland University of Technology <extra_id_1>
+805,2019,"In 2019, Finnkino is owned by <extra_id_0>.",<extra_id_0> AMC Theatres <extra_id_1>
+806,2019,"In 2019, Independent Tribune is owned by <extra_id_0>.",<extra_id_0> Berkshire Hathaway <extra_id_1>
+807,2019,"In 2019, Joan Rigol i Roig is a member of the <extra_id_0>.",<extra_id_0> Democrats of Catalonia <extra_id_1>
+808,2019,"In 2019, <extra_id_0> is the head coach of Aerostar Bacău.",<extra_id_0> Florin Bratu <extra_id_1>
+809,2019,"In 2019, Trey Burke plays for <extra_id_0>.",<extra_id_0> Utah Jazz <extra_id_1>
+810,2019,"In 2019, <extra_id_0> is the head coach of Gold Coast Football Club.",<extra_id_0> Stuart Dew <extra_id_1>
+811,2019,"In 2019, Timothy Masiu is a member of the <extra_id_0>.",<extra_id_0> National Alliance Party <extra_id_1>
+812,2019,"In 2019, Barry Gardiner holds the position of <extra_id_0>.",<extra_id_0> Shadow Secretary of State for International Trade <extra_id_1>
+813,2019,"In 2019, Stephen Urban is a member of the <extra_id_0>.",<extra_id_0> Democratic Party <extra_id_1>
+814,2019,"In 2019, Craig Silverstein works for <extra_id_0>.",<extra_id_0> Khan Academy <extra_id_1>
+815,2019,"In 2019, Pavlos Polakis is a member of the <extra_id_0>.",<extra_id_0> SYRIZA <extra_id_1>
+816,2019,"In 2019, <extra_id_0> is the chair of Jammu and Kashmir People's Democratic Party.",<extra_id_0> Mehbooba Mufti <extra_id_1>
+817,2019,"In 2019, <extra_id_0> is the head of the government of Hanover.",<extra_id_0> Stefan Schostok <extra_id_1>
+818,2019,"In 2019, Léa Salamé works for <extra_id_0>.",<extra_id_0> France Inter <extra_id_1>
+819,2019,"In 2019, Ali Fasir plays for <extra_id_0>.",<extra_id_0> New Radiant SC <extra_id_1>
+820,2019,"In 2019, Vivian Li works for <extra_id_0>.",<extra_id_0> Francis Crick Institute <extra_id_1>
+821,2019,"In 2019, Chris Andrews is a member of the <extra_id_0>.",<extra_id_0> Sinn Féin <extra_id_1>
+822,2019,"In 2019, Manuel Bartlett Díaz is a member of the <extra_id_0>.",<extra_id_0> National Regeneration Movement <extra_id_1>
+823,2019,"In 2019, Lee Nak-yon holds the position of <extra_id_0>.",<extra_id_0> Prime Minister of South Korea <extra_id_1>
+824,2019,"In 2019, <extra_id_0> is the head coach of Valencia CF.",<extra_id_0> Marcelino García Toral <extra_id_1>
+825,2019,"In 2019, Melanie Keen works for <extra_id_0>.",<extra_id_0> Iniva <extra_id_1>
+826,2019,"In 2019, <extra_id_0> is the chair of Conservative Party.",<extra_id_0> Theresa May <extra_id_1>
+827,2019,"In 2019, Roy Blunt holds the position of <extra_id_0>.",<extra_id_0> United States senator <extra_id_1>
+828,2019,"In 2019, Whitney Engen plays for <extra_id_0>.",<extra_id_0> Boston Breakers <extra_id_1>
+829,2019,"In 2019, Quinn Slobodian works for <extra_id_0>.",<extra_id_0> Wellesley College <extra_id_1>
+830,2019,"In 2019, <extra_id_0> is the head coach of AFC Ajax.",<extra_id_0> Erik ten Hag <extra_id_1>
+831,2019,"In 2019, Craig Gordon plays for <extra_id_0>.",<extra_id_0> Celtic F.C. <extra_id_1>
+832,2019,"In 2019, John L. Hennessy holds the position of <extra_id_0>.",<extra_id_0> director <extra_id_1>
+833,2019,"In 2019, <extra_id_0> is the head coach of FK Jablonec.",<extra_id_0> Petr Rada <extra_id_1>
+834,2019,"In 2019, Wolfgang Dahmen works for <extra_id_0>.",<extra_id_0> University of South Carolina <extra_id_1>
+835,2019,"In 2019, <extra_id_0> is the head coach of Alanyaspor.",<extra_id_0> Sergen Yalçın <extra_id_1>
+836,2019,"In 2019, Josep Ramon Bosch i Codina is a member of the <extra_id_0>.",<extra_id_0> Democratic League <extra_id_1>
+837,2019,"In 2019, <extra_id_0> is the chair of Swedish People's Party of Finland.",<extra_id_0> Anna-Maja Henriksson <extra_id_1>
+838,2019,"In 2019, Jerome Guillen works for <extra_id_0>.","<extra_id_0> Tesla, Inc. <extra_id_1>"
+839,2019,"In 2019, <extra_id_0> is the head coach of Cardiff City F.C..",<extra_id_0> Neil Harris <extra_id_1>
+840,2019,"In 2019, Rafael van der Vaart plays for <extra_id_0>.",<extra_id_0> Real Betis Balompié <extra_id_1>
+841,2019,"In 2019, Carola-Bibiane Schönlieb works for <extra_id_0>.",<extra_id_0> University of Cambridge <extra_id_1>
+842,2019,"In 2019, Cristiano Ronaldo plays for <extra_id_0>.",<extra_id_0> Juventus FC <extra_id_1>
+843,2019,"In 2019, <extra_id_0> is the head of the government of Maguindanao.",<extra_id_0> Esmael Mangudadatu <extra_id_1>
+844,2019,"In 2019, Jole Santelli is a member of the <extra_id_0>.",<extra_id_0> Forza Italia (2013) <extra_id_1>
+845,2019,"In 2019, Tyson Chandler plays for <extra_id_0>.",<extra_id_0> Dallas Mavericks <extra_id_1>
+846,2019,"In 2019, Suzan DelBene holds the position of <extra_id_0>.",<extra_id_0> United States representative <extra_id_1>
+847,2019,"In 2019, Paul Golding is a member of the <extra_id_0>.",<extra_id_0> Britain First <extra_id_1>
+848,2019,"In 2019, Paola Binetti is a member of the <extra_id_0>.",<extra_id_0> Union of the Centre <extra_id_1>
+849,2019,"In 2019, Petr Ježek is a member of the <extra_id_0>.",<extra_id_0> Voice (political party) <extra_id_1>
+850,2019,"In 2019, <extra_id_0> is the head of the government of Budapest District IV.",<extra_id_0> Tibor Déri <extra_id_1>
+851,2019,"In 2019, Aurore Lalucq is a member of the <extra_id_0>.",<extra_id_0> Génération.s <extra_id_1>
+852,2019,"In 2019, Maikel Kieftenbeld plays for <extra_id_0>.",<extra_id_0> Birmingham City F.C. <extra_id_1>
+853,2019,"In 2019, Yong Hye-in is a member of the <extra_id_0>.",<extra_id_0> Labor Party <extra_id_1>
+854,2019,"In 2019, Andy Carroll plays for <extra_id_0>.",<extra_id_0> West Ham United F.C. <extra_id_1>
+855,2019,"In 2019, <extra_id_0> is the head of the government of Tartu City.",<extra_id_0> Urmas Klaas <extra_id_1>
+856,2019,"In 2019, André Schembri plays for <extra_id_0>.",<extra_id_0> AC Omonia <extra_id_1>
+857,2019,"In 2019, Carlos Zambrano plays for <extra_id_0>.",<extra_id_0> Eintracht Frankfurt <extra_id_1>
+858,2019,"In 2019, <extra_id_0> is the head of the government of Vitré Communauté.",<extra_id_0> Pierre Méhaignerie <extra_id_1>
+859,2019,"In 2019, Østfold Line is owned by <extra_id_0>.",<extra_id_0> Bane NOR <extra_id_1>
+860,2019,"In 2019, Dimitris Kremastinos is a member of the <extra_id_0>.",<extra_id_0> Democratic Alignment <extra_id_1>
+861,2019,"In 2019, Li Keqiang holds the position of <extra_id_0>.",<extra_id_0> Premier of the State Council of the People's Republic of China <extra_id_1>
+862,2019,"In 2019, <extra_id_0> is the head of the government of Saguenay.",<extra_id_0> Josée Néron <extra_id_1>
+863,2019,"In 2019, <extra_id_0> is the head coach of Yuzuru Hanyū.",<extra_id_0> Brian Orser <extra_id_1>
+864,2019,"In 2019, Călin Popescu-Tăriceanu is a member of the <extra_id_0>.",<extra_id_0> Alliance of Liberals and Democrats Party (Romania) <extra_id_1>
+865,2019,"In 2019, <extra_id_0> is the head of the government of Saratov Oblast.",<extra_id_0> Valery Radayev <extra_id_1>
+866,2019,"In 2019, Jacqui Lambie is a member of the <extra_id_0>.",<extra_id_0> Jacqui Lambie Network <extra_id_1>
+867,2019,"In 2019, <extra_id_0> is the head coach of AS Monaco FC.",<extra_id_0> Thierry Henry <extra_id_1>
+868,2019,"In 2019, Tim Walz holds the position of <extra_id_0>.",<extra_id_0> United States representative <extra_id_1>
+869,2019,"In 2019, <extra_id_0> is the chair of Union of European Football Associations.",<extra_id_0> Aleksander Čeferin <extra_id_1>
+870,2019,"In 2019, Shpend Ahmeti is a member of the <extra_id_0>.",<extra_id_0> Social Democratic Party of Kosovo <extra_id_1>
+871,2019,"In 2019, Chris Turney works for <extra_id_0>.",<extra_id_0> University of New South Wales <extra_id_1>
+872,2019,"In 2019, U. Reneé Hall works for <extra_id_0>.",<extra_id_0> Dallas Police Department <extra_id_1>
+873,2019,"In 2019, Jim Justice is a member of the <extra_id_0>.",<extra_id_0> Republican Party <extra_id_1>
+874,2019,"In 2019, Ari Kelman works for <extra_id_0>.",<extra_id_0> Pennsylvania State University <extra_id_1>
+875,2019,"In 2019, Politico Europe is owned by <extra_id_0>.",<extra_id_0> Axel Springer SE <extra_id_1>
+876,2019,"In 2019, Sonja Kovač attended <extra_id_0>.",<extra_id_0> New York Film Academy <extra_id_1>
+877,2019,"In 2019, Jacques Le Nay is a member of the <extra_id_0>.",<extra_id_0> Union of Democrats and Independents <extra_id_1>
+878,2019,"In 2019, Christodoulos I. Stefanadis works for <extra_id_0>.",<extra_id_0> Emory University School of Medicine <extra_id_1>
+879,2019,"In 2019, McKenzie Milton attended <extra_id_0>.",<extra_id_0> University of Central Florida <extra_id_1>
+880,2019,"In 2019, <extra_id_0> is the head coach of KF Tirana.",<extra_id_0> Ardian Mema <extra_id_1>
+881,2019,"In 2019, Adrian Peterson plays for <extra_id_0>.",<extra_id_0> Washington Football Team <extra_id_1>
+882,2019,"In 2019, Margaret Leinen works for <extra_id_0>.","<extra_id_0> University of California, San Diego <extra_id_1>"
+883,2019,"In 2019, Naz Baloch is a member of the <extra_id_0>.",<extra_id_0> Pakistan Tehreek-e-Insaf <extra_id_1>
+884,2019,"In 2019, <extra_id_0> is the chair of Economic Community of West African States.",<extra_id_0> Muhammadu Buhari <extra_id_1>
+885,2019,"In 2019, Adam Hammill plays for <extra_id_0>.",<extra_id_0> Barnsley F.C. <extra_id_1>
+886,2019,"In 2019, <extra_id_0> is the head coach of Levadiakos F.C..",<extra_id_0> Giuseppe Sannino <extra_id_1>
+887,2019,"In 2019, <extra_id_0> is the chair of National Assembly.",<extra_id_0> Ousseini Tinni <extra_id_1>
+888,2019,"In 2019, <extra_id_0> is the chair of National Assembly.",<extra_id_0> Moon Hee-sang <extra_id_1>
+889,2019,"In 2019, Anne-Sophie Lapix works for <extra_id_0>.",<extra_id_0> France 5 <extra_id_1>
+890,2019,"In 2019, Anthony Annan plays for <extra_id_0>.",<extra_id_0> Helsingin Jalkapalloklubi <extra_id_1>
+891,2019,"In 2019, Ed Davey holds the position of <extra_id_0>.",<extra_id_0> Liberal Democrat Home Affairs spokesman <extra_id_1>
+892,2019,"In 2019, Sorin Cîmpeanu is a member of the <extra_id_0>.",<extra_id_0> PRO Romania Social Liberal <extra_id_1>
+893,2019,"In 2019, <extra_id_0> is the head coach of Heart of Midlothian F.C..",<extra_id_0> Craig Levein <extra_id_1>
+894,2019,"In 2019, Ashlyn Harris plays for <extra_id_0>.",<extra_id_0> Orlando Pride <extra_id_1>
+895,2019,"In 2019, <extra_id_0> is the head coach of FC Nordsjælland.",<extra_id_0> Kasper Hjulmand <extra_id_1>
+896,2019,"In 2019, <extra_id_0> is the head of the government of Vanuatu.",<extra_id_0> Charlot Salwai <extra_id_1>
+897,2019,"In 2019, Naomichi Ueda plays for <extra_id_0>.",<extra_id_0> Japan national under-23 football team <extra_id_1>
+898,2019,"In 2019, Marios Matsakis is a member of the <extra_id_0>.",<extra_id_0> Democratic Party <extra_id_1>
+899,2019,"In 2019, Rhyne Howard attended <extra_id_0>.",<extra_id_0> University of Kentucky <extra_id_1>
+900,2019,"In 2019, <extra_id_0> is the head of the government of Gävleborg county.",<extra_id_0> Per Bill <extra_id_1>
+901,2019,"In 2019, Joachim Starbatty is a member of the <extra_id_0>.",<extra_id_0> Liberal Conservative Reformers <extra_id_1>
+902,2019,"In 2019, Phiwa Nkambule works for <extra_id_0>.",<extra_id_0> Riovic <extra_id_1>
+903,2019,"In 2019, Toni Postius Terrado is a member of the <extra_id_0>.",<extra_id_0> Catalan European Democratic Party <extra_id_1>
+904,2019,"In 2019, Anna Theologou is a member of the <extra_id_0>.",<extra_id_0> independent politician <extra_id_1>
+905,2019,"In 2019, <extra_id_0> is the chair of Social Democratic Party of Germany.",<extra_id_0> Saskia Esken <extra_id_1>
+906,2019,"In 2019, <extra_id_0> is the chair of Asian Development Bank.",<extra_id_0> Takehiko Nakao <extra_id_1>
+907,2019,"In 2019, Kiya Johnson attended <extra_id_0>.",<extra_id_0> Louisiana State University <extra_id_1>
+908,2019,"In 2019, Ruthy Hebard attended <extra_id_0>.",<extra_id_0> University of Oregon <extra_id_1>
+909,2019,"In 2019, Barbara Graziosi works for <extra_id_0>.",<extra_id_0> Princeton University <extra_id_1>
+910,2019,"In 2019, <extra_id_0> is the chair of People's Freedom Party.",<extra_id_0> Mikhail Kasyanov <extra_id_1>
+911,2019,"In 2019, Sandro Mamukelashvili attended <extra_id_0>.",<extra_id_0> Seton Hall University <extra_id_1>
+912,2019,"In 2019, Helen Clare Bostock works for <extra_id_0>.",<extra_id_0> National Institute of Water and Atmospheric Research <extra_id_1>
+913,2019,"In 2019, Monica Macovei is a member of the <extra_id_0>.",<extra_id_0> Right Alternative <extra_id_1>
+914,2019,"In 2019, <extra_id_0> is the head of the government of Togo.",<extra_id_0> Komi Klassou <extra_id_1>
+915,2019,"In 2019, Andrés Iniesta plays for <extra_id_0>.",<extra_id_0> Vissel Kobe <extra_id_1>
+916,2019,"In 2019, Noemí de Miguel works for <extra_id_0>.",<extra_id_0> Movistar+ <extra_id_1>
+917,2019,"In 2019, Henrietta Harrison works for <extra_id_0>.",<extra_id_0> University of Oxford <extra_id_1>
+918,2019,"In 2019, <extra_id_0> is the chair of Embassy of Ukraine, Minsk.",<extra_id_0> Ihor Kyzym <extra_id_1>
+919,2019,"In 2019, Peadar Tóibín is a member of the <extra_id_0>.",<extra_id_0> independent politician <extra_id_1>
+920,2019,"In 2019, Ramires plays for <extra_id_0>.",<extra_id_0> Sociedade Esportiva Palmeiras <extra_id_1>
+921,2019,"In 2019, <extra_id_0> is the chair of Financial Reporting Council.",<extra_id_0> Winfried Bischoff <extra_id_1>
+922,2019,"In 2019, Vassilis Spanoulis plays for <extra_id_0>.",<extra_id_0> Olympiacos B.C. <extra_id_1>
+923,2019,"In 2019, Westfield Montgomery is owned by <extra_id_0>.",<extra_id_0> Unibail Rodamco Westfield <extra_id_1>
+924,2019,"In 2019, Kelsey Plum plays for <extra_id_0>.",<extra_id_0> Las Vegas Aces <extra_id_1>
+925,2019,"In 2019, Margaret M. Hyland works for <extra_id_0>.",<extra_id_0> Victoria University of Wellington <extra_id_1>
+926,2019,"In 2019, Shigefumi Matsuzawa is a member of the <extra_id_0>.",<extra_id_0> Nippon Ishin no Kai <extra_id_1>
+927,2019,"In 2019, Wojciech Szczęsny plays for <extra_id_0>.",<extra_id_0> Juventus FC <extra_id_1>
+928,2019,"In 2019, Mercedes Aráoz holds the position of <extra_id_0>.",<extra_id_0> Vice President of Peru <extra_id_1>
+929,2019,"In 2019, Paavo Väyrynen is a member of the <extra_id_0>.",<extra_id_0> Seven Star Movement <extra_id_1>
+930,2019,"In 2019, Jack Wilshere plays for <extra_id_0>.",<extra_id_0> West Ham United F.C. <extra_id_1>
+931,2019,"In 2019, Mahathir Mohamad is a member of the <extra_id_0>.",<extra_id_0> Malaysian United Indigenous Party <extra_id_1>
+932,2019,"In 2019, <extra_id_0> is the head coach of France national rugby league team.",<extra_id_0> Aurélien Cologni <extra_id_1>
+933,2019,"In 2019, <extra_id_0> is the chair of Assembly of Experts for Leadership.",<extra_id_0> Ahmad Jannati <extra_id_1>
+934,2019,"In 2019, Patrick Kisnorbo plays for <extra_id_0>.",<extra_id_0> Melbourne City Football Club <extra_id_1>
+935,2019,"In 2019, Mesut Özil plays for <extra_id_0>.",<extra_id_0> Arsenal F.C. <extra_id_1>
+936,2019,"In 2019, Marcelo Díaz plays for <extra_id_0>.",<extra_id_0> Chile national football team <extra_id_1>
+937,2019,"In 2019, Nanette Barragán holds the position of <extra_id_0>.",<extra_id_0> United States representative <extra_id_1>
+938,2019,"In 2019, F. Richard Spencer holds the position of <extra_id_0>.",<extra_id_0> auxiliary bishop <extra_id_1>
+939,2019,"In 2019, Claudio Nastruzzi works for <extra_id_0>.",<extra_id_0> University of Southampton <extra_id_1>
+940,2019,"In 2019, Chris Porter plays for <extra_id_0>.",<extra_id_0> Colchester United F.C. <extra_id_1>
+941,2019,"In 2019, <extra_id_0> is the head of the government of Ivory Coast.",<extra_id_0> Amadou Gon Coulibaly <extra_id_1>
+942,2019,"In 2019, David McNarry is a member of the <extra_id_0>.",<extra_id_0> UK Independence Party <extra_id_1>
+943,2019,"In 2019, <extra_id_0> is the head of the government of Nur-Sultan.",<extra_id_0> Bakhyt Sultanov <extra_id_1>
+944,2019,"In 2019, Paola Pabón is a member of the <extra_id_0>.",<extra_id_0> Citizen Revolution <extra_id_1>
+945,2019,"In 2019, <extra_id_0> is the head of the government of Guinea.",<extra_id_0> Ibrahima Kassory Fofana <extra_id_1>
+946,2019,"In 2019, <extra_id_0> is the head coach of Deportivo Alavés.",<extra_id_0> Asier Garitano <extra_id_1>
+947,2019,"In 2019, Vera Papisova works for <extra_id_0>.",<extra_id_0> Teen Vogue <extra_id_1>
+948,2019,"In 2019, Jonah Berger works for <extra_id_0>.",<extra_id_0> The Wharton School <extra_id_1>
+949,2019,"In 2019, Mathias Cormann holds the position of <extra_id_0>.",<extra_id_0> Minister for Finance of Australia <extra_id_1>
+950,2019,"In 2019, Marc Bernhard is a member of the <extra_id_0>.",<extra_id_0> Alternative for Germany <extra_id_1>
+951,2019,"In 2019, Jonas Gahr Støre holds the position of <extra_id_0>.",<extra_id_0> party leader <extra_id_1>
+952,2019,"In 2019, Vyacheslav Volodin holds the position of <extra_id_0>.",<extra_id_0> Chairman of the State Duma <extra_id_1>
+953,2019,"In 2019, <extra_id_0> is the head coach of C.D. Tondela.",<extra_id_0> Natxo González <extra_id_1>
+954,2019,"In 2019, Jan Vertonghen plays for <extra_id_0>.",<extra_id_0> Tottenham Hotspur F.C. <extra_id_1>
+955,2019,"In 2019, Fernando Cheung is a member of the <extra_id_0>.",<extra_id_0> Labour Party <extra_id_1>
+956,2019,"In 2019, Virgil van Dijk plays for <extra_id_0>.",<extra_id_0> ACS Sepsi OSK Sfântu Gheorghe <extra_id_1>
+957,2019,"In 2019, Indira Alfonzo works for <extra_id_0>.",<extra_id_0> Supreme Tribunal of Justice of Venezuela <extra_id_1>
+958,2019,"In 2019, Paolo Alli is a member of the <extra_id_0>.",<extra_id_0> Popular Alternative <extra_id_1>
+959,2019,"In 2019, Angelino Alfano is a member of the <extra_id_0>.",<extra_id_0> New Centre-Right <extra_id_1>
+960,2019,"In 2019, <extra_id_0> is the head coach of Boavista F.C..",<extra_id_0> Daniel Ramos <extra_id_1>
+961,2019,"In 2019, <extra_id_0> is the chair of Ministry of Agriculture, Food and Rural Affairs.",<extra_id_0> Kim Hyeon-soo <extra_id_1>
+962,2019,"In 2019, Gerardo Buganza is a member of the <extra_id_0>.",<extra_id_0> Ecologist Green Party of Mexico <extra_id_1>

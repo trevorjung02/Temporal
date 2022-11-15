@@ -10,9 +10,9 @@
     "num_train_epochs": 30,
     "output_dir": "outputs/",
     "wandb_log": true,
-    "train_batch_size": 256,
+    "train_batch_size": 128,
     "check_validation": true,
-    "checkpoint_path": "outputs/kadapter_soft_full_2freeze_158_128/epoch=15-f1_score=0.171-em_score=0.072.ckpt",
+    "checkpoint_path": "outputs/kadapter_soft_full_2freeze_158_128/epoch=13-f1_score=0.180-em_score=0.047.ckpt",
     "val_data": "2010",
 
     "input_length": 50,

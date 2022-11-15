@@ -1,1 +1,0 @@
-{"learning rate/pg1": 0.0007410870218106007, "learning rate/pg2": 0.0007410870218106007, "trainer/global_step": 22149, "_timestamp": 1659273140, "_runtime": 6487, "_step": 1771, "loss": 1.4019746780395508, "epoch": 7, "_wandb": {"runtime": 6494}}

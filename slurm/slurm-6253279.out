@@ -1,0 +1,60 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-2080ti
+#SBATCH --account=ark
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=12:00:00 
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+# python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.151-em_score=0.000.ckpt
+
+# python run.py --config configs/wmt/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtkadapter_2010_2freeze_158_128/epoch=8-f1_score=0.084-em_score=0.000.ckpt
+
+python preprocess_wmt_train_data.py 2010
+python preprocess_wmt_train_data.py 2011
+python preprocess_wmt_train_data.py 2012
+--------------------
+number of articles: 402493
+300000 articles loaded
+Read csv: 12.254357683999999 seconds
+decode sentences: 4.135281256999999 seconds
+Create sentences: 1.338773648 seconds
+total sentences 6698233
+Run spacy on sentences: 5.377999997335792e-06 seconds
+Construct datasets: 473.42126626199996 seconds
+max input length = 350
+max output length = 2
+Write datasets: 1.8897658239999942 seconds
+number of articles: 909499
+300000 articles loaded
+Read csv: 20.500794319 seconds
+decode sentences: 3.9378721859999963 seconds
+Create sentences: 1.279958594 seconds
+total sentences 6510740
+Run spacy on sentences: 4.71299999560415e-06 seconds
+Construct datasets: 482.19473217099994 seconds
+max input length = 313
+max output length = 2
+Write datasets: 1.9101694799999223 seconds
+number of articles: 758958
+300000 articles loaded
+Read csv: 17.879301178 seconds
+decode sentences: 4.0400575100000005 seconds
+Create sentences: 1.3221167099999995 seconds
+total sentences 6736101
+Run spacy on sentences: 5.830999995737329e-06 seconds
+Construct datasets: 479.01786075700005 seconds
+max input length = 323
+max output length = 2
+Write datasets: 1.816351529999963 seconds

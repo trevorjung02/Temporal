@@ -10,7 +10,6 @@
     "output_dir": "outputs/",
     "wandb_log": true,
     "train_batch_size": 32,
-    "checkpoint_dir": "outputs/",
 
     "input_length": 50,
     "output_length": 25,
@@ -26,7 +25,7 @@
     "wandb_project": "temporal_questions",
     "wandb_run_name": "kadapters_2010",
     "mode": "pretrain",
-    "use_lr_scheduling": true,
+    "use_lr_scheduling": false,
     "check_validation": false,
     "checkpoint_path": "",
     "output_hidden_states": true

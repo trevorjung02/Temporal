@@ -1,3 +1,0 @@
-2022-08-31 02:20:40,910 INFO    StreamThr :91780 [internal.py:wandb_internal():90] W&B internal server running at pid: 91780, started at: 2022-08-31 02:20:22.940529
-2022-08-31 02:20:40,912 DEBUG   HandlerThread:91780 [handler.py:handle_request():141] handle_request: status
-2022-08-31 02:20:40,915 DEBUG   SenderThread:91780 [sender.py:send_request():316] send_request: status

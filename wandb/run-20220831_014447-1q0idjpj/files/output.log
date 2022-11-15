@@ -1,6 +1,0 @@
-
-Namespace(accelerator='ddp', adam_epsilon=1e-08, adapter_hidden_size=128, adapter_list=[1, 5, 8], check_validation_only=False, checkpoint_dir=None, checkpoint_path='', dataset='templama', dataset_version='2010', early_stop_callback=False, enc_dec=None, eval_batch_size=32, freeze_embeds=False, freeze_encoder=False, freeze_level=2, learning_rate=0.001, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='kadapter', mode='pretrain', model_name_or_path='google/t5-small-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=90, num_workers=4, opt_level='O1', output_dir='outputs/kadapters_2010_2freeze', output_log=None, prefix=True, resume_from_checkpoint=None, seed=42, split=0, split_num=1, t5_learning_rate=None, tokenizer_name_or_path='google/t5-small-ssm', train_batch_size=32, use_deepspeed=False, use_lr_scheduling=True, val_check_interval=1.0, wandb_log=True, warmup_steps=0, weight_decay=0.0)
-Traceback (most recent call last):
-  File "run.py", line 121, in <module>
-    args.output_dir += '_' + ''.join(map(str, args.adapter_config['adapter_list']))
-AttributeError: 'Namespace' object has no attribute 'adapter_config'

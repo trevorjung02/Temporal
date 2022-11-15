@@ -1,0 +1,78 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-rtx6k
+#SBATCH --account=cse
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=12:00:00 
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+# python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.151-em_score=0.000.ckpt
+
+# python run.py --config configs/wmt/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtkadapter_2010_2freeze_158_128/epoch=8-f1_score=0.084-em_score=0.000.ckpt
+
+# python preprocess_wmt_train_data.py 2016
+# python preprocess_wmt_train_data.py 2017
+# python preprocess_wmt_train_data.py 2018
+
+# python run.py --config configs/templama/training/t5_kadapters_soft_full.json -checkpoint_path outputs/wmtkadapter_2010_2freeze_158_128/epoch=8-f1_score=0.084-em_score=0.000.ckpt
+
+python run.py --config configs/templama/evaluation/t5_baseline_full.json
+--------------------
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.3 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20220923_124602-2pko97xy
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run baseline_full
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/2pko97xy
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory outputs/baseline_full exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All DDP processes registered. Starting ddp with 1 processes
+----------------------------------------------------------------------------------------------------
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Namespace(accelerator='ddp', adam_epsilon=1e-08, adapter_config={'adapter_list': None, 'adapter_hidden_size': None, 'adapter_enc_dec': None, 'pool_size': None}, adapter_enc_dec=None, adapter_hidden_size=None, adapter_list=None, check_validation_only=True, checkpoint_dir=None, checkpoint_path='outputs/baseline_full/epoch=20-f1_score=0.201-em_score=0.069.ckpt', dataset='templama', dataset_version='full', early_stop_callback=False, eval_batch_size=64, freeze_embeds=False, freeze_encoder=False, freeze_level=0, learning_rate=1e-05, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='baseline', mode='pretrain', model_name_or_path='google/t5-small-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=30, num_workers=4, opt_level='O1', output_dir='outputs/baseline_full', output_log=None, pool_size=None, prefix=True, resume_from_checkpoint=None, seed=42, split=0, split_num=1, t5_learning_rate=None, tokenizer_name_or_path='google/t5-small-ssm', train_batch_size=64, use_deepspeed=False, use_lr_scheduling=True, val_check_interval=1.0, val_data='full', wandb_log=True, warmup_steps=0, weight_decay=0.0)
+Not freezing any parameters!
+split is 0
+Length of dataset retrieving is.. 4124
+Index(['id', 'date', 'input', 'output'], dtype='object')
+Validating: 0it [00:00, ?it/s]Validating:   0%|          | 0/65 [00:00<?, ?it/s]Validating:   2%|▏         | 1/65 [00:02<02:08,  2.01s/it]Validating:   3%|▎         | 2/65 [00:03<01:38,  1.57s/it]Validating:   5%|▍         | 3/65 [00:04<01:31,  1.47s/it]Validating:   6%|▌         | 4/65 [00:05<01:22,  1.36s/it]Validating:   8%|▊         | 5/65 [00:07<01:21,  1.35s/it]Validating:   9%|▉         | 6/65 [00:08<01:16,  1.30s/it]Validating:  11%|█         | 7/65 [00:09<01:13,  1.26s/it]Validating:  12%|█▏        | 8/65 [00:10<01:12,  1.27s/it]Validating:  14%|█▍        | 9/65 [00:12<01:10,  1.25s/it]Validating:  15%|█▌        | 10/65 [00:13<01:08,  1.25s/it]Validating:  17%|█▋        | 11/65 [00:14<01:07,  1.25s/it]Validating:  18%|█▊        | 12/65 [00:15<01:07,  1.27s/it]Validating:  20%|██        | 13/65 [00:17<01:04,  1.25s/it]Validating:  22%|██▏       | 14/65 [00:18<01:03,  1.24s/it]Validating:  23%|██▎       | 15/65 [00:19<01:02,  1.26s/it]Validating:  25%|██▍       | 16/65 [00:20<01:00,  1.24s/it]Validating:  26%|██▌       | 17/65 [00:21<00:57,  1.20s/it]Validating:  28%|██▊       | 18/65 [00:23<00:57,  1.22s/it]Validating:  29%|██▉       | 19/65 [00:24<00:55,  1.21s/it]Validating:  31%|███       | 20/65 [00:25<00:55,  1.24s/it]Validating:  32%|███▏      | 21/65 [00:26<00:53,  1.22s/it]Validating:  34%|███▍      | 22/65 [00:28<00:52,  1.23s/it]Validating:  35%|███▌      | 23/65 [00:29<00:52,  1.24s/it]Validating:  37%|███▋      | 24/65 [00:30<00:50,  1.23s/it]Validating:  38%|███▊      | 25/65 [00:31<00:48,  1.22s/it]Validating:  40%|████      | 26/65 [00:32<00:47,  1.23s/it]Validating:  42%|████▏     | 27/65 [00:34<00:46,  1.22s/it]Validating:  43%|████▎     | 28/65 [00:35<00:46,  1.26s/it]Validating:  45%|████▍     | 29/65 [00:36<00:45,  1.26s/it]Validating:  46%|████▌     | 30/65 [00:38<00:43,  1.25s/it]Validating:  48%|████▊     | 31/65 [00:39<00:41,  1.23s/it]Validating:  49%|████▉     | 32/65 [00:40<00:40,  1.24s/it]Validating:  51%|█████     | 33/65 [00:41<00:41,  1.29s/it]Validating:  52%|█████▏    | 34/65 [00:43<00:39,  1.27s/it]Validating:  54%|█████▍    | 35/65 [00:44<00:38,  1.29s/it]Validating:  55%|█████▌    | 36/65 [00:45<00:37,  1.29s/it]Validating:  57%|█████▋    | 37/65 [00:46<00:35,  1.26s/it]Validating:  58%|█████▊    | 38/65 [00:48<00:34,  1.28s/it]Validating:  60%|██████    | 39/65 [00:49<00:32,  1.26s/it]Validating:  62%|██████▏   | 40/65 [00:50<00:31,  1.25s/it]Validating:  63%|██████▎   | 41/65 [00:51<00:29,  1.22s/it]Validating:  65%|██████▍   | 42/65 [00:53<00:28,  1.24s/it]Validating:  66%|██████▌   | 43/65 [00:54<00:26,  1.22s/it]Validating:  68%|██████▊   | 44/65 [00:55<00:25,  1.21s/it]Validating:  69%|██████▉   | 45/65 [00:56<00:23,  1.19s/it]Validating:  71%|███████   | 46/65 [00:57<00:22,  1.19s/it]Validating:  72%|███████▏  | 47/65 [00:58<00:21,  1.17s/it]Validating:  74%|███████▍  | 48/65 [01:00<00:19,  1.17s/it]Validating:  75%|███████▌  | 49/65 [01:01<00:19,  1.19s/it]Validating:  77%|███████▋  | 50/65 [01:02<00:18,  1.25s/it]Validating:  78%|███████▊  | 51/65 [01:03<00:17,  1.24s/it]Validating:  80%|████████  | 52/65 [01:05<00:15,  1.20s/it]Validating:  82%|████████▏ | 53/65 [01:06<00:14,  1.17s/it]Validating:  83%|████████▎ | 54/65 [01:07<00:13,  1.19s/it]Validating:  85%|████████▍ | 55/65 [01:08<00:11,  1.19s/it]Validating:  86%|████████▌ | 56/65 [01:09<00:10,  1.16s/it]Validating:  88%|████████▊ | 57/65 [01:10<00:09,  1.16s/it]Validating:  89%|████████▉ | 58/65 [01:12<00:08,  1.18s/it]Validating:  91%|█████████ | 59/65 [01:13<00:07,  1.18s/it]Validating:  92%|█████████▏| 60/65 [01:14<00:05,  1.18s/it]Validating:  94%|█████████▍| 61/65 [01:15<00:04,  1.20s/it]Validating:  95%|█████████▌| 62/65 [01:16<00:03,  1.18s/it]Validating:  97%|█████████▋| 63/65 [01:17<00:02,  1.18s/it]Validating:  98%|█████████▊| 64/65 [01:19<00:01,  1.22s/it]Validating: 100%|██████████| 65/65 [01:19<00:00,  1.03s/it]                                                           --------------------------------------------------------------------------------
+DATALOADER:0 VALIDATE RESULTS
+{'em_score': 0.06862269341945648, 'f1_score': 0.20067904889583588}
+--------------------------------------------------------------------------------
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.484 MB of 0.966 MB uploaded (0.000 MB deduped)wandb: \ 0.484 MB of 0.966 MB uploaded (0.000 MB deduped)wandb: | 0.966 MB of 0.966 MB uploaded (0.000 MB deduped)wandb: / 0.966 MB of 0.978 MB uploaded (0.000 MB deduped)wandb: - 0.966 MB of 0.978 MB uploaded (0.000 MB deduped)wandb: \ 0.978 MB of 0.978 MB uploaded (0.000 MB deduped)wandb: | 0.978 MB of 0.978 MB uploaded (0.000 MB deduped)wandb: / 0.978 MB of 0.978 MB uploaded (0.000 MB deduped)wandb: - 0.978 MB of 0.978 MB uploaded (0.000 MB deduped)wandb: \ 0.978 MB of 0.978 MB uploaded (0.000 MB deduped)wandb: | 0.978 MB of 0.978 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            em_score ▁
+wandb:               epoch ▁
+wandb:            f1_score ▁
+wandb: trainer/global_step ▁
+wandb: 
+wandb: Run summary:
+wandb:               epoch 0
+wandb: trainer/global_step 0
+wandb: 
+wandb: Synced baseline_full: https://wandb.ai/tjung2/temporal_questions/runs/2pko97xy
+wandb: Synced 6 W&B file(s), 1 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220923_124602-2pko97xy/logs

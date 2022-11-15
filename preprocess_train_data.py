@@ -51,7 +51,7 @@ def main():
         w = csv.writer(csvfile)
         w.writerow(["id", "date", "input", "output"])
         for year in datasets: 
-            if int(year) > 2018:
+            if int(year) > 2019:
                 break
             for row in datasets[year]:
                 row_copy = row.copy()

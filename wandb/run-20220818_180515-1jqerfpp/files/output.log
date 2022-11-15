@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "run.py", line 104, in <module>
-    callbacks = [ModelCheckpoint(dirpath = args.output_dir, filename = '{epoch}-{f1_score:.2f}-{em_score:.2f}', save_top_k=1, period=1, mode="max", monitor="f1_score")]
-AttributeError: 'dict' object has no attribute 'output_dir'

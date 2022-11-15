@@ -20,11 +20,7 @@ class Pretrain(Dataset):
             self.model_type='T5'
         elif 'gpt2' in args.model_name_or_path:
             self.model_type='GPT2'
-        dataset_v = ['small', 'full', 'debug', 'full_diff', '2018-', '2019+']
-        dataset_v.extend([str(x) for x in range(2010,2021)])
         ids_to_answers = None      
-        if not self.dataset_version in dataset_v:
-            raise Exception(f'Provided the correct dataset version among {dataset_v}')
         # dataset for continual training
         if self.args.dataset == 'recentnews':
             if type_path=='train':
@@ -66,8 +62,6 @@ class Pretrain(Dataset):
             if self.args.dataset == 'templama':
                 # print('Inside templama code')
                 if type_path == 'train':
-                    if not self.dataset_version in dataset_v[1:]:
-                        raise Exception(f'Using templama, did not provide the correct dataset version among {dataset_v[2:]}')
                     if self.args.prefix:
                         self.dataset= pd.read_csv(f'data/templama/templama_train_{self.dataset_version}_prefixed.csv')
                     else:
@@ -77,8 +71,6 @@ class Pretrain(Dataset):
                         dataset_version = self.args.val_data
                     else:
                         dataset_version = self.dataset_version
-                    if not dataset_version in dataset_v[1:]:
-                        raise Exception(f'Using templama, did not provide the correct dataset version among {dataset_v[2:]}')
                     if self.args.prefix:
                         self.dataset = pd.read_csv(f'data/templama/templama_val_{dataset_version}_prefixed.csv') 
                     else:
@@ -118,6 +110,17 @@ class Pretrain(Dataset):
                         self.dataset = pd.read_csv(f'data/situatedqa/sqa_val_{dataset_version}.csv') 
                     with open(f'data/situatedqa/sqa_val_{dataset_version}_answers.json') as f:
                         ids_to_answers = json.load(f)  
+            elif self.args.dataset == 'nyt':
+                if type_path == 'train':
+                    self.dataset= pd.read_csv(f'data/nyt/nyt_train_{self.dataset_version}.csv')
+                elif type_path == 'validation':
+                    if self.args.val_data is not None:
+                        dataset_version = self.args.val_data
+                    else:
+                        dataset_version = self.dataset_version
+                    self.dataset = pd.read_csv(f'data/nyt/nyt_val_{dataset_version}.csv') 
+                    with open(f'data/nyt/nyt_val_{dataset_version}_answers.json') as f:
+                        ids_to_answers = json.load(f) 
             elif self.args.dataset == 'invariantlama':
                 # light tuning 5000 instances for GPT2 experiment
                 if type_path =='train':
@@ -256,23 +259,7 @@ class Pretrain(Dataset):
         elif self.args.dataset == 'wikitext103':
             input_ = example_batch['original']
             target_= example_batch['original']
-        elif self.args.dataset == 'templama':
-            input_ = example_batch['input']
-            target_ = example_batch['output']
-            if type(input_)!=str:
-                input_=''
-            if type(target_)!=str:
-                target_=''
-            year = example_batch['date']
-        elif self.args.dataset == 'wmt':
-            input_ = example_batch['input']
-            target_ = example_batch['output']
-            if type(input_)!=str:
-                input_=''
-            if type(target_)!=str:
-                target_=''
-            year = example_batch['date']
-        elif self.args.dataset == 'situatedqa':
+        elif self.args.dataset in ['templama','wmt','situatedqa', 'nyt']:
             input_ = example_batch['input']
             target_ = example_batch['output']
             if type(input_)!=str:
@@ -333,7 +320,7 @@ class Pretrain(Dataset):
         else: 
             ground_truth = None
         if (self.args.dataset == 'invariantlama' or self.args.dataset== 'TriviaQA' or self.args.dataset== 'fever' or self.args.dataset== 'AY2' or self.args.dataset== 'WNED' or self.args.dataset== 'CWEB' 
-        or self.args.dataset== 'TREX' or self.args.dataset== 'zsRE' or self.args.dataset== 'NQ' or self.args.dataset== 'HotpotQA' or self.args.dataset== 'ELI5' or self.args.dataset== 'WOW' or (self.args.dataset in ['templama', 'situatedqa', 'wmt'] and (self.type_path == 'validation' or self.type_path == 'test'))):
+        or self.args.dataset== 'TREX' or self.args.dataset== 'zsRE' or self.args.dataset== 'NQ' or self.args.dataset== 'HotpotQA' or self.args.dataset== 'ELI5' or self.args.dataset== 'WOW' or (self.args.dataset in ['templama', 'situatedqa', 'wmt', 'nyt'] and (self.type_path == 'validation' or self.type_path == 'test'))):
             labels = example_batch['id']
         elif (self.args.dataset == 'newlama' or self.args.dataset == 'updatedlama' or self.args.dataset == 'newlama_easy' or self.args.dataset == 'newqa_easy'):
             labels = example_batch['unique_id']

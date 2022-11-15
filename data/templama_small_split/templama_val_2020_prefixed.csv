@@ -1,0 +1,460 @@
+id,date,input,output
+0,2020,"In 2020, <extra_id_0> is the head coach of Bahrain-McLaren.",Vladimir Miholjević;Tristan Hoffman;Gorazd Štangelj;Alberto Volpi
+1,2020,"In 2020, <extra_id_0> is the head coach of U.C. Sampdoria.",Claudio Ranieri
+2,2020,"In 2020, Edrick Floreal works for <extra_id_0>.",Kentucky Wildcats
+3,2020,"In 2020, <extra_id_0> is the chair of Ministry of Oceans and Fisheries.",Moon Seong-hyeok
+4,2020,"In 2020, The Academic Bookstore is owned by <extra_id_0>.",Bonnier Group
+5,2020,"In 2020, <extra_id_0> is the chair of Stortinget.",Tone Wilhelmsen Trøen
+6,2020,"In 2020, Usman Ahmed Khan Buzdar is a member of the <extra_id_0>.",Pakistan Tehreek-e-Insaf
+7,2020,"In 2020, <extra_id_0> is the head of the government of North Rhine-Westphalia.",Armin Laschet
+8,2020,"In 2020, <extra_id_0> is the chair of Leicester City F.C..",Aiyawatt Srivaddhanaprabha
+9,2020,"In 2020, <extra_id_0> is the head coach of Leicester City F.C..",Brendan Rodgers
+10,2020,"In 2020, Vadim Mișin is a member of the <extra_id_0>.",Revival Party
+11,2020,"In 2020, <extra_id_0> is the head coach of FC Dynamo Brest.",Sergey Petrovich Kovalchuk
+12,2020,"In 2020, <extra_id_0> is the head coach of Bayer 04 Leverkusen.",Peter Bosz
+13,2020,"In 2020, <extra_id_0> is the chair of Liberal Democrats.",Ed Davey;Sal Brinton;Mark Pack
+14,2020,"In 2020, Jackie Trad holds the position of <extra_id_0>.",Treasurer of Queensland;Deputy Premier of Queensland
+15,2020,"In 2020, Giorgio Napolitano holds the position of <extra_id_0>.",senatore a vita
+16,2020,"In 2020, <extra_id_0> is the head coach of SV Ried.",Gerald Baumgartner
+17,2020,"In 2020, Joel Konzen holds the position of <extra_id_0>.",auxiliary bishop;titular bishop;Catholic bishop
+18,2020,"In 2020, <extra_id_0> is the head coach of SV Waldhof Mannheim.",Bernhard Trares
+19,2020,"In 2020, Angela Ahrendts works for <extra_id_0>.",Apple Inc.
+20,2020,"In 2020, <extra_id_0> is the chair of Alliance of Liberals and Democrats for Europe Party.",Hans van Baalen
+21,2020,"In 2020, Yang Shih-kuang is a member of the <extra_id_0>.",New Party
+22,2020,"In 2020, Christophe Dessimoz works for <extra_id_0>.",University College London;University of Lausanne
+23,2020,"In 2020, <extra_id_0> is the head coach of San Jose Earthquakes.",Matías Almeyda
+24,2020,"In 2020, <extra_id_0> is the head coach of Millwall F.C..",Gary Rowett
+25,2020,"In 2020, Chloe Bibby attended <extra_id_0>.",University of Maryland;Mississippi State University
+26,2020,"In 2020, Julia Y Chan works for <extra_id_0>.",University of Texas at Dallas
+27,2020,"In 2020, Joan Mesquida Ferrando is a member of the <extra_id_0>.",Ciudadanos
+28,2020,"In 2020, Luke Foster plays for <extra_id_0>.",Harrogate Town A.F.C.
+29,2020,"In 2020, <extra_id_0> is the head coach of Gaziantep F.K..",Marius Șumudică
+30,2020,"In 2020, Hsu Yung-ming is a member of the <extra_id_0>.",independent politician;New Power Party
+31,2020,"In 2020, <extra_id_0> is the head of the government of Iowa.",Kim Reynolds
+32,2020,"In 2020, Com Hem is owned by <extra_id_0>.",BC Partners
+33,2020,"In 2020, Peter R. Orszag works for <extra_id_0>.",Lazard
+34,2020,"In 2020, Mark H. Erickson works for <extra_id_0>.",Northampton Community College
+35,2020,"In 2020, <extra_id_0> is the head of the government of South Ossetia.",Anatoly Bibilov
+36,2020,"In 2020, Leon Barnett plays for <extra_id_0>.",Wigan Athletic F.C.
+37,2020,"In 2020, <extra_id_0> is the chair of National Cancer Institute.",Norman Sharpless
+38,2020,"In 2020, <extra_id_0> is the chair of Òmnium Cultural.",Jordi Cuixart i Navarro
+39,2020,"In 2020, Patria is owned by <extra_id_0>.",Kongsberg Defence & Aerospace;Finland
+40,2020,"In 2020, <extra_id_0> is the head coach of FC Utrecht.",John van den Brom
+41,2020,"In 2020, <extra_id_0> is the head coach of Pittsburgh Riverhounds SC.",Bob Lilley
+42,2020,"In 2020, Chris Montgomery works for <extra_id_0>.",Mozilla
+43,2020,"In 2020, Dragan Čavić is a member of the <extra_id_0>.",National Democratic Movement
+44,2020,"In 2020, Reber Radio Telescope is owned by <extra_id_0>.",Green Bank Observatory
+45,2020,"In 2020, Stadio Friuli is owned by <extra_id_0>.",Udinese Calcio
+46,2020,"In 2020, <extra_id_0> is the head coach of POFC Botev Vratsa.",Antoni Zdravkov
+47,2020,"In 2020, Darren Ambrose plays for <extra_id_0>.",Colchester United F.C.
+48,2020,"In 2020, Pepe Reina plays for <extra_id_0>.",S.S.C. Napoli;Associazione Calcio Milan
+49,2020,"In 2020, <extra_id_0> is the head coach of Hammarby Fotboll.",Stefan Billborn
+50,2020,"In 2020, <extra_id_0> is the head coach of KF Feronikeli.",Klodian Duro
+51,2020,"In 2020, Wells Fargo Center is owned by <extra_id_0>.",Ivanhoe Cambridge
+52,2020,"In 2020, Ravichandran Ashwin plays for <extra_id_0>.",Kings XI Punjab
+53,2020,"In 2020, Tim Burchett holds the position of <extra_id_0>.",United States representative
+54,2020,"In 2020, Steve Nash plays for <extra_id_0>.",Los Angeles Lakers
+55,2020,"In 2020, <extra_id_0> is the head coach of Fotbal Comuna Recea.",Ciprian Danciu;Romulus Buia
+56,2020,"In 2020, <extra_id_0> is the head of the government of Adamstown.",Charlene Evelyn Dolly Warren
+57,2020,"In 2020, Nora H de Leeuw works for <extra_id_0>.",Cardiff University;Utrecht University
+58,2020,"In 2020, <extra_id_0> is the head of the government of Vesthimmerland Municipality.",Per Bach Laursen
+59,2020,"In 2020, <extra_id_0> is the head coach of Louisville Cardinals men's basketball.",Chris Mack
+60,2020,"In 2020, Petar Mamić plays for <extra_id_0>.",Croatia national under-19 football team
+61,2020,"In 2020, <extra_id_0> is the head coach of Sumgayit PFC.",Aykhan Abbasov
+62,2020,"In 2020, Harald G. L. Schwefel works for <extra_id_0>.",Max Planck Institute for the Science of Light;University of Otago
+63,2020,"In 2020, John S. Chen works for <extra_id_0>.",BlackBerry
+64,2020,"In 2020, <extra_id_0> is the chair of Associazione Calcio Milan.",Paolo Scaroni
+65,2020,"In 2020, <extra_id_0> is the head coach of Associazione Calcio Milan.",Stefano Pioli
+66,2020,"In 2020, Associazione Calcio Milan is owned by <extra_id_0>.",Elliott Management Corporation
+67,2020,"In 2020, Motohiro Yogo works for <extra_id_0>.",Princeton University
+68,2020,"In 2020, Yaakov Peri is a member of the <extra_id_0>.",Yesh Atid
+69,2020,"In 2020, Dinesh Chandimal plays for <extra_id_0>.",Ruhuna Royals
+70,2020,"In 2020, Kongsvinger Line is owned by <extra_id_0>.",Bane NOR
+71,2020,"In 2020, Max Verstappen plays for <extra_id_0>.",Red Bull Racing
+72,2020,"In 2020, David Bridges plays for <extra_id_0>.",King's Lynn Town F.C.
+73,2020,"In 2020, Dražen Kutleša holds the position of <extra_id_0>.",diocesan bishop;Catholic bishop
+74,2020,"In 2020, Thomas F Krauss works for <extra_id_0>.",University of York
+75,2020,"In 2020, Carlos Tevez plays for <extra_id_0>.",Boca Juniors
+76,2020,"In 2020, <extra_id_0> is the head of the government of Vilnius.",Remigijus Šimašius
+77,2020,"In 2020, Nikol Pashinyan is a member of the <extra_id_0>.",My Step Alliance
+78,2020,"In 2020, Linha do Oeste is owned by <extra_id_0>.",Infrastructures of Portugal
+79,2020,"In 2020, Jason H. Moore works for <extra_id_0>.",University of Pennsylvania
+80,2020,"In 2020, <extra_id_0> is the chair of Burberry.",Gerry Murphy
+81,2020,"In 2020, Angela Casini works for <extra_id_0>.",Cardiff University
+82,2020,"In 2020, Vilja Toomast is a member of the <extra_id_0>.",Estonian Reform Party
+83,2020,"In 2020, <extra_id_0> is the head coach of Astana.",Stefano Zanini;Dmitry Fofonov;Bruno Cenghialta;Giuseppe Martinelli
+84,2020,"In 2020, <extra_id_0> is the head coach of Fluminense F.C..",Odair Hellmann
+85,2020,"In 2020, Beate Meinl-Reisinger is a member of the <extra_id_0>.",NEOS – The New Austria
+86,2020,"In 2020, James Allsop works for <extra_id_0>.",The University of Queensland
+87,2020,"In 2020, <extra_id_0> is the head coach of Barnsley F.C..",Gerhard Struber
+88,2020,"In 2020, Steven Finn plays for <extra_id_0>.",Islamabad United
+89,2020,"In 2020, Mustafa Akyol works for <extra_id_0>.",Cato Institute
+90,2020,"In 2020, Birgitta Jónsdóttir is a member of the <extra_id_0>.",Pirate Party Iceland
+91,2020,"In 2020, Harbhajan Singh plays for <extra_id_0>.",Chennai Super Kings
+92,2020,"In 2020, Minho railway line is owned by <extra_id_0>.",Infrastructures of Portugal
+93,2020,"In 2020, Port of Aveiro branch line is owned by <extra_id_0>.",Infrastructures of Portugal
+94,2020,"In 2020, <extra_id_0> is the head coach of KV Mechelen.",Wouter Vrancken
+95,2020,"In 2020, Nicole Megow works for <extra_id_0>.",University of Bremen
+96,2020,"In 2020, Chan Chun Sing holds the position of <extra_id_0>.",Ministry of Defence;Ministry of Social and Family Development
+97,2020,"In 2020, <extra_id_0> is the head of the government of Emilia-Romagna.",Stefano Bonaccini
+98,2020,"In 2020, Greg Jericho works for <extra_id_0>.",The Guardian
+99,2020,"In 2020, Heather Cox Richardson works for <extra_id_0>.",Boston College
+100,2020,"In 2020, <extra_id_0> is the head coach of MOL Vidi Football Club.",Gábor Márton;Joan Carrillo Milán
+101,2020,"In 2020, <extra_id_0> is the head of the government of Odessa.",Gennadiy Trukhanov
+102,2020,"In 2020, Muireann Irish works for <extra_id_0>.",University of Sydney
+103,2020,"In 2020, Marta Madrenas i Mir is a member of the <extra_id_0>.",Catalan European Democratic Party;Junts per Catalunya
+104,2020,"In 2020, <extra_id_0> is the chair of Pomona College.",G. Gabrielle Starr
+105,2020,"In 2020, Craig Bryson plays for <extra_id_0>.",Derby County F.C.;Scotland national football team;Aberdeen F.C.
+106,2020,"In 2020, Kostas Manolas plays for <extra_id_0>.",A.S. Roma;Greece national association football team
+107,2020,"In 2020, Bill Cassidy holds the position of <extra_id_0>.",United States senator
+108,2020,"In 2020, Saumitra Khan is a member of the <extra_id_0>.",Bharatiya Janata Party
+109,2020,"In 2020, <extra_id_0> is the head of the government of Szombathely.",András Nemény
+110,2020,"In 2020, Heather Humphreys holds the position of <extra_id_0>.","Teachta Dála;Minister for Jobs, Enterprise and Innovation"
+111,2020,"In 2020, Rachel Treweek holds the position of <extra_id_0>.",Bishop of Gloucester
+112,2020,"In 2020, Naomi Long holds the position of <extra_id_0>.",member of the European Parliament
+113,2020,"In 2020, <extra_id_0> is the chair of Ministry of Economy and Finance.",Kim Dong-yeon
+114,2020,"In 2020, <extra_id_0> is the head coach of Olympiacos F.C..",Pedro Martins
+115,2020,"In 2020, Janice Lee is a member of the <extra_id_0>.",Parti Rakyat Malaysia
+116,2020,"In 2020, <extra_id_0> is the chair of Société des amis du Louvre.",Louis-Antoine Prat
+117,2020,"In 2020, Jæren Line is owned by <extra_id_0>.",Bane NOR
+118,2020,"In 2020, <extra_id_0> is the head of the government of Baton Rouge.",Sharon Weston Broome
+119,2020,"In 2020, Inés Sabanés is a member of the <extra_id_0>.",Ahora Madrid;Equo
+120,2020,"In 2020, Hirving Lozano plays for <extra_id_0>.",Mexico national football team;Mexico national under-23 football team;PSV Eindhoven;S.S.C. Napoli
+121,2020,"In 2020, Kim Han-gil is a member of the <extra_id_0>.",People's Party
+122,2020,"In 2020, <extra_id_0> is the head coach of FC Zbrojovka Brno.",Miloslav Machálek
+123,2020,"In 2020, <extra_id_0> is the head coach of Standard Liège.",Philippe Montanier;Michel Preud'homme
+124,2020,"In 2020, Dawn Childs works for <extra_id_0>.",Merlin Entertainments
+125,2020,"In 2020, <extra_id_0> is the head coach of HIFK Fotboll.",Teemu Kankkunen;Tor Thodesen
+126,2020,"In 2020, Jennifer Bendery works for <extra_id_0>.",HuffPost
+127,2020,"In 2020, <extra_id_0> is the head coach of Brighton & Hove Albion F.C..",Graham Potter
+128,2020,"In 2020, <extra_id_0> is the head of the government of India.",Narendra Modi
+129,2020,"In 2020, Stephan Weil holds the position of <extra_id_0>.",Minister-President of Lower Saxony
+130,2020,"In 2020, Play M Entertainment is owned by <extra_id_0>.",Kakao M
+131,2020,"In 2020, Paul George plays for <extra_id_0>.",Los Angeles Clippers
+132,2020,"In 2020, Glenn Greenwald works for <extra_id_0>.",The Intercept
+133,2020,"In 2020, Olav Gunnar Ballo is a member of the <extra_id_0>.",Norwegian Labour Party
+134,2020,"In 2020, Hong Moon-jong is a member of the <extra_id_0>.",Our Republican Party
+135,2020,"In 2020, <extra_id_0> is the head of the government of Erlangen.",Florian Janik
+136,2020,"In 2020, <extra_id_0> is the head coach of Czech Republic national association football team.",Jaroslav Šilhavý
+137,2020,"In 2020, Kyrie Irving plays for <extra_id_0>.",Brooklyn Nets
+138,2020,"In 2020, Jim Banks holds the position of <extra_id_0>.",United States representative
+139,2020,"In 2020, Eric Garcetti holds the position of <extra_id_0>.",Mayor of the City of Los Angeles
+140,2020,"In 2020, Christofer Clemente works for <extra_id_0>.",University of the Sunshine Coast
+141,2020,"In 2020, <extra_id_0> is the head coach of Motherwell F.C..",Steve Robinson
+142,2020,"In 2020, <extra_id_0> is the head coach of NK Olimpija Ljubljana.",Dino Skender
+143,2020,"In 2020, Harrison Afful plays for <extra_id_0>.",Columbus Crew SC
+144,2020,"In 2020, <extra_id_0> is the head coach of Turris-Oltul Turnu Măgurele.",Erik Lincar
+145,2020,"In 2020, Thaddeus Ma Daqin holds the position of <extra_id_0>.",auxiliary bishop;Catholic bishop
+146,2020,"In 2020, Daniel Boeri is a member of the <extra_id_0>.",Priorité Monaco
+147,2020,"In 2020, Will Buckley plays for <extra_id_0>.",Sunderland A.F.C.
+148,2020,"In 2020, Corina Crețu is a member of the <extra_id_0>.",PRO Romania Social Liberal
+149,2020,"In 2020, Maszlee Malik is a member of the <extra_id_0>.",independent politician;Malaysian United Indigenous Party;Homeland Fighter Party
+150,2020,"In 2020, <extra_id_0> is the chair of Democratic and Republican Left.",André Chassaigne
+151,2020,"In 2020, Democratic and Republican Left is a member of the <extra_id_0>.",Guianese Socialist Party;Tavini Huiraatira
+152,2020,"In 2020, <extra_id_0> is the chair of Ministry of Foreign Affairs of Poland.",Jacek Czaputowicz;Zbigniew Rau
+153,2020,"In 2020, Andrea Pirlo plays for <extra_id_0>.",New York City FC
+154,2020,"In 2020, Norwegian digital learning arena is owned by <extra_id_0>.",Trøndelag County Municipality
+155,2020,"In 2020, <extra_id_0> is the head coach of Lotto-Soudal.",Kurt Van De Wouwer;Mario Aerts;Bart Leysen;Frederik Willems
+156,2020,"In 2020, Meng Wanzhou holds the position of <extra_id_0>.",vice president;chief financial officer
+157,2020,"In 2020, <extra_id_0> is the chair of Schloss Dagstuhl – Leibniz Center for Informatics.",Raimund Seidel
+158,2020,"In 2020, David Altshuler works for <extra_id_0>.",Vertex Pharmaceuticals
+159,2020,"In 2020, 511 Federal Building is owned by <extra_id_0>.",Portland Development Commission
+160,2020,"In 2020, Bjarne Stroustrup works for <extra_id_0>.",Morgan Stanley
+161,2020,"In 2020, Yang Jiechi holds the position of <extra_id_0>.",State Councilor of the People's Republic of China
+162,2020,"In 2020, Amos Yong works for <extra_id_0>.",Fuller Theological Seminary
+163,2020,"In 2020, <extra_id_0> is the chair of Supreme Council of the Armed Forces.",Sedki Sobhi
+164,2020,"In 2020, <extra_id_0> is the head of the government of Taiwan.",Su Tseng-chang
+165,2020,"In 2020, Brian Duensing works for <extra_id_0>.",Kansas City Royals
+166,2020,"In 2020, <extra_id_0> is the head of the government of La Rioja.",Concha Andreu
+167,2020,"In 2020, <extra_id_0> is the head coach of Società Polisportiva Ars et Labor.",Leonardo Semplici;Pasquale Marino;Luigi Di Biagio
+168,2020,"In 2020, Jonathan Sexton plays for <extra_id_0>.",British & Irish Lions;Leinster Rugby
+169,2020,"In 2020, <extra_id_0> is the head coach of FC Urartu.",Aleksandr Grigoryan
+170,2020,"In 2020, <extra_id_0> is the head coach of San Francisco 49ers.",Kyle Shanahan
+171,2020,"In 2020, <extra_id_0> is the head of the government of Atlanta.",Keisha Lance Bottoms
+172,2020,"In 2020, Andrej Plenković holds the position of <extra_id_0>.",Prime Minister of Croatia
+173,2020,"In 2020, <extra_id_0> is the head coach of UCF Knights football.",Josh Heupel
+174,2020,"In 2020, Idit Silman is a member of the <extra_id_0>.",The Jewish Home;New Right
+175,2020,"In 2020, Kongregate is owned by <extra_id_0>.",Modern Times Group
+176,2020,"In 2020, Greg Tansey plays for <extra_id_0>.",Inverness Caledonian Thistle F.C.
+177,2020,"In 2020, <extra_id_0> is the head coach of Dundee F.C..",James McPake
+178,2020,"In 2020, Stephen Ireland plays for <extra_id_0>.",Stoke City F.C.
+179,2020,"In 2020, James P. Allison works for <extra_id_0>.",University of Texas MD Anderson Cancer Center
+180,2020,"In 2020, Álvaro Morata plays for <extra_id_0>.",Atlético Madrid;Juventus FC;Chelsea F.C.;Spain national association football team
+181,2020,"In 2020, Giovani dos Santos plays for <extra_id_0>.",Los Angeles Galaxy
+182,2020,"In 2020, Robert Bingham works for <extra_id_0>.",University of Edinburgh
+183,2020,"In 2020, Winston Reid plays for <extra_id_0>.",West Ham United F.C.;New Zealand national football team
+184,2020,"In 2020, Sampa Das attended <extra_id_0>.",Purdue University
+185,2020,"In 2020, <extra_id_0> is the chair of Reserve Bank of Australia.",Philip Lowe
+186,2020,"In 2020, <extra_id_0> is the chair of Ministry of Education of the Russian Federation.",Sergey Kravtsov (politician);Olga Vasilyeva
+187,2020,"In 2020, ODEON Kino is owned by <extra_id_0>.",AMC Theatres
+188,2020,"In 2020, Gillian Rose works for <extra_id_0>.",University of Oxford
+189,2020,"In 2020, <extra_id_0> is the head of the government of Campania.",Vincenzo De Luca
+190,2020,"In 2020, Nina Revoyr holds the position of <extra_id_0>.",executive director
+191,2020,"In 2020, Réginal Goreux plays for <extra_id_0>.",Standard Liège;Haiti national football team
+192,2020,"In 2020, Tim Paine plays for <extra_id_0>.",Hobart Hurricanes
+193,2020,"In 2020, <extra_id_0> is the head of the government of Uttar Pradesh.",Yogi Adityanath
+194,2020,"In 2020, <extra_id_0> is the chair of Christian Social People's Party.",Frank Engel
+195,2020,"In 2020, <extra_id_0> is the chair of Heinrich Böll Foundation.",Ellen Ueberschär
+196,2020,"In 2020, <extra_id_0> is the head of the government of Vermont.",Phil Scott
+197,2020,"In 2020, <extra_id_0> is the head coach of FK Borac Banja Luka.",Vlado Jagodić
+198,2020,"In 2020, <extra_id_0> is the head coach of Bnei Yehuda Tel Aviv F.C..",Elisha Levy
+199,2020,"In 2020, Remigijus Šimašius is a member of the <extra_id_0>.",Freedom Party
+200,2020,"In 2020, Ruptly is owned by <extra_id_0>.",Rossiya Segodnya
+201,2020,"In 2020, <extra_id_0> is the head of the government of Wilmington.",Mike Purzycki
+202,2020,"In 2020, Mette Frederiksen holds the position of <extra_id_0>.",Prime Minister of Denmark
+203,2020,"In 2020, Bhaichung Bhutia plays for <extra_id_0>.",East Bengal F.C.
+204,2020,"In 2020, Kateřina Jacques is a member of the <extra_id_0>.",Liberal-Environmental Party
+205,2020,"In 2020, Christos Zois is a member of the <extra_id_0>.",New Reformist Radical Reconstruction
+206,2020,"In 2020, Dawn Hadley works for <extra_id_0>.",University of York
+207,2020,"In 2020, <extra_id_0> is the chair of Committee for the Defence of Democracy.",Krzysztof Łoziński
+208,2020,"In 2020, Marie-Josèphe Jude works for <extra_id_0>.",Conservatoire de Paris
+209,2020,"In 2020, Gennady Gudkov is a member of the <extra_id_0>.",Russian Opposition Coordination Council
+210,2020,"In 2020, Tamás Soproni is a member of the <extra_id_0>.",Momentum Movement
+211,2020,"In 2020, Ulf Kristersson holds the position of <extra_id_0>.",party leader
+212,2020,"In 2020, Alexander Albon plays for <extra_id_0>.",Red Bull Racing
+213,2020,"In 2020, Allison Randal works for <extra_id_0>.",SUSE
+214,2020,"In 2020, <extra_id_0> is the head coach of FC Metalurgi Rustavi.",Varlam Kilasonia
+215,2020,"In 2020, László Tőkés holds the position of <extra_id_0>.",member of the European Parliament
+216,2020,"In 2020, <extra_id_0> is the head coach of FC Steaua II București.",Pompiliu Stoica;Bogdan Vintilă
+217,2020,"In 2020, Rémi Mathis works for <extra_id_0>.",Bibliothèque nationale de France
+218,2020,"In 2020, Ghil'ad Zuckermann works for <extra_id_0>.",University of Adelaide
+219,2020,"In 2020, Marian-Jean Marinescu is a member of the <extra_id_0>.",National Liberal Party
+220,2020,"In 2020, Nathan Rourke attended <extra_id_0>.",Ohio University
+221,2020,"In 2020, <extra_id_0> is the head coach of England national association football team.",Gareth Southgate
+222,2020,"In 2020, Ignacio Gutiérrez works for <extra_id_0>.",Televisión Nacional de Chile
+223,2020,"In 2020, Arnold Rüütel is a member of the <extra_id_0>.",Conservative People's Party of Estonia
+224,2020,"In 2020, <extra_id_0> is the head coach of Zira FK.",Rashad Sadygov
+225,2020,"In 2020, <extra_id_0> is the head of the government of Alexandria.",Justin Wilson
+226,2020,"In 2020, Arti Agrawal works for <extra_id_0>.","City, University of London;University of Technology Sydney"
+227,2020,"In 2020, Viktoras Pranckietis is a member of the <extra_id_0>.",Liberal Movement
+228,2020,"In 2020, Patrick Leahy holds the position of <extra_id_0>.",United States senator;President pro tempore of the United States Senate
+229,2020,"In 2020, Meir Sheetrit is a member of the <extra_id_0>.",Hatnuah
+230,2020,"In 2020, Joel Byrom plays for <extra_id_0>.",Northampton Town F.C.
+231,2020,"In 2020, Wang Qishan holds the position of <extra_id_0>.",Vice President of the People's Republic of China
+232,2020,"In 2020, Maimunah Mohd Sharif holds the position of <extra_id_0>.",executive director
+233,2020,"In 2020, <extra_id_0> is the head coach of FC Chornomorets Odesa.",Serhiy Kovalets;Ostap Markevych
+234,2020,"In 2020, Ilya Mikhaylov works for <extra_id_0>.",FC Zenit-Izhevsk Izhevsk
+235,2020,"In 2020, Adam Bielan is a member of the <extra_id_0>.",Polska Razem
+236,2020,"In 2020, Kamel Morjane is a member of the <extra_id_0>.",Tahya Tounes
+237,2020,"In 2020, Fred VanVleet plays for <extra_id_0>.",Toronto Raptors
+238,2020,"In 2020, Chip Smith works for <extra_id_0>.",21st Century Fox
+239,2020,"In 2020, Linda Collins-Smith is a member of the <extra_id_0>.",Republican Party
+240,2020,"In 2020, Banuera Berina is a member of the <extra_id_0>.",Kiribati First Party;Boutokaan Kiribati Moa Party
+241,2020,"In 2020, Lassana Diarra plays for <extra_id_0>.",Olympique de Marseille
+242,2020,"In 2020, Paul O'Connell plays for <extra_id_0>.",RC Toulonnais
+243,2020,"In 2020, Vivendi is owned by <extra_id_0>.",Vivendi;Caisse des dépôts et consignations
+244,2020,"In 2020, <extra_id_0> is the head coach of F.C. Crotone.",Giovanni Stroppa
+245,2020,"In 2020, Luke Simpkins is a member of the <extra_id_0>.",Australian Conservatives
+246,2020,"In 2020, Ilya Sutskever works for <extra_id_0>.",OpenAI
+247,2020,"In 2020, Marina Geli i Fàbrega is a member of the <extra_id_0>.",Junts per Catalunya;Leftwing Movement
+248,2020,"In 2020, Michael Gove holds the position of <extra_id_0>.",Chancellor of the Duchy of Lancaster;Minister for the Cabinet Office
+249,2020,"In 2020, <extra_id_0> is the head of the government of Gabon.",Julien Nkoghe Békale;Rose Christiane Raponda
+250,2020,"In 2020, Marina Kaljurand holds the position of <extra_id_0>.",member of the European Parliament
+251,2020,"In 2020, Thomas P. O'Neill Jr. Federal Building is owned by <extra_id_0>.",United States House of Representatives
+252,2020,"In 2020, <extra_id_0> is the chair of State Duma.",Vyacheslav Volodin
+253,2020,"In 2020, Nerida G. Wilson works for <extra_id_0>.",Western Australian Museum;University of New South Wales
+254,2020,"In 2020, <extra_id_0> is the head coach of Apollon Smyrna F.C..",Giorgos Paraschos;Babis Tennes
+255,2020,"In 2020, Bergen Line is owned by <extra_id_0>.",Bane NOR
+256,2020,"In 2020, Christina Pagel works for <extra_id_0>.",University College London
+257,2020,"In 2020, Saleem Ali works for <extra_id_0>.",The University of Queensland;University of Delaware
+258,2020,"In 2020, <extra_id_0> is the head coach of FC Khimki.",Dmitri Gunko
+259,2020,"In 2020, Enrico Carattoni is a member of the <extra_id_0>.",United Left
+260,2020,"In 2020, Verdiana Masanja works for <extra_id_0>.",Nelson Mandela African Institute of Science and Technology
+261,2020,"In 2020, Catherine Osson is a member of the <extra_id_0>.",La République En Marche
+262,2020,"In 2020, Hannu Manninen works for <extra_id_0>.",Finnair
+263,2020,"In 2020, Carli Lloyd plays for <extra_id_0>.",Sky Blue FC
+264,2020,"In 2020, Rod Phillips holds the position of <extra_id_0>.",finance minister
+265,2020,"In 2020, Firdous Ashiq Awan is a member of the <extra_id_0>.",Pakistan Tehreek-e-Insaf
+266,2020,"In 2020, <extra_id_0> is the chair of Servant of the People.",Oleksandr Kornienko
+267,2020,"In 2020, Arkane Studios is owned by <extra_id_0>.",Microsoft Corporation;ZeniMax Media
+268,2020,"In 2020, James McClean plays for <extra_id_0>.",Stoke City F.C.;Republic of Ireland national association football team
+269,2020,"In 2020, Darren Sammy plays for <extra_id_0>.",Rajshahi Kings;Peshawar Zalmi;St Lucia Zouks;Hobart Hurricanes
+270,2020,"In 2020, Ernest Maragall is a member of the <extra_id_0>.",Republican Left of Catalonia
+271,2020,"In 2020, Neil Alexander plays for <extra_id_0>.",Heart of Midlothian F.C.
+272,2020,"In 2020, Sharon Tooze works for <extra_id_0>.",Francis Crick Institute
+273,2020,"In 2020, <extra_id_0> is the head coach of Racing Club.",Sebastián Becaccece
+274,2020,"In 2020, Iker Jiménez Elizari works for <extra_id_0>.",Mediaset España
+275,2020,"In 2020, Maria A. Pallante works for <extra_id_0>.",Library of Congress
+276,2020,"In 2020, Chao Cheng-yu is a member of the <extra_id_0>.",independent politician
+277,2020,"In 2020, <extra_id_0> is the head coach of PEC Zwolle.",John Stegeman
+278,2020,"In 2020, Shafie Apdal is a member of the <extra_id_0>.",Sabah Heritage Party
+279,2020,"In 2020, <extra_id_0> is the head of the government of Berlin.",Michael Müller
+280,2020,"In 2020, <extra_id_0> is the head coach of FK Radnik Surdulica.",Simo Krunić
+281,2020,"In 2020, Jason Eric Box works for <extra_id_0>.",Geological Survey of Denmark and Greenland
+282,2020,"In 2020, Lauren Cornell works for <extra_id_0>.","Center for Curatorial Studies, Bard College"
+283,2020,"In 2020, Lindsay Hoyle holds the position of <extra_id_0>.",Speaker of the House of Commons
+284,2020,"In 2020, Jeremy Wright holds the position of <extra_id_0>.","Secretary of State for Culture, Media and Sport"
+285,2020,"In 2020, Danny O'Brien works for <extra_id_0>.",Electronic Frontier Foundation;Committee to Protect Journalists
+286,2020,"In 2020, Cindy Hyde-Smith is a member of the <extra_id_0>.",Republican Party
+287,2020,"In 2020, Josep Guerrero works for <extra_id_0>.",Aalborg University
+288,2020,"In 2020, <extra_id_0> is the chair of Catalan Academy of Cinema.",Isona Passola i Vidal
+289,2020,"In 2020, Mirjam Van Praag works for <extra_id_0>.",Copenhagen Business School;Vrije Universiteit Amsterdam
+290,2020,"In 2020, <extra_id_0> is the head of the government of Acre.",Gladson Cameli
+291,2020,"In 2020, Gérald Darmanin is a member of the <extra_id_0>.",The Republicans
+292,2020,"In 2020, <extra_id_0> is the head coach of IF Elfsborg.",Jimmy Thelin
+293,2020,"In 2020, Ramal de Aveiro is owned by <extra_id_0>.",Infrastructures of Portugal
+294,2020,"In 2020, Richard Bruton holds the position of <extra_id_0>.","Teachta Dála;Minister for Communications, Climate Action and Environment"
+295,2020,"In 2020, Annie Lööf holds the position of <extra_id_0>.",party leader
+296,2020,"In 2020, Toni Kroos plays for <extra_id_0>.",Germany national association football team;Real Madrid CF
+297,2020,"In 2020, Daniel P. Aldrich works for <extra_id_0>.",Northeastern University
+298,2020,"In 2020, Gheorghe Flutur is a member of the <extra_id_0>.",National Liberal Party
+299,2020,"In 2020, Kasper Schmeichel plays for <extra_id_0>.",Leicester City F.C.;Denmark national association football team
+300,2020,"In 2020, Malou Aamund works for <extra_id_0>.",Google
+301,2020,"In 2020, Dimension Films is owned by <extra_id_0>.",Lantern Entertainment
+302,2020,"In 2020, <extra_id_0> is the head coach of England national rugby union team.",Eddie Jones
+303,2020,"In 2020, <extra_id_0> is the head of the government of Saitama Prefecture.",Motohiro Ōno
+304,2020,"In 2020, Trunk Line is owned by <extra_id_0>.",Bane NOR
+305,2020,"In 2020, Jang Geun-suk attended <extra_id_0>.",Hanyang University
+306,2020,"In 2020, <extra_id_0> is the head coach of CS Gaz Metan Mediaș.","Dušan Uhrin, Jr.;Eduard Iordănescu"
+307,2020,"In 2020, Jean-Pierre Grand is a member of the <extra_id_0>.",United Republic
+308,2020,"In 2020, <extra_id_0> is the head of the government of Thailand.",Prayut Chan-ocha
+309,2020,"In 2020, Daniel J. Caron works for <extra_id_0>.",École nationale d'administration publique
+310,2020,"In 2020, <extra_id_0> is the head of the government of Benin.",Patrice Talon
+311,2020,"In 2020, <extra_id_0> is the head coach of West Ham United F.C..",David Moyes
+312,2020,"In 2020, <extra_id_0> is the chair of World Confederation of Billiards Sports.",Ian Anderson
+313,2020,"In 2020, Mumtaz Bhutto is a member of the <extra_id_0>.",Pakistan Tehreek-e-Insaf
+314,2020,"In 2020, Tabetha S. Boyajian works for <extra_id_0>.",Yale University
+315,2020,"In 2020, <extra_id_0> is the head of the government of Kaohsiung.",Han Kuo-yu
+316,2020,"In 2020, Ralph Northam holds the position of <extra_id_0>.",Governor of Virginia
+317,2020,"In 2020, Amit Shah holds the position of <extra_id_0>.",Minister of Home Affairs;Member of Rajya Sabha
+318,2020,"In 2020, Apoorva Mandavilli works for <extra_id_0>.",The New York Times
+319,2020,"In 2020, <extra_id_0> is the head coach of Vaasan Palloseura.",Christian Sund
+320,2020,"In 2020, Nathan Law is a member of the <extra_id_0>.",Demosistō;independent politician
+321,2020,"In 2020, Justin Welby holds the position of <extra_id_0>.",Archbishop of Canterbury;bishop
+322,2020,"In 2020, Andrew Scheer holds the position of <extra_id_0>.",Leader of the Official Opposition
+323,2020,"In 2020, <extra_id_0> is the head coach of Odds BK.",Jan Frode Nornes;Dag-Eilev Fagermo
+324,2020,"In 2020, <extra_id_0> is the head of the government of Marche.",Francesco Acquaroli;Luca Ceriscioli
+325,2020,"In 2020, Julio Arca plays for <extra_id_0>.",South Shields F.C.
+326,2020,"In 2020, <extra_id_0> is the chair of Ministry of Finance.",Jan Tore Sanner;Siv Jensen
+327,2020,"In 2020, <extra_id_0> is the chair of Organisation of Islamic Cooperation.",Yousef Al-Othaimeen
+328,2020,"In 2020, <extra_id_0> is the head coach of FC Kairat.",Aleksey Shpilevsky
+329,2020,"In 2020, Josep Sánchez i Llibre is a member of the <extra_id_0>.",United to Advance
+330,2020,"In 2020, Thomas R. Lynch works for <extra_id_0>.",University of Southampton
+331,2020,"In 2020, <extra_id_0> is the head of the government of Freiburg im Breisgau.",Martin Horn
+332,2020,"In 2020, Eric Swalwell holds the position of <extra_id_0>.",United States representative
+333,2020,"In 2020, <extra_id_0> is the chair of Republic of Bashkortostan.",Radiy Khabirov
+334,2020,"In 2020, <extra_id_0> is the head of the government of Guam.",Lou Leon Guerrero
+335,2020,"In 2020, Joan Gabel works for <extra_id_0>.",University of Minnesota system
+336,2020,"In 2020, Victor Oladipo plays for <extra_id_0>.",Indiana Pacers
+337,2020,"In 2020, Stanislav Edward Shmelev works for <extra_id_0>.",University of Edinburgh
+338,2020,"In 2020, Yariv Oppenheimer is a member of the <extra_id_0>.",Meretz
+339,2020,"In 2020, <extra_id_0> is the head coach of FK Ventspils.",Viorel Frunză
+340,2020,"In 2020, Kostas Antetokounmpo attended <extra_id_0>.",University of Dayton
+341,2020,"In 2020, Tunahan Kuzu is a member of the <extra_id_0>.",DENK
+342,2020,"In 2020, Raymond Leo Burke holds the position of <extra_id_0>.",cardinal
+343,2020,"In 2020, John Giannandrea works for <extra_id_0>.",Apple Inc.
+344,2020,"In 2020, <extra_id_0> is the head coach of Legia Warsaw.",Aleksandar Vuković
+345,2020,"In 2020, Susan Baer works for <extra_id_0>.",Arup
+346,2020,"In 2020, <extra_id_0> is the chair of Ministry of Justice.",Choo Mi-ae
+347,2020,"In 2020, Margaret Cheney works for <extra_id_0>.",Colorado State University
+348,2020,"In 2020, <extra_id_0> is the chair of National Rally.",Marine Le Pen
+349,2020,"In 2020, Persis Drell works for <extra_id_0>.",Stanford University
+350,2020,"In 2020, <extra_id_0> is the chair of United States Department of Justice.",William Barr
+351,2020,"In 2020, Klaus Iohannis is a member of the <extra_id_0>.",independent politician
+352,2020,"In 2020, Megan Walker attended <extra_id_0>.",University of Connecticut
+353,2020,"In 2020, <extra_id_0> is the chair of Humanists UK.",Alice Roberts
+354,2020,"In 2020, Alfonso Valencia works for <extra_id_0>.",Barcelona Supercomputing Center;Catalan Institution for Research and Advanced Studies
+355,2020,"In 2020, Nate Schierholtz works for <extra_id_0>.",Detroit Tigers
+356,2020,"In 2020, <extra_id_0> is the chair of National Party of Australia.",Michael McCormack
+357,2020,"In 2020, Andrew V. Goldberg works for <extra_id_0>.",Amazon
+358,2020,"In 2020, Daniel Swain works for <extra_id_0>.",National Center for Atmospheric Research;Illinois Natural History Survey
+359,2020,"In 2020, <extra_id_0> is the chair of European People's Party group.",Manfred Weber
+360,2020,"In 2020, <extra_id_0> is the chair of Mondi Group.",Philip Yea
+361,2020,"In 2020, <extra_id_0> is the head of the government of Charlottesville.",Nikuyah Walker
+362,2020,"In 2020, <extra_id_0> is the head coach of R. Charleroi S.C..",Karim Belhocine
+363,2020,"In 2020, Ramon Espadaler Parcerisas is a member of the <extra_id_0>.",United to Advance
+364,2020,"In 2020, Dominic Grieve holds the position of <extra_id_0>.",Advocate General for Northern Ireland
+365,2020,"In 2020, <extra_id_0> is the head of the government of Bratislava.",Matúš Vallo
+366,2020,"In 2020, Charles M. Huber is a member of the <extra_id_0>.",Christian Democratic Union
+367,2020,"In 2020, Věra Jourová holds the position of <extra_id_0>.",Vice-President of the European Commission
+368,2020,"In 2020, <extra_id_0> is the head of the government of Sibiu.",Astrid Fodor
+369,2020,"In 2020, Jill R. Horwitz works for <extra_id_0>.","University of California, Los Angeles;University of Victoria"
+370,2020,"In 2020, Tua Tagovailoa attended <extra_id_0>.",University of Alabama
+371,2020,"In 2020, Deborah Terry works for <extra_id_0>.",The University of Queensland;Curtin University
+372,2020,"In 2020, Antoine Bozio works for <extra_id_0>.",School for Advanced Studies in the Social Sciences;Paris School of Economics
+373,2020,"In 2020, Alfa Romeo is owned by <extra_id_0>.",Fiat Chrysler Automobiles
+374,2020,"In 2020, Lucas Richman works for <extra_id_0>.",Bangor Symphony Orchestra
+375,2020,"In 2020, <extra_id_0> is the head coach of ERA-Circus.",Marc Janssens
+376,2020,"In 2020, Rachel Sheherazade works for <extra_id_0>.",SBT
+377,2020,"In 2020, Mangala pinsiri Samaraweera holds the position of <extra_id_0>.",Minister of Finance of Sri Lanka
+378,2020,"In 2020, Dimitar Stoyanov is a member of the <extra_id_0>.",National-Democratic Party
+379,2020,"In 2020, <extra_id_0> is the head of the government of Yonkers.",Mike Spano
+380,2020,"In 2020, Gheorghe Falcă is a member of the <extra_id_0>.",National Liberal Party
+381,2020,"In 2020, Michael Cohen is a member of the <extra_id_0>.",Democratic Party
+382,2020,"In 2020, Kemba Walker plays for <extra_id_0>.",Charlotte Hornets
+383,2020,"In 2020, <extra_id_0> is the head coach of FC Gomel.",Ivan Bionchik
+384,2020,"In 2020, Lucy Harris is a member of the <extra_id_0>.",Conservative Party
+385,2020,"In 2020, <extra_id_0> is the head coach of FC Midtjylland.",Brian Priske
+386,2020,"In 2020, Kirill I of Moscow holds the position of <extra_id_0>.",Patriarch of Moscow and all Russia
+387,2020,"In 2020, Leah Williamson plays for <extra_id_0>.",England women's national under-20 football team;Arsenal W.F.C.;England women's national under-19 football team;England women's national under-23 football team
+388,2020,"In 2020, <extra_id_0> is the chair of United States Department of Energy.",Dan R. Brouillette
+389,2020,"In 2020, <extra_id_0> is the head coach of Greenock Morton F.C..",Jonatan Johansson
+390,2020,"In 2020, Amjad Kalaf plays for <extra_id_0>.",Al-Shorta Baghdad
+391,2020,"In 2020, <extra_id_0> is the head coach of Kayserispor.",Robert Prosinečki;Bayram Bektaş
+392,2020,"In 2020, Jari Jones works for <extra_id_0>.",Calvin Klein Inc
+393,2020,"In 2020, <extra_id_0> is the head coach of Bora-Hansgrohe.",Ján Valach;Steffen Radochla;André Schulze;Jens Zemke;Jean-Pierre Heynderickx;Enrico Poitschke
+394,2020,"In 2020, <extra_id_0> is the chair of CRH.",Richie Boucher
+395,2020,"In 2020, <extra_id_0> is the chair of Verband der Reservisten der Deutschen Bundeswehr.",Patrick Sensburg
+396,2020,"In 2020, <extra_id_0> is the head coach of Gimnàstic de Tarragona.",Jose Antonio Seligrat Bernal
+397,2020,"In 2020, Michel Bissonnet is a member of the <extra_id_0>.",Ensemble Montréal
+398,2020,"In 2020, Philippe Gilbert plays for <extra_id_0>.",Lotto-Soudal
+399,2020,"In 2020, Lourdes Ciuró i Buldó is a member of the <extra_id_0>.",Catalan European Democratic Party
+400,2020,"In 2020, Christophe Robino is a member of the <extra_id_0>.",Priorité Monaco
+401,2020,"In 2020, Richard Chaplow plays for <extra_id_0>.",Doncaster Rovers F.C.
+402,2020,"In 2020, Katie Doores works for <extra_id_0>.",King's College London
+403,2020,"In 2020, Expobank CZ is owned by <extra_id_0>.",Igor Kim
+404,2020,"In 2020, <extra_id_0> is the chair of Democratic Party of Korea.",Lee Hae Chan
+405,2020,"In 2020, Svitlana Zalishchuk is a member of the <extra_id_0>.",Democratic Alliance
+406,2020,"In 2020, <extra_id_0> is the chair of ADFE-Français du Monde.",Claudine Lepage
+407,2020,"In 2020, Craig Mackinlay is a member of the <extra_id_0>.",Conservative Party
+408,2020,"In 2020, China Media Group Headquarters is owned by <extra_id_0>.",China Media Group
+409,2020,"In 2020, <extra_id_0> is the head of the government of North West.",Job Mokgoro
+410,2020,"In 2020, Hiromichi Mizuno works for <extra_id_0>.","Government Pension Investment Fund;Tesla, Inc."
+411,2020,"In 2020, Alpha Condé holds the position of <extra_id_0>.",President of Guinea;Chairperson of the African Union
+412,2020,"In 2020, <extra_id_0> is the head of the government of Gdańsk.",Aleksandra Dulkiewicz
+413,2020,"In 2020, <extra_id_0> is the chair of United States Cyber Command.",Michael S. Rogers
+414,2020,"In 2020, Julia Ebner works for <extra_id_0>.",Institute for Strategic Dialogue
+415,2020,"In 2020, <extra_id_0> is the head of the government of New Taipei City.",Hou Yu-ih
+416,2020,"In 2020, Dennis Hof is a member of the <extra_id_0>.",Republican Party
+417,2020,"In 2020, Basel Ghattas is a member of the <extra_id_0>.",Joint List;Balad
+418,2020,"In 2020, Mircea Geoană is a member of the <extra_id_0>.",independent politician
+419,2020,"In 2020, <extra_id_0> is the chair of Junta of Castile and León.",Alfonso Fernando Fernández Mañueco
+420,2020,"In 2020, Sylvia Burwell works for <extra_id_0>.",American University
+421,2020,"In 2020, Sauli Niinistö holds the position of <extra_id_0>.",President of Finland
+422,2020,"In 2020, <extra_id_0> is the head coach of SC Paderborn 07.",Steffen Baumgart
+423,2020,"In 2020, Ada Colau is a member of the <extra_id_0>.",Barcelona en Comú;Catalunya en Comú
+424,2020,"In 2020, Jevon Carter attended <extra_id_0>.",West Virginia University
+425,2020,"In 2020, <extra_id_0> is the head of the government of Verona.",Federico Sboarina
+426,2020,"In 2020, James R. Clapper holds the position of <extra_id_0>.",Director of National Intelligence
+427,2020,"In 2020, <extra_id_0> is the chair of Alliance '90/The Greens.",Robert Habeck;Annalena Baerbock
+428,2020,"In 2020, Memphis Depay plays for <extra_id_0>.",Olympique Lyonnais;Netherlands national association football team
+429,2020,"In 2020, Erich Pascal Malkemper works for <extra_id_0>.",Research Institute of Molecular Pathology
+430,2020,"In 2020, Kristin De Troyer works for <extra_id_0>.",St. Katherine College;University of St Andrews
+431,2020,"In 2020, Camille Combal works for <extra_id_0>.",C8;Virgin Radio
+432,2020,"In 2020, Peggy Piesche works for <extra_id_0>.",Federal Agency for Civic Education
+433,2020,"In 2020, Arjun Singh ( politician) is a member of the <extra_id_0>.",Bharatiya Janata Party
+434,2020,"In 2020, <extra_id_0> is the head coach of FK Inter Bratislava.",Miroslav Jantek
+435,2020,"In 2020, Jana Žitňanská is a member of the <extra_id_0>.",For the People
+436,2020,"In 2020, Elazar Stern is a member of the <extra_id_0>.",Yesh Atid
+437,2020,"In 2020, Samer Hassan works for <extra_id_0>.",Complutense University of Madrid;Harvard University
+438,2020,"In 2020, Roger Wakimoto works for <extra_id_0>.","University of California, Los Angeles"
+439,2020,"In 2020, Patrick Sensburg holds the position of <extra_id_0>.",president
+440,2020,"In 2020, <extra_id_0> is the head of the government of Jakarta.",Anies Baswedan
+441,2020,"In 2020, <extra_id_0> is the chair of Ministry of Health.",Aurelijus Veryga
+442,2020,"In 2020, <extra_id_0> is the head of the government of Nizhny Novgorod Oblast.",Gleb Nikitin
+443,2020,"In 2020, Fabio Borini plays for <extra_id_0>.",Sunderland A.F.C.
+444,2020,"In 2020, Miguel Barbosa Huerta is a member of the <extra_id_0>.",National Regeneration Movement
+445,2020,"In 2020, Hiroki Sakai plays for <extra_id_0>.",Olympique de Marseille;Japan national football team
+446,2020,"In 2020, Moon Seon-min plays for <extra_id_0>.",Djurgårdens IF
+447,2020,"In 2020, Charles Kauvu Abel is a member of the <extra_id_0>.",Our Development Party
+448,2020,"In 2020, Averil Power is a member of the <extra_id_0>.",independent politician
+449,2020,"In 2020, <extra_id_0> is the chair of Brothers of Italy.",Giorgia Meloni
+450,2020,"In 2020, M. Lee Pelton works for <extra_id_0>.",Emerson College
+451,2020,"In 2020, <extra_id_0> is the head coach of FK Rudar Pljevlja.",Edis Mulalić
+452,2020,"In 2020, Elaine Fox works for <extra_id_0>.",University of Oxford
+453,2020,"In 2020, DeepMind is owned by <extra_id_0>.",Alphabet Inc.
+454,2020,"In 2020, Carine Roitfeld works for <extra_id_0>.",Harper's Bazaar
+455,2020,"In 2020, Jonathan Smallwood works for <extra_id_0>.",University of York
+456,2020,"In 2020, Hunter Biden works for <extra_id_0>.",BHR Partners
+457,2020,"In 2020, Taizo Mikazuki is a member of the <extra_id_0>.",independent politician
+458,2020,"In 2020, <extra_id_0> is the head coach of A.S. Nancy-Lorraine.",Jean-Louis Garcia

@@ -14,7 +14,7 @@ def main():
         for answer in row['answer']:
             answers.append(answer['name'])
         date = row['date']
-        if int(date) > 2018:
+        if int(date) > 2019:
             continue
         query = row['query'].replace('_X_', '<extra_id_0>')
         res = [i, date, query, ';'.join(answers)]

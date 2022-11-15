@@ -1,0 +1,471 @@
+id,date,input,output
+0,2017,"In 2017, <extra_id_0> is the head coach of Bahrain-McLaren.",Tristan Hoffman;Harald Morscher;Vladimir Miholjević;Alberto Volpi;Gorazd Štangelj;Mario Chiesa
+1,2017,"In 2017, <extra_id_0> is the head coach of U.C. Sampdoria.",Marco Giampaolo
+2,2017,"In 2017, Edrick Floreal works for <extra_id_0>.",Kentucky Wildcats
+3,2017,"In 2017, <extra_id_0> is the chair of Ministry of Oceans and Fisheries.",Young-Choon Kim
+4,2017,"In 2017, The Academic Bookstore is owned by <extra_id_0>.",Bonnier Group
+5,2017,"In 2017, <extra_id_0> is the chair of Stortinget.",Olemic Thommessen
+6,2017,"In 2017, Usman Ahmed Khan Buzdar is a member of the <extra_id_0>.",Pakistan Muslim League (N)
+7,2017,"In 2017, <extra_id_0> is the head of the government of North Rhine-Westphalia.",Hannelore Kraft;Armin Laschet
+8,2017,"In 2017, <extra_id_0> is the chair of Leicester City F.C..",Vichai Srivaddhanaprabha
+9,2017,"In 2017, <extra_id_0> is the head coach of Leicester City F.C..",Claude Puel;Claudio Ranieri
+10,2017,"In 2017, Vadim Mișin is a member of the <extra_id_0>.",Revival Party
+11,2017,"In 2017, <extra_id_0> is the head coach of FC Dynamo Brest.",Uladzimir Zhuravel
+12,2017,"In 2017, <extra_id_0> is the head coach of Bayer 04 Leverkusen.",Heiko Herrlich
+13,2017,"In 2017, <extra_id_0> is the chair of Liberal Democrats.",Vince Cable;Tim Farron;Sal Brinton
+14,2017,"In 2017, Jackie Trad holds the position of <extra_id_0>.",Treasurer of Queensland;Deputy Premier of Queensland
+15,2017,"In 2017, Giorgio Napolitano holds the position of <extra_id_0>.",senatore a vita
+16,2017,"In 2017, <extra_id_0> is the head coach of SV Waldhof Mannheim.",Gerd Dais
+17,2017,"In 2017, Angela Ahrendts works for <extra_id_0>.",Apple Inc.
+18,2017,"In 2017, <extra_id_0> is the chair of Alliance of Liberals and Democrats for Europe Party.",Hans van Baalen
+19,2017,"In 2017, Yang Shih-kuang is a member of the <extra_id_0>.",New Party
+20,2017,"In 2017, Christophe Dessimoz works for <extra_id_0>.",University College London;University of Lausanne
+21,2017,"In 2017, <extra_id_0> is the head coach of San Jose Earthquakes.",Chris Leitch
+22,2017,"In 2017, <extra_id_0> is the head coach of Millwall F.C..",Neil Harris
+23,2017,"In 2017, Chloe Bibby attended <extra_id_0>.",Mississippi State University;Rowville Secondary College
+24,2017,"In 2017, Julia Y Chan works for <extra_id_0>.",University of Texas at Dallas
+25,2017,"In 2017, Joan Mesquida Ferrando is a member of the <extra_id_0>.",Spanish Socialist Workers' Party
+26,2017,"In 2017, Luke Foster plays for <extra_id_0>.",Harrogate Town A.F.C.
+27,2017,"In 2017, Hsu Yung-ming is a member of the <extra_id_0>.",New Power Party
+28,2017,"In 2017, <extra_id_0> is the head of the government of Iowa.",Terry Branstad;Kim Reynolds
+29,2017,"In 2017, Com Hem is owned by <extra_id_0>.",BC Partners
+30,2017,"In 2017, Peter R. Orszag works for <extra_id_0>.",Lazard
+31,2017,"In 2017, Mark H. Erickson works for <extra_id_0>.",Northampton Community College
+32,2017,"In 2017, <extra_id_0> is the head of the government of South Ossetia.",Anatoly Bibilov;Leonid Tibilov
+33,2017,"In 2017, Leon Barnett plays for <extra_id_0>.",Wigan Athletic F.C.
+34,2017,"In 2017, Daniel McBreen plays for <extra_id_0>.",Edgeworth FC
+35,2017,"In 2017, Damian Boeselager attended <extra_id_0>.",Columbia University;Hertie School
+36,2017,"In 2017, <extra_id_0> is the chair of National Cancer Institute.",Douglas R. Lowy;Norman Sharpless
+37,2017,"In 2017, <extra_id_0> is the chair of Òmnium Cultural.",Jordi Cuixart i Navarro
+38,2017,"In 2017, Patria is owned by <extra_id_0>.",Kongsberg Defence & Aerospace;Finland
+39,2017,"In 2017, <extra_id_0> is the head coach of FC Utrecht.",Erik ten Hag
+40,2017,"In 2017, <extra_id_0> is the head coach of Pittsburgh Riverhounds SC.",Bob Lilley;Dave Brandt
+41,2017,"In 2017, Chris Montgomery works for <extra_id_0>.",Mozilla
+42,2017,"In 2017, Dragan Čavić is a member of the <extra_id_0>.",National Democratic Movement
+43,2017,"In 2017, Reber Radio Telescope is owned by <extra_id_0>.",Green Bank Observatory
+44,2017,"In 2017, Stadio Friuli is owned by <extra_id_0>.",Udinese Calcio
+45,2017,"In 2017, <extra_id_0> is the head coach of POFC Botev Vratsa.",Sasho Angelov
+46,2017,"In 2017, Michael Carberry plays for <extra_id_0>.",Leicestershire County Cricket Club;Hampshire County Cricket Club
+47,2017,"In 2017, Darren Ambrose plays for <extra_id_0>.",Colchester United F.C.
+48,2017,"In 2017, Pepe Reina plays for <extra_id_0>.",S.S.C. Napoli
+49,2017,"In 2017, <extra_id_0> is the head coach of Hammarby Fotboll.",Jakob Michelsen
+50,2017,"In 2017, Wells Fargo Center is owned by <extra_id_0>.",Ivanhoe Cambridge
+51,2017,"In 2017, William Sachiti attended <extra_id_0>.",Nvidia;Aberystwyth University
+52,2017,"In 2017, Ravichandran Ashwin plays for <extra_id_0>.",India national cricket team;Worcestershire County Cricket Club;Rising Pune Supergiant
+53,2017,"In 2017, Tim Burchett holds the position of <extra_id_0>.",mayor
+54,2017,"In 2017, Steve Nash plays for <extra_id_0>.",Los Angeles Lakers
+55,2017,"In 2017, <extra_id_0> is the head coach of Fotbal Comuna Recea.",Romulus Buia
+56,2017,"In 2017, <extra_id_0> is the head of the government of Adamstown.",yosef alhamood
+57,2017,"In 2017, Daniele Ganser works for <extra_id_0>.",University of St. Gallen
+58,2017,"In 2017, Nora H de Leeuw works for <extra_id_0>.",Cardiff University;Utrecht University
+59,2017,"In 2017, <extra_id_0> is the head of the government of Vesthimmerland Municipality.",Knud Kristensen
+60,2017,"In 2017, <extra_id_0> is the head coach of Louisville Cardinals men's basketball.",Rick Pitino
+61,2017,"In 2017, Petar Mamić plays for <extra_id_0>.",Croatia national under-19 football team
+62,2017,"In 2017, Todd Rokita holds the position of <extra_id_0>.",United States representative
+63,2017,"In 2017, Britt Marie Hermes attended <extra_id_0>.",University of Kiel
+64,2017,"In 2017, Harald G. L. Schwefel works for <extra_id_0>.",Max Planck Institute for the Science of Light;University of Otago
+65,2017,"In 2017, John S. Chen works for <extra_id_0>.",BlackBerry
+66,2017,"In 2017, <extra_id_0> is the chair of Associazione Calcio Milan.",Silvio Berlusconi;Li Yonghong
+67,2017,"In 2017, <extra_id_0> is the head coach of Associazione Calcio Milan.",Vincenzo Montella;Gennaro Gattuso
+68,2017,"In 2017, Associazione Calcio Milan is owned by <extra_id_0>.",Fininvest
+69,2017,"In 2017, Motohiro Yogo works for <extra_id_0>.",Princeton University
+70,2017,"In 2017, Yaakov Peri is a member of the <extra_id_0>.",Yesh Atid
+71,2017,"In 2017, Fatoumata Tambajang holds the position of <extra_id_0>.",Minister of Women's Affairs;Vice President of the Gambia
+72,2017,"In 2017, Dinesh Chandimal plays for <extra_id_0>.",Sri Lanka national cricket team;Ruhuna Royals
+73,2017,"In 2017, Kongsvinger Line is owned by <extra_id_0>.",Bane NOR
+74,2017,"In 2017, Max Verstappen plays for <extra_id_0>.",Red Bull Racing
+75,2017,"In 2017, David Bridges plays for <extra_id_0>.",King's Lynn Town F.C.
+76,2017,"In 2017, Dražen Kutleša holds the position of <extra_id_0>.",diocesan bishop;Catholic bishop
+77,2017,"In 2017, Thomas F Krauss works for <extra_id_0>.",University of York
+78,2017,"In 2017, Carlos Tevez plays for <extra_id_0>.",Shanghai Shenhua F.C.;Boca Juniors
+79,2017,"In 2017, <extra_id_0> is the head of the government of Vilnius.",Remigijus Šimašius
+80,2017,"In 2017, Linha do Oeste is owned by <extra_id_0>.",Infrastructures of Portugal
+81,2017,"In 2017, Jason H. Moore works for <extra_id_0>.",University of Pennsylvania
+82,2017,"In 2017, <extra_id_0> is the chair of Burberry.",John Peace
+83,2017,"In 2017, Angela Casini works for <extra_id_0>.",Cardiff University
+84,2017,"In 2017, Vilja Toomast is a member of the <extra_id_0>.",Estonian Reform Party
+85,2017,"In 2017, <extra_id_0> is the head coach of Astana.",Dmitry Fofonov;Bruno Cenghialta;Lars Michaelsen;Stefano Zanini;Giuseppe Martinelli;Serguei Yakovlev
+86,2017,"In 2017, <extra_id_0> is the head coach of Fluminense F.C..",Abel Braga
+87,2017,"In 2017, Beate Meinl-Reisinger is a member of the <extra_id_0>.",NEOS – The New Austria
+88,2017,"In 2017, James Allsop works for <extra_id_0>.",The University of Queensland
+89,2017,"In 2017, <extra_id_0> is the head coach of Barnsley F.C..",Paul Heckingbottom
+90,2017,"In 2017, Rafael Correa Delgado holds the position of <extra_id_0>.",President of Ecuador
+91,2017,"In 2017, Mustafa Akyol works for <extra_id_0>.",Wellesley College
+92,2017,"In 2017, Birgitta Jónsdóttir is a member of the <extra_id_0>.",Pirate Party Iceland
+93,2017,"In 2017, Harbhajan Singh plays for <extra_id_0>.",Mumbai Indians
+94,2017,"In 2017, Minho railway line is owned by <extra_id_0>.",Infrastructures of Portugal
+95,2017,"In 2017, Port of Aveiro branch line is owned by <extra_id_0>.",Infrastructures of Portugal
+96,2017,"In 2017, <extra_id_0> is the head coach of KV Mechelen.",Yannick Ferrera
+97,2017,"In 2017, Nicole Megow works for <extra_id_0>.",University of Bremen
+98,2017,"In 2017, Chan Chun Sing holds the position of <extra_id_0>.",Ministry of Defence;Ministry of Social and Family Development
+99,2017,"In 2017, <extra_id_0> is the head of the government of Emilia-Romagna.",Stefano Bonaccini
+100,2017,"In 2017, Janak Sapkota works for <extra_id_0>.",University of Leoben
+101,2017,"In 2017, Greg Jericho works for <extra_id_0>.",The Guardian
+102,2017,"In 2017, Heather Cox Richardson works for <extra_id_0>.",Boston College
+103,2017,"In 2017, <extra_id_0> is the head coach of MOL Vidi Football Club.",Marko Nikolić
+104,2017,"In 2017, <extra_id_0> is the head of the government of Odessa.",Gennadiy Trukhanov
+105,2017,"In 2017, Muireann Irish works for <extra_id_0>.",University of Sydney
+106,2017,"In 2017, Marta Madrenas i Mir is a member of the <extra_id_0>.",Catalan European Democratic Party
+107,2017,"In 2017, Steve Knight holds the position of <extra_id_0>.",United States representative
+108,2017,"In 2017, <extra_id_0> is the chair of Pomona College.",G. Gabrielle Starr;David W. Oxtoby
+109,2017,"In 2017, Craig Bryson plays for <extra_id_0>.",Derby County F.C.;Scotland national football team
+110,2017,"In 2017, Kostas Manolas plays for <extra_id_0>.",A.S. Roma;Greece national association football team
+111,2017,"In 2017, Bill Cassidy holds the position of <extra_id_0>.",United States senator
+112,2017,"In 2017, Saumitra Khan is a member of the <extra_id_0>.",All India Trinamool Congress
+113,2017,"In 2017, <extra_id_0> is the head of the government of Szombathely.",Tivadar Puskás
+114,2017,"In 2017, Heather Humphreys holds the position of <extra_id_0>.","Teachta Dála;Minister for Jobs, Enterprise and Innovation;Minister for Arts, Heritage and the Gaeltacht"
+115,2017,"In 2017, Rachel Treweek holds the position of <extra_id_0>.",Bishop of Gloucester
+116,2017,"In 2017, <extra_id_0> is the chair of Ministry of Economy and Finance.",Kim Dong-yeon;Yoo Il-ho
+117,2017,"In 2017, <extra_id_0> is the chair of Société des amis du Louvre.",Louis-Antoine Prat
+118,2017,"In 2017, Jæren Line is owned by <extra_id_0>.",Bane NOR
+119,2017,"In 2017, <extra_id_0> is the head of the government of Baton Rouge.",Sharon Weston Broome
+120,2017,"In 2017, Inés Sabanés is a member of the <extra_id_0>.",Ahora Madrid;Equo
+121,2017,"In 2017, Hirving Lozano plays for <extra_id_0>.",Mexico national football team;PSV Eindhoven;Mexico national under-23 football team;CF Pachuca
+122,2017,"In 2017, Kim Han-gil is a member of the <extra_id_0>.",People's Party
+123,2017,"In 2017, <extra_id_0> is the head coach of FC Zbrojovka Brno.",Svatopluk Habanec
+124,2017,"In 2017, Volodymyr Lytvyn holds the position of <extra_id_0>.",People's Deputy of Ukraine
+125,2017,"In 2017, Dawn Childs works for <extra_id_0>.",Merlin Entertainments
+126,2017,"In 2017, Jennifer Bendery works for <extra_id_0>.",HuffPost
+127,2017,"In 2017, <extra_id_0> is the head coach of Panathinaikos B.C..",Xavier Pascual Vives
+128,2017,"In 2017, <extra_id_0> is the head coach of Brighton & Hove Albion F.C..",Chris Hughton
+129,2017,"In 2017, <extra_id_0> is the head coach of Limburg Lions.",Lambert Schuurs
+130,2017,"In 2017, <extra_id_0> is the head of the government of India.",Narendra Modi
+131,2017,"In 2017, Stephan Weil holds the position of <extra_id_0>.",Minister-President of Lower Saxony
+132,2017,"In 2017, Play M Entertainment is owned by <extra_id_0>.",Kakao M
+133,2017,"In 2017, Philipp Lahm plays for <extra_id_0>.",FC Bayern Munich
+134,2017,"In 2017, Glenn Greenwald works for <extra_id_0>.",The Intercept
+135,2017,"In 2017, David Warner plays for <extra_id_0>.",Australia national cricket team;Sunrisers Hyderabad
+136,2017,"In 2017, Olav Gunnar Ballo is a member of the <extra_id_0>.",Norwegian Labour Party
+137,2017,"In 2017, Hong Moon-jong is a member of the <extra_id_0>.",Liberty Korea Party
+138,2017,"In 2017, Lou Barletta holds the position of <extra_id_0>.",United States representative
+139,2017,"In 2017, <extra_id_0> is the head of the government of Erlangen.",Florian Janik
+140,2017,"In 2017, <extra_id_0> is the head coach of Czech Republic national association football team.",Karel Jarolím
+141,2017,"In 2017, Kyrie Irving plays for <extra_id_0>.",Boston Celtics
+142,2017,"In 2017, Jim Banks holds the position of <extra_id_0>.",United States representative
+143,2017,"In 2017, Eric Garcetti holds the position of <extra_id_0>.",Mayor of the City of Los Angeles
+144,2017,"In 2017, Christofer Clemente works for <extra_id_0>.",University of the Sunshine Coast
+145,2017,"In 2017, <extra_id_0> is the head coach of Motherwell F.C..",Steve Robinson
+146,2017,"In 2017, <extra_id_0> is the head coach of NK Olimpija Ljubljana.",Luka Elsner
+147,2017,"In 2017, Harrison Afful plays for <extra_id_0>.",Columbus Crew SC
+148,2017,"In 2017, Thaddeus Ma Daqin holds the position of <extra_id_0>.",auxiliary bishop;Catholic bishop
+149,2017,"In 2017, Jean-Louis Tauran holds the position of <extra_id_0>.",camerlengo of the Holy Roman Church;cardinal
+150,2017,"In 2017, Daniel Boeri is a member of the <extra_id_0>.",Horizon Monaco
+151,2017,"In 2017, Will Buckley plays for <extra_id_0>.",Sunderland A.F.C.
+152,2017,"In 2017, Corina Crețu is a member of the <extra_id_0>.",Social Democratic Party
+153,2017,"In 2017, Maszlee Malik is a member of the <extra_id_0>.",Malaysian United Indigenous Party
+154,2017,"In 2017, <extra_id_0> is the chair of Democratic and Republican Left.",André Chassaigne
+155,2017,"In 2017, Democratic and Republican Left is a member of the <extra_id_0>.",Guianese Socialist Party;Tavini Huiraatira
+156,2017,"In 2017, Andrea Pirlo plays for <extra_id_0>.",New York City FC
+157,2017,"In 2017, Rhea Boyd attended <extra_id_0>.",Harvard T.H. Chan School of Public Health
+158,2017,"In 2017, Norwegian digital learning arena is owned by <extra_id_0>.",Nord-Trøndelag County Municipality;Sør-Trøndelag County Municipality
+159,2017,"In 2017, <extra_id_0> is the head coach of Lotto-Soudal.",Kurt Van De Wouwer;Mario Aerts;Bart Leysen;Frederik Willems
+160,2017,"In 2017, Meng Wanzhou holds the position of <extra_id_0>.",chief financial officer
+161,2017,"In 2017, <extra_id_0> is the chair of Schloss Dagstuhl – Leibniz Center for Informatics.",Raimund Seidel
+162,2017,"In 2017, David Altshuler works for <extra_id_0>.",Vertex Pharmaceuticals
+163,2017,"In 2017, 511 Federal Building is owned by <extra_id_0>.",Portland Development Commission
+164,2017,"In 2017, Bjarne Stroustrup works for <extra_id_0>.",Morgan Stanley
+165,2017,"In 2017, Yang Jiechi holds the position of <extra_id_0>.",State Councilor of the People's Republic of China
+166,2017,"In 2017, Amos Yong works for <extra_id_0>.",Fuller Theological Seminary
+167,2017,"In 2017, <extra_id_0> is the chair of Supreme Council of the Armed Forces.",Sedki Sobhi
+168,2017,"In 2017, <extra_id_0> is the head of the government of Taiwan.",Lai Ching-te;Lin Chuan
+169,2017,"In 2017, Brian Duensing works for <extra_id_0>.",Kansas City Royals
+170,2017,"In 2017, <extra_id_0> is the head of the government of La Rioja.",José Ignacio Ceniceros González
+171,2017,"In 2017, <extra_id_0> is the head coach of Società Polisportiva Ars et Labor.",Leonardo Semplici
+172,2017,"In 2017, Jonathan Sexton plays for <extra_id_0>.",British & Irish Lions;Leinster Rugby
+173,2017,"In 2017, <extra_id_0> is the head coach of FC Urartu.",Arthur Voskanyan
+174,2017,"In 2017, <extra_id_0> is the head coach of San Francisco 49ers.",Kyle Shanahan;Chip Kelly
+175,2017,"In 2017, <extra_id_0> is the head of the government of Atlanta.",Kasim Reed
+176,2017,"In 2017, Andrej Plenković holds the position of <extra_id_0>.",Prime Minister of Croatia
+177,2017,"In 2017, <extra_id_0> is the head coach of UCF Knights football.",Josh Heupel;Scott Frost
+178,2017,"In 2017, Idit Silman is a member of the <extra_id_0>.",The Jewish Home
+179,2017,"In 2017, Kongregate is owned by <extra_id_0>.",GameStop;Modern Times Group
+180,2017,"In 2017, Greg Tansey plays for <extra_id_0>.",Inverness Caledonian Thistle F.C.
+181,2017,"In 2017, <extra_id_0> is the head coach of An Post-ChainReaction.",Neil Martin
+182,2017,"In 2017, <extra_id_0> is the head of the government of Chelyabinsk Oblast.",Boris Dubrovsky
+183,2017,"In 2017, Stephen Ireland plays for <extra_id_0>.",Stoke City F.C.
+184,2017,"In 2017, James P. Allison works for <extra_id_0>.",University of Texas MD Anderson Cancer Center
+185,2017,"In 2017, Álvaro Morata plays for <extra_id_0>.",Chelsea F.C.;Real Madrid CF;Spain national association football team
+186,2017,"In 2017, Giovani dos Santos plays for <extra_id_0>.",Los Angeles Galaxy
+187,2017,"In 2017, Robert Bingham works for <extra_id_0>.",University of Edinburgh
+188,2017,"In 2017, Winston Reid plays for <extra_id_0>.",West Ham United F.C.;New Zealand national football team
+189,2017,"In 2017, Sampa Das attended <extra_id_0>.",Purdue University
+190,2017,"In 2017, <extra_id_0> is the chair of Reserve Bank of Australia.",Philip Lowe
+191,2017,"In 2017, ODEON Kino is owned by <extra_id_0>.",AMC Theatres;Nordic Cinema Group
+192,2017,"In 2017, Gillian Rose works for <extra_id_0>.",University of Oxford;The Open University
+193,2017,"In 2017, <extra_id_0> is the head of the government of Campania.",Vincenzo De Luca
+194,2017,"In 2017, Nina Revoyr holds the position of <extra_id_0>.",executive director
+195,2017,"In 2017, Réginal Goreux plays for <extra_id_0>.",Standard Liège;Haiti national football team
+196,2017,"In 2017, Tim Paine plays for <extra_id_0>.",Australia national cricket team;Hobart Hurricanes
+197,2017,"In 2017, <extra_id_0> is the head of the government of Uttar Pradesh.",Akhilesh Yadav;Yogi Adityanath
+198,2017,"In 2017, <extra_id_0> is the chair of Christian Social People's Party.",Marc Spautz
+199,2017,"In 2017, <extra_id_0> is the chair of Heinrich Böll Foundation.",Ellen Ueberschär;Ralf Fücks
+200,2017,"In 2017, <extra_id_0> is the head of the government of Vermont.",Phil Scott;Peter Shumlin
+201,2017,"In 2017, Remigijus Šimašius is a member of the <extra_id_0>.",Liberal Movement
+202,2017,"In 2017, Ruptly is owned by <extra_id_0>.",Rossiya Segodnya
+203,2017,"In 2017, <extra_id_0> is the head of the government of Wilmington.",Dennis P. Williams;Mike Purzycki
+204,2017,"In 2017, Bhaichung Bhutia plays for <extra_id_0>.",East Bengal F.C.
+205,2017,"In 2017, Kateřina Jacques is a member of the <extra_id_0>.",Liberal-Environmental Party
+206,2017,"In 2017, Christos Zois is a member of the <extra_id_0>.",New Reformist Radical Reconstruction
+207,2017,"In 2017, Dawn Hadley works for <extra_id_0>.",University of Sheffield
+208,2017,"In 2017, François Hollande holds the position of <extra_id_0>.",Co-Prince of Andorra;President of the French Republic
+209,2017,"In 2017, <extra_id_0> is the chair of Committee for the Defence of Democracy.",Krzysztof Łoziński;Mateusz Kijowski
+210,2017,"In 2017, Marie-Josèphe Jude works for <extra_id_0>.",Conservatoire de Paris
+211,2017,"In 2017, Gennady Gudkov is a member of the <extra_id_0>.",Russian Opposition Coordination Council
+212,2017,"In 2017, Tamás Soproni is a member of the <extra_id_0>.",Momentum Movement
+213,2017,"In 2017, Robert Mueller holds the position of <extra_id_0>.",special prosecutor
+214,2017,"In 2017, Ulf Kristersson holds the position of <extra_id_0>.",party leader
+215,2017,"In 2017, Allison Randal works for <extra_id_0>.",Hewlett-Packard;SUSE
+216,2017,"In 2017, László Tőkés holds the position of <extra_id_0>.",member of the European Parliament
+217,2017,"In 2017, Rémi Mathis works for <extra_id_0>.",Bibliothèque nationale de France
+218,2017,"In 2017, Shari Steele works for <extra_id_0>.","The Tor Project, Inc"
+219,2017,"In 2017, Ghil'ad Zuckermann works for <extra_id_0>.",University of Adelaide
+220,2017,"In 2017, Marian-Jean Marinescu is a member of the <extra_id_0>.",National Liberal Party
+221,2017,"In 2017, Nathan Rourke attended <extra_id_0>.",Fort Scott Community College;Ohio University
+222,2017,"In 2017, <extra_id_0> is the head coach of England national association football team.",Gareth Southgate
+223,2017,"In 2017, Ignacio Gutiérrez works for <extra_id_0>.",Chilevisión
+224,2017,"In 2017, Katja Kassin attended <extra_id_0>.","California State University, Northridge"
+225,2017,"In 2017, Arnold Rüütel is a member of the <extra_id_0>.",Conservative People's Party of Estonia
+226,2017,"In 2017, <extra_id_0> is the head of the government of Alexandria.",Allison Silberberg
+227,2017,"In 2017, Arti Agrawal works for <extra_id_0>.","City, University of London"
+228,2017,"In 2017, Viktoras Pranckietis is a member of the <extra_id_0>.",Lithuanian Peasant and Greens Union
+229,2017,"In 2017, Patrick Leahy holds the position of <extra_id_0>.",United States senator;President pro tempore of the United States Senate
+230,2017,"In 2017, Meir Sheetrit is a member of the <extra_id_0>.",Hatnuah
+231,2017,"In 2017, Joel Byrom plays for <extra_id_0>.",Northampton Town F.C.
+232,2017,"In 2017, Elisa Granato attended <extra_id_0>.",University of Zurich
+233,2017,"In 2017, Wang Qishan holds the position of <extra_id_0>.",Secretary of the Central Commission for Discipline Inspection
+234,2017,"In 2017, Maimunah Mohd Sharif holds the position of <extra_id_0>.",Mayor of Penang Island;mayor
+235,2017,"In 2017, Tom Price holds the position of <extra_id_0>.",United States Secretary of Health and Human Services;United States representative
+236,2017,"In 2017, <extra_id_0> is the head coach of FC Chornomorets Odesa.",Kostyantyn Frolov;Oleg Dulub
+237,2017,"In 2017, Ilya Mikhaylov works for <extra_id_0>.",FC Zenit-Izhevsk Izhevsk
+238,2017,"In 2017, Dean Heller holds the position of <extra_id_0>.",United States senator
+239,2017,"In 2017, Adam Bielan is a member of the <extra_id_0>.",Polska Razem
+240,2017,"In 2017, Ajinkya Rahane plays for <extra_id_0>.",India national cricket team;Rising Pune Supergiant
+241,2017,"In 2017, Kamel Morjane is a member of the <extra_id_0>.",National Destourian Initiative
+242,2017,"In 2017, Fred VanVleet plays for <extra_id_0>.",Toronto Raptors
+243,2017,"In 2017, Chip Smith works for <extra_id_0>.",21st Century Fox
+244,2017,"In 2017, Linda Collins-Smith is a member of the <extra_id_0>.",Republican Party
+245,2017,"In 2017, Banuera Berina is a member of the <extra_id_0>.",Tobwaan Kiribati Party
+246,2017,"In 2017, Lassana Diarra plays for <extra_id_0>.",Olympique de Marseille
+247,2017,"In 2017, Paul O'Connell plays for <extra_id_0>.",RC Toulonnais
+248,2017,"In 2017, Rona Ambrose holds the position of <extra_id_0>.",Leader of the Official Opposition
+249,2017,"In 2017, <extra_id_0> is the head coach of F.C. Crotone.",Walter Zenga
+250,2017,"In 2017, Luke Simpkins is a member of the <extra_id_0>.",Liberal Party of Australia;Australian Conservatives
+251,2017,"In 2017, Ilya Sutskever works for <extra_id_0>.",OpenAI
+252,2017,"In 2017, Marina Geli i Fàbrega is a member of the <extra_id_0>.",Leftwing Movement
+253,2017,"In 2017, Michael Gove holds the position of <extra_id_0>.","Secretary of State for Environment, Food and Rural Affairs"
+254,2017,"In 2017, <extra_id_0> is the head of the government of Gabon.",Emmanuel Issoze-Ngondet
+255,2017,"In 2017, Thomas P. O'Neill Jr. Federal Building is owned by <extra_id_0>.",General Services Administration;United States House of Representatives
+256,2017,"In 2017, <extra_id_0> is the chair of State Duma.",Vyacheslav Volodin
+257,2017,"In 2017, Nerida G. Wilson works for <extra_id_0>.",Western Australian Museum;University of New South Wales
+258,2017,"In 2017, Bergen Line is owned by <extra_id_0>.",Bane NOR
+259,2017,"In 2017, Johnathan Williams attended <extra_id_0>.",Gonzaga University
+260,2017,"In 2017, Christina Pagel works for <extra_id_0>.",Commonwealth Fund;University College London
+261,2017,"In 2017, Saleem Ali works for <extra_id_0>.",The University of Queensland;University of Delaware
+262,2017,"In 2017, Bill Keating holds the position of <extra_id_0>.",United States representative
+263,2017,"In 2017, Enrico Carattoni is a member of the <extra_id_0>.",United Left
+264,2017,"In 2017, Verdiana Masanja works for <extra_id_0>.",National University of Rwanda
+265,2017,"In 2017, Catherine Osson is a member of the <extra_id_0>.",La République En Marche;Socialist Party
+266,2017,"In 2017, Hannu Manninen works for <extra_id_0>.",Finnair
+267,2017,"In 2017, Firdous Ashiq Awan is a member of the <extra_id_0>.",Pakistan Peoples Party;Pakistan Tehreek-e-Insaf
+268,2017,"In 2017, <extra_id_0> is the chair of Servant of the People.",Ivan Bakanov
+269,2017,"In 2017, Arkane Studios is owned by <extra_id_0>.",ZeniMax Media
+270,2017,"In 2017, James McClean plays for <extra_id_0>.",Republic of Ireland national association football team;West Bromwich Albion F.C.
+271,2017,"In 2017, Darren Sammy plays for <extra_id_0>.",Rajshahi Kings;Peshawar Zalmi;St Lucia Zouks;Hobart Hurricanes
+272,2017,"In 2017, Ernest Maragall is a member of the <extra_id_0>.",Leftwing Movement
+273,2017,"In 2017, Neil Alexander plays for <extra_id_0>.",Heart of Midlothian F.C.
+274,2017,"In 2017, <extra_id_0> is the head coach of Tennis Borussia Berlin.",Thomas Brdarić;Cemal Yıldız
+275,2017,"In 2017, Sharon Tooze works for <extra_id_0>.",Francis Crick Institute
+276,2017,"In 2017, <extra_id_0> is the head coach of Racing Club.",Eduardo  Coudet
+277,2017,"In 2017, Iker Jiménez Elizari works for <extra_id_0>.",Mediaset España
+278,2017,"In 2017, Maria A. Pallante works for <extra_id_0>.",Library of Congress
+279,2017,"In 2017, Chao Cheng-yu is a member of the <extra_id_0>.",independent politician
+280,2017,"In 2017, Shafie Apdal is a member of the <extra_id_0>.",Sabah Heritage Party
+281,2017,"In 2017, Gerry Brownlee holds the position of <extra_id_0>.",Minister of Defence;Minister of Foreign Affairs
+282,2017,"In 2017, <extra_id_0> is the head of the government of Berlin.",Michael Müller
+283,2017,"In 2017, Jason Eric Box works for <extra_id_0>.",Geological Survey of Denmark and Greenland
+284,2017,"In 2017, Lauren Cornell works for <extra_id_0>.","Center for Curatorial Studies, Bard College;New Museum"
+285,2017,"In 2017, Lindsay Hoyle holds the position of <extra_id_0>.",Chairman of Ways and Means
+286,2017,"In 2017, Jeremy Wright holds the position of <extra_id_0>.",Advocate General for Northern Ireland;Attorney General for England and Wales
+287,2017,"In 2017, Danny O'Brien works for <extra_id_0>.",Electronic Frontier Foundation;Committee to Protect Journalists
+288,2017,"In 2017, Cindy Hyde-Smith is a member of the <extra_id_0>.",Republican Party
+289,2017,"In 2017, Josep Guerrero works for <extra_id_0>.",Aalborg University
+290,2017,"In 2017, <extra_id_0> is the chair of Catalan Academy of Cinema.",Isona Passola i Vidal
+291,2017,"In 2017, Mirjam Van Praag works for <extra_id_0>.",Copenhagen Business School
+292,2017,"In 2017, <extra_id_0> is the head of the government of Acre.",Tião Viana
+293,2017,"In 2017, Gérald Darmanin is a member of the <extra_id_0>.",The Republicans
+294,2017,"In 2017, Ramal de Aveiro is owned by <extra_id_0>.",Infrastructures of Portugal
+295,2017,"In 2017, Richard Bruton holds the position of <extra_id_0>.",Teachta Dála;Minister for Education and Skills
+296,2017,"In 2017, Annie Lööf holds the position of <extra_id_0>.",party leader
+297,2017,"In 2017, Toni Kroos plays for <extra_id_0>.",Germany national association football team;Real Madrid CF
+298,2017,"In 2017, Daniel P. Aldrich works for <extra_id_0>.",Northeastern University
+299,2017,"In 2017, Gheorghe Flutur is a member of the <extra_id_0>.",National Liberal Party
+300,2017,"In 2017, Kasper Schmeichel plays for <extra_id_0>.",Leicester City F.C.;Denmark national association football team
+301,2017,"In 2017, Malou Aamund works for <extra_id_0>.",Google
+302,2017,"In 2017, <extra_id_0> is the head coach of England national rugby union team.",Eddie Jones
+303,2017,"In 2017, <extra_id_0> is the head of the government of Saitama Prefecture.",Kiyoshi Ueda
+304,2017,"In 2017, Trunk Line is owned by <extra_id_0>.",Bane NOR
+305,2017,"In 2017, Jang Geun-suk attended <extra_id_0>.",Hanyang University
+306,2017,"In 2017, <extra_id_0> is the head coach of CS Gaz Metan Mediaș.",Cristian Pustai
+307,2017,"In 2017, Jean-Pierre Grand is a member of the <extra_id_0>.",The Republicans;United Republic
+308,2017,"In 2017, <extra_id_0> is the head of the government of Thailand.",Prayut Chan-ocha
+309,2017,"In 2017, Daniel J. Caron works for <extra_id_0>.",École nationale d'administration publique
+310,2017,"In 2017, <extra_id_0> is the head of the government of Benin.",Patrice Talon
+311,2017,"In 2017, <extra_id_0> is the chair of World Confederation of Billiards Sports.",Ian Anderson;Jason Ferguson
+312,2017,"In 2017, Mumtaz Bhutto is a member of the <extra_id_0>.",Pakistan Tehreek-e-Insaf;Sindh National Front
+313,2017,"In 2017, Tabetha S. Boyajian works for <extra_id_0>.",Yale University
+314,2017,"In 2017, <extra_id_0> is the head of the government of Kaohsiung.",Chen Chu
+315,2017,"In 2017, Ralph Northam holds the position of <extra_id_0>.",Lieutenant Governor of Virginia
+316,2017,"In 2017, Amit Shah holds the position of <extra_id_0>.",Member of Rajya Sabha
+317,2017,"In 2017, <extra_id_0> is the head coach of Vaasan Palloseura.",Petri Vuorinen
+318,2017,"In 2017, Nathan Law is a member of the <extra_id_0>.",Demosistō
+319,2017,"In 2017, Justin Welby holds the position of <extra_id_0>.",Archbishop of Canterbury;bishop
+320,2017,"In 2017, Andrew Scheer holds the position of <extra_id_0>.",Leader of the Official Opposition
+321,2017,"In 2017, <extra_id_0> is the head of the government of San Marino.",Vanessa D'Ambrosio;Mimma Zavoli
+322,2017,"In 2017, <extra_id_0> is the head coach of Odds BK.",Dag-Eilev Fagermo
+323,2017,"In 2017, <extra_id_0> is the head of the government of Marche.",Luca Ceriscioli
+324,2017,"In 2017, Julio Arca plays for <extra_id_0>.",South Shields F.C.
+325,2017,"In 2017, <extra_id_0> is the chair of Ministry of Finance.",Siv Jensen
+326,2017,"In 2017, <extra_id_0> is the chair of Organisation of Islamic Cooperation.",Yousef Al-Othaimeen
+327,2017,"In 2017, <extra_id_0> is the head coach of FC Kairat.",Carlos Alós Ferrer
+328,2017,"In 2017, Josep Sánchez i Llibre is a member of the <extra_id_0>.",United to Advance;Democratic Union of Catalonia
+329,2017,"In 2017, Thomas R. Lynch works for <extra_id_0>.",University of Southampton
+330,2017,"In 2017, <extra_id_0> is the head coach of Calcio Padova.",Oscar Brevi
+331,2017,"In 2017, <extra_id_0> is the head of the government of Freiburg im Breisgau.",Dieter Salomon
+332,2017,"In 2017, Eric Swalwell holds the position of <extra_id_0>.",United States representative
+333,2017,"In 2017, <extra_id_0> is the chair of Republic of Bashkortostan.",Rustem Khamitov
+334,2017,"In 2017, <extra_id_0> is the head of the government of Guam.",Eddie Calvo
+335,2017,"In 2017, Joan Gabel works for <extra_id_0>.",University of South Carolina
+336,2017,"In 2017, Victor Oladipo plays for <extra_id_0>.",Indiana Pacers;Oklahoma City Thunder
+337,2017,"In 2017, Stanislav Edward Shmelev works for <extra_id_0>.",University of Edinburgh
+338,2017,"In 2017, Jo Swinson holds the position of <extra_id_0>.",Deputy Leader of the Liberal Democrats
+339,2017,"In 2017, Yariv Oppenheimer is a member of the <extra_id_0>.",Israeli Labor Party
+340,2017,"In 2017, Kostas Antetokounmpo attended <extra_id_0>.",University of Dayton
+341,2017,"In 2017, Tunahan Kuzu is a member of the <extra_id_0>.",DENK
+342,2017,"In 2017, Marisol Touraine holds the position of <extra_id_0>.",Minister of Labour;Ministry of Social Affairs and Health
+343,2017,"In 2017, Raymond Leo Burke holds the position of <extra_id_0>.",cardinal
+344,2017,"In 2017, John Giannandrea works for <extra_id_0>.",Google
+345,2017,"In 2017, <extra_id_0> is the head coach of Legia Warsaw.",Romeo Jozak;Jacek Magiera
+346,2017,"In 2017, Susan Baer works for <extra_id_0>.",Arup
+347,2017,"In 2017, <extra_id_0> is the chair of Ministry of Justice.",Park Sang-ki
+348,2017,"In 2017, Margaret Cheney works for <extra_id_0>.",Colorado State University
+349,2017,"In 2017, <extra_id_0> is the chair of National Rally.",Marine Le Pen
+350,2017,"In 2017, Persis Drell works for <extra_id_0>.",Stanford University;Stanford University School of Engineering
+351,2017,"In 2017, <extra_id_0> is the chair of United States Department of Justice.",Jeff Sessions;Loretta Lynch
+352,2017,"In 2017, Klaus Iohannis is a member of the <extra_id_0>.",independent politician
+353,2017,"In 2017, Megan Walker attended <extra_id_0>.",University of Connecticut;Monacan High School
+354,2017,"In 2017, Frank Guinta holds the position of <extra_id_0>.",United States representative
+355,2017,"In 2017, <extra_id_0> is the chair of Humanists UK.",Shappi Khorsandi
+356,2017,"In 2017, Pedro Pierluisi holds the position of <extra_id_0>.",Resident Commissioner of Puerto Rico
+357,2017,"In 2017, Glen Johnson plays for <extra_id_0>.",Stoke City F.C.
+358,2017,"In 2017, Alfonso Valencia works for <extra_id_0>.",Barcelona Supercomputing Center;Catalan Institution for Research and Advanced Studies
+359,2017,"In 2017, Nate Schierholtz works for <extra_id_0>.",Detroit Tigers
+360,2017,"In 2017, <extra_id_0> is the chair of Unilever.",Marijn Dekkers
+361,2017,"In 2017, <extra_id_0> is the chair of National Party of Australia.",Michael McCormack
+362,2017,"In 2017, Andrew V. Goldberg works for <extra_id_0>.",Amazon
+363,2017,"In 2017, <extra_id_0> is the chair of European People's Party group.",Manfred Weber
+364,2017,"In 2017, <extra_id_0> is the chair of Mondi Group.",Fred Phaswana
+365,2017,"In 2017, <extra_id_0> is the head of the government of Charlottesville.",Michael Signer
+366,2017,"In 2017, <extra_id_0> is the head coach of R. Charleroi S.C..",Felice Mazzu
+367,2017,"In 2017, Ramon Espadaler Parcerisas is a member of the <extra_id_0>.",United to Advance;Democratic Union of Catalonia
+368,2017,"In 2017, Dominic Grieve holds the position of <extra_id_0>.",Advocate General for Northern Ireland
+369,2017,"In 2017, <extra_id_0> is the head of the government of Bratislava.",Ivo Nesrovnal
+370,2017,"In 2017, Ann Sarnoff works for <extra_id_0>.",BBC America
+371,2017,"In 2017, Alex X. Mooney holds the position of <extra_id_0>.",United States representative
+372,2017,"In 2017, Charles M. Huber is a member of the <extra_id_0>.",Christian Democratic Union
+373,2017,"In 2017, Věra Jourová holds the position of <extra_id_0>.","European Commissioner for Justice, Fundamental Rights and Citizenship"
+374,2017,"In 2017, <extra_id_0> is the head of the government of Sibiu.",Astrid Fodor
+375,2017,"In 2017, Jill R. Horwitz works for <extra_id_0>.",University of Victoria
+376,2017,"In 2017, Tua Tagovailoa attended <extra_id_0>.",University of Alabama
+377,2017,"In 2017, Deborah Terry works for <extra_id_0>.",Curtin University
+378,2017,"In 2017, Antoine Bozio works for <extra_id_0>.",School for Advanced Studies in the Social Sciences;Paris School of Economics
+379,2017,"In 2017, Alfa Romeo is owned by <extra_id_0>.",Fiat Chrysler Automobiles
+380,2017,"In 2017, Lucas Richman works for <extra_id_0>.",Bangor Symphony Orchestra
+381,2017,"In 2017, <extra_id_0> is the head coach of ERA-Circus.",Marc Janssens
+382,2017,"In 2017, Rachel Sheherazade works for <extra_id_0>.",SBT
+383,2017,"In 2017, Mangala pinsiri Samaraweera holds the position of <extra_id_0>.",Minister of Finance of Sri Lanka;Minister of Foreign Affairs of Sri Lanka
+384,2017,"In 2017, Scott Parker plays for <extra_id_0>.",Fulham F.C.
+385,2017,"In 2017, Dimitar Stoyanov is a member of the <extra_id_0>.",National-Democratic Party
+386,2017,"In 2017, <extra_id_0> is the head of the government of Yonkers.",Mike Spano
+387,2017,"In 2017, Gheorghe Falcă is a member of the <extra_id_0>.",National Liberal Party
+388,2017,"In 2017, Michael Cohen is a member of the <extra_id_0>.",Democratic Party;Republican Party
+389,2017,"In 2017, <extra_id_0> is the head coach of Nippo-Vini Fantini-Europa Ovini.",Mario Manzoni;Shinichi Fukushima;Valerio Tebaldi;Hiroshi Daimon;Stefano Giuliani
+390,2017,"In 2017, Kemba Walker plays for <extra_id_0>.",Charlotte Hornets
+391,2017,"In 2017, <extra_id_0> is the head coach of FC Gomel.",Vyacheslav Geraschenko
+392,2017,"In 2017, Lucy Harris is a member of the <extra_id_0>.",Brexit Party
+393,2017,"In 2017, Kirill I of Moscow holds the position of <extra_id_0>.",metropolitan bishop
+394,2017,"In 2017, David Lidington holds the position of <extra_id_0>.",Leader of the House of Commons;Secretary of State for Justice
+395,2017,"In 2017, Leah Williamson plays for <extra_id_0>.",England women's national under-20 football team;Arsenal W.F.C.;England women's national under-19 football team;England women's national under-23 football team
+396,2017,"In 2017, <extra_id_0> is the chair of United States Department of Energy.",Rick Perry
+397,2017,"In 2017, Amjad Kalaf plays for <extra_id_0>.",Al-Shorta Baghdad
+398,2017,"In 2017, <extra_id_0> is the head coach of Kayserispor.",Marius Șumudică
+399,2017,"In 2017, <extra_id_0> is the head coach of Bora-Hansgrohe.",Ján Valach;Steffen Radochla;André Schulze;Jens Zemke;Enrico Poitschke
+400,2017,"In 2017, <extra_id_0> is the chair of CRH.",Nicky Hartery
+401,2017,"In 2017, <extra_id_0> is the chair of Verband der Reservisten der Deutschen Bundeswehr.",Oswin Veith
+402,2017,"In 2017, <extra_id_0> is the head coach of Gimnàstic de Tarragona.",Nano;Antonio Rodríguez Saravia;Juan Merino;Lluís Carreras
+403,2017,"In 2017, Michel Bissonnet is a member of the <extra_id_0>.",Ensemble Montréal
+404,2017,"In 2017, Philippe Gilbert plays for <extra_id_0>.",Deceuninck-Quick-Step
+405,2017,"In 2017, Lourdes Ciuró i Buldó is a member of the <extra_id_0>.",Catalan European Democratic Party
+406,2017,"In 2017, Christophe Robino is a member of the <extra_id_0>.",Horizon Monaco
+407,2017,"In 2017, Richard Chaplow plays for <extra_id_0>.",Doncaster Rovers F.C.
+408,2017,"In 2017, Katie Doores works for <extra_id_0>.",King's College London
+409,2017,"In 2017, Expobank CZ is owned by <extra_id_0>.",Igor Kim
+410,2017,"In 2017, <extra_id_0> is the chair of Democratic Party of Korea.",Choo Mi-ae
+411,2017,"In 2017, Svitlana Zalishchuk is a member of the <extra_id_0>.",Democratic Alliance
+412,2017,"In 2017, <extra_id_0> is the chair of ADFE-Français du Monde.",Claudine Lepage
+413,2017,"In 2017, Craig Mackinlay is a member of the <extra_id_0>.",Conservative Party
+414,2017,"In 2017, China Media Group Headquarters is owned by <extra_id_0>.",China Central Television
+415,2017,"In 2017, <extra_id_0> is the head of the government of North West.",Supra Mahumapelo
+416,2017,"In 2017, Roland Steinacher works for <extra_id_0>.",University of Tübingen;Stiftung Alfried Krupp Kolleg Greifswald
+417,2017,"In 2017, Hiromichi Mizuno works for <extra_id_0>.",Government Pension Investment Fund
+418,2017,"In 2017, Alpha Condé holds the position of <extra_id_0>.",President of Guinea;Chairperson of the African Union
+419,2017,"In 2017, <extra_id_0> is the head of the government of Gdańsk.",Paweł Adamowicz
+420,2017,"In 2017, <extra_id_0> is the chair of United States Cyber Command.",Michael S. Rogers
+421,2017,"In 2017, Julia Ebner works for <extra_id_0>.",Institute for Strategic Dialogue;Quilliam
+422,2017,"In 2017, Aleksandre Bakshi attended <extra_id_0>.",Texas A&M University;University of Oklahoma
+423,2017,"In 2017, <extra_id_0> is the head of the government of New Taipei City.",Eric Chu
+424,2017,"In 2017, Dennis Hof is a member of the <extra_id_0>.",Republican Party
+425,2017,"In 2017, Claire Underwood holds the position of <extra_id_0>.",First Lady of the United States;Vice President of the United States;Acting President of the United States
+426,2017,"In 2017, Basel Ghattas is a member of the <extra_id_0>.",Joint List;Balad
+427,2017,"In 2017, Mircea Geoană is a member of the <extra_id_0>.",independent politician
+428,2017,"In 2017, <extra_id_0> is the chair of Junta of Castile and León.",Juan Vicente Herrera Campo
+429,2017,"In 2017, Sylvia Burwell works for <extra_id_0>.",American University
+430,2017,"In 2017, Sauli Niinistö holds the position of <extra_id_0>.",President of Finland
+431,2017,"In 2017, <extra_id_0> is the head coach of SC Paderborn 07.",Steffen Baumgart
+432,2017,"In 2017, Ada Colau is a member of the <extra_id_0>.",Barcelona en Comú;Catalunya en Comú
+433,2017,"In 2017, Jevon Carter attended <extra_id_0>.",West Virginia University
+434,2017,"In 2017, <extra_id_0> is the head of the government of Verona.",Flavio Tosi;Federico Sboarina
+435,2017,"In 2017, James R. Clapper holds the position of <extra_id_0>.",Director of National Intelligence
+436,2017,"In 2017, <extra_id_0> is the chair of Alliance '90/The Greens.",Simone Peter;Cem Özdemir
+437,2017,"In 2017, Memphis Depay plays for <extra_id_0>.",Olympique Lyonnais;Netherlands national association football team;Manchester United F.C.
+438,2017,"In 2017, Erich Pascal Malkemper works for <extra_id_0>.",Czech University of Life Sciences Prague;Research Institute of Molecular Pathology
+439,2017,"In 2017, Kristin De Troyer works for <extra_id_0>.",St. Katherine College;University of St Andrews
+440,2017,"In 2017, Camille Combal works for <extra_id_0>.",C8;Virgin Radio
+441,2017,"In 2017, Arjun Singh ( politician) is a member of the <extra_id_0>.",All India Trinamool Congress
+442,2017,"In 2017, <extra_id_0> is the head coach of FK Inter Bratislava.",Jozef Barmoš
+443,2017,"In 2017, Jana Žitňanská is a member of the <extra_id_0>.",New Majority
+444,2017,"In 2017, Elazar Stern is a member of the <extra_id_0>.",Yesh Atid
+445,2017,"In 2017, Jason Greenblatt works for <extra_id_0>.",The Trump Organization;Executive Office of the President of the United States
+446,2017,"In 2017, Yimon Aye works for <extra_id_0>.",Cornell University;Weill Cornell Medicine
+447,2017,"In 2017, Samer Hassan works for <extra_id_0>.",Complutense University of Madrid;Harvard University
+448,2017,"In 2017, Roger Wakimoto works for <extra_id_0>.","University of California, Los Angeles;National Science Foundation"
+449,2017,"In 2017, Patrick Sensburg holds the position of <extra_id_0>.",chairperson
+450,2017,"In 2017, <extra_id_0> is the head of the government of Jakarta.",Djarot Saiful Hidayat;Anies Baswedan
+451,2017,"In 2017, <extra_id_0> is the chair of Ministry of Health.",Aurelijus Veryga
+452,2017,"In 2017, <extra_id_0> is the head of the government of Nizhny Novgorod Oblast.",Valery Shantsev;Gleb Nikitin
+453,2017,"In 2017, Fabio Borini plays for <extra_id_0>.",Sunderland A.F.C.
+454,2017,"In 2017, Miguel Barbosa Huerta is a member of the <extra_id_0>.",National Regeneration Movement;Party of the Democratic Revolution
+455,2017,"In 2017, Hiroki Sakai plays for <extra_id_0>.",Olympique de Marseille;Japan national football team
+456,2017,"In 2017, Moon Seon-min plays for <extra_id_0>.",Djurgårdens IF
+457,2017,"In 2017, Charles Kauvu Abel is a member of the <extra_id_0>.",People's National Congress Party
+458,2017,"In 2017, Averil Power is a member of the <extra_id_0>.",independent politician
+459,2017,"In 2017, Eoin Morgan plays for <extra_id_0>.",Kings XI Punjab;Peshawar Zalmi
+460,2017,"In 2017, Liam Fox holds the position of <extra_id_0>.",Secretary of State for International Trade;President of the Board of Trade
+461,2017,"In 2017, <extra_id_0> is the chair of Brothers of Italy.",Giorgia Meloni
+462,2017,"In 2017, M. Lee Pelton works for <extra_id_0>.",Emerson College
+463,2017,"In 2017, Elaine Fox works for <extra_id_0>.",University of Oxford
+464,2017,"In 2017, DeepMind is owned by <extra_id_0>.",Alphabet Inc.
+465,2017,"In 2017, Rui Vitória works for <extra_id_0>.",S.L. Benfica
+466,2017,"In 2017, Carine Roitfeld works for <extra_id_0>.",Harper's Bazaar
+467,2017,"In 2017, Jonathan Smallwood works for <extra_id_0>.",University of York
+468,2017,"In 2017, Hunter Biden works for <extra_id_0>.",BHR Partners;Burisma Holdings
+469,2017,"In 2017, Taizo Mikazuki is a member of the <extra_id_0>.",independent politician

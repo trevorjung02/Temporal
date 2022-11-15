@@ -1,0 +1,101 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-2080ti
+#SBATCH --account=cse
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=1-0:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+#SBATCH --dependency=afterany:6700270
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+# WMT -> Templama
+# python run.py --config configs/templama/training/t5_baseline_full.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.2127-em_score=0.1783.ckpt -lr 0.0001
+# python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtkadapter_2010_0freeze_158_128/epoch=1-f1_score=0.2236-em_score=0.1878.ckpt -lr 0.003
+# python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtkadapter_2010_2freeze_158_128/epoch=1-f1_score=0.208-em_score=0.173.ckpt -lr 0.003
+# python run.py --config configs/templama/training/t5_kadapters_soft_full.json -checkpoint_path outputs/wmtkadapter_soft_full_0freeze_158_128/epoch=0-f1_score=0.1717-em_score=0.1419.ckpt
+# python run.py --config configs/templama/training/t5_kadapters_soft_full.json -checkpoint_path outputs/wmtkadapter_soft_full_2freeze_158_128/epoch=0-f1_score=0.185-em_score=0.154.ckpt
+
+# WMT baseline -> WMT adapters
+# python run.py --config configs/wmt/training/t5_kadapters_soft_full.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.178-em_score=0.149.ckpt
+# python run.py --config configs/wmt/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.178-em_score=0.149.ckpt
+
+# WMT -> SituatedQA
+# python run.py --config configs/situatedqa/training/t5_baseline_full.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.2127-em_score=0.1783.ckpt -lr 0.00001
+# python run.py --config configs/situatedqa/training/t5_kadapters_soft_yearly_2freeze.json -checkpoint_path outputs/wmtkadapter_soft_full_2freeze_158_128/epoch=0-f1_score=0.185-em_score=0.154.ckpt
+
+# Preprocess data
+# python preprocess_nyt_data.py 2010 -end_date=2020
+# python preprocess_nyt_data_full.py
+
+# NYT -> Templama
+# python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/nytkadapter_2010_0freeze_158_128/epoch=8-f1_score=0.140-em_score=0.100.ckpt
+
+# NYT -> SituatedQA
+# python run.py --config configs/situatedqa/training/t5_kadapters_yearly2freeze.json -checkpoint_path outputs/nytkadapter_2010_0freeze_158_128/epoch=8-f1_score=0.140-em_score=0.100.ckpt
+
+python run.py --config configs/wmt/training/t5_baseline_full3.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.2497-em_score=0.2106.ckpt--------------------
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.4 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20221019_133509-pj8gxvyp
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run baseline_full
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/pj8gxvyp
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+checkpoint path = outputs/wmtbaseline_full/epoch=0-f1_score=0.2502-em_score=0.2111.ckpt
+Namespace(accelerator='ddp', adam_epsilon=1e-08, adapter_config={'adapter_list': None, 'adapter_hidden_size': None, 'adapter_enc_dec': None, 'pool_size': None}, adapter_enc_dec=None, adapter_hidden_size=None, adapter_list=None, check_validation_only=False, checkpoint_dir='outputs/wmtbaseline_full', checkpoint_path='outputs/wmtbaseline_full/epoch=0-f1_score=0.2497-em_score=0.2106.ckpt', dataset='wmt', dataset_version='full', early_stop_callback=False, eval_batch_size=16, find_lr=False, freeze_embeds=False, freeze_encoder=False, freeze_level=0, learning_rate=1e-05, max_grad_norm=0.5, max_input_length=100, max_output_length=50, method='baseline', mode='pretrain', model_name_or_path='google/t5-large-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=1, num_workers=4, opt_level='O1', output_dir='/mmfs1/gscratch/cse/tjung2/continual-knowledge-learning/outputs/wmtbaseline_full', output_log=None, pool_size=None, prefix=True, resume_from_checkpoint=True, seed=42, split=0, split_num=1, t5_learning_rate=None, tokenizer_name_or_path='google/t5-large-ssm', train_batch_size=16, use_deepspeed=False, use_lr_scheduling=True, val_check_interval=2500, val_data='full', wandb_log=True, warmup_steps=0, weight_decay=0.0)
+Not freezing any parameters!
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.013 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.013 MB uploaded (0.000 MB deduped)wandb: - 0.013 MB of 0.013 MB uploaded (0.000 MB deduped)wandb: \ 0.013 MB of 0.013 MB uploaded (0.000 MB deduped)wandb: | 0.013 MB of 0.013 MB uploaded (0.000 MB deduped)wandb: / 0.013 MB of 0.013 MB uploaded (0.000 MB deduped)wandb: - 0.013 MB of 0.013 MB uploaded (0.000 MB deduped)wandb: \ 0.013 MB of 0.013 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: Synced baseline_full: https://wandb.ai/tjung2/temporal_questions/runs/pj8gxvyp
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221019_133509-pj8gxvyp/logs
+Traceback (most recent call last):
+  File "run.py", line 264, in <module>
+    main()
+  File "run.py", line 255, in main
+    trainer.fit(model)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 460, in fit
+    self._run(model)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 717, in _run
+    self.accelerator.setup(self, model)  # note: this sets up self.lightning_module
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/accelerators/gpu.py", line 41, in setup
+    return super().setup(trainer, model)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/accelerators/accelerator.py", line 90, in setup
+    self.setup_training_type_plugin(self.training_type_plugin, model)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/accelerators/accelerator.py", line 383, in setup_training_type_plugin
+    plugin.setup(model)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/plugins/training_type/single_device.py", line 69, in setup
+    self.model_to_device()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/plugins/training_type/single_device.py", line 66, in model_to_device
+    self._model.to(self.root_device)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/utilities/device_dtype_mixin.py", line 109, in to
+    return super().to(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 852, in to
+    return self._apply(convert)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 530, in _apply
+    module._apply(fn)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 530, in _apply
+    module._apply(fn)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 530, in _apply
+    module._apply(fn)
+  [Previous line repeated 5 more times]
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 552, in _apply
+    param_applied = fn(param)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 850, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+RuntimeError: CUDA out of memory. Tried to allocate 16.00 MiB (GPU 0; 10.76 GiB total capacity; 9.43 GiB already allocated; 2.56 MiB free; 9.44 GiB reserved in total by PyTorch)

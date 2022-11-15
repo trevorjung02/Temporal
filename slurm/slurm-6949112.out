@@ -1,0 +1,222 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=cse
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=48G
+#SBATCH --gres=gpu:1
+#SBATCH --time=1-0:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+#SBATCH --dependency=afterany:6700270
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+
+# python run.py --config configs/wmt/training/t5_baseline_full.json
+# python run.py --config configs/wmt/training/t5_kadapters_soft_full.json -lr 0.01
+# python run.py --config configs/templama/training/t5_baseline_full.json -lr 0.000003 -checkpoint_path outputs/templamabaseline_full/epoch=4-f1_score=0.209-em_score=0.074.ckpt
+# python run.py --config configs/templama/training/t5_kadapters_yearly_large.json -lr 0.001
+python run.py --config configs/templama/training/t5_kadapters_yearly_large.json -lr 0.0005
+# python run.py --config configs/templama/training/t5_kadapters_yearly_large.json -lr 0.00001
+# python run.py --config configs/templama/training/t5_kadapters_yearly_large_256.json -lr 0.0003
+
+
+# WMT -> Templama
+# python run.py --config configs/templama/training/t5_baseline_full.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.2127-em_score=0.1783.ckpt -lr 0.0001
+# python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtkadapter_2010_0freeze_158_128/epoch=1-f1_score=0.2236-em_score=0.1878.ckpt -lr 0.003
+# python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtkadapter_2010_2freeze_158_128/epoch=1-f1_score=0.208-em_score=0.173.ckpt -lr 0.003
+# python run.py --config configs/templama/training/t5_kadapters_soft_full.json -checkpoint_path outputs/wmtkadapter_soft_full_0freeze_158_128/epoch=0-f1_score=0.1717-em_score=0.1419.ckpt
+# python run.py --config configs/templama/training/t5_kadapters_soft_full.json -checkpoint_path outputs/wmtkadapter_soft_full_2freeze_158_128/epoch=0-f1_score=0.185-em_score=0.154.ckpt
+
+# WMT baseline -> WMT adapters
+# python run.py --config configs/wmt/training/t5_kadapters_soft_full.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.178-em_score=0.149.ckpt
+# python run.py --config configs/wmt/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.178-em_score=0.149.ckpt
+
+# WMT -> SituatedQA
+# python run.py --config configs/situatedqa/training/t5_baseline_full.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.2127-em_score=0.1783.ckpt -lr 0.00001
+# python run.py --config configs/situatedqa/training/t5_kadapters_soft_yearly_2freeze.json -checkpoint_path outputs/wmtkadapter_soft_full_2freeze_158_128/epoch=0-f1_score=0.185-em_score=0.154.ckpt
+
+# Preprocess data
+# python preprocess_nyt_data.py 2010 -end_date=2020
+# python preprocess_nyt_data_full.py
+
+# NYT -> Templama
+# python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/nytkadapter_2010_0freeze_158_128/epoch=8-f1_score=0.140-em_score=0.100.ckpt
+
+# NYT -> SituatedQA
+# python run.py --config configs/situatedqa/training/t5_kadapters_yearly2freeze.json -checkpoint_path outputs/nytkadapter_2010_0freeze_158_128/epoch=8-f1_score=0.140-em_score=0.100.ckpt
+
+# python run.py --config configs/wmt/training/t5_kadapters_yearly.json -datav 2010
+# python run.py --config configs/templama/evaluation/t5_baseline_full.json -val_data 2020--------------------
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.4 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20221027_062902-z73u51p6
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run kadapter_full
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/z73u51p6
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory outputs/templamakadapter_full_2freeze_158_128 exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+Some weights of T5ForConditionalGeneration were not initialized from the model checkpoint at google/t5-large-ssm and are newly initialized: ['enc_kadapter.adapter.2.up_project.weight', 'enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapter.pool.weight', 'enc_kadapter.adapter.1.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapter.adapter.1.up_project.weight', 'enc_kadapter.adapter.1.encoder.layer.1.layer_norm.weight', 'enc_kadapter.adapter.2.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapter.adapter.1.encoder.layer.0.layer_norm.weight', 'enc_kadapter.adapter.2.up_project.bias', 'enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapter.pool.bias', 'enc_kadapter.adapter.0.encoder.layer.1.layer_norm.weight', 'enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapter.adapter.0.up_project.bias', 'enc_kadapter.adapter.2.encoder.layer.1.layer_norm.weight', 'enc_kadapter.adapter.1.down_project.weight', 'enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapter.adapter.1.up_project.bias', 'enc_kadapter.layer_norm.weight', 'enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapter.adapter.1.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapter.adapter.2.encoder.layer.0.layer_norm.weight', 'enc_kadapter.adapter.2.down_project.bias', 'enc_kadapter.adapter.0.down_project.bias', 'enc_kadapter.adapter.2.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapter.adapter.0.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapter.adapter.1.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapter.adapter.0.encoder.layer.0.layer_norm.weight', 'enc_kadapter.adapter.0.up_project.weight', 'enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapter.adapter.2.down_project.weight', 'enc_kadapter.adapter.0.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapter.adapter.0.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapter.adapter.1.down_project.bias', 'enc_kadapter.adapter.0.down_project.weight', 'enc_kadapter.adapter.2.encoder.layer.1.DenseReluDense.wo.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Set SLURM handle signals.
+
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 743 M 
+-----------------------------------------------------
+5.5 M     Trainable params
+737 M     Non-trainable params
+743 M     Total params
+2,972.720 Total estimated model params size (MB)
+Restored states from the checkpoint file at outputs/wmtkadapter_2010_2freeze_11224_128/epoch=0-f1_score=0.2807-em_score=0.2349.ckpt
+checkpoint path = outputs/wmtkadapter_2010_2freeze_11224_128/epoch=0-f1_score=0.2807-em_score=0.2349.ckpt
+Namespace(accelerator='ddp', adam_epsilon=1e-08, adapter_config={'adapter_list': [1, 5, 8], 'adapter_hidden_size': 128, 'adapter_enc_dec': None, 'pool_size': None}, adapter_enc_dec=None, adapter_hidden_size=128, adapter_list=[1, 5, 8], check_validation_only=False, checkpoint_dir='outputs/wmtkadapter_2010_2freeze_11224_128', checkpoint_path='outputs/wmtkadapter_2010_2freeze_11224_128/epoch=0-f1_score=0.2807-em_score=0.2349.ckpt', dataset='templama', dataset_version='full', early_stop_callback=False, eval_batch_size=32, find_lr=False, freeze_embeds=False, freeze_encoder=False, freeze_level=2, learning_rate=0.0005, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='kadapter', mode='pretrain', model_name_or_path='google/t5-large-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=30, num_workers=4, opt_level='O1', output_dir='outputs/templamakadapter_full_2freeze_158_128', output_log=None, pool_size=None, prefix=True, resume_from_checkpoint=True, seed=42, split=0, split_num=1, t5_learning_rate=None, tokenizer_name_or_path='google/t5-large-ssm', train_batch_size=32, use_deepspeed=False, use_lr_scheduling=False, val_check_interval=1.0, val_data='full', wandb_log=True, warmup_steps=0, weight_decay=0.0)
+T5Config {
+  "_name_or_path": "google/t5-large-ssm",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 4096,
+  "d_kv": 64,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "num_decoder_layers": 24,
+  "num_heads": 16,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_num_buckets": 32,
+  "transformers_version": "4.12.3",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+T5Config {
+  "_name_or_path": "google/t5-large-ssm",
+  "adapter_enc_dec": null,
+  "adapter_hidden_size": 128,
+  "adapter_list": [
+    1,
+    5,
+    8
+  ],
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 4096,
+  "d_kv": 64,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "num_decoder_layers": 24,
+  "num_heads": 16,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pool_size": null,
+  "relative_attention_num_buckets": 32,
+  "transformers_version": "4.12.3",
+  "use_cache": false,
+  "vocab_size": 32128
+}
+
+hparams.learning_rate = 0.0005
+Validation sanity check: 0it [00:00, ?it/s]split is 0
+Length of dataset retrieving is.. 4572
+Index(['id', 'date', 'input', 'output'], dtype='object')
+Validation sanity check:   0%|          | 0/2 [00:00<?, ?it/s]Validation sanity check:  50%|█████     | 1/2 [00:01<00:01,  1.50s/it]Validation sanity check: 100%|██████████| 2/2 [00:02<00:00,  1.18s/it]                                                                      split is 0
+Length of dataset retrieving is.. 9141
+Index(['id', 'date', 'input', 'output'], dtype='object')
+Training: 0it [00:00, ?it/s]Training:   0%|          | 0/15768 [00:00<?, ?it/s]Epoch 0:   0%|          | 0/15768 [00:00<?, ?it/s] cuda memory allocated: 5990586368
+----------Sampler iter----------
+_____mid epoch_____
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.015 MB of 0.015 MB uploaded (0.000 MB deduped)wandb: \ 0.008 MB of 0.015 MB uploaded (0.000 MB deduped)wandb: | 0.015 MB of 0.015 MB uploaded (0.000 MB deduped)wandb: / 0.015 MB of 0.037 MB uploaded (0.000 MB deduped)wandb: - 0.015 MB of 0.037 MB uploaded (0.000 MB deduped)wandb: \ 0.037 MB of 0.037 MB uploaded (0.000 MB deduped)wandb: | 0.037 MB of 0.037 MB uploaded (0.000 MB deduped)wandb: / 0.037 MB of 0.037 MB uploaded (0.000 MB deduped)wandb: - 0.037 MB of 0.037 MB uploaded (0.000 MB deduped)wandb: \ 0.037 MB of 0.037 MB uploaded (0.000 MB deduped)wandb: | 0.037 MB of 0.037 MB uploaded (0.000 MB deduped)wandb: / 0.037 MB of 0.037 MB uploaded (0.000 MB deduped)wandb: - 0.037 MB of 0.037 MB uploaded (0.000 MB deduped)wandb: \ 0.037 MB of 0.037 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: Synced kadapter_full: https://wandb.ai/tjung2/temporal_questions/runs/z73u51p6
+wandb: Synced 6 W&B file(s), 1 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221027_062902-z73u51p6/logs
+Traceback (most recent call last):
+  File "run.py", line 265, in <module>
+    main()
+  File "run.py", line 255, in main
+    trainer.fit(model)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 460, in fit
+    self._run(model)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 758, in _run
+    self.dispatch()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 799, in dispatch
+    self.accelerator.start_training(self)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/accelerators/accelerator.py", line 96, in start_training
+    self.training_type_plugin.start_training(trainer)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/plugins/training_type/training_type_plugin.py", line 144, in start_training
+    self._results = trainer.run_stage()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 809, in run_stage
+    return self.run_train()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 871, in run_train
+    self.train_loop.run_training_epoch()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/training_loop.py", line 491, in run_training_epoch
+    for batch_idx, (batch, is_last_batch) in train_dataloader:
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/profiler/profilers.py", line 112, in profile_iterable
+    value = next(iterator)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/supporters.py", line 530, in prefetch_iterator
+    last = next(it)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/supporters.py", line 464, in __next__
+    return self.request_next_batch(self.loader_iters)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/supporters.py", line 478, in request_next_batch
+    return apply_to_collection(loader_iters, Iterator, next)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/utilities/apply_func.py", line 85, in apply_to_collection
+    return function(data, *args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1203, in _next_data
+    return self._process_data(data)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1229, in _process_data
+    data.reraise()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/torch/_utils.py", line 425, in reraise
+    raise self.exc_type(msg)
+IndexError: Caught IndexError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 287, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/Datasets.py", line 344, in __getitem__
+    source, targets, labels, ground_truth, year = self.convert_to_features(self.dataset.iloc[index])
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/core/indexing.py", line 967, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/core/indexing.py", line 1520, in _getitem_axis
+    self._validate_integer(key, axis)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/core/indexing.py", line 1452, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+

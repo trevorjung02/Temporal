@@ -1,0 +1,37 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-rtx6k
+#SBATCH --account=cse
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=1-00:00:00 
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+# python run.py --config configs/wmt/training/t5_baseline_full.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.178-em_score=0.149.ckpt
+
+# WMT -> Templama
+# python run.py --config configs/templama/training/t5_baseline_full.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.178-em_score=0.149.ckpt
+# python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtkadapter_2010_2freeze_158_128/epoch=1-f1_score=0.127-em_score=0.105.ckpt
+# python run.py --config configs/templama/training/t5_kadapters_soft_full.json -checkpoint_path outputs/wmtkadapter_soft_full_2freeze_158_128/epoch=0-f1_score=0.091-em_score=0.076.ckpt
+
+# WMT baseline -> WMT adapters
+# python run.py --config configs/wmt/training/t5_kadapters_soft_full.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.178-em_score=0.149.ckpt
+# python run.py --config configs/wmt/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.178-em_score=0.149.ckpt
+
+# WMT -> SituatedQA
+# python run.py --config configs/situatedqa/training/t5_baseline_full.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.178-em_score=0.149.ckpt
+# python run.py --config configs/situatedqa/training/t5_kadapters_soft_yearly_2freeze.json -checkpoint_path outputs/wmtkadapter_soft_full_2freeze_158_128/epoch=0-f1_score=0.091-em_score=0.076.ckpt
+
+python preprocess_nyt_data.py 2010 -debug--------------------
+number of sentences: 10000
+100 sentences loaded

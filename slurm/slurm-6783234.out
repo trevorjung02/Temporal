@@ -1,0 +1,108 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=cse
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=48G
+#SBATCH --gres=gpu:1
+#SBATCH --time=1-0:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+#SBATCH --dependency=afterany:6700270
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+# WMT -> Templama
+# python run.py --config configs/templama/training/t5_baseline_full.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.2127-em_score=0.1783.ckpt -lr 0.0001
+# python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtkadapter_2010_0freeze_158_128/epoch=1-f1_score=0.2236-em_score=0.1878.ckpt -lr 0.003
+# python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtkadapter_2010_2freeze_158_128/epoch=1-f1_score=0.208-em_score=0.173.ckpt -lr 0.003
+# python run.py --config configs/templama/training/t5_kadapters_soft_full.json -checkpoint_path outputs/wmtkadapter_soft_full_0freeze_158_128/epoch=0-f1_score=0.1717-em_score=0.1419.ckpt
+# python run.py --config configs/templama/training/t5_kadapters_soft_full.json -checkpoint_path outputs/wmtkadapter_soft_full_2freeze_158_128/epoch=0-f1_score=0.185-em_score=0.154.ckpt
+
+# WMT baseline -> WMT adapters
+# python run.py --config configs/wmt/training/t5_kadapters_soft_full.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.178-em_score=0.149.ckpt
+# python run.py --config configs/wmt/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.178-em_score=0.149.ckpt
+
+# WMT -> SituatedQA
+# python run.py --config configs/situatedqa/training/t5_baseline_full.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.2127-em_score=0.1783.ckpt -lr 0.00001
+# python run.py --config configs/situatedqa/training/t5_kadapters_soft_yearly_2freeze.json -checkpoint_path outputs/wmtkadapter_soft_full_2freeze_158_128/epoch=0-f1_score=0.185-em_score=0.154.ckpt
+
+# Preprocess data
+# python preprocess_nyt_data.py 2010 -end_date=2020
+# python preprocess_nyt_data_full.py
+
+# NYT -> Templama
+# python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/nytkadapter_2010_0freeze_158_128/epoch=8-f1_score=0.140-em_score=0.100.ckpt
+
+# NYT -> SituatedQA
+# python run.py --config configs/situatedqa/training/t5_kadapters_yearly2freeze.json -checkpoint_path outputs/nytkadapter_2010_0freeze_158_128/epoch=8-f1_score=0.140-em_score=0.100.ckpt
+
+python run.py --config configs/templama/training/t5_baseline_full.json 
+python run.py --config configs/templama/evaluation/t5_baseline_full.json -val_data 2020--------------------
+wandb: W&B API key is configured. Use `wandb login --relogin` to force relogin
+wandb: Network error (ReadTimeout), entering retry loop.
+wandb: ERROR Error communicating with wandb process
+Problem at: run.py 137 main
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: Network error (ReadTimeout), entering retry loop.
+wandb: - 0.000 MB of 0.000 MB uploaded (0.000 MB deduped)wandb: \ 0.000 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: | 0.000 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: / 0.000 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: - 0.000 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: \ 0.000 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: | 0.000 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: / 0.000 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: - 0.000 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: \ 0.002 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: | 0.002 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: / 0.002 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: - 0.002 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: \ 0.002 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: | 0.002 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: / 0.002 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: - 0.002 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: \ 0.002 MB of 0.002 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: Synced 2 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221021_121042-zcef6puf/logs
+Traceback (most recent call last):
+  File "run.py", line 265, in <module>
+    main()
+  File "run.py", line 137, in main
+    wandb.init(project=hparam.wandb_project, name=f"{hparam.method}_{args['dataset_version']}" , config=args, settings=wandb.Settings(start_method="fork"))
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1043, in init
+    run = wi.init()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 691, in init
+    raise UsageError(error_message)
+wandb.errors.UsageError: Error communicating with wandb process
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.4 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20221021_121148-2p7rpmym
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run baseline_full
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/2p7rpmym
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory /mmfs1/gscratch/cse/tjung2/continual-knowledge-learning/outputs/templamabaseline_full exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+checkpoint path = /mmfs1/gscratch/cse/tjung2/continual-knowledge-learning/outputs/wmtbaseline_full/epoch=0-f1_score=0.2569-em_score=0.2183.ckpt
+Namespace(accelerator='ddp', adam_epsilon=1e-08, adapter_config={'adapter_list': None, 'adapter_hidden_size': None, 'adapter_enc_dec': None, 'pool_size': None}, adapter_enc_dec=None, adapter_hidden_size=None, adapter_list=None, check_validation_only=True, checkpoint_dir='/mmfs1/gscratch/cse/tjung2/continual-knowledge-learning/outputs/wmtbaseline_full', checkpoint_path='/mmfs1/gscratch/cse/tjung2/continual-knowledge-learning/outputs/wmtbaseline_full/epoch=0-f1_score=0.2569-em_score=0.2183.ckpt', dataset='templama', dataset_version='full', early_stop_callback=False, eval_batch_size=32, find_lr=False, freeze_embeds=False, freeze_encoder=False, freeze_level=0, learning_rate=1e-05, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='baseline', mode='pretrain', model_name_or_path='google/t5-large-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=60, num_workers=4, opt_level='O1', output_dir='/mmfs1/gscratch/cse/tjung2/continual-knowledge-learning/outputs/templamabaseline_full', output_log=None, pool_size=None, prefix=True, resume_from_checkpoint=None, seed=42, split=0, split_num=1, t5_learning_rate=None, tokenizer_name_or_path='google/t5-large-ssm', train_batch_size=32, use_deepspeed=False, use_lr_scheduling=True, val_check_interval=1.0, val_data='2020', wandb_log=True, warmup_steps=0, weight_decay=0.0)
+Not freezing any parameters!
+split is 0
+Length of dataset retrieving is.. 459
+Index(['id', 'date', 'input', 'output'], dtype='object')
+Validating: 0it [00:00, ?it/s]Validating:   0%|          | 0/15 [00:00<?, ?it/s]Validating:   7%|▋         | 1/15 [00:01<00:25,  1.83s/it]Validating:  13%|█▎        | 2/15 [00:02<00:16,  1.27s/it]Validating:  20%|██        | 3/15 [00:03<00:12,  1.06s/it]Validating:  27%|██▋       | 4/15 [00:04<00:10,  1.03it/s]Validating:  33%|███▎      | 5/15 [00:05<00:09,  1.06it/s]Validating:  40%|████      | 6/15 [00:06<00:08,  1.09it/s]Validating:  47%|████▋     | 7/15 [00:06<00:06,  1.15it/s]Validating:  53%|█████▎    | 8/15 [00:07<00:06,  1.13it/s]Validating:  60%|██████    | 9/15 [00:08<00:05,  1.18it/s]Validating:  67%|██████▋   | 10/15 [00:09<00:04,  1.10it/s]Validating:  73%|███████▎  | 11/15 [00:10<00:03,  1.09it/s]Validating:  80%|████████  | 12/15 [00:11<00:02,  1.11it/s]Validating:  87%|████████▋ | 13/15 [00:12<00:01,  1.10it/s]Validating:  93%|█████████▎| 14/15 [00:13<00:00,  1.10it/s]Validating: 100%|██████████| 15/15 [00:13<00:00,  1.28it/s]                                                           --------------------------------------------------------------------------------
+DATALOADER:0 VALIDATE RESULTS
+{'em_score': 0.006535947788506746, 'f1_score': 0.030044609680771828}
+--------------------------------------------------------------------------------
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.096 MB of 0.096 MB uploaded (0.000 MB deduped)wandb: \ 0.096 MB of 0.096 MB uploaded (0.000 MB deduped)wandb: | 0.096 MB of 0.096 MB uploaded (0.000 MB deduped)wandb: / 0.096 MB of 0.096 MB uploaded (0.000 MB deduped)wandb: - 0.096 MB of 0.109 MB uploaded (0.000 MB deduped)wandb: \ 0.096 MB of 0.109 MB uploaded (0.000 MB deduped)wandb: | 0.109 MB of 0.109 MB uploaded (0.000 MB deduped)wandb: / 0.109 MB of 0.109 MB uploaded (0.000 MB deduped)wandb: - 0.109 MB of 0.109 MB uploaded (0.000 MB deduped)wandb: \ 0.109 MB of 0.109 MB uploaded (0.000 MB deduped)wandb: | 0.109 MB of 0.109 MB uploaded (0.000 MB deduped)wandb: / 0.109 MB of 0.109 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            em_score ▁
+wandb:               epoch ▁
+wandb:            f1_score ▁
+wandb: trainer/global_step ▁
+wandb: 
+wandb: Run summary:
+wandb:               epoch 0
+wandb: trainer/global_step 0
+wandb: 
+wandb: Synced baseline_full: https://wandb.ai/tjung2/temporal_questions/runs/2p7rpmym
+wandb: Synced 6 W&B file(s), 1 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221021_121148-2p7rpmym/logs

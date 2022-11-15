@@ -1,6 +1,0 @@
-wandb_version: 1
-
-adapter_hidden_size:
-  value: 64
-learning_rate:
-  value: 0.01

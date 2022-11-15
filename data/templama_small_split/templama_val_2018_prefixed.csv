@@ -1,0 +1,480 @@
+id,date,input,output
+0,2018,"In 2018, <extra_id_0> is the head coach of Bahrain-McLaren.",Tristan Hoffman;Harald Morscher;Vladimir Miholjević;Alberto Volpi;Gorazd Štangelj;Rik Verbrugghe;Mario Chiesa
+1,2018,"In 2018, <extra_id_0> is the head coach of U.C. Sampdoria.",Marco Giampaolo
+2,2018,"In 2018, Edrick Floreal works for <extra_id_0>.",Kentucky Wildcats
+3,2018,"In 2018, <extra_id_0> is the chair of Ministry of Oceans and Fisheries.",Young-Choon Kim
+4,2018,"In 2018, The Academic Bookstore is owned by <extra_id_0>.",Bonnier Group
+5,2018,"In 2018, <extra_id_0> is the chair of Stortinget.",Tone Wilhelmsen Trøen;Olemic Thommessen
+6,2018,"In 2018, Usman Ahmed Khan Buzdar is a member of the <extra_id_0>.",Pakistan Muslim League (N);Pakistan Tehreek-e-Insaf
+7,2018,"In 2018, <extra_id_0> is the head of the government of North Rhine-Westphalia.",Armin Laschet
+8,2018,"In 2018, <extra_id_0> is the chair of Leicester City F.C..",Vichai Srivaddhanaprabha;Aiyawatt Srivaddhanaprabha
+9,2018,"In 2018, <extra_id_0> is the head coach of Leicester City F.C..",Claude Puel
+10,2018,"In 2018, Vadim Mișin is a member of the <extra_id_0>.",Revival Party
+11,2018,"In 2018, <extra_id_0> is the head coach of FC Dynamo Brest.",Radoslav Látal;Sergey Petrovich Kovalchuk;Aleksey Shpilevsky;Marcel Lička
+12,2018,"In 2018, <extra_id_0> is the head coach of Bayer 04 Leverkusen.",Peter Bosz;Heiko Herrlich
+13,2018,"In 2018, <extra_id_0> is the chair of Liberal Democrats.",Vince Cable;Sal Brinton
+14,2018,"In 2018, Jackie Trad holds the position of <extra_id_0>.",Treasurer of Queensland;Deputy Premier of Queensland
+15,2018,"In 2018, Giorgio Napolitano holds the position of <extra_id_0>.",senatore a vita
+16,2018,"In 2018, Joel Konzen holds the position of <extra_id_0>.",auxiliary bishop;titular bishop;Catholic bishop
+17,2018,"In 2018, <extra_id_0> is the head coach of SV Waldhof Mannheim.",Bernhard Trares
+18,2018,"In 2018, Angela Ahrendts works for <extra_id_0>.",Apple Inc.
+19,2018,"In 2018, <extra_id_0> is the chair of Alliance of Liberals and Democrats for Europe Party.",Hans van Baalen
+20,2018,"In 2018, Yang Shih-kuang is a member of the <extra_id_0>.",New Party
+21,2018,"In 2018, Christophe Dessimoz works for <extra_id_0>.",University College London;University of Lausanne
+22,2018,"In 2018, <extra_id_0> is the head coach of San Jose Earthquakes.",Steve Ralston;Matías Almeyda
+23,2018,"In 2018, <extra_id_0> is the head coach of Millwall F.C..",Neil Harris
+24,2018,"In 2018, Chloe Bibby attended <extra_id_0>.",Mississippi State University
+25,2018,"In 2018, Julia Y Chan works for <extra_id_0>.",University of Texas at Dallas
+26,2018,"In 2018, Joan Mesquida Ferrando is a member of the <extra_id_0>.",Spanish Socialist Workers' Party;Ciudadanos
+27,2018,"In 2018, Luke Foster plays for <extra_id_0>.",Harrogate Town A.F.C.
+28,2018,"In 2018, Hsu Yung-ming is a member of the <extra_id_0>.",New Power Party
+29,2018,"In 2018, <extra_id_0> is the head of the government of Iowa.",Kim Reynolds
+30,2018,"In 2018, Com Hem is owned by <extra_id_0>.",BC Partners
+31,2018,"In 2018, Peter R. Orszag works for <extra_id_0>.",Lazard
+32,2018,"In 2018, Mark H. Erickson works for <extra_id_0>.",Northampton Community College
+33,2018,"In 2018, <extra_id_0> is the head of the government of South Ossetia.",Anatoly Bibilov
+34,2018,"In 2018, Leon Barnett plays for <extra_id_0>.",Wigan Athletic F.C.
+35,2018,"In 2018, Daniel McBreen plays for <extra_id_0>.",Edgeworth FC
+36,2018,"In 2018, <extra_id_0> is the chair of National Cancer Institute.",Norman Sharpless
+37,2018,"In 2018, <extra_id_0> is the chair of Òmnium Cultural.",Jordi Cuixart i Navarro
+38,2018,"In 2018, Patria is owned by <extra_id_0>.",Kongsberg Defence & Aerospace;Finland
+39,2018,"In 2018, <extra_id_0> is the head coach of FC Utrecht.",Dick Advocaat
+40,2018,"In 2018, <extra_id_0> is the head coach of Pittsburgh Riverhounds SC.",Bob Lilley
+41,2018,"In 2018, Chris Montgomery works for <extra_id_0>.",Mozilla
+42,2018,"In 2018, Dragan Čavić is a member of the <extra_id_0>.",National Democratic Movement
+43,2018,"In 2018, Reber Radio Telescope is owned by <extra_id_0>.",Green Bank Observatory
+44,2018,"In 2018, Stadio Friuli is owned by <extra_id_0>.",Udinese Calcio
+45,2018,"In 2018, <extra_id_0> is the head coach of POFC Botev Vratsa.",Sasho Angelov
+46,2018,"In 2018, Darren Ambrose plays for <extra_id_0>.",Colchester United F.C.
+47,2018,"In 2018, Pepe Reina plays for <extra_id_0>.",S.S.C. Napoli;Associazione Calcio Milan
+48,2018,"In 2018, <extra_id_0> is the head coach of Hammarby Fotboll.",Stefan Billborn;Jakob Michelsen
+49,2018,"In 2018, <extra_id_0> is the head coach of KF Feronikeli.",Zekirija Ramadan
+50,2018,"In 2018, Wells Fargo Center is owned by <extra_id_0>.",Ivanhoe Cambridge
+51,2018,"In 2018, Ravichandran Ashwin plays for <extra_id_0>.",India national cricket team;Kings XI Punjab
+52,2018,"In 2018, Tim Burchett holds the position of <extra_id_0>.",mayor
+53,2018,"In 2018, Steve Nash plays for <extra_id_0>.",Los Angeles Lakers
+54,2018,"In 2018, <extra_id_0> is the head coach of Fotbal Comuna Recea.",Romulus Buia
+55,2018,"In 2018, <extra_id_0> is the head of the government of Adamstown.",yosef alhamood
+56,2018,"In 2018, Nora H de Leeuw works for <extra_id_0>.",Cardiff University;Utrecht University
+57,2018,"In 2018, <extra_id_0> is the head of the government of Vesthimmerland Municipality.",Per Bach Laursen
+58,2018,"In 2018, <extra_id_0> is the head coach of Louisville Cardinals men's basketball.",Chris Mack
+59,2018,"In 2018, Petar Mamić plays for <extra_id_0>.",Croatia national under-19 football team
+60,2018,"In 2018, <extra_id_0> is the head coach of Sumgayit PFC.",Aykhan Abbasov;Nazim Suleymanov
+61,2018,"In 2018, Todd Rokita holds the position of <extra_id_0>.",United States representative
+62,2018,"In 2018, Harald G. L. Schwefel works for <extra_id_0>.",Max Planck Institute for the Science of Light;University of Otago
+63,2018,"In 2018, John S. Chen works for <extra_id_0>.",BlackBerry
+64,2018,"In 2018, <extra_id_0> is the chair of Associazione Calcio Milan.",Paolo Scaroni;Li Yonghong
+65,2018,"In 2018, <extra_id_0> is the head coach of Associazione Calcio Milan.",Gennaro Gattuso
+66,2018,"In 2018, Associazione Calcio Milan is owned by <extra_id_0>.",Elliott Management Corporation
+67,2018,"In 2018, Motohiro Yogo works for <extra_id_0>.",Princeton University
+68,2018,"In 2018, Yaakov Peri is a member of the <extra_id_0>.",Yesh Atid
+69,2018,"In 2018, Fatoumata Tambajang holds the position of <extra_id_0>.",Minister of Women's Affairs;Vice President of the Gambia
+70,2018,"In 2018, Dinesh Chandimal plays for <extra_id_0>.",Sri Lanka national cricket team;Ruhuna Royals
+71,2018,"In 2018, Kongsvinger Line is owned by <extra_id_0>.",Bane NOR
+72,2018,"In 2018, Max Verstappen plays for <extra_id_0>.",Red Bull Racing
+73,2018,"In 2018, David Bridges plays for <extra_id_0>.",King's Lynn Town F.C.
+74,2018,"In 2018, Dražen Kutleša holds the position of <extra_id_0>.",diocesan bishop;Catholic bishop
+75,2018,"In 2018, Thomas F Krauss works for <extra_id_0>.",University of York
+76,2018,"In 2018, Carlos Tevez plays for <extra_id_0>.",Boca Juniors
+77,2018,"In 2018, Mariló Montero works for <extra_id_0>.",Antena 3
+78,2018,"In 2018, <extra_id_0> is the head of the government of Vilnius.",Remigijus Šimašius
+79,2018,"In 2018, <extra_id_0> is the head coach of FK Rad.",Zoran Milinković
+80,2018,"In 2018, Nikol Pashinyan is a member of the <extra_id_0>.",My Step Alliance
+81,2018,"In 2018, Linha do Oeste is owned by <extra_id_0>.",Infrastructures of Portugal
+82,2018,"In 2018, Jason H. Moore works for <extra_id_0>.",University of Pennsylvania
+83,2018,"In 2018, <extra_id_0> is the chair of Burberry.",John Peace;Gerry Murphy
+84,2018,"In 2018, Angela Casini works for <extra_id_0>.",Cardiff University
+85,2018,"In 2018, Vilja Toomast is a member of the <extra_id_0>.",Estonian Reform Party
+86,2018,"In 2018, <extra_id_0> is the head coach of Astana.",Dmitry Fofonov;Bruno Cenghialta;Lars Michaelsen;Stefano Zanini;Giuseppe Martinelli;Serguei Yakovlev
+87,2018,"In 2018, <extra_id_0> is the head coach of Fluminense F.C..",Marcelo de Oliveira Santos;Fernando Diniz;Abel Braga
+88,2018,"In 2018, Beate Meinl-Reisinger is a member of the <extra_id_0>.",NEOS – The New Austria
+89,2018,"In 2018, James Allsop works for <extra_id_0>.",The University of Queensland
+90,2018,"In 2018, <extra_id_0> is the head coach of Barnsley F.C..",Paul Heckingbottom;Daniel Stendel
+91,2018,"In 2018, Steven Finn plays for <extra_id_0>.",Islamabad United
+92,2018,"In 2018, Mustafa Akyol works for <extra_id_0>.",Cato Institute;Wellesley College
+93,2018,"In 2018, Birgitta Jónsdóttir is a member of the <extra_id_0>.",Pirate Party Iceland
+94,2018,"In 2018, Harbhajan Singh plays for <extra_id_0>.",Chennai Super Kings
+95,2018,"In 2018, Minho railway line is owned by <extra_id_0>.",Infrastructures of Portugal
+96,2018,"In 2018, Port of Aveiro branch line is owned by <extra_id_0>.",Infrastructures of Portugal
+97,2018,"In 2018, <extra_id_0> is the head coach of KV Mechelen.",Wouter Vrancken;Dennis van Wijk
+98,2018,"In 2018, Nicole Megow works for <extra_id_0>.",University of Bremen
+99,2018,"In 2018, Chan Chun Sing holds the position of <extra_id_0>.",Ministry of Defence;Ministry of Social and Family Development
+100,2018,"In 2018, <extra_id_0> is the head of the government of Emilia-Romagna.",Stefano Bonaccini
+101,2018,"In 2018, Janak Sapkota works for <extra_id_0>.",University of Leoben
+102,2018,"In 2018, Greg Jericho works for <extra_id_0>.",The Guardian
+103,2018,"In 2018, Heather Cox Richardson works for <extra_id_0>.",Boston College
+104,2018,"In 2018, <extra_id_0> is the head coach of MOL Vidi Football Club.",Marko Nikolić
+105,2018,"In 2018, <extra_id_0> is the head of the government of Odessa.",Gennadiy Trukhanov
+106,2018,"In 2018, Muireann Irish works for <extra_id_0>.",University of Sydney
+107,2018,"In 2018, Marta Madrenas i Mir is a member of the <extra_id_0>.",Catalan European Democratic Party
+108,2018,"In 2018, Steve Knight holds the position of <extra_id_0>.",United States representative
+109,2018,"In 2018, <extra_id_0> is the chair of Pomona College.",G. Gabrielle Starr
+110,2018,"In 2018, Craig Bryson plays for <extra_id_0>.",Derby County F.C.;Scotland national football team
+111,2018,"In 2018, Kostas Manolas plays for <extra_id_0>.",A.S. Roma;Greece national association football team
+112,2018,"In 2018, Bill Cassidy holds the position of <extra_id_0>.",United States senator
+113,2018,"In 2018, Saumitra Khan is a member of the <extra_id_0>.",All India Trinamool Congress
+114,2018,"In 2018, <extra_id_0> is the head of the government of Szombathely.",Tivadar Puskás
+115,2018,"In 2018, Heather Humphreys holds the position of <extra_id_0>.","Teachta Dála;Minister for Jobs, Enterprise and Innovation"
+116,2018,"In 2018, Rachel Treweek holds the position of <extra_id_0>.",Bishop of Gloucester
+117,2018,"In 2018, <extra_id_0> is the chair of Ministry of Economy and Finance.",Kim Dong-yeon
+118,2018,"In 2018, <extra_id_0> is the head coach of Olympiacos F.C..",Pedro Martins
+119,2018,"In 2018, Janice Lee is a member of the <extra_id_0>.",Parti Rakyat Malaysia
+120,2018,"In 2018, <extra_id_0> is the chair of Société des amis du Louvre.",Louis-Antoine Prat
+121,2018,"In 2018, Jæren Line is owned by <extra_id_0>.",Bane NOR
+122,2018,"In 2018, <extra_id_0> is the head of the government of Baton Rouge.",Sharon Weston Broome
+123,2018,"In 2018, Inés Sabanés is a member of the <extra_id_0>.",Ahora Madrid;Equo
+124,2018,"In 2018, Hirving Lozano plays for <extra_id_0>.",Mexico national football team;Mexico national under-23 football team;PSV Eindhoven
+125,2018,"In 2018, Kim Han-gil is a member of the <extra_id_0>.",People's Party
+126,2018,"In 2018, Volodymyr Lytvyn holds the position of <extra_id_0>.",People's Deputy of Ukraine
+127,2018,"In 2018, <extra_id_0> is the head coach of Standard Liège.",Michel Preud'homme
+128,2018,"In 2018, Dawn Childs works for <extra_id_0>.",Merlin Entertainments
+129,2018,"In 2018, Jennifer Bendery works for <extra_id_0>.",HuffPost
+130,2018,"In 2018, <extra_id_0> is the head coach of Panathinaikos B.C..",Rick Pitino;Xavier Pascual Vives
+131,2018,"In 2018, <extra_id_0> is the head coach of Brighton & Hove Albion F.C..",Chris Hughton
+132,2018,"In 2018, <extra_id_0> is the head coach of Limburg Lions.",Lambert Schuurs
+133,2018,"In 2018, <extra_id_0> is the head of the government of India.",Narendra Modi
+134,2018,"In 2018, Stephan Weil holds the position of <extra_id_0>.",Minister-President of Lower Saxony
+135,2018,"In 2018, Play M Entertainment is owned by <extra_id_0>.",Kakao M
+136,2018,"In 2018, Glenn Greenwald works for <extra_id_0>.",The Intercept
+137,2018,"In 2018, David Warner plays for <extra_id_0>.",Australia national cricket team
+138,2018,"In 2018, Olav Gunnar Ballo is a member of the <extra_id_0>.",Norwegian Labour Party
+139,2018,"In 2018, Hong Moon-jong is a member of the <extra_id_0>.",Liberty Korea Party
+140,2018,"In 2018, Lou Barletta holds the position of <extra_id_0>.",United States representative
+141,2018,"In 2018, <extra_id_0> is the head of the government of Erlangen.",Florian Janik
+142,2018,"In 2018, <extra_id_0> is the head coach of Czech Republic national association football team.",Jaroslav Šilhavý;Karel Jarolím
+143,2018,"In 2018, Kyrie Irving plays for <extra_id_0>.",Boston Celtics
+144,2018,"In 2018, Jim Banks holds the position of <extra_id_0>.",United States representative
+145,2018,"In 2018, Eric Garcetti holds the position of <extra_id_0>.",Mayor of the City of Los Angeles
+146,2018,"In 2018, Christofer Clemente works for <extra_id_0>.",University of the Sunshine Coast
+147,2018,"In 2018, <extra_id_0> is the head coach of Motherwell F.C..",Steve Robinson
+148,2018,"In 2018, <extra_id_0> is the head coach of NK Olimpija Ljubljana.",Zoran Barisic
+149,2018,"In 2018, Harrison Afful plays for <extra_id_0>.",Columbus Crew SC
+150,2018,"In 2018, <extra_id_0> is the head coach of Turris-Oltul Turnu Măgurele.",Erik Lincar
+151,2018,"In 2018, Thaddeus Ma Daqin holds the position of <extra_id_0>.",auxiliary bishop;Catholic bishop
+152,2018,"In 2018, Jean-Louis Tauran holds the position of <extra_id_0>.",camerlengo of the Holy Roman Church;cardinal
+153,2018,"In 2018, Daniel Boeri is a member of the <extra_id_0>.",Horizon Monaco;Priorité Monaco
+154,2018,"In 2018, Will Buckley plays for <extra_id_0>.",Sunderland A.F.C.
+155,2018,"In 2018, Corina Crețu is a member of the <extra_id_0>.",Social Democratic Party
+156,2018,"In 2018, Maszlee Malik is a member of the <extra_id_0>.",Malaysian United Indigenous Party
+157,2018,"In 2018, <extra_id_0> is the chair of Democratic and Republican Left.",André Chassaigne
+158,2018,"In 2018, Democratic and Republican Left is a member of the <extra_id_0>.",Guianese Socialist Party;Tavini Huiraatira
+159,2018,"In 2018, <extra_id_0> is the chair of Ministry of Foreign Affairs of Poland.",Jacek Czaputowicz
+160,2018,"In 2018, Andrea Pirlo plays for <extra_id_0>.",New York City FC
+161,2018,"In 2018, Norwegian digital learning arena is owned by <extra_id_0>.",Trøndelag County Municipality
+162,2018,"In 2018, <extra_id_0> is the head coach of Lotto-Soudal.",Kurt Van De Wouwer;Mario Aerts;Bart Leysen;Frederik Willems
+163,2018,"In 2018, Meng Wanzhou holds the position of <extra_id_0>.",vice president;chief financial officer
+164,2018,"In 2018, <extra_id_0> is the chair of Schloss Dagstuhl – Leibniz Center for Informatics.",Raimund Seidel
+165,2018,"In 2018, David Altshuler works for <extra_id_0>.",Vertex Pharmaceuticals
+166,2018,"In 2018, 511 Federal Building is owned by <extra_id_0>.",Portland Development Commission
+167,2018,"In 2018, Bjarne Stroustrup works for <extra_id_0>.",Morgan Stanley
+168,2018,"In 2018, Yang Jiechi holds the position of <extra_id_0>.",State Councilor of the People's Republic of China
+169,2018,"In 2018, Amos Yong works for <extra_id_0>.",Fuller Theological Seminary
+170,2018,"In 2018, <extra_id_0> is the chair of Supreme Council of the Armed Forces.",Sedki Sobhi
+171,2018,"In 2018, <extra_id_0> is the head of the government of Taiwan.",Lai Ching-te
+172,2018,"In 2018, Brian Duensing works for <extra_id_0>.",Kansas City Royals
+173,2018,"In 2018, <extra_id_0> is the head of the government of La Rioja.",José Ignacio Ceniceros González
+174,2018,"In 2018, <extra_id_0> is the head coach of Società Polisportiva Ars et Labor.",Leonardo Semplici
+175,2018,"In 2018, Jonathan Sexton plays for <extra_id_0>.",British & Irish Lions;Leinster Rugby
+176,2018,"In 2018, <extra_id_0> is the head coach of FC Urartu.",Ilshat Faizulin;Arthur Voskanyan
+177,2018,"In 2018, <extra_id_0> is the head coach of San Francisco 49ers.",Kyle Shanahan
+178,2018,"In 2018, <extra_id_0> is the head of the government of Atlanta.",Kasim Reed;Keisha Lance Bottoms
+179,2018,"In 2018, Andrej Plenković holds the position of <extra_id_0>.",Prime Minister of Croatia
+180,2018,"In 2018, <extra_id_0> is the head coach of UCF Knights football.",Josh Heupel;Scott Frost
+181,2018,"In 2018, Idit Silman is a member of the <extra_id_0>.",The Jewish Home
+182,2018,"In 2018, Kongregate is owned by <extra_id_0>.",Modern Times Group
+183,2018,"In 2018, Greg Tansey plays for <extra_id_0>.",Inverness Caledonian Thistle F.C.
+184,2018,"In 2018, <extra_id_0> is the head of the government of Chelyabinsk Oblast.",Boris Dubrovsky
+185,2018,"In 2018, <extra_id_0> is the head coach of Dundee F.C..",Jim McIntyre
+186,2018,"In 2018, Stephen Ireland plays for <extra_id_0>.",Stoke City F.C.
+187,2018,"In 2018, James P. Allison works for <extra_id_0>.",University of Texas MD Anderson Cancer Center
+188,2018,"In 2018, Álvaro Morata plays for <extra_id_0>.",Chelsea F.C.;Spain national association football team
+189,2018,"In 2018, Giovani dos Santos plays for <extra_id_0>.",Los Angeles Galaxy
+190,2018,"In 2018, Robert Bingham works for <extra_id_0>.",University of Edinburgh
+191,2018,"In 2018, Winston Reid plays for <extra_id_0>.",West Ham United F.C.;New Zealand national football team
+192,2018,"In 2018, Sampa Das attended <extra_id_0>.",Purdue University
+193,2018,"In 2018, <extra_id_0> is the chair of Reserve Bank of Australia.",Philip Lowe
+194,2018,"In 2018, <extra_id_0> is the chair of Ministry of Education of the Russian Federation.",Olga Vasilyeva
+195,2018,"In 2018, ODEON Kino is owned by <extra_id_0>.",AMC Theatres
+196,2018,"In 2018, Gillian Rose works for <extra_id_0>.",University of Oxford
+197,2018,"In 2018, <extra_id_0> is the head of the government of Campania.",Vincenzo De Luca
+198,2018,"In 2018, Nina Revoyr holds the position of <extra_id_0>.",executive director
+199,2018,"In 2018, Réginal Goreux plays for <extra_id_0>.",Standard Liège;Haiti national football team
+200,2018,"In 2018, Tim Paine plays for <extra_id_0>.",Australia national cricket team;Hobart Hurricanes
+201,2018,"In 2018, <extra_id_0> is the head of the government of Uttar Pradesh.",Yogi Adityanath
+202,2018,"In 2018, <extra_id_0> is the chair of Christian Social People's Party.",Marc Spautz
+203,2018,"In 2018, <extra_id_0> is the chair of Heinrich Böll Foundation.",Ellen Ueberschär
+204,2018,"In 2018, <extra_id_0> is the head of the government of Vermont.",Phil Scott
+205,2018,"In 2018, <extra_id_0> is the head coach of FK Borac Banja Luka.",Darko Vojvodić
+206,2018,"In 2018, Remigijus Šimašius is a member of the <extra_id_0>.",Liberal Movement
+207,2018,"In 2018, Ruptly is owned by <extra_id_0>.",Rossiya Segodnya
+208,2018,"In 2018, <extra_id_0> is the head of the government of Wilmington.",Mike Purzycki
+209,2018,"In 2018, Bhaichung Bhutia plays for <extra_id_0>.",East Bengal F.C.
+210,2018,"In 2018, Kateřina Jacques is a member of the <extra_id_0>.",Liberal-Environmental Party
+211,2018,"In 2018, Christos Zois is a member of the <extra_id_0>.",New Reformist Radical Reconstruction
+212,2018,"In 2018, Dawn Hadley works for <extra_id_0>.",University of York;University of Sheffield
+213,2018,"In 2018, <extra_id_0> is the chair of Committee for the Defence of Democracy.",Krzysztof Łoziński
+214,2018,"In 2018, Marie-Josèphe Jude works for <extra_id_0>.",Conservatoire de Paris
+215,2018,"In 2018, Gennady Gudkov is a member of the <extra_id_0>.",Russian Opposition Coordination Council
+216,2018,"In 2018, Tamás Soproni is a member of the <extra_id_0>.",Momentum Movement
+217,2018,"In 2018, Robert Mueller holds the position of <extra_id_0>.",special prosecutor
+218,2018,"In 2018, Ulf Kristersson holds the position of <extra_id_0>.",party leader
+219,2018,"In 2018, Allison Randal works for <extra_id_0>.",SUSE
+220,2018,"In 2018, László Tőkés holds the position of <extra_id_0>.",member of the European Parliament
+221,2018,"In 2018, <extra_id_0> is the head coach of FC Steaua II București.",Pompiliu Stoica
+222,2018,"In 2018, Rémi Mathis works for <extra_id_0>.",Bibliothèque nationale de France
+223,2018,"In 2018, Shari Steele works for <extra_id_0>.","The Tor Project, Inc"
+224,2018,"In 2018, Ghil'ad Zuckermann works for <extra_id_0>.",University of Adelaide
+225,2018,"In 2018, Marian-Jean Marinescu is a member of the <extra_id_0>.",National Liberal Party
+226,2018,"In 2018, Nathan Rourke attended <extra_id_0>.",Ohio University
+227,2018,"In 2018, <extra_id_0> is the head coach of England national association football team.",Gareth Southgate
+228,2018,"In 2018, Ignacio Gutiérrez works for <extra_id_0>.",Televisión Nacional de Chile
+229,2018,"In 2018, Arnold Rüütel is a member of the <extra_id_0>.",Conservative People's Party of Estonia
+230,2018,"In 2018, <extra_id_0> is the head coach of Zira FK.",Samir Abbasov
+231,2018,"In 2018, <extra_id_0> is the head of the government of Alexandria.",Allison Silberberg
+232,2018,"In 2018, Arti Agrawal works for <extra_id_0>.","City, University of London;University of Technology Sydney"
+233,2018,"In 2018, Viktoras Pranckietis is a member of the <extra_id_0>.",Lithuanian Peasant and Greens Union
+234,2018,"In 2018, Patrick Leahy holds the position of <extra_id_0>.",United States senator;President pro tempore of the United States Senate
+235,2018,"In 2018, Meir Sheetrit is a member of the <extra_id_0>.",Hatnuah
+236,2018,"In 2018, Joel Byrom plays for <extra_id_0>.",Northampton Town F.C.
+237,2018,"In 2018, Wang Qishan holds the position of <extra_id_0>.",Vice President of the People's Republic of China
+238,2018,"In 2018, Maimunah Mohd Sharif holds the position of <extra_id_0>.",executive director;mayor
+239,2018,"In 2018, <extra_id_0> is the head coach of FC Chornomorets Odesa.",Angel Chervenkov;Kostyantyn Frolov
+240,2018,"In 2018, Ilya Mikhaylov works for <extra_id_0>.",FC Zenit-Izhevsk Izhevsk
+241,2018,"In 2018, Dean Heller holds the position of <extra_id_0>.",United States senator
+242,2018,"In 2018, Adam Bielan is a member of the <extra_id_0>.",Polska Razem
+243,2018,"In 2018, Ajinkya Rahane plays for <extra_id_0>.",India national cricket team
+244,2018,"In 2018, Kamel Morjane is a member of the <extra_id_0>.",National Destourian Initiative
+245,2018,"In 2018, Fred VanVleet plays for <extra_id_0>.",Toronto Raptors
+246,2018,"In 2018, Chip Smith works for <extra_id_0>.",21st Century Fox
+247,2018,"In 2018, Linda Collins-Smith is a member of the <extra_id_0>.",Republican Party
+248,2018,"In 2018, Banuera Berina is a member of the <extra_id_0>.",Tobwaan Kiribati Party
+249,2018,"In 2018, Lassana Diarra plays for <extra_id_0>.",Olympique de Marseille
+250,2018,"In 2018, Paul O'Connell plays for <extra_id_0>.",RC Toulonnais
+251,2018,"In 2018, Vivendi is owned by <extra_id_0>.",Vivendi;Caisse des dépôts et consignations
+252,2018,"In 2018, <extra_id_0> is the head coach of F.C. Crotone.",Walter Zenga;Giovanni Stroppa
+253,2018,"In 2018, Luke Simpkins is a member of the <extra_id_0>.",Australian Conservatives
+254,2018,"In 2018, Ilya Sutskever works for <extra_id_0>.",OpenAI
+255,2018,"In 2018, Marina Geli i Fàbrega is a member of the <extra_id_0>.",Leftwing Movement
+256,2018,"In 2018, Michael Gove holds the position of <extra_id_0>.","Secretary of State for Environment, Food and Rural Affairs"
+257,2018,"In 2018, <extra_id_0> is the head of the government of Gabon.",Emmanuel Issoze-Ngondet
+258,2018,"In 2018, Thomas P. O'Neill Jr. Federal Building is owned by <extra_id_0>.",United States House of Representatives
+259,2018,"In 2018, <extra_id_0> is the chair of State Duma.",Vyacheslav Volodin
+260,2018,"In 2018, Nerida G. Wilson works for <extra_id_0>.",Western Australian Museum;University of New South Wales
+261,2018,"In 2018, <extra_id_0> is the head coach of Apollon Smyrna F.C..",Babis Tennes
+262,2018,"In 2018, Bergen Line is owned by <extra_id_0>.",Bane NOR
+263,2018,"In 2018, Johnathan Williams attended <extra_id_0>.",Gonzaga University
+264,2018,"In 2018, Christina Pagel works for <extra_id_0>.",University College London
+265,2018,"In 2018, Saleem Ali works for <extra_id_0>.",The University of Queensland;University of Delaware
+266,2018,"In 2018, Bill Keating holds the position of <extra_id_0>.",United States representative
+267,2018,"In 2018, <extra_id_0> is the head coach of FC Khimki.",Igor Shalimov
+268,2018,"In 2018, Enrico Carattoni is a member of the <extra_id_0>.",United Left
+269,2018,"In 2018, Verdiana Masanja works for <extra_id_0>.",Nelson Mandela African Institute of Science and Technology;National University of Rwanda
+270,2018,"In 2018, Catherine Osson is a member of the <extra_id_0>.",La République En Marche
+271,2018,"In 2018, Hannu Manninen works for <extra_id_0>.",Finnair
+272,2018,"In 2018, Carli Lloyd plays for <extra_id_0>.",Sky Blue FC
+273,2018,"In 2018, Rod Phillips holds the position of <extra_id_0>.",environment minister
+274,2018,"In 2018, Firdous Ashiq Awan is a member of the <extra_id_0>.",Pakistan Tehreek-e-Insaf
+275,2018,"In 2018, <extra_id_0> is the chair of Servant of the People.",Ivan Bakanov
+276,2018,"In 2018, Arkane Studios is owned by <extra_id_0>.",ZeniMax Media
+277,2018,"In 2018, James McClean plays for <extra_id_0>.",Stoke City F.C.;Republic of Ireland national association football team;West Bromwich Albion F.C.
+278,2018,"In 2018, Darren Sammy plays for <extra_id_0>.",Rajshahi Kings;Peshawar Zalmi;St Lucia Zouks;Hobart Hurricanes
+279,2018,"In 2018, Ernest Maragall is a member of the <extra_id_0>.",Republican Left of Catalonia;Leftwing Movement
+280,2018,"In 2018, Neil Alexander plays for <extra_id_0>.",Heart of Midlothian F.C.
+281,2018,"In 2018, <extra_id_0> is the head coach of Tennis Borussia Berlin.",Thomas Brdarić
+282,2018,"In 2018, Sharon Tooze works for <extra_id_0>.",Francis Crick Institute
+283,2018,"In 2018, <extra_id_0> is the head coach of Racing Club.",Eduardo  Coudet
+284,2018,"In 2018, Iker Jiménez Elizari works for <extra_id_0>.",Mediaset España
+285,2018,"In 2018, Maria A. Pallante works for <extra_id_0>.",Library of Congress
+286,2018,"In 2018, Chao Cheng-yu is a member of the <extra_id_0>.",independent politician
+287,2018,"In 2018, <extra_id_0> is the head coach of PEC Zwolle.",Jaap Stam
+288,2018,"In 2018, Shafie Apdal is a member of the <extra_id_0>.",Sabah Heritage Party
+289,2018,"In 2018, <extra_id_0> is the head of the government of Berlin.",Michael Müller
+290,2018,"In 2018, <extra_id_0> is the head coach of FK Radnik Surdulica.",Mladen Dodić
+291,2018,"In 2018, Jason Eric Box works for <extra_id_0>.",Geological Survey of Denmark and Greenland
+292,2018,"In 2018, Lauren Cornell works for <extra_id_0>.","Center for Curatorial Studies, Bard College"
+293,2018,"In 2018, Lindsay Hoyle holds the position of <extra_id_0>.",Chairman of Ways and Means
+294,2018,"In 2018, Jeremy Wright holds the position of <extra_id_0>.","Advocate General for Northern Ireland;Secretary of State for Culture, Media and Sport;Attorney General for England and Wales"
+295,2018,"In 2018, Danny O'Brien works for <extra_id_0>.",Electronic Frontier Foundation;Committee to Protect Journalists
+296,2018,"In 2018, Cindy Hyde-Smith is a member of the <extra_id_0>.",Republican Party
+297,2018,"In 2018, Josep Guerrero works for <extra_id_0>.",Aalborg University
+298,2018,"In 2018, <extra_id_0> is the chair of Catalan Academy of Cinema.",Isona Passola i Vidal
+299,2018,"In 2018, Mirjam Van Praag works for <extra_id_0>.",Copenhagen Business School;Vrije Universiteit Amsterdam
+300,2018,"In 2018, <extra_id_0> is the head of the government of Acre.",Tião Viana
+301,2018,"In 2018, Gérald Darmanin is a member of the <extra_id_0>.",The Republicans
+302,2018,"In 2018, <extra_id_0> is the head coach of IF Elfsborg.",Jimmy Thelin
+303,2018,"In 2018, Ramal de Aveiro is owned by <extra_id_0>.",Infrastructures of Portugal
+304,2018,"In 2018, Richard Bruton holds the position of <extra_id_0>.","Teachta Dála;Minister for Education and Skills;Minister for Communications, Climate Action and Environment"
+305,2018,"In 2018, Annie Lööf holds the position of <extra_id_0>.",party leader
+306,2018,"In 2018, Toni Kroos plays for <extra_id_0>.",Germany national association football team;Real Madrid CF
+307,2018,"In 2018, Daniel P. Aldrich works for <extra_id_0>.",Northeastern University
+308,2018,"In 2018, Gheorghe Flutur is a member of the <extra_id_0>.",National Liberal Party
+309,2018,"In 2018, Kasper Schmeichel plays for <extra_id_0>.",Leicester City F.C.;Denmark national association football team
+310,2018,"In 2018, Malou Aamund works for <extra_id_0>.",Google
+311,2018,"In 2018, Dimension Films is owned by <extra_id_0>.",Lantern Entertainment
+312,2018,"In 2018, <extra_id_0> is the head coach of England national rugby union team.",Eddie Jones
+313,2018,"In 2018, <extra_id_0> is the head of the government of Saitama Prefecture.",Kiyoshi Ueda
+314,2018,"In 2018, Trunk Line is owned by <extra_id_0>.",Bane NOR
+315,2018,"In 2018, Jang Geun-suk attended <extra_id_0>.",Hanyang University
+316,2018,"In 2018, <extra_id_0> is the head coach of CS Gaz Metan Mediaș.",Mihai Teja;Cristian Pustai
+317,2018,"In 2018, Jean-Pierre Grand is a member of the <extra_id_0>.",The Republicans;United Republic
+318,2018,"In 2018, <extra_id_0> is the head of the government of Thailand.",Prayut Chan-ocha
+319,2018,"In 2018, Daniel J. Caron works for <extra_id_0>.",École nationale d'administration publique
+320,2018,"In 2018, <extra_id_0> is the head of the government of Benin.",Patrice Talon
+321,2018,"In 2018, <extra_id_0> is the head coach of West Ham United F.C..",Manuel Pellegrini
+322,2018,"In 2018, <extra_id_0> is the chair of World Confederation of Billiards Sports.",Ian Anderson
+323,2018,"In 2018, Mumtaz Bhutto is a member of the <extra_id_0>.",Pakistan Tehreek-e-Insaf
+324,2018,"In 2018, Tabetha S. Boyajian works for <extra_id_0>.",Yale University
+325,2018,"In 2018, <extra_id_0> is the head of the government of Kaohsiung.",Han Kuo-yu;Chen Chu;Hsu Li-ming
+326,2018,"In 2018, Ralph Northam holds the position of <extra_id_0>.",Lieutenant Governor of Virginia;Governor of Virginia
+327,2018,"In 2018, Amit Shah holds the position of <extra_id_0>.",Member of Rajya Sabha
+328,2018,"In 2018, <extra_id_0> is the head coach of Vaasan Palloseura.",Petri Vuorinen
+329,2018,"In 2018, Nathan Law is a member of the <extra_id_0>.",Demosistō
+330,2018,"In 2018, Justin Welby holds the position of <extra_id_0>.",Archbishop of Canterbury;bishop
+331,2018,"In 2018, Andrew Scheer holds the position of <extra_id_0>.",Leader of the Official Opposition
+332,2018,"In 2018, <extra_id_0> is the head coach of Odds BK.",Dag-Eilev Fagermo
+333,2018,"In 2018, <extra_id_0> is the head of the government of Marche.",Luca Ceriscioli
+334,2018,"In 2018, Julio Arca plays for <extra_id_0>.",South Shields F.C.
+335,2018,"In 2018, <extra_id_0> is the chair of Ministry of Finance.",Siv Jensen
+336,2018,"In 2018, <extra_id_0> is the chair of Organisation of Islamic Cooperation.",Yousef Al-Othaimeen
+337,2018,"In 2018, <extra_id_0> is the head coach of FC Kairat.",Carlos Alós Ferrer;Aleksey Shpilevsky
+338,2018,"In 2018, Josep Sánchez i Llibre is a member of the <extra_id_0>.",United to Advance
+339,2018,"In 2018, Thomas R. Lynch works for <extra_id_0>.",University of Southampton
+340,2018,"In 2018, <extra_id_0> is the head of the government of Freiburg im Breisgau.",Dieter Salomon;Martin Horn
+341,2018,"In 2018, Eric Swalwell holds the position of <extra_id_0>.",United States representative
+342,2018,"In 2018, <extra_id_0> is the chair of Republic of Bashkortostan.",Radiy Khabirov;Rustem Khamitov
+343,2018,"In 2018, <extra_id_0> is the head of the government of Guam.",Eddie Calvo
+344,2018,"In 2018, Joan Gabel works for <extra_id_0>.",University of South Carolina
+345,2018,"In 2018, Victor Oladipo plays for <extra_id_0>.",Indiana Pacers
+346,2018,"In 2018, Stanislav Edward Shmelev works for <extra_id_0>.",University of Edinburgh
+347,2018,"In 2018, Jo Swinson holds the position of <extra_id_0>.",Deputy Leader of the Liberal Democrats
+348,2018,"In 2018, Yariv Oppenheimer is a member of the <extra_id_0>.",Israeli Labor Party;Meretz
+349,2018,"In 2018, <extra_id_0> is the head coach of FK Ventspils.",Dejan Vukićević
+350,2018,"In 2018, Kostas Antetokounmpo attended <extra_id_0>.",University of Dayton
+351,2018,"In 2018, Tunahan Kuzu is a member of the <extra_id_0>.",DENK
+352,2018,"In 2018, Raymond Leo Burke holds the position of <extra_id_0>.",cardinal
+353,2018,"In 2018, John Giannandrea works for <extra_id_0>.",Google;Apple Inc.
+354,2018,"In 2018, <extra_id_0> is the head coach of Legia Warsaw.",Romeo Jozak;Ricardo Sá Pinto;Dean Klafurić
+355,2018,"In 2018, Susan Baer works for <extra_id_0>.",Arup
+356,2018,"In 2018, <extra_id_0> is the chair of Ministry of Justice.",Park Sang-ki
+357,2018,"In 2018, Margaret Cheney works for <extra_id_0>.",Colorado State University
+358,2018,"In 2018, <extra_id_0> is the chair of National Rally.",Marine Le Pen
+359,2018,"In 2018, Persis Drell works for <extra_id_0>.",Stanford University
+360,2018,"In 2018, <extra_id_0> is the chair of United States Department of Justice.",Jeff Sessions
+361,2018,"In 2018, Klaus Iohannis is a member of the <extra_id_0>.",independent politician
+362,2018,"In 2018, Megan Walker attended <extra_id_0>.",University of Connecticut
+363,2018,"In 2018, <extra_id_0> is the chair of Humanists UK.",Shappi Khorsandi
+364,2018,"In 2018, Glen Johnson plays for <extra_id_0>.",Stoke City F.C.
+365,2018,"In 2018, Alfonso Valencia works for <extra_id_0>.",Barcelona Supercomputing Center;Catalan Institution for Research and Advanced Studies
+366,2018,"In 2018, Nate Schierholtz works for <extra_id_0>.",Detroit Tigers
+367,2018,"In 2018, <extra_id_0> is the chair of Unilever.",Marijn Dekkers
+368,2018,"In 2018, <extra_id_0> is the chair of National Party of Australia.",Michael McCormack
+369,2018,"In 2018, Andrew V. Goldberg works for <extra_id_0>.",Amazon
+370,2018,"In 2018, Daniel Swain works for <extra_id_0>.",Illinois Natural History Survey
+371,2018,"In 2018, <extra_id_0> is the chair of European People's Party group.",Manfred Weber
+372,2018,"In 2018, <extra_id_0> is the chair of Mondi Group.",Fred Phaswana
+373,2018,"In 2018, <extra_id_0> is the head of the government of Charlottesville.",Michael Signer;Nikuyah Walker
+374,2018,"In 2018, <extra_id_0> is the head coach of R. Charleroi S.C..",Felice Mazzu
+375,2018,"In 2018, Ramon Espadaler Parcerisas is a member of the <extra_id_0>.",United to Advance
+376,2018,"In 2018, Dominic Grieve holds the position of <extra_id_0>.",Advocate General for Northern Ireland
+377,2018,"In 2018, <extra_id_0> is the head of the government of Bratislava.",Ivo Nesrovnal;Matúš Vallo
+378,2018,"In 2018, Ann Sarnoff works for <extra_id_0>.",BBC America
+379,2018,"In 2018, Alex X. Mooney holds the position of <extra_id_0>.",United States representative
+380,2018,"In 2018, Charles M. Huber is a member of the <extra_id_0>.",Christian Democratic Union
+381,2018,"In 2018, Věra Jourová holds the position of <extra_id_0>.","European Commissioner for Justice, Fundamental Rights and Citizenship"
+382,2018,"In 2018, <extra_id_0> is the head of the government of Sibiu.",Astrid Fodor
+383,2018,"In 2018, Jill R. Horwitz works for <extra_id_0>.",University of Victoria
+384,2018,"In 2018, Tua Tagovailoa attended <extra_id_0>.",University of Alabama
+385,2018,"In 2018, Deborah Terry works for <extra_id_0>.",Curtin University
+386,2018,"In 2018, Antoine Bozio works for <extra_id_0>.",School for Advanced Studies in the Social Sciences;Paris School of Economics
+387,2018,"In 2018, Alfa Romeo is owned by <extra_id_0>.",Fiat Chrysler Automobiles
+388,2018,"In 2018, Lucas Richman works for <extra_id_0>.",Bangor Symphony Orchestra
+389,2018,"In 2018, <extra_id_0> is the head coach of ERA-Circus.",Marc Janssens
+390,2018,"In 2018, Rachel Sheherazade works for <extra_id_0>.",SBT
+391,2018,"In 2018, Mangala pinsiri Samaraweera holds the position of <extra_id_0>.",Minister of Finance of Sri Lanka
+392,2018,"In 2018, Dimitar Stoyanov is a member of the <extra_id_0>.",National-Democratic Party
+393,2018,"In 2018, <extra_id_0> is the head of the government of Yonkers.",Mike Spano
+394,2018,"In 2018, Gheorghe Falcă is a member of the <extra_id_0>.",National Liberal Party
+395,2018,"In 2018, Michael Cohen is a member of the <extra_id_0>.",Democratic Party;Republican Party
+396,2018,"In 2018, <extra_id_0> is the head coach of Nippo-Vini Fantini-Europa Ovini.",Mario Manzoni;Shinichi Fukushima;Valerio Tebaldi;Hiroshi Daimon;Stefano Giuliani
+397,2018,"In 2018, Kemba Walker plays for <extra_id_0>.",Charlotte Hornets
+398,2018,"In 2018, <extra_id_0> is the head coach of FC Gomel.",Alyaksey Merkulaw;Vyacheslav Geraschenko
+399,2018,"In 2018, Lucy Harris is a member of the <extra_id_0>.",Brexit Party
+400,2018,"In 2018, <extra_id_0> is the head coach of FC Midtjylland.",Kenneth Andersen
+401,2018,"In 2018, Kirill I of Moscow holds the position of <extra_id_0>.",metropolitan bishop
+402,2018,"In 2018, David Lidington holds the position of <extra_id_0>.",Chancellor of the Duchy of Lancaster;Minister for the Cabinet Office;Secretary of State for Justice
+403,2018,"In 2018, Leah Williamson plays for <extra_id_0>.",England women's national under-20 football team;Arsenal W.F.C.;England women's national under-19 football team;England women's national under-23 football team
+404,2018,"In 2018, <extra_id_0> is the chair of United States Department of Energy.",Rick Perry
+405,2018,"In 2018, <extra_id_0> is the head coach of Greenock Morton F.C..",Jonatan Johansson
+406,2018,"In 2018, Amjad Kalaf plays for <extra_id_0>.",Al-Shorta Baghdad
+407,2018,"In 2018, <extra_id_0> is the head coach of Kayserispor.",Hikmet Karaman;Ertuğrul Sağlam;Marius Șumudică
+408,2018,"In 2018, Jari Jones works for <extra_id_0>.",FX
+409,2018,"In 2018, <extra_id_0> is the head coach of Bora-Hansgrohe.",Ján Valach;Steffen Radochla;André Schulze;Jens Zemke;Enrico Poitschke
+410,2018,"In 2018, <extra_id_0> is the chair of CRH.",Nicky Hartery
+411,2018,"In 2018, <extra_id_0> is the chair of Verband der Reservisten der Deutschen Bundeswehr.",Oswin Veith
+412,2018,"In 2018, <extra_id_0> is the head coach of Gimnàstic de Tarragona.",Nano;Antonio Rodríguez Saravia;Enrique Martín Monreal;José Antonio Gordillo
+413,2018,"In 2018, Michel Bissonnet is a member of the <extra_id_0>.",Ensemble Montréal
+414,2018,"In 2018, Philippe Gilbert plays for <extra_id_0>.",Deceuninck-Quick-Step
+415,2018,"In 2018, Lourdes Ciuró i Buldó is a member of the <extra_id_0>.",Catalan European Democratic Party
+416,2018,"In 2018, Christophe Robino is a member of the <extra_id_0>.",Horizon Monaco;Priorité Monaco
+417,2018,"In 2018, Richard Chaplow plays for <extra_id_0>.",Doncaster Rovers F.C.
+418,2018,"In 2018, Katie Doores works for <extra_id_0>.",King's College London
+419,2018,"In 2018, Expobank CZ is owned by <extra_id_0>.",Igor Kim
+420,2018,"In 2018, <extra_id_0> is the chair of Democratic Party of Korea.",Lee Hae Chan;Choo Mi-ae
+421,2018,"In 2018, Svitlana Zalishchuk is a member of the <extra_id_0>.",Democratic Alliance
+422,2018,"In 2018, <extra_id_0> is the chair of ADFE-Français du Monde.",Claudine Lepage
+423,2018,"In 2018, Craig Mackinlay is a member of the <extra_id_0>.",Conservative Party
+424,2018,"In 2018, China Media Group Headquarters is owned by <extra_id_0>.",China Central Television;China Media Group
+425,2018,"In 2018, <extra_id_0> is the head of the government of North West.",Job Mokgoro;Supra Mahumapelo
+426,2018,"In 2018, Roland Steinacher works for <extra_id_0>.",University of Tübingen
+427,2018,"In 2018, Hiromichi Mizuno works for <extra_id_0>.",Government Pension Investment Fund
+428,2018,"In 2018, Alpha Condé holds the position of <extra_id_0>.",President of Guinea;Chairperson of the African Union
+429,2018,"In 2018, <extra_id_0> is the head of the government of Gdańsk.",Paweł Adamowicz
+430,2018,"In 2018, <extra_id_0> is the chair of United States Cyber Command.",Michael S. Rogers
+431,2018,"In 2018, Julia Ebner works for <extra_id_0>.",Institute for Strategic Dialogue
+432,2018,"In 2018, Aleksandre Bakshi attended <extra_id_0>.",University of Oklahoma
+433,2018,"In 2018, <extra_id_0> is the head of the government of New Taipei City.",Hou Yu-ih;Eric Chu
+434,2018,"In 2018, Dennis Hof is a member of the <extra_id_0>.",Republican Party
+435,2018,"In 2018, Basel Ghattas is a member of the <extra_id_0>.",Joint List;Balad
+436,2018,"In 2018, Mircea Geoană is a member of the <extra_id_0>.",independent politician
+437,2018,"In 2018, <extra_id_0> is the chair of Junta of Castile and León.",Juan Vicente Herrera Campo
+438,2018,"In 2018, Sylvia Burwell works for <extra_id_0>.",American University
+439,2018,"In 2018, Sauli Niinistö holds the position of <extra_id_0>.",President of Finland
+440,2018,"In 2018, <extra_id_0> is the head coach of SC Paderborn 07.",Steffen Baumgart
+441,2018,"In 2018, Ada Colau is a member of the <extra_id_0>.",Barcelona en Comú;Catalunya en Comú
+442,2018,"In 2018, Jevon Carter attended <extra_id_0>.",West Virginia University
+443,2018,"In 2018, <extra_id_0> is the head of the government of Verona.",Federico Sboarina
+444,2018,"In 2018, James R. Clapper holds the position of <extra_id_0>.",Director of National Intelligence
+445,2018,"In 2018, <extra_id_0> is the chair of Alliance '90/The Greens.",Annalena Baerbock;Simone Peter;Robert Habeck;Cem Özdemir
+446,2018,"In 2018, Memphis Depay plays for <extra_id_0>.",Olympique Lyonnais;Netherlands national association football team
+447,2018,"In 2018, Erich Pascal Malkemper works for <extra_id_0>.",Czech University of Life Sciences Prague;Research Institute of Molecular Pathology
+448,2018,"In 2018, Kristin De Troyer works for <extra_id_0>.",St. Katherine College;University of St Andrews
+449,2018,"In 2018, Camille Combal works for <extra_id_0>.",C8;Virgin Radio
+450,2018,"In 2018, Arjun Singh ( politician) is a member of the <extra_id_0>.",All India Trinamool Congress
+451,2018,"In 2018, <extra_id_0> is the head coach of FK Inter Bratislava.",Miroslav Jantek
+452,2018,"In 2018, Jana Žitňanská is a member of the <extra_id_0>.",New Majority
+453,2018,"In 2018, Elazar Stern is a member of the <extra_id_0>.",Yesh Atid
+454,2018,"In 2018, Jason Greenblatt works for <extra_id_0>.",Executive Office of the President of the United States
+455,2018,"In 2018, Yimon Aye works for <extra_id_0>.",Cornell University;Weill Cornell Medicine
+456,2018,"In 2018, Samer Hassan works for <extra_id_0>.",Complutense University of Madrid;Harvard University
+457,2018,"In 2018, Roger Wakimoto works for <extra_id_0>.","University of California, Los Angeles"
+458,2018,"In 2018, <extra_id_0> is the head of the government of Jakarta.",Anies Baswedan
+459,2018,"In 2018, <extra_id_0> is the chair of Ministry of Health.",Aurelijus Veryga
+460,2018,"In 2018, <extra_id_0> is the head of the government of Nizhny Novgorod Oblast.",Gleb Nikitin
+461,2018,"In 2018, Fabio Borini plays for <extra_id_0>.",Sunderland A.F.C.
+462,2018,"In 2018, Miguel Barbosa Huerta is a member of the <extra_id_0>.",National Regeneration Movement
+463,2018,"In 2018, Hiroki Sakai plays for <extra_id_0>.",Olympique de Marseille;Japan national football team
+464,2018,"In 2018, Moon Seon-min plays for <extra_id_0>.",Djurgårdens IF
+465,2018,"In 2018, Charles Kauvu Abel is a member of the <extra_id_0>.",People's National Congress Party
+466,2018,"In 2018, Averil Power is a member of the <extra_id_0>.",independent politician
+467,2018,"In 2018, Liam Fox holds the position of <extra_id_0>.",Secretary of State for International Trade;President of the Board of Trade
+468,2018,"In 2018, <extra_id_0> is the chair of Brothers of Italy.",Giorgia Meloni
+469,2018,"In 2018, M. Lee Pelton works for <extra_id_0>.",Emerson College
+470,2018,"In 2018, <extra_id_0> is the head coach of FK Rudar Pljevlja.",Edis Mulalić
+471,2018,"In 2018, Elaine Fox works for <extra_id_0>.",University of Oxford
+472,2018,"In 2018, DeepMind is owned by <extra_id_0>.",Alphabet Inc.
+473,2018,"In 2018, Rui Vitória works for <extra_id_0>.",S.L. Benfica
+474,2018,"In 2018, Carine Roitfeld works for <extra_id_0>.",Harper's Bazaar
+475,2018,"In 2018, Jonathan Smallwood works for <extra_id_0>.",University of York
+476,2018,"In 2018, Hunter Biden works for <extra_id_0>.",BHR Partners;Burisma Holdings
+477,2018,"In 2018, Taizo Mikazuki is a member of the <extra_id_0>.",independent politician
+478,2018,"In 2018, <extra_id_0> is the head coach of A.S. Nancy-Lorraine.",Didier Tholot

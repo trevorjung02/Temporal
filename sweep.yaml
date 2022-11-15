@@ -3,10 +3,11 @@ project: temporal_questions
 method: grid
 parameters:
   learning_rate: 
-    values: [1e-3, 1e-4, 1e-5]
+    values: [1e-3, 3e-4, 1e-4]
 command:
   - ${env}
   - ${interpreter}
   - ${program}
   - --config
-  - configs/templama/training/t5_kadapters_yearly_2freeze.json
+  - configs/nyt/training/t5_kadapters_yearly.json
+

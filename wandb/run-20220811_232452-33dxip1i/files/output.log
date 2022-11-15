@@ -1,9 +1,0 @@
-Not freezing any parameters!
-Not freezing any parameters!
-split is 0
-Length of dataset retrieving is.. 5037
-Length of validation data:  5037
-log/templama folder already exists.
-Number of total validation data: 5037
-Number of correct predictions: 150. Percentage : 0.029779630732578916
-f1 = 0.13601506326430107

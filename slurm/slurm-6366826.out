@@ -1,0 +1,51 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-2080ti
+#SBATCH --account=cse
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=1-00:00:00 
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+# WMT -> Templama
+# python run.py --config configs/templama/training/t5_baseline_full.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.2127-em_score=0.1783.ckpt -lr 0.00001
+# python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtkadapter_2010_0freeze_158_128/epoch=1-f1_score=0.2236-em_score=0.1878.ckpt -lr 0.003
+# python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtkadapter_2010_2freeze_158_128/epoch=1-f1_score=0.208-em_score=0.173.ckpt -lr 0.003
+# python run.py --config configs/templama/training/t5_kadapters_soft_full.json -checkpoint_path outputs/wmtkadapter_soft_full_0freeze_158_128/epoch=0-f1_score=0.1717-em_score=0.1419.ckpt
+# python run.py --config configs/templama/training/t5_kadapters_soft_full.json -checkpoint_path outputs/wmtkadapter_soft_full_2freeze_158_128/epoch=0-f1_score=0.185-em_score=0.154.ckpt
+
+# WMT baseline -> WMT adapters
+# python run.py --config configs/wmt/training/t5_kadapters_soft_full.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.178-em_score=0.149.ckpt
+# python run.py --config configs/wmt/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.178-em_score=0.149.ckpt
+
+# WMT -> SituatedQA
+# python run.py --config configs/situatedqa/training/t5_baseline_full.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.2127-em_score=0.1783.ckpt -lr 0.00001
+# python run.py --config configs/situatedqa/training/t5_kadapters_soft_yearly_2freeze.json -checkpoint_path outputs/wmtkadapter_soft_full_2freeze_158_128/epoch=0-f1_score=0.185-em_score=0.154.ckpt
+
+# Preprocess data
+# python preprocess_nyt_data.py 2010 -end_date=2020
+# python preprocess_nyt_data_full.py
+
+# NYT -> Templama
+# python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/nytkadapter_2010_0freeze_158_128/epoch=8-f1_score=0.140-em_score=0.100.ckpt
+
+# NYT -> SituatedQA
+# python run.py --config configs/situatedqa/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/nytkadapter_2010_0freeze_158_128/epoch=8-f1_score=0.140-em_score=0.100.ckpt
+
+python split_data.py--------------------
+Traceback (most recent call last):
+  File "split_data.py", line 48, in <module>
+    main()
+  File "split_data.py", line 44, in main
+    with open(f"data/templama/templama_{v}.json", mode = 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'data/templama/templama_train.json'

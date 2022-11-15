@@ -1,0 +1,145 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-2080ti
+#SBATCH --account=ark
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=12:00:00 
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+# python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.151-em_score=0.000.ckpt
+
+# python run.py --config configs/wmt/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtkadapter_2010_2freeze_158_128/epoch=8-f1_score=0.084-em_score=0.000.ckpt
+
+python preprocess_wmt_train_data.py 2007 -debug
+--------------------
+number of articles: 183087
+100 articles loaded
+Read csv: 3.1086975039999993 seconds
+decode sentences: 0.0018111679999996966 seconds
+Create sentences: 0.000749191000000593 seconds
+total sentences 1993
+Run spacy on sentences: 4.376999999777809e-06 seconds
+[0, '2007', 'A Rookie Linebacker <extra_id_0> a Challenge', '<extra_id_0> Bear Hugs <extra_id_1>']
+[1, '2007', 'HEMPSTEAD, N.Y., <extra_id_0> \x97 David Harris has always tackled challenges head-on, a trait that serves him well as an inside linebacker.', '<extra_id_0> Aug. 28 <extra_id_1>']
+[2, '2007', 'In the <extra_id_0> grade, Harris, a second-round draft pick of the Jets, was seven pounds over the 135-pound weight limit to play football with children his age.', '<extra_id_0> fifth <extra_id_1>']
+[3, '2007', 'So he fashioned a track suit out of a trash bag and ran laps around the park near his home in <extra_id_0>, Mich., until darkness caught up with him.', '<extra_id_0> Grand Rapids <extra_id_1>']
+[4, '2007', 'He missed making the cutoff weight by a pound, so he ended up playing fullback <extra_id_0> instead of defense in a league with older players.', '<extra_id_0> that year <extra_id_1>']
+[5, '2007', '<extra_id_0> missed my goal,\x94 Harris said Tuesday with a chuckle, \x93but I got experience playing with the older guys, and I did pretty good.\x94', '<extra_id_0> \x93I <extra_id_1>']
+[6, '2007', 'The 23-year-old Harris is still playing alongside older guys, still fitting in seamlessly with veterans like defensive linemen <extra_id_0> and Bobby Hamilton, both of whom are 36.', '<extra_id_0> Kimo von Oelhoffen <extra_id_1>']
+[7, '2007', '\x93It\x92s still a shock to me I\x92m in the N.F.L.,\x94 said Harris, who played at <extra_id_0>.', '<extra_id_0> Michigan <extra_id_1>']
+[8, '2007', 'Among the rookies, the first-round pick Darrelle Revis and the sixth-rounder <extra_id_0>, who is filling the hole on the offensive line created by the trade of Pete Kendall, have stolen the spotlight from Harris on the field and in the second-floor meeting room at the team\x92s practice facility.', '<extra_id_0> Jacob Bender <extra_id_1>']
+[9, '2007', 'To help the veterans become better acquainted with the newcomers, Coach <extra_id_0> randomly calls on a rookie every few days to stand up before a team meeting and do a little song or dance or an impersonation.', '<extra_id_0> Eric Mangini <extra_id_1>']
+[10, '2007', 'Hearing Harris talk, Revis and Bender have given performances worthy of <extra_id_0>.', '<extra_id_0> YouTube <extra_id_1>']
+[11, '2007', '<extra_id_0> has not shown the least hesitation when asked to run head-on into the fray on special teams during the preseason \x97 something he said he had never been asked to do before \x97 but he is apprehensive about his turn, which he knows is coming, to stand in front of his teammates and entertain them.', '<extra_id_0> Harris <extra_id_1>']
+[12, '2007', '\x93I can\x92t do anything,\x94 <extra_id_0> lamented with a laugh. \x93I\x92m the farthest thing from an entertainer.\x94', '<extra_id_0> Harris <extra_id_1>']
+[13, '2007', 'Believe him, linebacker Jonathan Vilma said. \x93He has football skills, but no humor, entertainment, anything like <extra_id_0> said.', '<extra_id_0> that,\x94 Vilma <extra_id_1>']
+[14, '2007', '<extra_id_0> says he likes Harris\x92s no-nonsense personality.', '<extra_id_0> Vilma <extra_id_1>']
+[15, '2007', 'He sees in <extra_id_0> shades of himself as a rookie in 2004. \x93He has a great work ethic,\x94 Vilma said. \x93It bothers him when he messes up.', '<extra_id_0> Harris <extra_id_1>']
+[16, '2007', '<extra_id_0> seems to have the right stuff to play inside in the 3-4 scheme.', '<extra_id_0> Harris <extra_id_1>']
+[17, '2007', 'Rotating in with the first team in the first half last Saturday <extra_id_0> against the Giants, Harris contributed four of his five solo tackles.', '<extra_id_0> night <extra_id_1>']
+[18, '2007', 'His most memorable stop came in <extra_id_0>, on third-and-10 inside the Jets\x92 20-yard line.', '<extra_id_0> the second quarter <extra_id_1>']
+[19, '2007', 'Giants quarterback Eli Manning threw a short pass to Reuben Droughns, who was met by Harris and dropped for a 5-yard loss, forcing the Giants to settle for a <extra_id_0>-yard field goal.', '<extra_id_0> 40 <extra_id_1>']
+[20, '2007', '<extra_id_0> like what David is doing,\x94 Mangini said. \x93He does a nice job of going up and taking on the guards.', '<extra_id_0> \x93I <extra_id_1>']
+[21, '2007', 'Linebacker Jonathan Vilma, the first Jet since <extra_id_0> in the early 1980s to surpass 100 tackles in his first three N.F.L. seasons, has not been credited with a tackle in the past two preseason games. \x93The tackles are going to be there,\x94 Vilma said. \x93I\x92m not worried about that.\x94 As the signal caller on defense, Vilma said, \x93The point of the preseason for me is on making the right calls, the right reads, the right checks.\x94 ...', '<extra_id_0> Kyle Clifton <extra_id_1>']
+[22, '2007', 'Kellen Clemens, who has solidified his status as quarterback Chad Pennington\x92s backup by leading the <extra_id_0> on seven of their nine touchdown drives in the preseason, is expected to play Thursday night when the Jets close out their preseason at Philadelphia. \x93This is a big game,\x94 Clemens said. \x93This will be the last chance that I know that I have a pretty good chance of playing.\x94...', '<extra_id_0> Jets <extra_id_1>']
+[23, '2007', 'The Jets will honor the former receiver <extra_id_0> during halftime of their game against the Dolphins on Sept.', '<extra_id_0> Wayne Chrebet <extra_id_1>']
+[24, '2007', 'Chrebet retired before last season after sustaining at least six concussions during his <extra_id_0> career. ...', '<extra_id_0> 11-year <extra_id_1>']
+[25, '2007', 'On <extra_id_0> morning, reporters had to step over cornerback Alphonso Hodge to get to the back room where the rookies dress.', '<extra_id_0> Tuesday <extra_id_1>']
+[26, '2007', '<extra_id_0>, the Buffalo Drive-In Theater Reaches "The End"', '<extra_id_0> Reflecting National Trend <extra_id_1>']
+[27, '2007', '1 - Steve Valentine, owner of the Buffalo Drive-In, has seen them come and go over <extra_id_0>: The legions of kids in pajamas buying candy; the teenagers sneaking in inside car trunks; the young lovers he had to remind to leave after the last movie; and once, "the machete man," who menaced customers with a long blade during one of the "Rocky" films.', '<extra_id_0> the years <extra_id_1>']
+[28, '2007', '"Everything has its time, and now it\'s time to draw the final curtain," said Mr. Valentine, who will shut the <extra_id_0> theater after tonight\'s closing credits.', '<extra_id_0> 58-year-old <extra_id_1>']
+[29, '2007', "It's a fun business, but it's very difficult, because you have a six-month business and <extra_id_0> of expenses.", '<extra_id_0> 12 months <extra_id_1>']
+[30, '2007', 'Closings are nothing new around Buffalo, where steel mills were shuttered <extra_id_0> and the streets are pockmarked with boarded-up churches and shops.', '<extra_id_0> years ago <extra_id_1>']
+[31, '2007', "But the last picture show at <extra_id_0>'s last drive-in is notably bittersweet because the weather-beaten theater evokes a much happier and prosperous time before the city became known as a symbol of urban decay.", '<extra_id_0> Buffalo <extra_id_1>']
+[32, '2007', 'There were once <extra_id_0> drive-ins in and around Buffalo, back when the city had twice its current population of 290,000 and roller derby and hula hoops were the rage.', '<extra_id_0> about a dozen <extra_id_1>']
+[33, '2007', 'In the days before cable television, Netflix and home theaters, families regularly piled into station wagons to catch a double feature and munch on Twizzlers and <extra_id_0>, and drive-ins were where people of all ages went on dates.', '<extra_id_0> Milk Duds <extra_id_1>']
+[34, '2007', 'Sometimes, those worlds collided, as when Don Spasiano, now 57, took someone he called his "hot date" to a drive-in <extra_id_0>.', '<extra_id_0> decades ago <extra_id_1>']
+[35, '2007', 'As they got comfortable under a sandy beach blanket with their cold drinks, Mr. <extra_id_0> saw a familiar car out the side window.', '<extra_id_0> Spasiano <extra_id_1>']
+[36, '2007', '"Being the good Catholic that I am, I went to confession the next day," said Mr. Spasiano, who also vividly recalls seeing "<extra_id_0>" starring Elizabeth Taylor, "although to this day, I\'m not quite sure why I went to confession.', '<extra_id_0> Cleopatra <extra_id_1>']
+[37, '2007', "I wasn't the <extra_id_0> cheating.", '<extra_id_0> one <extra_id_1>']
+[38, '2007', 'Drive-ins have been disappearing for decades, declining to <extra_id_0> today from a peak of more than 4,000 in 1958, largely because of rising property prices and changing movie-going habits.', '<extra_id_0> about 400 <extra_id_1>']
+[39, '2007', 'After today, there will be 30 or so scattered across New York State, <extra_id_0> in Connecticut, and just one, the Delsea in Vineland, in all of New Jersey, the state where drive-ins were born in 1933.', '<extra_id_0> two <extra_id_1>']
+[40, '2007', 'That <extra_id_0> drive-in theater, opened in Pennsauken, near Camden, was the brainchild of Richard Hollingshead, who was inspired by drive-in restaurants, where waitresses served customers in their cars.', '<extra_id_0> first <extra_id_1>']
+[41, '2007', 'The second theater, Shankweilers, near Allentown, <extra_id_0>, opened in 1934 and is now the oldest drive-in.', '<extra_id_0> Pa. <extra_id_1>']
+[42, '2007', 'In the decades after World War II, <extra_id_0> more drive-ins opened as car ownership jumped and new highways made it easier to get to theaters, many of which were built on farmland.', '<extra_id_0> thousands <extra_id_1>']
+[43, '2007', 'By <extra_id_0>, however, theaters were being enveloped by the suburbs.', '<extra_id_0> the 1970s <extra_id_1>']
+[44, '2007', '"The land bought back in the 1950s and 1960s all of a sudden became an ideal spot for a Wal-Mart and Home Depot in <extra_id_0>," said Jennifer Sherer Janisch, the chief executive of Drive-Ins.com, which tracks the industry.', '<extra_id_0> the 1970s and 1980s <extra_id_1>']
+[45, '2007', "As land prices skyrocketed, the feasibility of operating just at <extra_id_0> didn't make sense.", '<extra_id_0> night <extra_id_1>']
+[46, '2007', 'Here in Cheektowaga, a suburb about 10 miles east of <extra_id_0> between Buffalo and Canada, the 18-acre Buffalo Drive-In is also located on a former farm.', '<extra_id_0> the Peace Bridge <extra_id_1>']
+[47, '2007', 'Late last year, Mr. <extra_id_0> sold the property to a developer, who plans a complex of five medical office buildings, which will abut several cemeteries and a neighborhood of low-slung homes.', '<extra_id_0> Valentine <extra_id_1>']
+[48, '2007', 'Mr. <extra_id_0>, whose family has owned the drive-in since 1964, said that contrary to the image of the theaters as places to see a "naughty nurse movie," most of the theaters play family-oriented films.', '<extra_id_0> Valentine <extra_id_1>']
+[49, '2007', 'This final weekend, his three screens are filled with triple features that include "<extra_id_0>," "The Simpsons Movie" and "Transformers."', '<extra_id_0> Shrek the Third <extra_id_1>']
+[50, '2007', 'The drive-in has been running special promotions this summer, including "carload night" (the winner stuffed 17 people into a <extra_id_0> station wagon) and $2 tickets on Tuesdays (the regular price was $7.50).', '<extra_id_0> Volvo <extra_id_1>']
+[51, '2007', 'Over the years, Mr. <extra_id_0> has given many drivers jump starts.', '<extra_id_0> Valentine <extra_id_1>']
+[52, '2007', 'Thursday night, the sparse crowd included longtime customers Jeffrey and Kellie Boyd, who brought their children, Devon, 12, and Samantha, 6, for <extra_id_0> last ride down memory lane.', '<extra_id_0> one <extra_id_1>']
+[53, '2007', "Their sport utility vehicle was packed with the essentials: A cooler full of drinks, chips and popcorn, sleeping bags, a bunch of pillows and <extra_id_0>'s Bart Simpson doll.", '<extra_id_0> Samantha <extra_id_1>']
+[54, '2007', '"When I first got my license, it was the first place I came to," said Mr. <extra_id_0>, 45, a few minutes before "The Simpsons Movie" began.', '<extra_id_0> Boyd <extra_id_1>']
+[55, '2007', 'Generations of moviegoers, the <extra_id_0> included, loved the drive-in because it was casual and the prices were modest.', '<extra_id_0> Boyds <extra_id_1>']
+[56, '2007', 'Several girls came dressed as pirates when <extra_id_0> latest "Pirates of the Caribbean" was playing.', "<extra_id_0> Johnny Depp's <extra_id_1>"]
+[57, '2007', "Mr. <extra_id_0>'s drive-in has also attracted its fair share of eccentrics.", '<extra_id_0> Valentine <extra_id_1>']
+[58, '2007', 'One man arrived every spring in a hearse, while another <extra_id_0> customer drove a van with the license plate "vampire."', '<extra_id_0> creepy <extra_id_1>']
+[59, '2007', 'Tim Isch, a jack-of-all trades at the theater for <extra_id_0>, caught kids hiding in trunks and jumping over fences.', '<extra_id_0> 13 years <extra_id_1>']
+[60, '2007', "It was Mr. <extra_id_0>'s voice that people heard when they called to find out what was playing and when.", '<extra_id_0> Isch <extra_id_1>']
+[61, '2007', '"<extra_id_0>, I did the last one, and I got a little choked up," he said.', '<extra_id_0> Last night <extra_id_1>']
+[62, '2007', '<extra_id_0> Language - 9/11 - New York Times', '<extra_id_0> William Safire - On <extra_id_1>']
+[63, '2007', '<extra_id_0> is more descriptive but has an active primary meaning of \x93destroying reputation.\x94 Censor condemns itself.', '<extra_id_0> Blacken <extra_id_1>']
+[64, '2007', '<extra_id_0> is nicely expressive but excessive in this case because the forbidden words must remain accessible to those blessed with security clearances or to our guardians of privacy.', '<extra_id_0> Obliterate <extra_id_1>']
+[65, '2007', 'Its original meaning was <extra_id_0> make ready for publication,\x94 as in a 1432 tract praising the emperor Pompey for his willingness to \x93redacte the lawes in to bokes,\x94 and centuries later to improving royal proclamations.', '<extra_id_0> \x93to <extra_id_1>']
+[66, '2007', 'A couple of weeks ago, on the <extra_id_0> page of The Times, the novelist Joseph Weisberg wrote: \x93When I worked in the C.I.A.\x92s directorate of operations (now called the National Clandestine Service) in the early \x9290s, we were told that information was classified when it involved sources or methods. . . .', '<extra_id_0> Op-Ed <extra_id_1>']
+[67, '2007', '<extra_id_0>, a departing clandestine-service member claimed that Dusty Foggo of the C.I.A. (there\x92s an apt name for someone who has to deal with disinformation) warned him that \x93I will redact the [expletive] out of your book so no one will want to read it.\x94', '<extra_id_0> Last year <extra_id_1>']
+[68, '2007', 'In 2005, Katharine Q. Seelye of The Times wrote about what the reporter <extra_id_0>, then of The Times and just released from jail for protecting a confidential source, said regarding her subpoenaed notes: \x93She said she was allowed to redact them herself, removing irrelevant information, rather than having to submit them to a third party to redact.\x94 And in July of this year, Mitchell Landsberg of The Los Angeles Times reported from Beijing: \x93Reports surfaced that China had successfully lobbied the World Bank to redact portions of an environmental assessment that calculated how many people were likely to die prematurely as a result of air pollution.\x94', '<extra_id_0> Judith Miller <extra_id_1>']
+[69, '2007', 'The verb now means \x93conceal from unauthorized view; censor but do not destroy.\x94 My reaction to redaction: It gives the lip to ellipsis, those <extra_id_0> dots marking the omission of words not needed to convey meaning.', '<extra_id_0> three <extra_id_1>']
+[70, '2007', 'Postscript: The C.I.A., long vilified for its use of euphemisms (rendition, wetwork, sheep-dipping), has forthrightly changed its mild-sounding \x93Directorate of Operations\x94 to the sinister-sounding \x93National <extra_id_0>, reports the determinedly truthful Oxford English Dictionary, is \x93adj.', '<extra_id_0> Clandestine Service.\x94 Clandestine <extra_id_1>']
+[71, '2007', 'Secret, private, concealed; usually in a bad sense, implying craft or deception; underhand, surreptitious.\x94 Early usage in 1658 by the poet <extra_id_0>: \x93A certain clandestine Hostility cover\x92d over with the name of Peace.\x94 Imagine that \x97 a euphemism replaced by a dysphemism.', '<extra_id_0> Milton <extra_id_1>']
+[72, '2007', 'The somber sixth anniversary of the World Trade Center and <extra_id_0> attacks comes this week, an appropriate time to examine how and where the meme 9/11 has taken hold in the language.', '<extra_id_0> Pentagon <extra_id_1>']
+[73, '2007', '9/11 is an Americanism not picked up by the rest of the English-speaking world because we put the number of <extra_id_0> of the number of the day; from Britain to Australia, 9/11 signifies not the 11th day of September, but the 9th day of November.', '<extra_id_0> the month ahead <extra_id_1>']
+[74, '2007', 'Over there, they refer to \x93the attacks of <extra_id_0> or \x93the World Trade Center attack\x94 (which leaves out the crash into the Pentagon and Flight 93).', '<extra_id_0> 11 September 2001\x94 <extra_id_1>']
+[75, '2007', 'Why 9/11 and not <extra_id_0>', '<extra_id_0> Sept. <extra_id_1>']
+[76, '2007', '11, when we still remember <extra_id_0> and not 12/7?', '<extra_id_0> Dec. 7 <extra_id_1>']
+[77, '2007', 'Answer: primarily because numbering has grabbed hold of this generation, as we stay open 24/7, not \x93around the clock all week long\x94; secondarily, the rhyming <extra_id_0> is central to a game played with dice and subsequently was the name adopted by a chain of convenience stores.', '<extra_id_0> 7/11 <extra_id_1>']
+[78, '2007', '\x93The compact and catchy rhythm of 9/11 makes it memorable,\x94 observes Steven Poole, a correspondent for The Guardian and author of \x93Unspeak.\x94 \x93If the attacks had occurred on the 23rd of November, I don\x92t think we would still hear people saying \x91eleven twenty-three\x92 or see <extra_id_0> written.', '<extra_id_0> \x9111/23\x92 <extra_id_1>']
+[79, '2007', 'The chance homology with the <extra_id_0> emergency telephone number gives it an extra frisson, too.\x94', '<extra_id_0> U.S. <extra_id_1>']
+[80, '2007', 'Despite F.D.R.\x92s \x93a date which will live in infamy,\x94 the date of Dec. 7 is becoming more often remembered as <extra_id_0> with \x93D-Day,\x94 better remembered than its date, 6/6/44.', '<extra_id_0> \x93Pearl Harbor Day.\x94 Same <extra_id_1>']
+[81, '2007', 'I doubt that will happen with 9/11, a much readier reference than \x93the terrorist attacks on <extra_id_0> and the Pentagon.\x94 Brevity is the handmaiden of memory.', '<extra_id_0> the World Trade Center <extra_id_1>']
+[82, '2007', 'Judge <extra_id_0> Ban on Hawaii Ferry', '<extra_id_0> Rejects Temporary <extra_id_1>']
+[83, '2007', 'LIHUE, <extra_id_0>, Sept.', '<extra_id_0> Hawaii <extra_id_1>']
+[84, '2007', '8 (AP) \x97 A state judge on Kauai rejected a request on Friday to temporarily ban <extra_id_0> from using Nawiliwili Harbor on Kauai as the ferry plans Saturday voyages to move stranded cars between Maui and Oahu.', '<extra_id_0> the Hawaii Superferry <extra_id_1>']
+[85, '2007', 'The judge, Randal Valenciano of Circuit Court, said he would consider whether to issue a permanent restraining order against the ferry service at a hearing <extra_id_0>', '<extra_id_0> Sept. <extra_id_1>']
+[86, '2007', 'An environmental group is seeking to prevent the ferry from using the <extra_id_0> harbor until its environmental impact on the island has been evaluated.', '<extra_id_0> Kauai <extra_id_1>']
+[87, '2007', 'Another judge, Joseph E. Cardoza of Circuit Court on Maui, issued a temporary restraining order for <extra_id_0> in Maui late last month after the State Supreme Court ruled that the state should have required an environmental assessment for the Superferry before service began.', '<extra_id_0> Kahului Harbor <extra_id_1>']
+[88, '2007', 'Judge <extra_id_0> will hear a request Monday to extend the Maui ban until an environmental assessment is completed.', '<extra_id_0> Cardoza <extra_id_1>']
+[89, '2007', 'He has allowed the single trips to and from <extra_id_0> on Saturday for customers to pick up vehicles that made it either to Oahu or Maui before the service was halted.', '<extra_id_0> Maui <extra_id_1>']
+[90, '2007', 'Hawaii Superferry suspended its fledging Honolulu-Kauai service at the end of Aug. 28, and the ferry, the $95 million, 350-foot Alakai, remains in <extra_id_0>.', '<extra_id_0> Honolulu Harbor <extra_id_1>']
+[91, '2007', "It's Pimples, Not Pregnancy, for <extra_id_0>", '<extra_id_0> the Teenage Star Miley Cyrus <extra_id_1>']
+[92, '2007', 'The teenage magazine J-14\x92s July report on the antics of 14-year-old Miley Cyrus, the star of the television show \x93Hannah Montana,\x94 was the victim of a widespread Internet hoax <extra_id_0> \x97 even though it was four months after the issue hit the stands.', '<extra_id_0> last week <extra_id_1>']
+[93, '2007', 'Whether or not such reading fare was to everyone\x92s taste, what replaced it was far worse: a doctored version of the article that asserted that Ms. <extra_id_0> was pregnant.', '<extra_id_0> Cyrus <extra_id_1>']
+[94, '2007', 'Both the magazine and Ms. <extra_id_0> representatives rushed to quash the rumor, but the episode highlighted how difficult it is to sort fact from fiction in the fast-paced world of online celebrity gossip.', '<extra_id_0> Cyrus\x92s <extra_id_1>']
+[95, '2007', 'Shortly after the fake page hit the blogosphere, teenage-oriented chat boards exploded with messages from people who either rushed to defend Ms. <extra_id_0> or who claimed to know who the father was.', '<extra_id_0> Cyrus <extra_id_1>']
+[96, '2007', '\x93Someone scanned the page, altered it and then posted it on the Internet,\x94 said Janet Giovanelli, J-14\x92s editor in chief, who said that the fake was picked up by <extra_id_0> sites and celebrity blogs.', '<extra_id_0> as many as 500 <extra_id_1>']
+[97, '2007', 'With a headline that said \x93Miley\x92s Meltdown,\x94 the article was an ostensible interview with the actress and singer, with her saying that the pregnancy \x93happened accidentally\x94 and she had \x93gained <extra_id_0> pounds.\x94', '<extra_id_0> 7 <extra_id_1>']
+[98, '2007', 'J-14 issued a statement, which remains on its Web site in pink boldface, that it had \x93never reported that Miley Cyrus is pregnant.\x94 The statement also noted that \x93Miley is an intelligent, respectable role model for young girls, and we at <extra_id_0> pride ourselves on presenting our readers with credible stories and information.', '<extra_id_0> J-14 <extra_id_1>']
+[99, '2007', 'Representatives for Ms. Cyrus, who is beginning a 54-date tour on <extra_id_0> to promote her new solo CD, denied the report last week, noting that she just wrapped up the second \x93Hannah Montana\x94 season, but declined to comment further.', '<extra_id_0> Oct. 18 <extra_id_1>']
+[0, '2007', '\x93It\x92s irresponsible of the media to propagate what is an equally irresponsible Internet fabrication about a 14-year-old, especially one who has millions of impressionable young fans the world over,\x94 said <extra_id_0>, a spokeswoman for Disney-ABC Television Group.', '<extra_id_0> Patti McTeague <extra_id_1>']
+[1, '2007', 'Ms. <extra_id_0> said J-14 editors had no idea who altered the article and doubted they would find out.', '<extra_id_0> Giovanelli <extra_id_1>']
+[2, '2007', '<extra_id_0> was an outrageous story, with grammatical errors and misspellings,\x94 Ms. Giovanelli said. \x93But what amazed me was that so many legitimate sites picked up on it, but they didn\x92t check with us to make sure it was true.\x94', '<extra_id_0> \x93It <extra_id_1>']
+[3, '2007', 'She added, <extra_id_0> was all over the Internet before I got the first call,\x94 from a radio station that believed the pregnancy report and was seeking confirmation.', '<extra_id_0> \x93It <extra_id_1>']
+[4, '2007', 'The hoax has generated a lot of attention for J-14, Ms. <extra_id_0> acknowledged.', '<extra_id_0> Giovanelli <extra_id_1>']
+[5, '2007', 'This was the first time the monthly, from <extra_id_0>, had been spoofed, she said.', '<extra_id_0> Bauer Publishing <extra_id_1>']
+[6, '2007', '<extra_id_0> publishes several magazines, including Twist and M, with an upbeat focus on teenage stardom.', '<extra_id_0> Bauer <extra_id_1>']
+[7, '2007', 'Isles Are Outshot but Get the Two That <extra_id_0>', '<extra_id_0> Count <extra_id_1>']
+[8, '2007', 'UNIONDALE, N.Y., Oct. 10 \x97 While the game did not feature the kind of animosity expected between the <extra_id_0> and Islanders in their first regular-season meeting at Nassau Coliseum on Wednesday night, penalties of the less-nasty variety did play a huge factor in the Islanders\x92 2-1 victory.', '<extra_id_0> Rangers <extra_id_1>']
+[9, '2007', 'The new Islanders signee <extra_id_0> scored on a five-on-three power play for the winning goal in the second period and the third was full of power-play chances that neither team could cash in.', '<extra_id_0> Bryan Berard <extra_id_1>']
+Construct datasets: 0.22712399399999939 seconds
+max input length = 106
+max output length = 2

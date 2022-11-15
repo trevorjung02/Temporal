@@ -3,6 +3,6 @@ __pycache__
 data/*
 !data/templama*
 news-docs*
-wandb
+wandb*
 wandb_cache
 huggingface

@@ -11,16 +11,19 @@ import pytorch_lightning as pl
 from pytorch_lightning.loggers import WandbLogger
 from models import load_model
 import wandb
+import copy
 
 from Datasets import Pretrain
 from pytorch_lightning.callbacks.model_checkpoint import ModelCheckpoint
 
-if __name__ == '__main__':
+def main():
     parser = ArgumentParser()
     parser.add_argument('--config', default=None, type=str)
     parser.add_argument('-datav', type=str)
     parser.add_argument('-val_data', type=str)
     parser.add_argument('-checkpoint_path', type=str)
+    parser.add_argument('-find_lr', action='store_true')
+    parser.add_argument('-lr', type=float)
     arg_ = parser.parse_args()
     if arg_.config == None:
         raise NameError("Include a config file in the argument please.")
@@ -61,6 +64,10 @@ if __name__ == '__main__':
         hparam.pool_size = None
     if 'val_data' not in hparam:
         hparam.val_data = None
+    if 'years_to_paths' not in hparam:
+        hparam.years_to_paths = None
+    if 'load_adapters' not in hparam:
+        hparam.load_adapters = None
         
     #Setting configurations
     args = dict(
@@ -90,7 +97,6 @@ if __name__ == '__main__':
         num_workers=hparam.num_workers,
         resume_from_checkpoint=hparam.resume_from_checkpoint, 
         use_lr_scheduling = hparam.use_lr_scheduling,
-        val_check_interval = 0.1 if hparam.dataset == 'wmt' else 1.0,
         n_val=-1,
         n_train=-1,
         n_test=-1,
@@ -110,7 +116,9 @@ if __name__ == '__main__':
         checkpoint_dir = hparam.checkpoint_dir,
         adapter_enc_dec = hparam.adapter_enc_dec,
         pool_size = hparam.pool_size,
-        val_data = hparam.val_data
+        val_data = hparam.val_data,
+        years_to_paths = hparam.years_to_paths,
+        load_adapters = hparam.load_adapters
     )
     if arg_.datav is not None:
         args['dataset_version'] = arg_.datav
@@ -118,7 +126,19 @@ if __name__ == '__main__':
         args['val_data'] = arg_.val_data
     else:
         args['val_data'] = args['dataset_version']
+    args['find_lr'] = arg_.find_lr
+    if arg_.lr:
+        args['learning_rate'] = arg_.lr
 
+    if hparam.dataset == 'wmt':
+        # if args['dataset_version'] == 'full':
+        #     val_check_interval = 2500
+        # else:
+        #     val_check_interval = 500
+        val_check_interval = 2500
+    else:
+        val_check_interval = 1.0
+    args['val_check_interval'] = val_check_interval
 
     #Logging into WANDB if needed
     if hparam.wandb_log:
@@ -132,7 +152,7 @@ if __name__ == '__main__':
         wandb_logger = None 
 
     args = argparse.Namespace(**args)
-    args.adapter_config = {'adapter_list': args.adapter_list, 'adapter_hidden_size': args.adapter_hidden_size, 'adapter_enc_dec': args.adapter_enc_dec, 'pool_size': args.pool_size}
+    args.adapter_config = {'adapter_list': args.adapter_list, 'adapter_hidden_size': args.adapter_hidden_size, 'adapter_enc_dec': args.adapter_enc_dec, 'pool_size': args.pool_size, 'years_to_paths': args.years_to_paths, 'load_adapters': args.load_adapters}
 
     if args.output_dir=="":
         checkpoint_callback = False # Do not save model checkpoints when output dir is empty
@@ -147,15 +167,28 @@ if __name__ == '__main__':
             if args.adapter_enc_dec:
                 args.output_dir += '_' + 'encdec'
         if args.dataset == 'wmt':
-            callbacks = [ModelCheckpoint(dirpath = args.output_dir, filename = '{epoch}-{f1_score:.3f}-{em_score:.3f}', save_top_k=3, period=1, mode="max", monitor="f1_score")]
+            if args.dataset_version == 'full':
+                every_n_train_steps=2500
+            else:
+                every_n_train_steps=500
+            callbacks = [ModelCheckpoint(dirpath = args.output_dir, filename = '{epoch}-{f1_score:.4f}-{em_score:.4f}', save_top_k=3, every_n_train_steps=every_n_train_steps, mode="max", monitor="f1_score")]
+        elif args.dataset == 'nyt':
+            if args.dataset_version == 'full':
+                every_n_train_steps=2500
+                callbacks = [ModelCheckpoint(dirpath = args.output_dir, filename = '{epoch}-{f1_score:.4f}-{em_score:.4f}', save_top_k=2, every_n_train_steps=every_n_train_steps, mode="max", monitor="f1_score")]
+            else:
+                callbacks = [ModelCheckpoint(dirpath = args.output_dir, filename = '{epoch}-{f1_score:.4f}-{em_score:.4f}', save_top_k=2, period=1, mode="max", monitor="f1_score")]
+        elif args.dataset_version == 'debug':
+            every_n_train_steps=1
+            callbacks = [ModelCheckpoint(dirpath = args.output_dir, filename = '{epoch}-{f1_score:.4f}-{em_score:.4f}', save_top_k=3, every_n_train_steps=every_n_train_steps, mode="max", monitor="f1_score")]
         else:
-            callbacks = [ModelCheckpoint(dirpath = args.output_dir, filename = '{epoch}-{f1_score:.3f}-{em_score:.3f}', save_top_k=1, period=1, mode="max", monitor="em_score")]
+            callbacks = [ModelCheckpoint(dirpath = args.output_dir, filename = '{epoch}-{f1_score:.4f}-{em_score:.4f}', save_top_k=1, period=1, mode="max", monitor="em_score")]
     checkpoint_callback = True
 
     if args.checkpoint_dir is not None:
         # args.checkpoint_dir += args.method
-        args.checkpoint_dir += 'baseline'
-        args.checkpoint_dir += '_' + str(args.dataset_version)
+        # args.checkpoint_dir += 'baseline'
+        # args.checkpoint_dir += '_' + str(args.dataset_version)
         # args.checkpoint_dir += '_' + '2freeze'
         # args.checkpoint_dir += '_' + ''.join(map(str, args.adapter_list))
         # args.checkpoint_dir += '_' + str(args.adapter_hidden_size)
@@ -195,13 +228,14 @@ if __name__ == '__main__':
         max_epochs=args.num_train_epochs,
         precision= 16 if use_fp_16 else 32,
         amp_level=args.opt_level,
-        resume_from_checkpoint=args.resume_from_checkpoint,
+        resume_from_checkpoint=args.checkpoint_path if args.resume_from_checkpoint else None,
         gradient_clip_val=args.max_grad_norm,
         checkpoint_callback=checkpoint_callback,
         val_check_interval=args.val_check_interval,
         logger=wandb_logger,
         callbacks = callbacks,
-        accelerator=args.accelerator,   
+        # accelerator=args.accelerator,
+        auto_lr_find=args.find_lr
     )
 
     Model = load_model(type='T5')
@@ -210,7 +244,7 @@ if __name__ == '__main__':
     #    evaluate(args, hparam.wandb_project, hparam.wandb_run_name, Model)
         # set_seed(40)
         if args.checkpoint_path!="":
-            model = Model.load_from_checkpoint(checkpoint_path=args.checkpoint_path, hparams=args, strict=False) 
+            model = load_checkpoint(Model, args)
         else:
             model = Model(args)
         trainer = pl.Trainer(**train_params)
@@ -218,9 +252,22 @@ if __name__ == '__main__':
     else:
         # set_seed(40)
         if args.checkpoint_path!="":
-            model = Model.load_from_checkpoint(checkpoint_path=args.checkpoint_path, hparams=args, strict=False) 
+            model = load_checkpoint(Model, args)
         else:
             model = Model(args)
         trainer = pl.Trainer(**train_params)
+        if args.find_lr:
+            trainer.tune(model)
+            wandb.config.update({'learning_rate': model.hparams.learning_rate}, allow_val_change=True)
+            wandb.update()
         trainer.fit(model)
         
+def load_checkpoint(Model, args):
+    model = Model.load_from_checkpoint(checkpoint_path=args.checkpoint_path, hparams=args, strict=False)
+    if args.resume_from_checkpoint:
+        checkpoint = torch.load(args.checkpoint_path)
+        model.sampler = copy.deepcopy(checkpoint['sampler'])
+    return model
+
+if __name__ == '__main__':
+    main()

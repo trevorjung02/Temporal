@@ -1,6 +1,0 @@
-wandb_version: 1
-
-learning_rate:
-  value: 0.01
-t5_learning_rate:
-  value: 3.0e-05

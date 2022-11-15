@@ -6,6 +6,7 @@ from models.Kadapter_T5 import T5ForConditionalGeneration as T5_Kadapter
 from models.Kadapter_T52 import T5ForConditionalGeneration as T5_Kadapter2
 from models.Kadapter_T5_parallel import T5ForConditionalGeneration as T5_Kadapter_parallel
 from models.Kadapter_T5_soft import T5ForConditionalGeneration as T5_Kadapter_soft
+from models.Kadapter_T5_ensemble import T5ForConditionalGeneration as T5_Kadapter_ensemble
 from models.Padapter_T5 import T5ForConditionalGeneration as T5_Padapter
 from models.Padapter2_T5 import T5ForConditionalGeneration as T5_Padapter2
 from models.Lora_T5 import T5ForConditionalGeneration as T5_Lora
@@ -24,6 +25,7 @@ from torch.optim import AdamW
 from rouge import Rouge
 from collections import Counter
 import wandb
+import models.my_sampler as my_sampler
 
 import re
 import string
@@ -36,7 +38,6 @@ class T5(pl.LightningModule):
 
         self.mix_ratio = 4
         self.mix_decay = 0.7
-        self.epoch = 0
 
         if hparams.method=='modular':
             self.model = T5_Modular.from_pretrained(hparams.model_name_or_path)
@@ -54,6 +55,8 @@ class T5(pl.LightningModule):
             self.model = T5_Kadapter_parallel.from_pretrained(hparams.model_name_or_path)
         elif hparams.method=='kadapter_soft':
             self.model = T5_Kadapter_soft.from_pretrained(hparams.model_name_or_path, hparams.adapter_config, cache_dir = 'huggingface')
+        elif hparams.method=='kadapter_ensemble':
+            self.model = T5_Kadapter_ensemble.from_pretrained(hparams.model_name_or_path, hparams.adapter_config, cache_dir = 'huggingface')
         elif hparams.method=='padapter':
             self.model = T5_Padapter.from_pretrained(hparams.model_name_or_path, hparams.adapter_config, cache_dir = 'huggingface')
         elif hparams.method=='padapter2':
@@ -96,7 +99,14 @@ class T5(pl.LightningModule):
             for name, param in self.model.named_parameters():
                 if 'kadapter' in name:
                     param.requires_grad = True
+                    print(name)
+            print(self.state_dict().keys())
         elif hparams.method=='kadapter_soft':
+            # Unfreezing the parameters used for lora
+            for name, param in self.model.named_parameters():
+                if 'kadapter' in name:
+                    param.requires_grad = True
+        elif hparams.method=='kadapter_ensemble':
             # Unfreezing the parameters used for lora
             for name, param in self.model.named_parameters():
                 if 'kadapter' in name:
@@ -274,7 +284,7 @@ class T5(pl.LightningModule):
         return self.trainer.global_rank <= 0
     
     def forward(self, input_ids, attention_mask=None, decoder_input_ids=None, decoder_attention_mask=None, lm_labels=None, year=None):
-        if self.hparams.method == 'kadapter_soft':
+        if self.hparams.method in ['kadapter_soft', 'kadapter_ensemble']:
             return self.model(
                 input_ids,
                 attention_mask=attention_mask,
@@ -295,7 +305,8 @@ class T5(pl.LightningModule):
     def _step(self, batch):
         lm_labels = batch["target_ids"]
         lm_labels[lm_labels[:, :] == self.tokenizer.pad_token_id] = -100
-        if self.hparams.method == "kadapter_soft":
+        
+        if self.hparams.method in ['kadapter_soft', 'kadapter_ensemble']:
             outputs = self(
                 input_ids=batch["source_ids"],
                 attention_mask=batch["source_mask"],
@@ -315,15 +326,15 @@ class T5(pl.LightningModule):
         return loss
     
     
-    def ids_to_clean_text(self, generated_ids):
+    def ids_to_clean_text(self, generated_ids, skip_special_tokens):
         gen_text = self.tokenizer.batch_decode(
-            generated_ids, skip_special_tokens=True, clean_up_tokenization_spaces=True
+            generated_ids, skip_special_tokens=skip_special_tokens, clean_up_tokenization_spaces=True
         )
         return self.lmap(str.strip, gen_text)
     
      
     def _generative_step(self, batch):     
-        if self.hparams.method == 'kadapter_soft':
+        if self.hparams.method in ['kadapter_soft', 'kadapter_ensemble']:
             generated_ids = self.model.generate(
                 batch["source_ids"],
                 attention_mask=batch["source_mask"],
@@ -345,37 +356,70 @@ class T5(pl.LightningModule):
                 early_stopping=True
             )
         
-        preds = self.ids_to_clean_text(generated_ids)
+        preds = self.ids_to_clean_text(generated_ids, skip_special_tokens=True)
         return preds
 
     def training_step(self, batch, batch_idx):
         loss = self._step(batch)
+        # DEBUG
+        # print(f"----------batch_idx = {batch_idx}----------")
         self.log("loss", loss)
         return loss
 
+    # def on_train_start(self) -> None:
+    #     print("----------train start----------")
+
     def on_train_epoch_start(self):
-        if self.hparams.method=='mixreview':
-            train_set = self.train_dataloader().dataset
-        self.epoch+=1
-    
+        print(f"cuda memory allocated: {torch.cuda.max_memory_allocated()}")
+        # print("----------epoch start----------")
+        self.sampler.set_mid_epoch = True
+
+    def on_train_epoch_end(self):
+        # print("----------epoch end----------")
+        self.sampler.idx = 0
+        self.sampler.mid_epoch = False
+
+    def on_train_batch_start(self, batch, batch_idx: int, dataloader_idx: int) -> None:
+        # print(f"cuda memory allocated: {torch.cuda.max_memory_allocated()}")
+        # print("----------batch start----------")
+        self.sampler.idx += self.hparams.train_batch_size
+        # print(f"self.sampler.idx = {self.sampler.idx}. after this batch completes, this is the next data index")
+
+    # def on_train_batch_end(self, outputs, batch, batch_idx: int, dataloader_idx: int) -> None:
+    #     print("----------batch end----------")
+
     def on_train_end(self):
         if self.hparams.mode == 'pretrain':
             if self.hparams.method=='recadam':
                 self.pretrained_model = self.model
-            elif self.hparams.method=='kadapter' or self.hparams.method=='lora' or self.hparams.method=='modular_small':
-                self.model.save_pretrained(self.hparams.output_dir)
+            # elif self.hparams.method=='kadapter' or self.hparams.method=='lora' or self.hparams.method=='modular_small':
+            #     self.model.save_pretrained(self.hparams.output_dir)
 
     def on_validation_epoch_start(self) -> None:
         columns=["id", "question", "truth", "prediction", "f1"]
         if self.hparams.wandb_log:
             self.test_table = wandb.Table(columns=columns)
+        self.table_len = 0
+
+    def on_save_checkpoint(self, checkpoint) -> None:
+        if self.sampler.set_mid_epoch:
+            self.sampler.mid_epoch = True
+            self.sampler.set_mid_epoch = False
+        # Assumes last batch is dropped if truncated
+        if self.sampler.idx + self.hparams.train_batch_size > len(self.sampler): 
+            self.sampler.idx = 0
+            self.sampler.mid_epoch = False
+        if self.sampler.mid_epoch:
+            checkpoint['epoch'] -= 1
+        print(f"saving checkpoint, epoch ={checkpoint['epoch']}")
+        checkpoint['sampler'] = self.sampler
     
     def validation_step(self, batch, batch_idx):
         total_cnt = len(batch['source_ids'])
         em_correct_num = 0
         f1_total = 0
         preds = self._generative_step(batch)
-        texts = self.ids_to_clean_text(batch["source_ids"])
+        texts = self.ids_to_clean_text(batch["source_ids"], skip_special_tokens=True)
         for i in range(total_cnt):
             predicted = preds[i]
             ids = batch['label_ids'][i].item()
@@ -391,11 +435,15 @@ class T5(pl.LightningModule):
                 f1 = max(f1, self._f1_score(predicted, answer))
             if em_correct:
                 em_correct_num+=1
+                if f1 != 1:
+                    print(f"Error: f1 should be 1, is {f1}")
+                    print(lines, answer_list, predicted)
             f1_total += f1
             # print(predicted, answer_list)
             # print(f"em = {em_correct}, f1 = {f1}")
-            if self.hparams.wandb_log:
-                self.test_table.add_data(ids, lines, answer_list, predicted, f1)    
+            if self.hparams.wandb_log and self.table_len < 10000:
+                self.test_table.add_data(ids, lines, answer_list, predicted, f1) 
+                self.table_len += 1   
         f1 = f1_total / total_cnt
         em = em_correct_num / total_cnt
         self.log('em_score', em, prog_bar=True, on_epoch=True, logger=True)
@@ -433,24 +481,37 @@ class T5(pl.LightningModule):
                 "weight_decay": 0.0,
             },
         ]
+        print(f"hparams.learning_rate = {self.hparams.learning_rate}")
         max_lr = self.hparams.learning_rate
         
-        optimizer = AdamW(optimizer_grouped_parameters, lr=self.hparams.learning_rate)
+        self.optimizer = AdamW(optimizer_grouped_parameters, lr=self.hparams.learning_rate)
 
         #self.optimizer = optimizer
         if self.hparams.use_lr_scheduling:
-            len_data = len(self.train_dataloader())
-            lr_scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr=max_lr, steps_per_epoch=len_data, epochs=self.hparams.num_train_epochs)
-            return [optimizer], [{"scheduler": lr_scheduler, "interval": "step", "name": "learning rate"}]
+            if self.hparams.dataset == 'wmt':
+                len_data = len(self.train_dataloader())
+                self.lr_scheduler = torch.optim.lr_scheduler.OneCycleLR(self.optimizer, max_lr=max_lr, steps_per_epoch=len_data, epochs=self.hparams.num_train_epochs, pct_start=0.1)
+
+                return [self.optimizer], [{"scheduler": self.lr_scheduler, "interval": "step", "name": "learning rate"}]
+            elif self.hparams.dataset == 'templama':
+                # self.lr_scheduler = torch.optim.lr_scheduler.MultiStepLR(self.optimizer, milestones=[3])
+                self.lr_scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(self.optimizer, mode = 'max', factor = 0.5, patience = 2)
+                return [self.optimizer], [{"scheduler": self.lr_scheduler, "interval": "epoch", "name": "learning rate", "monitor": "em_score"}]
+            else:
+                len_data = len(self.train_dataloader())
+                self.lr_scheduler = torch.optim.lr_scheduler.OneCycleLR(self.optimizer, max_lr=max_lr, steps_per_epoch=len_data, epochs=self.hparams.num_train_epochs)
+                
+                return [self.optimizer], [{"scheduler": self.lr_scheduler, "interval": "step", "name": "learning rate"}]
         else:
-            return [optimizer]
+            return [self.optimizer]
 
     def train_dataloader(self):
         n_samples = self.n_obs['train']
         train_dataset = self.get_dataset(tokenizer=self.tokenizer, type_path="train", num_samples=n_samples, args=self.hparams)
-        sampler = RandomSampler(train_dataset)
-        dataloader = DataLoader(train_dataset, sampler=sampler,  batch_size=self.hparams.train_batch_size, drop_last=True, num_workers=self.hparams.num_workers)
-        return dataloader
+        if not hasattr(self, 'sampler'):
+            self.sampler = my_sampler.ResumableSampler(train_dataset)
+        self.dataloader = DataLoader(train_dataset, sampler=self.sampler,  batch_size=self.hparams.train_batch_size, drop_last=True, num_workers=self.hparams.num_workers)
+        return self.dataloader
 
     def val_dataloader(self):
         n_samples = self.n_obs['validation']

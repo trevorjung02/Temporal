@@ -1,0 +1,481 @@
+id,date,input,output
+0,2019,<extra_id_0> is the head coach of Bahrain-McLaren.,Tristan Hoffman;Vladimir Miholjević;Gorazd Štangelj;Rik Verbrugghe;Alberto Volpi
+1,2019,<extra_id_0> is the head coach of U.C. Sampdoria.,Claudio Ranieri;Marco Giampaolo;Eusebio Di Francesco
+2,2019,Edrick Floreal works for <extra_id_0>.,Kentucky Wildcats
+3,2019,<extra_id_0> is the chair of Ministry of Oceans and Fisheries.,Moon Seong-hyeok;Young-Choon Kim
+4,2019,The Academic Bookstore is owned by <extra_id_0>.,Bonnier Group
+5,2019,<extra_id_0> is the chair of Stortinget.,Tone Wilhelmsen Trøen
+6,2019,Usman Ahmed Khan Buzdar is a member of the <extra_id_0>.,Pakistan Tehreek-e-Insaf
+7,2019,<extra_id_0> is the head of the government of North Rhine-Westphalia.,Armin Laschet
+8,2019,<extra_id_0> is the chair of Leicester City F.C..,Aiyawatt Srivaddhanaprabha
+9,2019,<extra_id_0> is the head coach of Leicester City F.C..,Brendan Rodgers;Claude Puel
+10,2019,Vadim Mișin is a member of the <extra_id_0>.,Revival Party
+11,2019,<extra_id_0> is the head coach of FC Dynamo Brest.,Marcel Lička
+12,2019,<extra_id_0> is the head coach of Bayer 04 Leverkusen.,Peter Bosz
+13,2019,<extra_id_0> is the chair of Liberal Democrats.,Vince Cable;Jo Swinson;Sal Brinton
+14,2019,Jackie Trad holds the position of <extra_id_0>.,Treasurer of Queensland;Deputy Premier of Queensland
+15,2019,Giorgio Napolitano holds the position of <extra_id_0>.,senatore a vita
+16,2019,<extra_id_0> is the head coach of SV Ried.,Gerald Baumgartner
+17,2019,Joel Konzen holds the position of <extra_id_0>.,auxiliary bishop;titular bishop;Catholic bishop
+18,2019,<extra_id_0> is the head coach of SV Waldhof Mannheim.,Bernhard Trares
+19,2019,Angela Ahrendts works for <extra_id_0>.,Apple Inc.
+20,2019,<extra_id_0> is the chair of Alliance of Liberals and Democrats for Europe Party.,Hans van Baalen
+21,2019,Yang Shih-kuang is a member of the <extra_id_0>.,New Party
+22,2019,Christophe Dessimoz works for <extra_id_0>.,University College London;University of Lausanne
+23,2019,<extra_id_0> is the head coach of San Jose Earthquakes.,Matías Almeyda
+24,2019,<extra_id_0> is the head coach of Millwall F.C..,Neil Harris;Gary Rowett
+25,2019,Chloe Bibby attended <extra_id_0>.,Mississippi State University
+26,2019,Julia Y Chan works for <extra_id_0>.,University of Texas at Dallas
+27,2019,Joan Mesquida Ferrando is a member of the <extra_id_0>.,Ciudadanos
+28,2019,Luke Foster plays for <extra_id_0>.,Harrogate Town A.F.C.
+29,2019,<extra_id_0> is the head coach of Gaziantep F.K..,Marius Șumudică
+30,2019,Hsu Yung-ming is a member of the <extra_id_0>.,New Power Party
+31,2019,<extra_id_0> is the head of the government of Iowa.,Kim Reynolds
+32,2019,Com Hem is owned by <extra_id_0>.,BC Partners
+33,2019,Peter R. Orszag works for <extra_id_0>.,Lazard
+34,2019,Mark H. Erickson works for <extra_id_0>.,Northampton Community College
+35,2019,<extra_id_0> is the head of the government of South Ossetia.,Anatoly Bibilov
+36,2019,Leon Barnett plays for <extra_id_0>.,Wigan Athletic F.C.
+37,2019,Daniel McBreen plays for <extra_id_0>.,Edgeworth FC
+38,2019,<extra_id_0> is the chair of National Cancer Institute.,Norman Sharpless
+39,2019,<extra_id_0> is the chair of Òmnium Cultural.,Jordi Cuixart i Navarro
+40,2019,Patria is owned by <extra_id_0>.,Kongsberg Defence & Aerospace;Finland
+41,2019,<extra_id_0> is the head coach of FC Utrecht.,Dick Advocaat;John van den Brom
+42,2019,<extra_id_0> is the head coach of Pittsburgh Riverhounds SC.,Bob Lilley
+43,2019,Chris Montgomery works for <extra_id_0>.,Mozilla
+44,2019,Dragan Čavić is a member of the <extra_id_0>.,National Democratic Movement
+45,2019,Reber Radio Telescope is owned by <extra_id_0>.,Green Bank Observatory
+46,2019,Stadio Friuli is owned by <extra_id_0>.,Udinese Calcio
+47,2019,<extra_id_0> is the head coach of POFC Botev Vratsa.,Antoni Zdravkov;Sasho Angelov
+48,2019,Darren Ambrose plays for <extra_id_0>.,Colchester United F.C.
+49,2019,Pepe Reina plays for <extra_id_0>.,S.S.C. Napoli;Associazione Calcio Milan
+50,2019,<extra_id_0> is the head coach of Hammarby Fotboll.,Stefan Billborn
+51,2019,<extra_id_0> is the head coach of KF Feronikeli.,Zekirija Ramadan
+52,2019,Wells Fargo Center is owned by <extra_id_0>.,Ivanhoe Cambridge
+53,2019,Ravichandran Ashwin plays for <extra_id_0>.,Kings XI Punjab
+54,2019,Tim Burchett holds the position of <extra_id_0>.,United States representative
+55,2019,Steve Nash plays for <extra_id_0>.,Los Angeles Lakers
+56,2019,<extra_id_0> is the head coach of Fotbal Comuna Recea.,Romulus Buia
+57,2019,<extra_id_0> is the head of the government of Adamstown.,yosef alhamood
+58,2019,Nora H de Leeuw works for <extra_id_0>.,Cardiff University;Utrecht University
+59,2019,<extra_id_0> is the head of the government of Vesthimmerland Municipality.,Per Bach Laursen
+60,2019,<extra_id_0> is the head coach of Louisville Cardinals men's basketball.,Chris Mack
+61,2019,Petar Mamić plays for <extra_id_0>.,Croatia national under-19 football team
+62,2019,<extra_id_0> is the head coach of Sumgayit PFC.,Aykhan Abbasov
+63,2019,Todd Rokita holds the position of <extra_id_0>.,United States representative
+64,2019,Harald G. L. Schwefel works for <extra_id_0>.,Max Planck Institute for the Science of Light;University of Otago
+65,2019,John S. Chen works for <extra_id_0>.,BlackBerry
+66,2019,<extra_id_0> is the chair of Associazione Calcio Milan.,Paolo Scaroni
+67,2019,<extra_id_0> is the head coach of Associazione Calcio Milan.,Gennaro Gattuso;Stefano Pioli;Marco Giampaolo
+68,2019,Associazione Calcio Milan is owned by <extra_id_0>.,Elliott Management Corporation
+69,2019,Motohiro Yogo works for <extra_id_0>.,Princeton University
+70,2019,Yaakov Peri is a member of the <extra_id_0>.,Yesh Atid
+71,2019,Dinesh Chandimal plays for <extra_id_0>.,Ruhuna Royals
+72,2019,Kongsvinger Line is owned by <extra_id_0>.,Bane NOR
+73,2019,Max Verstappen plays for <extra_id_0>.,Red Bull Racing
+74,2019,David Bridges plays for <extra_id_0>.,King's Lynn Town F.C.
+75,2019,Dražen Kutleša holds the position of <extra_id_0>.,diocesan bishop;Catholic bishop
+76,2019,Thomas F Krauss works for <extra_id_0>.,University of York
+77,2019,Carlos Tevez plays for <extra_id_0>.,Boca Juniors
+78,2019,Mariló Montero works for <extra_id_0>.,Antena 3
+79,2019,<extra_id_0> is the head of the government of Vilnius.,Remigijus Šimašius
+80,2019,Nikol Pashinyan is a member of the <extra_id_0>.,My Step Alliance
+81,2019,Linha do Oeste is owned by <extra_id_0>.,Infrastructures of Portugal
+82,2019,Jason H. Moore works for <extra_id_0>.,University of Pennsylvania
+83,2019,<extra_id_0> is the chair of Burberry.,Gerry Murphy
+84,2019,Angela Casini works for <extra_id_0>.,Cardiff University
+85,2019,Vilja Toomast is a member of the <extra_id_0>.,Estonian Reform Party
+86,2019,<extra_id_0> is the head coach of Astana.,Dmitry Fofonov;Bruno Cenghialta;Lars Michaelsen;Stefano Zanini;Giuseppe Martinelli;Serguei Yakovlev
+87,2019,<extra_id_0> is the head coach of Fluminense F.C..,Odair Hellmann;Marco Aurélio de Oliveira;Fernando Diniz
+88,2019,Beate Meinl-Reisinger is a member of the <extra_id_0>.,NEOS – The New Austria
+89,2019,James Allsop works for <extra_id_0>.,The University of Queensland
+90,2019,<extra_id_0> is the head coach of Barnsley F.C..,Daniel Stendel;Gerhard Struber
+91,2019,Steven Finn plays for <extra_id_0>.,Islamabad United
+92,2019,Mustafa Akyol works for <extra_id_0>.,Cato Institute
+93,2019,Birgitta Jónsdóttir is a member of the <extra_id_0>.,Pirate Party Iceland
+94,2019,Harbhajan Singh plays for <extra_id_0>.,Chennai Super Kings
+95,2019,Minho railway line is owned by <extra_id_0>.,Infrastructures of Portugal
+96,2019,Port of Aveiro branch line is owned by <extra_id_0>.,Infrastructures of Portugal
+97,2019,<extra_id_0> is the head coach of KV Mechelen.,Wouter Vrancken
+98,2019,Nicole Megow works for <extra_id_0>.,University of Bremen
+99,2019,Chan Chun Sing holds the position of <extra_id_0>.,Ministry of Defence;Ministry of Social and Family Development
+100,2019,<extra_id_0> is the head of the government of Emilia-Romagna.,Stefano Bonaccini
+101,2019,Greg Jericho works for <extra_id_0>.,The Guardian
+102,2019,Heather Cox Richardson works for <extra_id_0>.,Boston College
+103,2019,<extra_id_0> is the head coach of MOL Vidi Football Club.,Joan Carrillo Milán;Marko Nikolić
+104,2019,<extra_id_0> is the head of the government of Odessa.,Gennadiy Trukhanov
+105,2019,Muireann Irish works for <extra_id_0>.,University of Sydney
+106,2019,Marta Madrenas i Mir is a member of the <extra_id_0>.,Catalan European Democratic Party
+107,2019,Steve Knight holds the position of <extra_id_0>.,United States representative
+108,2019,<extra_id_0> is the chair of Pomona College.,G. Gabrielle Starr
+109,2019,Craig Bryson plays for <extra_id_0>.,Derby County F.C.;Scotland national football team;Aberdeen F.C.
+110,2019,Kostas Manolas plays for <extra_id_0>.,A.S. Roma;Greece national association football team
+111,2019,Bill Cassidy holds the position of <extra_id_0>.,United States senator
+112,2019,Saumitra Khan is a member of the <extra_id_0>.,All India Trinamool Congress;Bharatiya Janata Party
+113,2019,<extra_id_0> is the head of the government of Szombathely.,András Nemény;Tivadar Puskás
+114,2019,Heather Humphreys holds the position of <extra_id_0>.,"Teachta Dála;Minister for Jobs, Enterprise and Innovation"
+115,2019,Rachel Treweek holds the position of <extra_id_0>.,Bishop of Gloucester
+116,2019,Naomi Long holds the position of <extra_id_0>.,member of the European Parliament
+117,2019,<extra_id_0> is the chair of Ministry of Economy and Finance.,Kim Dong-yeon
+118,2019,<extra_id_0> is the head coach of Olympiacos F.C..,Pedro Martins
+119,2019,Janice Lee is a member of the <extra_id_0>.,Parti Rakyat Malaysia
+120,2019,<extra_id_0> is the chair of Société des amis du Louvre.,Louis-Antoine Prat
+121,2019,Jæren Line is owned by <extra_id_0>.,Bane NOR
+122,2019,<extra_id_0> is the head of the government of Baton Rouge.,Sharon Weston Broome
+123,2019,Inés Sabanés is a member of the <extra_id_0>.,Ahora Madrid;Equo
+124,2019,Hirving Lozano plays for <extra_id_0>.,Mexico national football team;Mexico national under-23 football team;PSV Eindhoven;S.S.C. Napoli
+125,2019,Kim Han-gil is a member of the <extra_id_0>.,People's Party
+126,2019,<extra_id_0> is the head coach of FC Zbrojovka Brno.,Miloslav Machálek
+127,2019,Volodymyr Lytvyn holds the position of <extra_id_0>.,People's Deputy of Ukraine
+128,2019,<extra_id_0> is the head coach of Standard Liège.,Michel Preud'homme
+129,2019,Dawn Childs works for <extra_id_0>.,Merlin Entertainments
+130,2019,<extra_id_0> is the head coach of HIFK Fotboll.,Tor Thodesen
+131,2019,Jennifer Bendery works for <extra_id_0>.,HuffPost
+132,2019,<extra_id_0> is the head coach of Panathinaikos B.C..,Rick Pitino
+133,2019,<extra_id_0> is the head coach of Brighton & Hove Albion F.C..,Graham Potter;Chris Hughton
+134,2019,<extra_id_0> is the head coach of Limburg Lions.,Lambert Schuurs
+135,2019,<extra_id_0> is the head of the government of India.,Narendra Modi
+136,2019,Stephan Weil holds the position of <extra_id_0>.,Minister-President of Lower Saxony
+137,2019,Play M Entertainment is owned by <extra_id_0>.,Kakao M
+138,2019,Paul George plays for <extra_id_0>.,Los Angeles Clippers
+139,2019,Glenn Greenwald works for <extra_id_0>.,The Intercept
+140,2019,Olav Gunnar Ballo is a member of the <extra_id_0>.,Norwegian Labour Party
+141,2019,Hong Moon-jong is a member of the <extra_id_0>.,Liberty Korea Party;Our Republican Party
+142,2019,Lou Barletta holds the position of <extra_id_0>.,United States representative
+143,2019,<extra_id_0> is the head of the government of Erlangen.,Florian Janik
+144,2019,<extra_id_0> is the head coach of Czech Republic national association football team.,Jaroslav Šilhavý
+145,2019,Kyrie Irving plays for <extra_id_0>.,Boston Celtics;Brooklyn Nets
+146,2019,Jim Banks holds the position of <extra_id_0>.,United States representative
+147,2019,Eric Garcetti holds the position of <extra_id_0>.,Mayor of the City of Los Angeles
+148,2019,Christofer Clemente works for <extra_id_0>.,University of the Sunshine Coast
+149,2019,<extra_id_0> is the head coach of Motherwell F.C..,Steve Robinson
+150,2019,Harrison Afful plays for <extra_id_0>.,Columbus Crew SC
+151,2019,<extra_id_0> is the head coach of Turris-Oltul Turnu Măgurele.,Florin Bratu;Erik Lincar;Marius Baciu
+152,2019,Thaddeus Ma Daqin holds the position of <extra_id_0>.,auxiliary bishop;Catholic bishop
+153,2019,Daniel Boeri is a member of the <extra_id_0>.,Priorité Monaco
+154,2019,Will Buckley plays for <extra_id_0>.,Sunderland A.F.C.
+155,2019,Corina Crețu is a member of the <extra_id_0>.,Social Democratic Party;PRO Romania Social Liberal
+156,2019,Maszlee Malik is a member of the <extra_id_0>.,Malaysian United Indigenous Party
+157,2019,<extra_id_0> is the chair of Democratic and Republican Left.,André Chassaigne
+158,2019,Democratic and Republican Left is a member of the <extra_id_0>.,Guianese Socialist Party;Tavini Huiraatira
+159,2019,<extra_id_0> is the chair of Ministry of Foreign Affairs of Poland.,Jacek Czaputowicz
+160,2019,Andrea Pirlo plays for <extra_id_0>.,New York City FC
+161,2019,Norwegian digital learning arena is owned by <extra_id_0>.,Trøndelag County Municipality
+162,2019,<extra_id_0> is the head coach of Lotto-Soudal.,Kurt Van De Wouwer;Mario Aerts;Bart Leysen;Frederik Willems
+163,2019,Meng Wanzhou holds the position of <extra_id_0>.,vice president;chief financial officer
+164,2019,<extra_id_0> is the chair of Schloss Dagstuhl – Leibniz Center for Informatics.,Raimund Seidel
+165,2019,David Altshuler works for <extra_id_0>.,Vertex Pharmaceuticals
+166,2019,511 Federal Building is owned by <extra_id_0>.,Portland Development Commission
+167,2019,Bjarne Stroustrup works for <extra_id_0>.,Morgan Stanley
+168,2019,Yang Jiechi holds the position of <extra_id_0>.,State Councilor of the People's Republic of China
+169,2019,Amos Yong works for <extra_id_0>.,Fuller Theological Seminary
+170,2019,<extra_id_0> is the chair of Supreme Council of the Armed Forces.,Sedki Sobhi
+171,2019,<extra_id_0> is the head of the government of Taiwan.,Lai Ching-te;Su Tseng-chang
+172,2019,Brian Duensing works for <extra_id_0>.,Kansas City Royals
+173,2019,<extra_id_0> is the head of the government of La Rioja.,Concha Andreu;José Ignacio Ceniceros González
+174,2019,<extra_id_0> is the head coach of Società Polisportiva Ars et Labor.,Leonardo Semplici
+175,2019,Jonathan Sexton plays for <extra_id_0>.,British & Irish Lions;Leinster Rugby
+176,2019,<extra_id_0> is the head coach of FC Urartu.,Aleksandr Grigoryan;Ilshat Faizulin
+177,2019,<extra_id_0> is the head coach of San Francisco 49ers.,Kyle Shanahan
+178,2019,<extra_id_0> is the head of the government of Atlanta.,Keisha Lance Bottoms
+179,2019,Andrej Plenković holds the position of <extra_id_0>.,Prime Minister of Croatia
+180,2019,<extra_id_0> is the head coach of UCF Knights football.,Josh Heupel
+181,2019,Idit Silman is a member of the <extra_id_0>.,The Jewish Home
+182,2019,Kongregate is owned by <extra_id_0>.,Modern Times Group
+183,2019,Greg Tansey plays for <extra_id_0>.,Inverness Caledonian Thistle F.C.
+184,2019,<extra_id_0> is the head of the government of Chelyabinsk Oblast.,Boris Dubrovsky
+185,2019,<extra_id_0> is the head coach of Dundee F.C..,Jim McIntyre;James McPake
+186,2019,Stephen Ireland plays for <extra_id_0>.,Stoke City F.C.
+187,2019,James P. Allison works for <extra_id_0>.,University of Texas MD Anderson Cancer Center
+188,2019,Álvaro Morata plays for <extra_id_0>.,Atlético Madrid;Chelsea F.C.;Spain national association football team
+189,2019,Giovani dos Santos plays for <extra_id_0>.,Los Angeles Galaxy
+190,2019,Robert Bingham works for <extra_id_0>.,University of Edinburgh
+191,2019,Winston Reid plays for <extra_id_0>.,West Ham United F.C.;New Zealand national football team
+192,2019,Sampa Das attended <extra_id_0>.,Purdue University
+193,2019,<extra_id_0> is the chair of Reserve Bank of Australia.,Philip Lowe
+194,2019,<extra_id_0> is the chair of Ministry of Education of the Russian Federation.,Olga Vasilyeva
+195,2019,ODEON Kino is owned by <extra_id_0>.,AMC Theatres
+196,2019,Gillian Rose works for <extra_id_0>.,University of Oxford
+197,2019,<extra_id_0> is the head of the government of Campania.,Vincenzo De Luca
+198,2019,Nina Revoyr holds the position of <extra_id_0>.,executive director
+199,2019,Réginal Goreux plays for <extra_id_0>.,Standard Liège;Haiti national football team
+200,2019,Tim Paine plays for <extra_id_0>.,Hobart Hurricanes
+201,2019,<extra_id_0> is the head of the government of Uttar Pradesh.,Yogi Adityanath
+202,2019,<extra_id_0> is the chair of Christian Social People's Party.,Frank Engel;Marc Spautz
+203,2019,<extra_id_0> is the chair of Heinrich Böll Foundation.,Ellen Ueberschär
+204,2019,<extra_id_0> is the head of the government of Vermont.,Phil Scott
+205,2019,<extra_id_0> is the head coach of FK Borac Banja Luka.,Darko Vojvodić
+206,2019,Remigijus Šimašius is a member of the <extra_id_0>.,Freedom Party
+207,2019,Ruptly is owned by <extra_id_0>.,Rossiya Segodnya
+208,2019,<extra_id_0> is the head of the government of Wilmington.,Mike Purzycki
+209,2019,Mette Frederiksen holds the position of <extra_id_0>.,Prime Minister of Denmark
+210,2019,Bhaichung Bhutia plays for <extra_id_0>.,East Bengal F.C.
+211,2019,Kateřina Jacques is a member of the <extra_id_0>.,Liberal-Environmental Party
+212,2019,Christos Zois is a member of the <extra_id_0>.,New Reformist Radical Reconstruction
+213,2019,Dawn Hadley works for <extra_id_0>.,University of York
+214,2019,<extra_id_0> is the chair of Committee for the Defence of Democracy.,Krzysztof Łoziński
+215,2019,Marie-Josèphe Jude works for <extra_id_0>.,Conservatoire de Paris
+216,2019,Gennady Gudkov is a member of the <extra_id_0>.,Russian Opposition Coordination Council
+217,2019,Tamás Soproni is a member of the <extra_id_0>.,Momentum Movement
+218,2019,Robert Mueller holds the position of <extra_id_0>.,special prosecutor
+219,2019,Ulf Kristersson holds the position of <extra_id_0>.,party leader
+220,2019,Alexander Albon plays for <extra_id_0>.,Red Bull Racing;Scuderia Toro Rosso
+221,2019,Allison Randal works for <extra_id_0>.,SUSE
+222,2019,<extra_id_0> is the head coach of FC Metalurgi Rustavi.,Varlam Kilasonia;Badri Kvaratskhelia
+223,2019,László Tőkés holds the position of <extra_id_0>.,member of the European Parliament
+224,2019,<extra_id_0> is the head coach of FC Steaua II București.,Pompiliu Stoica
+225,2019,Rémi Mathis works for <extra_id_0>.,Bibliothèque nationale de France
+226,2019,Shari Steele works for <extra_id_0>.,"The Tor Project, Inc"
+227,2019,Ghil'ad Zuckermann works for <extra_id_0>.,University of Adelaide
+228,2019,Marian-Jean Marinescu is a member of the <extra_id_0>.,National Liberal Party
+229,2019,Nathan Rourke attended <extra_id_0>.,Ohio University
+230,2019,<extra_id_0> is the head coach of England national association football team.,Gareth Southgate
+231,2019,Ignacio Gutiérrez works for <extra_id_0>.,Televisión Nacional de Chile
+232,2019,Arnold Rüütel is a member of the <extra_id_0>.,Conservative People's Party of Estonia
+233,2019,<extra_id_0> is the head coach of Zira FK.,Samir Abbasov
+234,2019,<extra_id_0> is the head of the government of Alexandria.,Justin Wilson;Allison Silberberg
+235,2019,Arti Agrawal works for <extra_id_0>.,"City, University of London;University of Technology Sydney"
+236,2019,Viktoras Pranckietis is a member of the <extra_id_0>.,Lithuanian Peasant and Greens Union
+237,2019,Patrick Leahy holds the position of <extra_id_0>.,United States senator;President pro tempore of the United States Senate
+238,2019,Meir Sheetrit is a member of the <extra_id_0>.,Hatnuah
+239,2019,Joel Byrom plays for <extra_id_0>.,Northampton Town F.C.
+240,2019,Wang Qishan holds the position of <extra_id_0>.,Vice President of the People's Republic of China
+241,2019,Maimunah Mohd Sharif holds the position of <extra_id_0>.,executive director
+242,2019,<extra_id_0> is the head coach of FC Chornomorets Odesa.,Angel Chervenkov;Ostap Markevych;Vitaliy Starovik
+243,2019,Ilya Mikhaylov works for <extra_id_0>.,FC Zenit-Izhevsk Izhevsk
+244,2019,Dean Heller holds the position of <extra_id_0>.,United States senator
+245,2019,Adam Bielan is a member of the <extra_id_0>.,Polska Razem
+246,2019,Kamel Morjane is a member of the <extra_id_0>.,Tahya Tounes;National Destourian Initiative
+247,2019,Fred VanVleet plays for <extra_id_0>.,Toronto Raptors
+248,2019,Chip Smith works for <extra_id_0>.,21st Century Fox
+249,2019,Linda Collins-Smith is a member of the <extra_id_0>.,Republican Party
+250,2019,Banuera Berina is a member of the <extra_id_0>.,Kiribati First Party;Tobwaan Kiribati Party
+251,2019,Lassana Diarra plays for <extra_id_0>.,Olympique de Marseille
+252,2019,Paul O'Connell plays for <extra_id_0>.,RC Toulonnais
+253,2019,Vivendi is owned by <extra_id_0>.,Vivendi;Caisse des dépôts et consignations
+254,2019,<extra_id_0> is the head coach of F.C. Crotone.,Giovanni Stroppa
+255,2019,Luke Simpkins is a member of the <extra_id_0>.,Australian Conservatives
+256,2019,Ilya Sutskever works for <extra_id_0>.,OpenAI
+257,2019,Marina Geli i Fàbrega is a member of the <extra_id_0>.,Leftwing Movement
+258,2019,Michael Gove holds the position of <extra_id_0>.,"Chancellor of the Duchy of Lancaster;Secretary of State for Environment, Food and Rural Affairs"
+259,2019,<extra_id_0> is the head of the government of Gabon.,Emmanuel Issoze-Ngondet;Julien Nkoghe Békale
+260,2019,Marina Kaljurand holds the position of <extra_id_0>.,member of the European Parliament
+261,2019,Thomas P. O'Neill Jr. Federal Building is owned by <extra_id_0>.,United States House of Representatives
+262,2019,<extra_id_0> is the chair of State Duma.,Vyacheslav Volodin
+263,2019,Nerida G. Wilson works for <extra_id_0>.,Western Australian Museum;University of New South Wales
+264,2019,<extra_id_0> is the head coach of Apollon Smyrna F.C..,Babis Tennes;Lefteris Velentzas
+265,2019,Bergen Line is owned by <extra_id_0>.,Bane NOR
+266,2019,Christina Pagel works for <extra_id_0>.,University College London
+267,2019,Saleem Ali works for <extra_id_0>.,The University of Queensland;University of Delaware
+268,2019,Bill Keating holds the position of <extra_id_0>.,United States representative
+269,2019,<extra_id_0> is the head coach of FC Khimki.,Igor Shalimov
+270,2019,Enrico Carattoni is a member of the <extra_id_0>.,United Left
+271,2019,Verdiana Masanja works for <extra_id_0>.,Nelson Mandela African Institute of Science and Technology
+272,2019,Catherine Osson is a member of the <extra_id_0>.,La République En Marche
+273,2019,Hannu Manninen works for <extra_id_0>.,Finnair
+274,2019,Carli Lloyd plays for <extra_id_0>.,Sky Blue FC
+275,2019,Rod Phillips holds the position of <extra_id_0>.,environment minister;finance minister
+276,2019,Firdous Ashiq Awan is a member of the <extra_id_0>.,Pakistan Tehreek-e-Insaf
+277,2019,<extra_id_0> is the chair of Servant of the People.,Ivan Bakanov;Dmytro Oleksandrovych Razumkov;Oleksandr Kornienko
+278,2019,Arkane Studios is owned by <extra_id_0>.,ZeniMax Media
+279,2019,James McClean plays for <extra_id_0>.,Stoke City F.C.;Republic of Ireland national association football team
+280,2019,Darren Sammy plays for <extra_id_0>.,Rajshahi Kings;Peshawar Zalmi;St Lucia Zouks;Hobart Hurricanes
+281,2019,Ernest Maragall is a member of the <extra_id_0>.,Republican Left of Catalonia
+282,2019,Neil Alexander plays for <extra_id_0>.,Heart of Midlothian F.C.
+283,2019,Sharon Tooze works for <extra_id_0>.,Francis Crick Institute
+284,2019,<extra_id_0> is the head coach of Racing Club.,Eduardo  Coudet
+285,2019,Iker Jiménez Elizari works for <extra_id_0>.,Mediaset España
+286,2019,Maria A. Pallante works for <extra_id_0>.,Library of Congress
+287,2019,Chao Cheng-yu is a member of the <extra_id_0>.,independent politician
+288,2019,<extra_id_0> is the head coach of PEC Zwolle.,Jaap Stam;John Stegeman
+289,2019,Shafie Apdal is a member of the <extra_id_0>.,Sabah Heritage Party
+290,2019,<extra_id_0> is the head of the government of Berlin.,Michael Müller
+291,2019,<extra_id_0> is the head coach of FK Radnik Surdulica.,Simo Krunić
+292,2019,Jason Eric Box works for <extra_id_0>.,Geological Survey of Denmark and Greenland
+293,2019,Lauren Cornell works for <extra_id_0>.,"Center for Curatorial Studies, Bard College"
+294,2019,Lindsay Hoyle holds the position of <extra_id_0>.,Speaker of the House of Commons;Chairman of Ways and Means
+295,2019,Jeremy Wright holds the position of <extra_id_0>.,"Secretary of State for Culture, Media and Sport"
+296,2019,Danny O'Brien works for <extra_id_0>.,Electronic Frontier Foundation;Committee to Protect Journalists
+297,2019,Cindy Hyde-Smith is a member of the <extra_id_0>.,Republican Party
+298,2019,Josep Guerrero works for <extra_id_0>.,Aalborg University
+299,2019,<extra_id_0> is the chair of Catalan Academy of Cinema.,Isona Passola i Vidal
+300,2019,Mirjam Van Praag works for <extra_id_0>.,Copenhagen Business School;Vrije Universiteit Amsterdam
+301,2019,<extra_id_0> is the head of the government of Acre.,Gladson Cameli
+302,2019,Gérald Darmanin is a member of the <extra_id_0>.,The Republicans
+303,2019,<extra_id_0> is the head coach of IF Elfsborg.,Jimmy Thelin
+304,2019,Ramal de Aveiro is owned by <extra_id_0>.,Infrastructures of Portugal
+305,2019,Richard Bruton holds the position of <extra_id_0>.,"Teachta Dála;Minister for Communications, Climate Action and Environment"
+306,2019,Annie Lööf holds the position of <extra_id_0>.,party leader
+307,2019,Toni Kroos plays for <extra_id_0>.,Germany national association football team;Real Madrid CF
+308,2019,Daniel P. Aldrich works for <extra_id_0>.,Northeastern University
+309,2019,Gheorghe Flutur is a member of the <extra_id_0>.,National Liberal Party
+310,2019,Kasper Schmeichel plays for <extra_id_0>.,Leicester City F.C.;Denmark national association football team
+311,2019,Malou Aamund works for <extra_id_0>.,Google
+312,2019,Dimension Films is owned by <extra_id_0>.,Lantern Entertainment
+313,2019,<extra_id_0> is the head coach of England national rugby union team.,Eddie Jones
+314,2019,<extra_id_0> is the head of the government of Saitama Prefecture.,Kiyoshi Ueda;Motohiro Ōno
+315,2019,Trunk Line is owned by <extra_id_0>.,Bane NOR
+316,2019,Jang Geun-suk attended <extra_id_0>.,Hanyang University
+317,2019,<extra_id_0> is the head coach of CS Gaz Metan Mediaș.,Eduard Iordănescu
+318,2019,Jean-Pierre Grand is a member of the <extra_id_0>.,The Republicans;United Republic
+319,2019,<extra_id_0> is the head of the government of Thailand.,Prayut Chan-ocha
+320,2019,Daniel J. Caron works for <extra_id_0>.,École nationale d'administration publique
+321,2019,<extra_id_0> is the head of the government of Benin.,Patrice Talon
+322,2019,<extra_id_0> is the head coach of West Ham United F.C..,Manuel Pellegrini;David Moyes
+323,2019,<extra_id_0> is the chair of World Confederation of Billiards Sports.,Ian Anderson
+324,2019,Mumtaz Bhutto is a member of the <extra_id_0>.,Pakistan Tehreek-e-Insaf
+325,2019,Tabetha S. Boyajian works for <extra_id_0>.,Yale University
+326,2019,<extra_id_0> is the head of the government of Kaohsiung.,Han Kuo-yu
+327,2019,Ralph Northam holds the position of <extra_id_0>.,Governor of Virginia
+328,2019,Amit Shah holds the position of <extra_id_0>.,Minister of Home Affairs;Member of Rajya Sabha
+329,2019,<extra_id_0> is the head coach of Vaasan Palloseura.,Christian Sund;Petri Vuorinen
+330,2019,Nathan Law is a member of the <extra_id_0>.,Demosistō
+331,2019,Justin Welby holds the position of <extra_id_0>.,Archbishop of Canterbury;bishop
+332,2019,Andrew Scheer holds the position of <extra_id_0>.,Leader of the Official Opposition
+333,2019,<extra_id_0> is the head coach of Odds BK.,Dag-Eilev Fagermo
+334,2019,<extra_id_0> is the head of the government of Marche.,Luca Ceriscioli
+335,2019,Julio Arca plays for <extra_id_0>.,South Shields F.C.
+336,2019,<extra_id_0> is the chair of Ministry of Finance.,Siv Jensen
+337,2019,<extra_id_0> is the chair of Organisation of Islamic Cooperation.,Yousef Al-Othaimeen
+338,2019,<extra_id_0> is the head coach of FC Kairat.,Aleksey Shpilevsky
+339,2019,Josep Sánchez i Llibre is a member of the <extra_id_0>.,United to Advance
+340,2019,Thomas R. Lynch works for <extra_id_0>.,University of Southampton
+341,2019,<extra_id_0> is the head of the government of Freiburg im Breisgau.,Martin Horn
+342,2019,Eric Swalwell holds the position of <extra_id_0>.,United States representative
+343,2019,<extra_id_0> is the chair of Republic of Bashkortostan.,Radiy Khabirov
+344,2019,<extra_id_0> is the head of the government of Guam.,Eddie Calvo;Lou Leon Guerrero
+345,2019,Joan Gabel works for <extra_id_0>.,University of South Carolina;University of Minnesota system
+346,2019,Victor Oladipo plays for <extra_id_0>.,Indiana Pacers
+347,2019,Stanislav Edward Shmelev works for <extra_id_0>.,University of Edinburgh
+348,2019,Jo Swinson holds the position of <extra_id_0>.,Leader of the Liberal Democrats;Deputy Leader of the Liberal Democrats
+349,2019,Yariv Oppenheimer is a member of the <extra_id_0>.,Meretz
+350,2019,<extra_id_0> is the head coach of FK Ventspils.,Dejan Vukićević
+351,2019,Kostas Antetokounmpo attended <extra_id_0>.,University of Dayton
+352,2019,Tunahan Kuzu is a member of the <extra_id_0>.,DENK
+353,2019,Raymond Leo Burke holds the position of <extra_id_0>.,cardinal
+354,2019,John Giannandrea works for <extra_id_0>.,Apple Inc.
+355,2019,<extra_id_0> is the head coach of Legia Warsaw.,Aleksandar Vuković;Ricardo Sá Pinto
+356,2019,Susan Baer works for <extra_id_0>.,Arup
+357,2019,<extra_id_0> is the chair of Ministry of Justice.,Park Sang-ki;Cho Kuk
+358,2019,Margaret Cheney works for <extra_id_0>.,Colorado State University
+359,2019,<extra_id_0> is the chair of National Rally.,Marine Le Pen
+360,2019,Persis Drell works for <extra_id_0>.,Stanford University
+361,2019,<extra_id_0> is the chair of United States Department of Justice.,William Barr
+362,2019,Klaus Iohannis is a member of the <extra_id_0>.,independent politician
+363,2019,Megan Walker attended <extra_id_0>.,University of Connecticut
+364,2019,<extra_id_0> is the chair of Humanists UK.,Alice Roberts
+365,2019,Pedro Pierluisi holds the position of <extra_id_0>.,Governor of Puerto Rico
+366,2019,Alfonso Valencia works for <extra_id_0>.,Barcelona Supercomputing Center;Catalan Institution for Research and Advanced Studies
+367,2019,Nate Schierholtz works for <extra_id_0>.,Detroit Tigers
+368,2019,<extra_id_0> is the chair of Unilever.,Marijn Dekkers
+369,2019,<extra_id_0> is the chair of National Party of Australia.,Michael McCormack
+370,2019,Andrew V. Goldberg works for <extra_id_0>.,Amazon
+371,2019,Daniel Swain works for <extra_id_0>.,National Center for Atmospheric Research;Illinois Natural History Survey
+372,2019,<extra_id_0> is the chair of European People's Party group.,Manfred Weber
+373,2019,<extra_id_0> is the chair of Mondi Group.,Fred Phaswana
+374,2019,<extra_id_0> is the head of the government of Charlottesville.,Nikuyah Walker
+375,2019,<extra_id_0> is the head coach of R. Charleroi S.C..,Felice Mazzu;Karim Belhocine
+376,2019,Ramon Espadaler Parcerisas is a member of the <extra_id_0>.,United to Advance
+377,2019,Dominic Grieve holds the position of <extra_id_0>.,Advocate General for Northern Ireland
+378,2019,<extra_id_0> is the head of the government of Bratislava.,Matúš Vallo
+379,2019,Ann Sarnoff works for <extra_id_0>.,BBC America
+380,2019,Alex X. Mooney holds the position of <extra_id_0>.,United States representative
+381,2019,Charles M. Huber is a member of the <extra_id_0>.,Christian Democratic Union
+382,2019,Věra Jourová holds the position of <extra_id_0>.,"Vice-President of the European Commission;European Commissioner for Justice, Fundamental Rights and Citizenship"
+383,2019,<extra_id_0> is the head of the government of Sibiu.,Astrid Fodor
+384,2019,Jill R. Horwitz works for <extra_id_0>.,"University of California, Los Angeles;University of Victoria"
+385,2019,Tua Tagovailoa attended <extra_id_0>.,University of Alabama
+386,2019,Deborah Terry works for <extra_id_0>.,Curtin University
+387,2019,Antoine Bozio works for <extra_id_0>.,School for Advanced Studies in the Social Sciences;Paris School of Economics
+388,2019,Alfa Romeo is owned by <extra_id_0>.,Fiat Chrysler Automobiles
+389,2019,Lucas Richman works for <extra_id_0>.,Bangor Symphony Orchestra
+390,2019,<extra_id_0> is the head coach of ERA-Circus.,Marc Janssens
+391,2019,Rachel Sheherazade works for <extra_id_0>.,SBT
+392,2019,Mangala pinsiri Samaraweera holds the position of <extra_id_0>.,Minister of Finance of Sri Lanka
+393,2019,Dimitar Stoyanov is a member of the <extra_id_0>.,National-Democratic Party
+394,2019,<extra_id_0> is the head of the government of Yonkers.,Mike Spano
+395,2019,Gheorghe Falcă is a member of the <extra_id_0>.,National Liberal Party
+396,2019,Michael Cohen is a member of the <extra_id_0>.,Democratic Party
+397,2019,<extra_id_0> is the head coach of Nippo-Vini Fantini-Europa Ovini.,Mario Manzoni;Shinichi Fukushima;Valerio Tebaldi;Hiroshi Daimon;Stefano Giuliani
+398,2019,Kemba Walker plays for <extra_id_0>.,Charlotte Hornets
+399,2019,<extra_id_0> is the head coach of FC Gomel.,Ivan Bionchik;Alyaksey Merkulaw;Alyaksandr Kulchy
+400,2019,Lucy Harris is a member of the <extra_id_0>.,Brexit Party
+401,2019,<extra_id_0> is the head coach of FC Midtjylland.,Brian Priske;Kenneth Andersen
+402,2019,<extra_id_0> is the chair of Transitional Military Council.,Ahmed Awad Ibn Auf;Abdel Fattah al-Burhan
+403,2019,Kirill I of Moscow holds the position of <extra_id_0>.,metropolitan bishop;Patriarch of Moscow and all Russia
+404,2019,David Lidington holds the position of <extra_id_0>.,Chancellor of the Duchy of Lancaster;Minister for the Cabinet Office
+405,2019,Leah Williamson plays for <extra_id_0>.,England women's national under-20 football team;Arsenal W.F.C.;England women's national under-19 football team;England women's national under-23 football team
+406,2019,<extra_id_0> is the chair of United States Department of Energy.,Dan R. Brouillette;Rick Perry
+407,2019,<extra_id_0> is the head coach of Greenock Morton F.C..,Jonatan Johansson
+408,2019,Amjad Kalaf plays for <extra_id_0>.,Al-Shorta Baghdad
+409,2019,<extra_id_0> is the head coach of Kayserispor.,Hikmet Karaman;Robert Prosinečki
+410,2019,<extra_id_0> is the head coach of Bora-Hansgrohe.,Ján Valach;Steffen Radochla;André Schulze;Jens Zemke;Enrico Poitschke
+411,2019,<extra_id_0> is the chair of CRH.,Nicky Hartery
+412,2019,<extra_id_0> is the chair of Verband der Reservisten der Deutschen Bundeswehr.,Patrick Sensburg;Oswin Veith
+413,2019,<extra_id_0> is the head coach of Gimnàstic de Tarragona.,Enrique Martín Monreal;Xavier Bartolo i Moliné;Jose Antonio Seligrat Bernal
+414,2019,Michel Bissonnet is a member of the <extra_id_0>.,Ensemble Montréal
+415,2019,Philippe Gilbert plays for <extra_id_0>.,Deceuninck-Quick-Step
+416,2019,Lourdes Ciuró i Buldó is a member of the <extra_id_0>.,Catalan European Democratic Party
+417,2019,Christophe Robino is a member of the <extra_id_0>.,Priorité Monaco
+418,2019,Richard Chaplow plays for <extra_id_0>.,Doncaster Rovers F.C.
+419,2019,Katie Doores works for <extra_id_0>.,King's College London
+420,2019,Expobank CZ is owned by <extra_id_0>.,Igor Kim
+421,2019,<extra_id_0> is the chair of Democratic Party of Korea.,Lee Hae Chan
+422,2019,Svitlana Zalishchuk is a member of the <extra_id_0>.,Democratic Alliance
+423,2019,<extra_id_0> is the chair of ADFE-Français du Monde.,Claudine Lepage
+424,2019,Craig Mackinlay is a member of the <extra_id_0>.,Conservative Party
+425,2019,China Media Group Headquarters is owned by <extra_id_0>.,China Media Group
+426,2019,<extra_id_0> is the head of the government of North West.,Job Mokgoro
+427,2019,Hiromichi Mizuno works for <extra_id_0>.,Government Pension Investment Fund
+428,2019,Alpha Condé holds the position of <extra_id_0>.,President of Guinea;Chairperson of the African Union
+429,2019,<extra_id_0> is the head of the government of Gdańsk.,Aleksandra Dulkiewicz;Paweł Adamowicz
+430,2019,<extra_id_0> is the chair of United States Cyber Command.,Michael S. Rogers
+431,2019,Julia Ebner works for <extra_id_0>.,Institute for Strategic Dialogue
+432,2019,Aleksandre Bakshi attended <extra_id_0>.,University of Oklahoma
+433,2019,<extra_id_0> is the head of the government of New Taipei City.,Hou Yu-ih
+434,2019,Dennis Hof is a member of the <extra_id_0>.,Republican Party
+435,2019,Basel Ghattas is a member of the <extra_id_0>.,Joint List;Balad
+436,2019,Mircea Geoană is a member of the <extra_id_0>.,independent politician
+437,2019,<extra_id_0> is the chair of Junta of Castile and León.,Alfonso Fernando Fernández Mañueco;Juan Vicente Herrera Campo
+438,2019,Sylvia Burwell works for <extra_id_0>.,American University
+439,2019,Sauli Niinistö holds the position of <extra_id_0>.,President of Finland
+440,2019,<extra_id_0> is the head coach of SC Paderborn 07.,Steffen Baumgart
+441,2019,Ada Colau is a member of the <extra_id_0>.,Barcelona en Comú;Catalunya en Comú
+442,2019,Jevon Carter attended <extra_id_0>.,West Virginia University
+443,2019,<extra_id_0> is the head of the government of Verona.,Federico Sboarina
+444,2019,James R. Clapper holds the position of <extra_id_0>.,Director of National Intelligence
+445,2019,<extra_id_0> is the chair of Alliance '90/The Greens.,Robert Habeck;Annalena Baerbock
+446,2019,Memphis Depay plays for <extra_id_0>.,Olympique Lyonnais;Netherlands national association football team
+447,2019,Erich Pascal Malkemper works for <extra_id_0>.,Research Institute of Molecular Pathology
+448,2019,Kristin De Troyer works for <extra_id_0>.,St. Katherine College;University of St Andrews
+449,2019,Camille Combal works for <extra_id_0>.,C8;Virgin Radio
+450,2019,Peggy Piesche works for <extra_id_0>.,Federal Agency for Civic Education
+451,2019,Arjun Singh ( politician) is a member of the <extra_id_0>.,All India Trinamool Congress;Bharatiya Janata Party
+452,2019,<extra_id_0> is the head coach of FK Inter Bratislava.,Miroslav Jantek
+453,2019,Jana Žitňanská is a member of the <extra_id_0>.,New Majority;For the People
+454,2019,Elazar Stern is a member of the <extra_id_0>.,Yesh Atid
+455,2019,Jason Greenblatt works for <extra_id_0>.,Executive Office of the President of the United States
+456,2019,Samer Hassan works for <extra_id_0>.,Complutense University of Madrid;Harvard University
+457,2019,Roger Wakimoto works for <extra_id_0>.,"University of California, Los Angeles"
+458,2019,Patrick Sensburg holds the position of <extra_id_0>.,president
+459,2019,<extra_id_0> is the head of the government of Jakarta.,Anies Baswedan
+460,2019,<extra_id_0> is the chair of Ministry of Health.,Aurelijus Veryga
+461,2019,<extra_id_0> is the head of the government of Nizhny Novgorod Oblast.,Gleb Nikitin
+462,2019,Fabio Borini plays for <extra_id_0>.,Sunderland A.F.C.
+463,2019,Miguel Barbosa Huerta is a member of the <extra_id_0>.,National Regeneration Movement
+464,2019,Hiroki Sakai plays for <extra_id_0>.,Olympique de Marseille;Japan national football team
+465,2019,Moon Seon-min plays for <extra_id_0>.,Djurgårdens IF
+466,2019,Charles Kauvu Abel is a member of the <extra_id_0>.,People's National Congress Party;Our Development Party
+467,2019,Averil Power is a member of the <extra_id_0>.,independent politician
+468,2019,Liam Fox holds the position of <extra_id_0>.,Secretary of State for International Trade;President of the Board of Trade
+469,2019,<extra_id_0> is the chair of Brothers of Italy.,Giorgia Meloni
+470,2019,M. Lee Pelton works for <extra_id_0>.,Emerson College
+471,2019,<extra_id_0> is the head coach of FK Rudar Pljevlja.,Edis Mulalić;Nenad Vukčević
+472,2019,Elaine Fox works for <extra_id_0>.,University of Oxford
+473,2019,DeepMind is owned by <extra_id_0>.,Alphabet Inc.
+474,2019,Rui Vitória works for <extra_id_0>.,S.L. Benfica
+475,2019,Carine Roitfeld works for <extra_id_0>.,Harper's Bazaar
+476,2019,Jonathan Smallwood works for <extra_id_0>.,University of York
+477,2019,Hunter Biden works for <extra_id_0>.,BHR Partners
+478,2019,Taizo Mikazuki is a member of the <extra_id_0>.,independent politician
+479,2019,<extra_id_0> is the head coach of A.S. Nancy-Lorraine.,Jean-Louis Garcia

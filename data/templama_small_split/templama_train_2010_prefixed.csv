@@ -1,0 +1,821 @@
+id,date,input,output
+0,2010,"In 2010, Evan Horwood plays for <extra_id_0>.",<extra_id_0> Hartlepool United F.C. <extra_id_1>
+1,2010,"In 2010, Ghulam Rasool Sahi is a member of the <extra_id_0>.",<extra_id_0> Pakistan Muslim League (Q) <extra_id_1>
+2,2010,"In 2010, Yuli Edelstein holds the position of <extra_id_0>.",<extra_id_0> Minister of Diaspora Affairs <extra_id_1>
+3,2010,"In 2010, Sanath Jayasuriya plays for <extra_id_0>.",<extra_id_0> Worcestershire <extra_id_1>
+4,2010,"In 2010, <extra_id_0> is the head coach of FC Granit Mikashevichi.",<extra_id_0> Valery Bakhno <extra_id_1>
+5,2010,"In 2010, Gloria Macapagal-Arroyo holds the position of <extra_id_0>.",<extra_id_0> President of the Philippines <extra_id_1>
+6,2010,"In 2010, Michael Spindelegger holds the position of <extra_id_0>.",<extra_id_0> Foreign Minister of Austria <extra_id_1>
+7,2010,"In 2010, Nicola Gaston works for <extra_id_0>.",<extra_id_0> MacDiarmid Institute for Advanced Materials and Nanotechnology <extra_id_1>
+8,2010,"In 2010, Júlio César plays for <extra_id_0>.",<extra_id_0> Inter Milan <extra_id_1>
+9,2010,"In 2010, Nick Swisher plays for <extra_id_0>.",<extra_id_0> New York Yankees <extra_id_1>
+10,2010,"In 2010, Ilya Ponomarev is a member of the <extra_id_0>.",<extra_id_0> A Just Russia <extra_id_1>
+11,2010,"In 2010, <extra_id_0> is the head coach of St. Mirren F.C..",<extra_id_0> Danny Lennon <extra_id_1>
+12,2010,"In 2010, Jim Wallace, Baron Wallace of Tankerness holds the position of <extra_id_0>.",<extra_id_0> Advocate General for Scotland <extra_id_1>
+13,2010,"In 2010, <extra_id_0> is the head coach of Germany national handball team.",<extra_id_0> Heiner Brand <extra_id_1>
+14,2010,"In 2010, <extra_id_0> is the head coach of FC Bayern Munich.",<extra_id_0> Louis van Gaal <extra_id_1>
+15,2010,"In 2010, Luke Freeman plays for <extra_id_0>.",<extra_id_0> Arsenal F.C. <extra_id_1>
+16,2010,"In 2010, Bruno Mantovani works for <extra_id_0>.",<extra_id_0> Conservatoire de Paris <extra_id_1>
+17,2010,"In 2010, Antonio Di Natale plays for <extra_id_0>.",<extra_id_0> Udinese Calcio <extra_id_1>
+18,2010,"In 2010, Sebastian Giovinco plays for <extra_id_0>.",<extra_id_0> Parma Calcio 1913 <extra_id_1>
+19,2010,"In 2010, Dwight Tiendalli plays for <extra_id_0>.",<extra_id_0> FC Twente <extra_id_1>
+20,2010,"In 2010, Andrew D. Martin works for <extra_id_0>.",<extra_id_0> Washington University in St. Louis <extra_id_1>
+21,2010,"In 2010, Wu Den-yih holds the position of <extra_id_0>.",<extra_id_0> President of the Executive Yuan <extra_id_1>
+22,2010,"In 2010, Anna Júlia Donáth attended <extra_id_0>.",<extra_id_0> Eötvös Loránd University <extra_id_1>
+23,2010,"In 2010, Sardar Azmoun plays for <extra_id_0>.",<extra_id_0> Iran national under-17 football team <extra_id_1>
+24,2010,"In 2010, <extra_id_0> is the chair of International Shooting Sport Federation.",<extra_id_0> Olegario Vázquez Raña <extra_id_1>
+25,2010,"In 2010, Sarah Feinberg works for <extra_id_0>.",<extra_id_0> White House Office <extra_id_1>
+26,2010,"In 2010, <extra_id_0> is the chair of Moscow Mathematical Society.",<extra_id_0> Viktor Vasilyev <extra_id_1>
+27,2010,"In 2010, David Castle works for <extra_id_0>.",<extra_id_0> University of Edinburgh <extra_id_1>
+28,2010,"In 2010, Alexis Sánchez plays for <extra_id_0>.",<extra_id_0> Udinese Calcio <extra_id_1>
+29,2010,"In 2010, Anne Madden attended <extra_id_0>.",<extra_id_0> Tufts University <extra_id_1>
+30,2010,"In 2010, Ingebjørg Godskesen is a member of the <extra_id_0>.",<extra_id_0> Progress Party <extra_id_1>
+31,2010,"In 2010, Xavier Bertrand is a member of the <extra_id_0>.",<extra_id_0> Union for a Popular Movement <extra_id_1>
+32,2010,"In 2010, Akhtarul Iman is a member of the <extra_id_0>.",<extra_id_0> Rashtriya Janata Dal <extra_id_1>
+33,2010,"In 2010, Jessica Valenti works for <extra_id_0>.",<extra_id_0> The Nation <extra_id_1>
+34,2010,"In 2010, <extra_id_0> is the head coach of FC Krasnodar.",<extra_id_0> Slavoljub Muslin <extra_id_1>
+35,2010,"In 2010, Steve Womack holds the position of <extra_id_0>.",<extra_id_0> mayor <extra_id_1>
+36,2010,"In 2010, Íñigo Méndez de Vigo holds the position of <extra_id_0>.",<extra_id_0> member of the European Parliament <extra_id_1>
+37,2010,"In 2010, Louis Bontes is a member of the <extra_id_0>.",<extra_id_0> Party for Freedom <extra_id_1>
+38,2010,"In 2010, Caroline McMillen works for <extra_id_0>.",<extra_id_0> University of South Australia <extra_id_1>
+39,2010,"In 2010, Sabine Carey works for <extra_id_0>.",<extra_id_0> University of Mannheim <extra_id_1>
+40,2010,"In 2010, Tabaré Vázquez holds the position of <extra_id_0>.",<extra_id_0> President of Uruguay <extra_id_1>
+41,2010,"In 2010, Carson Palmer plays for <extra_id_0>.",<extra_id_0> Cincinnati Bengals <extra_id_1>
+42,2010,"In 2010, <extra_id_0> is the head coach of FC Chita.",<extra_id_0> Andrey Nedorezov <extra_id_1>
+43,2010,"In 2010, Hatem Ben Arfa plays for <extra_id_0>.",<extra_id_0> Newcastle United F.C. <extra_id_1>
+44,2010,"In 2010, <extra_id_0> is the chair of University of Waterloo.",<extra_id_0> David Johnston <extra_id_1>
+45,2010,"In 2010, <extra_id_0> is the head coach of SC Freiburg.",<extra_id_0> Robin Dutt <extra_id_1>
+46,2010,"In 2010, <extra_id_0> is the head coach of A.C. Pisa 1909.",<extra_id_0> Leonardo Semplici <extra_id_1>
+47,2010,"In 2010, <extra_id_0> is the head coach of Armenia national football team.",<extra_id_0> Vardan Minasyan <extra_id_1>
+48,2010,"In 2010, <extra_id_0> is the chair of Association for Computing Machinery.",<extra_id_0> Wendy Hall <extra_id_1>
+49,2010,"In 2010, Sarath Fonseka is a member of the <extra_id_0>.",<extra_id_0> New Democratic Front <extra_id_1>
+50,2010,"In 2010, Philippe Verdier works for <extra_id_0>.",<extra_id_0> BFM TV <extra_id_1>
+51,2010,"In 2010, Mark Cavendish plays for <extra_id_0>.",<extra_id_0> HTC-Highroad <extra_id_1>
+52,2010,"In 2010, <extra_id_0> is the chair of Ministry of Internal Affairs of Ukraine.",<extra_id_0> Yuriy Lutsenko <extra_id_1>
+53,2010,"In 2010, Wonpil Im works for <extra_id_0>.",<extra_id_0> University of Kansas <extra_id_1>
+54,2010,"In 2010, Fraser Forster plays for <extra_id_0>.",<extra_id_0> Newcastle United F.C. <extra_id_1>
+55,2010,"In 2010, <extra_id_0> is the chair of The CW.",<extra_id_0> Dawn Ostroff <extra_id_1>
+56,2010,"In 2010, Antonio Valencia plays for <extra_id_0>.",<extra_id_0> Manchester United F.C. <extra_id_1>
+57,2010,"In 2010, Daniel Constantin is a member of the <extra_id_0>.",<extra_id_0> Conservative Party <extra_id_1>
+58,2010,"In 2010, Benigno Aquino III holds the position of <extra_id_0>.",<extra_id_0> President of the Philippines <extra_id_1>
+59,2010,"In 2010, Alberto Abadie works for <extra_id_0>.",<extra_id_0> Harvard University <extra_id_1>
+60,2010,"In 2010, Michael Chopra plays for <extra_id_0>.",<extra_id_0> Cardiff City F.C. <extra_id_1>
+61,2010,"In 2010, Susan B. Sinnott works for <extra_id_0>.",<extra_id_0> University of Florida <extra_id_1>
+62,2010,"In 2010, Douglas Crockford works for <extra_id_0>.",<extra_id_0> Yahoo <extra_id_1>
+63,2010,"In 2010, <extra_id_0> is the head of the government of Pennsylvania.",<extra_id_0> Ed Rendell <extra_id_1>
+64,2010,"In 2010, Diego Milito plays for <extra_id_0>.",<extra_id_0> Inter Milan <extra_id_1>
+65,2010,"In 2010, <extra_id_0> is the head coach of Poland national association football team.",<extra_id_0> Franciszek Smuda <extra_id_1>
+66,2010,"In 2010, <extra_id_0> is the head of the government of Sardinia.",<extra_id_0> Ugo Cappellacci <extra_id_1>
+67,2010,"In 2010, Federico Macheda plays for <extra_id_0>.",<extra_id_0> Italy national under-21 football team <extra_id_1>
+68,2010,"In 2010, <extra_id_0> is the head of the government of Florence.",<extra_id_0> Matteo Renzi <extra_id_1>
+69,2010,"In 2010, Johann-Dietrich Wörner holds the position of <extra_id_0>.",<extra_id_0> director <extra_id_1>
+70,2010,"In 2010, <extra_id_0> is the head of the government of Budapest District I.",<extra_id_0> Gábor Tamás Nagy <extra_id_1>
+71,2010,"In 2010, Terry Mills is a member of the <extra_id_0>.",<extra_id_0> Country Liberal Party <extra_id_1>
+72,2010,"In 2010, Shavkat Mirziyoyev holds the position of <extra_id_0>.",<extra_id_0> Prime Minister of Uzbekistan <extra_id_1>
+73,2010,"In 2010, Regina E. Dugan works for <extra_id_0>.",<extra_id_0> DARPA <extra_id_1>
+74,2010,"In 2010, Bastian Schweinsteiger plays for <extra_id_0>.",<extra_id_0> Germany national association football team <extra_id_1>
+75,2010,"In 2010, Fratelli Fabbri Editori is owned by <extra_id_0>.",<extra_id_0> RCS MediaGroup <extra_id_1>
+76,2010,"In 2010, Karen Handel holds the position of <extra_id_0>.",<extra_id_0> Secretary of State of Georgia <extra_id_1>
+77,2010,"In 2010, South China Morning Post is owned by <extra_id_0>.",<extra_id_0> Great Wall Pan Asia Holdings <extra_id_1>
+78,2010,"In 2010, George Boyd plays for <extra_id_0>.",<extra_id_0> Nottingham Forest F.C. <extra_id_1>
+79,2010,"In 2010, Dennis Hood is a member of the <extra_id_0>.",<extra_id_0> Family First Party <extra_id_1>
+80,2010,"In 2010, Chauncey Billups plays for <extra_id_0>.",<extra_id_0> Denver Nuggets <extra_id_1>
+81,2010,"In 2010, Nelson Valdez plays for <extra_id_0>.",<extra_id_0> Borussia Dortmund <extra_id_1>
+82,2010,"In 2010, <extra_id_0> is the head coach of Ivory Coast national football team.",<extra_id_0> Sven-Göran Eriksson <extra_id_1>
+83,2010,"In 2010, Sud de France Arena is owned by <extra_id_0>.",<extra_id_0> Languedoc-Roussillon <extra_id_1>
+84,2010,"In 2010, Michail Michailowitsch Kapranow works for <extra_id_0>.",<extra_id_0> Yale University <extra_id_1>
+85,2010,"In 2010, Mike Harrington works for <extra_id_0>.",<extra_id_0> Google <extra_id_1>
+86,2010,"In 2010, Yvan Benedetti is a member of the <extra_id_0>.",<extra_id_0> National Rally <extra_id_1>
+87,2010,"In 2010, Paul McGowan plays for <extra_id_0>.",<extra_id_0> Celtic F.C. <extra_id_1>
+88,2010,"In 2010, Kushboo is a member of the <extra_id_0>.",<extra_id_0> Dravida Munnetra Kazhagam <extra_id_1>
+89,2010,"In 2010, <extra_id_0> is the head of the government of Poland.",<extra_id_0> Donald Tusk <extra_id_1>
+90,2010,"In 2010, Gabriela Pazmiño is a member of the <extra_id_0>.",<extra_id_0> Ecuadorian Roldosist Party <extra_id_1>
+91,2010,"In 2010, Gabriela Pazmiño works for <extra_id_0>.",<extra_id_0> TC Televisión <extra_id_1>
+92,2010,"In 2010, Peter Hain holds the position of <extra_id_0>.",<extra_id_0> Shadow Secretary of State for Wales <extra_id_1>
+93,2010,"In 2010, Sally M. Foster works for <extra_id_0>.",<extra_id_0> University of Glasgow <extra_id_1>
+94,2010,"In 2010, <extra_id_0> is the head of the government of São Paulo.",<extra_id_0> Gilberto Kassab <extra_id_1>
+95,2010,"In 2010, <extra_id_0> is the head of the government of São Paulo.",<extra_id_0> José Serra <extra_id_1>
+96,2010,"In 2010, Javier Hernández plays for <extra_id_0>.",<extra_id_0> C.D. Guadalajara <extra_id_1>
+97,2010,"In 2010, Anne Tolley holds the position of <extra_id_0>.",<extra_id_0> Minister of Education <extra_id_1>
+98,2010,"In 2010, <extra_id_0> is the head of the government of Odessa Oblast.",<extra_id_0> Ihor Palytsia <extra_id_1>
+99,2010,"In 2010, James Franklin Jeffrey holds the position of <extra_id_0>.",<extra_id_0> United States Ambassador to Iraq <extra_id_1>
+100,2010,"In 2010, Jake Bernstein works for <extra_id_0>.",<extra_id_0> ProPublica <extra_id_1>
+101,2010,"In 2010, <extra_id_0> is the head of the government of Saarbrücken.",<extra_id_0> Charlotte Britz <extra_id_1>
+102,2010,"In 2010, Ismaïl Aissati plays for <extra_id_0>.",<extra_id_0> AFC Ajax <extra_id_1>
+103,2010,"In 2010, Mohamed Ghannouchi holds the position of <extra_id_0>.",<extra_id_0> Prime Minister of Tunisia <extra_id_1>
+104,2010,"In 2010, Jose Manuel Sabucedo works for <extra_id_0>.",<extra_id_0> University of Granada <extra_id_1>
+105,2010,"In 2010, John Galliano works for <extra_id_0>.",<extra_id_0> Christian Dior S.A. <extra_id_1>
+106,2010,"In 2010, Tom Cleverley plays for <extra_id_0>.",<extra_id_0> Watford F.C. <extra_id_1>
+107,2010,"In 2010, Bojan Krkić plays for <extra_id_0>.",<extra_id_0> FC Barcelona <extra_id_1>
+108,2010,"In 2010, Patricia Scotland, Baroness Scotland of Asthal holds the position of <extra_id_0>.",<extra_id_0> Advocate General for Northern Ireland <extra_id_1>
+109,2010,"In 2010, James Howard works for <extra_id_0>.",<extra_id_0> University of Maryland Global Campus <extra_id_1>
+110,2010,"In 2010, Steven Naismith plays for <extra_id_0>.",<extra_id_0> Rangers F.C. <extra_id_1>
+111,2010,"In 2010, Mitchell Johnson plays for <extra_id_0>.",<extra_id_0> Australia national cricket team <extra_id_1>
+112,2010,"In 2010, Anna Keay works for <extra_id_0>.",<extra_id_0> English Heritage <extra_id_1>
+113,2010,"In 2010, Tony Renda works for <extra_id_0>.",<extra_id_0> Washington Nationals <extra_id_1>
+114,2010,"In 2010, David Kaye works for <extra_id_0>.",<extra_id_0> UCLA School of Law <extra_id_1>
+115,2010,"In 2010, <extra_id_0> is the head of the government of Jiangsu.",<extra_id_0> Luo Zhijun <extra_id_1>
+116,2010,"In 2010, <extra_id_0> is the head coach of Atlético Madrid.",<extra_id_0> Quique Sánchez Flores <extra_id_1>
+117,2010,"In 2010, Adam Chicksen plays for <extra_id_0>.",<extra_id_0> Milton Keynes Dons F.C. <extra_id_1>
+118,2010,"In 2010, <extra_id_0> is the head of the government of Cameroon.",<extra_id_0> Philémon Yang <extra_id_1>
+119,2010,"In 2010, Simon Stoddart works for <extra_id_0>.",<extra_id_0> University of Cambridge <extra_id_1>
+120,2010,"In 2010, The Eagle is owned by <extra_id_0>.",<extra_id_0> Berkshire Hathaway <extra_id_1>
+121,2010,"In 2010, Marcus Bosch works for <extra_id_0>.",<extra_id_0> Theater Aachen <extra_id_1>
+122,2010,"In 2010, <extra_id_0> is the chair of Gibraltar Socialist Labour Party.",<extra_id_0> Joe Bossano <extra_id_1>
+123,2010,"In 2010, <extra_id_0> is the head of the government of Saudi Arabia.",<extra_id_0> Abdullah of Saudi Arabia <extra_id_1>
+124,2010,"In 2010, Nasreena Ibrahim is a member of the <extra_id_0>.",<extra_id_0> Dhivehi Rayyithunge Party <extra_id_1>
+125,2010,"In 2010, Chris Hackett plays for <extra_id_0>.",<extra_id_0> Millwall F.C. <extra_id_1>
+126,2010,"In 2010, <extra_id_0> is the chair of Association for the Advancement of Artificial Intelligence.",<extra_id_0> Henry Kautz <extra_id_1>
+127,2010,"In 2010, <extra_id_0> is the chair of Associated British Foods.",<extra_id_0> Charles Sinclair <extra_id_1>
+128,2010,"In 2010, Havas is owned by <extra_id_0>.",<extra_id_0> Bolloré <extra_id_1>
+129,2010,"In 2010, <extra_id_0> is the head of the government of Lyon.",<extra_id_0> Gérard Collomb <extra_id_1>
+130,2010,"In 2010, Eduardo da Silva plays for <extra_id_0>.",<extra_id_0> Croatia national association football team <extra_id_1>
+131,2010,"In 2010, Carles Puyol plays for <extra_id_0>.",<extra_id_0> Catalonia national football team <extra_id_1>
+132,2010,"In 2010, <extra_id_0> is the head coach of Inter Milan.",<extra_id_0> José Mourinho <extra_id_1>
+133,2010,"In 2010, Jayson Musson attended <extra_id_0>.",<extra_id_0> University of Pennsylvania <extra_id_1>
+134,2010,"In 2010, <extra_id_0> is the chair of Roman Catholic Archdiocese of Cardiff.",<extra_id_0> Peter Smith <extra_id_1>
+135,2010,"In 2010, Mark Hudson plays for <extra_id_0>.",<extra_id_0> Cardiff City F.C. <extra_id_1>
+136,2010,"In 2010, Chris Johnson plays for <extra_id_0>.",<extra_id_0> Tennessee Titans <extra_id_1>
+137,2010,"In 2010, Jordi Xuclà is a member of the <extra_id_0>.",<extra_id_0> Democratic Convergence of Catalonia <extra_id_1>
+138,2010,"In 2010, Graham Harman works for <extra_id_0>.",<extra_id_0> The American University in Cairo <extra_id_1>
+139,2010,"In 2010, Michael D. Higgins holds the position of <extra_id_0>.",<extra_id_0> Teachta Dála <extra_id_1>
+140,2010,"In 2010, Lomana LuaLua plays for <extra_id_0>.",<extra_id_0> DR Congo national football team <extra_id_1>
+141,2010,"In 2010, Madison Gesiotto attended <extra_id_0>.",<extra_id_0> Ohio State University <extra_id_1>
+142,2010,"In 2010, <extra_id_0> is the head of the government of Poznań.",<extra_id_0> Ryszard Grobelny <extra_id_1>
+143,2010,"In 2010, <extra_id_0> is the head of the government of Kinmen.",<extra_id_0> Li Wo-shi <extra_id_1>
+144,2010,"In 2010, Marcelo plays for <extra_id_0>.",<extra_id_0> Brazil Olympic football team <extra_id_1>
+145,2010,"In 2010, Ursula Staudinger works for <extra_id_0>.",<extra_id_0> Jacobs University Bremen <extra_id_1>
+146,2010,"In 2010, Rudy Fernández plays for <extra_id_0>.",<extra_id_0> Portland Trail Blazers <extra_id_1>
+147,2010,"In 2010, <extra_id_0> is the chair of FC Girondins de Bordeaux.",<extra_id_0> Jean-Louis Triaud <extra_id_1>
+148,2010,"In 2010, Robert Green plays for <extra_id_0>.",<extra_id_0> West Ham United F.C. <extra_id_1>
+149,2010,"In 2010, Gerardo Villanueva Albarrán is a member of the <extra_id_0>.",<extra_id_0> Party of the Democratic Revolution <extra_id_1>
+150,2010,"In 2010, Åsane Storsenter is owned by <extra_id_0>.",<extra_id_0> Steen & Strøm <extra_id_1>
+151,2010,"In 2010, Ranil Wickremesinghe holds the position of <extra_id_0>.",<extra_id_0> Leader of the Opposition <extra_id_1>
+152,2010,"In 2010, Rahul Dravid plays for <extra_id_0>.",<extra_id_0> India national cricket team <extra_id_1>
+153,2010,"In 2010, Mia Love holds the position of <extra_id_0>.",<extra_id_0> mayor <extra_id_1>
+154,2010,"In 2010, Allegra Rose Edwards attended <extra_id_0>.",<extra_id_0> American Conservatory Theater <extra_id_1>
+155,2010,"In 2010, <extra_id_0> is the chair of University of Tokyo.",<extra_id_0> Junichi Hamada <extra_id_1>
+156,2010,"In 2010, Joe Biden holds the position of <extra_id_0>.",<extra_id_0> Vice President of the United States <extra_id_1>
+157,2010,"In 2010, Marine Le Pen holds the position of <extra_id_0>.",<extra_id_0> member of the European Parliament <extra_id_1>
+158,2010,"In 2010, Tomáš Rosický plays for <extra_id_0>.",<extra_id_0> Arsenal F.C. <extra_id_1>
+159,2010,"In 2010, Dovre Line is owned by <extra_id_0>.",<extra_id_0> Norwegian National Rail Administration <extra_id_1>
+160,2010,"In 2010, Mario Balotelli plays for <extra_id_0>.",<extra_id_0> Inter Milan <extra_id_1>
+161,2010,"In 2010, Mary E. Northridge works for <extra_id_0>.",<extra_id_0> New York University College of Dentistry <extra_id_1>
+162,2010,"In 2010, Robin van Persie plays for <extra_id_0>.",<extra_id_0> Arsenal F.C. <extra_id_1>
+163,2010,"In 2010, Vicente Guallart works for <extra_id_0>.",<extra_id_0> Institute for Advanced Architecture of Catalonia <extra_id_1>
+164,2010,"In 2010, <extra_id_0> is the head of the government of Canada.",<extra_id_0> Stephen Harper <extra_id_1>
+165,2010,"In 2010, <extra_id_0> is the chair of ITV plc.",<extra_id_0> Archie Norman <extra_id_1>
+166,2010,"In 2010, Mathieu Gallet works for <extra_id_0>.",<extra_id_0> Institut National de l'Audiovisuel <extra_id_1>
+167,2010,"In 2010, Bharat Mehra works for <extra_id_0>.","<extra_id_0> University of Tennessee, Knoxville <extra_id_1>"
+168,2010,"In 2010, <extra_id_0> is the head of the government of Vienna.",<extra_id_0> Michael Häupl <extra_id_1>
+169,2010,"In 2010, Jair Bolsonaro is a member of the <extra_id_0>.",<extra_id_0> Progressive Party <extra_id_1>
+170,2010,"In 2010, Owen Paterson holds the position of <extra_id_0>.",<extra_id_0> Secretary of State for Northern Ireland <extra_id_1>
+171,2010,"In 2010, Sol Bamba plays for <extra_id_0>.",<extra_id_0> Hibernian F.C. <extra_id_1>
+172,2010,"In 2010, <extra_id_0> is the chair of Next plc.",<extra_id_0> John Barton <extra_id_1>
+173,2010,"In 2010, <extra_id_0> is the chair of Federal Emergency Management Agency.",<extra_id_0> Craig Fugate <extra_id_1>
+174,2010,"In 2010, Sandy Abi-Elias attended <extra_id_0>.",<extra_id_0> Teddington School <extra_id_1>
+175,2010,"In 2010, Self-portrait wearing a white feathered bonnet is owned by <extra_id_0>.","<extra_id_0> Harold Samuel, Baron Samuel of Wych Cross <extra_id_1>"
+176,2010,"In 2010, Kenneth Clarke holds the position of <extra_id_0>.",<extra_id_0> Lord Chancellor <extra_id_1>
+177,2010,"In 2010, Paul Butler holds the position of <extra_id_0>.",<extra_id_0> Bishop of Southampton <extra_id_1>
+178,2010,"In 2010, <extra_id_0> is the head of the government of New Brunswick.",<extra_id_0> David Alward <extra_id_1>
+179,2010,"In 2010, Troy Bell is a member of the <extra_id_0>.",<extra_id_0> Liberal Party of Australia <extra_id_1>
+180,2010,"In 2010, Marta Lewicka works for <extra_id_0>.",<extra_id_0> University of Minnesota <extra_id_1>
+181,2010,"In 2010, Boy and Dog in a Johnnypump is owned by <extra_id_0>.",<extra_id_0> Peter M. Brant <extra_id_1>
+182,2010,"In 2010, Joseph F. Dunford, Jr. holds the position of <extra_id_0>.",<extra_id_0> Assistant Commandant of the Marine Corps <extra_id_1>
+183,2010,"In 2010, Carolyn Abbate works for <extra_id_0>.",<extra_id_0> University of Pennsylvania <extra_id_1>
+184,2010,"In 2010, Henrikh Mkhitaryan plays for <extra_id_0>.",<extra_id_0> Armenia national under-21 football team <extra_id_1>
+185,2010,"In 2010, <extra_id_0> is the chair of Pirate Party.",<extra_id_0> Rickard Falkvinge <extra_id_1>
+186,2010,"In 2010, Carolyn Lawrence-Dill works for <extra_id_0>.",<extra_id_0> Agricultural Research Service <extra_id_1>
+187,2010,"In 2010, Blase J. Cupich holds the position of <extra_id_0>.",<extra_id_0> diocesan bishop <extra_id_1>
+188,2010,"In 2010, Theodoros Currentzis works for <extra_id_0>.",<extra_id_0> Bolshoi Theatre <extra_id_1>
+189,2010,"In 2010, Lucy Gichuhi is a member of the <extra_id_0>.",<extra_id_0> Family First Party <extra_id_1>
+190,2010,"In 2010, Rich Nugent holds the position of <extra_id_0>.",<extra_id_0> sheriff <extra_id_1>
+191,2010,"In 2010, Victor Ciorbea is a member of the <extra_id_0>.",<extra_id_0> Christian-Democratic National Peasants' Party <extra_id_1>
+192,2010,"In 2010, <extra_id_0> is the head coach of South Africa national rugby union team.",<extra_id_0> Peter de Villiers <extra_id_1>
+193,2010,"In 2010, <extra_id_0> is the chair of Italian Liberal Party.",<extra_id_0> Carlo Scognamiglio <extra_id_1>
+194,2010,"In 2010, Elinor Ostrom works for <extra_id_0>.",<extra_id_0> Indiana University <extra_id_1>
+195,2010,"In 2010, Bernard Monot is a member of the <extra_id_0>.",<extra_id_0> National Rally <extra_id_1>
+196,2010,"In 2010, Phil Murphy holds the position of <extra_id_0>.",<extra_id_0> United States Ambassador to Germany <extra_id_1>
+197,2010,"In 2010, Leo Varadkar holds the position of <extra_id_0>.",<extra_id_0> Teachta Dála <extra_id_1>
+198,2010,"In 2010, Jaguar is owned by <extra_id_0>.",<extra_id_0> Jaguar Cars <extra_id_1>
+199,2010,"In 2010, Jimmy Smith plays for <extra_id_0>.",<extra_id_0> Leyton Orient F.C. <extra_id_1>
+200,2010,"In 2010, Ryan Babel plays for <extra_id_0>.",<extra_id_0> Netherlands national association football team <extra_id_1>
+201,2010,"In 2010, Alberto Aquilani plays for <extra_id_0>.",<extra_id_0> Liverpool F.C. <extra_id_1>
+202,2010,"In 2010, Serdar Tasci plays for <extra_id_0>.",<extra_id_0> Germany national association football team <extra_id_1>
+203,2010,"In 2010, Lluís Puig i Gordi is a member of the <extra_id_0>.",<extra_id_0> Catalan European Democratic Party <extra_id_1>
+204,2010,"In 2010, Marina Silva is a member of the <extra_id_0>.",<extra_id_0> Green Party <extra_id_1>
+205,2010,"In 2010, Rory Delap plays for <extra_id_0>.",<extra_id_0> Stoke City F.C. <extra_id_1>
+206,2010,"In 2010, Damien Carême is a member of the <extra_id_0>.",<extra_id_0> Socialist Party <extra_id_1>
+207,2010,"In 2010, <extra_id_0> is the chair of Alberta New Democratic Party.",<extra_id_0> Brian Mason <extra_id_1>
+208,2010,"In 2010, Frank Scholze works for <extra_id_0>.",<extra_id_0> Karlsruhe Institute of Technology <extra_id_1>
+209,2010,"In 2010, Freddie Sears plays for <extra_id_0>.",<extra_id_0> West Ham United F.C. <extra_id_1>
+210,2010,"In 2010, Dimitris Papadimoulis is a member of the <extra_id_0>.",<extra_id_0> Synaspismós <extra_id_1>
+211,2010,"In 2010, Sandra Schmid works for <extra_id_0>.",<extra_id_0> Scripps Research <extra_id_1>
+212,2010,"In 2010, Sandra Wolin works for <extra_id_0>.",<extra_id_0> Yale School of Medicine <extra_id_1>
+213,2010,"In 2010, Ilir Meta holds the position of <extra_id_0>.",<extra_id_0> Minister of Foreign Affairs <extra_id_1>
+214,2010,"In 2010, Dominique Bertinotti is a member of the <extra_id_0>.",<extra_id_0> Socialist Party <extra_id_1>
+215,2010,"In 2010, <extra_id_0> is the chair of Toulouse FC.",<extra_id_0> Olivier Sadran <extra_id_1>
+216,2010,"In 2010, Peter Odemwingie plays for <extra_id_0>.",<extra_id_0> FC Lokomotiv Moscow <extra_id_1>
+217,2010,"In 2010, Alan Johnson holds the position of <extra_id_0>.",<extra_id_0> Home Secretary <extra_id_1>
+218,2010,"In 2010, Hernán Crespo plays for <extra_id_0>.",<extra_id_0> Parma Calcio 1913 <extra_id_1>
+219,2010,"In 2010, Wolfgang Wiehle is a member of the <extra_id_0>.",<extra_id_0> Christian Social Union of Bavaria <extra_id_1>
+220,2010,"In 2010, Angaston Power Station is owned by <extra_id_0>.",<extra_id_0> Infratil <extra_id_1>
+221,2010,"In 2010, Will Smith attended <extra_id_0>.",<extra_id_0> Kentucky Country Day School <extra_id_1>
+222,2010,"In 2010, Sylvain Maillard is a member of the <extra_id_0>.",<extra_id_0> Les Centristes <extra_id_1>
+223,2010,"In 2010, Sandy MacIver attended <extra_id_0>.",<extra_id_0> Sir John Deane's College <extra_id_1>
+224,2010,"In 2010, Tom Frieden holds the position of <extra_id_0>.",<extra_id_0> director <extra_id_1>
+225,2010,"In 2010, Francesc Homs Molist is a member of the <extra_id_0>.",<extra_id_0> Democratic Convergence of Catalonia <extra_id_1>
+226,2010,"In 2010, Barnaby Joyce holds the position of <extra_id_0>.",<extra_id_0> Member of the Australian Senate <extra_id_1>
+227,2010,"In 2010, Eric Chu holds the position of <extra_id_0>.",<extra_id_0> Vice Premier of the Republic of China <extra_id_1>
+228,2010,"In 2010, Teaira McCowan attended <extra_id_0>.",<extra_id_0> Brenham High School <extra_id_1>
+229,2010,"In 2010, Ubaldo Jiménez plays for <extra_id_0>.",<extra_id_0> Colorado Rockies <extra_id_1>
+230,2010,"In 2010, Barry O'Farrell holds the position of <extra_id_0>.",<extra_id_0> Leader of the Opposition <extra_id_1>
+231,2010,"In 2010, Matti Vanhanen holds the position of <extra_id_0>.",<extra_id_0> Prime Minister of Finland <extra_id_1>
+232,2010,"In 2010, <extra_id_0> is the head of the government of Delaware.",<extra_id_0> Jack Markell <extra_id_1>
+233,2010,"In 2010, The Onion is owned by <extra_id_0>.",<extra_id_0> Fusion Media Group <extra_id_1>
+234,2010,"In 2010, Vladimir Milov is a member of the <extra_id_0>.","<extra_id_0> People's Freedom Party ""For Russia without Lawlessness and Corruption"" <extra_id_1>"
+235,2010,"In 2010, Kris Boyd plays for <extra_id_0>.",<extra_id_0> Middlesbrough F.C. <extra_id_1>
+236,2010,"In 2010, Willie O'Dea holds the position of <extra_id_0>.",<extra_id_0> Teachta Dála <extra_id_1>
+237,2010,"In 2010, Joaquim Forn is a member of the <extra_id_0>.",<extra_id_0> Democratic Convergence of Catalonia <extra_id_1>
+238,2010,"In 2010, David Trezeguet plays for <extra_id_0>.",<extra_id_0> Juventus FC <extra_id_1>
+239,2010,"In 2010, Douglas Carswell is a member of the <extra_id_0>.",<extra_id_0> Conservative Party <extra_id_1>
+240,2010,"In 2010, Belinda Johnson works for <extra_id_0>.",<extra_id_0> Yahoo <extra_id_1>
+241,2010,"In 2010, <extra_id_0> is the chair of Parliamentary Assembly of the Organization for Security and Co-operation in Europe.",<extra_id_0> Petros Efthymiou <extra_id_1>
+242,2010,"In 2010, České aerolinie is owned by <extra_id_0>.",<extra_id_0> Korean Air <extra_id_1>
+243,2010,"In 2010, John Ratcliffe holds the position of <extra_id_0>.",<extra_id_0> mayor <extra_id_1>
+244,2010,"In 2010, James Marape is a member of the <extra_id_0>.",<extra_id_0> National Alliance Party <extra_id_1>
+245,2010,"In 2010, Tim Burgess holds the position of <extra_id_0>.",<extra_id_0> councillor <extra_id_1>
+246,2010,"In 2010, Teresa Rakowska-Harmstone works for <extra_id_0>.",<extra_id_0> Harvard University <extra_id_1>
+247,2010,"In 2010, <extra_id_0> is the head of the government of United States of America.",<extra_id_0> Barack Obama <extra_id_1>
+248,2010,"In 2010, Curt Rice works for <extra_id_0>.",<extra_id_0> University of Tromsø – The Arctic University of Norway <extra_id_1>
+249,2010,"In 2010, Joshua Greenberg works for <extra_id_0>.",<extra_id_0> Alfred P. Sloan Foundation <extra_id_1>
+250,2010,"In 2010, Yukio Edano is a member of the <extra_id_0>.",<extra_id_0> Democratic Party of Japan <extra_id_1>
+251,2010,"In 2010, Mathieu Valbuena plays for <extra_id_0>.",<extra_id_0> France national association football team <extra_id_1>
+252,2010,"In 2010, Joseph William Tobin holds the position of <extra_id_0>.",<extra_id_0> Catholic bishop <extra_id_1>
+253,2010,"In 2010, Rauff Hakeem holds the position of <extra_id_0>.",<extra_id_0> Minister of Justice <extra_id_1>
+254,2010,"In 2010, Michael Bostwick plays for <extra_id_0>.",<extra_id_0> Stevenage F.C. <extra_id_1>
+255,2010,"In 2010, Renate Weber holds the position of <extra_id_0>.",<extra_id_0> member of the European Parliament <extra_id_1>
+256,2010,"In 2010, <extra_id_0> is the head coach of Olympique de Marseille.",<extra_id_0> Didier Deschamps <extra_id_1>
+257,2010,"In 2010, Martin Heinrich holds the position of <extra_id_0>.",<extra_id_0> United States representative <extra_id_1>
+258,2010,"In 2010, Deborah Orr works for <extra_id_0>.",<extra_id_0> The Guardian <extra_id_1>
+259,2010,"In 2010, Graham Watson holds the position of <extra_id_0>.",<extra_id_0> member of the European Parliament <extra_id_1>
+260,2010,"In 2010, Mo'ne Davis attended <extra_id_0>.",<extra_id_0> Springside Chestnut Hill Academy <extra_id_1>
+261,2010,"In 2010, Tom Cairney plays for <extra_id_0>.",<extra_id_0> Scotland national under-21 football team <extra_id_1>
+262,2010,"In 2010, Felix Finkbeiner attended <extra_id_0>.","<extra_id_0> School of Oriental and African Studies, University of London <extra_id_1>"
+263,2010,"In 2010, Thiago Silva plays for <extra_id_0>.",<extra_id_0> Brazil national football team <extra_id_1>
+264,2010,"In 2010, Younis Mahmoud plays for <extra_id_0>.",<extra_id_0> Al-Gharafa Sports Club <extra_id_1>
+265,2010,"In 2010, Bernhard Schölkopf works for <extra_id_0>.",<extra_id_0> Max Planck Institute for Biological Cybernetics <extra_id_1>
+266,2010,"In 2010, <extra_id_0> is the chair of Hungarian Academy of Sciences.",<extra_id_0> József Pálinkás <extra_id_1>
+267,2010,"In 2010, Tim Cahill plays for <extra_id_0>.",<extra_id_0> Everton F.C. <extra_id_1>
+268,2010,"In 2010, Pranab Mukherjee holds the position of <extra_id_0>.",<extra_id_0> Minister of Finance <extra_id_1>
+269,2010,"In 2010, Brandi M. Cossairt works for <extra_id_0>.",<extra_id_0> Columbia University <extra_id_1>
+270,2010,"In 2010, <extra_id_0> is the chair of Hungarian Socialist Party.",<extra_id_0> Attila Mesterházy <extra_id_1>
+271,2010,"In 2010, Manuel Neuer plays for <extra_id_0>.",<extra_id_0> FC Schalke 04 <extra_id_1>
+272,2010,"In 2010, Steve Jones plays for <extra_id_0>.",<extra_id_0> Walsall F.C. <extra_id_1>
+273,2010,"In 2010, Brandon Clarke attended <extra_id_0>.",<extra_id_0> Desert Vista High School <extra_id_1>
+274,2010,"In 2010, <extra_id_0> is the head of the government of Manitoba.",<extra_id_0> Greg Selinger <extra_id_1>
+275,2010,"In 2010, Álvaro Uribe Vélez is a member of the <extra_id_0>.",<extra_id_0> Colombia First <extra_id_1>
+276,2010,"In 2010, <extra_id_0> is the chair of Mejlis of the Crimean Tatar People.",<extra_id_0> Mustafa Dzhemilev <extra_id_1>
+277,2010,"In 2010, Hugo Chávez holds the position of <extra_id_0>.",<extra_id_0> President of Venezuela <extra_id_1>
+278,2010,"In 2010, <extra_id_0> is the head of the government of Montgomery County.",<extra_id_0> Isiah Leggett <extra_id_1>
+279,2010,"In 2010, Andrea Dutton works for <extra_id_0>.",<extra_id_0> Australian National University <extra_id_1>
+280,2010,"In 2010, Brian Schatz holds the position of <extra_id_0>.",<extra_id_0> Lieutenant Governor of Hawaii <extra_id_1>
+281,2010,"In 2010, J. J. Watt plays for <extra_id_0>.",<extra_id_0> Wisconsin Badgers football <extra_id_1>
+282,2010,"In 2010, Gail Koziara Boudreaux works for <extra_id_0>.",<extra_id_0> UnitedHealth Group <extra_id_1>
+283,2010,"In 2010, <extra_id_0> is the chair of Rijksmuseum.",<extra_id_0> Anthony Ruys <extra_id_1>
+284,2010,"In 2010, <extra_id_0> is the head of the government of Niigata Prefecture.",<extra_id_0> Hirohiko Izumida <extra_id_1>
+285,2010,"In 2010, Chesley ""Sully"" Sullenberger works for <extra_id_0>.",<extra_id_0> US Airways <extra_id_1>
+286,2010,"In 2010, SourceForge is owned by <extra_id_0>.",<extra_id_0> Vera Augustin Research <extra_id_1>
+287,2010,"In 2010, Erik Solheim holds the position of <extra_id_0>.",<extra_id_0> Minister of International Development <extra_id_1>
+288,2010,"In 2010, Merete Riisager works for <extra_id_0>.",<extra_id_0> The Lego Group <extra_id_1>
+289,2010,"In 2010, Merete Riisager is a member of the <extra_id_0>.",<extra_id_0> Radical Left <extra_id_1>
+290,2010,"In 2010, <extra_id_0> is the chair of Verein für Socialpolitik.",<extra_id_0> Lars-Hendrik Röller <extra_id_1>
+291,2010,"In 2010, Doug Shane works for <extra_id_0>.",<extra_id_0> Scaled Composites <extra_id_1>
+292,2010,"In 2010, Giuseppe Veltri works for <extra_id_0>.",<extra_id_0> University of Halle-Wittenberg <extra_id_1>
+293,2010,"In 2010, Glider Ushñahua is a member of the <extra_id_0>.",<extra_id_0> Popular Action <extra_id_1>
+294,2010,"In 2010, Vincent Chauvet attended <extra_id_0>.",<extra_id_0> Sciences Po <extra_id_1>
+295,2010,"In 2010, <extra_id_0> is the chair of Myanmar Dental Association.",<extra_id_0> Thein Tut <extra_id_1>
+296,2010,"In 2010, Edinson Cavani plays for <extra_id_0>.",<extra_id_0> S.S.C. Napoli <extra_id_1>
+297,2010,"In 2010, <extra_id_0> is the head coach of FC Astra Giurgiu.",<extra_id_0> Marius Șumudică <extra_id_1>
+298,2010,"In 2010, Douglas Alexander holds the position of <extra_id_0>.",<extra_id_0> Secretary of State for International Development <extra_id_1>
+299,2010,"In 2010, <extra_id_0> is the head of the government of Catalonia.",<extra_id_0> José Montilla <extra_id_1>
+300,2010,"In 2010, Andy Lonergan plays for <extra_id_0>.",<extra_id_0> Preston North End F.C. <extra_id_1>
+301,2010,"In 2010, Mindy Grossman works for <extra_id_0>.",<extra_id_0> Home Shopping Network <extra_id_1>
+302,2010,"In 2010, Chris Finlayson holds the position of <extra_id_0>.",<extra_id_0> Attorney-General of New Zealand <extra_id_1>
+303,2010,"In 2010, Gianni Pittella holds the position of <extra_id_0>.",<extra_id_0> member of the European Parliament <extra_id_1>
+304,2010,"In 2010, Jimmer Fredette plays for <extra_id_0>.",<extra_id_0> BYU Cougars men's basketball <extra_id_1>
+305,2010,"In 2010, Michèle Dittlot is a member of the <extra_id_0>.",<extra_id_0> National Union for the Future of Monaco <extra_id_1>
+306,2010,"In 2010, Jimmy Bullard plays for <extra_id_0>.",<extra_id_0> Hull City A.F.C. <extra_id_1>
+307,2010,"In 2010, John Guidetti plays for <extra_id_0>.",<extra_id_0> Burnley F.C. <extra_id_1>
+308,2010,"In 2010, Meritxell Budó i Pla is a member of the <extra_id_0>.",<extra_id_0> Democratic Convergence of Catalonia <extra_id_1>
+309,2010,"In 2010, Brian Hayes holds the position of <extra_id_0>.",<extra_id_0> Teachta Dála <extra_id_1>
+310,2010,"In 2010, Yoh Iwasa works for <extra_id_0>.",<extra_id_0> Kyushu University <extra_id_1>
+311,2010,"In 2010, <extra_id_0> is the chair of University of Richmond.",<extra_id_0> Edward L. Ayers <extra_id_1>
+312,2010,"In 2010, Didier Fassin works for <extra_id_0>.",<extra_id_0> Institute for Advanced Study <extra_id_1>
+313,2010,"In 2010, Leonore Gewessler works for <extra_id_0>.",<extra_id_0> Green European Foundation <extra_id_1>
+314,2010,"In 2010, Jos Buttler plays for <extra_id_0>.",<extra_id_0> Somerset County Cricket Club <extra_id_1>
+315,2010,"In 2010, Sintra Line is owned by <extra_id_0>.",<extra_id_0> REFER <extra_id_1>
+316,2010,"In 2010, <extra_id_0> is the head coach of Hallescher FC.",<extra_id_0> Sven Köhler <extra_id_1>
+317,2010,"In 2010, <extra_id_0> is the head of the government of Istanbul.",<extra_id_0> Kadir Topbaş <extra_id_1>
+318,2010,"In 2010, Alexander Hamilton is owned by <extra_id_0>.",<extra_id_0> Credit Suisse <extra_id_1>
+319,2010,"In 2010, Stewart Stevenson holds the position of <extra_id_0>.",<extra_id_0> Minister for Transport and Veterans <extra_id_1>
+320,2010,"In 2010, Lin Jianhua works for <extra_id_0>.",<extra_id_0> Chongqing University <extra_id_1>
+321,2010,"In 2010, Laura Borràs is a member of the <extra_id_0>.",<extra_id_0> independent politician <extra_id_1>
+322,2010,"In 2010, Dan Koehl works for <extra_id_0>.",<extra_id_0> Prague Zoo <extra_id_1>
+323,2010,"In 2010, <extra_id_0> is the chair of Liga Veneta.",<extra_id_0> Flavio Tosi <extra_id_1>
+324,2010,"In 2010, Steven Salaita works for <extra_id_0>.",<extra_id_0> Virginia Tech <extra_id_1>
+325,2010,"In 2010, Lucía Sosa is a member of the <extra_id_0>.",<extra_id_0> Democratic People's Movement <extra_id_1>
+326,2010,"In 2010, Cole Hamels plays for <extra_id_0>.",<extra_id_0> Philadelphia Phillies <extra_id_1>
+327,2010,"In 2010, Eric Abetz holds the position of <extra_id_0>.",<extra_id_0> Leader of the Opposition in the Senate <extra_id_1>
+328,2010,"In 2010, <extra_id_0> is the chair of Bank of Finland.",<extra_id_0> Erkki Liikanen <extra_id_1>
+329,2010,"In 2010, Don Farrell holds the position of <extra_id_0>.",<extra_id_0> Member of the Australian Senate <extra_id_1>
+330,2010,"In 2010, William Kamkwamba attended <extra_id_0>.",<extra_id_0> Dartmouth College <extra_id_1>
+331,2010,"In 2010, Espen Barth Eide holds the position of <extra_id_0>.",<extra_id_0> State Secretary <extra_id_1>
+332,2010,"In 2010, Cristian Popescu Piedone is a member of the <extra_id_0>.",<extra_id_0> Conservative Party <extra_id_1>
+333,2010,"In 2010, Elina Netšajeva attended <extra_id_0>.",<extra_id_0> Estonian Academy of Music and Theatre <extra_id_1>
+334,2010,"In 2010, Brenda Hale, Baroness Hale of Richmond holds the position of <extra_id_0>.",<extra_id_0> Justice of the Supreme Court of the United Kingdom <extra_id_1>
+335,2010,"In 2010, <extra_id_0> is the chair of National Society of Film Critics.",<extra_id_0> David Sterritt <extra_id_1>
+336,2010,"In 2010, Sam Lantinga works for <extra_id_0>.",<extra_id_0> Blizzard Entertainment <extra_id_1>
+337,2010,"In 2010, Phil Hudson works for <extra_id_0>.","<extra_id_0> Dakota Collegiate, Winnipeg <extra_id_1>"
+338,2010,"In 2010, Neymar plays for <extra_id_0>.",<extra_id_0> Santos F.C. <extra_id_1>
+339,2010,"In 2010, John Longworth is a member of the <extra_id_0>.",<extra_id_0> Brexit Party <extra_id_1>
+340,2010,"In 2010, <extra_id_0> is the head of the government of Albany.",<extra_id_0> Gerald Jennings <extra_id_1>
+341,2010,"In 2010, <extra_id_0> is the head coach of A.C. ChievoVerona.",<extra_id_0> Stefano Pioli <extra_id_1>
+342,2010,"In 2010, Mario Mandžukić plays for <extra_id_0>.",<extra_id_0> Croatia national association football team <extra_id_1>
+343,2010,"In 2010, Mirela Holy is a member of the <extra_id_0>.",<extra_id_0> Social Democratic Party of Croatia <extra_id_1>
+344,2010,"In 2010, Pau Gasol plays for <extra_id_0>.",<extra_id_0> Los Angeles Lakers <extra_id_1>
+345,2010,"In 2010, <extra_id_0> is the chair of State Ethnic Affairs Commission.",<extra_id_0> Yang Jing <extra_id_1>
+346,2010,"In 2010, Westfield Wheaton is owned by <extra_id_0>.",<extra_id_0> Westfield Group <extra_id_1>
+347,2010,"In 2010, Nicola Sturgeon holds the position of <extra_id_0>.",<extra_id_0> Cabinet Secretary for Health and Wellbeing <extra_id_1>
+348,2010,"In 2010, Bryan Alberts attended <extra_id_0>.",<extra_id_0> Village Christian Schools <extra_id_1>
+349,2010,"In 2010, Yoann Gourcuff plays for <extra_id_0>.",<extra_id_0> France national association football team <extra_id_1>
+350,2010,"In 2010, Kåre Schultz works for <extra_id_0>.",<extra_id_0> Novo Nordisk <extra_id_1>
+351,2010,"In 2010, George van Kooten works for <extra_id_0>.",<extra_id_0> University of Groningen <extra_id_1>
+352,2010,"In 2010, Dario Hunter is a member of the <extra_id_0>.",<extra_id_0> Democratic Party <extra_id_1>
+353,2010,"In 2010, Thorbjørn Jagland holds the position of <extra_id_0>.",<extra_id_0> Secretary General of the Council of Europe <extra_id_1>
+354,2010,"In 2010, Arancha González works for <extra_id_0>.",<extra_id_0> World Trade Organization <extra_id_1>
+355,2010,"In 2010, Ricardo Clark plays for <extra_id_0>.",<extra_id_0> United States men's national soccer team <extra_id_1>
+356,2010,"In 2010, Selkent is owned by <extra_id_0>.",<extra_id_0> Stagecoach Group <extra_id_1>
+357,2010,"In 2010, Tulsi Gabbard holds the position of <extra_id_0>.",<extra_id_0> councillor <extra_id_1>
+358,2010,"In 2010, Alexander Stubb holds the position of <extra_id_0>.",<extra_id_0> Minister for Foreign Affairs of Finland <extra_id_1>
+359,2010,"In 2010, <extra_id_0> is the head coach of Hapoel Holon.",<extra_id_0> Dan Shamir <extra_id_1>
+360,2010,"In 2010, Andrew Mitchell holds the position of <extra_id_0>.",<extra_id_0> Secretary of State for International Development <extra_id_1>
+361,2010,"In 2010, François-Michel Lambert is a member of the <extra_id_0>.",<extra_id_0> Ecology Generation <extra_id_1>
+362,2010,"In 2010, Sergio Villalobos works for <extra_id_0>.",<extra_id_0> Andrés Bello University <extra_id_1>
+363,2010,"In 2010, Romain Grau is a member of the <extra_id_0>.",<extra_id_0> The Republicans <extra_id_1>
+364,2010,"In 2010, Rémi Anicotte works for <extra_id_0>.",<extra_id_0> Lycée Louis-le-Grand <extra_id_1>
+365,2010,"In 2010, Brittany Kaiser attended <extra_id_0>.","<extra_id_0> Birkbeck, University of London <extra_id_1>"
+366,2010,"In 2010, Deborah L. Birx works for <extra_id_0>.",<extra_id_0> Centers for Disease Control and Prevention <extra_id_1>
+367,2010,"In 2010, Zhang Dejiang holds the position of <extra_id_0>.",<extra_id_0> Vice Premier of the State Council of the People's Republic of China <extra_id_1>
+368,2010,"In 2010, Kenneth Vermeer plays for <extra_id_0>.",<extra_id_0> AFC Ajax <extra_id_1>
+369,2010,"In 2010, Moxie Marlinspike works for <extra_id_0>.",<extra_id_0> Whisper Systems <extra_id_1>
+370,2010,"In 2010, Michael Boulding plays for <extra_id_0>.",<extra_id_0> Bradford City A.F.C. <extra_id_1>
+371,2010,"In 2010, Fernando Torres plays for <extra_id_0>.",<extra_id_0> Spain national association football team <extra_id_1>
+372,2010,"In 2010, Muttah Suresh plays for <extra_id_0>.",<extra_id_0> United Sikkim F.C. <extra_id_1>
+373,2010,"In 2010, The Frisky is owned by <extra_id_0>.",<extra_id_0> Turner Broadcasting System <extra_id_1>
+374,2010,"In 2010, Sabine Hossenfelder works for <extra_id_0>.",<extra_id_0> Nordic Institute for Theoretical Physics <extra_id_1>
+375,2010,"In 2010, Meir Cohen is a member of the <extra_id_0>.",<extra_id_0> Yisrael Beiteinu <extra_id_1>
+376,2010,"In 2010, Jyrki Katainen holds the position of <extra_id_0>.",<extra_id_0> Deputy Prime Minister of Finland <extra_id_1>
+377,2010,"In 2010, Russell Crowe's jockstrap is owned by <extra_id_0>.",<extra_id_0> Russell Crowe <extra_id_1>
+378,2010,"In 2010, Aurore Bergé is a member of the <extra_id_0>.",<extra_id_0> The Republicans <extra_id_1>
+379,2010,"In 2010, Richard Keogh plays for <extra_id_0>.",<extra_id_0> Carlisle United F.C. <extra_id_1>
+380,2010,"In 2010, <extra_id_0> is the chair of Société des océanistes.",<extra_id_0> Maurice Godelier <extra_id_1>
+381,2010,"In 2010, Yannick Kerlogot is a member of the <extra_id_0>.",<extra_id_0> Europe Ecology – The Greens <extra_id_1>
+382,2010,"In 2010, Wout Brama plays for <extra_id_0>.",<extra_id_0> Netherlands national association football team <extra_id_1>
+383,2010,"In 2010, Samuel Eto'o plays for <extra_id_0>.",<extra_id_0> Inter Milan <extra_id_1>
+384,2010,"In 2010, Jeffrey Mark Deskovic attended <extra_id_0>.",<extra_id_0> John Jay College of Criminal Justice <extra_id_1>
+385,2010,"In 2010, Mohammad Amir plays for <extra_id_0>.",<extra_id_0> National Bank of Pakistan cricket team <extra_id_1>
+386,2010,"In 2010, <extra_id_0> is the chair of Post Office Ltd.",<extra_id_0> Sir Donald Brydon <extra_id_1>
+387,2010,"In 2010, Statue of Robert Milligan is owned by <extra_id_0>.",<extra_id_0> British Waterways <extra_id_1>
+388,2010,"In 2010, Marius Niculae plays for <extra_id_0>.",<extra_id_0> Romania national association football team <extra_id_1>
+389,2010,"In 2010, Michel Barnier holds the position of <extra_id_0>.",<extra_id_0> European Commissioner for Internal Market and Services <extra_id_1>
+390,2010,"In 2010, Jean-Martin Aussant is a member of the <extra_id_0>.",<extra_id_0> Parti Québécois <extra_id_1>
+391,2010,"In 2010, Rickie Lambert plays for <extra_id_0>.",<extra_id_0> Southampton F.C. <extra_id_1>
+392,2010,"In 2010, <extra_id_0> is the head of the government of Toronto.",<extra_id_0> Rob Ford <extra_id_1>
+393,2010,"In 2010, <extra_id_0> is the chair of Caritas Italiana.",<extra_id_0> Giuseppe Merisi <extra_id_1>
+394,2010,"In 2010, John Darley is a member of the <extra_id_0>.",<extra_id_0> No Pokies <extra_id_1>
+395,2010,"In 2010, Ewa Paluch works for <extra_id_0>.",<extra_id_0> Max Planck Institute of Molecular Cell Biology and Genetics <extra_id_1>
+396,2010,"In 2010, Andriy Shevchenko plays for <extra_id_0>.",<extra_id_0> FC Dynamo Kyiv <extra_id_1>
+397,2010,"In 2010, Corrie Moreau works for <extra_id_0>.",<extra_id_0> Field Museum of Natural History <extra_id_1>
+398,2010,"In 2010, Galina Timchenko works for <extra_id_0>.",<extra_id_0> Lenta.ru <extra_id_1>
+399,2010,"In 2010, Rob Pyne is a member of the <extra_id_0>.",<extra_id_0> Australian Labor Party <extra_id_1>
+400,2010,"In 2010, <extra_id_0> is the head of the government of Key West.",<extra_id_0> Craig Cates <extra_id_1>
+401,2010,"In 2010, Owen Hargreaves plays for <extra_id_0>.",<extra_id_0> Manchester United F.C. <extra_id_1>
+402,2010,"In 2010, Charlie Adam plays for <extra_id_0>.",<extra_id_0> Blackpool F.C. <extra_id_1>
+403,2010,"In 2010, Robert Gates holds the position of <extra_id_0>.",<extra_id_0> United States Secretary of Defense <extra_id_1>
+404,2010,"In 2010, Andrew Rambaut works for <extra_id_0>.",<extra_id_0> University of Edinburgh <extra_id_1>
+405,2010,"In 2010, Seán Barrett holds the position of <extra_id_0>.",<extra_id_0> Teachta Dála <extra_id_1>
+406,2010,"In 2010, Jennifer Westacott works for <extra_id_0>.",<extra_id_0> KPMG <extra_id_1>
+407,2010,"In 2010, Andrea Bargnani plays for <extra_id_0>.",<extra_id_0> Toronto Raptors <extra_id_1>
+408,2010,"In 2010, Nicolas Ghesquière works for <extra_id_0>.",<extra_id_0> Balenciaga <extra_id_1>
+409,2010,"In 2010, Jacinda Ardern holds the position of <extra_id_0>.",<extra_id_0> president <extra_id_1>
+410,2010,"In 2010, Enda Kenny holds the position of <extra_id_0>.",<extra_id_0> Teachta Dála <extra_id_1>
+411,2010,"In 2010, Abhilasha Kumari works for <extra_id_0>.",<extra_id_0> Gujarat High Court <extra_id_1>
+412,2010,"In 2010, Anne-Marie Slaughter holds the position of <extra_id_0>.",<extra_id_0> Director of Policy Planning <extra_id_1>
+413,2010,"In 2010, Anne-Marie Slaughter works for <extra_id_0>.",<extra_id_0> United States Department of State <extra_id_1>
+414,2010,"In 2010, National Geographic Partners is owned by <extra_id_0>.",<extra_id_0> 21st Century Fox <extra_id_1>
+415,2010,"In 2010, Andris Piebalgs holds the position of <extra_id_0>.",<extra_id_0> European Commissioner for Energy <extra_id_1>
+416,2010,"In 2010, Vernon Davis plays for <extra_id_0>.",<extra_id_0> San Francisco 49ers <extra_id_1>
+417,2010,"In 2010, Numedal Line is owned by <extra_id_0>.",<extra_id_0> Norwegian National Rail Administration <extra_id_1>
+418,2010,"In 2010, Ben Bradshaw holds the position of <extra_id_0>.","<extra_id_0> Secretary of State for Culture, Media and Sport <extra_id_1>"
+419,2010,"In 2010, <extra_id_0> is the head coach of PFC CSKA Moscow.",<extra_id_0> Leonid Slutsky <extra_id_1>
+420,2010,"In 2010, Seiji Maehara holds the position of <extra_id_0>.",<extra_id_0> Minister for Foreign Affairs <extra_id_1>
+421,2010,"In 2010, Seiji Maehara is a member of the <extra_id_0>.",<extra_id_0> Democratic Party <extra_id_1>
+422,2010,"In 2010, Brian Lenihan, Jnr holds the position of <extra_id_0>.",<extra_id_0> Teachta Dála <extra_id_1>
+423,2010,"In 2010, Orrin Hatch holds the position of <extra_id_0>.",<extra_id_0> United States senator <extra_id_1>
+424,2010,"In 2010, James A. Robinson works for <extra_id_0>.",<extra_id_0> John F. Kennedy School of Government <extra_id_1>
+425,2010,"In 2010, Shane Warne plays for <extra_id_0>.",<extra_id_0> Rajasthan Royals <extra_id_1>
+426,2010,"In 2010, Rohit Sharma plays for <extra_id_0>.",<extra_id_0> Deccan Chargers <extra_id_1>
+427,2010,"In 2010, Jock Landale attended <extra_id_0>.",<extra_id_0> Geelong Grammar School <extra_id_1>
+428,2010,"In 2010, Saleem Shahzad is a member of the <extra_id_0>.",<extra_id_0> Muttahida Qaumi Movement <extra_id_1>
+429,2010,"In 2010, <extra_id_0> is the head coach of UTA Arad.",<extra_id_0> Cristian Todea <extra_id_1>
+430,2010,"In 2010, The Gainesville Sun is owned by <extra_id_0>.",<extra_id_0> The New York Times Company <extra_id_1>
+431,2010,"In 2010, Navjot Singh Sidhu is a member of the <extra_id_0>.",<extra_id_0> Bharatiya Janata Party <extra_id_1>
+432,2010,"In 2010, <extra_id_0> is the head of the government of Capital Region of Denmark.",<extra_id_0> Vibeke Storm Rasmussen <extra_id_1>
+433,2010,"In 2010, <extra_id_0> is the chair of PAIS Alliance.",<extra_id_0> Rafael Correa Delgado <extra_id_1>
+434,2010,"In 2010, Gilbert Arenas plays for <extra_id_0>.",<extra_id_0> Washington Wizards <extra_id_1>
+435,2010,"In 2010, Simon Emil Ammitzbøll is a member of the <extra_id_0>.",<extra_id_0> Liberal Alliance <extra_id_1>
+436,2010,"In 2010, Shahruddin bin Md. Salleh is a member of the <extra_id_0>.",<extra_id_0> United Malays National Organisation <extra_id_1>
+437,2010,"In 2010, <extra_id_0> is the head of the government of Saxony-Anhalt.",<extra_id_0> Wolfgang Böhmer <extra_id_1>
+438,2010,"In 2010, Jessica Ramos works for <extra_id_0>.",<extra_id_0> Service Employees International Union <extra_id_1>
+439,2010,"In 2010, Christophe Steiner is a member of the <extra_id_0>.",<extra_id_0> Rally & Issues <extra_id_1>
+440,2010,"In 2010, <extra_id_0> is the head of the government of Seoul.",<extra_id_0> Oh Se-hoon <extra_id_1>
+441,2010,"In 2010, <extra_id_0> is the head coach of FCU Craiova 1948.",<extra_id_0> Nicolò Napoli <extra_id_1>
+442,2010,"In 2010, Campbell Newman holds the position of <extra_id_0>.",<extra_id_0> Lord Mayor of Brisbane <extra_id_1>
+443,2010,"In 2010, Bernie Sanders is a member of the <extra_id_0>.",<extra_id_0> independent politician <extra_id_1>
+444,2010,"In 2010, <extra_id_0> is the chair of Indian National Congress.",<extra_id_0> Rahul Gandhi <extra_id_1>
+445,2010,"In 2010, <extra_id_0> is the chair of Russian Olympic Committee.",<extra_id_0> Leonid Tyagachev <extra_id_1>
+446,2010,"In 2010, Thierry Breton holds the position of <extra_id_0>.",<extra_id_0> président-directeur général <extra_id_1>
+447,2010,"In 2010, <extra_id_0> is the head of the government of Altai Republic.",<extra_id_0> Alexander Berdnikov <extra_id_1>
+448,2010,"In 2010, Bella Alarie attended <extra_id_0>.",<extra_id_0> National Cathedral School <extra_id_1>
+449,2010,"In 2010, Alan Smith plays for <extra_id_0>.",<extra_id_0> Newcastle United F.C. <extra_id_1>
+450,2010,"In 2010, Desmond Swayne holds the position of <extra_id_0>.",<extra_id_0> Parliamentary Private Secretary to the Prime Minister <extra_id_1>
+451,2010,"In 2010, <extra_id_0> is the chair of FDP.The Liberals.",<extra_id_0> Fulvio Pelli <extra_id_1>
+452,2010,"In 2010, David W. Kissane works for <extra_id_0>.",<extra_id_0> Memorial Sloan Kettering Cancer Center <extra_id_1>
+453,2010,"In 2010, Jordan Henderson plays for <extra_id_0>.",<extra_id_0> England national under-21 football team <extra_id_1>
+454,2010,"In 2010, Lucas Biglia plays for <extra_id_0>.",<extra_id_0> R.S.C. Anderlecht <extra_id_1>
+455,2010,"In 2010, <extra_id_0> is the chair of European Trade Union Confederation.",<extra_id_0> Wanja Lundby-Wedin <extra_id_1>
+456,2010,"In 2010, Ivan Štefanec is a member of the <extra_id_0>.",<extra_id_0> Slovak Democratic and Christian Union – Democratic Party <extra_id_1>
+457,2010,"In 2010, Sara Ganim works for <extra_id_0>.",<extra_id_0> Centre Daily Times <extra_id_1>
+458,2010,"In 2010, Dominique Kalifa works for <extra_id_0>.",<extra_id_0> Sciences Po <extra_id_1>
+459,2010,"In 2010, <extra_id_0> is the head of the government of Odder Municipality.",<extra_id_0> Elvin J. Hansen <extra_id_1>
+460,2010,"In 2010, Christina Warinner works for <extra_id_0>.",<extra_id_0> University of Oklahoma <extra_id_1>
+461,2010,"In 2010, Fideo Di María plays for <extra_id_0>.",<extra_id_0> S.L. Benfica <extra_id_1>
+462,2010,"In 2010, <extra_id_0> is the chair of SWPS University of Social Sciences and Humanities.",<extra_id_0> Andrzej Eliasz <extra_id_1>
+463,2010,"In 2010, José Évrard is a member of the <extra_id_0>.",<extra_id_0> French Communist Party <extra_id_1>
+464,2010,"In 2010, Carol Boggs works for <extra_id_0>.",<extra_id_0> Stanford University <extra_id_1>
+465,2010,"In 2010, Tim Kaine holds the position of <extra_id_0>.",<extra_id_0> Governor of Virginia <extra_id_1>
+466,2010,"In 2010, Scott Laird plays for <extra_id_0>.",<extra_id_0> Stevenage F.C. <extra_id_1>
+467,2010,"In 2010, Caitlin Rivers attended <extra_id_0>.",<extra_id_0> Virginia Tech <extra_id_1>
+468,2010,"In 2010, Jiankui He attended <extra_id_0>.",<extra_id_0> Rice University <extra_id_1>
+469,2010,"In 2010, Keiko Torii works for <extra_id_0>.",<extra_id_0> University of Washington <extra_id_1>
+470,2010,"In 2010, Rivaldo plays for <extra_id_0>.",<extra_id_0> Mogi Mirim Esporte Clube <extra_id_1>
+471,2010,"In 2010, Ken Murphy works for <extra_id_0>.",<extra_id_0> Boots <extra_id_1>
+472,2010,"In 2010, Keith Brown holds the position of <extra_id_0>.","<extra_id_0> Minister for Further Education, Higher Education and Science <extra_id_1>"
+473,2010,"In 2010, <extra_id_0> is the chair of Christian Democratic Union.",<extra_id_0> Angela Merkel <extra_id_1>
+474,2010,"In 2010, Brittney Griner plays for <extra_id_0>.",<extra_id_0> Baylor Lady Bears basketball <extra_id_1>
+475,2010,"In 2010, Phillip Hughes plays for <extra_id_0>.",<extra_id_0> Australia national cricket team <extra_id_1>
+476,2010,"In 2010, Tom Kennedy plays for <extra_id_0>.",<extra_id_0> Rochdale A.F.C. <extra_id_1>
+477,2010,"In 2010, Wayne Swan holds the position of <extra_id_0>.",<extra_id_0> Minister for Finance of Australia <extra_id_1>
+478,2010,"In 2010, Jiří Pospíšil is a member of the <extra_id_0>.",<extra_id_0> Civic Democratic Party <extra_id_1>
+479,2010,"In 2010, Eni Faleomavaega holds the position of <extra_id_0>.",<extra_id_0> United States representative <extra_id_1>
+480,2010,"In 2010, Farida Kabir attended <extra_id_0>.",<extra_id_0> Ahmadu Bello University <extra_id_1>
+481,2010,"In 2010, Nedum Onuoha plays for <extra_id_0>.",<extra_id_0> Sunderland A.F.C. <extra_id_1>
+482,2010,"In 2010, Kalidou Koulibaly plays for <extra_id_0>.",<extra_id_0> FC Metz <extra_id_1>
+483,2010,"In 2010, WKVB is owned by <extra_id_0>.",<extra_id_0> Entercom <extra_id_1>
+484,2010,"In 2010, <extra_id_0> is the head of the government of Jewish Autonomous Oblast.",<extra_id_0> Nikolay Mikhailovich Volkov <extra_id_1>
+485,2010,"In 2010, <extra_id_0> is the chair of Massachusetts Institute of Technology.",<extra_id_0> Susan Hockfield <extra_id_1>
+486,2010,"In 2010, Piyush Goyal holds the position of <extra_id_0>.",<extra_id_0> Member of Rajya Sabha <extra_id_1>
+487,2010,"In 2010, Joy Koesten is a member of the <extra_id_0>.",<extra_id_0> Republican Party <extra_id_1>
+488,2010,"In 2010, Dimitar Berbatov plays for <extra_id_0>.",<extra_id_0> Manchester United F.C. <extra_id_1>
+489,2010,"In 2010, <extra_id_0> is the head coach of F.K. Željezničar Sarajevo.",<extra_id_0> Amar Osim <extra_id_1>
+490,2010,"In 2010, <extra_id_0> is the head of the government of Baltimore.",<extra_id_0> Sheila Dixon <extra_id_1>
+491,2010,"In 2010, Matthew Trundle works for <extra_id_0>.",<extra_id_0> Victoria University of Wellington <extra_id_1>
+492,2010,"In 2010, Mark Hurd works for <extra_id_0>.",<extra_id_0> Hewlett-Packard <extra_id_1>
+493,2010,"In 2010, <extra_id_0> is the chair of European Border and Coast Guard Agency.",<extra_id_0> Ilkka Laitinen <extra_id_1>
+494,2010,"In 2010, <extra_id_0> is the chair of French Football Federation.",<extra_id_0> Jean-Pierre Escalettes <extra_id_1>
+495,2010,"In 2010, Ruairi Quinn holds the position of <extra_id_0>.",<extra_id_0> Teachta Dála <extra_id_1>
+496,2010,"In 2010, Greg Woolf works for <extra_id_0>.",<extra_id_0> University of St Andrews <extra_id_1>
+497,2010,"In 2010, Jérôme Boateng plays for <extra_id_0>.",<extra_id_0> Hamburger SV <extra_id_1>
+498,2010,"In 2010, Craig Reid plays for <extra_id_0>.",<extra_id_0> Newport County A.F.C. <extra_id_1>
+499,2010,"In 2010, John Hayes holds the position of <extra_id_0>.","<extra_id_0> Department for Business, Innovation and Skills <extra_id_1>"
+500,2010,"In 2010, USNS Arrowhead is owned by <extra_id_0>.",<extra_id_0> Hornbeck Offshore Services <extra_id_1>
+501,2010,"In 2010, Lappeenranta Airport is owned by <extra_id_0>.",<extra_id_0> Finavia <extra_id_1>
+502,2010,"In 2010, Justin Amash is a member of the <extra_id_0>.",<extra_id_0> Republican Party <extra_id_1>
+503,2010,"In 2010, Branislav Ivanović plays for <extra_id_0>.",<extra_id_0> Serbia national football team <extra_id_1>
+504,2010,"In 2010, Marcela Aguiñaga is a member of the <extra_id_0>.",<extra_id_0> PAIS Alliance <extra_id_1>
+505,2010,"In 2010, <extra_id_0> is the chair of RCD Mallorca.",<extra_id_0> Josep Maria Pons Irazazábal <extra_id_1>
+506,2010,"In 2010, Sölvi Ottesen plays for <extra_id_0>.",<extra_id_0> F.C. Copenhagen <extra_id_1>
+507,2010,"In 2010, Galit Shmueli works for <extra_id_0>.",<extra_id_0> University of Maryland <extra_id_1>
+508,2010,"In 2010, Adam Lallana plays for <extra_id_0>.",<extra_id_0> Southampton F.C. <extra_id_1>
+509,2010,"In 2010, Vincent Kompany plays for <extra_id_0>.",<extra_id_0> Belgium national football team <extra_id_1>
+510,2010,"In 2010, <extra_id_0> is the head of the government of Saint Petersburg.",<extra_id_0> Valentina Matviyenko <extra_id_1>
+511,2010,"In 2010, Ulrike Lunacek holds the position of <extra_id_0>.",<extra_id_0> member of the European Parliament <extra_id_1>
+512,2010,"In 2010, Chris Dercon works for <extra_id_0>.",<extra_id_0> Haus der Kunst <extra_id_1>
+513,2010,"In 2010, Darius Bogdan Vâlcov is a member of the <extra_id_0>.",<extra_id_0> Democratic Liberal Party <extra_id_1>
+514,2010,"In 2010, Vidya Arankalle works for <extra_id_0>.",<extra_id_0> National Institute of Virology <extra_id_1>
+515,2010,"In 2010, <extra_id_0> is the head of the government of Chaco Province.",<extra_id_0> Jorge Capitanich <extra_id_1>
+516,2010,"In 2010, <extra_id_0> is the head of the government of People's Republic of China.",<extra_id_0> Wen Jiabao <extra_id_1>
+517,2010,"In 2010, <extra_id_0> is the chair of Jamiat Ahle Hadith.",<extra_id_0> Ehsan Elahi Zaheer <extra_id_1>
+518,2010,"In 2010, Luol Deng plays for <extra_id_0>.",<extra_id_0> Chicago Bulls <extra_id_1>
+519,2010,"In 2010, Salvador Sánchez Cerén holds the position of <extra_id_0>.",<extra_id_0> Vice President of El Salvador <extra_id_1>
+520,2010,"In 2010, Franziska Brantner holds the position of <extra_id_0>.",<extra_id_0> member of the European Parliament <extra_id_1>
+521,2010,"In 2010, Eamon Ryan holds the position of <extra_id_0>.",<extra_id_0> Teachta Dála <extra_id_1>
+522,2010,"In 2010, Matteo Renzi is a member of the <extra_id_0>.",<extra_id_0> Democratic Party <extra_id_1>
+523,2010,"In 2010, Katharine A Michie works for <extra_id_0>.",<extra_id_0> Laboratory of Molecular Biology <extra_id_1>
+524,2010,"In 2010, Manu Sareen is a member of the <extra_id_0>.",<extra_id_0> Radical Left <extra_id_1>
+525,2010,"In 2010, <extra_id_0> is the head of the government of Perm Krai.",<extra_id_0> Oleg Chirkunov <extra_id_1>
+526,2010,"In 2010, Heiko Maas holds the position of <extra_id_0>.",<extra_id_0> parliamentary group leader <extra_id_1>
+527,2010,"In 2010, <extra_id_0> is the chair of Norwegian Parliamentary Intelligence Oversight Committee.",<extra_id_0> Helga Hernes <extra_id_1>
+528,2010,"In 2010, Michael Bach works for <extra_id_0>.",<extra_id_0> University of Freiburg <extra_id_1>
+529,2010,"In 2010, Steven Gerrard plays for <extra_id_0>.",<extra_id_0> England national association football team <extra_id_1>
+530,2010,"In 2010, Eskil Brøndbo is a member of the <extra_id_0>.",<extra_id_0> Norwegian Labour Party <extra_id_1>
+531,2010,"In 2010, Safeco Plaza is owned by <extra_id_0>.",<extra_id_0> Hines Interests Limited Partnership <extra_id_1>
+532,2010,"In 2010, Abdrabbuh Mansour Hadi holds the position of <extra_id_0>.",<extra_id_0> Vice President of Yemen <extra_id_1>
+533,2010,"In 2010, Roger Holeindre is a member of the <extra_id_0>.",<extra_id_0> National Rally <extra_id_1>
+534,2010,"In 2010, Maisons du Monde is owned by <extra_id_0>.",<extra_id_0> Apax Partners <extra_id_1>
+535,2010,"In 2010, <extra_id_0> is the chair of Volga Federal District.",<extra_id_0> Grigory Rapota <extra_id_1>
+536,2010,"In 2010, Abba Gumel works for <extra_id_0>.",<extra_id_0> University of Manitoba <extra_id_1>
+537,2010,"In 2010, Péter Polt works for <extra_id_0>.",<extra_id_0> Eötvös Loránd University <extra_id_1>
+538,2010,"In 2010, Mike Pence holds the position of <extra_id_0>.",<extra_id_0> Republican Conference Chairman of the United States House of Representatives <extra_id_1>
+539,2010,"In 2010, <extra_id_0> is the chair of Anti-Defamation League.",<extra_id_0> Abraham Foxman <extra_id_1>
+540,2010,"In 2010, <extra_id_0> is the chair of Likud Central Committee.",<extra_id_0> Moshe Kahlon <extra_id_1>
+541,2010,"In 2010, <extra_id_0> is the chair of Mossad.",<extra_id_0> Tamir Pardo <extra_id_1>
+542,2010,"In 2010, Martin Schulz holds the position of <extra_id_0>.",<extra_id_0> parliamentary group leader <extra_id_1>
+543,2010,"In 2010, <extra_id_0> is the head of the government of Toulouse.",<extra_id_0> Pierre Cohen <extra_id_1>
+544,2010,"In 2010, Juan Orlando Hernández holds the position of <extra_id_0>.",<extra_id_0> President of the National Congress of Honduras <extra_id_1>
+545,2010,"In 2010, <extra_id_0> is the chair of Royal Spanish Football Federation.",<extra_id_0> Ángel María Villar <extra_id_1>
+546,2010,"In 2010, John Hoeven holds the position of <extra_id_0>.",<extra_id_0> Governor of North Dakota <extra_id_1>
+547,2010,"In 2010, Luna is owned by <extra_id_0>.",<extra_id_0> Roman Abramovich <extra_id_1>
+548,2010,"In 2010, <extra_id_0> is the head of the government of Mainz.",<extra_id_0> Jens Beutel <extra_id_1>
+549,2010,"In 2010, Kristin Michelsen is a member of the <extra_id_0>.",<extra_id_0> Social Democratic Party of the Faroe Islands <extra_id_1>
+550,2010,"In 2010, Àngels Martínez Castells is a member of the <extra_id_0>.",<extra_id_0> United and Alternative Left <extra_id_1>
+551,2010,"In 2010, Oliver Günther works for <extra_id_0>.",<extra_id_0> Humboldt University of Berlin <extra_id_1>
+552,2010,"In 2010, Liêm Hoang-Ngoc is a member of the <extra_id_0>.",<extra_id_0> Socialist Party <extra_id_1>
+553,2010,"In 2010, Bob Ainsworth holds the position of <extra_id_0>.",<extra_id_0> Secretary of State for Defence <extra_id_1>
+554,2010,"In 2010, Rachel Croson works for <extra_id_0>.",<extra_id_0> National Science Foundation <extra_id_1>
+555,2010,"In 2010, <extra_id_0> is the chair of Delta Air Lines.",<extra_id_0> Daniel Carp <extra_id_1>
+556,2010,"In 2010, Brian Wecht works for <extra_id_0>.",<extra_id_0> University of Michigan <extra_id_1>
+557,2010,"In 2010, Ruth Simmons works for <extra_id_0>.",<extra_id_0> Brown University <extra_id_1>
+558,2010,"In 2010, Diego Biseswar plays for <extra_id_0>.",<extra_id_0> Netherlands national under-21 football team <extra_id_1>
+559,2010,"In 2010, Keith Earls plays for <extra_id_0>.",<extra_id_0> Ireland Wolfhounds <extra_id_1>
+560,2010,"In 2010, Karin Baur works for <extra_id_0>.",<extra_id_0> ETH Zurich <extra_id_1>
+561,2010,"In 2010, <extra_id_0> is the head coach of FK Partizan.",<extra_id_0> Goran Stevanović <extra_id_1>
+562,2010,"In 2010, Shuli Mualem is a member of the <extra_id_0>.",<extra_id_0> The Jewish Home <extra_id_1>
+563,2010,"In 2010, Evgeny Konnov attended <extra_id_0>.",<extra_id_0> Academic Music College of the Moscow Conservatory <extra_id_1>
+564,2010,"In 2010, Eric Pickles holds the position of <extra_id_0>.","<extra_id_0> Secretary of State for Housing, Communities and Local Government <extra_id_1>"
+565,2010,"In 2010, Tony McMahon plays for <extra_id_0>.",<extra_id_0> Middlesbrough F.C. <extra_id_1>
+566,2010,"In 2010, Caroline Spelman holds the position of <extra_id_0>.","<extra_id_0> Secretary of State for Housing, Communities and Local Government <extra_id_1>"
+567,2010,"In 2010, Graeme Smith plays for <extra_id_0>.",<extra_id_0> Rajasthan Royals <extra_id_1>
+568,2010,"In 2010, J. J. Redick plays for <extra_id_0>.",<extra_id_0> Orlando Magic <extra_id_1>
+569,2010,"In 2010, Michael Noonan holds the position of <extra_id_0>.",<extra_id_0> Teachta Dála <extra_id_1>
+570,2010,"In 2010, Franck Ferrand works for <extra_id_0>.",<extra_id_0> Europe 1 <extra_id_1>
+571,2010,"In 2010, Mihalj Kertes is a member of the <extra_id_0>.",<extra_id_0> Socialist Party of Serbia <extra_id_1>
+572,2010,"In 2010, Computer Weekly is owned by <extra_id_0>.",<extra_id_0> Reed Business Information <extra_id_1>
+573,2010,"In 2010, Antony John Williams works for <extra_id_0>.",<extra_id_0> Royal Society of Chemistry <extra_id_1>
+574,2010,"In 2010, Guy Bailey works for <extra_id_0>.",<extra_id_0> Texas Tech University <extra_id_1>
+575,2010,"In 2010, Enrico dal Covolo holds the position of <extra_id_0>.",<extra_id_0> titular bishop <extra_id_1>
+576,2010,"In 2010, Hsu Hsin-ying is a member of the <extra_id_0>.",<extra_id_0> Kuomintang <extra_id_1>
+577,2010,"In 2010, Kym Anderson works for <extra_id_0>.",<extra_id_0> University of Adelaide <extra_id_1>
+578,2010,"In 2010, Antonis Samaras holds the position of <extra_id_0>.",<extra_id_0> Leader of the Opposition <extra_id_1>
+579,2010,"In 2010, Michael Atwood Mason works for <extra_id_0>.",<extra_id_0> National Museum of Natural History <extra_id_1>
+580,2010,"In 2010, Linda Sánchez holds the position of <extra_id_0>.",<extra_id_0> United States representative <extra_id_1>
+581,2010,"In 2010, Scott Andrews is a member of the <extra_id_0>.",<extra_id_0> Liberal Party of Canada <extra_id_1>
+582,2010,"In 2010, ADV Ocean Shield is owned by <extra_id_0>.",<extra_id_0> DOF ASA <extra_id_1>
+583,2010,"In 2010, GameRankings is owned by <extra_id_0>.",<extra_id_0> CBS Interactive <extra_id_1>
+584,2010,"In 2010, <extra_id_0> is the head of the government of Montpellier Méditerranée Métropole.",<extra_id_0> Georges Frêche <extra_id_1>
+585,2010,"In 2010, <extra_id_0> is the chair of KDU-ČSL.",<extra_id_0> Cyril Svoboda <extra_id_1>
+586,2010,"In 2010, Dacian Cioloș holds the position of <extra_id_0>.",<extra_id_0> European Commissioner for Agriculture and Rural Development <extra_id_1>
+587,2010,"In 2010, Stewart Downing plays for <extra_id_0>.",<extra_id_0> Aston Villa F.C. <extra_id_1>
+588,2010,"In 2010, Don Beyer holds the position of <extra_id_0>.",<extra_id_0> United States Ambassador to Switzerland and Liechtenstein <extra_id_1>
+589,2010,"In 2010, Montserrat Tura i Camafreita is a member of the <extra_id_0>.",<extra_id_0> Socialists' Party of Catalonia <extra_id_1>
+590,2010,"In 2010, Sarafina Nance attended <extra_id_0>.",<extra_id_0> St. Stephen's Episcopal School <extra_id_1>
+591,2010,"In 2010, Sophie Montel is a member of the <extra_id_0>.",<extra_id_0> National Rally <extra_id_1>
+592,2010,"In 2010, <extra_id_0> is the chair of Embassy of Ukraine, Tallinn.",<extra_id_0> Viktor Kryzhanivsky <extra_id_1>
+593,2010,"In 2010, Maumoon Abdul Gayoom is a member of the <extra_id_0>.",<extra_id_0> Dhivehi Rayyithunge Party <extra_id_1>
+594,2010,"In 2010, Anthony Grant plays for <extra_id_0>.",<extra_id_0> Southend United F.C. <extra_id_1>
+595,2010,"In 2010, WOSX is owned by <extra_id_0>.",<extra_id_0> Denison University <extra_id_1>
+596,2010,"In 2010, Quade Cooper plays for <extra_id_0>.",<extra_id_0> Queensland Reds <extra_id_1>
+597,2010,"In 2010, Áron Szilágyi attended <extra_id_0>.",<extra_id_0> Eötvös Loránd University <extra_id_1>
+598,2010,"In 2010, Nicola Fratoianni is a member of the <extra_id_0>.","<extra_id_0> Left, Ecology and Freedom <extra_id_1>"
+599,2010,"In 2010, Jennifer MacLean works for <extra_id_0>.",<extra_id_0> 38 Studios <extra_id_1>
+600,2010,"In 2010, Vouga railway line is owned by <extra_id_0>.",<extra_id_0> REFER <extra_id_1>
+601,2010,"In 2010, Silvio Berlusconi holds the position of <extra_id_0>.",<extra_id_0> Prime Minister of Italy <extra_id_1>
+602,2010,"In 2010, Silvio Berlusconi is a member of the <extra_id_0>.",<extra_id_0> The People of Freedom <extra_id_1>
+603,2010,"In 2010, Justin Thomas attended <extra_id_0>.",<extra_id_0> St. Xavier High School <extra_id_1>
+604,2010,"In 2010, Kaspars Gerhards is a member of the <extra_id_0>.",<extra_id_0> For Fatherland and Freedom/LNNK <extra_id_1>
+605,2010,"In 2010, Jina Osothsilp works for <extra_id_0>.",<extra_id_0> GMM Tai Hub <extra_id_1>
+606,2010,"In 2010, Kathleen Rice holds the position of <extra_id_0>.",<extra_id_0> district attorney <extra_id_1>
+607,2010,"In 2010, Ko Wen-je is a member of the <extra_id_0>.",<extra_id_0> independent politician <extra_id_1>
+608,2010,"In 2010, Rigobert Song plays for <extra_id_0>.",<extra_id_0> Trabzonspor <extra_id_1>
+609,2010,"In 2010, <extra_id_0> is the head coach of Borussia Dortmund.",<extra_id_0> Jürgen Klopp <extra_id_1>
+610,2010,"In 2010, Garik Papoyan works for <extra_id_0>.",<extra_id_0> Shant TV <extra_id_1>
+611,2010,"In 2010, Ana Pombo works for <extra_id_0>.",<extra_id_0> Imperial College London <extra_id_1>
+612,2010,"In 2010, <extra_id_0> is the head of the government of Province of Buenos Aires.",<extra_id_0> Daniel Scioli <extra_id_1>
+613,2010,"In 2010, Francis Maude holds the position of <extra_id_0>.",<extra_id_0> Chancellor of the Duchy of Lancaster <extra_id_1>
+614,2010,"In 2010, Lieven Scheire works for <extra_id_0>.",<extra_id_0> Woestijnvis <extra_id_1>
+615,2010,"In 2010, <extra_id_0> is the head of the government of Memphis.",<extra_id_0> A C Wharton <extra_id_1>
+616,2010,"In 2010, Piero Aiello is a member of the <extra_id_0>.",<extra_id_0> The People of Freedom <extra_id_1>
+617,2010,"In 2010, Massimo Zedda is a member of the <extra_id_0>.","<extra_id_0> Left, Ecology and Freedom <extra_id_1>"
+618,2010,"In 2010, Patricia Harris works for <extra_id_0>.",<extra_id_0> New York City <extra_id_1>
+619,2010,"In 2010, Peter J. Wagner works for <extra_id_0>.",<extra_id_0> Field Museum of Natural History <extra_id_1>
+620,2010,"In 2010, José Antonio Carrillo works for <extra_id_0>.",<extra_id_0> Autonomous University of Barcelona <extra_id_1>
+621,2010,"In 2010, <extra_id_0> is the head coach of Philadelphia Eagles.",<extra_id_0> Andy Reid <extra_id_1>
+622,2010,"In 2010, <extra_id_0> is the head of the government of Bavaria.",<extra_id_0> Horst Seehofer <extra_id_1>
+623,2010,"In 2010, Diane Holl works for <extra_id_0>.",<extra_id_0> Michael Waltrip Racing <extra_id_1>
+624,2010,"In 2010, <extra_id_0> is the head coach of Tampa Bay Rowdies.",<extra_id_0> Perry Van der Beck <extra_id_1>
+625,2010,"In 2010, <extra_id_0> is the head of the government of New Jersey.",<extra_id_0> Chris Christie <extra_id_1>
+626,2010,"In 2010, Carrie Lam holds the position of <extra_id_0>.",<extra_id_0> Secretary for Development <extra_id_1>
+627,2010,"In 2010, Hamdi Salihi plays for <extra_id_0>.",<extra_id_0> SK Rapid Wien <extra_id_1>
+628,2010,"In 2010, Raheem Sterling plays for <extra_id_0>.",<extra_id_0> England national under-17 football team <extra_id_1>
+629,2010,"In 2010, János Volner is a member of the <extra_id_0>.",<extra_id_0> Jobbik <extra_id_1>
+630,2010,"In 2010, <extra_id_0> is the head of the government of Sector 5.",<extra_id_0> Marian Vanghelie <extra_id_1>
+631,2010,"In 2010, Tele2 Russia is owned by <extra_id_0>.",<extra_id_0> Tele2 <extra_id_1>
+632,2010,"In 2010, Mark Rober works for <extra_id_0>.",<extra_id_0> Jet Propulsion Laboratory <extra_id_1>
+633,2010,"In 2010, Giuseppe Civati is a member of the <extra_id_0>.",<extra_id_0> Democratic Party <extra_id_1>
+634,2010,"In 2010, Kristalina Georgieva holds the position of <extra_id_0>.","<extra_id_0> European Commissioner for International Cooperation, Humanitarian Aid and Crisis Response <extra_id_1>"
+635,2010,"In 2010, <extra_id_0> is the head of the government of Amsterdam.",<extra_id_0> Lodewijk Asscher <extra_id_1>
+636,2010,"In 2010, <extra_id_0> is the head of the government of Amsterdam.",<extra_id_0> Lodewijk Asscher <extra_id_1>
+637,2010,"In 2010, Jonathan Mensah plays for <extra_id_0>.",<extra_id_0> Ghana national under-20 football team <extra_id_1>
+638,2010,"In 2010, Joseph Daul holds the position of <extra_id_0>.",<extra_id_0> member of the European Parliament <extra_id_1>
+639,2010,"In 2010, Migen Memelli plays for <extra_id_0>.",<extra_id_0> Flamurtari Vlorë <extra_id_1>
+640,2010,"In 2010, Tony Abbott holds the position of <extra_id_0>.",<extra_id_0> Leader of the Opposition of Australia <extra_id_1>
+641,2010,"In 2010, Ulrike Guérot works for <extra_id_0>.",<extra_id_0> European Council on Foreign Relations <extra_id_1>
+642,2010,"In 2010, <extra_id_0> is the chair of Roman Catholic Archdiocese of Kingston.",<extra_id_0> Brendan O'Brien <extra_id_1>
+643,2010,"In 2010, Rathika Sitsabaiesan is a member of the <extra_id_0>.",<extra_id_0> New Democratic Party <extra_id_1>
+644,2010,"In 2010, Hugo Barra works for <extra_id_0>.",<extra_id_0> Google <extra_id_1>
+645,2010,"In 2010, <extra_id_0> is the head of the government of Austria.",<extra_id_0> Werner Faymann <extra_id_1>
+646,2010,"In 2010, Sol Campbell plays for <extra_id_0>.",<extra_id_0> Arsenal F.C. <extra_id_1>
+647,2010,"In 2010, Yehoshua Menachem Pollack is a member of the <extra_id_0>.",<extra_id_0> Agudat Yisrael <extra_id_1>
+648,2010,"In 2010, Giorgia Meloni is a member of the <extra_id_0>.",<extra_id_0> The People of Freedom <extra_id_1>
+649,2010,"In 2010, Danville Register & Bee is owned by <extra_id_0>.",<extra_id_0> Berkshire Hathaway <extra_id_1>
+650,2010,"In 2010, Virginia Barbour works for <extra_id_0>.",<extra_id_0> Public Library of Science <extra_id_1>
+651,2010,"In 2010, <extra_id_0> is the head coach of Fremantle Football Club.",<extra_id_0> Mark Harvey <extra_id_1>
+652,2010,"In 2010, <extra_id_0> is the head of the government of Batangas.",<extra_id_0> Vilma Santos <extra_id_1>
+653,2010,"In 2010, Mònica Terribas works for <extra_id_0>.",<extra_id_0> Television of Catalonia <extra_id_1>
+654,2010,"In 2010, <extra_id_0> is the head of the government of Sector 1.",<extra_id_0> Andrei Chiliman <extra_id_1>
+655,2010,"In 2010, Anerood Jugnauth holds the position of <extra_id_0>.",<extra_id_0> President of Mauritius <extra_id_1>
+656,2010,"In 2010, Sarah Zerbes works for <extra_id_0>.",<extra_id_0> University of Exeter <extra_id_1>
+657,2010,"In 2010, <extra_id_0> is the head of the government of Basse-Terre.",<extra_id_0> Lucette Michaux-Chevry <extra_id_1>
+658,2010,"In 2010, Kevin Pietersen plays for <extra_id_0>.",<extra_id_0> Royal Challengers Bangalore <extra_id_1>
+659,2010,"In 2010, Valpak is owned by <extra_id_0>.",<extra_id_0> Cox Enterprises <extra_id_1>
+660,2010,"In 2010, José Ramón de la Morena works for <extra_id_0>.",<extra_id_0> Cadena SER <extra_id_1>
+661,2010,"In 2010, Bekim Balaj plays for <extra_id_0>.",<extra_id_0> Albania national under-21 football team <extra_id_1>
+662,2010,"In 2010, Almazbek Atambayev holds the position of <extra_id_0>.",<extra_id_0> Prime Minister of Kyrgyzstan <extra_id_1>
+663,2010,"In 2010, Carsen Stringer attended <extra_id_0>.",<extra_id_0> University of Pittsburgh <extra_id_1>
+664,2010,"In 2010, Philippe Coutinho plays for <extra_id_0>.",<extra_id_0> Inter Milan <extra_id_1>
+665,2010,"In 2010, Andrus Ansip holds the position of <extra_id_0>.",<extra_id_0> Prime Minister of Estonia <extra_id_1>
+666,2010,"In 2010, Todd Young holds the position of <extra_id_0>.",<extra_id_0> prosecutor <extra_id_1>
+667,2010,"In 2010, <extra_id_0> is the head coach of Los Angeles Galaxy.",<extra_id_0> Bruce Arena <extra_id_1>
+668,2010,"In 2010, Michael Brown plays for <extra_id_0>.",<extra_id_0> Portsmouth F.C. <extra_id_1>
+669,2010,"In 2010, <extra_id_0> is the chair of HSBC.",<extra_id_0> Douglas Flint <extra_id_1>
+670,2010,"In 2010, David M. Evans works for <extra_id_0>.",<extra_id_0> University of Bristol <extra_id_1>
+671,2010,"In 2010, <extra_id_0> is the chair of Ocado.",<extra_id_0> Michael Grade <extra_id_1>
+672,2010,"In 2010, Alan Kelly holds the position of <extra_id_0>.",<extra_id_0> member of the European Parliament <extra_id_1>
+673,2010,"In 2010, Marcus Berg plays for <extra_id_0>.",<extra_id_0> Hamburger SV <extra_id_1>
+674,2010,"In 2010, Philip Hammond holds the position of <extra_id_0>.",<extra_id_0> Secretary of State for Transport <extra_id_1>
+675,2010,"In 2010, Flåm Line is owned by <extra_id_0>.",<extra_id_0> Norwegian National Rail Administration <extra_id_1>
+676,2010,"In 2010, Brian O’Driscoll plays for <extra_id_0>.",<extra_id_0> Ireland national rugby union team <extra_id_1>
+677,2010,"In 2010, Christopher Barner-Kowollik works for <extra_id_0>.",<extra_id_0> Karlsruhe Institute of Technology <extra_id_1>
+678,2010,"In 2010, Vianney attended <extra_id_0>.",<extra_id_0> PSB Paris School of Business <extra_id_1>
+679,2010,"In 2010, Independent Tribune is owned by <extra_id_0>.",<extra_id_0> Berkshire Hathaway <extra_id_1>
+680,2010,"In 2010, Joan Rigol i Roig is a member of the <extra_id_0>.",<extra_id_0> Democratic Union of Catalonia <extra_id_1>
+681,2010,"In 2010, <extra_id_0> is the head coach of Gold Coast Football Club.",<extra_id_0> Guy McKenna <extra_id_1>
+682,2010,"In 2010, Edgar Davids plays for <extra_id_0>.",<extra_id_0> Suriname national football team <extra_id_1>
+683,2010,"In 2010, Timothy Masiu is a member of the <extra_id_0>.",<extra_id_0> People's Progress Party <extra_id_1>
+684,2010,"In 2010, Stephen Urban is a member of the <extra_id_0>.",<extra_id_0> Democratic Party <extra_id_1>
+685,2010,"In 2010, Craig Silverstein works for <extra_id_0>.",<extra_id_0> Google <extra_id_1>
+686,2010,"In 2010, Pavlos Polakis is a member of the <extra_id_0>.",<extra_id_0> New Left Current <extra_id_1>
+687,2010,"In 2010, <extra_id_0> is the chair of Jammu and Kashmir People's Democratic Party.",<extra_id_0> Mufti Mohammad Sayeed <extra_id_1>
+688,2010,"In 2010, <extra_id_0> is the head of the government of Hanover.",<extra_id_0> Stephan Weil <extra_id_1>
+689,2010,"In 2010, Léa Salamé works for <extra_id_0>.",<extra_id_0> France 24 <extra_id_1>
+690,2010,"In 2010, Ali Fasir plays for <extra_id_0>.",<extra_id_0> Club Valencia <extra_id_1>
+691,2010,"In 2010, Chris Andrews is a member of the <extra_id_0>.",<extra_id_0> Fianna Fáil <extra_id_1>
+692,2010,"In 2010, Manuel Bartlett Díaz is a member of the <extra_id_0>.",<extra_id_0> Institutional Revolutionary Party <extra_id_1>
+693,2010,"In 2010, Melanie Keen works for <extra_id_0>.",<extra_id_0> Iniva <extra_id_1>
+694,2010,"In 2010, Maxim Reshetnikov works for <extra_id_0>.",<extra_id_0> Government of Moscow <extra_id_1>
+695,2010,"In 2010, Roy Blunt holds the position of <extra_id_0>.",<extra_id_0> United States representative <extra_id_1>
+696,2010,"In 2010, Whitney Engen plays for <extra_id_0>.",<extra_id_0> Chicago Red Stars <extra_id_1>
+697,2010,"In 2010, Norbert Klein is a member of the <extra_id_0>.",<extra_id_0> People's Party for Freedom and Democracy <extra_id_1>
+698,2010,"In 2010, <extra_id_0> is the head coach of AFC Ajax.",<extra_id_0> Martin Jol <extra_id_1>
+699,2010,"In 2010, Craig Gordon plays for <extra_id_0>.",<extra_id_0> Sunderland A.F.C. <extra_id_1>
+700,2010,"In 2010, Susan Rice holds the position of <extra_id_0>.",<extra_id_0> United States Ambassador to the United Nations <extra_id_1>
+701,2010,"In 2010, John L. Hennessy holds the position of <extra_id_0>.",<extra_id_0> president <extra_id_1>
+702,2010,"In 2010, Wolfgang Dahmen works for <extra_id_0>.",<extra_id_0> RWTH Aachen University <extra_id_1>
+703,2010,"In 2010, Josep Ramon Bosch i Codina is a member of the <extra_id_0>.",<extra_id_0> People's Party <extra_id_1>
+704,2010,"In 2010, <extra_id_0> is the chair of Swedish People's Party of Finland.",<extra_id_0> Stefan Wallin <extra_id_1>
+705,2010,"In 2010, Jerome Guillen works for <extra_id_0>.",<extra_id_0> Daimler AG <extra_id_1>
+706,2010,"In 2010, Rafael van der Vaart plays for <extra_id_0>.",<extra_id_0> Tottenham Hotspur F.C. <extra_id_1>
+707,2010,"In 2010, Carola-Bibiane Schönlieb works for <extra_id_0>.",<extra_id_0> University of Cambridge <extra_id_1>
+708,2010,"In 2010, Cristiano Ronaldo plays for <extra_id_0>.",<extra_id_0> Real Madrid CF <extra_id_1>
+709,2010,"In 2010, <extra_id_0> is the head of the government of Maguindanao.",<extra_id_0> Esmael Mangudadatu <extra_id_1>
+710,2010,"In 2010, Jole Santelli is a member of the <extra_id_0>.",<extra_id_0> The People of Freedom <extra_id_1>
+711,2010,"In 2010, Ed Balls holds the position of <extra_id_0>.",<extra_id_0> Secretary of State for Education <extra_id_1>
+712,2010,"In 2010, Ruud van Nistelrooy plays for <extra_id_0>.",<extra_id_0> Hamburger SV <extra_id_1>
+713,2010,"In 2010, Tyson Chandler plays for <extra_id_0>.",<extra_id_0> Dallas Mavericks <extra_id_1>
+714,2010,"In 2010, Suzan DelBene holds the position of <extra_id_0>.",<extra_id_0> director <extra_id_1>
+715,2010,"In 2010, Paul Golding is a member of the <extra_id_0>.",<extra_id_0> British National Party <extra_id_1>
+716,2010,"In 2010, Paola Binetti is a member of the <extra_id_0>.",<extra_id_0> Democratic Party <extra_id_1>
+717,2010,"In 2010, Petr Ježek is a member of the <extra_id_0>.",<extra_id_0> ANO 2011 <extra_id_1>
+718,2010,"In 2010, <extra_id_0> is the head of the government of Budapest District IV.",<extra_id_0> Zsolt Wintermantel <extra_id_1>
+719,2010,"In 2010, Maikel Kieftenbeld plays for <extra_id_0>.",<extra_id_0> Netherlands national under-21 football team <extra_id_1>
+720,2010,"In 2010, Martin Hamilton-Smith is a member of the <extra_id_0>.",<extra_id_0> Liberal Party of Australia <extra_id_1>
+721,2010,"In 2010, Yong Hye-in is a member of the <extra_id_0>.",<extra_id_0> Labor Party <extra_id_1>
+722,2010,"In 2010, Andy Carroll plays for <extra_id_0>.",<extra_id_0> Newcastle United F.C. <extra_id_1>
+723,2010,"In 2010, André Schembri plays for <extra_id_0>.",<extra_id_0> Ferencvárosi TC <extra_id_1>
+724,2010,"In 2010, Carlos Zambrano plays for <extra_id_0>.",<extra_id_0> FC St. Pauli <extra_id_1>
+725,2010,"In 2010, <extra_id_0> is the head of the government of Vitré Communauté.",<extra_id_0> Pierre Méhaignerie <extra_id_1>
+726,2010,"In 2010, Østfold Line is owned by <extra_id_0>.",<extra_id_0> Norwegian National Rail Administration <extra_id_1>
+727,2010,"In 2010, Kaja Kallas works for <extra_id_0>.",<extra_id_0> Estonian Business School <extra_id_1>
+728,2010,"In 2010, Dimitris Kremastinos is a member of the <extra_id_0>.",<extra_id_0> Panhellenic Socialist Movement <extra_id_1>
+729,2010,"In 2010, Oliver Letwin holds the position of <extra_id_0>.",<extra_id_0> minister of state <extra_id_1>
+730,2010,"In 2010, Li Keqiang holds the position of <extra_id_0>.",<extra_id_0> Vice Premier of the State Council of the People's Republic of China <extra_id_1>
+731,2010,"In 2010, <extra_id_0> is the head of the government of Saguenay.",<extra_id_0> Jean Tremblay <extra_id_1>
+732,2010,"In 2010, <extra_id_0> is the head coach of Yuzuru Hanyū.",<extra_id_0> Nanami Abe <extra_id_1>
+733,2010,"In 2010, Călin Popescu-Tăriceanu is a member of the <extra_id_0>.",<extra_id_0> National Liberal Party <extra_id_1>
+734,2010,"In 2010, Levi Mackin plays for <extra_id_0>.",<extra_id_0> York City F.C. <extra_id_1>
+735,2010,"In 2010, Fabián Caballero plays for <extra_id_0>.",<extra_id_0> Club Nacional <extra_id_1>
+736,2010,"In 2010, <extra_id_0> is the head of the government of Saratov Oblast.",<extra_id_0> Pavel Ipatov <extra_id_1>
+737,2010,"In 2010, Tim Walz holds the position of <extra_id_0>.",<extra_id_0> United States representative <extra_id_1>
+738,2010,"In 2010, <extra_id_0> is the chair of Union of European Football Associations.",<extra_id_0> Michel Platini <extra_id_1>
+739,2010,"In 2010, Shpend Ahmeti is a member of the <extra_id_0>.",<extra_id_0> New Spirit Party <extra_id_1>
+740,2010,"In 2010, Chris Turney works for <extra_id_0>.",<extra_id_0> University of Exeter <extra_id_1>
+741,2010,"In 2010, Viviane Reding holds the position of <extra_id_0>.","<extra_id_0> European Commissioner for Justice, Fundamental Rights and Citizenship <extra_id_1>"
+742,2010,"In 2010, Jim Murphy holds the position of <extra_id_0>.",<extra_id_0> Secretary of State for Scotland <extra_id_1>
+743,2010,"In 2010, U. Reneé Hall works for <extra_id_0>.",<extra_id_0> Detroit Police Department <extra_id_1>
+744,2010,"In 2010, Jim Justice is a member of the <extra_id_0>.",<extra_id_0> Republican Party <extra_id_1>
+745,2010,"In 2010, Ari Kelman works for <extra_id_0>.","<extra_id_0> University of California, Davis <extra_id_1>"
+746,2010,"In 2010, Politico Europe is owned by <extra_id_0>.",<extra_id_0> Economist Group <extra_id_1>
+747,2010,"In 2010, Sonja Kovač attended <extra_id_0>.",<extra_id_0> Faculty of Law of the University of Zagreb <extra_id_1>
+748,2010,"In 2010, Jacques Le Nay is a member of the <extra_id_0>.",<extra_id_0> Union for a Popular Movement <extra_id_1>
+749,2010,"In 2010, <extra_id_0> is the head of the government of Plzeň Region.",<extra_id_0> Milada Emmerová <extra_id_1>
+750,2010,"In 2010, Adrian Peterson plays for <extra_id_0>.",<extra_id_0> Minnesota Vikings <extra_id_1>
+751,2010,"In 2010, Kylie Moore-Gilbert attended <extra_id_0>.",<extra_id_0> University of Cambridge <extra_id_1>
+752,2010,"In 2010, <extra_id_0> is the chair of Economic Community of West African States.",<extra_id_0> Umaru Musa Yar'Adua <extra_id_1>
+753,2010,"In 2010, Edna Molewa holds the position of <extra_id_0>.",<extra_id_0> Minister of Water and Environmental Affairs <extra_id_1>
+754,2010,"In 2010, Adam Hammill plays for <extra_id_0>.",<extra_id_0> Barnsley F.C. <extra_id_1>
+755,2010,"In 2010, Anne-Sophie Lapix works for <extra_id_0>.",<extra_id_0> Canal+ <extra_id_1>
+756,2010,"In 2010, Monty Panesar plays for <extra_id_0>.",<extra_id_0> Sussex County Cricket Club <extra_id_1>
+757,2010,"In 2010, Anthony Annan plays for <extra_id_0>.",<extra_id_0> Ghana national football team <extra_id_1>
+758,2010,"In 2010, Ed Davey holds the position of <extra_id_0>.",<extra_id_0> Liberal Democrat Frontbench Team <extra_id_1>
+759,2010,"In 2010, <extra_id_0> is the head of the government of Nagykanizsa.",<extra_id_0> Péter Cseresnyés <extra_id_1>
+760,2010,"In 2010, Sorin Cîmpeanu is a member of the <extra_id_0>.",<extra_id_0> Alliance of Liberals and Democrats Party (Romania) <extra_id_1>
+761,2010,"In 2010, Ashlyn Harris plays for <extra_id_0>.",<extra_id_0> Washington Freedom <extra_id_1>
+762,2010,"In 2010, Marios Matsakis is a member of the <extra_id_0>.",<extra_id_0> independent politician <extra_id_1>
+763,2010,"In 2010, Ricardo Carvalho plays for <extra_id_0>.",<extra_id_0> Real Madrid CF <extra_id_1>
+764,2010,"In 2010, Rhyne Howard attended <extra_id_0>.",<extra_id_0> Bradley Central High School <extra_id_1>
+765,2010,"In 2010, <extra_id_0> is the head of the government of Gävleborg county.",<extra_id_0> Barbro Holmberg <extra_id_1>
+766,2010,"In 2010, Joachim Starbatty is a member of the <extra_id_0>.",<extra_id_0> Alternative for Germany <extra_id_1>
+767,2010,"In 2010, Toni Postius Terrado is a member of the <extra_id_0>.",<extra_id_0> Democratic Convergence of Catalonia <extra_id_1>
+768,2010,"In 2010, Anna Theologou is a member of the <extra_id_0>.",<extra_id_0> Solidarity Movement (Cyprus) <extra_id_1>
+769,2010,"In 2010, <extra_id_0> is the chair of Social Democratic Party of Germany.",<extra_id_0> Sigmar Gabriel <extra_id_1>
+770,2010,"In 2010, <extra_id_0> is the chair of Asian Development Bank.",<extra_id_0> Haruhiko Kuroda <extra_id_1>
+771,2010,"In 2010, Barbara Graziosi works for <extra_id_0>.",<extra_id_0> Durham University <extra_id_1>
+772,2010,"In 2010, <extra_id_0> is the chair of People's Freedom Party.",<extra_id_0> Vladimir Ryzhkov <extra_id_1>
+773,2010,"In 2010, Helen Clare Bostock works for <extra_id_0>.",<extra_id_0> National Institute of Water and Atmospheric Research <extra_id_1>
+774,2010,"In 2010, Monica Macovei is a member of the <extra_id_0>.",<extra_id_0> Democratic Liberal Party <extra_id_1>
+775,2010,"In 2010, Andrés Iniesta plays for <extra_id_0>.",<extra_id_0> FC Barcelona <extra_id_1>
+776,2010,"In 2010, Noemí de Miguel works for <extra_id_0>.",<extra_id_0> Canal+ <extra_id_1>
+777,2010,"In 2010, Cha Du-ri plays for <extra_id_0>.",<extra_id_0> South Korea national football team <extra_id_1>
+778,2010,"In 2010, Henrietta Harrison works for <extra_id_0>.",<extra_id_0> Harvard University <extra_id_1>
+779,2010,"In 2010, <extra_id_0> is the chair of Embassy of Ukraine, Minsk.",<extra_id_0> Roman Bezsmertnyi <extra_id_1>
+780,2010,"In 2010, Peadar Tóibín is a member of the <extra_id_0>.",<extra_id_0> Sinn Féin <extra_id_1>
+781,2010,"In 2010, Ramires plays for <extra_id_0>.",<extra_id_0> S.L. Benfica <extra_id_1>
+782,2010,"In 2010, Vassilis Spanoulis plays for <extra_id_0>.",<extra_id_0> Panathinaikos B.C. <extra_id_1>
+783,2010,"In 2010, Westfield Montgomery is owned by <extra_id_0>.",<extra_id_0> Westfield Group <extra_id_1>
+784,2010,"In 2010, Kelsey Plum attended <extra_id_0>.",<extra_id_0> La Jolla Country Day School <extra_id_1>
+785,2010,"In 2010, Wojciech Szczęsny plays for <extra_id_0>.",<extra_id_0> Arsenal F.C. <extra_id_1>
+786,2010,"In 2010, Paavo Väyrynen holds the position of <extra_id_0>.",<extra_id_0> Minister for European Affairs and Foreign Trade <extra_id_1>
+787,2010,"In 2010, Paavo Väyrynen is a member of the <extra_id_0>.",<extra_id_0> Centre Party <extra_id_1>
+788,2010,"In 2010, Jack Wilshere plays for <extra_id_0>.",<extra_id_0> Arsenal F.C. <extra_id_1>
+789,2010,"In 2010, Mahathir Mohamad is a member of the <extra_id_0>.",<extra_id_0> United Malays National Organisation <extra_id_1>
+790,2010,"In 2010, <extra_id_0> is the head coach of France national rugby league team.",<extra_id_0> Bobbie Goulding <extra_id_1>
+791,2010,"In 2010, Patrick Kisnorbo plays for <extra_id_0>.",<extra_id_0> Leeds United F.C. <extra_id_1>
+792,2010,"In 2010, Mesut Özil plays for <extra_id_0>.",<extra_id_0> Real Madrid CF <extra_id_1>
+793,2010,"In 2010, Marcelo Díaz plays for <extra_id_0>.",<extra_id_0> Club Universidad de Chile <extra_id_1>
+794,2010,"In 2010, Marie-Christine Blandin is a member of the <extra_id_0>.",<extra_id_0> Europe Ecology – The Greens <extra_id_1>
+795,2010,"In 2010, Stephen Timms holds the position of <extra_id_0>.",<extra_id_0> Minister of State for Competitiveness <extra_id_1>
+796,2010,"In 2010, F. Richard Spencer holds the position of <extra_id_0>.",<extra_id_0> auxiliary bishop <extra_id_1>
+797,2010,"In 2010, Clifford Williams works for <extra_id_0>.",<extra_id_0> Trinity International University <extra_id_1>
+798,2010,"In 2010, Claudio Nastruzzi works for <extra_id_0>.",<extra_id_0> University of Ferrara <extra_id_1>
+799,2010,"In 2010, Chris Porter plays for <extra_id_0>.",<extra_id_0> Derby County F.C. <extra_id_1>
+800,2010,"In 2010, Joyce Banda holds the position of <extra_id_0>.",<extra_id_0> Vice President of Malawi <extra_id_1>
+801,2010,"In 2010, Frank Lampard plays for <extra_id_0>.",<extra_id_0> England national association football team <extra_id_1>
+802,2010,"In 2010, David McNarry is a member of the <extra_id_0>.",<extra_id_0> Ulster Unionist Party <extra_id_1>
+803,2010,"In 2010, <extra_id_0> is the head of the government of Nur-Sultan.",<extra_id_0> Imangali Tasmagambetov <extra_id_1>
+804,2010,"In 2010, Paola Pabón is a member of the <extra_id_0>.",<extra_id_0> PAIS Alliance <extra_id_1>
+805,2010,"In 2010, <extra_id_0> is the head of the government of Guinea.",<extra_id_0> Mamady Youla <extra_id_1>
+806,2010,"In 2010, Vera Papisova works for <extra_id_0>.",<extra_id_0> Massachusetts General Hospital <extra_id_1>
+807,2010,"In 2010, Jonah Berger works for <extra_id_0>.",<extra_id_0> University of Pennsylvania <extra_id_1>
+808,2010,"In 2010, Clarence Seedorf plays for <extra_id_0>.",<extra_id_0> Associazione Calcio Milan <extra_id_1>
+809,2010,"In 2010, Marc Bernhard is a member of the <extra_id_0>.",<extra_id_0> Christian Democratic Union <extra_id_1>
+810,2010,"In 2010, Jonas Gahr Støre holds the position of <extra_id_0>.",<extra_id_0> Foreign Minister of Norway <extra_id_1>
+811,2010,"In 2010, Vyacheslav Volodin holds the position of <extra_id_0>.",<extra_id_0> Deputy Chairman of the Government of the Russian Federation <extra_id_1>
+812,2010,"In 2010, Jan Vertonghen plays for <extra_id_0>.",<extra_id_0> AFC Ajax <extra_id_1>
+813,2010,"In 2010, Fernando Cheung is a member of the <extra_id_0>.",<extra_id_0> Civic Party <extra_id_1>
+814,2010,"In 2010, Indira Alfonzo works for <extra_id_0>.",<extra_id_0> Universidad Militar Bolivariana de Venezuela <extra_id_1>
+815,2010,"In 2010, Daniel Inouye holds the position of <extra_id_0>.",<extra_id_0> United States senator <extra_id_1>
+816,2010,"In 2010, Paolo Alli is a member of the <extra_id_0>.",<extra_id_0> The People of Freedom <extra_id_1>
+817,2010,"In 2010, Angelino Alfano is a member of the <extra_id_0>.",<extra_id_0> The People of Freedom <extra_id_1>
+818,2010,"In 2010, Gerardo Buganza is a member of the <extra_id_0>.",<extra_id_0> Institutional Revolutionary Party <extra_id_1>
+819,2010,"In 2010, Renato Schifani holds the position of <extra_id_0>.",<extra_id_0> President of the Italian Senate <extra_id_1>

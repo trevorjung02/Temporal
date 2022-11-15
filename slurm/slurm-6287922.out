@@ -1,0 +1,135 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-2080ti
+#SBATCH --account=cse
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=1-00:00:00 
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+# WMT -> Templama
+# python run.py --config configs/templama/training/t5_baseline_full.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.178-em_score=0.149.ckpt
+# python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtkadapter_2010_2freeze_158_128/epoch=1-f1_score=0.127-em_score=0.105.ckpt
+# python run.py --config configs/templama/training/t5_kadapters_soft_full.json -checkpoint_path outputs/wmtkadapter_soft_full_2freeze_158_128/epoch=0-f1_score=0.091-em_score=0.076.ckpt
+
+# WMT baseline -> WMT adapters
+# python run.py --config configs/wmt/training/t5_kadapters_soft_full.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.178-em_score=0.149.ckpt
+# python run.py --config configs/wmt/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.178-em_score=0.149.ckpt
+
+# WMT -> SituatedQA
+# python run.py --config configs/situatedqa/training/t5_baseline_full.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.178-em_score=0.149.ckpt
+# python run.py --config configs/situatedqa/training/t5_kadapters_soft_yearly_2freeze.json -checkpoint_path outputs/wmtkadapter_soft_full_2freeze_158_128/epoch=0-f1_score=0.091-em_score=0.076.ckpt
+
+# Preprocess data
+python preprocess_nyt_data.py 2010 -end_date=2020
+
+# python run.py --config configs/wmt/training/t5_baseline_full.json --------------------
+number of sentences: 10000
+10000 sentences loaded
+Create sentences: 0.0053595069999996525 seconds
+total sentences 10000
+Run spacy on sentences: 5.8340000004264425e-06 seconds
+Construct datasets: 8.152612474000001 seconds
+max input length = 178
+max output length = 31
+Write datasets: 0.04195201100000112 seconds
+number of sentences: 10000
+10000 sentences loaded
+Create sentences: 0.004006992000000764 seconds
+total sentences 10000
+Run spacy on sentences: 4.527999999837107e-06 seconds
+Construct datasets: 7.582269225999999 seconds
+max input length = 317
+max output length = 31
+Write datasets: 0.0411246890000001 seconds
+number of sentences: 10000
+10000 sentences loaded
+Create sentences: 0.004862583999997838 seconds
+total sentences 10000
+Run spacy on sentences: 4.918000001907785e-06 seconds
+Construct datasets: 7.716527808000002 seconds
+max input length = 194
+max output length = 21
+Write datasets: 0.041261759999997594 seconds
+number of sentences: 10000
+10000 sentences loaded
+Create sentences: 0.004250652999999716 seconds
+total sentences 10000
+Run spacy on sentences: 5.091000002011015e-06 seconds
+Construct datasets: 7.942728046000003 seconds
+max input length = 179
+max output length = 23
+Write datasets: 0.04218735399999929 seconds
+number of sentences: 10000
+10000 sentences loaded
+Create sentences: 0.004228492999999389 seconds
+total sentences 10000
+Run spacy on sentences: 4.028999995853155e-06 seconds
+Construct datasets: 7.961664709000004 seconds
+max input length = 162
+max output length = 26
+Write datasets: 0.042868878999996696 seconds
+number of sentences: 10000
+10000 sentences loaded
+Create sentences: 0.00428839699999628 seconds
+total sentences 10000
+Run spacy on sentences: 4.836999998758529e-06 seconds
+Construct datasets: 8.210023069000002 seconds
+max input length = 188
+max output length = 23
+Write datasets: 0.04288697799999852 seconds
+number of sentences: 10000
+10000 sentences loaded
+Create sentences: 0.004273750000002963 seconds
+total sentences 10000
+Run spacy on sentences: 3.8009999983046328e-06 seconds
+Construct datasets: 7.6144074119999985 seconds
+max input length = 161
+max output length = 23
+Write datasets: 0.041809950999997625 seconds
+number of sentences: 10000
+10000 sentences loaded
+Create sentences: 0.004424028000002522 seconds
+total sentences 10000
+Run spacy on sentences: 4.855999996777882e-06 seconds
+Construct datasets: 7.534671376999995 seconds
+max input length = 240
+max output length = 32
+Write datasets: 0.04236073900000292 seconds
+number of sentences: 10000
+10000 sentences loaded
+Create sentences: 0.005373804000001314 seconds
+total sentences 10000
+Run spacy on sentences: 4.586999992284291e-06 seconds
+Construct datasets: 7.3339184169999925 seconds
+max input length = 135
+max output length = 26
+Write datasets: 0.041895780999993804 seconds
+number of sentences: 10000
+10000 sentences loaded
+Create sentences: 0.004479132000000163 seconds
+total sentences 10000
+Run spacy on sentences: 4.661000005512506e-06 seconds
+Construct datasets: 7.645616892999996 seconds
+max input length = 237
+max output length = 25
+Write datasets: 0.04342826299999558 seconds
+number of sentences: 10000
+10000 sentences loaded
+Create sentences: 0.004203704000005359 seconds
+total sentences 10000
+Run spacy on sentences: 5.153999993012803e-06 seconds
+Construct datasets: 7.435638736000001 seconds
+max input length = 167
+max output length = 25
+Write datasets: 0.04290061400000411 seconds

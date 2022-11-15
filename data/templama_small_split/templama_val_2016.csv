@@ -1,0 +1,467 @@
+id,date,input,output
+0,2016,<extra_id_0> is the head coach of U.C. Sampdoria.,Marco Giampaolo
+1,2016,Edrick Floreal works for <extra_id_0>.,Kentucky Wildcats
+2,2016,The Academic Bookstore is owned by <extra_id_0>.,Bonnier Group
+3,2016,<extra_id_0> is the chair of Stortinget.,Olemic Thommessen
+4,2016,Usman Ahmed Khan Buzdar is a member of the <extra_id_0>.,Pakistan Muslim League (N)
+5,2016,<extra_id_0> is the head of the government of North Rhine-Westphalia.,Hannelore Kraft
+6,2016,<extra_id_0> is the chair of Leicester City F.C..,Vichai Srivaddhanaprabha
+7,2016,<extra_id_0> is the head coach of Leicester City F.C..,Claudio Ranieri
+8,2016,Vadim Mișin is a member of the <extra_id_0>.,Revival Party
+9,2016,<extra_id_0> is the head coach of FC Dynamo Brest.,Sergey Petrovich Kovalchuk
+10,2016,<extra_id_0> is the chair of Liberal Democrats.,Tim Farron;Sal Brinton
+11,2016,Jackie Trad holds the position of <extra_id_0>.,Deputy Premier of Queensland
+12,2016,Giorgio Napolitano holds the position of <extra_id_0>.,senatore a vita
+13,2016,<extra_id_0> is the head coach of SV Ried.,Paul Gludovatz
+14,2016,<extra_id_0> is the head coach of SV Waldhof Mannheim.,Gerd Dais;Kenan Koçak
+15,2016,Angela Ahrendts works for <extra_id_0>.,Apple Inc.
+16,2016,<extra_id_0> is the chair of Alliance of Liberals and Democrats for Europe Party.,Hans van Baalen
+17,2016,Yang Shih-kuang is a member of the <extra_id_0>.,New Party
+18,2016,Christophe Dessimoz works for <extra_id_0>.,University College London;University of Lausanne
+19,2016,<extra_id_0> is the head coach of Millwall F.C..,Neil Harris
+20,2016,Chloe Bibby attended <extra_id_0>.,Rowville Secondary College
+21,2016,Julia Y Chan works for <extra_id_0>.,University of Texas at Dallas
+22,2016,Joan Mesquida Ferrando is a member of the <extra_id_0>.,Spanish Socialist Workers' Party
+23,2016,Luke Foster plays for <extra_id_0>.,Southport F.C.;Harrogate Town A.F.C.
+24,2016,Hsu Yung-ming is a member of the <extra_id_0>.,New Power Party
+25,2016,<extra_id_0> is the head of the government of Iowa.,Terry Branstad
+26,2016,Com Hem is owned by <extra_id_0>.,BC Partners
+27,2016,Peter R. Orszag works for <extra_id_0>.,Lazard;Citigroup
+28,2016,Mark H. Erickson works for <extra_id_0>.,Northampton Community College
+29,2016,<extra_id_0> is the head of the government of South Ossetia.,Leonid Tibilov
+30,2016,Leon Barnett plays for <extra_id_0>.,Wigan Athletic F.C.
+31,2016,Daniel McBreen plays for <extra_id_0>.,Edgeworth FC
+32,2016,Damian Boeselager attended <extra_id_0>.,Columbia University;Hertie School
+33,2016,<extra_id_0> is the chair of National Cancer Institute.,Douglas R. Lowy
+34,2016,<extra_id_0> is the chair of Òmnium Cultural.,Jordi Cuixart i Navarro
+35,2016,Patria is owned by <extra_id_0>.,Kongsberg Defence & Aerospace;Finland
+36,2016,<extra_id_0> is the head coach of FC Utrecht.,Erik ten Hag
+37,2016,<extra_id_0> is the head coach of Pittsburgh Riverhounds SC.,Dave Brandt;Mark Steffens
+38,2016,Chris Montgomery works for <extra_id_0>.,Mozilla
+39,2016,Dragan Čavić is a member of the <extra_id_0>.,National Democratic Movement
+40,2016,Reber Radio Telescope is owned by <extra_id_0>.,Green Bank Observatory;National Radio Astronomy Observatory
+41,2016,Stadio Friuli is owned by <extra_id_0>.,Udinese Calcio
+42,2016,<extra_id_0> is the head coach of POFC Botev Vratsa.,Sasho Angelov
+43,2016,Michael Carberry plays for <extra_id_0>.,Hampshire County Cricket Club
+44,2016,Darren Ambrose plays for <extra_id_0>.,Colchester United F.C.
+45,2016,Pepe Reina plays for <extra_id_0>.,S.S.C. Napoli
+46,2016,<extra_id_0> is the head coach of Hammarby Fotboll.,Nanne Bergstrand
+47,2016,Wells Fargo Center is owned by <extra_id_0>.,Ivanhoe Cambridge
+48,2016,William Sachiti attended <extra_id_0>.,Aberystwyth University
+49,2016,Ravichandran Ashwin plays for <extra_id_0>.,India national cricket team;Rising Pune Supergiant
+50,2016,Tim Burchett holds the position of <extra_id_0>.,mayor
+51,2016,Steve Nash plays for <extra_id_0>.,Los Angeles Lakers
+52,2016,<extra_id_0> is the head coach of Fotbal Comuna Recea.,Romulus Buia
+53,2016,<extra_id_0> is the head of the government of Adamstown.,yosef alhamood
+54,2016,Daniele Ganser works for <extra_id_0>.,University of St. Gallen
+55,2016,Nora H de Leeuw works for <extra_id_0>.,Cardiff University;Utrecht University
+56,2016,<extra_id_0> is the head of the government of Vesthimmerland Municipality.,Knud Kristensen
+57,2016,<extra_id_0> is the head coach of Louisville Cardinals men's basketball.,Rick Pitino
+58,2016,Petar Mamić plays for <extra_id_0>.,Croatia national under-19 football team
+59,2016,Todd Rokita holds the position of <extra_id_0>.,United States representative
+60,2016,Britt Marie Hermes attended <extra_id_0>.,University of Kiel
+61,2016,Harald G. L. Schwefel works for <extra_id_0>.,Max Planck Institute for the Science of Light;University of Otago
+62,2016,John S. Chen works for <extra_id_0>.,BlackBerry
+63,2016,<extra_id_0> is the chair of Associazione Calcio Milan.,Silvio Berlusconi
+64,2016,<extra_id_0> is the head coach of Associazione Calcio Milan.,Vincenzo Montella;Siniša Mihajlović
+65,2016,Associazione Calcio Milan is owned by <extra_id_0>.,Fininvest
+66,2016,Motohiro Yogo works for <extra_id_0>.,Princeton University
+67,2016,Frans Van de Werf works for <extra_id_0>.,European Society of Cardiology
+68,2016,Yaakov Peri is a member of the <extra_id_0>.,Yesh Atid
+69,2016,Dinesh Chandimal plays for <extra_id_0>.,Sri Lanka national cricket team;Ruhuna Royals
+70,2016,Kongsvinger Line is owned by <extra_id_0>.,Norwegian National Rail Administration
+71,2016,Max Verstappen plays for <extra_id_0>.,Red Bull Racing;Scuderia Toro Rosso
+72,2016,David Bridges plays for <extra_id_0>.,King's Lynn Town F.C.
+73,2016,Dražen Kutleša holds the position of <extra_id_0>.,diocesan bishop;Catholic bishop
+74,2016,Thomas F Krauss works for <extra_id_0>.,University of York
+75,2016,Carlos Tevez plays for <extra_id_0>.,Boca Juniors
+76,2016,Mariló Montero works for <extra_id_0>.,Televisión Española
+77,2016,<extra_id_0> is the head of the government of Vilnius.,Remigijus Šimašius
+78,2016,Linha do Oeste is owned by <extra_id_0>.,Infrastructures of Portugal
+79,2016,Jason H. Moore works for <extra_id_0>.,University of Pennsylvania
+80,2016,<extra_id_0> is the chair of Burberry.,John Peace
+81,2016,Angela Casini works for <extra_id_0>.,Cardiff University
+82,2016,Vilja Toomast is a member of the <extra_id_0>.,Estonian Reform Party
+83,2016,<extra_id_0> is the head coach of Astana.,Dmitry Fofonov;Gorazd Štangelj;Stefano Zanini;Giuseppe Martinelli;Serguei Yakovlev
+84,2016,<extra_id_0> is the head coach of Fluminense F.C..,Abel Braga
+85,2016,Beate Meinl-Reisinger is a member of the <extra_id_0>.,NEOS – The New Austria
+86,2016,James Allsop works for <extra_id_0>.,The University of Queensland
+87,2016,<extra_id_0> is the head coach of Barnsley F.C..,Paul Heckingbottom
+88,2016,Rafael Correa Delgado holds the position of <extra_id_0>.,President of Ecuador
+89,2016,Steven Finn plays for <extra_id_0>.,England and Wales cricket team
+90,2016,Mustafa Akyol works for <extra_id_0>.,Fatih University
+91,2016,Birgitta Jónsdóttir is a member of the <extra_id_0>.,Pirate Party Iceland
+92,2016,Harbhajan Singh plays for <extra_id_0>.,Mumbai Indians
+93,2016,Hilary Benn holds the position of <extra_id_0>.,Shadow Foreign Secretary
+94,2016,Minho railway line is owned by <extra_id_0>.,Infrastructures of Portugal
+95,2016,Port of Aveiro branch line is owned by <extra_id_0>.,Infrastructures of Portugal
+96,2016,<extra_id_0> is the head coach of KV Mechelen.,Yannick Ferrera
+97,2016,Nicole Megow works for <extra_id_0>.,Technical University of Munich;University of Bremen
+98,2016,Chan Chun Sing holds the position of <extra_id_0>.,Ministry of Defence;Ministry of Social and Family Development
+99,2016,<extra_id_0> is the head of the government of Emilia-Romagna.,Stefano Bonaccini
+100,2016,Janak Sapkota works for <extra_id_0>.,University of Leoben;Adolphe Merkle Institute
+101,2016,Greg Jericho works for <extra_id_0>.,The Guardian
+102,2016,Heather Cox Richardson works for <extra_id_0>.,Boston College
+103,2016,<extra_id_0> is the head of the government of Odessa.,Gennadiy Trukhanov
+104,2016,Muireann Irish works for <extra_id_0>.,University of New South Wales;Neuroscience Research Australia
+105,2016,Marta Madrenas i Mir is a member of the <extra_id_0>.,Democratic Convergence of Catalonia;Catalan European Democratic Party
+106,2016,Steve Knight holds the position of <extra_id_0>.,United States representative
+107,2016,<extra_id_0> is the chair of Pomona College.,David W. Oxtoby
+108,2016,Craig Bryson plays for <extra_id_0>.,Derby County F.C.;Scotland national football team
+109,2016,Kostas Manolas plays for <extra_id_0>.,A.S. Roma;Greece national association football team
+110,2016,Bill Cassidy holds the position of <extra_id_0>.,United States senator
+111,2016,Saumitra Khan is a member of the <extra_id_0>.,All India Trinamool Congress
+112,2016,<extra_id_0> is the head of the government of Szombathely.,Tivadar Puskás
+113,2016,Heather Humphreys holds the position of <extra_id_0>.,"Teachta Dála;Minister for Arts, Heritage and the Gaeltacht"
+114,2016,Rachel Treweek holds the position of <extra_id_0>.,Bishop of Gloucester
+115,2016,<extra_id_0> is the chair of Ministry of Economy and Finance.,Choi Kyoung-hwan;Yoo Il-ho
+116,2016,<extra_id_0> is the chair of Société des amis du Louvre.,Louis-Antoine Prat;Marc Fumaroli
+117,2016,Jæren Line is owned by <extra_id_0>.,Norwegian National Rail Administration
+118,2016,<extra_id_0> is the head of the government of Baton Rouge.,Kip Holden
+119,2016,Inés Sabanés is a member of the <extra_id_0>.,Ahora Madrid;Equo
+120,2016,Hirving Lozano plays for <extra_id_0>.,Mexico national football team;Mexico national under-23 football team;CF Pachuca
+121,2016,Kim Han-gil is a member of the <extra_id_0>.,Democratic Party of Korea;People's Party
+122,2016,<extra_id_0> is the head coach of FC Zbrojovka Brno.,Svatopluk Habanec
+123,2016,Volodymyr Lytvyn holds the position of <extra_id_0>.,People's Deputy of Ukraine
+124,2016,Dawn Childs works for <extra_id_0>.,Gatwick Airport;Merlin Entertainments
+125,2016,Ryan Arcidiacono attended <extra_id_0>.,Villanova University
+126,2016,Jennifer Bendery works for <extra_id_0>.,HuffPost
+127,2016,<extra_id_0> is the head coach of Panathinaikos B.C..,Aryiris Pedoulakis;Xavier Pascual Vives
+128,2016,<extra_id_0> is the head coach of Brighton & Hove Albion F.C..,Chris Hughton
+129,2016,<extra_id_0> is the head coach of Limburg Lions.,Lambert Schuurs
+130,2016,<extra_id_0> is the head of the government of India.,Narendra Modi
+131,2016,Stephan Weil holds the position of <extra_id_0>.,Minister-President of Lower Saxony
+132,2016,Play M Entertainment is owned by <extra_id_0>.,Kakao M
+133,2016,Philipp Lahm plays for <extra_id_0>.,FC Bayern Munich
+134,2016,Glenn Greenwald works for <extra_id_0>.,The Intercept
+135,2016,David Warner plays for <extra_id_0>.,Australia national cricket team;Sunrisers Hyderabad
+136,2016,Olav Gunnar Ballo is a member of the <extra_id_0>.,Norwegian Labour Party
+137,2016,Hong Moon-jong is a member of the <extra_id_0>.,Liberty Korea Party
+138,2016,Lou Barletta holds the position of <extra_id_0>.,United States representative
+139,2016,<extra_id_0> is the head of the government of Erlangen.,Florian Janik
+140,2016,<extra_id_0> is the head coach of Czech Republic national association football team.,Pavel Vrba;Karel Jarolím
+141,2016,Eric Garcetti holds the position of <extra_id_0>.,Mayor of the City of Los Angeles
+142,2016,Christofer Clemente works for <extra_id_0>.,University of the Sunshine Coast
+143,2016,<extra_id_0> is the head coach of NK Olimpija Ljubljana.,Luka Elsner;Marko Nikolić
+144,2016,Harrison Afful plays for <extra_id_0>.,Columbus Crew SC
+145,2016,Thaddeus Ma Daqin holds the position of <extra_id_0>.,auxiliary bishop;Catholic bishop
+146,2016,Jean-Louis Tauran holds the position of <extra_id_0>.,camerlengo of the Holy Roman Church;cardinal
+147,2016,Daniel Boeri is a member of the <extra_id_0>.,Horizon Monaco
+148,2016,Will Buckley plays for <extra_id_0>.,Sunderland A.F.C.;Birmingham City F.C.
+149,2016,Corina Crețu is a member of the <extra_id_0>.,Social Democratic Party
+150,2016,Maszlee Malik is a member of the <extra_id_0>.,Malaysian United Indigenous Party
+151,2016,<extra_id_0> is the chair of Democratic and Republican Left.,André Chassaigne
+152,2016,Democratic and Republican Left is a member of the <extra_id_0>.,Guianese Socialist Party
+153,2016,Andrea Pirlo plays for <extra_id_0>.,New York City FC
+154,2016,Rhea Boyd attended <extra_id_0>.,Harvard T.H. Chan School of Public Health
+155,2016,Norwegian digital learning arena is owned by <extra_id_0>.,Nord-Trøndelag County Municipality;Sør-Trøndelag County Municipality
+156,2016,Michael Owen plays for <extra_id_0>.,England national association football team
+157,2016,<extra_id_0> is the head coach of Lotto-Soudal.,Kurt Van De Wouwer;Mario Aerts;Bart Leysen;Frederik Willems
+158,2016,Meng Wanzhou holds the position of <extra_id_0>.,chief financial officer
+159,2016,<extra_id_0> is the chair of Schloss Dagstuhl – Leibniz Center for Informatics.,Raimund Seidel
+160,2016,David Altshuler works for <extra_id_0>.,Vertex Pharmaceuticals
+161,2016,511 Federal Building is owned by <extra_id_0>.,Portland Development Commission
+162,2016,Bjarne Stroustrup works for <extra_id_0>.,Morgan Stanley
+163,2016,Yang Jiechi holds the position of <extra_id_0>.,State Councilor of the People's Republic of China
+164,2016,Amos Yong works for <extra_id_0>.,Fuller Theological Seminary
+165,2016,<extra_id_0> is the chair of Supreme Council of the Armed Forces.,Sedki Sobhi
+166,2016,<extra_id_0> is the head of the government of Taiwan.,Lin Chuan;Chang San-cheng;Mao Chi-kuo
+167,2016,Brian Duensing works for <extra_id_0>.,Kansas City Royals
+168,2016,<extra_id_0> is the head of the government of La Rioja.,José Ignacio Ceniceros González
+169,2016,<extra_id_0> is the head coach of Società Polisportiva Ars et Labor.,Leonardo Semplici
+170,2016,Jonathan Sexton plays for <extra_id_0>.,British & Irish Lions;Leinster Rugby
+171,2016,<extra_id_0> is the head coach of FC Urartu.,Arthur Voskanyan
+172,2016,<extra_id_0> is the head coach of San Francisco 49ers.,Chip Kelly
+173,2016,<extra_id_0> is the head of the government of Atlanta.,Kasim Reed
+174,2016,Andrej Plenković holds the position of <extra_id_0>.,member of the European Parliament;Prime Minister of Croatia
+175,2016,<extra_id_0> is the head coach of UCF Knights football.,Scott Frost
+176,2016,Idit Silman is a member of the <extra_id_0>.,The Jewish Home
+177,2016,Kongregate is owned by <extra_id_0>.,GameStop
+178,2016,Greg Tansey plays for <extra_id_0>.,Inverness Caledonian Thistle F.C.
+179,2016,<extra_id_0> is the head coach of An Post-ChainReaction.,Neil Martin;Niko Eeckhout
+180,2016,<extra_id_0> is the head of the government of Chelyabinsk Oblast.,Boris Dubrovsky
+181,2016,Stephen Ireland plays for <extra_id_0>.,Stoke City F.C.
+182,2016,James P. Allison works for <extra_id_0>.,University of Texas MD Anderson Cancer Center
+183,2016,Álvaro Morata plays for <extra_id_0>.,Real Madrid CF;Juventus FC;Spain national association football team
+184,2016,Giovani dos Santos plays for <extra_id_0>.,Los Angeles Galaxy
+185,2016,Robert Bingham works for <extra_id_0>.,University of Edinburgh
+186,2016,Winston Reid plays for <extra_id_0>.,West Ham United F.C.;New Zealand national football team
+187,2016,Sampa Das attended <extra_id_0>.,Purdue University
+188,2016,Bradley Wiggins plays for <extra_id_0>.,Wiggins
+189,2016,<extra_id_0> is the chair of Reserve Bank of Australia.,Glenn Stevens;Philip Lowe
+190,2016,Anthony Stokes plays for <extra_id_0>.,Hibernian F.C.;Celtic F.C.
+191,2016,ODEON Kino is owned by <extra_id_0>.,Nordic Cinema Group
+192,2016,Gillian Rose works for <extra_id_0>.,The Open University
+193,2016,<extra_id_0> is the head of the government of Campania.,Vincenzo De Luca
+194,2016,Nina Revoyr holds the position of <extra_id_0>.,executive director;chief operating officer
+195,2016,Réginal Goreux plays for <extra_id_0>.,Standard Liège;Haiti national football team
+196,2016,Tim Paine plays for <extra_id_0>.,Australia national cricket team;Hobart Hurricanes
+197,2016,<extra_id_0> is the head of the government of Uttar Pradesh.,Akhilesh Yadav
+198,2016,<extra_id_0> is the chair of Christian Social People's Party.,Marc Spautz
+199,2016,<extra_id_0> is the chair of Heinrich Böll Foundation.,Ralf Fücks
+200,2016,<extra_id_0> is the head of the government of Vermont.,Peter Shumlin
+201,2016,Remigijus Šimašius is a member of the <extra_id_0>.,Liberal Movement
+202,2016,Ruptly is owned by <extra_id_0>.,Rossiya Segodnya
+203,2016,<extra_id_0> is the head of the government of Wilmington.,Dennis P. Williams
+204,2016,Bhaichung Bhutia plays for <extra_id_0>.,East Bengal F.C.
+205,2016,Kateřina Jacques is a member of the <extra_id_0>.,Liberal-Environmental Party
+206,2016,Christos Zois is a member of the <extra_id_0>.,New Reformist Radical Reconstruction
+207,2016,Dawn Hadley works for <extra_id_0>.,University of Sheffield
+208,2016,François Hollande holds the position of <extra_id_0>.,Co-Prince of Andorra;President of the French Republic
+209,2016,<extra_id_0> is the chair of Committee for the Defence of Democracy.,Mateusz Kijowski
+210,2016,Marie-Josèphe Jude works for <extra_id_0>.,Conservatoire national supérieur de musique et de danse de Lyon;Conservatoire de Paris
+211,2016,Gennady Gudkov is a member of the <extra_id_0>.,Russian Opposition Coordination Council
+212,2016,Allison Randal works for <extra_id_0>.,Hewlett-Packard
+213,2016,László Tőkés holds the position of <extra_id_0>.,member of the European Parliament
+214,2016,Rémi Mathis works for <extra_id_0>.,Bibliothèque nationale de France
+215,2016,Shari Steele works for <extra_id_0>.,"The Tor Project, Inc"
+216,2016,Ghil'ad Zuckermann works for <extra_id_0>.,University of Adelaide
+217,2016,Marian-Jean Marinescu is a member of the <extra_id_0>.,National Liberal Party
+218,2016,Nathan Rourke attended <extra_id_0>.,Edgewood Academy;Fort Scott Community College
+219,2016,Michael Hussey plays for <extra_id_0>.,Sydney Thunder
+220,2016,<extra_id_0> is the head coach of England national association football team.,Sam Allardyce;Gareth Southgate;Roy Hodgson
+221,2016,Ignacio Gutiérrez works for <extra_id_0>.,Chilevisión
+222,2016,Katja Kassin attended <extra_id_0>.,"California State University, Northridge"
+223,2016,Arnold Rüütel is a member of the <extra_id_0>.,Conservative People's Party of Estonia
+224,2016,<extra_id_0> is the head of the government of Alexandria.,Allison Silberberg
+225,2016,Arti Agrawal works for <extra_id_0>.,"City, University of London"
+226,2016,Rene Farrell plays for <extra_id_0>.,Surrey Stars
+227,2016,Viktoras Pranckietis is a member of the <extra_id_0>.,Lithuanian Peasant and Greens Union
+228,2016,Patrick Leahy holds the position of <extra_id_0>.,United States senator;President pro tempore of the United States Senate
+229,2016,Meir Sheetrit is a member of the <extra_id_0>.,Hatnuah
+230,2016,Joel Byrom plays for <extra_id_0>.,Northampton Town F.C.
+231,2016,Elisa Granato attended <extra_id_0>.,University of Zurich
+232,2016,Wang Qishan holds the position of <extra_id_0>.,Secretary of the Central Commission for Discipline Inspection
+233,2016,Maimunah Mohd Sharif holds the position of <extra_id_0>.,Mayor of Penang Island
+234,2016,Tom Price holds the position of <extra_id_0>.,United States representative
+235,2016,Ilya Mikhaylov works for <extra_id_0>.,FC Zenit-Izhevsk Izhevsk
+236,2016,Dean Heller holds the position of <extra_id_0>.,United States senator
+237,2016,Adam Bielan is a member of the <extra_id_0>.,Polska Razem
+238,2016,Ajinkya Rahane plays for <extra_id_0>.,India national cricket team;Rising Pune Supergiant
+239,2016,Kamel Morjane is a member of the <extra_id_0>.,National Destourian Initiative
+240,2016,Fred VanVleet plays for <extra_id_0>.,Wichita State Shockers men's basketball;Toronto Raptors
+241,2016,Chip Smith works for <extra_id_0>.,21st Century Fox;The Glover Park Group
+242,2016,Linda Collins-Smith is a member of the <extra_id_0>.,Republican Party
+243,2016,Banuera Berina is a member of the <extra_id_0>.,Tobwaan Kiribati Party
+244,2016,Lassana Diarra plays for <extra_id_0>.,Olympique de Marseille
+245,2016,Paul O'Connell plays for <extra_id_0>.,RC Toulonnais
+246,2016,Rona Ambrose holds the position of <extra_id_0>.,Leader of the Official Opposition
+247,2016,<extra_id_0> is the head coach of F.C. Crotone.,Walter Zenga
+248,2016,Luke Simpkins is a member of the <extra_id_0>.,Liberal Party of Australia
+249,2016,Ilya Sutskever works for <extra_id_0>.,OpenAI
+250,2016,Marina Geli i Fàbrega is a member of the <extra_id_0>.,Leftwing Movement
+251,2016,Michael Gove holds the position of <extra_id_0>.,Secretary of State for Justice
+252,2016,<extra_id_0> is the head of the government of Gabon.,Emmanuel Issoze-Ngondet
+253,2016,Marina Kaljurand holds the position of <extra_id_0>.,Minister of Foreign Affairs
+254,2016,Thomas P. O'Neill Jr. Federal Building is owned by <extra_id_0>.,General Services Administration
+255,2016,<extra_id_0> is the chair of State Duma.,Sergey Naryshkin;Vyacheslav Volodin
+256,2016,Nerida G. Wilson works for <extra_id_0>.,Western Australian Museum;University of New South Wales
+257,2016,Bergen Line is owned by <extra_id_0>.,Norwegian National Rail Administration
+258,2016,Johnathan Williams attended <extra_id_0>.,Gonzaga University
+259,2016,Christina Pagel works for <extra_id_0>.,Commonwealth Fund
+260,2016,Saleem Ali works for <extra_id_0>.,The University of Queensland;University of Delaware
+261,2016,Bill Keating holds the position of <extra_id_0>.,United States representative
+262,2016,Enrico Carattoni is a member of the <extra_id_0>.,Sammarinese Socialist Party;United Left
+263,2016,Verdiana Masanja works for <extra_id_0>.,National University of Rwanda
+264,2016,<extra_id_0> is the chair of Lega Nord Piemont.,Gianna Gancia
+265,2016,Catherine Osson is a member of the <extra_id_0>.,Socialist Party
+266,2016,Hannu Manninen works for <extra_id_0>.,Finnair;Nordic Regional Airlines
+267,2016,Carli Lloyd plays for <extra_id_0>.,Houston Dash
+268,2016,Firdous Ashiq Awan is a member of the <extra_id_0>.,Pakistan Peoples Party
+269,2016,Arkane Studios is owned by <extra_id_0>.,ZeniMax Media
+270,2016,James McClean plays for <extra_id_0>.,Republic of Ireland national association football team;West Bromwich Albion F.C.
+271,2016,Darren Sammy plays for <extra_id_0>.,Royal Challengers Bangalore;Hobart Hurricanes;Peshawar Zalmi;Rajshahi Kings;Hampshire County Cricket Club;St Lucia Zouks
+272,2016,Ernest Maragall is a member of the <extra_id_0>.,Leftwing Movement
+273,2016,Arseniy Yatsenyuk holds the position of <extra_id_0>.,Prime Minister of Ukraine
+274,2016,Neil Alexander plays for <extra_id_0>.,Heart of Midlothian F.C.
+275,2016,Sharon Tooze works for <extra_id_0>.,Francis Crick Institute
+276,2016,Iker Jiménez Elizari works for <extra_id_0>.,Mediaset España
+277,2016,Maria A. Pallante works for <extra_id_0>.,United States Copyright Office;Library of Congress
+278,2016,Chao Cheng-yu is a member of the <extra_id_0>.,independent politician
+279,2016,Shafie Apdal is a member of the <extra_id_0>.,Sabah Heritage Party;United Malays National Organisation
+280,2016,Grace Starry West works for <extra_id_0>.,Hillsdale College
+281,2016,Gerry Brownlee holds the position of <extra_id_0>.,Minister of Defence
+282,2016,<extra_id_0> is the head of the government of Berlin.,Michael Müller
+283,2016,Jason Eric Box works for <extra_id_0>.,Geological Survey of Denmark and Greenland
+284,2016,Lauren Cornell works for <extra_id_0>.,"Center for Curatorial Studies, Bard College;New Museum"
+285,2016,Lindsay Hoyle holds the position of <extra_id_0>.,Chairman of Ways and Means
+286,2016,Jeremy Wright holds the position of <extra_id_0>.,Advocate General for Northern Ireland;Attorney General for England and Wales
+287,2016,Danny O'Brien works for <extra_id_0>.,Electronic Frontier Foundation;Committee to Protect Journalists
+288,2016,Cindy Hyde-Smith is a member of the <extra_id_0>.,Republican Party
+289,2016,Josep Guerrero works for <extra_id_0>.,Aalborg University
+290,2016,<extra_id_0> is the chair of Catalan Academy of Cinema.,Isona Passola i Vidal
+291,2016,Mirjam Van Praag works for <extra_id_0>.,Copenhagen Business School
+292,2016,<extra_id_0> is the head of the government of Acre.,Tião Viana
+293,2016,Gérald Darmanin is a member of the <extra_id_0>.,The Republicans
+294,2016,Ramal de Aveiro is owned by <extra_id_0>.,Infrastructures of Portugal
+295,2016,Richard Bruton holds the position of <extra_id_0>.,"Teachta Dála;Minister for Education and Skills;Minister for Jobs, Enterprise and Innovation"
+296,2016,Annie Lööf holds the position of <extra_id_0>.,party leader
+297,2016,Toni Kroos plays for <extra_id_0>.,Germany national association football team;Real Madrid CF
+298,2016,Daniel P. Aldrich works for <extra_id_0>.,Northeastern University
+299,2016,Gheorghe Flutur is a member of the <extra_id_0>.,National Liberal Party
+300,2016,Kasper Schmeichel plays for <extra_id_0>.,Leicester City F.C.;Denmark national association football team
+301,2016,Malou Aamund works for <extra_id_0>.,Google;Microsoft Corporation
+302,2016,<extra_id_0> is the head coach of England national rugby union team.,Eddie Jones
+303,2016,<extra_id_0> is the head of the government of Saitama Prefecture.,Kiyoshi Ueda
+304,2016,Trunk Line is owned by <extra_id_0>.,Norwegian National Rail Administration
+305,2016,Jang Geun-suk attended <extra_id_0>.,Hanyang University
+306,2016,Jean-Pierre Grand is a member of the <extra_id_0>.,The Republicans;United Republic
+307,2016,<extra_id_0> is the head of the government of Thailand.,Prayut Chan-ocha
+308,2016,Daniel J. Caron works for <extra_id_0>.,École nationale d'administration publique
+309,2016,<extra_id_0> is the head of the government of Benin.,Patrice Talon;Lionel Zinsou
+310,2016,<extra_id_0> is the chair of World Confederation of Billiards Sports.,Jason Ferguson
+311,2016,Mumtaz Bhutto is a member of the <extra_id_0>.,Sindh National Front
+312,2016,Tabetha S. Boyajian works for <extra_id_0>.,Yale University
+313,2016,<extra_id_0> is the head of the government of Kaohsiung.,Chen Chu
+314,2016,Ralph Northam holds the position of <extra_id_0>.,Lieutenant Governor of Virginia
+315,2016,Apoorva Mandavilli works for <extra_id_0>.,New York University
+316,2016,<extra_id_0> is the head coach of Vaasan Palloseura.,Petri Vuorinen
+317,2016,Nathan Law is a member of the <extra_id_0>.,Demosistō
+318,2016,Justin Welby holds the position of <extra_id_0>.,Archbishop of Canterbury;bishop
+319,2016,Andrew Scheer holds the position of <extra_id_0>.,Leader of the Opposition in the House of Commons
+320,2016,<extra_id_0> is the head coach of Odds BK.,Dag-Eilev Fagermo
+321,2016,<extra_id_0> is the head of the government of Marche.,Luca Ceriscioli
+322,2016,Julio Arca plays for <extra_id_0>.,South Shields F.C.
+323,2016,<extra_id_0> is the chair of Ministry of Finance.,Siv Jensen
+324,2016,<extra_id_0> is the chair of Organisation of Islamic Cooperation.,Yousef Al-Othaimeen;Iyad bin Amin Madani
+325,2016,Josep Sánchez i Llibre is a member of the <extra_id_0>.,Democratic Union of Catalonia
+326,2016,Thomas R. Lynch works for <extra_id_0>.,University of Southampton
+327,2016,<extra_id_0> is the head coach of Calcio Padova.,Oscar Brevi
+328,2016,<extra_id_0> is the head of the government of Freiburg im Breisgau.,Dieter Salomon
+329,2016,Eric Swalwell holds the position of <extra_id_0>.,United States representative
+330,2016,<extra_id_0> is the chair of Republic of Bashkortostan.,Rustem Khamitov
+331,2016,<extra_id_0> is the head of the government of Guam.,Eddie Calvo
+332,2016,Joan Gabel works for <extra_id_0>.,University of South Carolina
+333,2016,Victor Oladipo plays for <extra_id_0>.,Oklahoma City Thunder;Orlando Magic
+334,2016,Stanislav Edward Shmelev works for <extra_id_0>.,University of Edinburgh
+335,2016,Yariv Oppenheimer is a member of the <extra_id_0>.,Israeli Labor Party
+336,2016,Kostas Antetokounmpo attended <extra_id_0>.,Dominican High School;University of Dayton
+337,2016,Tunahan Kuzu is a member of the <extra_id_0>.,DENK
+338,2016,<extra_id_0> is the chair of Vereinigung für Ökologische Ökonomie.,Eva Lang
+339,2016,Marisol Touraine holds the position of <extra_id_0>.,Minister of Labour;Ministry of Social Affairs and Health
+340,2016,Raymond Leo Burke holds the position of <extra_id_0>.,cardinal
+341,2016,John Giannandrea works for <extra_id_0>.,Google
+342,2016,<extra_id_0> is the head coach of Legia Warsaw.,Jacek Magiera;Besnik Hasi;Stanislav Cherchesov
+343,2016,Susan Baer works for <extra_id_0>.,Arup
+344,2016,Margaret Cheney works for <extra_id_0>.,Colorado State University
+345,2016,<extra_id_0> is the chair of National Rally.,Marine Le Pen
+346,2016,Persis Drell works for <extra_id_0>.,Stanford University School of Engineering
+347,2016,<extra_id_0> is the chair of United States Department of Justice.,Loretta Lynch
+348,2016,Klaus Iohannis is a member of the <extra_id_0>.,independent politician
+349,2016,Thein Sein holds the position of <extra_id_0>.,President of Myanmar
+350,2016,Megan Walker attended <extra_id_0>.,Monacan High School
+351,2016,Frank Guinta holds the position of <extra_id_0>.,United States representative
+352,2016,<extra_id_0> is the chair of Humanists UK.,Shappi Khorsandi;Jim Al-Khalili
+353,2016,Pedro Pierluisi holds the position of <extra_id_0>.,Resident Commissioner of Puerto Rico
+354,2016,Glen Johnson plays for <extra_id_0>.,Stoke City F.C.
+355,2016,Nate Schierholtz works for <extra_id_0>.,Detroit Tigers
+356,2016,<extra_id_0> is the chair of Unilever.,Marijn Dekkers;Michael Treschow
+357,2016,<extra_id_0> is the chair of National Party of Australia.,Barnaby Joyce;Warren Truss;Michael McCormack
+358,2016,Andrew V. Goldberg works for <extra_id_0>.,Amazon
+359,2016,Daniel Swain attended <extra_id_0>.,Stanford University
+360,2016,<extra_id_0> is the chair of European People's Party group.,Manfred Weber
+361,2016,<extra_id_0> is the chair of Mondi Group.,Fred Phaswana
+362,2016,<extra_id_0> is the head of the government of Charlottesville.,Michael Signer
+363,2016,<extra_id_0> is the head coach of R. Charleroi S.C..,Felice Mazzu
+364,2016,Ramon Espadaler Parcerisas is a member of the <extra_id_0>.,Democratic Union of Catalonia
+365,2016,Dominic Grieve holds the position of <extra_id_0>.,Advocate General for Northern Ireland
+366,2016,<extra_id_0> is the head of the government of Bratislava.,Ivo Nesrovnal
+367,2016,Ann Sarnoff works for <extra_id_0>.,BBC America
+368,2016,Alex X. Mooney holds the position of <extra_id_0>.,United States representative
+369,2016,Charles M. Huber is a member of the <extra_id_0>.,Christian Democratic Union
+370,2016,Věra Jourová holds the position of <extra_id_0>.,"European Commissioner for Justice, Fundamental Rights and Citizenship"
+371,2016,<extra_id_0> is the head of the government of Sibiu.,Astrid Fodor
+372,2016,Jill R. Horwitz works for <extra_id_0>.,New York University School of Law;University of Victoria
+373,2016,Tua Tagovailoa attended <extra_id_0>.,Saint Louis School
+374,2016,Deborah Terry works for <extra_id_0>.,Curtin University
+375,2016,Antoine Bozio works for <extra_id_0>.,School for Advanced Studies in the Social Sciences;Paris School of Economics
+376,2016,Alfa Romeo is owned by <extra_id_0>.,Fiat Chrysler Automobiles
+377,2016,Lucas Richman works for <extra_id_0>.,Bangor Symphony Orchestra
+378,2016,<extra_id_0> is the head coach of ERA-Circus.,Marc Janssens
+379,2016,Rachel Sheherazade works for <extra_id_0>.,SBT
+380,2016,Mangala pinsiri Samaraweera holds the position of <extra_id_0>.,Minister of Foreign Affairs of Sri Lanka
+381,2016,Scott Parker plays for <extra_id_0>.,Fulham F.C.
+382,2016,Dimitar Stoyanov is a member of the <extra_id_0>.,National-Democratic Party
+383,2016,<extra_id_0> is the head of the government of Yonkers.,Mike Spano
+384,2016,Gheorghe Falcă is a member of the <extra_id_0>.,National Liberal Party
+385,2016,Michael Cohen is a member of the <extra_id_0>.,Democratic Party
+386,2016,<extra_id_0> is the head coach of Nippo-Vini Fantini-Europa Ovini.,Stefano Giuliani;Hiroshi Daimon;Mario Manzoni;Shinichi Fukushima
+387,2016,Kemba Walker plays for <extra_id_0>.,Charlotte Hornets
+388,2016,<extra_id_0> is the head coach of FC Gomel.,Uladzimir Zhuravel;Vyacheslav Geraschenko
+389,2016,Lucy Harris is a member of the <extra_id_0>.,Brexit Party
+390,2016,Kirill I of Moscow holds the position of <extra_id_0>.,metropolitan bishop
+391,2016,David Lidington holds the position of <extra_id_0>.,Minister of State for Europe;Leader of the House of Commons
+392,2016,Leah Williamson plays for <extra_id_0>.,England women's national under-20 football team;Arsenal W.F.C.;England women's national under-19 football team;England women's national under-23 football team
+393,2016,Rosana Pinheiro-Machado works for <extra_id_0>.,University of Oxford
+394,2016,Amjad Kalaf plays for <extra_id_0>.,Al-Shorta Baghdad
+395,2016,<extra_id_0> is the head coach of Bora-Hansgrohe.,Enrico Poitschke;Steffen Radochla;André Schulze
+396,2016,<extra_id_0> is the chair of CRH.,Nicky Hartery
+397,2016,<extra_id_0> is the chair of Verband der Reservisten der Deutschen Bundeswehr.,Roderich Kiesewetter;Oswin Veith
+398,2016,<extra_id_0> is the head coach of Gimnàstic de Tarragona.,Vicente Moreno;Juan Merino
+399,2016,Stephen Dobbie plays for <extra_id_0>.,Bolton Wanderers F.C.
+400,2016,Michel Bissonnet is a member of the <extra_id_0>.,Ensemble Montréal
+401,2016,Philippe Gilbert plays for <extra_id_0>.,CCC Team
+402,2016,George Osborne holds the position of <extra_id_0>.,Chancellor of the Exchequer;First Secretary of State
+403,2016,Lourdes Ciuró i Buldó is a member of the <extra_id_0>.,Democratic Convergence of Catalonia;Catalan European Democratic Party
+404,2016,Christophe Robino is a member of the <extra_id_0>.,Horizon Monaco
+405,2016,Richard Chaplow plays for <extra_id_0>.,Doncaster Rovers F.C.
+406,2016,Katie Doores works for <extra_id_0>.,King's College London
+407,2016,Expobank CZ is owned by <extra_id_0>.,Igor Kim
+408,2016,<extra_id_0> is the chair of Democratic Party of Korea.,Moon Jae-in;Choo Mi-ae;Kim Jong-in
+409,2016,Svitlana Zalishchuk is a member of the <extra_id_0>.,Democratic Alliance;European Solidarity
+410,2016,<extra_id_0> is the chair of ADFE-Français du Monde.,Claudine Lepage
+411,2016,Craig Mackinlay is a member of the <extra_id_0>.,Conservative Party
+412,2016,China Media Group Headquarters is owned by <extra_id_0>.,China Central Television
+413,2016,<extra_id_0> is the head of the government of North West.,Supra Mahumapelo
+414,2016,Roland Steinacher works for <extra_id_0>.,Alexander von Humboldt Foundation;Stiftung Alfried Krupp Kolleg Greifswald
+415,2016,Hiromichi Mizuno works for <extra_id_0>.,Government Pension Investment Fund
+416,2016,Alpha Condé holds the position of <extra_id_0>.,President of Guinea
+417,2016,<extra_id_0> is the head of the government of Gdańsk.,Paweł Adamowicz
+418,2016,<extra_id_0> is the chair of United States Cyber Command.,Michael S. Rogers
+419,2016,Julia Ebner works for <extra_id_0>.,Quilliam
+420,2016,Aleksandre Bakshi attended <extra_id_0>.,Texas A&M University
+421,2016,<extra_id_0> is the head of the government of New Taipei City.,Eric Chu
+422,2016,Dennis Hof is a member of the <extra_id_0>.,Libertarian Party;Republican Party
+423,2016,Claire Underwood holds the position of <extra_id_0>.,First Lady of the United States
+424,2016,Basel Ghattas is a member of the <extra_id_0>.,Joint List;Balad
+425,2016,Mircea Geoană is a member of the <extra_id_0>.,independent politician
+426,2016,<extra_id_0> is the chair of Junta of Castile and León.,Juan Vicente Herrera Campo
+427,2016,Sauli Niinistö holds the position of <extra_id_0>.,President of Finland
+428,2016,Ada Colau is a member of the <extra_id_0>.,Barcelona en Comú
+429,2016,Jevon Carter attended <extra_id_0>.,West Virginia University
+430,2016,<extra_id_0> is the head of the government of Verona.,Flavio Tosi
+431,2016,James R. Clapper holds the position of <extra_id_0>.,Director of National Intelligence
+432,2016,<extra_id_0> is the chair of Alliance '90/The Greens.,Simone Peter;Cem Özdemir
+433,2016,Memphis Depay plays for <extra_id_0>.,Netherlands national association football team;Manchester United F.C.
+434,2016,Erich Pascal Malkemper works for <extra_id_0>.,Czech University of Life Sciences Prague;Research Institute of Molecular Pathology
+435,2016,Kristin De Troyer works for <extra_id_0>.,St. Katherine College;University of St Andrews
+436,2016,Camille Combal works for <extra_id_0>.,C8;Virgin Radio
+437,2016,Peggy Piesche works for <extra_id_0>.,University of Bayreuth
+438,2016,Arjun Singh ( politician) is a member of the <extra_id_0>.,All India Trinamool Congress
+439,2016,Jana Žitňanská is a member of the <extra_id_0>.,New Majority
+440,2016,Elazar Stern is a member of the <extra_id_0>.,Yesh Atid
+441,2016,Jason Greenblatt works for <extra_id_0>.,Yeshiva University;The Trump Organization
+442,2016,Yimon Aye works for <extra_id_0>.,Cornell University;Weill Cornell Medicine
+443,2016,Samer Hassan works for <extra_id_0>.,Complutense University of Madrid;Harvard University
+444,2016,Roger Wakimoto works for <extra_id_0>.,National Science Foundation
+445,2016,Patrick Sensburg holds the position of <extra_id_0>.,chairperson
+446,2016,<extra_id_0> is the chair of Ministry of Health.,Rimantė Šalaševičiūtė;Aurelijus Veryga;Juras Požela
+447,2016,<extra_id_0> is the head of the government of Nizhny Novgorod Oblast.,Valery Shantsev
+448,2016,Fabio Borini plays for <extra_id_0>.,Sunderland A.F.C.
+449,2016,Miguel Barbosa Huerta is a member of the <extra_id_0>.,Party of the Democratic Revolution
+450,2016,Hiroki Sakai plays for <extra_id_0>.,Olympique de Marseille;Japan national football team;Hannover 96
+451,2016,Moon Seon-min plays for <extra_id_0>.,Djurgårdens IF
+452,2016,Charles Kauvu Abel is a member of the <extra_id_0>.,People's National Congress Party
+453,2016,Averil Power is a member of the <extra_id_0>.,independent politician
+454,2016,Eoin Morgan plays for <extra_id_0>.,Sunrisers Hyderabad
+455,2016,Liam Fox holds the position of <extra_id_0>.,Secretary of State for International Trade;President of the Board of Trade
+456,2016,<extra_id_0> is the chair of Brothers of Italy.,Giorgia Meloni
+457,2016,M. Lee Pelton works for <extra_id_0>.,Emerson College
+458,2016,Elaine Fox works for <extra_id_0>.,University of Oxford
+459,2016,DeepMind is owned by <extra_id_0>.,Alphabet Inc.
+460,2016,Rui Vitória works for <extra_id_0>.,S.L. Benfica
+461,2016,Jon Trickett holds the position of <extra_id_0>.,"Shadow Secretary of State for Business, Innovation and Skills;Shadow Secretary of State for Communities and Local Government"
+462,2016,Carine Roitfeld works for <extra_id_0>.,Harper's Bazaar
+463,2016,Jonathan Smallwood works for <extra_id_0>.,University of York
+464,2016,Hunter Biden works for <extra_id_0>.,BHR Partners;Burisma Holdings
+465,2016,Taizo Mikazuki is a member of the <extra_id_0>.,independent politician

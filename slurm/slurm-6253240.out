@@ -1,0 +1,41 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-rtx6k
+#SBATCH --account=cse
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --time=12:00:00 
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+# python run.py --config configs/templama/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.151-em_score=0.000.ckpt
+
+# python run.py --config configs/wmt/training/t5_kadapters_yearly_2freeze.json -checkpoint_path outputs/wmtkadapter_2010_2freeze_158_128/epoch=8-f1_score=0.084-em_score=0.000.ckpt
+
+python preprocess_wmt_train_data.py 2007
+--------------------
+number of articles: 183087
+183087 articles loaded
+Read csv: 6.877062176999999 seconds
+decode sentences: 2.6373238069999996 seconds
+Create sentences: 0.8468716559999994 seconds
+total sentences 4231279
+Run spacy on sentences: 5.301999999929308e-06 seconds
+Construct datasets: 440.547235677 seconds
+max input length = 261
+max output length = 2
+Traceback (most recent call last):
+  File "preprocess_wmt_train_data.py", line 130, in <module>
+    main()
+  File "preprocess_wmt_train_data.py", line 99, in main
+    if len(val_dataset < val_size):
+TypeError: '<' not supported between instances of 'list' and 'int'

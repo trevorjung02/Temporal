@@ -34,7 +34,7 @@ def main():
 
     subjects = list(queries_by_sub.keys())
     random.shuffle(subjects)
-    split = {'train': 0.7, 'val': 0.1, 'test': 0.2}
+    split = {'train': 0.2, 'val': 0.1, 'test': 0.7}
     i = 0 
     for v in datasets:
         while len(datasets[v]) < len(data) * split[v] and i < len(subjects):

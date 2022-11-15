@@ -1,0 +1,457 @@
+id,date,input,output
+0,2013,"In 2013, <extra_id_0> is the head coach of U.C. Sampdoria.",Siniša Mihajlović
+1,2013,"In 2013, Edrick Floreal works for <extra_id_0>.",Kentucky Wildcats
+2,2013,"In 2013, The Academic Bookstore is owned by <extra_id_0>.",Stockmann
+3,2013,"In 2013, <extra_id_0> is the chair of Stortinget.",Olemic Thommessen
+4,2013,"In 2013, Usman Ahmed Khan Buzdar is a member of the <extra_id_0>.",Pakistan Muslim League (N)
+5,2013,"In 2013, <extra_id_0> is the head of the government of North Rhine-Westphalia.",Hannelore Kraft
+6,2013,"In 2013, <extra_id_0> is the chair of Leicester City F.C..",Vichai Srivaddhanaprabha
+7,2013,"In 2013, <extra_id_0> is the head coach of Leicester City F.C..",Nigel Pearson
+8,2013,"In 2013, Vadim Mișin is a member of the <extra_id_0>.",Revival Party
+9,2013,"In 2013, <extra_id_0> is the head coach of FC Dynamo Brest.",Vladimir Kurnev;Sergey Petrovich Kovalchuk
+10,2013,"In 2013, <extra_id_0> is the chair of Liberal Democrats.",Tim Farron;Nick Clegg
+11,2013,"In 2013, Giorgio Napolitano holds the position of <extra_id_0>.",President of Italy
+12,2013,"In 2013, <extra_id_0> is the head coach of SV Waldhof Mannheim.",Reiner Hollich;Kenan Koçak
+13,2013,"In 2013, Angela Ahrendts works for <extra_id_0>.",Burberry
+14,2013,"In 2013, <extra_id_0> is the chair of Alliance of Liberals and Democrats for Europe Party.",Graham Watson
+15,2013,"In 2013, Yang Shih-kuang is a member of the <extra_id_0>.",Kuomintang
+16,2013,"In 2013, Christophe Dessimoz works for <extra_id_0>.",European Bioinformatics Institute
+17,2013,"In 2013, Chloe Bibby attended <extra_id_0>.",Rowville Secondary College
+18,2013,"In 2013, Julia Y Chan works for <extra_id_0>.",Louisiana State University;University of Texas at Dallas
+19,2013,"In 2013, Joan Mesquida Ferrando is a member of the <extra_id_0>.",Spanish Socialist Workers' Party
+20,2013,"In 2013, Luke Foster plays for <extra_id_0>.",Preston North End F.C.;Lincoln City F.C.
+21,2013,"In 2013, <extra_id_0> is the head coach of Gaziantep F.K..",Suat Kaya
+22,2013,"In 2013, <extra_id_0> is the head of the government of Iowa.",Terry Branstad
+23,2013,"In 2013, Com Hem is owned by <extra_id_0>.",BC Partners
+24,2013,"In 2013, Peter R. Orszag works for <extra_id_0>.",Citigroup
+25,2013,"In 2013, Mark H. Erickson works for <extra_id_0>.",Northampton Community College
+26,2013,"In 2013, <extra_id_0> is the head of the government of South Ossetia.",Leonid Tibilov
+27,2013,"In 2013, Leon Barnett plays for <extra_id_0>.",Wigan Athletic F.C.;Cardiff City F.C.;Norwich City F.C.
+28,2013,"In 2013, Daniel McBreen plays for <extra_id_0>.",Shanghai SIPG F.C.;Central Coast Mariners FC
+29,2013,"In 2013, Damian Boeselager attended <extra_id_0>.",Columbia University
+30,2013,"In 2013, <extra_id_0> is the chair of National Cancer Institute.",Harold E. Varmus
+31,2013,"In 2013, <extra_id_0> is the chair of Òmnium Cultural.",Muriel Casals
+32,2013,"In 2013, Patria is owned by <extra_id_0>.",Airbus Group;Finland
+33,2013,"In 2013, <extra_id_0> is the head coach of Pittsburgh Riverhounds SC.",Justin Evans
+34,2013,"In 2013, Geoff Horsfield plays for <extra_id_0>.",Alvechurch F.C.
+35,2013,"In 2013, Chris Montgomery works for <extra_id_0>.",Red Hat;Mozilla
+36,2013,"In 2013, Dragan Čavić is a member of the <extra_id_0>.",Democratic Party of the Republika Srpska;National Democratic Movement
+37,2013,"In 2013, Reber Radio Telescope is owned by <extra_id_0>.",National Radio Astronomy Observatory
+38,2013,"In 2013, Stadio Friuli is owned by <extra_id_0>.",Udine;Udinese Calcio
+39,2013,"In 2013, Muttiah Muralitharan plays for <extra_id_0>.",Royal Challengers Bangalore;Melbourne Renegades
+40,2013,"In 2013, Michael Carberry plays for <extra_id_0>.",Hampshire County Cricket Club;England and Wales cricket team
+41,2013,"In 2013, Darren Ambrose plays for <extra_id_0>.",Birmingham City F.C.
+42,2013,"In 2013, Pepe Reina plays for <extra_id_0>.",Spain national association football team;S.S.C. Napoli;Liverpool F.C.
+43,2013,"In 2013, <extra_id_0> is the head coach of Hammarby Fotboll.",Gregg Berhalter;Thomas Dennerby
+44,2013,"In 2013, Wells Fargo Center is owned by <extra_id_0>.",Ivanhoe Cambridge;Beacon Capital Partners
+45,2013,"In 2013, Ravichandran Ashwin plays for <extra_id_0>.",India national cricket team;Chennai Super Kings
+46,2013,"In 2013, Tim Burchett holds the position of <extra_id_0>.",mayor
+47,2013,"In 2013, Steve Nash plays for <extra_id_0>.",Los Angeles Lakers
+48,2013,"In 2013, Mary Creagh holds the position of <extra_id_0>.","Shadow Secretary of State for Transport;Shadow Secretary of State for Environment, Food and Rural Affairs"
+49,2013,"In 2013, Daniele Ganser works for <extra_id_0>.",University of St. Gallen
+50,2013,"In 2013, Nora H de Leeuw works for <extra_id_0>.",Utrecht University
+51,2013,"In 2013, <extra_id_0> is the head of the government of Vesthimmerland Municipality.",Knud Kristensen
+52,2013,"In 2013, <extra_id_0> is the head coach of Louisville Cardinals men's basketball.",Rick Pitino
+53,2013,"In 2013, Petar Mamić plays for <extra_id_0>.",Croatia national under-17 football team
+54,2013,"In 2013, Todd Rokita holds the position of <extra_id_0>.",United States representative
+55,2013,"In 2013, Britt Marie Hermes attended <extra_id_0>.",University of Kiel
+56,2013,"In 2013, Alessandro Nesta plays for <extra_id_0>.",Montreal Impact
+57,2013,"In 2013, John S. Chen works for <extra_id_0>.",BlackBerry;Sybase
+58,2013,"In 2013, <extra_id_0> is the chair of Associazione Calcio Milan.",Silvio Berlusconi
+59,2013,"In 2013, <extra_id_0> is the head coach of Associazione Calcio Milan.",Massimiliano Allegri
+60,2013,"In 2013, Associazione Calcio Milan is owned by <extra_id_0>.",Fininvest
+61,2013,"In 2013, Motohiro Yogo works for <extra_id_0>.",Federal Reserve Bank of Minneapolis
+62,2013,"In 2013, Frans Van de Werf works for <extra_id_0>.",European Society of Cardiology
+63,2013,"In 2013, Yaakov Peri is a member of the <extra_id_0>.",Yesh Atid
+64,2013,"In 2013, Ali Karimi plays for <extra_id_0>.",Persepolis F.C.;Tractor S.C.
+65,2013,"In 2013, Dinesh Chandimal plays for <extra_id_0>.",Sri Lanka national cricket team;Ruhuna Royals
+66,2013,"In 2013, Kongsvinger Line is owned by <extra_id_0>.",Norwegian National Rail Administration
+67,2013,"In 2013, David Bridges plays for <extra_id_0>.",Chelmsford City F.C.;Bury Town F.C.;Brackley Town F.C.
+68,2013,"In 2013, Dražen Kutleša holds the position of <extra_id_0>.",diocesan bishop;Catholic bishop
+69,2013,"In 2013, Thomas F Krauss works for <extra_id_0>.",University of York
+70,2013,"In 2013, Carlos Tevez plays for <extra_id_0>.",Manchester City F.C.;Chelsea F.C.
+71,2013,"In 2013, Mariló Montero works for <extra_id_0>.",Televisión Española
+72,2013,"In 2013, <extra_id_0> is the head of the government of Vilnius.",Artūras Zuokas
+73,2013,"In 2013, <extra_id_0> is the head coach of FK Rad.",Marko Nikolić
+74,2013,"In 2013, Linha do Oeste is owned by <extra_id_0>.",REFER
+75,2013,"In 2013, Jason H. Moore works for <extra_id_0>.",Dartmouth College
+76,2013,"In 2013, <extra_id_0> is the chair of Burberry.",John Peace
+77,2013,"In 2013, Angela Casini works for <extra_id_0>.",University of Groningen
+78,2013,"In 2013, Vilja Toomast is a member of the <extra_id_0>.",Estonian Reform Party
+79,2013,"In 2013, <extra_id_0> is the head coach of Astana.",Dmitry Fofonov;Gorazd Štangelj;Stefano Zanini;Giuseppe Martinelli;Serguei Yakovlev
+80,2013,"In 2013, <extra_id_0> is the chair of Fare per Fermare il Declino.",Michele Boldrin;Oscar Giannino
+81,2013,"In 2013, Beate Meinl-Reisinger is a member of the <extra_id_0>.",NEOS – The New Austria
+82,2013,"In 2013, James Allsop works for <extra_id_0>.",University of Sydney
+83,2013,"In 2013, Rafael Correa Delgado holds the position of <extra_id_0>.",President of Ecuador
+84,2013,"In 2013, Steven Finn plays for <extra_id_0>.",England and Wales cricket team
+85,2013,"In 2013, Mustafa Akyol works for <extra_id_0>.",Fatih University
+86,2013,"In 2013, Birgitta Jónsdóttir is a member of the <extra_id_0>.",Citizens' Movement;Pirate Party Iceland
+87,2013,"In 2013, Harbhajan Singh plays for <extra_id_0>.",India national cricket team;Mumbai Indians
+88,2013,"In 2013, Hilary Benn holds the position of <extra_id_0>.",Shadow Secretary of State for Communities and Local Government
+89,2013,"In 2013, Minho railway line is owned by <extra_id_0>.",REFER
+90,2013,"In 2013, Port of Aveiro branch line is owned by <extra_id_0>.",REFER
+91,2013,"In 2013, <extra_id_0> is the head coach of KV Mechelen.",Harm van Veldhoven
+92,2013,"In 2013, Nicole Megow works for <extra_id_0>.",Max Planck Institute for Informatics
+93,2013,"In 2013, Chan Chun Sing holds the position of <extra_id_0>.",Ministry of Defence;Ministry of Social and Family Development
+94,2013,"In 2013, <extra_id_0> is the head of the government of Emilia-Romagna.",Vasco Errani
+95,2013,"In 2013, Janak Sapkota works for <extra_id_0>.",Adolphe Merkle Institute
+96,2013,"In 2013, Greg Jericho works for <extra_id_0>.",The Guardian
+97,2013,"In 2013, Heather Cox Richardson works for <extra_id_0>.",Boston College
+98,2013,"In 2013, <extra_id_0> is the head of the government of Odessa.",Oleksiy Kostusyev
+99,2013,"In 2013, Muireann Irish works for <extra_id_0>.",University of New South Wales;Neuroscience Research Australia
+100,2013,"In 2013, Marta Madrenas i Mir is a member of the <extra_id_0>.",Democratic Convergence of Catalonia
+101,2013,"In 2013, <extra_id_0> is the chair of Pomona College.",David W. Oxtoby
+102,2013,"In 2013, Craig Bryson plays for <extra_id_0>.",Derby County F.C.;Scotland national football team
+103,2013,"In 2013, Kostas Manolas plays for <extra_id_0>.",Olympiacos F.C.;Greece national association football team
+104,2013,"In 2013, Bill Cassidy holds the position of <extra_id_0>.",United States representative
+105,2013,"In 2013, Saumitra Khan is a member of the <extra_id_0>.",Indian National Congress
+106,2013,"In 2013, <extra_id_0> is the head of the government of Szombathely.",Tivadar Puskás
+107,2013,"In 2013, Heather Humphreys holds the position of <extra_id_0>.",Teachta Dála
+108,2013,"In 2013, Rachel Treweek holds the position of <extra_id_0>.",Archdeacon of Hackney
+109,2013,"In 2013, Janice Lee is a member of the <extra_id_0>.",Democratic Action Party
+110,2013,"In 2013, <extra_id_0> is the chair of Société des amis du Louvre.",Marc Fumaroli
+111,2013,"In 2013, Jæren Line is owned by <extra_id_0>.",Norwegian National Rail Administration
+112,2013,"In 2013, <extra_id_0> is the head of the government of Baton Rouge.",Kip Holden
+113,2013,"In 2013, Inés Sabanés is a member of the <extra_id_0>.",Equo
+114,2013,"In 2013, Henriette Reker works for <extra_id_0>.",Cologne
+115,2013,"In 2013, Volodymyr Lytvyn holds the position of <extra_id_0>.",People's Deputy of Ukraine
+116,2013,"In 2013, Dawn Childs works for <extra_id_0>.",Gatwick Airport
+117,2013,"In 2013, Ryan Arcidiacono attended <extra_id_0>.",Villanova University
+118,2013,"In 2013, Jennifer Bendery works for <extra_id_0>.",HuffPost
+119,2013,"In 2013, <extra_id_0> is the head coach of Limburg Lions.",Maurice Canton
+120,2013,"In 2013, <extra_id_0> is the head of the government of India.",Manmohan Singh
+121,2013,"In 2013, Stephan Weil holds the position of <extra_id_0>.",President of the Bundesrat of Germany;Minister-President of Lower Saxony
+122,2013,"In 2013, Play M Entertainment is owned by <extra_id_0>.",Cube Entertainment
+123,2013,"In 2013, Brock Turner attended <extra_id_0>.",Oakwood High School
+124,2013,"In 2013, Philipp Lahm plays for <extra_id_0>.",Germany national association football team;FC Bayern Munich
+125,2013,"In 2013, Glenn Greenwald works for <extra_id_0>.",The Guardian
+126,2013,"In 2013, David Warner plays for <extra_id_0>.",Australia national cricket team;Sydney Sixers;Delhi Daredevils
+127,2013,"In 2013, Olav Gunnar Ballo is a member of the <extra_id_0>.",Norwegian Labour Party
+128,2013,"In 2013, Hong Moon-jong is a member of the <extra_id_0>.",Liberty Korea Party
+129,2013,"In 2013, Lou Barletta holds the position of <extra_id_0>.",United States representative
+130,2013,"In 2013, <extra_id_0> is the head of the government of Erlangen.",Siegfried Balleis
+131,2013,"In 2013, <extra_id_0> is the head coach of Czech Republic national association football team.",Michal Bílek;Josef Pešice
+132,2013,"In 2013, Eric Garcetti holds the position of <extra_id_0>.",Mayor of the City of Los Angeles
+133,2013,"In 2013, Christofer Clemente works for <extra_id_0>.",The University of Queensland
+134,2013,"In 2013, <extra_id_0> is the head coach of Motherwell F.C..",Stuart McCall
+135,2013,"In 2013, Harrison Afful plays for <extra_id_0>.",ES Tunis
+136,2013,"In 2013, Thaddeus Ma Daqin holds the position of <extra_id_0>.",auxiliary bishop;Catholic bishop
+137,2013,"In 2013, Jean-Louis Tauran holds the position of <extra_id_0>.",cardinal
+138,2013,"In 2013, Daniel Boeri is a member of the <extra_id_0>.",Horizon Monaco
+139,2013,"In 2013, Will Buckley plays for <extra_id_0>.",Brighton & Hove Albion F.C.
+140,2013,"In 2013, Corina Crețu is a member of the <extra_id_0>.",Social Democratic Party
+141,2013,"In 2013, <extra_id_0> is the chair of Democratic and Republican Left.",André Chassaigne
+142,2013,"In 2013, Democratic and Republican Left is a member of the <extra_id_0>.",Guianese Socialist Party
+143,2013,"In 2013, Andrea Pirlo plays for <extra_id_0>.",Juventus FC;Italy national association football team
+144,2013,"In 2013, Rhea Boyd attended <extra_id_0>.",UCSF Medical Center;Harvard T.H. Chan School of Public Health
+145,2013,"In 2013, Norwegian digital learning arena is owned by <extra_id_0>.",Nord-Trøndelag County Municipality;Sør-Trøndelag County Municipality
+146,2013,"In 2013, Michael Owen plays for <extra_id_0>.",Stoke City F.C.;England national association football team
+147,2013,"In 2013, <extra_id_0> is the head coach of Lotto-Soudal.",Kurt Van De Wouwer;Mario Aerts;Bart Leysen
+148,2013,"In 2013, Meng Wanzhou holds the position of <extra_id_0>.",chief financial officer
+149,2013,"In 2013, <extra_id_0> is the chair of Schloss Dagstuhl – Leibniz Center for Informatics.",Reinhard Wilhelm
+150,2013,"In 2013, David Altshuler works for <extra_id_0>.",Massachusetts Institute of Technology
+151,2013,"In 2013, 511 Federal Building is owned by <extra_id_0>.",General Services Administration
+152,2013,"In 2013, Bjarne Stroustrup works for <extra_id_0>.",Texas A&M University
+153,2013,"In 2013, Yang Jiechi holds the position of <extra_id_0>.",Foreign Minister of the People's Republic of China;State Councilor of the People's Republic of China
+154,2013,"In 2013, Gennaro Gattuso plays for <extra_id_0>.",FC Sion
+155,2013,"In 2013, Amos Yong works for <extra_id_0>.",Regent University
+156,2013,"In 2013, <extra_id_0> is the chair of Supreme Council of the Armed Forces.",Abdel Fattah el-Sisi
+157,2013,"In 2013, <extra_id_0> is the head of the government of Taiwan.",Jiang Yi-huah
+158,2013,"In 2013, Brian Duensing works for <extra_id_0>.",Minnesota Twins
+159,2013,"In 2013, Jonathan Sexton plays for <extra_id_0>.",British & Irish Lions;Racing 92;Leinster Rugby
+160,2013,"In 2013, <extra_id_0> is the head coach of FC Urartu.",Volodymyr Pyatenko
+161,2013,"In 2013, <extra_id_0> is the head coach of San Francisco 49ers.",Chip Kelly
+162,2013,"In 2013, <extra_id_0> is the head of the government of Atlanta.",Kasim Reed
+163,2013,"In 2013, Andrej Plenković holds the position of <extra_id_0>.",member of the European Parliament
+164,2013,"In 2013, <extra_id_0> is the head coach of UCF Knights football.",George O'Leary
+165,2013,"In 2013, Idit Silman is a member of the <extra_id_0>.",The Jewish Home
+166,2013,"In 2013, Kongregate is owned by <extra_id_0>.",GameStop
+167,2013,"In 2013, Greg Tansey plays for <extra_id_0>.",Stevenage F.C.
+168,2013,"In 2013, <extra_id_0> is the head of the government of Chelyabinsk Oblast.",Mikhail Yurevich
+169,2013,"In 2013, Stephen Ireland plays for <extra_id_0>.",Aston Villa F.C.;Stoke City F.C.
+170,2013,"In 2013, James P. Allison works for <extra_id_0>.",University of Texas MD Anderson Cancer Center
+171,2013,"In 2013, Álvaro Morata plays for <extra_id_0>.",Real Madrid Castilla;Real Madrid CF;Spain national under-21 football team
+172,2013,"In 2013, Giovani dos Santos plays for <extra_id_0>.",RCD Mallorca;Villarreal Club de Fútbol
+173,2013,"In 2013, Robert Bingham works for <extra_id_0>.",University of Edinburgh;University of Aberdeen
+174,2013,"In 2013, Winston Reid plays for <extra_id_0>.",West Ham United F.C.;New Zealand national football team
+175,2013,"In 2013, Sampa Das attended <extra_id_0>.",Purdue University
+176,2013,"In 2013, Bradley Wiggins plays for <extra_id_0>.",Ineos Grenadier
+177,2013,"In 2013, <extra_id_0> is the chair of Reserve Bank of Australia.",Glenn Stevens
+178,2013,"In 2013, Gianluca Zambrotta plays for <extra_id_0>.",FC Chiasso
+179,2013,"In 2013, Anthony Stokes plays for <extra_id_0>.",Republic of Ireland national association football team;Celtic F.C.
+180,2013,"In 2013, ODEON Kino is owned by <extra_id_0>.",Bonnier Group;Nordic Cinema Group
+181,2013,"In 2013, Gillian Rose works for <extra_id_0>.",The Open University
+182,2013,"In 2013, <extra_id_0> is the head of the government of Campania.",Stefano Caldoro
+183,2013,"In 2013, Marcus Camby plays for <extra_id_0>.",New York Knicks;Toronto Raptors
+184,2013,"In 2013, Nina Revoyr holds the position of <extra_id_0>.",vice president
+185,2013,"In 2013, Réginal Goreux plays for <extra_id_0>.",Standard Liège;Haiti national football team;FC Krylia Sovetov Samara
+186,2013,"In 2013, Tim Paine plays for <extra_id_0>.",Australia national cricket team;Hobart Hurricanes
+187,2013,"In 2013, <extra_id_0> is the head of the government of Uttar Pradesh.",Akhilesh Yadav
+188,2013,"In 2013, <extra_id_0> is the chair of Christian Social People's Party.",Michel Wolter
+189,2013,"In 2013, <extra_id_0> is the chair of Heinrich Böll Foundation.",Ralf Fücks
+190,2013,"In 2013, <extra_id_0> is the head of the government of Vermont.",Peter Shumlin
+191,2013,"In 2013, <extra_id_0> is the head coach of Bnei Yehuda Tel Aviv F.C..",Dror Kashtan
+192,2013,"In 2013, Remigijus Šimašius is a member of the <extra_id_0>.",Liberal Movement
+193,2013,"In 2013, Ruptly is owned by <extra_id_0>.",RT;Rossiya Segodnya
+194,2013,"In 2013, <extra_id_0> is the head of the government of Wilmington.",Dennis P. Williams
+195,2013,"In 2013, Mette Frederiksen holds the position of <extra_id_0>.",Danish Minister for Labour
+196,2013,"In 2013, Bhaichung Bhutia plays for <extra_id_0>.",United Sikkim F.C.
+197,2013,"In 2013, Kateřina Jacques is a member of the <extra_id_0>.",Green Party
+198,2013,"In 2013, Christos Zois is a member of the <extra_id_0>.",New Reformist Radical Reconstruction
+199,2013,"In 2013, Dawn Hadley works for <extra_id_0>.",University of Sheffield
+200,2013,"In 2013, François Hollande holds the position of <extra_id_0>.",Co-Prince of Andorra;President of the French Republic
+201,2013,"In 2013, Marie-Josèphe Jude works for <extra_id_0>.",Conservatoire national supérieur de musique et de danse de Lyon
+202,2013,"In 2013, Gennady Gudkov is a member of the <extra_id_0>.",Russian Opposition Coordination Council;A Just Russia
+203,2013,"In 2013, Trey McKinney-Jones attended <extra_id_0>.",University of Miami
+204,2013,"In 2013, Robert Mueller holds the position of <extra_id_0>.",Director of the Federal Bureau of Investigation
+205,2013,"In 2013, Ulf Kristersson holds the position of <extra_id_0>.",Minister for Social Security
+206,2013,"In 2013, László Tőkés holds the position of <extra_id_0>.",member of the European Parliament
+207,2013,"In 2013, Rémi Mathis works for <extra_id_0>.",Bibliothèque nationale de France
+208,2013,"In 2013, Tracy McGrady plays for <extra_id_0>.",San Antonio Spurs
+209,2013,"In 2013, Shari Steele works for <extra_id_0>.",Electronic Frontier Foundation
+210,2013,"In 2013, Ghil'ad Zuckermann works for <extra_id_0>.",University of Adelaide
+211,2013,"In 2013, Marian-Jean Marinescu is a member of the <extra_id_0>.",Democratic Liberal Party
+212,2013,"In 2013, Nathan Rourke attended <extra_id_0>.",Holy Trinity Catholic Secondary School
+213,2013,"In 2013, Michael Hussey plays for <extra_id_0>.",Australia national cricket team;Sydney Thunder
+214,2013,"In 2013, Sachin Tendulkar plays for <extra_id_0>.",India national cricket team;Mumbai Indians;Mumbai cricket team;Marylebone Cricket Club
+215,2013,"In 2013, <extra_id_0> is the head coach of England national association football team.",Roy Hodgson
+216,2013,"In 2013, Ignacio Gutiérrez works for <extra_id_0>.",Chilevisión
+217,2013,"In 2013, Katja Kassin attended <extra_id_0>.","California State University, Northridge"
+218,2013,"In 2013, Arnold Rüütel is a member of the <extra_id_0>.",Conservative People's Party of Estonia
+219,2013,"In 2013, Ricky Ponting plays for <extra_id_0>.",Antigua Hawksbills;Hobart Hurricanes;Surrey County Cricket Club;Tasmania cricket team;Mumbai Indians
+220,2013,"In 2013, Arti Agrawal works for <extra_id_0>.","City, University of London"
+221,2013,"In 2013, Rene Farrell plays for <extra_id_0>.",Australia national cricket team;ACT Meteors
+222,2013,"In 2013, Viktoras Pranckietis is a member of the <extra_id_0>.",Lithuanian Peasant and Greens Union
+223,2013,"In 2013, Patrick Leahy holds the position of <extra_id_0>.",United States senator;President pro tempore of the United States Senate
+224,2013,"In 2013, Meir Sheetrit is a member of the <extra_id_0>.",Hatnuah
+225,2013,"In 2013, Joel Byrom plays for <extra_id_0>.",Preston North End F.C.
+226,2013,"In 2013, Joe Garcia holds the position of <extra_id_0>.",United States representative
+227,2013,"In 2013, Elisa Granato attended <extra_id_0>.",University of Zurich;ETH Zurich
+228,2013,"In 2013, Wang Qishan holds the position of <extra_id_0>.",Secretary of the Central Commission for Discipline Inspection;Vice Premier of the State Council of the People's Republic of China
+229,2013,"In 2013, Tom Price holds the position of <extra_id_0>.",United States representative
+230,2013,"In 2013, Ilya Mikhaylov works for <extra_id_0>.",FC Zenit-Izhevsk Izhevsk
+231,2013,"In 2013, Dean Heller holds the position of <extra_id_0>.",United States senator
+232,2013,"In 2013, Ajinkya Rahane plays for <extra_id_0>.",India national cricket team
+233,2013,"In 2013, Kamel Morjane is a member of the <extra_id_0>.",National Destourian Initiative
+234,2013,"In 2013, Fred VanVleet plays for <extra_id_0>.",Wichita State Shockers men's basketball
+235,2013,"In 2013, Chip Smith works for <extra_id_0>.",The Glover Park Group
+236,2013,"In 2013, Linda Collins-Smith is a member of the <extra_id_0>.",Republican Party
+237,2013,"In 2013, Banuera Berina is a member of the <extra_id_0>.",Maurin Kiribati Pati
+238,2013,"In 2013, Lassana Diarra plays for <extra_id_0>.",FC Lokomotiv Moscow;FC Anzhi Makhachkala
+239,2013,"In 2013, Paul O'Connell plays for <extra_id_0>.",British & Irish Lions;Munster Rugby
+240,2013,"In 2013, Rona Ambrose holds the position of <extra_id_0>.",Minister of Health;Minister responsible for the Status of Women;Minister of Public Services and Procurement
+241,2013,"In 2013, Luke Simpkins is a member of the <extra_id_0>.",Liberal Party of Australia
+242,2013,"In 2013, Ilya Sutskever works for <extra_id_0>.",Google Brain
+243,2013,"In 2013, Marina Geli i Fàbrega is a member of the <extra_id_0>.",Socialists' Party of Catalonia
+244,2013,"In 2013, Michael Gove holds the position of <extra_id_0>.",Secretary of State for Education
+245,2013,"In 2013, Marina Kaljurand holds the position of <extra_id_0>.",Estonian Ambassador to the United States
+246,2013,"In 2013, Thomas P. O'Neill Jr. Federal Building is owned by <extra_id_0>.",General Services Administration
+247,2013,"In 2013, <extra_id_0> is the chair of State Duma.",Sergey Naryshkin
+248,2013,"In 2013, Bergen Line is owned by <extra_id_0>.",Norwegian National Rail Administration
+249,2013,"In 2013, Johnathan Williams attended <extra_id_0>.",University of Missouri;Southwind High School
+250,2013,"In 2013, Christina Pagel works for <extra_id_0>.",University College London
+251,2013,"In 2013, Saleem Ali works for <extra_id_0>.",The University of Queensland
+252,2013,"In 2013, Bill Keating holds the position of <extra_id_0>.",United States representative
+253,2013,"In 2013, Enrico Carattoni is a member of the <extra_id_0>.",Sammarinese Socialist Party
+254,2013,"In 2013, Zhang Zetian attended <extra_id_0>.",Tsinghua University
+255,2013,"In 2013, Verdiana Masanja works for <extra_id_0>.",National University of Rwanda
+256,2013,"In 2013, <extra_id_0> is the chair of Lega Nord Piemont.",Gianna Gancia
+257,2013,"In 2013, Catherine Osson is a member of the <extra_id_0>.",Socialist Party
+258,2013,"In 2013, Hannu Manninen works for <extra_id_0>.",Nordic Regional Airlines
+259,2013,"In 2013, Carli Lloyd plays for <extra_id_0>.",Western New York Flash
+260,2013,"In 2013, Firdous Ashiq Awan is a member of the <extra_id_0>.",Pakistan Peoples Party
+261,2013,"In 2013, Denis Mercier holds the position of <extra_id_0>.",Chief of Staff of the French Air Force
+262,2013,"In 2013, Arkane Studios is owned by <extra_id_0>.",ZeniMax Media
+263,2013,"In 2013, John Nutter plays for <extra_id_0>.",Woking F.C.;Lincoln City F.C.
+264,2013,"In 2013, Craig Bellamy plays for <extra_id_0>.",Wales national association football team;Cardiff City F.C.
+265,2013,"In 2013, James McClean plays for <extra_id_0>.",Wigan Athletic F.C.;Sunderland A.F.C.;Republic of Ireland national association football team
+266,2013,"In 2013, Darren Sammy plays for <extra_id_0>.",Sunrisers Hyderabad;West Indies cricket team;St Lucia Zouks
+267,2013,"In 2013, Ernest Maragall is a member of the <extra_id_0>.",New Catalan Left
+268,2013,"In 2013, Arseniy Yatsenyuk holds the position of <extra_id_0>.",People's Deputy of Ukraine
+269,2013,"In 2013, Viktor Yanukovych holds the position of <extra_id_0>.",President of Ukraine
+270,2013,"In 2013, Neil Alexander plays for <extra_id_0>.",Rangers F.C.;Crystal Palace F.C.
+271,2013,"In 2013, <extra_id_0> is the head coach of Tennis Borussia Berlin.",Markus Schatte
+272,2013,"In 2013, Sharon Tooze works for <extra_id_0>.",Cancer Research UK
+273,2013,"In 2013, Leo Li attended <extra_id_0>.",Wuhan University
+274,2013,"In 2013, Iker Jiménez Elizari works for <extra_id_0>.",Cadena SER
+275,2013,"In 2013, Maria A. Pallante works for <extra_id_0>.",United States Copyright Office
+276,2013,"In 2013, Chao Cheng-yu is a member of the <extra_id_0>.",Kuomintang
+277,2013,"In 2013, Shafie Apdal is a member of the <extra_id_0>.",United Malays National Organisation
+278,2013,"In 2013, Grace Starry West works for <extra_id_0>.",Hillsdale College
+279,2013,"In 2013, <extra_id_0> is the head of the government of Berlin.",Klaus Wowereit
+280,2013,"In 2013, Jason Eric Box works for <extra_id_0>.",Geological Survey of Denmark and Greenland
+281,2013,"In 2013, Lauren Cornell works for <extra_id_0>.","Center for Curatorial Studies, Bard College;New Museum"
+282,2013,"In 2013, Lindsay Hoyle holds the position of <extra_id_0>.",Chairman of Ways and Means
+283,2013,"In 2013, Danny O'Brien works for <extra_id_0>.",Electronic Frontier Foundation;Committee to Protect Journalists
+284,2013,"In 2013, Cindy Hyde-Smith is a member of the <extra_id_0>.",Republican Party
+285,2013,"In 2013, Josep Guerrero works for <extra_id_0>.",Aalborg University
+286,2013,"In 2013, <extra_id_0> is the chair of Catalan Academy of Cinema.",Joel Joan;Isona Passola i Vidal
+287,2013,"In 2013, T. J. McConnell attended <extra_id_0>.",University of Arizona
+288,2013,"In 2013, <extra_id_0> is the head of the government of Acre.",Tião Viana
+289,2013,"In 2013, Gérald Darmanin is a member of the <extra_id_0>.",Union for a Popular Movement
+290,2013,"In 2013, <extra_id_0> is the head coach of IF Elfsborg.",Jörgen Lennartsson
+291,2013,"In 2013, Ramal de Aveiro is owned by <extra_id_0>.",REFER
+292,2013,"In 2013, Richard Bruton holds the position of <extra_id_0>.","Teachta Dála;Minister for Jobs, Enterprise and Innovation"
+293,2013,"In 2013, Annie Lööf holds the position of <extra_id_0>.",party leader;Minister for Enterprise
+294,2013,"In 2013, Toni Kroos plays for <extra_id_0>.",Germany national association football team;FC Bayern Munich
+295,2013,"In 2013, Daniel P. Aldrich works for <extra_id_0>.",Purdue University
+296,2013,"In 2013, Gheorghe Flutur is a member of the <extra_id_0>.",Democratic Liberal Party
+297,2013,"In 2013, Kasper Schmeichel plays for <extra_id_0>.",Leicester City F.C.;Denmark national association football team
+298,2013,"In 2013, Malou Aamund works for <extra_id_0>.",Microsoft Corporation
+299,2013,"In 2013, <extra_id_0> is the head coach of England national rugby union team.",Stuart Lancaster
+300,2013,"In 2013, <extra_id_0> is the head of the government of Saitama Prefecture.",Kiyoshi Ueda
+301,2013,"In 2013, Trunk Line is owned by <extra_id_0>.",Norwegian National Rail Administration
+302,2013,"In 2013, Jang Geun-suk attended <extra_id_0>.",Hanyang University
+303,2013,"In 2013, Yasmin Fahimi works for <extra_id_0>.","IG Bergbau, Chemie, Energie"
+304,2013,"In 2013, <extra_id_0> is the head coach of CS Gaz Metan Mediaș.",Gheorghe Mulțescu
+305,2013,"In 2013, Jean-Pierre Grand is a member of the <extra_id_0>.",Union for a Popular Movement;United Republic
+306,2013,"In 2013, Daniel J. Caron works for <extra_id_0>.",Government of Canada
+307,2013,"In 2013, <extra_id_0> is the head of the government of Benin.",Pascal Koupaki
+308,2013,"In 2013, Mumtaz Bhutto is a member of the <extra_id_0>.",Sindh National Front
+309,2013,"In 2013, Tabetha S. Boyajian works for <extra_id_0>.",Yale University
+310,2013,"In 2013, <extra_id_0> is the head of the government of Kaohsiung.",Chen Chu
+311,2013,"In 2013, Édouard Guillaud holds the position of <extra_id_0>.",Chief of the Defence Staff
+312,2013,"In 2013, Apoorva Mandavilli works for <extra_id_0>.",New York University
+313,2013,"In 2013, <extra_id_0> is the head coach of Vaasan Palloseura.",Olli Huttunen
+314,2013,"In 2013, Justin Welby holds the position of <extra_id_0>.",Bishop of Durham;Archbishop of Canterbury;bishop
+315,2013,"In 2013, Andrew Scheer holds the position of <extra_id_0>.",Speaker of the House of Commons
+316,2013,"In 2013, <extra_id_0> is the head coach of Odds BK.",Dag-Eilev Fagermo
+317,2013,"In 2013, <extra_id_0> is the head of the government of Marche.",Gian Mario Spacca
+318,2013,"In 2013, Julio Arca plays for <extra_id_0>.",Middlesbrough F.C.
+319,2013,"In 2013, <extra_id_0> is the chair of Ministry of Finance.",Siv Jensen
+320,2013,"In 2013, <extra_id_0> is the chair of Organisation of Islamic Cooperation.",Ekmeleddin İhsanoğlu
+321,2013,"In 2013, Josep Sánchez i Llibre is a member of the <extra_id_0>.",Democratic Union of Catalonia
+322,2013,"In 2013, Thomas R. Lynch works for <extra_id_0>.",University of Southampton
+323,2013,"In 2013, <extra_id_0> is the head coach of Calcio Padova.",Fulvio Pea
+324,2013,"In 2013, <extra_id_0> is the head of the government of Freiburg im Breisgau.",Dieter Salomon
+325,2013,"In 2013, Eric Swalwell holds the position of <extra_id_0>.",United States representative
+326,2013,"In 2013, <extra_id_0> is the chair of Republic of Bashkortostan.",Rustem Khamitov
+327,2013,"In 2013, <extra_id_0> is the head of the government of Guam.",Eddie Calvo
+328,2013,"In 2013, Joan Gabel works for <extra_id_0>.",University of Missouri
+329,2013,"In 2013, Victor Oladipo plays for <extra_id_0>.",Indiana Hoosiers men's basketball;Orlando Magic
+330,2013,"In 2013, Yariv Oppenheimer is a member of the <extra_id_0>.",Israeli Labor Party
+331,2013,"In 2013, Harry Kewell plays for <extra_id_0>.",Al-Gharafa Sports Club;Melbourne City Football Club
+332,2013,"In 2013, Tunahan Kuzu is a member of the <extra_id_0>.",Labour Party
+333,2013,"In 2013, <extra_id_0> is the chair of Vereinigung für Ökologische Ökonomie.",Niko Paech
+334,2013,"In 2013, Marisol Touraine holds the position of <extra_id_0>.",Minister of Labour;Ministry of Social Affairs and Health
+335,2013,"In 2013, Raymond Leo Burke holds the position of <extra_id_0>.",cardinal;prefect
+336,2013,"In 2013, John Giannandrea works for <extra_id_0>.",Google
+337,2013,"In 2013, <extra_id_0> is the head coach of Legia Warsaw.",Henning Berg;Jan Urban
+338,2013,"In 2013, Susan Baer works for <extra_id_0>.",Port Authority of New York and New Jersey;Arup
+339,2013,"In 2013, <extra_id_0> is the chair of Ministry of Justice.",Hwang Kyo-ahn
+340,2013,"In 2013, Margaret Cheney works for <extra_id_0>.",Colorado State University
+341,2013,"In 2013, Edin Džeko plays for <extra_id_0>.",Manchester City F.C.
+342,2013,"In 2013, <extra_id_0> is the chair of National Rally.",Marine Le Pen
+343,2013,"In 2013, <extra_id_0> is the chair of United States Department of Justice.",Eric Holder
+344,2013,"In 2013, Klaus Iohannis is a member of the <extra_id_0>.",Democratic Forum of Germans in Romania;National Liberal Party
+345,2013,"In 2013, Thein Sein holds the position of <extra_id_0>.",President of Myanmar
+346,2013,"In 2013, Megan Walker attended <extra_id_0>.",Monacan High School
+347,2013,"In 2013, Frank Guinta holds the position of <extra_id_0>.",United States representative
+348,2013,"In 2013, <extra_id_0> is the chair of Humanists UK.",Jim Al-Khalili
+349,2013,"In 2013, Pedro Pierluisi holds the position of <extra_id_0>.",Resident Commissioner of Puerto Rico
+350,2013,"In 2013, Glen Johnson plays for <extra_id_0>.",England national association football team;Liverpool F.C.
+351,2013,"In 2013, Nate Schierholtz works for <extra_id_0>.",Chicago Cubs
+352,2013,"In 2013, Nate Schierholtz plays for <extra_id_0>.",Chicago Cubs
+353,2013,"In 2013, <extra_id_0> is the chair of Unilever.",Michael Treschow
+354,2013,"In 2013, <extra_id_0> is the chair of National Party of Australia.",Warren Truss
+355,2013,"In 2013, Andrew V. Goldberg works for <extra_id_0>.",Microsoft Research
+356,2013,"In 2013, Daniel Swain attended <extra_id_0>.",Stanford University
+357,2013,"In 2013, <extra_id_0> is the chair of European People's Party group.",Joseph Daul
+358,2013,"In 2013, <extra_id_0> is the chair of Mondi Group.",Fred Phaswana
+359,2013,"In 2013, <extra_id_0> is the head coach of R. Charleroi S.C..",Felice Mazzu
+360,2013,"In 2013, Ramon Espadaler Parcerisas is a member of the <extra_id_0>.",Democratic Union of Catalonia
+361,2013,"In 2013, Dominic Grieve holds the position of <extra_id_0>.",Advocate General for Northern Ireland;Attorney General for England and Wales
+362,2013,"In 2013, Ann Sarnoff works for <extra_id_0>.",BBC America
+363,2013,"In 2013, Alex X. Mooney holds the position of <extra_id_0>.",chairperson
+364,2013,"In 2013, Charles M. Huber is a member of the <extra_id_0>.",Christian Democratic Union
+365,2013,"In 2013, <extra_id_0> is the head of the government of Sibiu.",Klaus Iohannis
+366,2013,"In 2013, Jill R. Horwitz works for <extra_id_0>.",University of Victoria
+367,2013,"In 2013, Tua Tagovailoa attended <extra_id_0>.",Saint Louis School
+368,2013,"In 2013, Antoine Bozio works for <extra_id_0>.",Paris School of Economics
+369,2013,"In 2013, Alfa Romeo is owned by <extra_id_0>.",Fiat S.p.A.
+370,2013,"In 2013, Lucas Richman works for <extra_id_0>.",Bangor Symphony Orchestra;Knoxville Symphony Orchestra
+371,2013,"In 2013, Louka Katseli is a member of the <extra_id_0>.",Social Agreement
+372,2013,"In 2013, Rachel Sheherazade works for <extra_id_0>.",SBT
+373,2013,"In 2013, Scott Parker plays for <extra_id_0>.",Tottenham Hotspur F.C.;England national association football team;Fulham F.C.
+374,2013,"In 2013, Dimitar Stoyanov is a member of the <extra_id_0>.",National-Democratic Party
+375,2013,"In 2013, <extra_id_0> is the head of the government of Yonkers.",Mike Spano
+376,2013,"In 2013, Gheorghe Falcă is a member of the <extra_id_0>.",Democratic Liberal Party
+377,2013,"In 2013, Michael Cohen is a member of the <extra_id_0>.",Democratic Party
+378,2013,"In 2013, <extra_id_0> is the head coach of Nippo-Vini Fantini-Europa Ovini.",Hiroshi Daimon
+379,2013,"In 2013, Kemba Walker plays for <extra_id_0>.",Charlotte Hornets
+380,2013,"In 2013, <extra_id_0> is the head coach of FC Gomel.",Alyaksey Merkulaw
+381,2013,"In 2013, Lucy Harris is a member of the <extra_id_0>.",Brexit Party
+382,2013,"In 2013, <extra_id_0> is the head coach of FC Midtjylland.",Glen Riddersholm
+383,2013,"In 2013, Kirill I of Moscow holds the position of <extra_id_0>.",metropolitan bishop
+384,2013,"In 2013, David Lidington holds the position of <extra_id_0>.",Minister of State for Europe
+385,2013,"In 2013, Leah Williamson plays for <extra_id_0>.",England women's national under-17 football team
+386,2013,"In 2013, Rosana Pinheiro-Machado works for <extra_id_0>.",Escola Superior de Propaganda e Marketing;University of Oxford
+387,2013,"In 2013, Régis Manon works for <extra_id_0>.",Sapins FC
+388,2013,"In 2013, <extra_id_0> is the head coach of Greenock Morton F.C..",Allan Moore
+389,2013,"In 2013, Amjad Kalaf plays for <extra_id_0>.",Iraq national under-23 football team;Al-Shorta Baghdad
+390,2013,"In 2013, <extra_id_0> is the head coach of Bora-Hansgrohe.",Enrico Poitschke
+391,2013,"In 2013, <extra_id_0> is the chair of CRH.",Nicky Hartery
+392,2013,"In 2013, <extra_id_0> is the chair of Verband der Reservisten der Deutschen Bundeswehr.",Roderich Kiesewetter
+393,2013,"In 2013, <extra_id_0> is the head coach of Gimnàstic de Tarragona.",Santi Castillejo;Javi Salamero;Vicente Moreno
+394,2013,"In 2013, Stephen Dobbie plays for <extra_id_0>.",Blackpool F.C.;Brighton & Hove Albion F.C.;Crystal Palace F.C.
+395,2013,"In 2013, Michel Bissonnet is a member of the <extra_id_0>.",Union Montreal;Ensemble Montréal
+396,2013,"In 2013, Philippe Gilbert plays for <extra_id_0>.",CCC Team
+397,2013,"In 2013, George Osborne holds the position of <extra_id_0>.",Chancellor of the Exchequer
+398,2013,"In 2013, Lourdes Ciuró i Buldó is a member of the <extra_id_0>.",Democratic Convergence of Catalonia
+399,2013,"In 2013, Christophe Robino is a member of the <extra_id_0>.",Horizon Monaco
+400,2013,"In 2013, Richard Chaplow plays for <extra_id_0>.",Southampton F.C.;Millwall F.C.
+401,2013,"In 2013, Katie Doores works for <extra_id_0>.",King's College London;Scripps Research
+402,2013,"In 2013, Andrew Donlin attended <extra_id_0>.",United States Air Force Academy
+403,2013,"In 2013, Expobank CZ is owned by <extra_id_0>.",Landesbank Baden-Württemberg
+404,2013,"In 2013, Svitlana Zalishchuk is a member of the <extra_id_0>.",European Solidarity
+405,2013,"In 2013, <extra_id_0> is the chair of ADFE-Français du Monde.",Monique Cerisier-ben Guiga
+406,2013,"In 2013, Craig Mackinlay is a member of the <extra_id_0>.",UK Independence Party
+407,2013,"In 2013, China Media Group Headquarters is owned by <extra_id_0>.",China Central Television
+408,2013,"In 2013, <extra_id_0> is the head of the government of North West.",Thandi Modise
+409,2013,"In 2013, Ngozi Okonjo-Iweala holds the position of <extra_id_0>.",Finance Minister of Nigeria
+410,2013,"In 2013, Alpha Condé holds the position of <extra_id_0>.",President of Guinea
+411,2013,"In 2013, <extra_id_0> is the head of the government of Gdańsk.",Paweł Adamowicz
+412,2013,"In 2013, <extra_id_0> is the chair of United States Cyber Command.",Keith B. Alexander
+413,2013,"In 2013, Julia Ebner attended <extra_id_0>.",Vienna University of Economics and Business;University of Vienna;Peking University
+414,2013,"In 2013, <extra_id_0> is the head of the government of New Taipei City.",Eric Chu
+415,2013,"In 2013, Basel Ghattas is a member of the <extra_id_0>.",Balad
+416,2013,"In 2013, S. Sreesanth plays for <extra_id_0>.",Kerala cricket team
+417,2013,"In 2013, Mircea Geoană is a member of the <extra_id_0>.",Social Democratic Party
+418,2013,"In 2013, <extra_id_0> is the chair of Junta of Castile and León.",Juan Vicente Herrera Campo
+419,2013,"In 2013, Sylvia Burwell works for <extra_id_0>.",Walmart
+420,2013,"In 2013, Sauli Niinistö holds the position of <extra_id_0>.",President of Finland
+421,2013,"In 2013, <extra_id_0> is the head coach of SC Paderborn 07.",Stephan Schmidt
+422,2013,"In 2013, Jevon Carter attended <extra_id_0>.",Proviso East High School
+423,2013,"In 2013, <extra_id_0> is the head of the government of Verona.",Flavio Tosi
+424,2013,"In 2013, James R. Clapper holds the position of <extra_id_0>.",Director of National Intelligence
+425,2013,"In 2013, <extra_id_0> is the chair of Alliance '90/The Greens.",Simone Peter;Claudia Roth;Cem Özdemir
+426,2013,"In 2013, Memphis Depay plays for <extra_id_0>.",Netherlands national under-19 football team;Netherlands national under-21 football team;Netherlands national association football team;PSV Eindhoven
+427,2013,"In 2013, Kristin De Troyer works for <extra_id_0>.",St. Katherine College;University of St Andrews
+428,2013,"In 2013, Camille Combal works for <extra_id_0>.",C8;Europe 1
+429,2013,"In 2013, Peggy Piesche works for <extra_id_0>.",Hamilton College;University of Bayreuth
+430,2013,"In 2013, Arjun Singh ( politician) is a member of the <extra_id_0>.",All India Trinamool Congress
+431,2013,"In 2013, Gary Roberts plays for <extra_id_0>.",Mansfield Town F.C.;Floriana F.C.
+432,2013,"In 2013, Jana Žitňanská is a member of the <extra_id_0>.",New Majority
+433,2013,"In 2013, Elazar Stern is a member of the <extra_id_0>.",Hatnuah
+434,2013,"In 2013, Jason Greenblatt works for <extra_id_0>.",The Trump Organization
+435,2013,"In 2013, Yimon Aye works for <extra_id_0>.",Cornell University;Weill Cornell Medicine
+436,2013,"In 2013, Samer Hassan works for <extra_id_0>.",Complutense University of Madrid
+437,2013,"In 2013, Roger Wakimoto works for <extra_id_0>.",National Center for Atmospheric Research;National Science Foundation
+438,2013,"In 2013, <extra_id_0> is the chair of Ministry of Health.",Vytenis Andriukaitis
+439,2013,"In 2013, <extra_id_0> is the head of the government of Nizhny Novgorod Oblast.",Valery Shantsev
+440,2013,"In 2013, Fabio Borini plays for <extra_id_0>.",Italy national under-21 football team;Sunderland A.F.C.;Liverpool F.C.
+441,2013,"In 2013, Miguel Barbosa Huerta is a member of the <extra_id_0>.",Party of the Democratic Revolution
+442,2013,"In 2013, Hiroki Sakai plays for <extra_id_0>.",Japan national football team;Hannover 96
+443,2013,"In 2013, Moon Seon-min plays for <extra_id_0>.",Östersunds FK
+444,2013,"In 2013, Charles Kauvu Abel is a member of the <extra_id_0>.",People's National Congress Party
+445,2013,"In 2013, Averil Power is a member of the <extra_id_0>.",Fianna Fáil
+446,2013,"In 2013, Eoin Morgan plays for <extra_id_0>.",Sydney Thunder
+447,2013,"In 2013, <extra_id_0> is the chair of Brothers of Italy.",Ignazio La Russa;Giorgia Meloni;Guido Crosetto
+448,2013,"In 2013, M. Lee Pelton works for <extra_id_0>.",Emerson College
+449,2013,"In 2013, Elaine Fox works for <extra_id_0>.",University of Essex;University of Oxford
+450,2013,"In 2013, Rui Vitória works for <extra_id_0>.",Vitória S.C.
+451,2013,"In 2013, Jon Trickett holds the position of <extra_id_0>.",Minister for the Cabinet Office
+452,2013,"In 2013, Carine Roitfeld works for <extra_id_0>.",Harper's Bazaar
+453,2013,"In 2013, Jonathan Smallwood works for <extra_id_0>.",University of York
+454,2013,"In 2013, Hunter Biden works for <extra_id_0>.",BHR Partners
+455,2013,"In 2013, Taizo Mikazuki is a member of the <extra_id_0>.",Democratic Party of Japan

@@ -1,6 +1,0 @@
-/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
-  rank_zero_deprecation(
-Traceback (most recent call last):
-  File "run.py", line 133, in <module>
-    max_em = 0
-FileNotFoundError: [Errno 2] No such file or directory: 'outputs/kadapters_2010_2freeze_158'
