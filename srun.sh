@@ -14,4 +14,4 @@
 
 # srun --partition=gpu-a40 --account=cse --nodes=1 --cpus-per-task=1 --gres=gpu:1 --mem=48G --time=1-0:00:00 python run.py --config configs/wmt/training/t5_kadapters_ensemble.json -datav 2017 
 
-srun --partition=gpu-rtx6k --account=cse --nodes=1 --cpus-per-task=1 --gres=gpu:1 --mem=48G --time=1-0:00:00 python shrink_wmt_val.py
+srun --partition=gpu-rtx6k --account=cse --nodes=1 --cpus-per-task=8 --gres=gpu:1 --mem=48G --time=1-0:00:00 python run.py --config configs/templama/training/t5_kadapters_ensemble.json

@@ -11,6 +11,7 @@
     "output_dir": "outputs/templama",
     "wandb_log": true,
     "train_batch_size": 32,
+    "checkpoint_dir": "outputs/wmtkadapter_soft_full_2freeze_11221222324_128",
 
     "input_length": 50,
     "output_length": 25,

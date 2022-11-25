@@ -26,6 +26,7 @@ from rouge import Rouge
 from collections import Counter
 import wandb
 import models.my_sampler as my_sampler
+import models.my_sampler_year_batching as my_sampler_year_batching
 
 import re
 import string
@@ -99,8 +100,8 @@ class T5(pl.LightningModule):
             for name, param in self.model.named_parameters():
                 if 'kadapter' in name:
                     param.requires_grad = True
-                    print(name)
-            print(self.state_dict().keys())
+                    # print(name)
+            # print(self.state_dict().keys())
         elif hparams.method=='kadapter_soft':
             # Unfreezing the parameters used for lora
             for name, param in self.model.named_parameters():
@@ -509,14 +510,21 @@ class T5(pl.LightningModule):
         n_samples = self.n_obs['train']
         train_dataset = self.get_dataset(tokenizer=self.tokenizer, type_path="train", num_samples=n_samples, args=self.hparams)
         if not hasattr(self, 'sampler'):
-            self.sampler = my_sampler.ResumableSampler(train_dataset)
+            if self.hparams.method == 'kadapter_ensemble':
+                self.sampler = my_sampler_year_batching.ResumableSampler(train_dataset, self.hparams.train_batch_size)
+            else:
+                self.sampler = my_sampler.ResumableSampler(train_dataset)
         self.dataloader = DataLoader(train_dataset, sampler=self.sampler,  batch_size=self.hparams.train_batch_size, drop_last=True, num_workers=self.hparams.num_workers)
         return self.dataloader
 
     def val_dataloader(self):
         n_samples = self.n_obs['validation']
         validation_dataset = self.get_dataset(tokenizer=self.tokenizer, type_path="validation", num_samples=n_samples, args=self.hparams)
-        return DataLoader(validation_dataset, batch_size=self.hparams.eval_batch_size, num_workers=self.hparams.num_workers, shuffle=False)
+        if self.hparams.method == 'kadapter_ensemble':
+            sampler = my_sampler_year_batching.ResumableSampler(validation_dataset, self.hparams.eval_batch_size)
+            return DataLoader(validation_dataset, sampler = sampler, batch_size=self.hparams.eval_batch_size, num_workers=self.hparams.num_workers)
+        else:
+            return DataLoader(validation_dataset, batch_size=self.hparams.eval_batch_size, num_workers=self.hparams.num_workers)
     
     def test_dataloader(self):
         n_samples = self.n_obs['test']

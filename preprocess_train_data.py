@@ -33,6 +33,8 @@ def main():
     print(f"max query length = {max_question_len}")
 
     for year in datasets: 
+        dataset_len = len(datasets[year])
+        datasets[year] = datasets[year][:dataset_len-dataset_len%32]
         with open(f"data/templama/templama_train_{year}.csv", "w") as csvfile:
             w = csv.writer(csvfile)
             w.writerow(["id", "date", "input", "output"])

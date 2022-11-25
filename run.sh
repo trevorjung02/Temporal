@@ -3,7 +3,7 @@
 #SBATCH --partition=gpu-rtx6k
 #SBATCH --account=cse
 #SBATCH --nodes=1
-#SBATCH --cpus-per-task=8
+#SBATCH --cpus-per-task=4
 #SBATCH --mem=48G
 #SBATCH --gres=gpu:1
 #SBATCH --time=1-0:00:00
@@ -18,6 +18,13 @@ echo "--------------------"
 source ~/.bashrc
 conda activate ckl
 
+python run.py --config configs/templama/training/t5_pretrained_full.json
+# python run.py --config configs/templama/training/t5_kadapters_soft_full.json -checkpoint_path outputs/wmtkadapter_soft_full_2freeze_11221222324_128/epoch=0-f1_score=0.2592-em_score=0.2201-v1.ckpt
+# python run.py --config configs/templama/training/t5_baseline_full.json -checkpoint_path outputs/wmtbaseline_2020/epoch=0-f1_score=0.2329-em_score=0.1835.ckpt
+# python run.py --config configs/wmt/evaluation/t5_baseline_full.json -checkpoint_path outputs/wmtbaseline_2020/epoch=0-f1_score=0.2329-em_score=0.1835.ckpt
+# python run.py --config configs/wmt/evaluation/t5_kadapters_ensemble.json
+# python run.py --config configs/templama/training/t5_kadapters_ensemble.json
+
 # python run.py --config configs/wmt/training/t5_baseline_full.json
 # python run.py --config configs/wmt/training/t5_kadapters_soft_full.json
 # python run.py --config configs/templama/training/t5_baseline_full.json -lr 0.000003 -checkpoint_path outputs/templamabaseline_full/epoch=4-f1_score=0.209-em_score=0.074.ckpt
@@ -27,8 +34,8 @@ conda activate ckl
 # python run.py --config configs/templama/training/t5_kadapters_yearly_large_256.json -lr 0.0003
 # python run.py --config configs/wmt/training/t5_baseline_full.json -val_data 2010
 
-python run.py --config configs/wmt/training/t5_kadapters_yearly_small.json -datav 2018
-python run.py --config configs/wmt/training/t5_kadapters_yearly_small.json -datav 2019
+# python run.py --config configs/wmt/training/t5_kadapters_yearly_small.json -datav 2020
+# python run.py --config configs/wmt/training/t5_kadapters_yearly_small.json -datav 2019
 # python run.py --config configs/wmt/training/t5_baseline_full.json -datav 2020
 
 # python run.py --config configs/templama/training/t5_kadapters_load.json

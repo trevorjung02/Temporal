@@ -12,6 +12,7 @@ from pytorch_lightning.loggers import WandbLogger
 from models import load_model
 import wandb
 import copy
+from extract_adapters import extract_adapters
 
 from Datasets import Pretrain
 from pytorch_lightning.callbacks.model_checkpoint import ModelCheckpoint
@@ -68,7 +69,11 @@ def main():
         hparam.years_to_paths = None
     if 'load_adapters' not in hparam:
         hparam.load_adapters = None
-        
+    if 'year_start' not in hparam:
+        hparam.year_start = None
+    if 'year_end' not in hparam:
+        hparam.year_end = None
+
     #Setting configurations
     args = dict(
         output_dir=hparam.output_dir, # Path to save the checkpoints
@@ -118,7 +123,9 @@ def main():
         pool_size = hparam.pool_size,
         val_data = hparam.val_data,
         years_to_paths = hparam.years_to_paths,
-        load_adapters = hparam.load_adapters
+        load_adapters = hparam.load_adapters,
+        year_start = hparam.year_start,
+        year_end = hparam.year_end
     )
     if arg_.datav is not None:
         args['dataset_version'] = arg_.datav
@@ -152,7 +159,6 @@ def main():
         wandb_logger = None 
 
     args = argparse.Namespace(**args)
-    args.adapter_config = {'adapter_list': args.adapter_list, 'adapter_hidden_size': args.adapter_hidden_size, 'adapter_enc_dec': args.adapter_enc_dec, 'pool_size': args.pool_size, 'years_to_paths': args.years_to_paths, 'load_adapters': args.load_adapters}
 
     if args.output_dir=="":
         checkpoint_callback = False # Do not save model checkpoints when output dir is empty
@@ -208,6 +214,15 @@ def main():
 
     if arg_.checkpoint_path is not None:
         args.checkpoint_path = arg_.checkpoint_path
+
+    if args.method == 'kadapter_ensemble':
+        args.years_to_paths = {}
+        for year in range(args.year_start, args.year_end+1):
+            dir = f"outputs/wmtkadapter_{year}_2freeze_{''.join(map(str, args.adapter_list))}_{args.adapter_hidden_size}"
+            args.years_to_paths[str(year)] = extract_adapters(dir)
+
+    args.adapter_config = {'adapter_list': args.adapter_list, 'adapter_hidden_size': args.adapter_hidden_size, 'adapter_enc_dec': args.adapter_enc_dec, 'pool_size': args.pool_size, 'years_to_paths': args.years_to_paths, 'load_adapters': args.load_adapters}
+    
     print(args)
 
     # Logging Learning Rate Scheduling
@@ -264,7 +279,7 @@ def main():
         
 def load_checkpoint(Model, args):
     model = Model.load_from_checkpoint(checkpoint_path=args.checkpoint_path, hparams=args, strict=False)
-    if args.resume_from_checkpoint:
+    if args.resume_from_checkpoint: 
         checkpoint = torch.load(args.checkpoint_path)
         model.sampler = copy.deepcopy(checkpoint['sampler'])
     return model

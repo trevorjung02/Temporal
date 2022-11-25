@@ -33,6 +33,10 @@ def main():
         ids_to_answers[date][str(index)] = answers
 
     for year in datasets: 
+        dataset_len = len(datasets[year])
+        for i in range(dataset_len-dataset_len % 32, dataset_len):
+            del ids_to_answers[year][str(i)]
+        datasets[year] = datasets[year][:dataset_len-dataset_len%32]
         with open(f"data/templama/templama_{version}_{year}.csv", "w") as csvfile:
             w = csv.writer(csvfile)
             w.writerow(["id", "date", "input", "output"])
@@ -50,7 +54,27 @@ def main():
                 temp[2] = f"In {year}, " + temp[2]
                 w.writerow(temp)
 
+    dataset = []
+    ids_to_answers_full = {}
+    for year in datasets: 
+        if int(year) > 2019:
+            break
+        for row in datasets[year]:
+            index = len(dataset)
+            row_copy = row.copy()
+            row_copy[2] = f"In {year}, " + row[2]
+            row_copy[0] = index
+            dataset.append(row_copy)
+            ids_to_answers_full[index] = row_copy[3].split(';')
 
+    with open(f"data/templama/templama_{version}_full_answers.json", "w", encoding='utf-8') as f:
+        json.dump(ids_to_answers_full, f, ensure_ascii=False)
+    
+    with open(f"data/templama/templama_{version}_full_prefixed.csv", "w") as csvfile:
+        w = csv.writer(csvfile)
+        w.writerow(["id", "date", "input", "output"])
+        for row in dataset:
+            w.writerow(row)
 
 if __name__ == "__main__":
     main()
