@@ -1,0 +1,30 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=ark
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=48G
+#SBATCH --gres=gpu:1
+#SBATCH --time=1-0:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+#SBATCH --dependency=afterany:6700270
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+python run.py --config configs/templama/training/t5_kadapters_ensemble_resume.json--------------------
+Traceback (most recent call last):
+  File "run.py", line 12, in <module>
+    from models import load_model
+  File "/mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/models/__init__.py", line 2, in <module>
+    from models.T5_Model import T5 as T5_Model
+  File "/mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/models/T5_Model.py", line 485
+    max_lr = self.hparams.learning_rate
+           ^
+SyntaxError: invalid syntax

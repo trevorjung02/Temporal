@@ -1,0 +1,830 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=ark
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=48G
+#SBATCH --gres=gpu:1
+#SBATCH --time=1-0:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+#SBATCH --dependency=afterany:6700270
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+python run.py --config configs/templama/training/t5_kadapters_ensemble_resume.json--------------------
+wandb: Currently logged in as: tjung2. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.1
+wandb: Run data is saved locally in /mmfs1/gscratch/ark/tjung2/continual-knowledge-learning/wandb/run-20221128_064219-zflyld2c
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run kadapter_ensemble_full
+wandb: ⭐️ View project at https://wandb.ai/tjung2/temporal_questions
+wandb: 🚀 View run at https://wandb.ai/tjung2/temporal_questions/runs/zflyld2c
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:360: UserWarning: Checkpoint directory outputs/templamakadapter_ensemble_full_0freeze_11221222324_128 exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:396: LightningDeprecationWarning: Argument `period` in `ModelCheckpoint` is deprecated in v1.3 and will be removed in v1.5. Please use `every_n_val_epochs` instead.
+  rank_zero_deprecation(
+Some weights of T5ForConditionalGeneration were not initialized from the model checkpoint at google/t5-large-ssm and are newly initialized: ['enc_kadapters.2014.adapter.4.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2013.adapter.2.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2016.adapter.2.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2014.pool.weight', 'enc_kadapters.2017.adapter.2.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2009.adapter.2.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2011.adapter.3.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2014.adapter.1.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2007.adapter.2.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2007.adapter.0.down_project.bias', 'enc_kadapters.2019.adapter.1.up_project.weight', 'enc_kadapters.2008.adapter.2.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2015.adapter.5.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2019.adapter.2.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2018.adapter.4.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2007.adapter.0.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2011.adapter.3.up_project.bias', 'enc_kadapters.2016.adapter.3.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2016.adapter.1.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2015.adapter.1.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2010.adapter.0.up_project.weight', 'enc_kadapters.2016.adapter.0.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2009.adapter.1.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2011.adapter.4.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2018.adapter.0.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2008.adapter.4.up_project.bias', 'enc_kadapters.2013.adapter.4.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2017.adapter.5.down_project.bias', 'enc_kadapters.2019.adapter.3.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2015.adapter.0.up_project.weight', 'enc_kadapters.2007.adapter.2.up_project.weight', 'enc_kadapters.2015.adapter.2.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2011.adapter.1.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2012.adapter.2.down_project.bias', 'enc_kadapters.2009.adapter.0.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2016.adapter.4.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2007.adapter.1.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2010.adapter.2.up_project.weight', 'enc_kadapters.2013.adapter.5.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2018.adapter.5.up_project.bias', 'enc_kadapters.2011.adapter.1.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2016.adapter.5.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2011.layer_norm.weight', 'enc_kadapters.2007.adapter.3.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2016.adapter.4.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2015.adapter.4.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2013.adapter.1.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2019.adapter.4.up_project.bias', 'enc_kadapters.2019.adapter.1.down_project.weight', 'enc_kadapters.2017.adapter.3.down_project.weight', 'enc_kadapters.2013.adapter.3.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2015.adapter.5.up_project.weight', 'enc_kadapters.2010.adapter.2.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2011.adapter.5.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2010.adapter.5.up_project.weight', 'enc_kadapters.2013.adapter.5.up_project.bias', 'enc_kadapters.2012.adapter.3.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2008.adapter.5.up_project.weight', 'enc_kadapters.2010.adapter.2.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2007.adapter.1.up_project.bias', 'enc_kadapters.2007.adapter.4.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2008.adapter.5.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2011.adapter.4.down_project.weight', 'enc_kadapters.2013.adapter.0.up_project.bias', 'enc_kadapters.2007.adapter.1.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2015.adapter.4.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2016.pool.weight', 'enc_kadapters.2013.adapter.1.down_project.bias', 'enc_kadapters.2016.adapter.5.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2019.adapter.5.up_project.bias', 'enc_kadapters.2013.adapter.3.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2010.adapter.0.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2013.adapter.0.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2013.adapter.4.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2009.adapter.0.down_project.weight', 'enc_kadapters.2007.adapter.1.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2010.adapter.4.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2017.adapter.5.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2009.adapter.2.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2010.adapter.2.up_project.bias', 'enc_kadapters.2017.adapter.1.up_project.bias', 'enc_kadapters.2009.adapter.1.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2012.adapter.0.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2011.adapter.0.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2013.adapter.2.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2008.adapter.4.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2009.adapter.4.down_project.weight', 'enc_kadapters.2009.adapter.4.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2007.pool.bias', 'enc_kadapters.2010.adapter.4.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2015.adapter.3.down_project.weight', 'enc_kadapters.2014.adapter.4.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2019.pool.bias', 'enc_kadapters.2009.adapter.2.up_project.bias', 'enc_kadapters.2010.adapter.5.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2016.adapter.2.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2009.adapter.5.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2018.adapter.5.down_project.weight', 'enc_kadapters.2011.adapter.4.up_project.bias', 'enc_kadapters.2013.adapter.1.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2017.adapter.1.up_project.weight', 'enc_kadapters.2010.adapter.3.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2011.adapter.5.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2008.adapter.3.down_project.bias', 'enc_kadapters.2013.layer_norm.weight', 'enc_kadapters.2015.adapter.2.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2009.adapter.3.up_project.weight', 'enc_kadapters.2010.adapter.1.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2014.adapter.0.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2019.adapter.2.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2009.adapter.4.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2012.adapter.2.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2014.adapter.0.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2017.adapter.4.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2012.adapter.4.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2016.adapter.0.up_project.bias', 'enc_kadapters.2018.adapter.0.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2010.adapter.5.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2016.adapter.3.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2016.adapter.4.up_project.weight', 'enc_kadapters.2007.adapter.3.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2012.adapter.0.up_project.bias', 'enc_kadapters.2017.adapter.3.up_project.bias', 'enc_kadapters.2009.adapter.2.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2009.adapter.4.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2009.adapter.3.up_project.bias', 'enc_kadapters.2016.adapter.0.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2015.adapter.5.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2013.adapter.5.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2015.adapter.1.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2018.layer_norm.weight', 'enc_kadapters.2018.adapter.0.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2008.adapter.4.down_project.bias', 'enc_kadapters.2007.adapter.2.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2016.adapter.5.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2013.adapter.4.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2009.adapter.5.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2017.adapter.1.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2007.adapter.1.up_project.weight', 'enc_kadapters.2008.adapter.0.down_project.weight', 'enc_kadapters.2013.adapter.0.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2009.adapter.4.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2015.adapter.2.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2007.adapter.2.down_project.bias', 'enc_kadapters.2016.adapter.4.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2008.adapter.1.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2016.adapter.3.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2012.adapter.2.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2016.adapter.1.down_project.weight', 'enc_kadapters.2017.adapter.4.down_project.weight', 'enc_kadapters.2017.adapter.4.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2016.adapter.1.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2009.adapter.4.up_project.bias', 'enc_kadapters.2009.adapter.0.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2016.adapter.5.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2007.adapter.4.up_project.bias', 'enc_kadapters.2009.adapter.1.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2010.adapter.3.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2014.adapter.0.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2011.adapter.1.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2017.adapter.0.up_project.weight', 'enc_kadapters.2010.adapter.5.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2015.adapter.1.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2019.adapter.2.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2012.adapter.1.up_project.bias', 'enc_kadapters.2018.adapter.3.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2015.adapter.4.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2018.adapter.4.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2016.adapter.1.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2016.adapter.2.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2011.adapter.3.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2017.adapter.5.down_project.weight', 'enc_kadapters.2015.adapter.0.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2008.adapter.2.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2011.adapter.2.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2007.adapter.5.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2016.adapter.0.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2011.adapter.4.up_project.weight', 'enc_kadapters.2007.adapter.3.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2014.adapter.1.up_project.weight', 'enc_kadapters.2016.adapter.4.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2014.adapter.2.up_project.bias', 'enc_kadapters.2010.adapter.1.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2018.adapter.2.up_project.weight', 'enc_kadapters.2014.adapter.1.down_project.bias', 'enc_kadapters.2008.adapter.1.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2015.adapter.3.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2009.adapter.3.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2018.adapter.0.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2008.pool.weight', 'enc_kadapters.2019.adapter.2.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2012.adapter.3.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2008.adapter.4.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2017.adapter.0.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2011.adapter.2.up_project.weight', 'enc_kadapters.2013.adapter.0.down_project.weight', 'enc_kadapters.2007.adapter.5.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2010.adapter.1.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2014.adapter.3.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2019.adapter.3.down_project.bias', 'enc_kadapters.2019.adapter.5.down_project.weight', 'enc_kadapters.2013.adapter.1.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2010.adapter.2.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2009.pool.bias', 'enc_kadapters.2014.adapter.5.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2013.adapter.3.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2014.adapter.5.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2013.adapter.0.down_project.bias', 'enc_kadapters.2014.adapter.2.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2011.adapter.5.up_project.weight', 'enc_kadapters.2008.adapter.4.down_project.weight', 'enc_kadapters.2013.adapter.4.up_project.weight', 'enc_kadapters.2012.adapter.3.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2017.adapter.2.down_project.bias', 'enc_kadapters.2009.adapter.5.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2007.adapter.4.up_project.weight', 'enc_kadapters.2013.adapter.0.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2016.adapter.4.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2017.adapter.0.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2012.pool.weight', 'enc_kadapters.2011.adapter.2.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2009.adapter.1.up_project.weight', 'enc_kadapters.2010.adapter.3.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2008.adapter.3.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2008.adapter.0.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2016.adapter.2.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2017.adapter.0.down_project.weight', 'enc_kadapters.2012.adapter.0.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2012.adapter.5.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2015.adapter.1.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2018.adapter.1.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2012.adapter.2.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2014.adapter.5.down_project.bias', 'enc_kadapters.2012.adapter.0.up_project.weight', 'enc_kadapters.2013.adapter.0.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2018.adapter.1.down_project.weight', 'enc_kadapters.2007.adapter.4.down_project.weight', 'enc_kadapters.2019.adapter.5.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2011.adapter.4.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2019.adapter.0.up_project.bias', 'enc_kadapters.2019.adapter.5.down_project.bias', 'enc_kadapters.2015.adapter.5.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2018.adapter.0.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2009.adapter.3.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2019.adapter.4.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2011.adapter.3.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2019.adapter.5.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2019.adapter.0.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2008.adapter.1.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2010.adapter.1.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2015.adapter.2.up_project.bias', 'enc_kadapters.2008.adapter.5.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2013.adapter.4.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2012.adapter.1.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2016.adapter.0.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2017.pool.bias', 'enc_kadapters.2014.adapter.5.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2014.adapter.4.up_project.bias', 'enc_kadapters.2017.adapter.5.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2008.adapter.2.up_project.bias', 'enc_kadapters.2010.adapter.5.down_project.bias', 'enc_kadapters.2007.adapter.0.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2010.adapter.5.down_project.weight', 'enc_kadapters.2010.adapter.1.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2015.adapter.1.down_project.bias', 'enc_kadapters.2019.adapter.1.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2013.adapter.0.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2017.adapter.3.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2008.adapter.5.down_project.weight', 'enc_kadapters.2018.adapter.5.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2009.adapter.5.down_project.bias', 'enc_kadapters.2013.pool.bias', 'enc_kadapters.2007.adapter.3.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2007.adapter.4.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2013.adapter.1.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2007.adapter.5.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2018.adapter.4.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2014.adapter.3.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2015.adapter.1.up_project.bias', 'enc_kadapters.2008.adapter.1.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2011.adapter.2.down_project.weight', 'enc_kadapters.2012.adapter.1.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2017.adapter.3.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2018.adapter.1.up_project.bias', 'enc_kadapters.2009.adapter.0.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2015.adapter.3.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2015.adapter.3.down_project.bias', 'enc_kadapters.2014.adapter.2.down_project.bias', 'enc_kadapters.2008.adapter.0.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2015.adapter.3.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2014.adapter.4.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2007.adapter.3.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2015.adapter.1.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2018.adapter.0.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2018.adapter.3.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2016.adapter.2.up_project.weight', 'enc_kadapters.2018.adapter.5.up_project.weight', 'enc_kadapters.2010.adapter.3.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2015.adapter.4.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2008.adapter.3.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2017.layer_norm.weight', 'enc_kadapters.2007.adapter.5.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2015.adapter.0.down_project.bias', 'enc_kadapters.2014.adapter.4.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2016.adapter.4.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2014.adapter.1.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2016.adapter.3.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2018.adapter.1.up_project.weight', 'enc_kadapters.2010.adapter.0.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2018.adapter.5.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2012.adapter.5.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2019.adapter.5.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2007.adapter.2.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2010.adapter.4.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2017.adapter.3.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2011.adapter.0.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2012.adapter.2.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2012.adapter.5.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2008.adapter.2.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2011.adapter.3.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2015.adapter.4.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2012.adapter.0.down_project.bias', 'enc_kadapters.2019.adapter.3.down_project.weight', 'enc_kadapters.2009.adapter.1.down_project.weight', 'enc_kadapters.2009.adapter.1.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2014.adapter.3.up_project.bias', 'enc_kadapters.2014.adapter.2.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2011.adapter.0.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2010.adapter.1.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2010.adapter.4.up_project.weight', 'enc_kadapters.2015.adapter.4.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2010.adapter.1.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2017.adapter.4.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2014.adapter.5.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2019.adapter.0.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2019.adapter.1.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2019.adapter.3.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2013.adapter.4.down_project.bias', 'enc_kadapters.2008.adapter.3.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2019.adapter.2.up_project.weight', 'enc_kadapters.2017.adapter.0.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2010.adapter.3.down_project.bias', 'enc_kadapters.2011.adapter.2.up_project.bias', 'enc_kadapters.2015.adapter.5.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2010.adapter.4.down_project.bias', 'enc_kadapters.2014.layer_norm.weight', 'enc_kadapters.2015.adapter.4.up_project.bias', 'enc_kadapters.2012.adapter.3.down_project.weight', 'enc_kadapters.2019.adapter.4.up_project.weight', 'enc_kadapters.2019.adapter.1.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2012.adapter.3.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2012.adapter.4.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2014.adapter.3.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2012.adapter.2.down_project.weight', 'enc_kadapters.2014.adapter.4.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2016.adapter.1.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2012.adapter.4.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2017.adapter.4.up_project.weight', 'enc_kadapters.2019.adapter.5.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2016.adapter.3.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2015.adapter.4.up_project.weight', 'enc_kadapters.2016.adapter.5.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2011.adapter.3.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2013.adapter.5.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2018.adapter.0.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2016.adapter.1.up_project.bias', 'enc_kadapters.2012.pool.bias', 'enc_kadapters.2019.adapter.1.up_project.bias', 'enc_kadapters.2012.adapter.0.down_project.weight', 'enc_kadapters.2008.adapter.5.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2019.adapter.1.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2019.adapter.0.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2009.layer_norm.weight', 'enc_kadapters.2018.adapter.3.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2007.adapter.4.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2015.adapter.5.up_project.bias', 'enc_kadapters.2007.adapter.0.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2010.adapter.0.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2008.pool.bias', 'enc_kadapters.2011.adapter.1.down_project.weight', 'enc_kadapters.2016.adapter.5.down_project.weight', 'enc_kadapters.2018.adapter.4.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2012.adapter.5.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2018.adapter.4.up_project.weight', 'enc_kadapters.2011.adapter.0.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2016.adapter.1.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2019.adapter.1.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2017.adapter.5.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2014.adapter.0.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2017.adapter.3.down_project.bias', 'enc_kadapters.2009.adapter.2.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2008.adapter.1.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2010.adapter.3.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2009.adapter.1.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2009.adapter.2.up_project.weight', 'enc_kadapters.2011.adapter.1.up_project.weight', 'enc_kadapters.2013.adapter.5.up_project.weight', 'enc_kadapters.2010.adapter.2.down_project.bias', 'enc_kadapters.2019.adapter.0.down_project.weight', 'enc_kadapters.2013.adapter.5.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2015.adapter.1.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2010.adapter.1.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2014.adapter.2.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2014.adapter.0.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2017.adapter.3.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2019.adapter.0.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2014.adapter.5.up_project.weight', 'enc_kadapters.2013.adapter.3.up_project.bias', 'enc_kadapters.2011.adapter.0.down_project.bias', 'enc_kadapters.2010.adapter.2.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2011.adapter.1.down_project.bias', 'enc_kadapters.2010.adapter.5.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2008.adapter.0.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2011.adapter.3.down_project.bias', 'enc_kadapters.2008.adapter.0.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2007.adapter.0.up_project.bias', 'enc_kadapters.2012.adapter.2.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2007.adapter.2.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2014.adapter.3.down_project.bias', 'enc_kadapters.2011.adapter.2.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2011.adapter.5.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2014.adapter.5.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2012.adapter.3.up_project.bias', 'enc_kadapters.2016.adapter.3.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2008.adapter.3.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2018.adapter.0.down_project.weight', 'enc_kadapters.2010.adapter.0.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2009.adapter.2.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2015.adapter.1.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2011.adapter.4.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2012.adapter.4.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2008.adapter.0.down_project.bias', 'enc_kadapters.2010.adapter.0.up_project.bias', 'enc_kadapters.2013.adapter.5.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2008.adapter.0.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2008.adapter.4.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2009.adapter.3.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2017.adapter.2.down_project.weight', 'enc_kadapters.2013.adapter.3.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2007.adapter.0.down_project.weight', 'enc_kadapters.2010.adapter.4.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2009.adapter.1.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2016.adapter.1.up_project.weight', 'enc_kadapters.2019.adapter.0.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2011.adapter.4.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2010.adapter.3.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2007.adapter.2.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2015.adapter.2.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2015.adapter.3.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2007.adapter.0.up_project.weight', 'enc_kadapters.2019.adapter.4.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2015.adapter.1.down_project.weight', 'enc_kadapters.2017.adapter.1.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2009.adapter.5.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2013.adapter.2.up_project.bias', 'enc_kadapters.2016.adapter.5.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2017.adapter.0.down_project.bias', 'enc_kadapters.2013.adapter.3.down_project.bias', 'enc_kadapters.2012.adapter.1.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2018.adapter.2.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2019.adapter.1.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2011.adapter.0.up_project.bias', 'enc_kadapters.2018.adapter.2.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2018.adapter.5.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2017.adapter.5.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2017.pool.weight', 'enc_kadapters.2019.adapter.3.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2017.adapter.4.down_project.bias', 'enc_kadapters.2018.adapter.3.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2009.adapter.1.down_project.bias', 'enc_kadapters.2017.adapter.0.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2012.adapter.0.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2014.adapter.1.up_project.bias', 'enc_kadapters.2009.adapter.4.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2017.adapter.4.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2019.adapter.4.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2012.adapter.3.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2007.adapter.1.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2009.adapter.3.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2010.adapter.5.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2008.adapter.3.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2008.adapter.0.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2010.pool.weight', 'enc_kadapters.2014.adapter.2.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2017.adapter.0.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2010.adapter.2.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2013.adapter.4.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2017.adapter.5.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2008.adapter.3.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2013.adapter.4.down_project.weight', 'enc_kadapters.2008.adapter.0.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2009.adapter.0.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2016.adapter.5.up_project.bias', 'enc_kadapters.2014.adapter.4.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2010.layer_norm.weight', 'enc_kadapters.2011.adapter.0.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2009.adapter.3.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2014.adapter.3.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2011.pool.bias', 'enc_kadapters.2010.adapter.1.up_project.bias', 'enc_kadapters.2017.adapter.1.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2012.adapter.2.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2012.adapter.4.down_project.bias', 'enc_kadapters.2007.adapter.0.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2011.adapter.5.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2011.adapter.4.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2008.adapter.4.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2019.adapter.0.up_project.weight', 'enc_kadapters.2019.adapter.4.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2011.adapter.5.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2017.adapter.2.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2010.adapter.0.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2015.adapter.1.up_project.weight', 'enc_kadapters.2013.adapter.4.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2012.adapter.1.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2013.adapter.2.down_project.bias', 'enc_kadapters.2017.adapter.3.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2012.adapter.1.down_project.weight', 'enc_kadapters.2014.adapter.2.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2011.adapter.1.up_project.bias', 'enc_kadapters.2014.adapter.3.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2016.adapter.4.down_project.bias', 'enc_kadapters.2009.adapter.2.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2014.adapter.5.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2018.adapter.2.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2016.adapter.5.up_project.weight', 'enc_kadapters.2014.adapter.1.down_project.weight', 'enc_kadapters.2007.adapter.4.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2009.adapter.3.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2013.adapter.2.up_project.weight', 'enc_kadapters.2007.adapter.2.up_project.bias', 'enc_kadapters.2019.adapter.3.up_project.weight', 'enc_kadapters.2012.adapter.1.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2017.adapter.3.up_project.weight', 'enc_kadapters.2017.adapter.3.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2007.layer_norm.weight', 'enc_kadapters.2007.adapter.5.down_project.weight', 'enc_kadapters.2015.adapter.4.down_project.weight', 'enc_kadapters.2011.adapter.0.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2010.adapter.1.down_project.weight', 'enc_kadapters.2017.adapter.4.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2018.adapter.3.down_project.weight', 'enc_kadapters.2018.adapter.1.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2012.adapter.3.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2018.adapter.2.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2009.adapter.1.up_project.bias', 'enc_kadapters.2009.adapter.5.down_project.weight', 'enc_kadapters.2008.adapter.2.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2008.adapter.5.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2012.adapter.5.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2011.adapter.1.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2018.adapter.2.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2017.adapter.2.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2013.adapter.2.down_project.weight', 'enc_kadapters.2010.adapter.4.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2019.adapter.5.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2008.adapter.2.up_project.weight', 'enc_kadapters.2016.adapter.0.up_project.weight', 'enc_kadapters.2008.adapter.5.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2019.adapter.2.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2013.adapter.0.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2018.adapter.3.down_project.bias', 'enc_kadapters.2018.adapter.3.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2012.adapter.0.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2008.adapter.5.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2012.adapter.1.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2011.adapter.4.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2012.adapter.0.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2014.adapter.5.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2013.adapter.2.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2009.adapter.4.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2015.adapter.5.down_project.weight', 'enc_kadapters.2013.adapter.1.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2013.adapter.3.up_project.weight', 'enc_kadapters.2012.adapter.3.up_project.weight', 'enc_kadapters.2007.adapter.5.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2014.adapter.5.up_project.bias', 'enc_kadapters.2017.adapter.4.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2011.adapter.4.down_project.bias', 'enc_kadapters.2014.adapter.5.down_project.weight', 'enc_kadapters.2011.adapter.2.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2014.adapter.4.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2008.adapter.4.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2016.adapter.4.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2011.adapter.5.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2010.adapter.5.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2011.adapter.3.down_project.weight', 'enc_kadapters.2015.adapter.1.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2011.adapter.1.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2011.adapter.5.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2015.adapter.0.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2007.adapter.2.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2007.adapter.3.down_project.weight', 'enc_kadapters.2016.adapter.0.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2019.adapter.3.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2014.adapter.1.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2016.adapter.3.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2010.adapter.3.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2008.adapter.0.up_project.bias', 'enc_kadapters.2011.adapter.2.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2019.adapter.0.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2009.adapter.5.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2014.adapter.1.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2011.adapter.3.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2016.adapter.0.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2012.adapter.2.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2008.adapter.5.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2012.adapter.2.up_project.weight', 'enc_kadapters.2019.adapter.0.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2019.adapter.2.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2009.adapter.4.down_project.bias', 'enc_kadapters.2012.adapter.1.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2010.adapter.0.down_project.bias', 'enc_kadapters.2016.adapter.2.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2010.adapter.0.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2007.adapter.1.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2013.adapter.5.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2018.adapter.5.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2016.adapter.0.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2018.adapter.2.down_project.bias', 'enc_kadapters.2017.adapter.5.up_project.bias', 'enc_kadapters.2007.adapter.5.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2016.adapter.2.down_project.weight', 'enc_kadapters.2009.adapter.3.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2015.adapter.5.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2011.pool.weight', 'enc_kadapters.2018.adapter.5.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2014.adapter.2.down_project.weight', 'enc_kadapters.2009.adapter.5.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2011.adapter.2.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2011.adapter.1.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2016.layer_norm.weight', 'enc_kadapters.2016.adapter.4.down_project.weight', 'enc_kadapters.2012.adapter.0.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2007.adapter.4.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2007.adapter.0.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2007.adapter.5.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2014.adapter.0.down_project.bias', 'enc_kadapters.2018.adapter.4.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2018.adapter.2.up_project.bias', 'enc_kadapters.2018.adapter.0.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2019.adapter.4.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2018.adapter.2.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2019.adapter.0.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2007.adapter.2.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2015.adapter.3.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2018.adapter.1.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2011.adapter.0.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2012.adapter.3.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2008.adapter.3.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2015.adapter.2.down_project.bias', 'enc_kadapters.2018.adapter.5.down_project.bias', 'enc_kadapters.2007.adapter.0.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2019.adapter.0.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2014.adapter.0.up_project.weight', 'enc_kadapters.2017.adapter.0.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2017.adapter.2.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2015.adapter.2.down_project.weight', 'enc_kadapters.2013.adapter.0.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2017.adapter.1.down_project.bias', 'enc_kadapters.2017.adapter.3.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2017.adapter.3.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2019.adapter.2.up_project.bias', 'enc_kadapters.2011.adapter.3.up_project.weight', 'enc_kadapters.2017.adapter.1.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2017.adapter.0.up_project.bias', 'enc_kadapters.2012.adapter.5.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2008.adapter.5.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2018.adapter.4.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2016.adapter.3.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2012.adapter.5.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2015.adapter.0.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2014.adapter.0.down_project.weight', 'enc_kadapters.2011.adapter.0.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2018.adapter.3.up_project.bias', 'enc_kadapters.2010.adapter.3.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2008.adapter.2.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2012.adapter.2.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2010.adapter.3.up_project.bias', 'enc_kadapters.2018.adapter.3.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2009.adapter.2.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2017.adapter.2.up_project.bias', 'enc_kadapters.2015.adapter.0.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2008.adapter.2.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2018.adapter.2.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2017.adapter.2.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2008.adapter.3.up_project.bias', 'enc_kadapters.2015.pool.bias', 'enc_kadapters.2007.adapter.3.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2009.adapter.1.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2014.adapter.2.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2015.adapter.2.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2008.adapter.4.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2009.adapter.2.down_project.weight', 'enc_kadapters.2009.adapter.5.up_project.weight', 'enc_kadapters.2015.adapter.3.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2010.adapter.4.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2015.adapter.3.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2007.adapter.5.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2015.adapter.5.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2019.adapter.4.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2008.adapter.1.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2014.adapter.0.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2007.adapter.4.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2010.adapter.1.down_project.bias', 'enc_kadapters.2014.adapter.3.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2015.adapter.0.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2014.adapter.1.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2019.adapter.3.up_project.bias', 'enc_kadapters.2008.adapter.0.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2018.adapter.3.up_project.weight', 'enc_kadapters.2009.adapter.4.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2008.adapter.2.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2010.adapter.3.down_project.weight', 'enc_kadapters.2014.adapter.3.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2011.adapter.2.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2008.adapter.0.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2007.adapter.4.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2008.adapter.4.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2008.adapter.5.down_project.bias', 'enc_kadapters.2016.adapter.0.down_project.bias', 'enc_kadapters.2019.adapter.4.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2013.adapter.0.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2007.adapter.0.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2011.adapter.2.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2010.adapter.2.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2013.adapter.3.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2018.pool.bias', 'enc_kadapters.2007.adapter.3.up_project.weight', 'enc_kadapters.2015.adapter.1.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2019.adapter.5.up_project.weight', 'enc_kadapters.2007.adapter.3.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2008.adapter.4.up_project.weight', 'enc_kadapters.2019.adapter.3.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2018.adapter.0.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2017.adapter.4.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2011.adapter.5.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2017.adapter.2.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2013.adapter.1.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2015.pool.weight', 'enc_kadapters.2007.adapter.1.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2009.adapter.0.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2009.adapter.0.up_project.weight', 'enc_kadapters.2018.adapter.2.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2017.adapter.2.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2012.adapter.4.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2014.adapter.3.up_project.weight', 'enc_kadapters.2009.adapter.1.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2018.adapter.1.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2013.adapter.5.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2016.adapter.2.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2008.adapter.2.down_project.weight', 'enc_kadapters.2008.adapter.1.up_project.weight', 'enc_kadapters.2016.adapter.1.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2012.adapter.5.up_project.weight', 'enc_kadapters.2009.adapter.5.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2010.adapter.0.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2017.adapter.2.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2011.adapter.3.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2016.adapter.2.down_project.bias', 'enc_kadapters.2018.adapter.0.up_project.weight', 'enc_kadapters.2011.adapter.0.down_project.weight', 'enc_kadapters.2015.adapter.2.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2010.adapter.1.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2018.adapter.5.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2009.adapter.4.up_project.weight', 'enc_kadapters.2012.layer_norm.weight', 'enc_kadapters.2013.adapter.2.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2013.adapter.0.up_project.weight', 'enc_kadapters.2013.adapter.4.up_project.bias', 'enc_kadapters.2014.adapter.4.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2014.adapter.5.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2016.adapter.4.up_project.bias', 'enc_kadapters.2017.adapter.2.up_project.weight', 'enc_kadapters.2019.adapter.5.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2014.adapter.3.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2019.adapter.5.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2015.adapter.4.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2014.adapter.3.down_project.weight', 'enc_kadapters.2007.adapter.5.up_project.weight', 'enc_kadapters.2011.adapter.1.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2019.adapter.4.down_project.bias', 'enc_kadapters.2008.adapter.3.down_project.weight', 'enc_kadapters.2010.adapter.4.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2019.adapter.1.down_project.bias', 'enc_kadapters.2009.adapter.3.down_project.weight', 'enc_kadapters.2008.adapter.3.up_project.weight', 'enc_kadapters.2014.adapter.4.up_project.weight', 'enc_kadapters.2015.adapter.3.up_project.weight', 'enc_kadapters.2014.adapter.2.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2017.adapter.4.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2015.adapter.0.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2013.adapter.1.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2008.adapter.0.up_project.weight', 'enc_kadapters.2015.adapter.2.up_project.weight', 'enc_kadapters.2016.adapter.4.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2017.adapter.5.up_project.weight', 'enc_kadapters.2011.adapter.5.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2010.adapter.3.up_project.weight', 'enc_kadapters.2009.adapter.0.down_project.bias', 'enc_kadapters.2012.adapter.3.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2009.pool.weight', 'enc_kadapters.2007.adapter.2.down_project.weight', 'enc_kadapters.2013.adapter.5.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2012.adapter.2.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2012.adapter.4.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2009.adapter.2.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2016.adapter.2.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2011.adapter.2.down_project.bias', 'enc_kadapters.2013.adapter.4.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2009.adapter.0.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2013.adapter.0.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2008.adapter.2.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2011.adapter.5.down_project.weight', 'enc_kadapters.2011.adapter.4.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2019.layer_norm.weight', 'enc_kadapters.2014.adapter.5.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2016.adapter.3.up_project.bias', 'enc_kadapters.2012.adapter.4.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2018.adapter.0.up_project.bias', 'enc_kadapters.2017.adapter.5.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2014.pool.bias', 'enc_kadapters.2016.adapter.1.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2008.adapter.1.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2009.adapter.0.up_project.bias', 'enc_kadapters.2018.adapter.1.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2017.adapter.1.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2012.adapter.5.down_project.bias', 'enc_kadapters.2017.adapter.0.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2013.adapter.1.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2009.adapter.5.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2013.adapter.3.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2019.adapter.1.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2014.adapter.4.down_project.weight', 'enc_kadapters.2013.adapter.4.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2015.adapter.0.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2008.adapter.4.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2015.layer_norm.weight', 'enc_kadapters.2007.adapter.4.down_project.bias', 'enc_kadapters.2012.adapter.4.up_project.bias', 'enc_kadapters.2015.adapter.0.up_project.bias', 'enc_kadapters.2009.adapter.2.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2019.adapter.3.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2017.adapter.1.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2018.adapter.5.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2010.adapter.5.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2010.adapter.4.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2011.adapter.5.down_project.bias', 'enc_kadapters.2016.adapter.3.down_project.bias', 'enc_kadapters.2012.adapter.0.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2018.adapter.4.down_project.weight', 'enc_kadapters.2013.adapter.1.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2016.adapter.0.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2019.adapter.2.down_project.bias', 'enc_kadapters.2012.adapter.0.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2017.adapter.1.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2013.adapter.1.down_project.weight', 'enc_kadapters.2010.adapter.2.down_project.weight', 'enc_kadapters.2008.adapter.1.up_project.bias', 'enc_kadapters.2019.adapter.3.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2011.adapter.2.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2016.adapter.5.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2007.adapter.5.up_project.bias', 'enc_kadapters.2012.adapter.2.up_project.bias', 'enc_kadapters.2018.adapter.3.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2018.pool.weight', 'enc_kadapters.2016.adapter.5.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2007.adapter.1.down_project.weight', 'enc_kadapters.2015.adapter.5.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2007.adapter.1.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2010.adapter.2.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2013.adapter.2.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2015.adapter.4.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2018.adapter.4.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2010.adapter.1.up_project.weight', 'enc_kadapters.2012.adapter.0.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2013.adapter.5.down_project.bias', 'enc_kadapters.2014.adapter.1.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2012.adapter.4.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2007.adapter.2.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2016.adapter.1.down_project.bias', 'enc_kadapters.2019.adapter.3.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2019.adapter.2.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2009.adapter.3.down_project.bias', 'enc_kadapters.2015.adapter.4.down_project.bias', 'enc_kadapters.2014.adapter.1.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2010.adapter.0.down_project.weight', 'enc_kadapters.2011.adapter.4.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2013.adapter.2.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2018.adapter.1.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2018.adapter.4.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2018.adapter.2.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2015.adapter.3.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2019.adapter.2.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2015.adapter.3.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2019.adapter.5.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2012.adapter.1.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2018.adapter.4.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2012.adapter.5.down_project.weight', 'enc_kadapters.2015.adapter.5.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2012.adapter.1.down_project.bias', 'enc_kadapters.2009.adapter.3.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2011.adapter.0.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2007.adapter.3.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2019.pool.weight', 'enc_kadapters.2018.adapter.1.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2018.adapter.2.down_project.weight', 'enc_kadapters.2017.adapter.1.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2012.adapter.5.up_project.bias', 'enc_kadapters.2018.adapter.4.up_project.bias', 'enc_kadapters.2018.adapter.5.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2010.adapter.3.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2009.adapter.2.down_project.bias', 'enc_kadapters.2012.adapter.4.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2011.adapter.1.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2013.adapter.1.up_project.weight', 'enc_kadapters.2017.adapter.1.down_project.weight', 'enc_kadapters.2017.adapter.4.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2014.adapter.2.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2009.adapter.4.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2010.adapter.5.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2008.adapter.3.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2019.adapter.1.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2019.adapter.4.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2010.adapter.4.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2017.adapter.5.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2013.adapter.5.down_project.weight', 'enc_kadapters.2008.adapter.1.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2012.adapter.1.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2018.adapter.1.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2019.adapter.4.down_project.weight', 'enc_kadapters.2013.adapter.5.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2010.adapter.0.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2010.adapter.4.up_project.bias', 'enc_kadapters.2010.adapter.4.down_project.weight', 'enc_kadapters.2014.adapter.3.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2007.adapter.5.down_project.bias', 'enc_kadapters.2014.adapter.1.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2019.adapter.5.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2010.adapter.0.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2013.pool.weight', 'enc_kadapters.2008.adapter.5.up_project.bias', 'enc_kadapters.2012.adapter.5.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2012.adapter.4.up_project.weight', 'enc_kadapters.2018.adapter.1.down_project.bias', 'enc_kadapters.2008.adapter.3.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2014.adapter.0.up_project.bias', 'enc_kadapters.2009.adapter.5.up_project.bias', 'enc_kadapters.2011.adapter.4.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2007.adapter.1.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2017.adapter.4.up_project.bias', 'enc_kadapters.2014.adapter.1.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2016.adapter.5.down_project.bias', 'enc_kadapters.2017.adapter.5.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2008.adapter.2.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2019.adapter.0.down_project.bias', 'enc_kadapters.2014.adapter.2.up_project.weight', 'enc_kadapters.2007.adapter.4.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2011.adapter.3.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2013.adapter.3.down_project.weight', 'enc_kadapters.2009.adapter.0.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2013.adapter.3.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2016.adapter.2.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2014.adapter.4.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2008.adapter.5.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2016.adapter.3.down_project.weight', 'enc_kadapters.2016.adapter.2.up_project.bias', 'enc_kadapters.2018.adapter.3.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2015.adapter.2.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2012.adapter.4.down_project.weight', 'enc_kadapters.2010.adapter.5.up_project.bias', 'enc_kadapters.2018.adapter.5.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2015.adapter.0.down_project.weight', 'enc_kadapters.2013.adapter.1.up_project.bias', 'enc_kadapters.2019.adapter.4.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2007.adapter.1.down_project.bias', 'enc_kadapters.2010.adapter.2.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2017.adapter.3.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2017.adapter.5.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2012.adapter.1.up_project.weight', 'enc_kadapters.2017.adapter.2.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2016.adapter.0.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2011.adapter.0.up_project.weight', 'enc_kadapters.2018.adapter.4.down_project.bias', 'enc_kadapters.2019.adapter.2.down_project.weight', 'enc_kadapters.2019.adapter.3.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2015.adapter.2.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2014.adapter.0.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2007.adapter.3.up_project.bias', 'enc_kadapters.2010.adapter.2.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2015.adapter.0.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2007.adapter.0.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2016.adapter.5.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2007.pool.weight', 'enc_kadapters.2011.adapter.1.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2011.adapter.3.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2008.adapter.1.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2018.adapter.1.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2007.adapter.3.down_project.bias', 'enc_kadapters.2008.adapter.1.down_project.bias', 'enc_kadapters.2012.adapter.3.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2008.adapter.2.down_project.bias', 'enc_kadapters.2009.adapter.4.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2008.layer_norm.weight', 'enc_kadapters.2007.adapter.0.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2013.adapter.3.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2015.adapter.4.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2014.adapter.0.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2015.adapter.5.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2010.adapter.5.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2016.adapter.0.down_project.weight', 'enc_kadapters.2010.pool.bias', 'enc_kadapters.2016.adapter.4.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2016.adapter.3.up_project.weight', 'enc_kadapters.2012.adapter.3.down_project.bias', 'enc_kadapters.2015.adapter.5.down_project.bias', 'enc_kadapters.2013.adapter.2.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2007.adapter.3.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2019.adapter.2.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2012.adapter.5.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2008.adapter.4.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2017.adapter.0.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2013.adapter.4.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2009.adapter.1.encoder.layer.0.SelfAttention.k.weight', 'enc_kadapters.2009.adapter.0.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2009.adapter.3.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2015.adapter.0.encoder.layer.0.layer_norm.weight', 'enc_kadapters.2017.adapter.1.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2016.adapter.1.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2007.adapter.5.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2018.adapter.3.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2011.adapter.5.up_project.bias', 'enc_kadapters.2009.adapter.0.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2019.adapter.1.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2015.adapter.2.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2014.adapter.4.down_project.bias', 'enc_kadapters.2015.adapter.3.up_project.bias', 'enc_kadapters.2017.adapter.0.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2018.adapter.0.down_project.bias', 'enc_kadapters.2016.adapter.3.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2013.adapter.3.encoder.layer.0.SelfAttention.relative_attention_bias.weight', 'enc_kadapters.2016.adapter.1.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2013.adapter.2.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2013.adapter.2.encoder.layer.0.SelfAttention.o.weight', 'enc_kadapters.2016.pool.bias', 'enc_kadapters.2008.adapter.1.down_project.weight', 'enc_kadapters.2014.adapter.2.encoder.layer.0.SelfAttention.v.weight', 'enc_kadapters.2016.adapter.2.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2007.adapter.4.encoder.layer.1.layer_norm.weight', 'enc_kadapters.2007.adapter.1.encoder.layer.0.SelfAttention.q.weight', 'enc_kadapters.2014.adapter.0.encoder.layer.1.DenseReluDense.wo.weight', 'enc_kadapters.2009.adapter.5.encoder.layer.1.DenseReluDense.wi.weight', 'enc_kadapters.2007.adapter.2.encoder.layer.1.DenseReluDense.wo.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Set SLURM handle signals.
+
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 880 M 
+-----------------------------------------------------
+880 M     Trainable params
+0         Non-trainable params
+880 M     Total params
+3,523.847 Total estimated model params size (MB)
+checkpoint path = outputs/templamakadapter_ensemble_full_2freeze_11221222324_128/epoch=5-f1_score=0.1152-em_score=0.0306.ckpt
+checkpoint path = outputs/wmtkadapter_2007_2freeze_11221222324_128/epoch=0-f1_score=0.2485-em_score=0.2040-v2.ckpt
+checkpoint path = outputs/wmtkadapter_2008_2freeze_11221222324_128/epoch=0-f1_score=0.2780-em_score=0.2386.ckpt
+checkpoint path = outputs/wmtkadapter_2009_2freeze_11221222324_128/epoch=0-f1_score=0.4089-em_score=0.3750-v2.ckpt
+checkpoint path = outputs/wmtkadapter_2010_2freeze_11221222324_128/epoch=0-f1_score=0.2850-em_score=0.2434.ckpt
+checkpoint path = outputs/wmtkadapter_2011_2freeze_11221222324_128/epoch=0-f1_score=0.2590-em_score=0.2154.ckpt
+checkpoint path = outputs/wmtkadapter_2012_2freeze_11221222324_128/epoch=0-f1_score=0.2901-em_score=0.2500-v1.ckpt
+checkpoint path = outputs/wmtkadapter_2013_2freeze_11221222324_128/epoch=0-f1_score=0.2328-em_score=0.1962-v2.ckpt
+checkpoint path = outputs/wmtkadapter_2014_2freeze_11221222324_128/epoch=0-f1_score=0.2504-em_score=0.2112-v1.ckpt
+checkpoint path = outputs/wmtkadapter_2015_2freeze_11221222324_128/epoch=0-f1_score=0.2460-em_score=0.2097-v1.ckpt
+checkpoint path = outputs/wmtkadapter_2016_2freeze_11221222324_128/epoch=0-f1_score=0.3085-em_score=0.2612.ckpt
+checkpoint path = outputs/wmtkadapter_2017_2freeze_11221222324_128/epoch=0-f1_score=0.3693-em_score=0.3125-v2.ckpt
+checkpoint path = outputs/wmtkadapter_2018_2freeze_11221222324_128/epoch=0-f1_score=0.2523-em_score=0.2092.ckpt
+checkpoint path = outputs/wmtkadapter_2019_2freeze_11221222324_128/epoch=0-f1_score=0.3594-em_score=0.2812-v3.ckpt
+Namespace(accelerator='ddp', adam_epsilon=1e-08, adapter_config={'adapter_list': [1, 12, 21, 22, 23, 24], 'adapter_hidden_size': 128, 'adapter_enc_dec': None, 'pool_size': None, 'years_to_paths': {'2007': 'outputs/wmtkadapter_2007_2freeze_11221222324_128/epoch=0-f1_score=0.2485-em_score=0.2040-v2_AdapterWeights.ckpt', '2008': 'outputs/wmtkadapter_2008_2freeze_11221222324_128/epoch=0-f1_score=0.2780-em_score=0.2386_AdapterWeights.ckpt', '2009': 'outputs/wmtkadapter_2009_2freeze_11221222324_128/epoch=0-f1_score=0.4089-em_score=0.3750-v2_AdapterWeights.ckpt', '2010': 'outputs/wmtkadapter_2010_2freeze_11221222324_128/epoch=0-f1_score=0.2850-em_score=0.2434_AdapterWeights.ckpt', '2011': 'outputs/wmtkadapter_2011_2freeze_11221222324_128/epoch=0-f1_score=0.2590-em_score=0.2154_AdapterWeights.ckpt', '2012': 'outputs/wmtkadapter_2012_2freeze_11221222324_128/epoch=0-f1_score=0.2901-em_score=0.2500-v1_AdapterWeights.ckpt', '2013': 'outputs/wmtkadapter_2013_2freeze_11221222324_128/epoch=0-f1_score=0.2328-em_score=0.1962-v2_AdapterWeights.ckpt', '2014': 'outputs/wmtkadapter_2014_2freeze_11221222324_128/epoch=0-f1_score=0.2504-em_score=0.2112-v1_AdapterWeights.ckpt', '2015': 'outputs/wmtkadapter_2015_2freeze_11221222324_128/epoch=0-f1_score=0.2460-em_score=0.2097-v1_AdapterWeights.ckpt', '2016': 'outputs/wmtkadapter_2016_2freeze_11221222324_128/epoch=0-f1_score=0.3085-em_score=0.2612_AdapterWeights.ckpt', '2017': 'outputs/wmtkadapter_2017_2freeze_11221222324_128/epoch=0-f1_score=0.3693-em_score=0.3125-v2_AdapterWeights.ckpt', '2018': 'outputs/wmtkadapter_2018_2freeze_11221222324_128/epoch=0-f1_score=0.2523-em_score=0.2092_AdapterWeights.ckpt', '2019': 'outputs/wmtkadapter_2019_2freeze_11221222324_128/epoch=0-f1_score=0.3594-em_score=0.2812-v3_AdapterWeights.ckpt'}, 'load_adapters': False}, adapter_enc_dec=None, adapter_hidden_size=128, adapter_list=[1, 12, 21, 22, 23, 24], check_validation_only=False, checkpoint_dir='outputs/templamakadapter_ensemble_full_2freeze_11221222324_128', checkpoint_path='outputs/templamakadapter_ensemble_full_2freeze_11221222324_128/epoch=5-f1_score=0.1152-em_score=0.0306.ckpt', dataset='templama', dataset_version='full', early_stop_callback=False, eval_batch_size=32, find_lr=False, freeze_embeds=False, freeze_encoder=False, freeze_level=0, learning_rate=0.001, load_adapters=False, max_grad_norm=0.5, max_input_length=50, max_output_length=25, method='kadapter_ensemble', mode='pretrain', model_name_or_path='google/t5-large-ssm', n_gpu=1, n_test=-1, n_train=-1, n_val=-1, num_train_epochs=30, num_workers=4, opt_level='O1', output_dir='outputs/templamakadapter_ensemble_full_0freeze_11221222324_128', output_log=None, pool_size=None, prefix=True, resume_from_checkpoint=True, seed=42, split=0, split_num=1, t5_learning_rate=1e-05, tokenizer_name_or_path='google/t5-large-ssm', train_batch_size=32, use_deepspeed=False, use_lr_scheduling=False, val_check_interval=1.0, val_data='full', wandb_log=True, warmup_steps=0, weight_decay=0.0, year_end=2019, year_start=2007, years_to_paths={'2007': 'outputs/wmtkadapter_2007_2freeze_11221222324_128/epoch=0-f1_score=0.2485-em_score=0.2040-v2_AdapterWeights.ckpt', '2008': 'outputs/wmtkadapter_2008_2freeze_11221222324_128/epoch=0-f1_score=0.2780-em_score=0.2386_AdapterWeights.ckpt', '2009': 'outputs/wmtkadapter_2009_2freeze_11221222324_128/epoch=0-f1_score=0.4089-em_score=0.3750-v2_AdapterWeights.ckpt', '2010': 'outputs/wmtkadapter_2010_2freeze_11221222324_128/epoch=0-f1_score=0.2850-em_score=0.2434_AdapterWeights.ckpt', '2011': 'outputs/wmtkadapter_2011_2freeze_11221222324_128/epoch=0-f1_score=0.2590-em_score=0.2154_AdapterWeights.ckpt', '2012': 'outputs/wmtkadapter_2012_2freeze_11221222324_128/epoch=0-f1_score=0.2901-em_score=0.2500-v1_AdapterWeights.ckpt', '2013': 'outputs/wmtkadapter_2013_2freeze_11221222324_128/epoch=0-f1_score=0.2328-em_score=0.1962-v2_AdapterWeights.ckpt', '2014': 'outputs/wmtkadapter_2014_2freeze_11221222324_128/epoch=0-f1_score=0.2504-em_score=0.2112-v1_AdapterWeights.ckpt', '2015': 'outputs/wmtkadapter_2015_2freeze_11221222324_128/epoch=0-f1_score=0.2460-em_score=0.2097-v1_AdapterWeights.ckpt', '2016': 'outputs/wmtkadapter_2016_2freeze_11221222324_128/epoch=0-f1_score=0.3085-em_score=0.2612_AdapterWeights.ckpt', '2017': 'outputs/wmtkadapter_2017_2freeze_11221222324_128/epoch=0-f1_score=0.3693-em_score=0.3125-v2_AdapterWeights.ckpt', '2018': 'outputs/wmtkadapter_2018_2freeze_11221222324_128/epoch=0-f1_score=0.2523-em_score=0.2092_AdapterWeights.ckpt', '2019': 'outputs/wmtkadapter_2019_2freeze_11221222324_128/epoch=0-f1_score=0.3594-em_score=0.2812-v3_AdapterWeights.ckpt'})
+T5Config {
+  "_name_or_path": "google/t5-large-ssm",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 4096,
+  "d_kv": 64,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "num_decoder_layers": 24,
+  "num_heads": 16,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_num_buckets": 32,
+  "transformers_version": "4.12.3",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+T5Config {
+  "_name_or_path": "google/t5-large-ssm",
+  "adapter_enc_dec": null,
+  "adapter_hidden_size": 128,
+  "adapter_list": [
+    1,
+    12,
+    21,
+    22,
+    23,
+    24
+  ],
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 4096,
+  "d_kv": 64,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "layer_norm_epsilon": 1e-06,
+  "load_adapters": false,
+  "model_type": "t5",
+  "num_decoder_layers": 24,
+  "num_heads": 16,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pool_size": null,
+  "relative_attention_num_buckets": 32,
+  "transformers_version": "4.12.3",
+  "use_cache": false,
+  "vocab_size": 32128,
+  "years_to_paths": {
+    "2007": "outputs/wmtkadapter_2007_2freeze_11221222324_128/epoch=0-f1_score=0.2485-em_score=0.2040-v2_AdapterWeights.ckpt",
+    "2008": "outputs/wmtkadapter_2008_2freeze_11221222324_128/epoch=0-f1_score=0.2780-em_score=0.2386_AdapterWeights.ckpt",
+    "2009": "outputs/wmtkadapter_2009_2freeze_11221222324_128/epoch=0-f1_score=0.4089-em_score=0.3750-v2_AdapterWeights.ckpt",
+    "2010": "outputs/wmtkadapter_2010_2freeze_11221222324_128/epoch=0-f1_score=0.2850-em_score=0.2434_AdapterWeights.ckpt",
+    "2011": "outputs/wmtkadapter_2011_2freeze_11221222324_128/epoch=0-f1_score=0.2590-em_score=0.2154_AdapterWeights.ckpt",
+    "2012": "outputs/wmtkadapter_2012_2freeze_11221222324_128/epoch=0-f1_score=0.2901-em_score=0.2500-v1_AdapterWeights.ckpt",
+    "2013": "outputs/wmtkadapter_2013_2freeze_11221222324_128/epoch=0-f1_score=0.2328-em_score=0.1962-v2_AdapterWeights.ckpt",
+    "2014": "outputs/wmtkadapter_2014_2freeze_11221222324_128/epoch=0-f1_score=0.2504-em_score=0.2112-v1_AdapterWeights.ckpt",
+    "2015": "outputs/wmtkadapter_2015_2freeze_11221222324_128/epoch=0-f1_score=0.2460-em_score=0.2097-v1_AdapterWeights.ckpt",
+    "2016": "outputs/wmtkadapter_2016_2freeze_11221222324_128/epoch=0-f1_score=0.3085-em_score=0.2612_AdapterWeights.ckpt",
+    "2017": "outputs/wmtkadapter_2017_2freeze_11221222324_128/epoch=0-f1_score=0.3693-em_score=0.3125-v2_AdapterWeights.ckpt",
+    "2018": "outputs/wmtkadapter_2018_2freeze_11221222324_128/epoch=0-f1_score=0.2523-em_score=0.2092_AdapterWeights.ckpt",
+    "2019": "outputs/wmtkadapter_2019_2freeze_11221222324_128/epoch=0-f1_score=0.3594-em_score=0.2812-v3_AdapterWeights.ckpt"
+  }
+}
+
+T5Config {
+  "_name_or_path": "google/t5-large-ssm",
+  "adapter_enc_dec": null,
+  "adapter_hidden_size": 128,
+  "adapter_list": [
+    1,
+    12,
+    21,
+    22,
+    23,
+    24
+  ],
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 4096,
+  "d_kv": 64,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "layer_norm_epsilon": 1e-06,
+  "load_adapters": false,
+  "model_type": "t5",
+  "num_decoder_layers": 24,
+  "num_heads": 16,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pool_size": null,
+  "relative_attention_num_buckets": 32,
+  "transformers_version": "4.12.3",
+  "use_cache": false,
+  "vocab_size": 32128,
+  "years_to_paths": {
+    "2007": "outputs/wmtkadapter_2007_2freeze_11221222324_128/epoch=0-f1_score=0.2485-em_score=0.2040-v2_AdapterWeights.ckpt",
+    "2008": "outputs/wmtkadapter_2008_2freeze_11221222324_128/epoch=0-f1_score=0.2780-em_score=0.2386_AdapterWeights.ckpt",
+    "2009": "outputs/wmtkadapter_2009_2freeze_11221222324_128/epoch=0-f1_score=0.4089-em_score=0.3750-v2_AdapterWeights.ckpt",
+    "2010": "outputs/wmtkadapter_2010_2freeze_11221222324_128/epoch=0-f1_score=0.2850-em_score=0.2434_AdapterWeights.ckpt",
+    "2011": "outputs/wmtkadapter_2011_2freeze_11221222324_128/epoch=0-f1_score=0.2590-em_score=0.2154_AdapterWeights.ckpt",
+    "2012": "outputs/wmtkadapter_2012_2freeze_11221222324_128/epoch=0-f1_score=0.2901-em_score=0.2500-v1_AdapterWeights.ckpt",
+    "2013": "outputs/wmtkadapter_2013_2freeze_11221222324_128/epoch=0-f1_score=0.2328-em_score=0.1962-v2_AdapterWeights.ckpt",
+    "2014": "outputs/wmtkadapter_2014_2freeze_11221222324_128/epoch=0-f1_score=0.2504-em_score=0.2112-v1_AdapterWeights.ckpt",
+    "2015": "outputs/wmtkadapter_2015_2freeze_11221222324_128/epoch=0-f1_score=0.2460-em_score=0.2097-v1_AdapterWeights.ckpt",
+    "2016": "outputs/wmtkadapter_2016_2freeze_11221222324_128/epoch=0-f1_score=0.3085-em_score=0.2612_AdapterWeights.ckpt",
+    "2017": "outputs/wmtkadapter_2017_2freeze_11221222324_128/epoch=0-f1_score=0.3693-em_score=0.3125-v2_AdapterWeights.ckpt",
+    "2018": "outputs/wmtkadapter_2018_2freeze_11221222324_128/epoch=0-f1_score=0.2523-em_score=0.2092_AdapterWeights.ckpt",
+    "2019": "outputs/wmtkadapter_2019_2freeze_11221222324_128/epoch=0-f1_score=0.3594-em_score=0.2812-v3_AdapterWeights.ckpt"
+  }
+}
+
+T5Config {
+  "_name_or_path": "google/t5-large-ssm",
+  "adapter_enc_dec": null,
+  "adapter_hidden_size": 128,
+  "adapter_list": [
+    1,
+    12,
+    21,
+    22,
+    23,
+    24
+  ],
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 4096,
+  "d_kv": 64,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "layer_norm_epsilon": 1e-06,
+  "load_adapters": false,
+  "model_type": "t5",
+  "num_decoder_layers": 24,
+  "num_heads": 16,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pool_size": null,
+  "relative_attention_num_buckets": 32,
+  "transformers_version": "4.12.3",
+  "use_cache": false,
+  "vocab_size": 32128,
+  "years_to_paths": {
+    "2007": "outputs/wmtkadapter_2007_2freeze_11221222324_128/epoch=0-f1_score=0.2485-em_score=0.2040-v2_AdapterWeights.ckpt",
+    "2008": "outputs/wmtkadapter_2008_2freeze_11221222324_128/epoch=0-f1_score=0.2780-em_score=0.2386_AdapterWeights.ckpt",
+    "2009": "outputs/wmtkadapter_2009_2freeze_11221222324_128/epoch=0-f1_score=0.4089-em_score=0.3750-v2_AdapterWeights.ckpt",
+    "2010": "outputs/wmtkadapter_2010_2freeze_11221222324_128/epoch=0-f1_score=0.2850-em_score=0.2434_AdapterWeights.ckpt",
+    "2011": "outputs/wmtkadapter_2011_2freeze_11221222324_128/epoch=0-f1_score=0.2590-em_score=0.2154_AdapterWeights.ckpt",
+    "2012": "outputs/wmtkadapter_2012_2freeze_11221222324_128/epoch=0-f1_score=0.2901-em_score=0.2500-v1_AdapterWeights.ckpt",
+    "2013": "outputs/wmtkadapter_2013_2freeze_11221222324_128/epoch=0-f1_score=0.2328-em_score=0.1962-v2_AdapterWeights.ckpt",
+    "2014": "outputs/wmtkadapter_2014_2freeze_11221222324_128/epoch=0-f1_score=0.2504-em_score=0.2112-v1_AdapterWeights.ckpt",
+    "2015": "outputs/wmtkadapter_2015_2freeze_11221222324_128/epoch=0-f1_score=0.2460-em_score=0.2097-v1_AdapterWeights.ckpt",
+    "2016": "outputs/wmtkadapter_2016_2freeze_11221222324_128/epoch=0-f1_score=0.3085-em_score=0.2612_AdapterWeights.ckpt",
+    "2017": "outputs/wmtkadapter_2017_2freeze_11221222324_128/epoch=0-f1_score=0.3693-em_score=0.3125-v2_AdapterWeights.ckpt",
+    "2018": "outputs/wmtkadapter_2018_2freeze_11221222324_128/epoch=0-f1_score=0.2523-em_score=0.2092_AdapterWeights.ckpt",
+    "2019": "outputs/wmtkadapter_2019_2freeze_11221222324_128/epoch=0-f1_score=0.3594-em_score=0.2812-v3_AdapterWeights.ckpt"
+  }
+}
+
+T5Config {
+  "_name_or_path": "google/t5-large-ssm",
+  "adapter_enc_dec": null,
+  "adapter_hidden_size": 128,
+  "adapter_list": [
+    1,
+    12,
+    21,
+    22,
+    23,
+    24
+  ],
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 4096,
+  "d_kv": 64,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "layer_norm_epsilon": 1e-06,
+  "load_adapters": false,
+  "model_type": "t5",
+  "num_decoder_layers": 24,
+  "num_heads": 16,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pool_size": null,
+  "relative_attention_num_buckets": 32,
+  "transformers_version": "4.12.3",
+  "use_cache": false,
+  "vocab_size": 32128,
+  "years_to_paths": {
+    "2007": "outputs/wmtkadapter_2007_2freeze_11221222324_128/epoch=0-f1_score=0.2485-em_score=0.2040-v2_AdapterWeights.ckpt",
+    "2008": "outputs/wmtkadapter_2008_2freeze_11221222324_128/epoch=0-f1_score=0.2780-em_score=0.2386_AdapterWeights.ckpt",
+    "2009": "outputs/wmtkadapter_2009_2freeze_11221222324_128/epoch=0-f1_score=0.4089-em_score=0.3750-v2_AdapterWeights.ckpt",
+    "2010": "outputs/wmtkadapter_2010_2freeze_11221222324_128/epoch=0-f1_score=0.2850-em_score=0.2434_AdapterWeights.ckpt",
+    "2011": "outputs/wmtkadapter_2011_2freeze_11221222324_128/epoch=0-f1_score=0.2590-em_score=0.2154_AdapterWeights.ckpt",
+    "2012": "outputs/wmtkadapter_2012_2freeze_11221222324_128/epoch=0-f1_score=0.2901-em_score=0.2500-v1_AdapterWeights.ckpt",
+    "2013": "outputs/wmtkadapter_2013_2freeze_11221222324_128/epoch=0-f1_score=0.2328-em_score=0.1962-v2_AdapterWeights.ckpt",
+    "2014": "outputs/wmtkadapter_2014_2freeze_11221222324_128/epoch=0-f1_score=0.2504-em_score=0.2112-v1_AdapterWeights.ckpt",
+    "2015": "outputs/wmtkadapter_2015_2freeze_11221222324_128/epoch=0-f1_score=0.2460-em_score=0.2097-v1_AdapterWeights.ckpt",
+    "2016": "outputs/wmtkadapter_2016_2freeze_11221222324_128/epoch=0-f1_score=0.3085-em_score=0.2612_AdapterWeights.ckpt",
+    "2017": "outputs/wmtkadapter_2017_2freeze_11221222324_128/epoch=0-f1_score=0.3693-em_score=0.3125-v2_AdapterWeights.ckpt",
+    "2018": "outputs/wmtkadapter_2018_2freeze_11221222324_128/epoch=0-f1_score=0.2523-em_score=0.2092_AdapterWeights.ckpt",
+    "2019": "outputs/wmtkadapter_2019_2freeze_11221222324_128/epoch=0-f1_score=0.3594-em_score=0.2812-v3_AdapterWeights.ckpt"
+  }
+}
+
+T5Config {
+  "_name_or_path": "google/t5-large-ssm",
+  "adapter_enc_dec": null,
+  "adapter_hidden_size": 128,
+  "adapter_list": [
+    1,
+    12,
+    21,
+    22,
+    23,
+    24
+  ],
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 4096,
+  "d_kv": 64,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "layer_norm_epsilon": 1e-06,
+  "load_adapters": false,
+  "model_type": "t5",
+  "num_decoder_layers": 24,
+  "num_heads": 16,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pool_size": null,
+  "relative_attention_num_buckets": 32,
+  "transformers_version": "4.12.3",
+  "use_cache": false,
+  "vocab_size": 32128,
+  "years_to_paths": {
+    "2007": "outputs/wmtkadapter_2007_2freeze_11221222324_128/epoch=0-f1_score=0.2485-em_score=0.2040-v2_AdapterWeights.ckpt",
+    "2008": "outputs/wmtkadapter_2008_2freeze_11221222324_128/epoch=0-f1_score=0.2780-em_score=0.2386_AdapterWeights.ckpt",
+    "2009": "outputs/wmtkadapter_2009_2freeze_11221222324_128/epoch=0-f1_score=0.4089-em_score=0.3750-v2_AdapterWeights.ckpt",
+    "2010": "outputs/wmtkadapter_2010_2freeze_11221222324_128/epoch=0-f1_score=0.2850-em_score=0.2434_AdapterWeights.ckpt",
+    "2011": "outputs/wmtkadapter_2011_2freeze_11221222324_128/epoch=0-f1_score=0.2590-em_score=0.2154_AdapterWeights.ckpt",
+    "2012": "outputs/wmtkadapter_2012_2freeze_11221222324_128/epoch=0-f1_score=0.2901-em_score=0.2500-v1_AdapterWeights.ckpt",
+    "2013": "outputs/wmtkadapter_2013_2freeze_11221222324_128/epoch=0-f1_score=0.2328-em_score=0.1962-v2_AdapterWeights.ckpt",
+    "2014": "outputs/wmtkadapter_2014_2freeze_11221222324_128/epoch=0-f1_score=0.2504-em_score=0.2112-v1_AdapterWeights.ckpt",
+    "2015": "outputs/wmtkadapter_2015_2freeze_11221222324_128/epoch=0-f1_score=0.2460-em_score=0.2097-v1_AdapterWeights.ckpt",
+    "2016": "outputs/wmtkadapter_2016_2freeze_11221222324_128/epoch=0-f1_score=0.3085-em_score=0.2612_AdapterWeights.ckpt",
+    "2017": "outputs/wmtkadapter_2017_2freeze_11221222324_128/epoch=0-f1_score=0.3693-em_score=0.3125-v2_AdapterWeights.ckpt",
+    "2018": "outputs/wmtkadapter_2018_2freeze_11221222324_128/epoch=0-f1_score=0.2523-em_score=0.2092_AdapterWeights.ckpt",
+    "2019": "outputs/wmtkadapter_2019_2freeze_11221222324_128/epoch=0-f1_score=0.3594-em_score=0.2812-v3_AdapterWeights.ckpt"
+  }
+}
+
+T5Config {
+  "_name_or_path": "google/t5-large-ssm",
+  "adapter_enc_dec": null,
+  "adapter_hidden_size": 128,
+  "adapter_list": [
+    1,
+    12,
+    21,
+    22,
+    23,
+    24
+  ],
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 4096,
+  "d_kv": 64,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "layer_norm_epsilon": 1e-06,
+  "load_adapters": false,
+  "model_type": "t5",
+  "num_decoder_layers": 24,
+  "num_heads": 16,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pool_size": null,
+  "relative_attention_num_buckets": 32,
+  "transformers_version": "4.12.3",
+  "use_cache": false,
+  "vocab_size": 32128,
+  "years_to_paths": {
+    "2007": "outputs/wmtkadapter_2007_2freeze_11221222324_128/epoch=0-f1_score=0.2485-em_score=0.2040-v2_AdapterWeights.ckpt",
+    "2008": "outputs/wmtkadapter_2008_2freeze_11221222324_128/epoch=0-f1_score=0.2780-em_score=0.2386_AdapterWeights.ckpt",
+    "2009": "outputs/wmtkadapter_2009_2freeze_11221222324_128/epoch=0-f1_score=0.4089-em_score=0.3750-v2_AdapterWeights.ckpt",
+    "2010": "outputs/wmtkadapter_2010_2freeze_11221222324_128/epoch=0-f1_score=0.2850-em_score=0.2434_AdapterWeights.ckpt",
+    "2011": "outputs/wmtkadapter_2011_2freeze_11221222324_128/epoch=0-f1_score=0.2590-em_score=0.2154_AdapterWeights.ckpt",
+    "2012": "outputs/wmtkadapter_2012_2freeze_11221222324_128/epoch=0-f1_score=0.2901-em_score=0.2500-v1_AdapterWeights.ckpt",
+    "2013": "outputs/wmtkadapter_2013_2freeze_11221222324_128/epoch=0-f1_score=0.2328-em_score=0.1962-v2_AdapterWeights.ckpt",
+    "2014": "outputs/wmtkadapter_2014_2freeze_11221222324_128/epoch=0-f1_score=0.2504-em_score=0.2112-v1_AdapterWeights.ckpt",
+    "2015": "outputs/wmtkadapter_2015_2freeze_11221222324_128/epoch=0-f1_score=0.2460-em_score=0.2097-v1_AdapterWeights.ckpt",
+    "2016": "outputs/wmtkadapter_2016_2freeze_11221222324_128/epoch=0-f1_score=0.3085-em_score=0.2612_AdapterWeights.ckpt",
+    "2017": "outputs/wmtkadapter_2017_2freeze_11221222324_128/epoch=0-f1_score=0.3693-em_score=0.3125-v2_AdapterWeights.ckpt",
+    "2018": "outputs/wmtkadapter_2018_2freeze_11221222324_128/epoch=0-f1_score=0.2523-em_score=0.2092_AdapterWeights.ckpt",
+    "2019": "outputs/wmtkadapter_2019_2freeze_11221222324_128/epoch=0-f1_score=0.3594-em_score=0.2812-v3_AdapterWeights.ckpt"
+  }
+}
+
+T5Config {
+  "_name_or_path": "google/t5-large-ssm",
+  "adapter_enc_dec": null,
+  "adapter_hidden_size": 128,
+  "adapter_list": [
+    1,
+    12,
+    21,
+    22,
+    23,
+    24
+  ],
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 4096,
+  "d_kv": 64,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "layer_norm_epsilon": 1e-06,
+  "load_adapters": false,
+  "model_type": "t5",
+  "num_decoder_layers": 24,
+  "num_heads": 16,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pool_size": null,
+  "relative_attention_num_buckets": 32,
+  "transformers_version": "4.12.3",
+  "use_cache": false,
+  "vocab_size": 32128,
+  "years_to_paths": {
+    "2007": "outputs/wmtkadapter_2007_2freeze_11221222324_128/epoch=0-f1_score=0.2485-em_score=0.2040-v2_AdapterWeights.ckpt",
+    "2008": "outputs/wmtkadapter_2008_2freeze_11221222324_128/epoch=0-f1_score=0.2780-em_score=0.2386_AdapterWeights.ckpt",
+    "2009": "outputs/wmtkadapter_2009_2freeze_11221222324_128/epoch=0-f1_score=0.4089-em_score=0.3750-v2_AdapterWeights.ckpt",
+    "2010": "outputs/wmtkadapter_2010_2freeze_11221222324_128/epoch=0-f1_score=0.2850-em_score=0.2434_AdapterWeights.ckpt",
+    "2011": "outputs/wmtkadapter_2011_2freeze_11221222324_128/epoch=0-f1_score=0.2590-em_score=0.2154_AdapterWeights.ckpt",
+    "2012": "outputs/wmtkadapter_2012_2freeze_11221222324_128/epoch=0-f1_score=0.2901-em_score=0.2500-v1_AdapterWeights.ckpt",
+    "2013": "outputs/wmtkadapter_2013_2freeze_11221222324_128/epoch=0-f1_score=0.2328-em_score=0.1962-v2_AdapterWeights.ckpt",
+    "2014": "outputs/wmtkadapter_2014_2freeze_11221222324_128/epoch=0-f1_score=0.2504-em_score=0.2112-v1_AdapterWeights.ckpt",
+    "2015": "outputs/wmtkadapter_2015_2freeze_11221222324_128/epoch=0-f1_score=0.2460-em_score=0.2097-v1_AdapterWeights.ckpt",
+    "2016": "outputs/wmtkadapter_2016_2freeze_11221222324_128/epoch=0-f1_score=0.3085-em_score=0.2612_AdapterWeights.ckpt",
+    "2017": "outputs/wmtkadapter_2017_2freeze_11221222324_128/epoch=0-f1_score=0.3693-em_score=0.3125-v2_AdapterWeights.ckpt",
+    "2018": "outputs/wmtkadapter_2018_2freeze_11221222324_128/epoch=0-f1_score=0.2523-em_score=0.2092_AdapterWeights.ckpt",
+    "2019": "outputs/wmtkadapter_2019_2freeze_11221222324_128/epoch=0-f1_score=0.3594-em_score=0.2812-v3_AdapterWeights.ckpt"
+  }
+}
+
+T5Config {
+  "_name_or_path": "google/t5-large-ssm",
+  "adapter_enc_dec": null,
+  "adapter_hidden_size": 128,
+  "adapter_list": [
+    1,
+    12,
+    21,
+    22,
+    23,
+    24
+  ],
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 4096,
+  "d_kv": 64,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "layer_norm_epsilon": 1e-06,
+  "load_adapters": false,
+  "model_type": "t5",
+  "num_decoder_layers": 24,
+  "num_heads": 16,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pool_size": null,
+  "relative_attention_num_buckets": 32,
+  "transformers_version": "4.12.3",
+  "use_cache": false,
+  "vocab_size": 32128,
+  "years_to_paths": {
+    "2007": "outputs/wmtkadapter_2007_2freeze_11221222324_128/epoch=0-f1_score=0.2485-em_score=0.2040-v2_AdapterWeights.ckpt",
+    "2008": "outputs/wmtkadapter_2008_2freeze_11221222324_128/epoch=0-f1_score=0.2780-em_score=0.2386_AdapterWeights.ckpt",
+    "2009": "outputs/wmtkadapter_2009_2freeze_11221222324_128/epoch=0-f1_score=0.4089-em_score=0.3750-v2_AdapterWeights.ckpt",
+    "2010": "outputs/wmtkadapter_2010_2freeze_11221222324_128/epoch=0-f1_score=0.2850-em_score=0.2434_AdapterWeights.ckpt",
+    "2011": "outputs/wmtkadapter_2011_2freeze_11221222324_128/epoch=0-f1_score=0.2590-em_score=0.2154_AdapterWeights.ckpt",
+    "2012": "outputs/wmtkadapter_2012_2freeze_11221222324_128/epoch=0-f1_score=0.2901-em_score=0.2500-v1_AdapterWeights.ckpt",
+    "2013": "outputs/wmtkadapter_2013_2freeze_11221222324_128/epoch=0-f1_score=0.2328-em_score=0.1962-v2_AdapterWeights.ckpt",
+    "2014": "outputs/wmtkadapter_2014_2freeze_11221222324_128/epoch=0-f1_score=0.2504-em_score=0.2112-v1_AdapterWeights.ckpt",
+    "2015": "outputs/wmtkadapter_2015_2freeze_11221222324_128/epoch=0-f1_score=0.2460-em_score=0.2097-v1_AdapterWeights.ckpt",
+    "2016": "outputs/wmtkadapter_2016_2freeze_11221222324_128/epoch=0-f1_score=0.3085-em_score=0.2612_AdapterWeights.ckpt",
+    "2017": "outputs/wmtkadapter_2017_2freeze_11221222324_128/epoch=0-f1_score=0.3693-em_score=0.3125-v2_AdapterWeights.ckpt",
+    "2018": "outputs/wmtkadapter_2018_2freeze_11221222324_128/epoch=0-f1_score=0.2523-em_score=0.2092_AdapterWeights.ckpt",
+    "2019": "outputs/wmtkadapter_2019_2freeze_11221222324_128/epoch=0-f1_score=0.3594-em_score=0.2812-v3_AdapterWeights.ckpt"
+  }
+}
+
+T5Config {
+  "_name_or_path": "google/t5-large-ssm",
+  "adapter_enc_dec": null,
+  "adapter_hidden_size": 128,
+  "adapter_list": [
+    1,
+    12,
+    21,
+    22,
+    23,
+    24
+  ],
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 4096,
+  "d_kv": 64,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "layer_norm_epsilon": 1e-06,
+  "load_adapters": false,
+  "model_type": "t5",
+  "num_decoder_layers": 24,
+  "num_heads": 16,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pool_size": null,
+  "relative_attention_num_buckets": 32,
+  "transformers_version": "4.12.3",
+  "use_cache": false,
+  "vocab_size": 32128,
+  "years_to_paths": {
+    "2007": "outputs/wmtkadapter_2007_2freeze_11221222324_128/epoch=0-f1_score=0.2485-em_score=0.2040-v2_AdapterWeights.ckpt",
+    "2008": "outputs/wmtkadapter_2008_2freeze_11221222324_128/epoch=0-f1_score=0.2780-em_score=0.2386_AdapterWeights.ckpt",
+    "2009": "outputs/wmtkadapter_2009_2freeze_11221222324_128/epoch=0-f1_score=0.4089-em_score=0.3750-v2_AdapterWeights.ckpt",
+    "2010": "outputs/wmtkadapter_2010_2freeze_11221222324_128/epoch=0-f1_score=0.2850-em_score=0.2434_AdapterWeights.ckpt",
+    "2011": "outputs/wmtkadapter_2011_2freeze_11221222324_128/epoch=0-f1_score=0.2590-em_score=0.2154_AdapterWeights.ckpt",
+    "2012": "outputs/wmtkadapter_2012_2freeze_11221222324_128/epoch=0-f1_score=0.2901-em_score=0.2500-v1_AdapterWeights.ckpt",
+    "2013": "outputs/wmtkadapter_2013_2freeze_11221222324_128/epoch=0-f1_score=0.2328-em_score=0.1962-v2_AdapterWeights.ckpt",
+    "2014": "outputs/wmtkadapter_2014_2freeze_11221222324_128/epoch=0-f1_score=0.2504-em_score=0.2112-v1_AdapterWeights.ckpt",
+    "2015": "outputs/wmtkadapter_2015_2freeze_11221222324_128/epoch=0-f1_score=0.2460-em_score=0.2097-v1_AdapterWeights.ckpt",
+    "2016": "outputs/wmtkadapter_2016_2freeze_11221222324_128/epoch=0-f1_score=0.3085-em_score=0.2612_AdapterWeights.ckpt",
+    "2017": "outputs/wmtkadapter_2017_2freeze_11221222324_128/epoch=0-f1_score=0.3693-em_score=0.3125-v2_AdapterWeights.ckpt",
+    "2018": "outputs/wmtkadapter_2018_2freeze_11221222324_128/epoch=0-f1_score=0.2523-em_score=0.2092_AdapterWeights.ckpt",
+    "2019": "outputs/wmtkadapter_2019_2freeze_11221222324_128/epoch=0-f1_score=0.3594-em_score=0.2812-v3_AdapterWeights.ckpt"
+  }
+}
+
+T5Config {
+  "_name_or_path": "google/t5-large-ssm",
+  "adapter_enc_dec": null,
+  "adapter_hidden_size": 128,
+  "adapter_list": [
+    1,
+    12,
+    21,
+    22,
+    23,
+    24
+  ],
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 4096,
+  "d_kv": 64,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "layer_norm_epsilon": 1e-06,
+  "load_adapters": false,
+  "model_type": "t5",
+  "num_decoder_layers": 24,
+  "num_heads": 16,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pool_size": null,
+  "relative_attention_num_buckets": 32,
+  "transformers_version": "4.12.3",
+  "use_cache": false,
+  "vocab_size": 32128,
+  "years_to_paths": {
+    "2007": "outputs/wmtkadapter_2007_2freeze_11221222324_128/epoch=0-f1_score=0.2485-em_score=0.2040-v2_AdapterWeights.ckpt",
+    "2008": "outputs/wmtkadapter_2008_2freeze_11221222324_128/epoch=0-f1_score=0.2780-em_score=0.2386_AdapterWeights.ckpt",
+    "2009": "outputs/wmtkadapter_2009_2freeze_11221222324_128/epoch=0-f1_score=0.4089-em_score=0.3750-v2_AdapterWeights.ckpt",
+    "2010": "outputs/wmtkadapter_2010_2freeze_11221222324_128/epoch=0-f1_score=0.2850-em_score=0.2434_AdapterWeights.ckpt",
+    "2011": "outputs/wmtkadapter_2011_2freeze_11221222324_128/epoch=0-f1_score=0.2590-em_score=0.2154_AdapterWeights.ckpt",
+    "2012": "outputs/wmtkadapter_2012_2freeze_11221222324_128/epoch=0-f1_score=0.2901-em_score=0.2500-v1_AdapterWeights.ckpt",
+    "2013": "outputs/wmtkadapter_2013_2freeze_11221222324_128/epoch=0-f1_score=0.2328-em_score=0.1962-v2_AdapterWeights.ckpt",
+    "2014": "outputs/wmtkadapter_2014_2freeze_11221222324_128/epoch=0-f1_score=0.2504-em_score=0.2112-v1_AdapterWeights.ckpt",
+    "2015": "outputs/wmtkadapter_2015_2freeze_11221222324_128/epoch=0-f1_score=0.2460-em_score=0.2097-v1_AdapterWeights.ckpt",
+    "2016": "outputs/wmtkadapter_2016_2freeze_11221222324_128/epoch=0-f1_score=0.3085-em_score=0.2612_AdapterWeights.ckpt",
+    "2017": "outputs/wmtkadapter_2017_2freeze_11221222324_128/epoch=0-f1_score=0.3693-em_score=0.3125-v2_AdapterWeights.ckpt",
+    "2018": "outputs/wmtkadapter_2018_2freeze_11221222324_128/epoch=0-f1_score=0.2523-em_score=0.2092_AdapterWeights.ckpt",
+    "2019": "outputs/wmtkadapter_2019_2freeze_11221222324_128/epoch=0-f1_score=0.3594-em_score=0.2812-v3_AdapterWeights.ckpt"
+  }
+}
+
+T5Config {
+  "_name_or_path": "google/t5-large-ssm",
+  "adapter_enc_dec": null,
+  "adapter_hidden_size": 128,
+  "adapter_list": [
+    1,
+    12,
+    21,
+    22,
+    23,
+    24
+  ],
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 4096,
+  "d_kv": 64,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "layer_norm_epsilon": 1e-06,
+  "load_adapters": false,
+  "model_type": "t5",
+  "num_decoder_layers": 24,
+  "num_heads": 16,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pool_size": null,
+  "relative_attention_num_buckets": 32,
+  "transformers_version": "4.12.3",
+  "use_cache": false,
+  "vocab_size": 32128,
+  "years_to_paths": {
+    "2007": "outputs/wmtkadapter_2007_2freeze_11221222324_128/epoch=0-f1_score=0.2485-em_score=0.2040-v2_AdapterWeights.ckpt",
+    "2008": "outputs/wmtkadapter_2008_2freeze_11221222324_128/epoch=0-f1_score=0.2780-em_score=0.2386_AdapterWeights.ckpt",
+    "2009": "outputs/wmtkadapter_2009_2freeze_11221222324_128/epoch=0-f1_score=0.4089-em_score=0.3750-v2_AdapterWeights.ckpt",
+    "2010": "outputs/wmtkadapter_2010_2freeze_11221222324_128/epoch=0-f1_score=0.2850-em_score=0.2434_AdapterWeights.ckpt",
+    "2011": "outputs/wmtkadapter_2011_2freeze_11221222324_128/epoch=0-f1_score=0.2590-em_score=0.2154_AdapterWeights.ckpt",
+    "2012": "outputs/wmtkadapter_2012_2freeze_11221222324_128/epoch=0-f1_score=0.2901-em_score=0.2500-v1_AdapterWeights.ckpt",
+    "2013": "outputs/wmtkadapter_2013_2freeze_11221222324_128/epoch=0-f1_score=0.2328-em_score=0.1962-v2_AdapterWeights.ckpt",
+    "2014": "outputs/wmtkadapter_2014_2freeze_11221222324_128/epoch=0-f1_score=0.2504-em_score=0.2112-v1_AdapterWeights.ckpt",
+    "2015": "outputs/wmtkadapter_2015_2freeze_11221222324_128/epoch=0-f1_score=0.2460-em_score=0.2097-v1_AdapterWeights.ckpt",
+    "2016": "outputs/wmtkadapter_2016_2freeze_11221222324_128/epoch=0-f1_score=0.3085-em_score=0.2612_AdapterWeights.ckpt",
+    "2017": "outputs/wmtkadapter_2017_2freeze_11221222324_128/epoch=0-f1_score=0.3693-em_score=0.3125-v2_AdapterWeights.ckpt",
+    "2018": "outputs/wmtkadapter_2018_2freeze_11221222324_128/epoch=0-f1_score=0.2523-em_score=0.2092_AdapterWeights.ckpt",
+    "2019": "outputs/wmtkadapter_2019_2freeze_11221222324_128/epoch=0-f1_score=0.3594-em_score=0.2812-v3_AdapterWeights.ckpt"
+  }
+}
+
+T5Config {
+  "_name_or_path": "google/t5-large-ssm",
+  "adapter_enc_dec": null,
+  "adapter_hidden_size": 128,
+  "adapter_list": [
+    1,
+    12,
+    21,
+    22,
+    23,
+    24
+  ],
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 4096,
+  "d_kv": 64,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "layer_norm_epsilon": 1e-06,
+  "load_adapters": false,
+  "model_type": "t5",
+  "num_decoder_layers": 24,
+  "num_heads": 16,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pool_size": null,
+  "relative_attention_num_buckets": 32,
+  "transformers_version": "4.12.3",
+  "use_cache": false,
+  "vocab_size": 32128,
+  "years_to_paths": {
+    "2007": "outputs/wmtkadapter_2007_2freeze_11221222324_128/epoch=0-f1_score=0.2485-em_score=0.2040-v2_AdapterWeights.ckpt",
+    "2008": "outputs/wmtkadapter_2008_2freeze_11221222324_128/epoch=0-f1_score=0.2780-em_score=0.2386_AdapterWeights.ckpt",
+    "2009": "outputs/wmtkadapter_2009_2freeze_11221222324_128/epoch=0-f1_score=0.4089-em_score=0.3750-v2_AdapterWeights.ckpt",
+    "2010": "outputs/wmtkadapter_2010_2freeze_11221222324_128/epoch=0-f1_score=0.2850-em_score=0.2434_AdapterWeights.ckpt",
+    "2011": "outputs/wmtkadapter_2011_2freeze_11221222324_128/epoch=0-f1_score=0.2590-em_score=0.2154_AdapterWeights.ckpt",
+    "2012": "outputs/wmtkadapter_2012_2freeze_11221222324_128/epoch=0-f1_score=0.2901-em_score=0.2500-v1_AdapterWeights.ckpt",
+    "2013": "outputs/wmtkadapter_2013_2freeze_11221222324_128/epoch=0-f1_score=0.2328-em_score=0.1962-v2_AdapterWeights.ckpt",
+    "2014": "outputs/wmtkadapter_2014_2freeze_11221222324_128/epoch=0-f1_score=0.2504-em_score=0.2112-v1_AdapterWeights.ckpt",
+    "2015": "outputs/wmtkadapter_2015_2freeze_11221222324_128/epoch=0-f1_score=0.2460-em_score=0.2097-v1_AdapterWeights.ckpt",
+    "2016": "outputs/wmtkadapter_2016_2freeze_11221222324_128/epoch=0-f1_score=0.3085-em_score=0.2612_AdapterWeights.ckpt",
+    "2017": "outputs/wmtkadapter_2017_2freeze_11221222324_128/epoch=0-f1_score=0.3693-em_score=0.3125-v2_AdapterWeights.ckpt",
+    "2018": "outputs/wmtkadapter_2018_2freeze_11221222324_128/epoch=0-f1_score=0.2523-em_score=0.2092_AdapterWeights.ckpt",
+    "2019": "outputs/wmtkadapter_2019_2freeze_11221222324_128/epoch=0-f1_score=0.3594-em_score=0.2812-v3_AdapterWeights.ckpt"
+  }
+}
+
+T5Config {
+  "_name_or_path": "google/t5-large-ssm",
+  "adapter_enc_dec": null,
+  "adapter_hidden_size": 128,
+  "adapter_list": [
+    1,
+    12,
+    21,
+    22,
+    23,
+    24
+  ],
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 4096,
+  "d_kv": 64,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "layer_norm_epsilon": 1e-06,
+  "load_adapters": false,
+  "model_type": "t5",
+  "num_decoder_layers": 24,
+  "num_heads": 16,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pool_size": null,
+  "relative_attention_num_buckets": 32,
+  "transformers_version": "4.12.3",
+  "use_cache": false,
+  "vocab_size": 32128,
+  "years_to_paths": {
+    "2007": "outputs/wmtkadapter_2007_2freeze_11221222324_128/epoch=0-f1_score=0.2485-em_score=0.2040-v2_AdapterWeights.ckpt",
+    "2008": "outputs/wmtkadapter_2008_2freeze_11221222324_128/epoch=0-f1_score=0.2780-em_score=0.2386_AdapterWeights.ckpt",
+    "2009": "outputs/wmtkadapter_2009_2freeze_11221222324_128/epoch=0-f1_score=0.4089-em_score=0.3750-v2_AdapterWeights.ckpt",
+    "2010": "outputs/wmtkadapter_2010_2freeze_11221222324_128/epoch=0-f1_score=0.2850-em_score=0.2434_AdapterWeights.ckpt",
+    "2011": "outputs/wmtkadapter_2011_2freeze_11221222324_128/epoch=0-f1_score=0.2590-em_score=0.2154_AdapterWeights.ckpt",
+    "2012": "outputs/wmtkadapter_2012_2freeze_11221222324_128/epoch=0-f1_score=0.2901-em_score=0.2500-v1_AdapterWeights.ckpt",
+    "2013": "outputs/wmtkadapter_2013_2freeze_11221222324_128/epoch=0-f1_score=0.2328-em_score=0.1962-v2_AdapterWeights.ckpt",
+    "2014": "outputs/wmtkadapter_2014_2freeze_11221222324_128/epoch=0-f1_score=0.2504-em_score=0.2112-v1_AdapterWeights.ckpt",
+    "2015": "outputs/wmtkadapter_2015_2freeze_11221222324_128/epoch=0-f1_score=0.2460-em_score=0.2097-v1_AdapterWeights.ckpt",
+    "2016": "outputs/wmtkadapter_2016_2freeze_11221222324_128/epoch=0-f1_score=0.3085-em_score=0.2612_AdapterWeights.ckpt",
+    "2017": "outputs/wmtkadapter_2017_2freeze_11221222324_128/epoch=0-f1_score=0.3693-em_score=0.3125-v2_AdapterWeights.ckpt",
+    "2018": "outputs/wmtkadapter_2018_2freeze_11221222324_128/epoch=0-f1_score=0.2523-em_score=0.2092_AdapterWeights.ckpt",
+    "2019": "outputs/wmtkadapter_2019_2freeze_11221222324_128/epoch=0-f1_score=0.3594-em_score=0.2812-v3_AdapterWeights.ckpt"
+  }
+}
+
+odict_keys(['2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019'])
+Not freezing any parameters!
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: - 0.014 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: \ 0.014 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: | 0.014 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: / 0.014 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: - 0.014 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: \ 0.014 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: | 0.014 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: / 0.014 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: - 0.120 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: \ 0.120 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: | 0.120 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: / 0.120 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: - 0.120 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: \ 0.120 MB of 0.120 MB uploaded (0.000 MB deduped)wandb: | 0.120 MB of 0.120 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: Synced kadapter_ensemble_full: https://wandb.ai/tjung2/temporal_questions/runs/zflyld2c
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221128_064219-zflyld2c/logs
+Traceback (most recent call last):
+  File "run.py", line 288, in <module>
+    main()
+  File "run.py", line 278, in main
+    trainer.fit(model)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 460, in fit
+    self._run(model)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 758, in _run
+    self.dispatch()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 799, in dispatch
+    self.accelerator.start_training(self)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/accelerators/accelerator.py", line 96, in start_training
+    self.training_type_plugin.start_training(trainer)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/plugins/training_type/training_type_plugin.py", line 144, in start_training
+    self._results = trainer.run_stage()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 809, in run_stage
+    return self.run_train()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 839, in run_train
+    self._pre_training_routine()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 832, in _pre_training_routine
+    self.checkpoint_connector.restore_weights()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/connectors/checkpoint_connector.py", line 73, in restore_weights
+    self.restore(self.trainer.resume_from_checkpoint, on_gpu=self.trainer._device_type == DeviceType.GPU)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/connectors/checkpoint_connector.py", line 102, in restore
+    self.restore_training_state(checkpoint, load_optimizer_states)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pytorch_lightning/trainer/connectors/checkpoint_connector.py", line 182, in restore_training_state
+    optimizer.load_state_dict(opt_state)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/torch/optim/optimizer.py", line 146, in load_state_dict
+    raise ValueError("loaded state dict contains a parameter group "
+ValueError: loaded state dict contains a parameter group that doesn't match the size of optimizer's group

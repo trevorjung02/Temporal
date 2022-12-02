@@ -458,33 +458,32 @@ class T5(pl.LightningModule):
         "Prepare optimizer and schedule (linear warmup and decay)"
         model = self.model
         no_decay = ["bias", "LayerNorm.weight"]
-        # if "adapter" in self.hparams.method and self.hparams.freeze_level < 2:
-        #     adapter_params = [(n, p) for n, p in model.named_parameters() if "adapter" in n]
-        #     optimizer_grouped_parameters = [
-        #         {
-        #             "params": [p for n,p in adapter_params if not any(nd in n for nd in no_decay)],
-        #             "weight_decay": self.hparams.weight_decay,
-        #         },
-        #         {
-        #             "params": [p for n, p in adapter_params if any(nd in n for nd in no_decay)],
-        #             "weight_decay": 0.0,
-        #         },
-        #     ]
-        #     max_lr = [self.hparams.learning_rate, self.hparams.t5_learning_rate]
-        # else:
-        optimizer_grouped_parameters = [
-            {
-                "params": [p for n, p in model.named_parameters() if not any(nd in n for nd in no_decay)],
-                "weight_decay": self.hparams.weight_decay,
-            },
-            {
-                "params": [p for n, p in model.named_parameters() if any(nd in n for nd in no_decay)],
-                "weight_decay": 0.0,
-            },
-        ]
-        print(f"hparams.learning_rate = {self.hparams.learning_rate}")
-        max_lr = self.hparams.learning_rate
-        
+        if "adapter" in self.hparams.method and self.hparams.freeze_level < 2:
+            adapter_params = [(n, p) for n, p in model.named_parameters() if "adapter" in n]
+            adapters_params_names = set([n for n,p in adapter_params])
+            optimizer_grouped_parameters = [
+                {
+                    "params": [p for n,p in adapter_params],
+                    "lr": self.hparams.learning_rate
+                },
+                {
+                    "params": [p for n, p in model.named_parameters() if n not in adapters_params_names],
+                    "lr": self.hparams.t5_learning_rate
+                },
+            ]
+            max_lr = [self.hparams.learning_rate, self.hparams.t5_learning_rate]
+        else:
+            optimizer_grouped_parameters = [
+                {
+                    "params": [p for n, p in model.named_parameters() if not any(nd in n for nd in no_decay)],
+                    "weight_decay": self.hparams.weight_decay,
+                },
+                {
+                    "params": [p for n, p in model.named_parameters() if any(nd in n for nd in no_decay)],
+                    "weight_decay": 0.0,
+                },
+            ]
+            max_lr = self.hparams.learning_rate
         self.optimizer = AdamW(optimizer_grouped_parameters, lr=self.hparams.learning_rate)
 
         #self.optimizer = optimizer
@@ -501,7 +500,7 @@ class T5(pl.LightningModule):
             else:
                 len_data = len(self.train_dataloader())
                 self.lr_scheduler = torch.optim.lr_scheduler.OneCycleLR(self.optimizer, max_lr=max_lr, steps_per_epoch=len_data, epochs=self.hparams.num_train_epochs)
-                
+                    
                 return [self.optimizer], [{"scheduler": self.lr_scheduler, "interval": "step", "name": "learning rate"}]
         else:
             return [self.optimizer]

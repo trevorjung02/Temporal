@@ -177,7 +177,7 @@ def main():
                 every_n_train_steps=2500
             else:
                 every_n_train_steps=500
-            callbacks = [ModelCheckpoint(dirpath = args.output_dir, filename = '{epoch}-{f1_score:.4f}-{em_score:.4f}', save_top_k=3, every_n_train_steps=every_n_train_steps, mode="max", monitor="f1_score")]
+            callbacks = [ModelCheckpoint(dirpath = args.output_dir, filename = '{epoch}-{f1_score:.4f}-{em_score:.4f}', save_top_k=2, every_n_train_steps=every_n_train_steps, mode="max", monitor="f1_score")]
         elif args.dataset == 'nyt':
             if args.dataset_version == 'full':
                 every_n_train_steps=2500
@@ -186,7 +186,7 @@ def main():
                 callbacks = [ModelCheckpoint(dirpath = args.output_dir, filename = '{epoch}-{f1_score:.4f}-{em_score:.4f}', save_top_k=2, period=1, mode="max", monitor="f1_score")]
         elif args.dataset_version == 'debug':
             every_n_train_steps=1
-            callbacks = [ModelCheckpoint(dirpath = args.output_dir, filename = '{epoch}-{f1_score:.4f}-{em_score:.4f}', save_top_k=3, every_n_train_steps=every_n_train_steps, mode="max", monitor="f1_score")]
+            callbacks = [ModelCheckpoint(dirpath = args.output_dir, filename = '{epoch}-{f1_score:.4f}-{em_score:.4f}', save_top_k=2, every_n_train_steps=every_n_train_steps, mode="max", monitor="f1_score")]
         else:
             callbacks = [ModelCheckpoint(dirpath = args.output_dir, filename = '{epoch}-{f1_score:.4f}-{em_score:.4f}', save_top_k=1, period=1, mode="max", monitor="em_score")]
     checkpoint_callback = True

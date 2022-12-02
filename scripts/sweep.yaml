@@ -1,0 +1,13 @@
+program: run.py
+project: temporal_questions
+method: grid
+parameters:
+  learning_rate: 
+    values: [1e-3, 3e-4, 1e-4]
+command:
+  - ${env}
+  - ${interpreter}
+  - ${program}
+  - --config
+  - configs/nyt/training/t5_kadapters_yearly.json
+

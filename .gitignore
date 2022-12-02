@@ -6,3 +6,4 @@ news-docs*
 wandb*
 wandb_cache
 huggingface
+raw_data
