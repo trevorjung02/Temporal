@@ -1,0 +1,25 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-a40
+#SBATCH --account=cse
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=48G
+#SBATCH --gres=gpu:1
+#SBATCH --time=1-0:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+#SBATCH --dependency=afterany:6700270
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+python run.py --config configs/templama/training/t5_outofbox.json--------------------
+Traceback (most recent call last):
+  File "run.py", line 15, in <module>
+    from adapter_utils.extract_adapters import extract_adapters
+ModuleNotFoundError: No module named 'extract_adapters'

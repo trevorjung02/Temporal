@@ -1,0 +1,86 @@
+#!/bin/bash
+#SBATCH --job-name=data-proc
+#SBATCH --partition=gpu-rtx6k
+#SBATCH --account=cse
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=48G
+#SBATCH --gres=gpu:1
+#SBATCH --time=12:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tjung2@uw.edu
+#SBATCH --dependency=afterany:6700270
+
+# I use source to initialize conda into the right environment.
+cat $0
+echo "--------------------"
+
+source ~/.bashrc
+conda activate ckl
+
+python preprocess_utils/preprocess_streamqa_data.py train
+python preprocess_utils/preprocess_streamqa_data.py val
+python preprocess_utils/preprocess_streamqa_data.py test--------------------
+Preprocessing streamqa split: train
+Traceback (most recent call last):
+  File "preprocess_utils/preprocess_streamqa_data.py", line 100, in <module>
+    main()
+  File "preprocess_utils/preprocess_streamqa_data.py", line 13, in main
+    df = pd.read_json(f"raw_data\streamingqa\streaminqa_{args.split}.jsonl", lines=True)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/util/_decorators.py", line 207, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/io/json/_json.py", line 612, in read_json
+    return json_reader.read()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/io/json/_json.py", line 744, in read
+    obj = self._get_object_parser(self._combine_lines(data_lines))
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/io/json/_json.py", line 768, in _get_object_parser
+    obj = FrameParser(json, **kwargs).parse()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/io/json/_json.py", line 880, in parse
+    self._parse_no_numpy()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/io/json/_json.py", line 1133, in _parse_no_numpy
+    loads(json, precise_float=self.precise_float), dtype=None
+ValueError: Expected object or value
+Preprocessing streamqa split: val
+Traceback (most recent call last):
+  File "preprocess_utils/preprocess_streamqa_data.py", line 100, in <module>
+    main()
+  File "preprocess_utils/preprocess_streamqa_data.py", line 13, in main
+    df = pd.read_json(f"raw_data\streamingqa\streaminqa_{args.split}.jsonl", lines=True)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/util/_decorators.py", line 207, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/io/json/_json.py", line 612, in read_json
+    return json_reader.read()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/io/json/_json.py", line 744, in read
+    obj = self._get_object_parser(self._combine_lines(data_lines))
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/io/json/_json.py", line 768, in _get_object_parser
+    obj = FrameParser(json, **kwargs).parse()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/io/json/_json.py", line 880, in parse
+    self._parse_no_numpy()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/io/json/_json.py", line 1133, in _parse_no_numpy
+    loads(json, precise_float=self.precise_float), dtype=None
+ValueError: Expected object or value
+Preprocessing streamqa split: test
+Traceback (most recent call last):
+  File "preprocess_utils/preprocess_streamqa_data.py", line 100, in <module>
+    main()
+  File "preprocess_utils/preprocess_streamqa_data.py", line 13, in main
+    df = pd.read_json(f"raw_data\streamingqa\streaminqa_{args.split}.jsonl", lines=True)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/util/_decorators.py", line 207, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/io/json/_json.py", line 612, in read_json
+    return json_reader.read()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/io/json/_json.py", line 744, in read
+    obj = self._get_object_parser(self._combine_lines(data_lines))
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/io/json/_json.py", line 768, in _get_object_parser
+    obj = FrameParser(json, **kwargs).parse()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/io/json/_json.py", line 880, in parse
+    self._parse_no_numpy()
+  File "/mmfs1/gscratch/ark/tjung2/miniconda3/envs/ckl/lib/python3.8/site-packages/pandas/io/json/_json.py", line 1133, in _parse_no_numpy
+    loads(json, precise_float=self.precise_float), dtype=None
+ValueError: Expected object or value
