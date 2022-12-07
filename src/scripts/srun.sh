@@ -16,4 +16,4 @@
 
 # srun --partition=gpu-rtx6k --account=cse --nodes=1 --cpus-per-task=8 --gres=gpu:1 --mem=48G --time=1-0:00:00 python src/run.py --config configs/templama/training/t5_kadapters_ensemble.json
 
-srun --partition=gpu-rtx6k --account=cse --nodes=1 --cpus-per-task=8 --gres=gpu:1 --mem=48G --time=1-0:00:00 mv news-docs.2011.en.filtered raw_data/wmt
+srun --partition=gpu-rtx6k --account=cse --nodes=1 --cpus-per-task=8 --gres=gpu:1 --mem=48G --time=1-0:00:00 pip install notebook

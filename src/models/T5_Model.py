@@ -490,7 +490,7 @@ class T5(pl.LightningModule):
         if self.hparams.use_lr_scheduling:
             if self.hparams.dataset == 'wmt':
                 len_data = len(self.train_dataloader())
-                self.lr_scheduler = torch.optim.lr_scheduler.OneCycleLR(self.optimizer, max_lr=max_lr, steps_per_epoch=len_data, epochs=self.hparams.num_train_epochs, pct_start=0.1)
+                self.lr_scheduler = torch.optim.lr_scheduler.OneCycleLR(self.optimizer, max_lr=max_lr, steps_per_epoch=len_data, epochs=self.hparams.num_train_epochs, pct_start=0.1, final_div_factor=10)
 
                 return [self.optimizer], [{"scheduler": self.lr_scheduler, "interval": "step", "name": "learning rate"}]
             elif self.hparams.dataset in {'templama', 'streamqa'}:

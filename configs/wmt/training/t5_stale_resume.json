@@ -8,8 +8,7 @@
     "output_dir": "outputs/wmt",
     "wandb_log": true,
     "train_batch_size": 32,
-    "checkpoint_dir": "outputs/wmtbaseline_full",
-    "resume_from_checkpoint": false,
+    "resume_from_checkpoint": true,
 
     "input_length": 100,
     "output_length": 50,
