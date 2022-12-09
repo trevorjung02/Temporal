@@ -164,7 +164,7 @@ class T5(pl.LightningModule):
             return text.lower()
         
         def rid_of_specials(text):
-            return re.sub("<extra_id_[0-9]*>", "", text)
+            return re.sub(r"<extra_id_[0-9]*>", "", text)
 
         return white_space_fix(rid_of_specials(remove_articles(remove_punc(lower(s)))))
 

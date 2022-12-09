@@ -10,12 +10,13 @@ import time
 import math
 import scipy.stats as ss
 import numpy as np
-
+from BitVector import BitVector
 
 # debug mode: does not save output files, only opens and processes 110 articles
 # Implementation: Open training data as csv file with randomly chosen articles
 # Process batches of sentences with spacy
 
+debug = False
 
 def main():
     parser = ArgumentParser()
@@ -25,6 +26,7 @@ def main():
     args = parser.parse_args()
     date = args.date
     input_file = f"raw_data/wmt/news-docs.{date}.en.filtered"
+    debug = args.debug
 
     mask_chance = 0.15
 
@@ -129,17 +131,17 @@ def main():
     # Write dataset
     if not args.debug:
         start = time.process_time()
-        with open(f"data/wmt/wmt_train_{date}.csv", "w", encoding='utf-8') as csvfile:
+        with open(f"data/wmt/wmt_train_{date}_{args.mask_mode}.csv", "w", encoding='utf-8') as csvfile:
             w = csv.writer(csvfile)
             w.writerow(["id", "date", "input", "output"])
             w.writerows(train_dataset)
 
-        with open(f"data/wmt/wmt_val_{date}.csv", "w", encoding='utf-8') as csvfile:
+        with open(f"data/wmt/wmt_val_{date}_{args.mask_mode}.csv", "w", encoding='utf-8') as csvfile:
             w = csv.writer(csvfile)
             w.writerow(["id", "date", "input", "output"])
             w.writerows(val_dataset)
 
-        with open(f"data/wmt/wmt_val_{date}_answers.json", "w", encoding='utf-8') as f:
+        with open(f"data/wmt/wmt_val_{date}_{args.mask_mode}_answers.json", "w", encoding='utf-8') as f:
             json.dump(ids_to_answers, f, ensure_ascii=False)
         print(f"Write datasets: {time.process_time() - start} seconds")
 
@@ -176,58 +178,83 @@ def mask_sentence_one_ss_random_span(sentence, mean_length, mask_pct):
     train_answer = []
     val_answer = []
     span_start_indices = []
-    span_start_indices_set = set()
     span_lens = []
 
     # Choose random named entity
     num_ents = len(sentence.ents)
     ent = sentence.ents[random.randrange(0,num_ents)]
-    print(f"salient span: {ent.text}")
+    debug_print(f"salient span: {ent.text}")
 
     # Mask salient span
     salient_span_start_char = ent.start_char
     while salient_span_start_char >= 1 and not sentence.text[salient_span_start_char-1].isspace():
         salient_span_start_char -= 1
-    text = sentence.text[:salient_span_start_char].split()
-    salient_span_index = len(text)
+    salient_span_index = len(sentence.text[:salient_span_start_char].split())
+    text = sentence.text.split()
+    salient_span_len = len(ent.text.split())
+    bv = BitVector(size = len(text))
+    mask = BitVector(size = salient_span_len)
+    mask = ~mask
+    mask.pad_from_right(salient_span_index)
+    bv = bv | mask
+    # print(bv)
     span_start_indices.append(salient_span_index)
-    span_start_indices_set.add(salient_span_index)
-    span_lens.append(len(ent.text.split()))
+    span_lens.append(salient_span_len)
     # sentence = text[:ent.start_char] + "<extra_id_0>" + text[ent.end_char:]
 
     # Sample span lengths
-    text = sentence.text.split()
-    print(f"Unmasked sentence: {text}")
-    num_spans = math.ceil(len(text) * mask_pct / mean_length)
-    # Don't do random span masking if a span will take up 25% of the text
-    if len(text) <= 4 * mean_length:
+    debug_print(f"Unmasked sentence: {text}")
+    num_spans = math.ceil((len(text)-salient_span_len) * mask_pct / mean_length)
+    # Don't do random span masking if a span will take up 25% of the input, excluding the salient span
+    if len(text)-salient_span_len <= 4 * mean_length:
         num_spans = 0
-    print(f"number of spans: {num_spans}")
+    debug_print(f"number of spans: {num_spans}")
     if num_spans > 0:
         # span_start_indices.extend(random.sample(range(1-mean_length,len(text)), num_spans))
         span_lens.extend(random.choices(range(1, 2*mean_length), k=num_spans))
         for span_len in span_lens[1:]:
-            valid = False
-            while not valid:
+            # print(f"span length = {span_len}")
+            while True:
                 idx = random.randrange(1-span_len, len(text))
-                valid = True
-                for i in range(span_len):
-                    if idx + i in span_start_indices_set:
-                        valid = False
-                        break
-                if valid:
+                # print(f"idx = {idx}")
+                if idx >= 0:
+                    mask = BitVector(size = span_len)
+                    mask = ~mask
+                    mask.pad_from_right(idx)
+                    if idx >= 1 and idx < len(text)-1:
+                        extended_mask = BitVector(size = span_len+2)
+                        extended_mask = ~extended_mask
+                        extended_mask.pad_from_right(idx-1)
+                    elif idx == 0:
+                        extended_mask = BitVector(size = span_len+1)
+                        extended_mask = ~extended_mask
+                    elif idx == len(text)-1:
+                        extended_mask = BitVector(size = span_len+1)
+                        extended_mask = ~extended_mask
+                        extended_mask.pad_from_right(idx-1)
+                else:
+                    mask = BitVector(size = span_len + idx)
+                    mask = ~mask
+                    extended_mask = BitVector(size = span_len + idx + 1)
+                    extended_mask = ~extended_mask
+                # debug_print(mask)
+                # debug_print(extended_mask)
+                # debug_print(bv & extended_mask)
+                if (bv & extended_mask).intValue() == 0:
                     span_start_indices.append(idx)
-                    span_start_indices_set.add(idx)
+                    bv = bv | mask
+                    # debug_print(bv)
+                    break
     
     masked_sentence = []
-    print(span_start_indices)
-    print(span_lens)
+    # debug_print(span_start_indices)
+    # debug_print(span_lens)
     sort_indices = np.argsort(span_start_indices)
-    print(sort_indices)
+    # debug_print(sort_indices)
     span_start_indices = reorder(span_start_indices, sort_indices)
     span_lens = reorder(span_lens, sort_indices)
-    print(f"span_start_indices = {span_start_indices}")
-    print(f"span lengths = {span_lens}")
+    debug_print(f"span_start_indices = {span_start_indices}")
+    debug_print(f"span lengths = {span_lens}")
     i = 0
     span_num = 0
     prev_index = 0
@@ -244,19 +271,20 @@ def mask_sentence_one_ss_random_span(sentence, mean_length, mask_pct):
                 break
         span_start = max(0,span_start_indices[i])
         span_index = span_start_indices[j]
+        span_len = span_lens[j]
         span_end = span_index + span_len
-        print(f"{span_start} {span_end}")
+        # debug_print(f"{span_start} {span_end}")
         masked_sentence.extend(text[prev_index:span_start])
         masked_sentence.append(f"<extra_id_{span_num}>")
-        print(masked_sentence)
+        # debug_print(masked_sentence)
         masked_span = text[span_start:span_end]
-        print(masked_span)
+        # debug_print(masked_span)
         train_answer.append(f"<extra_id_{span_num}>")
         train_answer.extend(masked_span)
-        print(train_answer)
+        # debug_print(train_answer)
         val_answer.extend(masked_span)
-        print(val_answer)
-        print("-----------")
+        # debug_print(val_answer)
+        # debug_print("-----------")
         prev_index = span_end
         i = j+1
         span_num += 1
@@ -267,17 +295,21 @@ def mask_sentence_one_ss_random_span(sentence, mean_length, mask_pct):
     train_answer.append(f"<extra_id_{span_num}>")
     res = ' '.join(masked_sentence), ' '.join(train_answer), [' '.join(val_answer)]
     for i in res:
-        print(i)
-    print("-----------")
+        debug_print(i)
+    debug_print("-----------")
     return res
 
 def reorder(l, indices):
-    print(l)
-    print(indices)
+    # print(l)
+    # print(indices)
     res = []
     for i in indices:
         res.append(l[i])
     return res
+
+def debug_print(x):
+    if debug:
+        print(x)
 
 if __name__ == "__main__":
     main()

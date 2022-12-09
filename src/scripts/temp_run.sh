@@ -18,4 +18,4 @@ echo "--------------------"
 source ~/.bashrc
 conda activate ckl
 
-python src/preprocess_utils/preprocess_wmt_train_data.py 2007 one_ss_random_span -debug
+python src/preprocess_utils/preprocess_wmt_train_data.py 2007 one_ss_random_span
