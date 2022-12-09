@@ -176,6 +176,8 @@ def mask_sentence_one_ss_random_span(sentence, mean_length, mask_pct):
     train_answer = []
     val_answer = []
     span_start_indices = []
+    span_start_indices_set = set()
+    span_lens = []
 
     # Choose random named entity
     num_ents = len(sentence.ents)
@@ -189,6 +191,8 @@ def mask_sentence_one_ss_random_span(sentence, mean_length, mask_pct):
     text = sentence.text[:salient_span_start_char].split()
     salient_span_index = len(text)
     span_start_indices.append(salient_span_index)
+    span_start_indices_set.add(salient_span_index)
+    span_lens.append(len(ent.text.split()))
     # sentence = text[:ent.start_char] + "<extra_id_0>" + text[ent.end_char:]
 
     # Sample span lengths
@@ -201,28 +205,39 @@ def mask_sentence_one_ss_random_span(sentence, mean_length, mask_pct):
     print(f"number of spans: {num_spans}")
     if num_spans > 0:
         # span_start_indices.extend(random.sample(range(1-mean_length,len(text)), num_spans))
-        span_lens = random.choices(range(1, 2*mean_length), k=num_spans)
-        
+        span_lens.extend(random.choices(range(1, 2*mean_length), k=num_spans))
+        for span_len in span_lens[1:]:
+            valid = False
+            while not valid:
+                idx = random.randrange(1-span_len, len(text))
+                valid = True
+                for i in range(span_len):
+                    if idx + i in span_start_indices_set:
+                        valid = False
+                        break
+                if valid:
+                    span_start_indices.append(idx)
+                    span_start_indices_set.add(idx)
     
     masked_sentence = []
-    span_start_indices.sort()
+    print(span_start_indices)
+    print(span_lens)
+    sort_indices = np.argsort(span_start_indices)
+    print(sort_indices)
+    span_start_indices = reorder(span_start_indices, sort_indices)
+    span_lens = reorder(span_lens, sort_indices)
     print(f"span_start_indices = {span_start_indices}")
+    print(f"span lengths = {span_lens}")
     i = 0
     span_num = 0
     prev_index = 0
     while i < len(span_start_indices):
         j = i
         span_index = span_start_indices[j]
-        if span_index == salient_span_index:
-            span_len = len(ent.text.split())
-        else:
-            span_len = mean_length
+        span_len = span_lens[j]
         while j + 1 < len(span_start_indices):
             span_index = span_start_indices[j]
-            if span_index == salient_span_index:
-                span_len = len(ent.text.split())
-            else:
-                span_len = mean_length
+            span_len = span_lens[j]
             if span_index + span_len >= span_start_indices[j+1]:
                 j += 1
             else:
@@ -254,6 +269,14 @@ def mask_sentence_one_ss_random_span(sentence, mean_length, mask_pct):
     for i in res:
         print(i)
     print("-----------")
+    return res
+
+def reorder(l, indices):
+    print(l)
+    print(indices)
+    res = []
+    for i in indices:
+        res.append(l[i])
     return res
 
 if __name__ == "__main__":
