@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=data-proc
-#SBATCH --partition=gpu-a40
+#SBATCH --partition=ckpt
 #SBATCH --account=cse
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=8
@@ -19,4 +19,4 @@ echo "--------------------"
 source ~/.bashrc
 conda activate ckl
 
-python src/run.py --config configs/wmt/training/t5_stale_resume.json -lr 1e-4 -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.2563-em_score=0.2167.ckpt
+python src/run.py --config configs/templama/training/t5_stale.json -lr 1e-5 -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.2586-em_score=0.2194.ckpt

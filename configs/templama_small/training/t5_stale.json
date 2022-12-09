@@ -4,7 +4,7 @@
     "learning_rate": 1e-5,
     "freeze_level": 0,
     "t5_learning_rate": null,
-    "num_train_epochs": 15,
+    "num_train_epochs": 30,
     "output_dir": "outputs/templama",
     "wandb_log": true,
     "train_batch_size": 32,
@@ -12,7 +12,7 @@
 
     "input_length": 50,
     "output_length": 25,
-    "dataset": "templama",
+    "dataset": "templama_small",
     "prefix": true,
     "model": "google/t5-large-ssm",
     "ngpu": 1,

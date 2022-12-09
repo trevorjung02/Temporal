@@ -77,6 +77,24 @@ class Pretrain(Dataset):
                         self.dataset = pd.read_csv(f'data/templama/templama_val_{dataset_version}.csv') 
                     with open(f'data/templama/templama_val_{dataset_version}_answers.json') as f:
                         ids_to_answers = json.load(f)  
+            elif self.args.dataset == 'templama_small':
+                # print('Inside templama code')
+                if type_path == 'train':
+                    if self.args.prefix:
+                        self.dataset= pd.read_csv(f'data/templama_small_split/templama_train_{self.dataset_version}_prefixed.csv')
+                    else:
+                        self.dataset= pd.read_csv(f'data/templama_small_split/templama_train_{self.dataset_version}.csv')
+                elif type_path == 'validation':
+                    if self.args.val_data is not None:
+                        dataset_version = self.args.val_data
+                    else:
+                        dataset_version = self.dataset_version
+                    if self.args.prefix:
+                        self.dataset = pd.read_csv(f'data/templama_small_split/templama_val_{dataset_version}_prefixed.csv') 
+                    else:
+                        self.dataset = pd.read_csv(f'data/templama_small_split/templama_val_{dataset_version}.csv') 
+                    with open(f'data/templama_small_split/templama_val_{dataset_version}_answers.json') as f:
+                        ids_to_answers = json.load(f)  
             elif self.args.dataset == 'wmt':
                 if type_path == 'train':
                     self.dataset= pd.read_csv(f'data/wmt/wmt_train_{self.dataset_version}.csv')
@@ -270,7 +288,7 @@ class Pretrain(Dataset):
         elif self.args.dataset == 'wikitext103':
             input_ = example_batch['original']
             target_= example_batch['original']
-        elif self.args.dataset in {'templama','wmt','situatedqa', 'nyt', 'streamqa'}:
+        elif self.args.dataset in {'templama', 'templama_small', 'wmt','situatedqa', 'nyt', 'streamqa'}:
             input_ = example_batch['input']
             target_ = example_batch['output']
             if type(input_)!=str:
@@ -331,7 +349,7 @@ class Pretrain(Dataset):
         else: 
             ground_truth = None
         if (self.args.dataset == 'invariantlama' or self.args.dataset== 'TriviaQA' or self.args.dataset== 'fever' or self.args.dataset== 'AY2' or self.args.dataset== 'WNED' or self.args.dataset== 'CWEB' 
-        or self.args.dataset== 'TREX' or self.args.dataset== 'zsRE' or self.args.dataset== 'NQ' or self.args.dataset== 'HotpotQA' or self.args.dataset== 'ELI5' or self.args.dataset== 'WOW' or (self.args.dataset in {'templama', 'situatedqa', 'wmt', 'nyt', 'streamqa'} and (self.type_path == 'validation' or self.type_path == 'test'))):
+        or self.args.dataset== 'TREX' or self.args.dataset== 'zsRE' or self.args.dataset== 'NQ' or self.args.dataset== 'HotpotQA' or self.args.dataset== 'ELI5' or self.args.dataset== 'WOW' or (self.args.dataset in {'templama', 'templama_small', 'situatedqa', 'wmt', 'nyt', 'streamqa'} and (self.type_path == 'validation' or self.type_path == 'test'))):
             labels = example_batch['id']
         elif (self.args.dataset == 'newlama' or self.args.dataset == 'updatedlama' or self.args.dataset == 'newlama_easy' or self.args.dataset == 'newqa_easy'):
             labels = example_batch['unique_id']

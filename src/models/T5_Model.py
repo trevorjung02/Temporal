@@ -164,11 +164,9 @@ class T5(pl.LightningModule):
             return text.lower()
         
         def rid_of_specials(text):
-            text = text.replace("<extra_id_0>", "")
-            text = text.replace("<extra_id_1>", "")
-            return text
+            return re.sub("<extra_id_[0-9]*>", "", text)
 
-        return rid_of_specials(white_space_fix(remove_articles(remove_punc(lower(s)))))
+        return white_space_fix(rid_of_specials(remove_articles(remove_punc(lower(s)))))
 
     def exact_match_score(self, prediction, ground_truth):
         return int(self.normalize_answer(prediction) == self.normalize_answer(ground_truth))

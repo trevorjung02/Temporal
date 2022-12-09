@@ -52,7 +52,7 @@ class Preprocess(Dataset):
         else: 
             ground_truth = None
         if (self.args.dataset == 'invariantlama' or self.args.dataset== 'TriviaQA' or self.args.dataset== 'fever' or self.args.dataset== 'AY2' or self.args.dataset== 'WNED' or self.args.dataset== 'CWEB' 
-        or self.args.dataset== 'TREX' or self.args.dataset== 'zsRE' or self.args.dataset== 'NQ' or self.args.dataset== 'HotpotQA' or self.args.dataset== 'ELI5' or self.args.dataset== 'WOW' or (self.args.dataset in {'templama', 'situatedqa', 'wmt', 'streamqa'} and self.type_path in {'validation', 'test'})):
+        or self.args.dataset== 'TREX' or self.args.dataset== 'zsRE' or self.args.dataset== 'NQ' or self.args.dataset== 'HotpotQA' or self.args.dataset== 'ELI5' or self.args.dataset== 'WOW' or (self.args.dataset in {'templama', 'templama_small', 'situatedqa', 'wmt', 'streamqa'} and self.type_path in {'validation', 'test'})):
             labels = example_batch['id']
         elif (self.args.dataset == 'newlama' or self.args.dataset == 'updatedlama' or self.args.dataset == 'newlama_easy' or self.args.dataset == 'newqa_easy'):
             labels = example_batch['unique_id']
