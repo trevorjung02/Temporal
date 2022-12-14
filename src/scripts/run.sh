@@ -1,11 +1,11 @@
 #!/bin/bash
 #SBATCH --job-name=data-proc
-#SBATCH --partition=ckpt
+#SBATCH --partition=gpu-a40
 #SBATCH --account=cse
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=48G
-#SBATCH --gres=gpu:1
+#SBATCH --gres=gpu:2
 #SBATCH --time=1-0:00:00
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=tjung2@uw.edu
@@ -19,4 +19,10 @@ echo "--------------------"
 source ~/.bashrc
 conda activate ckl
 
-python src/run.py --config configs/templama/training/t5_stale.json -lr 1e-5 -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.2586-em_score=0.2194.ckpt
+# python src/run.py --config configs/wmt/training/t5_stale_one_ss_random_span.json -lr 1e-5 -datav 2007
+
+# python src/run.py --config configs/streamqa/training/t5_outofbox.json -lr 1e-5
+
+# python src/run.py configs/streamqa/training/t5_outofbox.json -lr 1e-5
+
+python src/run.py --config configs/wmt/training/t5_stale.json

@@ -73,6 +73,8 @@ def main():
         hparam.year_start = None
     if 'year_end' not in hparam:
         hparam.year_end = None
+    if 'mask_mode' not in hparam:
+        hparam.mask_mode = None
 
     #Setting configurations
     args = dict(
@@ -125,7 +127,8 @@ def main():
         years_to_paths = hparam.years_to_paths,
         load_adapters = hparam.load_adapters,
         year_start = hparam.year_start,
-        year_end = hparam.year_end
+        year_end = hparam.year_end,
+        mask_mode=hparam.mask_mode
     )
     if arg_.datav is not None:
         args['dataset_version'] = arg_.datav
@@ -249,7 +252,7 @@ def main():
         val_check_interval=args.val_check_interval,
         logger=wandb_logger,
         callbacks = callbacks,
-        # accelerator=args.accelerator,
+        # accelerator="ddp",
         auto_lr_find=args.find_lr
     )
 

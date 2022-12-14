@@ -15,7 +15,7 @@
     "prefix": true,
     "model": "google/t5-large-ssm",
     "ngpu": 1,
-    "num_workers": 4,
+    "num_workers": 1,
     "resume_from_checkpoint": false,
     "accelerator": "ddp",
     "use_deepspeed": false,

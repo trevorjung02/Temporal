@@ -16,7 +16,7 @@ from BitVector import BitVector
 # Implementation: Open training data as csv file with randomly chosen articles
 # Process batches of sentences with spacy
 
-debug = False
+debug = True
 
 def main():
     parser = ArgumentParser()
@@ -40,9 +40,9 @@ def main():
 
     # train_size, val_size: number of articles in train and dev sets
     if args.debug:
-        train_size = 100
-        val_size = 10
-        num_load = 100
+        train_size = 10000
+        val_size = 1000
+        num_load = 10000
     else:
         max_articles = 1000000
         train_size = 500000
@@ -131,17 +131,17 @@ def main():
     # Write dataset
     if not args.debug:
         start = time.process_time()
-        with open(f"data/wmt/wmt_train_{date}_{args.mask_mode}.csv", "w", encoding='utf-8') as csvfile:
+        with open(f"data/wmt_{args.mask_mode}/wmt_train_{date}.csv", "w", encoding='utf-8') as csvfile:
             w = csv.writer(csvfile)
             w.writerow(["id", "date", "input", "output"])
             w.writerows(train_dataset)
 
-        with open(f"data/wmt/wmt_val_{date}_{args.mask_mode}.csv", "w", encoding='utf-8') as csvfile:
+        with open(f"data/wmt_{args.mask_mode}/wmt_val_{date}.csv", "w", encoding='utf-8') as csvfile:
             w = csv.writer(csvfile)
             w.writerow(["id", "date", "input", "output"])
             w.writerows(val_dataset)
 
-        with open(f"data/wmt/wmt_val_{date}_{args.mask_mode}_answers.json", "w", encoding='utf-8') as f:
+        with open(f"data/wmt_{args.mask_mode}/wmt_val_{date}_answers.json", "w", encoding='utf-8') as f:
             json.dump(ids_to_answers, f, ensure_ascii=False)
         print(f"Write datasets: {time.process_time() - start} seconds")
 
@@ -204,7 +204,7 @@ def mask_sentence_one_ss_random_span(sentence, mean_length, mask_pct):
 
     # Sample span lengths
     debug_print(f"Unmasked sentence: {text}")
-    num_spans = math.ceil((len(text)-salient_span_len) * mask_pct / mean_length)
+    num_spans = math.ceil((len(text) * mask_pct - salient_span_len ) / mean_length)
     # Don't do random span masking if a span will take up 25% of the input, excluding the salient span
     if len(text)-salient_span_len <= 4 * mean_length:
         num_spans = 0
@@ -213,7 +213,7 @@ def mask_sentence_one_ss_random_span(sentence, mean_length, mask_pct):
         # span_start_indices.extend(random.sample(range(1-mean_length,len(text)), num_spans))
         span_lens.extend(random.choices(range(1, 2*mean_length), k=num_spans))
         for span_len in span_lens[1:]:
-            # print(f"span length = {span_len}")
+            # debug_print(f"span length = {span_len}")
             while True:
                 idx = random.randrange(1-span_len, len(text))
                 # print(f"idx = {idx}")
@@ -266,6 +266,7 @@ def mask_sentence_one_ss_random_span(sentence, mean_length, mask_pct):
             span_index = span_start_indices[j]
             span_len = span_lens[j]
             if span_index + span_len >= span_start_indices[j+1]:
+                raise Exception("Consecutive spans")
                 j += 1
             else:
                 break
@@ -310,6 +311,7 @@ def reorder(l, indices):
 def debug_print(x):
     if debug:
         print(x)
+
 
 if __name__ == "__main__":
     main()

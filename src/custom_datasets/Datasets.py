@@ -96,15 +96,19 @@ class Pretrain(Dataset):
                     with open(f'data/templama_small_split/templama_val_{dataset_version}_answers.json') as f:
                         ids_to_answers = json.load(f)  
             elif self.args.dataset == 'wmt':
+                if self.args.mask_mode == None:
+                    mask_mode = ""
+                else:
+                    mask_mode = "_" + self.args.mask_mode
                 if type_path == 'train':
-                    self.dataset= pd.read_csv(f'data/wmt/wmt_train_{self.dataset_version}.csv')
+                    self.dataset= pd.read_csv(f'data/wmt{mask_mode}/wmt_train_{self.dataset_version}.csv')
                 elif type_path == 'validation':
                     if self.args.val_data is not None:
                         dataset_version = self.args.val_data
                     else:
                         dataset_version = self.dataset_version
-                    self.dataset = pd.read_csv(f'data/wmt/wmt_val_{dataset_version}.csv') 
-                    with open(f'data/wmt/wmt_val_{dataset_version}_answers.json') as f:
+                    self.dataset = pd.read_csv(f'data/wmt{mask_mode}/wmt_val_{dataset_version}.csv') 
+                    with open(f'data/wmt{mask_mode}/wmt_val_{dataset_version}_answers.json') as f:
                         ids_to_answers = json.load(f) 
             elif self.args.dataset == 'streamqa':
                 if type_path == 'train':

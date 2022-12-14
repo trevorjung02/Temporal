@@ -511,7 +511,8 @@ class T5(pl.LightningModule):
                 self.sampler = my_sampler_year_batching.ResumableSampler(train_dataset, self.hparams.train_batch_size)
             else:
                 self.sampler = my_sampler.ResumableSampler(train_dataset)
-        self.dataloader = DataLoader(train_dataset, sampler=self.sampler,  batch_size=self.hparams.train_batch_size, drop_last=True, num_workers=self.hparams.num_workers)
+        self.dataloader = DataLoader(train_dataset, sampler=self.sampler,  batch_size=self.hparams.train_batch_size, drop_last=True, num_workers=self.hparams.num_workers, pin_memory=True)
+        debug_dataloader(self.dataloader, 20)
         return self.dataloader
 
     def val_dataloader(self):
@@ -529,3 +530,10 @@ class T5(pl.LightningModule):
         
         return DataLoader(test_dataset, batch_size=self.hparams.eval_batch_size, num_workers=self.hparams.num_workers, shuffle=False)
         
+def debug_dataloader(dl, n):
+    count = 0
+    for x in dl:
+        print(x)
+        count += 1
+        if count > n:
+            break
