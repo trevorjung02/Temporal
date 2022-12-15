@@ -26,6 +26,7 @@ def main():
     args = parser.parse_args()
     date = args.date
     input_file = f"raw_data/wmt/news-docs.{date}.en.filtered"
+    global debug
     debug = args.debug
 
     mask_chance = 0.15
@@ -40,12 +41,12 @@ def main():
 
     # train_size, val_size: number of articles in train and dev sets
     if args.debug:
-        train_size = 10000
-        val_size = 1000
-        num_load = 10000
+        train_size = 1000
+        val_size = 100
+        num_load = 1000
     else:
         max_articles = 1000000
-        train_size = 500000
+        train_size = 5000000
         val_size = 50000
         num_load = min(max_articles, num_lines)
     print(f"Will load {num_load} articles")
@@ -150,8 +151,8 @@ def mask_sentence(sentence, mode):
         return mask_sentence_one_ss(sentence)
     elif mode == "one_ss_random_span":
         return mask_sentence_one_ss_random_span(sentence, 3, 0.15)
-    # elif mode == "mul_ss":
-        # return mask_sentence_mul_ss(sentence)
+    elif mode == "mul_ss":
+        return mask_sentence_mul_ss(sentence, 0.15)
     else:
         raise Exception("masking mode must be one of one_ss, one_ss_random_span, mul_ss")
 
@@ -299,6 +300,63 @@ def mask_sentence_one_ss_random_span(sentence, mean_length, mask_pct):
         debug_print(i)
     debug_print("-----------")
     return res
+
+def mask_sentence_mul_ss(sentence, mask_pct):
+    # i-th mask token: "<extra_id_i>"
+    train_answer = []
+    val_answer = []
+    text = sentence.text
+    debug_print(f"text: {sentence.text}")
+
+    # Shuffle named entities
+    ents = list(sentence.ents)
+    random.shuffle(ents)
+    debug_print(f"salient spans: {ents}")
+
+    ents = process_ents(ents, sentence, mask_pct)
+    ents.sort(key=lambda x: x[0])
+    debug_print(f"salient span (start,end): {ents}")
+
+    masked_sentence = []
+    prev_index = 0 
+    for i in range(len(ents)):
+        start_char, end_char = ents[i]
+        masked_sentence.append(text[prev_index:start_char])
+        masked_sentence.append(f"<extra_id_{i}>")
+        # debug_print(masked_sentence)
+        masked_span = text[start_char:end_char]
+        # debug_print(masked_span)
+        train_answer.append(f"<extra_id_{i}>")
+        train_answer.append(masked_span)
+        # debug_print(train_answer)
+        val_answer.append(masked_span)
+        # debug_print(val_answer)
+        # debug_print("-----------")
+        prev_index = end_char
+    if prev_index < len(text):
+        masked_sentence.append(text[prev_index:])
+
+    # Create answers
+    train_answer.append(f"<extra_id_{len(ents)}>")
+    res = ' '.join(masked_sentence), ' '.join(train_answer), [' '.join(val_answer)]
+    for i in res:
+        debug_print(i)
+    debug_print("-----------")
+    return res
+
+def process_ents(ents, sentence, mask_pct):
+    max_masked_tokens = math.ceil(len(sentence.text.split()) * mask_pct)
+    num_masked_tokens = 0
+    ent_spans = []
+    for ent in ents:
+        span_len = len(ent.text.split())
+        if num_masked_tokens + span_len <= max_masked_tokens or num_masked_tokens == 0:
+            num_masked_tokens += span_len
+            ent_spans.append((ent.start_char, ent.end_char))
+        else:
+            break
+    return ent_spans
+
 
 def reorder(l, indices):
     # print(l)
