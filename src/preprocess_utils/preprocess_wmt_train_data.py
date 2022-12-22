@@ -11,6 +11,7 @@ import math
 import scipy.stats as ss
 import numpy as np
 from BitVector import BitVector
+import os
 
 # debug mode: does not save output files, only opens and processes 110 articles
 # Implementation: Open training data as csv file with randomly chosen articles
@@ -132,7 +133,9 @@ def main():
     # Write dataset
     if not args.debug:
         start = time.process_time()
-        with open(f"data/wmt_{args.mask_mode}/wmt_train_{date}.csv", "w", encoding='utf-8') as csvfile:
+        file_name = f"data/wmt_{args.mask_mode}/wmt_train_{date}.csv"
+        os.makedirs(os.path.dirname(file_name), exist_ok=True)
+        with open(file_name, "w", encoding='utf-8') as csvfile:
             w = csv.writer(csvfile)
             w.writerow(["id", "date", "input", "output"])
             w.writerows(train_dataset)

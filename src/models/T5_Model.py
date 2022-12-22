@@ -21,6 +21,7 @@ import torch
 from custom_datasets.Datasets import Pretrain
 from torch.utils.data import RandomSampler
 from torch.utils.data import DataLoader, ConcatDataset
+from torch.utils.data.distributed import DistributedSampler
 from torch.optim import AdamW
 from rouge import Rouge
 from collections import Counter
@@ -362,6 +363,7 @@ class T5(pl.LightningModule):
         loss = self._step(batch)
         # DEBUG
         # print(f"----------batch_idx = {batch_idx}----------")
+        # print(f"----------batch = {batch}----------")
         self.log("loss", loss)
         return loss
 
@@ -370,18 +372,18 @@ class T5(pl.LightningModule):
 
     def on_train_epoch_start(self):
         print(f"cuda memory allocated: {torch.cuda.max_memory_allocated()}")
-        # print("----------epoch start----------")
-        self.sampler.set_mid_epoch = True
+        print("----------epoch start----------")
+        # self.sampler.set_mid_epoch = True
 
     def on_train_epoch_end(self):
-        # print("----------epoch end----------")
-        self.sampler.idx = 0
-        self.sampler.mid_epoch = False
+        print("----------epoch end----------")
+        # self.sampler.idx = 0
+        # self.sampler.mid_epoch = False
 
-    def on_train_batch_start(self, batch, batch_idx: int, dataloader_idx: int) -> None:
+    # def on_train_batch_start(self, batch, batch_idx: int, dataloader_idx: int) -> None:
         # print(f"cuda memory allocated: {torch.cuda.max_memory_allocated()}")
         # print("----------batch start----------")
-        self.sampler.idx += self.hparams.train_batch_size
+        # self.sampler.idx += self.hparams.train_batch_size
         # print(f"self.sampler.idx = {self.sampler.idx}. after this batch completes, this is the next data index")
 
     # def on_train_batch_end(self, outputs, batch, batch_idx: int, dataloader_idx: int) -> None:
@@ -401,17 +403,18 @@ class T5(pl.LightningModule):
         self.table_len = 0
 
     def on_save_checkpoint(self, checkpoint) -> None:
-        if self.sampler.set_mid_epoch:
-            self.sampler.mid_epoch = True
-            self.sampler.set_mid_epoch = False
-        # Assumes last batch is dropped if truncated
-        if self.sampler.idx + self.hparams.train_batch_size > len(self.sampler): 
-            self.sampler.idx = 0
-            self.sampler.mid_epoch = False
-        if self.sampler.mid_epoch:
-            checkpoint['epoch'] -= 1
-        print(f"saving checkpoint, epoch ={checkpoint['epoch']}")
-        checkpoint['sampler'] = self.sampler
+        # if self.sampler.set_mid_epoch:
+        #     self.sampler.mid_epoch = True
+        #     self.sampler.set_mid_epoch = False
+        # # Assumes last batch is dropped if truncated
+        # if self.sampler.idx + self.hparams.train_batch_size > len(self.sampler): 
+        #     self.sampler.idx = 0
+        #     self.sampler.mid_epoch = False
+        # if self.sampler.mid_epoch:
+        checkpoint['epoch'] -= 1
+        # print(f"saving checkpoint, epoch ={checkpoint['epoch']}")
+        # checkpoint['sampler'] = self.sampler
+        checkpoint['dataloader'] = self.dataloader
     
     def validation_step(self, batch, batch_idx):
         total_cnt = len(batch['source_ids'])
@@ -506,13 +509,20 @@ class T5(pl.LightningModule):
     def train_dataloader(self):
         n_samples = self.n_obs['train']
         train_dataset = self.get_dataset(tokenizer=self.tokenizer, type_path="train", num_samples=n_samples, args=self.hparams)
-        if not hasattr(self, 'sampler'):
-            if self.hparams.method == 'kadapter_ensemble':
-                self.sampler = my_sampler_year_batching.ResumableSampler(train_dataset, self.hparams.train_batch_size)
+        # if not hasattr(self, 'sampler'):
+            # if self.hparams.method == 'kadapter_ensemble':
+            #     self.sampler = my_sampler_year_batching.ResumableSampler(train_dataset, self.hparams.train_batch_size)
+            # else:
+            #     self.sampler = my_sampler.ResumableSampler(train_dataset)
+        # self.dataloader = DataLoader(train_dataset, sampler=self.sampler,  batch_size=self.hparams.train_batch_size, drop_last=True, num_workers=self.hparams.num_workers, pin_memory=True)
+        
+        if not hasattr(self, 'dataloader'):
+            if self.hparams.n_gpu <= 1:
+                self.dataloader = DataLoader(train_dataset, shuffle=False, batch_size=self.hparams.train_batch_size, drop_last=True, num_workers=self.hparams.num_workers, pin_memory=True)
             else:
-                self.sampler = my_sampler.ResumableSampler(train_dataset)
-        self.dataloader = DataLoader(train_dataset, sampler=self.sampler,  batch_size=self.hparams.train_batch_size, drop_last=True, num_workers=self.hparams.num_workers, pin_memory=True)
-        debug_dataloader(self.dataloader, 20)
+                self.dataloader = DataLoader(train_dataset, sampler=DistributedSampler(dataset=train_dataset, drop_last=True, shuffle=False), batch_size=self.hparams.train_batch_size, drop_last=True, num_workers=self.hparams.num_workers, pin_memory=True)
+
+            # debug_dataloader(self.dataloader, 20)
         return self.dataloader
 
     def val_dataloader(self):

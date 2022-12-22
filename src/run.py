@@ -177,9 +177,12 @@ def main():
                 args.output_dir += '_' + 'encdec'
         if args.dataset == 'wmt':
             if args.dataset_version == 'full':
-                every_n_train_steps=2500
+                # _________________________________Debug_____________
+                every_n_train_steps=10
+                # every_n_train_steps=2500
             else:
-                every_n_train_steps=500
+                # _________________________________Debug_____________
+                every_n_train_steps=10
             callbacks = [ModelCheckpoint(dirpath = args.output_dir, filename = '{epoch}-{f1_score:.4f}-{em_score:.4f}', save_top_k=2, every_n_train_steps=every_n_train_steps, mode="max", monitor="f1_score")]
         elif args.dataset == 'nyt':
             if args.dataset_version == 'full':
@@ -252,7 +255,7 @@ def main():
         val_check_interval=args.val_check_interval,
         logger=wandb_logger,
         callbacks = callbacks,
-        # accelerator="ddp",
+        accelerator="ddp",
         auto_lr_find=args.find_lr
     )
 
@@ -284,7 +287,7 @@ def load_checkpoint(Model, args):
     model = Model.load_from_checkpoint(checkpoint_path=args.checkpoint_path, hparams=args, strict=False)
     if args.resume_from_checkpoint: 
         checkpoint = torch.load(args.checkpoint_path)
-        model.sampler = copy.deepcopy(checkpoint['sampler'])
+        model.dataloader = copy.deepcopy(checkpoint['dataloader'])
     return model
 
 if __name__ == '__main__':

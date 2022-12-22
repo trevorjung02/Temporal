@@ -8,7 +8,6 @@
     "output_dir": "outputs/templama",
     "wandb_log": true,
     "train_batch_size": 32,
-    "checkpoint_dir": "outputs/wmtbaseline_full",
 
     "input_length": 50,
     "output_length": 25,
