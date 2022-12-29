@@ -1,7 +1,4 @@
 import pytorch_lightning as pl
-from models.Modular_T5 import T5ForConditionalGeneration as T5_Modular
-from models.Modular_Small_T5 import T5ForConditionalGeneration as T5_Modular_Small
-from models.Modular_Small_T52 import T5ForConditionalGeneration as T5_Modular_Small2
 from models.Kadapter_T5 import T5ForConditionalGeneration as T5_Kadapter
 from models.Kadapter_T52 import T5ForConditionalGeneration as T5_Kadapter2
 from models.Kadapter_T5_parallel import T5ForConditionalGeneration as T5_Kadapter_parallel
@@ -9,9 +6,6 @@ from models.Kadapter_T5_soft import T5ForConditionalGeneration as T5_Kadapter_so
 from models.Kadapter_T5_ensemble import T5ForConditionalGeneration as T5_Kadapter_ensemble
 from models.Padapter_T5 import T5ForConditionalGeneration as T5_Padapter
 from models.Padapter2_T5 import T5ForConditionalGeneration as T5_Padapter2
-from models.Lora_T5 import T5ForConditionalGeneration as T5_Lora
-from models.Lora_T52 import T5ForConditionalGeneration as T5_Lora2
-from models.RecAdam import RecAdam
 import torch.nn.functional as F
 from transformers import (
     T5Tokenizer,
@@ -19,11 +13,9 @@ from transformers import (
 )
 import torch
 from custom_datasets.Datasets import Pretrain
-from torch.utils.data import RandomSampler
-from torch.utils.data import DataLoader, ConcatDataset
+from torch.utils.data import RandomSampler, DataLoader, ConcatDataset
 from torch.utils.data.distributed import DistributedSampler
-from torch.optim import AdamW
-from rouge import Rouge
+from torch.optim import AdamW, SGD
 from collections import Counter
 import wandb
 import models.my_sampler as my_sampler
@@ -41,14 +33,7 @@ class T5(pl.LightningModule):
         self.mix_ratio = 4
         self.mix_decay = 0.7
 
-        if hparams.method=='modular':
-            self.model = T5_Modular.from_pretrained(hparams.model_name_or_path)
-        elif hparams.method=='modular_small':
-            self.model = T5_Modular_Small.from_pretrained(hparams.model_name_or_path)
-        elif hparams.method=='modular_small2': 
-            previous_model_dir = (hparams.output_dir)[:len(hparams.output_dir)-1]
-            self.model = T5_Modular_Small2.from_pretrained(previous_model_dir)
-        elif hparams.method=='kadapter':
+        if hparams.method=='kadapter':
             self.model = T5_Kadapter.from_pretrained(hparams.model_name_or_path, hparams.adapter_config, cache_dir = 'huggingface')
         elif hparams.method=='kadapter2':
             previous_model_dir = (hparams.output_dir)[:len(hparams.output_dir)-1]
@@ -63,21 +48,9 @@ class T5(pl.LightningModule):
             self.model = T5_Padapter.from_pretrained(hparams.model_name_or_path, hparams.adapter_config, cache_dir = 'huggingface')
         elif hparams.method=='padapter2':
             self.model = T5_Padapter2.from_pretrained(hparams.model_name_or_path, hparams.adapter_config, cache_dir = 'huggingface')
-        elif hparams.method=='lora':
-            self.model = T5_Lora.from_pretrained(hparams.model_name_or_path)
-        elif hparams.method=='lora2':
-            previous_model_dir = (hparams.output_dir)[:len(hparams.output_dir)-1]
-            self.model = T5_Lora2.from_pretrained(previous_model_dir)
-        elif hparams.method=='recadam':
-            self.model = T5ForConditionalGeneration.from_pretrained(hparams.model_name_or_path)
-            self.pretrained_model = T5ForConditionalGeneration.from_pretrained(hparams.model_name_or_path)
-            self.freeze_params(self.pretrained_model) #Freezing pretrained model
-        elif hparams.method=='recadam2':
-            self.model = T5ForConditionalGeneration.from_pretrained(hparams.model_name_or_path)
-            self.pretrained_model = T5ForConditionalGeneration.from_pretrained(hparams.model_name_or_path)
-            self.freeze_params(self.pretrained_model) #Freezing pretrained model
         else:
             self.model = T5ForConditionalGeneration.from_pretrained(hparams.model_name_or_path, cache_dir = 'huggingface')
+        
         self.tokenizer = T5Tokenizer.from_pretrained(hparams.tokenizer_name_or_path)
         
         #Freezing only encoder or the whole model
@@ -88,55 +61,9 @@ class T5(pl.LightningModule):
         elif hparams.freeze_level==2: # Freeze encoder and decoder
             self.freeze_params(self.model) 
 
-        if hparams.method=='modular_small':
-            for name, param in self.model.named_parameters():
-                if 'encoder_modular' in name:
-                    param.requires_grad = True
-        elif hparams.method=='modular_small2':
-            for name, param in self.model.named_parameters():
-                if 'encoder_modular2' in name or name=='encoder_modular_projection':
-                    param.requires_grad = True
-        elif hparams.method=='kadapter':
-            # Unfreezing the parameters used for lora
-            for name, param in self.model.named_parameters():
-                if 'kadapter' in name:
-                    param.requires_grad = True
-                    # print(name)
-            # print(self.state_dict().keys())
-        elif hparams.method=='kadapter_soft':
-            # Unfreezing the parameters used for lora
-            for name, param in self.model.named_parameters():
-                if 'kadapter' in name:
-                    param.requires_grad = True
-        elif hparams.method=='kadapter_ensemble':
-            # Unfreezing the parameters used for lora
-            for name, param in self.model.named_parameters():
-                if 'kadapter' in name:
-                    param.requires_grad = True
-        elif hparams.method=='lora':
-            # Unfreezing the parameters used for lora
-            for name, param in self.model.named_parameters():
-                if 'lora' in name:
-                    param.requires_grad = True
-        elif hparams.method=='kadapter2':
-            # Unfreezing the parameters used for lora
-            for name, param in self.model.named_parameters():
-                if 'kadapter2' in name:
-                    param.requires_grad = True
-        elif hparams.method=='padapter':
-            # Unfreezing the parameters used for lora
+        if 'adapter' in hparams.method:
             for name, param in self.model.named_parameters():
                 if 'adapter' in name:
-                    param.requires_grad = True
-        elif hparams.method=='padapter2':
-            # Unfreezing the parameters used for lora
-            for name, param in self.model.named_parameters():
-                if 'adapter' in name:
-                    param.requires_grad = True
-        elif hparams.method=='lora2':
-            # Unfreezing the parameters used for lora
-            for name, param in self.model.named_parameters():
-                if 'lora2' in name:
                     param.requires_grad = True
  
         self.output_dir = self.hparams.output_dir
@@ -167,22 +94,13 @@ class T5(pl.LightningModule):
         def rid_of_specials(text):
             return re.sub(r"<extra_id_[0-9]*>", "", text)
 
-        return white_space_fix(rid_of_specials(remove_articles(remove_punc(lower(s)))))
+        return white_space_fix(remove_articles(remove_punc(rid_of_specials(lower(s)))))
 
     def exact_match_score(self, prediction, ground_truth):
         return int(self.normalize_answer(prediction) == self.normalize_answer(ground_truth))
     
     def accuracy_match_score(self, prediction, ground_truth):
         return int(prediction.strip() == ground_truth.strip())
-
-    def _rougel_score(self, prediction, ground_truth):
-        rouge = Rouge()
-        # no normalization
-        try:
-            scores = rouge.get_scores(prediction, ground_truth, avg=True)
-        except ValueError:  # "Hypothesis is empty."
-            return 0.0
-        return scores["rouge-l"]["f"]
     
     def _f1_score(self, prediction, ground_truth):
         prediction_tokens = self.normalize_answer(prediction).split()
@@ -236,21 +154,6 @@ class T5(pl.LightningModule):
         em_score /= len(predictions)
         return em_score*100, accuracy_score*100
 
-    def calculate_rouge_multipleanswers(self, predictions, ground_truths, ids):
-        rouge_score = 0 
-        for i in range(len(predictions)):
-            unique_id = ids[i]
-            answers = self.ids_to_answers[unique_id]
-            prediction = predictions[i]
-            rouge_local_score = 0
-            for answer in answers:
-                rouge = self._rougel_score(prediction, answer)
-                if rouge > rouge_local_score:
-                    rouge_local_score = rouge 
-            rouge_score += rouge_local_score
-        rouge_score /= len(predictions)
-        return rouge_score*100
-
     def calculate_f1_scores(self, predictions, ground_truths, ids):
         f1_score = 0 
         for i in range(len(predictions)):
@@ -284,43 +187,32 @@ class T5(pl.LightningModule):
         return self.trainer.global_rank <= 0
     
     def forward(self, input_ids, attention_mask=None, decoder_input_ids=None, decoder_attention_mask=None, lm_labels=None, year=None):
+        kwargs = {'input_ids': input_ids,
+                'attention_mask': attention_mask,
+                'decoder_input_ids': decoder_input_ids,
+                'decoder_attention_mask': decoder_attention_mask,
+                'labels': lm_labels}
+            
         if self.hparams.method in ['kadapter_soft', 'kadapter_ensemble']:
-            return self.model(
-                input_ids,
-                attention_mask=attention_mask,
-                decoder_input_ids=decoder_input_ids,
-                decoder_attention_mask=decoder_attention_mask,
-                labels=lm_labels,
-                year=year
-            )
-        else:        
-            return self.model(
-                input_ids,
-                attention_mask=attention_mask,
-                decoder_input_ids=decoder_input_ids,
-                decoder_attention_mask=decoder_attention_mask,
-                labels=lm_labels,
-            )
+            kwargs['year'] = year
+    
+        return self.model(**kwargs)
 
     def _step(self, batch):
         lm_labels = batch["target_ids"]
         lm_labels[lm_labels[:, :] == self.tokenizer.pad_token_id] = -100
         
+        kwargs = {
+            'input_ids': batch["source_ids"],
+            'attention_mask': batch["source_mask"],
+            'lm_labels': lm_labels,
+            'decoder_attention_mask': batch['target_mask']
+        }
+
         if self.hparams.method in ['kadapter_soft', 'kadapter_ensemble']:
-            outputs = self(
-                input_ids=batch["source_ids"],
-                attention_mask=batch["source_mask"],
-                lm_labels=lm_labels,
-                decoder_attention_mask=batch['target_mask'],
-                year = batch['year']
-            )
-        else:
-            outputs = self(
-            input_ids=batch["source_ids"],
-            attention_mask=batch["source_mask"],
-            lm_labels=lm_labels,
-            decoder_attention_mask=batch['target_mask'],
-        )
+            kwargs['year'] = batch['year']
+            
+        outputs = self(**kwargs)
         
         loss = outputs[0]
         return loss
@@ -333,28 +225,21 @@ class T5(pl.LightningModule):
         return self.lmap(str.strip, gen_text)
     
      
-    def _generative_step(self, batch):     
+    def _generative_step(self, batch):    
+        kwargs = {
+            'inputs': batch["source_ids"],
+            'attention_mask': batch["source_mask"],
+            'use_cache': True,
+            'decoder_attention_mask': batch['target_mask'],
+            'max_length': self.hparams.max_output_length,
+            'num_beams': 2,
+            'early_stopping': True
+        }
+        
         if self.hparams.method in ['kadapter_soft', 'kadapter_ensemble']:
-            generated_ids = self.model.generate(
-                batch["source_ids"],
-                attention_mask=batch["source_mask"],
-                use_cache=True,
-                decoder_attention_mask=batch['target_mask'],
-                max_length=self.hparams.max_output_length,
-                num_beams=2,
-                early_stopping=True,
-                year = batch['year']
-            )
-        else:
-            generated_ids = self.model.generate(
-                batch["source_ids"],
-                attention_mask=batch["source_mask"],
-                use_cache=True,
-                decoder_attention_mask=batch['target_mask'],
-                max_length=self.hparams.max_output_length,
-                num_beams=2,
-                early_stopping=True
-            )
+            kwargs['year'] = batch['year']
+
+        generated_ids = self.model.generate(**kwargs)
         
         preds = self.ids_to_clean_text(generated_ids, skip_special_tokens=True)
         return preds
@@ -371,7 +256,7 @@ class T5(pl.LightningModule):
     #     print("----------train start----------")
 
     def on_train_epoch_start(self):
-        print(f"cuda memory allocated: {torch.cuda.max_memory_allocated()}")
+        print(f"cuda memory allocated: {torch.cuda.memory_allocated()}")
         print("----------epoch start----------")
         # self.sampler.set_mid_epoch = True
 
@@ -380,21 +265,16 @@ class T5(pl.LightningModule):
         # self.sampler.idx = 0
         # self.sampler.mid_epoch = False
 
-    # def on_train_batch_start(self, batch, batch_idx: int, dataloader_idx: int) -> None:
-        # print(f"cuda memory allocated: {torch.cuda.max_memory_allocated()}")
+    # def on_train_batch_start(self, batch, batch_idx: int) -> None:
+    #     print(f"\n cuda memory allocated: {torch.cuda.memory_allocated()}")
+    #     print(f"cuda max memory allocated: {torch.cuda.max_memory_allocated()}")
         # print("----------batch start----------")
         # self.sampler.idx += self.hparams.train_batch_size
         # print(f"self.sampler.idx = {self.sampler.idx}. after this batch completes, this is the next data index")
 
-    # def on_train_batch_end(self, outputs, batch, batch_idx: int, dataloader_idx: int) -> None:
-    #     print("----------batch end----------")
-
-    def on_train_end(self):
-        if self.hparams.mode == 'pretrain':
-            if self.hparams.method=='recadam':
-                self.pretrained_model = self.model
-            # elif self.hparams.method=='kadapter' or self.hparams.method=='lora' or self.hparams.method=='modular_small':
-            #     self.model.save_pretrained(self.hparams.output_dir)
+    # def on_train_batch_end(self, outputs, batch, batch_idx: int) -> None:
+    #     if batch_idx <= -1:
+    #         torch.cuda.empty_cache()
 
     def on_validation_epoch_start(self) -> None:
         columns=["id", "question", "truth", "prediction", "f1"]
@@ -402,19 +282,19 @@ class T5(pl.LightningModule):
             self.test_table = wandb.Table(columns=columns)
         self.table_len = 0
 
-    def on_save_checkpoint(self, checkpoint) -> None:
-        # if self.sampler.set_mid_epoch:
-        #     self.sampler.mid_epoch = True
-        #     self.sampler.set_mid_epoch = False
-        # # Assumes last batch is dropped if truncated
-        # if self.sampler.idx + self.hparams.train_batch_size > len(self.sampler): 
-        #     self.sampler.idx = 0
-        #     self.sampler.mid_epoch = False
-        # if self.sampler.mid_epoch:
-        checkpoint['epoch'] -= 1
-        # print(f"saving checkpoint, epoch ={checkpoint['epoch']}")
-        # checkpoint['sampler'] = self.sampler
-        checkpoint['dataloader'] = self.dataloader
+    # def on_save_checkpoint(self, checkpoint) -> None:
+    #     # if self.sampler.set_mid_epoch:
+    #     #     self.sampler.mid_epoch = True
+    #     #     self.sampler.set_mid_epoch = False
+    #     # # Assumes last batch is dropped if truncated
+    #     # if self.sampler.idx + self.hparams.train_batch_size > len(self.sampler): 
+    #     #     self.sampler.idx = 0
+    #     #     self.sampler.mid_epoch = False
+    #     # if self.sampler.mid_epoch:
+    #     checkpoint['epoch'] -= 1
+    #     # print(f"saving checkpoint, epoch ={checkpoint['epoch']}")
+    #     # checkpoint['sampler'] = self.sampler
+    #     checkpoint['dataloader'] = self.dataloader
     
     def validation_step(self, batch, batch_idx):
         total_cnt = len(batch['source_ids'])
@@ -486,11 +366,13 @@ class T5(pl.LightningModule):
             ]
             max_lr = self.hparams.learning_rate
         self.optimizer = AdamW(optimizer_grouped_parameters, lr=self.hparams.learning_rate)
+        # self.optimizer = SGD(optimizer_grouped_parameters, lr=self.hparams.learning_rate)
 
         #self.optimizer = optimizer
         if self.hparams.use_lr_scheduling:
             if self.hparams.dataset == 'wmt':
                 len_data = len(self.train_dataloader())
+                print(f"steps_per_epoch = {len_data}")
                 self.lr_scheduler = torch.optim.lr_scheduler.OneCycleLR(self.optimizer, max_lr=max_lr, steps_per_epoch=len_data, epochs=self.hparams.num_train_epochs, pct_start=0.1, final_div_factor=10)
 
                 return [self.optimizer], [{"scheduler": self.lr_scheduler, "interval": "step", "name": "learning rate"}]
@@ -509,20 +391,10 @@ class T5(pl.LightningModule):
     def train_dataloader(self):
         n_samples = self.n_obs['train']
         train_dataset = self.get_dataset(tokenizer=self.tokenizer, type_path="train", num_samples=n_samples, args=self.hparams)
-        # if not hasattr(self, 'sampler'):
-            # if self.hparams.method == 'kadapter_ensemble':
-            #     self.sampler = my_sampler_year_batching.ResumableSampler(train_dataset, self.hparams.train_batch_size)
-            # else:
-            #     self.sampler = my_sampler.ResumableSampler(train_dataset)
-        # self.dataloader = DataLoader(train_dataset, sampler=self.sampler,  batch_size=self.hparams.train_batch_size, drop_last=True, num_workers=self.hparams.num_workers, pin_memory=True)
-        
-        if not hasattr(self, 'dataloader'):
-            if self.hparams.n_gpu <= 1:
-                self.dataloader = DataLoader(train_dataset, shuffle=False, batch_size=self.hparams.train_batch_size, drop_last=True, num_workers=self.hparams.num_workers, pin_memory=True)
-            else:
-                self.dataloader = DataLoader(train_dataset, sampler=DistributedSampler(dataset=train_dataset, drop_last=True, shuffle=False), batch_size=self.hparams.train_batch_size, drop_last=True, num_workers=self.hparams.num_workers, pin_memory=True)
 
-            # debug_dataloader(self.dataloader, 20)
+        if not hasattr(self, 'dataloader'):
+            self.dataloader = DataLoader(train_dataset, shuffle=False, batch_size=self.hparams.train_batch_size, drop_last=True, num_workers=self.hparams.num_workers, pin_memory=True)
+
         return self.dataloader
 
     def val_dataloader(self):
@@ -530,9 +402,9 @@ class T5(pl.LightningModule):
         validation_dataset = self.get_dataset(tokenizer=self.tokenizer, type_path="validation", num_samples=n_samples, args=self.hparams)
         if self.hparams.method == 'kadapter_ensemble':
             sampler = my_sampler_year_batching.ResumableSampler(validation_dataset, self.hparams.eval_batch_size)
-            return DataLoader(validation_dataset, sampler = sampler, batch_size=self.hparams.eval_batch_size, num_workers=self.hparams.num_workers)
+            return DataLoader(validation_dataset, sampler = sampler, batch_size=self.hparams.eval_batch_size, num_workers=self.hparams.num_workers, pin_memory=True)
         else:
-            return DataLoader(validation_dataset, batch_size=self.hparams.eval_batch_size, num_workers=self.hparams.num_workers)
+            return DataLoader(validation_dataset, batch_size=self.hparams.eval_batch_size, num_workers=self.hparams.num_workers, pin_memory=True)
     
     def test_dataloader(self):
         n_samples = self.n_obs['test']

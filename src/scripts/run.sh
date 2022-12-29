@@ -1,10 +1,10 @@
 #!/bin/bash
-#SBATCH --partition=gpu-a40
+#SBATCH --partition=gpu-rtx6k
 #SBATCH --account=cse
 #SBATCH --nodes=1
-#SBATCH --cpus-per-task=16
-#SBATCH --mem=48G
-#SBATCH --gres=gpu:2
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=64G
+#SBATCH --gres=gpu:1
 #SBATCH --time=1-0:00:00
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=tjung2@uw.edu
@@ -16,13 +16,10 @@ cat $0
 echo "--------------------"
 
 source ~/.bashrc
-conda activate ckl
+conda activate temporal
 
-# python src/run.py --config configs/wmt/training/t5_stale_one_ss_random_span.json -lr 1e-5 -datav 2007
-
-# python src/run.py --config configs/streamqa/training/t5_outofbox.json -lr 1e-5
-
-# python src/run.py configs/streamqa/training/t5_outofbox.json -lr 1e-5
-
-python src/run.py --config configs/templama/training/t5_baseline_full.json
-# python src/run.py --config configs/wmt/training/t5_stale.json 
+# PL_FAULT_TOLERANT_TRAINING=1 srun python src/run.py --config configs/wmt/training/t5_stale.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.2211-em_score=0.0997-v1.ckpt
+# PL_FAULT_TOLERANT_TRAINING=1 srun python src/run.py --config configs/wmt/training/t5_stale.json 
+# PL_FAULT_TOLERANT_TRAINING=1 srun python src/run.py --config configs/wmt/training/t5_stale_16.json
+# srun python src/run.py --config configs/templama/training/t5_stale.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.2211-em_score=0.0997-v1.ckpt
+srun python src/run.py --config configs/streamqa/training/t5_stale.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.2211-em_score=0.0997-v1.ckpt

@@ -7,3 +7,6 @@ wandb_cache
 huggingface
 raw_data
 slurm*
+*.ckpt
+wmt_counts
+wmt_sentences

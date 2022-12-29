@@ -128,3 +128,4 @@
 2022-10-06 12:57:50 INFO About to run command: /usr/bin/env python run.py --config configs/nyt/training/t5_kadapters_yearly.json
 2022-10-06 12:57:55 INFO Running runs: ['9bhs9ekf']
 2022-10-06 14:25:18 INFO Cleaning up finished run: 9bhs9ekf
+2022-12-26 20:13:09 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response'))': /api/5288891/envelope/
