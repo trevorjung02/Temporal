@@ -1,10 +1,10 @@
 #!/bin/bash
-#SBATCH --partition=gpu-rtx6k
+#SBATCH --partition=gpu-a40
 #SBATCH --account=cse
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=64G
-#SBATCH --gres=gpu:1
+#SBATCH --gres=gpu:4
 #SBATCH --time=1-0:00:00
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=tjung2@uw.edu
@@ -22,4 +22,6 @@ conda activate temporal
 # PL_FAULT_TOLERANT_TRAINING=1 srun python src/run.py --config configs/wmt/training/t5_stale.json 
 # PL_FAULT_TOLERANT_TRAINING=1 srun python src/run.py --config configs/wmt/training/t5_stale_16.json
 # srun python src/run.py --config configs/templama/training/t5_stale.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.2211-em_score=0.0997-v1.ckpt
-srun python src/run.py --config configs/streamqa/training/t5_stale.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.2211-em_score=0.0997-v1.ckpt
+# srun python src/run.py --config configs/streamqa/training/t5_stale.json -checkpoint_path outputs/wmtbaseline_full/epoch=0-f1_score=0.2211-em_score=0.0997-v1.ckpt
+
+PL_FAULT_TOLERANT_TRAINING=1 srun python src/run.py --config configs/wmt/training/gpt/gpt2_stale.json

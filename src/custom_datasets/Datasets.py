@@ -1,3 +1,4 @@
+import re
 from torch.utils.data import Dataset
 import pandas as pd
 import json
@@ -15,6 +16,8 @@ class Pretrain(Dataset):
         self.dataset_version = self.args.dataset_version
         if 't5' in args.model_name_or_path:
             self.model_type='T5'
+        elif 'gpt2' in args.model_name_or_path:
+            self.model_type='GPT2'
         ids_to_answers = None      
         # dataset for continual training
         if self.args.dataset == 'recentnews':
@@ -158,6 +161,7 @@ class Pretrain(Dataset):
         return len(self.dataset)
 
     def convert_to_features(self, example_batch, index=None):
+        # print(f"entering convert_to_features: example_batch = {example_batch}")
         year = None
         if self.args.dataset == 'recentnews':
             input_ = example_batch['input']
@@ -166,14 +170,38 @@ class Pretrain(Dataset):
                 input_=''
             if type(target_)!=str:
                 target_=''
-        elif self.args.dataset in {'templama', 'templama_small', 'wmt','situatedqa', 'nyt', 'streamqa'}:
-            input_ = example_batch['input']
-            target_ = example_batch['output']
-            if type(input_)!=str:
-                input_=''
-            if type(target_)!=str:
-                target_=''
-            year = example_batch['date']
+        if self.model_type == 'T5':
+            if self.args.dataset in {'templama', 'templama_small', 'wmt','situatedqa', 'nyt', 'streamqa'}:
+                input_ = example_batch['input']
+                target_ = example_batch['output']
+                if type(input_)!=str:
+                    input_=''
+                if type(target_)!=str:
+                    target_=''
+                year = example_batch['date']
+        
+        elif self.model_type == 'GPT2':
+            if self.args.dataset in {'wmt', 'templama'}:
+                # input_ = unmask_input(example_batch['input'], example_batch['output'])
+                input_ = example_batch['input']
+                target_ = input_
+            elif self.args.dataset == 'streamqa':
+                if self.type_path == 'train':
+                    input_ = example_batch['input'] + ' ' + example_batch['output'] + '.'
+                    target_ = input_
+                else:
+                    input_ = example_batch['input']
+                    ground_truth_ = example_batch['output'] + '.'
+                    target_ = str(example_batch['input']) + ' ' + str(example_batch['output'])
+
+        # print(f"input_ = {input_}")
+        # print(f"target_ = {target_}")
+
+        if self.type_path == 'validation' and self.model_type =='GPT2':
+            ground_truth = self.tokenizer([str(ground_truth_)], max_length=self.output_length, 
+                                                    padding='max_length', truncation=True, return_tensors="pt")  
+        else: 
+            ground_truth = None 
 
         source = self.tokenizer([str(input_)], max_length=self.input_length, 
                                                     padding='max_length', truncation=True, return_tensors="pt")
@@ -183,8 +211,10 @@ class Pretrain(Dataset):
         if self.type_path == 'validation' or self.type_path == 'test':
             labels = example_batch['id']
         else:
-            labels = None           
-        ground_truth = None            
+            labels = None      
+        # print(f"exiting convert_to_features: source = {source}")
+        # print(f"targets = {targets}")
+        # print(f"labels = {labels}")      
         return source, targets, labels, ground_truth, year
   
     def __getitem__(self, index):
@@ -206,4 +236,13 @@ class Pretrain(Dataset):
         else: 
             ground_truth_ids = -1
 
-        return {"source_ids": source_ids, "source_mask": src_mask, "target_ids": target_ids, "target_mask": target_mask, "label_ids": label_ids, "ground_truth_ids": ground_truth_ids, "year": year}
+        if year is None:
+            year = -1
+
+        output = {"source_ids": source_ids, "source_mask": src_mask, "target_ids": target_ids, "target_mask": target_mask, "label_ids": label_ids, "ground_truth_ids": ground_truth_ids, "year": year}
+        # print(f"getitem output = {output}")
+        return output
+
+def unmask_input(input: str, output: str):
+    output = re.sub('<extra_id_[0-9]+>', '', output).strip()
+    return input.replace("<extra_id_0>", output)

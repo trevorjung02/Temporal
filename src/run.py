@@ -36,6 +36,7 @@ def main():
         wandb_logger = WandbLogger(project=hparams.wandb_project)
         wandb.define_metric("em_score", summary="max")
         wandb.define_metric("f1_score", summary="max")
+        wandb.define_metric("loss")
 
         args = wandb.config.as_dict()
     else:
@@ -76,7 +77,14 @@ def main():
     if args.strategy == 'ddp':
         train_params['strategy'] = DDPStrategy(find_unused_parameters=False)
 
-    Model: pl.LightningModule = load_model(type='T5')
+    #Getting the Model type & Method
+    if 't5' in args.model_name_or_path:
+        model_type='T5'
+    elif 'gpt2' in args.model_name_or_path:
+        model_type='GPT2'
+    else:
+        raise Exception('Select the correct model. Supporting "t5" and "gpt2" only.')
+    Model: pl.LightningModule = load_model(type=model_type)
     model: pl.LightningModule = Model(args)
 
     trainer = pl.Trainer(**train_params)
@@ -94,7 +102,8 @@ def main():
         if args.resume_from_checkpoint:
             trainer.fit(model, ckpt_path=args.checkpoint_path)
         else:
-            model = Model.load_from_checkpoint(args.checkpoint_path, hparams=args)
+            if args.checkpoint_path:
+                model = Model.load_from_checkpoint(args.checkpoint_path, hparams=args)
             trainer.fit(model)
 
 def get_cli_args():
@@ -249,15 +258,21 @@ def get_callbacks(args):
             if args.adapter_enc_dec:
                 args.output_dir += '_' + 'encdec'
         if args.dataset == 'wmt':
-            if args.debug:
-                every_n_train_steps=10
-            else:
-                if args.dataset_version == 'full':
-                    every_n_train_steps=2500
-                else: 
-                    every_n_train_steps=500
-                
-            callbacks = [ModelCheckpoint(dirpath = args.output_dir, filename = '{epoch}-{f1_score:.4f}-{em_score:.4f}', save_top_k=2, every_n_train_steps=every_n_train_steps, mode="max", monitor="f1_score")]
+            # if args.dataset_version == 'full':
+            #     # _________________________________Debug_____________
+            #     every_n_train_steps=10
+            #     # every_n_train_steps=2500
+            # else:
+            #     # _________________________________Debug_____________
+            #     every_n_train_steps=10
+            if 't5' in args.model_name_or_path:
+                monitor="f1_score"
+                mode="max"
+            elif 'gpt2' in args.model_name_or_path:
+                monitor="loss"
+                mode="min"
+            every_n_train_steps=2500
+            callbacks = [ModelCheckpoint(dirpath = args.output_dir, filename = '{epoch}-{f1_score:.4f}-{em_score:.4f}', save_top_k=1, every_n_train_steps=every_n_train_steps, mode=mode, monitor=monitor, save_last=True)]
         elif args.dataset == 'nyt':
             if args.dataset_version == 'full':
                 every_n_train_steps=2500
@@ -291,8 +306,6 @@ def get_output_path(args, cli_args):
 
     if cli_args.checkpoint_path is not None:
         args.checkpoint_path = cli_args.checkpoint_path
-
-
 
 if __name__ == '__main__':
     main()

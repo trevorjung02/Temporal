@@ -248,7 +248,6 @@ class T5(pl.LightningModule):
         loss = self._step(batch)
         # DEBUG
         # print(f"----------batch_idx = {batch_idx}----------")
-        # print(f"----------batch = {batch}----------")
         self.log("loss", loss)
         return loss
 
@@ -261,9 +260,9 @@ class T5(pl.LightningModule):
         # self.sampler.set_mid_epoch = True
 
     def on_train_epoch_end(self):
-        print("----------epoch end----------")
-        # self.sampler.idx = 0
-        # self.sampler.mid_epoch = False
+        # print("----------epoch end----------")
+        self.sampler.idx = 0
+        self.sampler.mid_epoch = False
 
     # def on_train_batch_start(self, batch, batch_idx: int) -> None:
     #     print(f"\n cuda memory allocated: {torch.cuda.memory_allocated()}")

@@ -3,6 +3,7 @@ from argparse import ArgumentParser
 import csv
 import pandas as pd
 import base64 
+import os
 import random
 import json
 import spacy
@@ -11,7 +12,6 @@ import math
 import scipy.stats as ss
 import numpy as np
 from BitVector import BitVector
-import os
 
 # debug mode: does not save output files, only opens and processes 110 articles
 # Implementation: Open training data as csv file with randomly chosen articles
@@ -75,14 +75,17 @@ def main():
     random.shuffle(sentences)
     print(f"Create sentences: {time.process_time() - start} seconds")
     print(f"total sentences {len(sentences)}")
+    train_size = min(train_size, len(sentences) - val_size)
 
-    # Load spacy ner
-    spacy_ner = spacy.load("en_core_web_sm", disable=['tagger', 'parser','tok2vec', 'attribute_ruler', 'lemmatizer'])
+    if args.mask_mode != 'causal':
+        # Load spacy ner
+        spacy_ner = spacy.load("en_core_web_sm", disable=['tagger', 'parser','tok2vec', 'attribute_ruler', 'lemmatizer'])
 
-    # Run spacy ner
-    start = time.process_time()
-    spacy_res = spacy_ner.pipe(sentences)
-    print(f"Run spacy on sentences: {time.process_time() - start} seconds")
+        # Run spacy ner
+        start = time.process_time()
+        spacy_res = spacy_ner.pipe(sentences)
+        print(f"Run spacy on sentences: {time.process_time() - start} seconds")
+        sentences = spacy_res
 
     # Mask sentences and construct dataset
     start = time.process_time()
@@ -91,26 +94,38 @@ def main():
     ids_to_answers = {}
     max_input_len = 0
     max_output_len = 0
-    for sentence in spacy_res:
-        if len(sentence.ents) == 0:
-            continue
+    for sentence in sentences:
         if len(val_dataset) >= val_size:
             break
-        sentence, train_answer, val_answer = mask_sentence(sentence, args.mask_mode)
-        if len(train_dataset) < train_size:
-            # Add to train set
-            res = [len(train_dataset), date, sentence, train_answer]
-            train_dataset.append(res)
+        if args.mask_mode != 'causal':
+            if len(sentence.ents) == 0:
+                continue
+            sentence, train_answer, val_answer = mask_sentence(sentence, args.mask_mode)
+            if len(train_dataset) < train_size:
+                # Add to train set
+                res = [len(train_dataset), date, sentence, train_answer]
+                train_dataset.append(res)
+            else:
+                # Add to val set
+                index = len(val_dataset)
+                res = [index, date, sentence, ';'.join(val_answer)]
+                ids_to_answers[index] = val_answer
+                val_dataset.append(res)
         else:
-            # Add to val set
-            index = len(val_dataset)
-            res = [index, date, sentence, ';'.join(val_answer)]
-            ids_to_answers[index] = val_answer
-            val_dataset.append(res)
-
+            if len(train_dataset) < train_size:
+                # Add to train set
+                res = [len(train_dataset), date, sentence]
+                train_dataset.append(res)
+            else:
+                # Add to val set
+                res = [len(val_dataset), date, sentence]
+                val_dataset.append(res)
         
         max_input_len = max(max_input_len, len(sentence.split()))
-        max_output_len = max(max_output_len, len(train_answer))
+        if args.mask_mode != 'causal':
+            max_output_len = max(max_output_len, len(train_answer))
+        else:
+            max_output_len = max_input_len
     if args.debug:
         print("___train___")
         for s in train_dataset:
@@ -132,21 +147,27 @@ def main():
 
     # Write dataset
     if not args.debug:
+        if args.mask_mode != 'causal':
+            columns = ["id", "date", "input", "output"]
+        else:
+            columns = ["id", "date", "input"]
         start = time.process_time()
+        
         file_name = f"data/wmt_{args.mask_mode}/wmt_train_{date}.csv"
-        os.makedirs(os.path.dirname(file_name), exist_ok=True)
+        os.makedirs(os.path.dirname(file_name), exist_ok=True)  
         with open(file_name, "w", encoding='utf-8') as csvfile:
             w = csv.writer(csvfile)
-            w.writerow(["id", "date", "input", "output"])
+            w.writerow(columns)
             w.writerows(train_dataset)
 
         with open(f"data/wmt_{args.mask_mode}/wmt_val_{date}.csv", "w", encoding='utf-8') as csvfile:
             w = csv.writer(csvfile)
-            w.writerow(["id", "date", "input", "output"])
+            w.writerow(columns)
             w.writerows(val_dataset)
 
-        with open(f"data/wmt_{args.mask_mode}/wmt_val_{date}_answers.json", "w", encoding='utf-8') as f:
-            json.dump(ids_to_answers, f, ensure_ascii=False)
+        if args.mask_mode != 'causal':
+            with open(f"data/wmt_{args.mask_mode}/wmt_val_{date}_answers.json", "w", encoding='utf-8') as f:
+                json.dump(ids_to_answers, f, ensure_ascii=False)
         print(f"Write datasets: {time.process_time() - start} seconds")
 
 def mask_sentence(sentence, mode):
@@ -157,7 +178,7 @@ def mask_sentence(sentence, mode):
     elif mode == "mul_ss":
         return mask_sentence_mul_ss(sentence, 0.15)
     else:
-        raise Exception("masking mode must be one of one_ss, one_ss_random_span, mul_ss")
+        raise Exception("masking mode must be one of one_ss, one_ss_random_span, mul_ss, causal")
 
 def mask_sentence_one_ss(sentence):
     # i-th mask token: "<extra_id_i>"
